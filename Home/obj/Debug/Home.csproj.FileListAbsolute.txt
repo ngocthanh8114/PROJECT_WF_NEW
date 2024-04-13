@@ -1,0 +1,56 @@
+D:\VS Code\Home\bin\Debug\Home.exe.config
+D:\VS Code\Home\bin\Debug\Home.exe
+D:\VS Code\Home\bin\Debug\Home.pdb
+D:\VS Code\Home\obj\Debug\Home.csproj.AssemblyReference.cache
+D:\VS Code\Home\obj\Debug\Home.Properties.Resources.resources
+D:\VS Code\Home\obj\Debug\Home.csproj.GenerateResource.cache
+D:\VS Code\Home\obj\Debug\Home.csproj.CoreCompileInputs.cache
+D:\VS Code\Home\obj\Debug\Home.exe
+D:\VS Code\Home\obj\Debug\Home.pdb
+D:\VS Code\Home\bin\Debug\Guna.UI.dll
+D:\VS Code\Home\bin\Debug\Guna.UI2.dll
+D:\VS Code\Home\obj\Debug\Home.csproj.Up2Date
+D:\VS Code\Home\bin\Debug\Bunifu.UI.WinForms.dll
+D:\VS Code\Home\obj\Debug\Home.frmHome.resources
+D:\VS Code\Home\obj\Debug\Home.HienThi.GioiThieu.resources
+D:\VS Code\Home\obj\Debug\Home.HienThi.SanPham.resources
+D:\VS Code\Home\obj\Debug\Home.HienThi.HTSP.OSanPham.resources
+D:\VS Code\Home\obj\Debug\Home.HienThi.FrmChucNang.ThongTinDatHang.resources
+D:\VS Code\BanXeMay\Home\bin\Debug\Home.exe.config
+D:\VS Code\BanXeMay\Home\bin\Debug\Home.exe
+D:\VS Code\BanXeMay\Home\bin\Debug\Home.pdb
+D:\VS Code\BanXeMay\Home\bin\Debug\Guna.UI2.dll
+D:\VS Code\BanXeMay\Home\obj\Debug\Home.csproj.AssemblyReference.cache
+D:\VS Code\BanXeMay\Home\obj\Debug\Home.frmHome.resources
+D:\VS Code\BanXeMay\Home\obj\Debug\Home.Properties.Resources.resources
+D:\VS Code\BanXeMay\Home\obj\Debug\Home.csproj.GenerateResource.cache
+D:\VS Code\BanXeMay\Home\obj\Debug\Home.csproj.CoreCompileInputs.cache
+D:\VS Code\BanXeMay\Home\obj\Debug\Home.csproj.Up2Date
+D:\VS Code\BanXeMay\Home\obj\Debug\Home.exe
+D:\VS Code\BanXeMay\Home\obj\Debug\Home.pdb
+D:\VS Code\BanXeMay\Home\obj\Debug\DoAnCKWin.FrmDangNhap.resources
+D:\VS Code\BanXeMay\Home\obj\Debug\Home.FrmCon.FrmHienThi.OSanPham.resources
+D:\VS Code\BanXeMay\Home\obj\Debug\Home.FrmCon.SanPham.resources
+D:\VS Code\BanXeMay\Home\obj\Debug\Home.FrmCon.FrmHienThi.FrmThongBao.resources
+D:\VS Code\BanXeMay\Home\obj\Debug\Home.FrmCon.DonHang.resources
+D:\VS Code\BanXeMay\Home\obj\Debug\Home.FrmCon.FrmHienThi.ODonHang.resources
+D:\VS Code\BanXeMay\Home\obj\Debug\Home.FrmCon.FrmHienThi.FrmMuaHang.resources
+D:\STUDY\NAM_2_KI_2\LAP_TRINH_WINDOWS\Project_DuyThien\BanXeMay\Home\bin\Debug\Home.exe.config
+D:\STUDY\NAM_2_KI_2\LAP_TRINH_WINDOWS\Project_DuyThien\BanXeMay\Home\bin\Debug\Home.exe
+D:\STUDY\NAM_2_KI_2\LAP_TRINH_WINDOWS\Project_DuyThien\BanXeMay\Home\bin\Debug\Home.pdb
+D:\STUDY\NAM_2_KI_2\LAP_TRINH_WINDOWS\Project_DuyThien\BanXeMay\Home\bin\Debug\Guna.UI2.dll
+D:\STUDY\NAM_2_KI_2\LAP_TRINH_WINDOWS\Project_DuyThien\BanXeMay\Home\obj\Debug\Home.csproj.AssemblyReference.cache
+D:\STUDY\NAM_2_KI_2\LAP_TRINH_WINDOWS\Project_DuyThien\BanXeMay\Home\obj\Debug\Home.FrmCon.DonHang.resources
+D:\STUDY\NAM_2_KI_2\LAP_TRINH_WINDOWS\Project_DuyThien\BanXeMay\Home\obj\Debug\Home.FrmCon.FrmHienThi.FrmMuaHang.resources
+D:\STUDY\NAM_2_KI_2\LAP_TRINH_WINDOWS\Project_DuyThien\BanXeMay\Home\obj\Debug\Home.FrmCon.FrmHienThi.FrmThongBao.resources
+D:\STUDY\NAM_2_KI_2\LAP_TRINH_WINDOWS\Project_DuyThien\BanXeMay\Home\obj\Debug\Home.FrmCon.FrmHienThi.ODonHang.resources
+D:\STUDY\NAM_2_KI_2\LAP_TRINH_WINDOWS\Project_DuyThien\BanXeMay\Home\obj\Debug\DoAnCKWin.FrmDangNhap.resources
+D:\STUDY\NAM_2_KI_2\LAP_TRINH_WINDOWS\Project_DuyThien\BanXeMay\Home\obj\Debug\Home.FrmHome.resources
+D:\STUDY\NAM_2_KI_2\LAP_TRINH_WINDOWS\Project_DuyThien\BanXeMay\Home\obj\Debug\Home.FrmCon.FrmHienThi.OSanPham.resources
+D:\STUDY\NAM_2_KI_2\LAP_TRINH_WINDOWS\Project_DuyThien\BanXeMay\Home\obj\Debug\Home.FrmCon.SanPham.resources
+D:\STUDY\NAM_2_KI_2\LAP_TRINH_WINDOWS\Project_DuyThien\BanXeMay\Home\obj\Debug\Home.Properties.Resources.resources
+D:\STUDY\NAM_2_KI_2\LAP_TRINH_WINDOWS\Project_DuyThien\BanXeMay\Home\obj\Debug\Home.csproj.GenerateResource.cache
+D:\STUDY\NAM_2_KI_2\LAP_TRINH_WINDOWS\Project_DuyThien\BanXeMay\Home\obj\Debug\Home.csproj.CoreCompileInputs.cache
+D:\STUDY\NAM_2_KI_2\LAP_TRINH_WINDOWS\Project_DuyThien\BanXeMay\Home\obj\Debug\Home.csproj.CopyComplete
+D:\STUDY\NAM_2_KI_2\LAP_TRINH_WINDOWS\Project_DuyThien\BanXeMay\Home\obj\Debug\Home.exe
+D:\STUDY\NAM_2_KI_2\LAP_TRINH_WINDOWS\Project_DuyThien\BanXeMay\Home\obj\Debug\Home.pdb
