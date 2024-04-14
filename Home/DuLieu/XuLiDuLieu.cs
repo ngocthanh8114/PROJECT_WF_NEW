@@ -9,6 +9,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Reflection.Emit;
 using System.Windows.Forms;
+using System.Security.Cryptography;
+using static Bunifu.UI.WinForms.BunifuPictureBox;
 
 namespace Home.TinhNang
 {
@@ -94,19 +96,69 @@ namespace Home.TinhNang
         }
 
         //------------------------------------------NgocThanh---------------------------------------------
-        public void DatHang(string MaSP, string TenSP, decimal Gia, int SoLuong)
+        public void DatHang(string MaSP, string TenSP, decimal Gia, int SoLuong, Image Anh)
         {
-            string sql = "INSERT INTO DonHang_1 (MaSP, TenSP, Gia, SoLuong) VALUES (@MaSP, @TenSP, @Gia, @SoLuong)";
-            cmd = new SqlCommand(sql, conn);
+            kn.myConnect();
+            string sql = "INSERT INTO DonHang_1 (MaSP, TenSP, Gia, SoLuong, Anh) VALUES (@MaSP, @TenSP, @Gia, @SoLuong, @Anh)";
+            SqlCommand cmd = kn.con.CreateCommand();
+            cmd.CommandText = sql;
 
-            cmd.Parameters.AddWithValue("MaSP", MaSP);
-            cmd.Parameters.AddWithValue("TenSP", TenSP);
-            cmd.Parameters.AddWithValue("Gia", Gia);
-            cmd.Parameters.AddWithValue("SoLuong", SoLuong);
+            SqlParameter sqlParameter1 = new SqlParameter("@MaSP", SqlDbType.NChar, 10);
+            sqlParameter1.Value = MaSP;
+            cmd.Parameters.Add(sqlParameter1);
+
+            SqlParameter sqlParameter2 = new SqlParameter("@TenSP", SqlDbType.NVarChar, 50);
+            sqlParameter2.Value = TenSP;
+            cmd.Parameters.Add(sqlParameter2);
+
+            SqlParameter sqlParameter3 = new SqlParameter("@Gia", SqlDbType.Decimal, 18);
+            sqlParameter3.Value = Gia;
+            cmd.Parameters.Add(sqlParameter3);
+
+            SqlParameter sqlParameter4 = new SqlParameter("@SoLuong", SqlDbType.Int);
+            sqlParameter4.Value = SoLuong;
+            cmd.Parameters.Add(sqlParameter4);
+
+            byte[] bytes = ImageToByteArray(Anh);
+            SqlParameter sqlParameter5 = new SqlParameter("@Anh", bytes);
+            cmd.Parameters.Add(sqlParameter5);
+
             cmd.ExecuteNonQuery();
 
         }
         //------------------------------------------NgocThanh---------------------------------------------
+
+        /*    public DataTable themSanPham(string MaLoai)
+            {
+                kn.myConnect();
+                string lenh = "select * from SanPham where MaLoai = @Maloai";
+                SqlCommand cmd = kn.con.CreateCommand();
+                cmd.CommandText = lenh;
+                SqlParameter sqlParameter = new SqlParameter("@MaLoai", SqlDbType.NChar, 10);
+                sqlParameter.Value = MaLoai;
+                cmd.Parameters.Add(sqlParameter);
+
+            }*/
+
+        public DataTable doDuLieu()
+        {
+            kn.myConnect();
+            string lenh = "select * from DonHang_1";
+            SqlCommand cmd = kn.con.CreateCommand();
+            cmd.CommandText = lenh;
+
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            return dt;
+        }
+
+        public byte[] ImageToByteArray(Image img)
+        {
+            MemoryStream m = new MemoryStream();
+            img.Save(m, System.Drawing.Imaging.ImageFormat.Png);
+            return m.ToArray();
+        }
 
     }
 }

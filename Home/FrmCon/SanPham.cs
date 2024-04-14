@@ -22,7 +22,7 @@ namespace Home.FrmCon
         }
 
         XuLiDuLieu xl = new XuLiDuLieu();
-        public void addSanPham(DataTable dt)
+        private void addSanPham(DataTable dt)
         {
             foreach (DataRow row in dt.Rows)
             {
@@ -64,12 +64,6 @@ namespace Home.FrmCon
             string LoaiSP = cboLoaiSP.Text;
             string MaLoai = xl.xuLiMaLoai(LoaiSP);
             addSanPham(xl.doDuLieu(MaLoai));
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            OSanPham oSanPham = new OSanPham();
-            panelNoiDung.Controls.Add(oSanPham);
         }
 
         private void panelNoiDung_Paint(object sender, PaintEventArgs e)

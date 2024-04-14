@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DonHang));
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.btnTimKiem = new Guna.UI.WinForms.GunaCircleButton();
             this.txtTimKiem = new Guna.UI2.WinForms.Guna2TextBox();
             this.picBoxLoGO = new Guna.UI2.WinForms.Guna2PictureBox();
@@ -62,7 +61,6 @@
             // 
             this.guna2Panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.guna2Panel1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.guna2Panel1.Controls.Add(this.button1);
             this.guna2Panel1.Controls.Add(this.btnTimKiem);
             this.guna2Panel1.Controls.Add(this.txtTimKiem);
             this.guna2Panel1.Controls.Add(this.picBoxLoGO);
@@ -72,16 +70,6 @@
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(2050, 75);
             this.guna2Panel1.TabIndex = 1;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(622, 26);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(218, 40);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Thêm";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnTimKiem
             // 
@@ -450,7 +438,6 @@
         private Guna.UI.WinForms.GunaCircleButton btnTimKiem;
         private Guna.UI2.WinForms.Guna2Panel panelMuaHang;
         private System.Windows.Forms.FlowLayoutPanel panelNoiDung;
-        private System.Windows.Forms.Button button1;
         private Guna.UI2.WinForms.Guna2Panel panelCheckDieuKhoan;
         private Guna.UI2.WinForms.Guna2CustomCheckBox guna2CustomCheckBox1;
         private Guna.UI.WinForms.GunaAdvenceButton btnXoaAll;

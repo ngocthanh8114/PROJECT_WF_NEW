@@ -36,12 +36,21 @@ namespace Home.FrmCon.FrmHienThi
             frmThongBao.Show();
 
             // Them MaSP vao table DonHang_1
-            xl.Connection_CSDL();
+
+            //Lấy Giá
             string line = lblGia.Text.ToString();
             string[] arr = line.Split(' ');
-            string Gia = arr[1];
+            decimal Gia = decimal.Parse(arr[1]);
+            
+            string TenSP = lblTenSP.Text.ToString();
+            string MaSP = lblMaSP.Text.ToString();
+            int SL = (int)numSL.Value;
+            Image anh = picBoxSP.Image;
 
-            xl.DatHang(lblMaSP.Text, lblTenSP.Text, decimal.Parse(Gia), (int)numSL.Value);
+            xl.DatHang(MaSP, TenSP, Gia, SL, anh);
+            
+
+
         }
     }
 }
