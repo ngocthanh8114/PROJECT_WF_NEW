@@ -32,14 +32,12 @@
             this.picBoxSP = new Guna.UI2.WinForms.Guna2PictureBox();
             this.lblTenSP = new System.Windows.Forms.Label();
             this.lblGia = new System.Windows.Forms.Label();
-            this.lblSL = new System.Windows.Forms.Label();
             this.lblNCC = new System.Windows.Forms.Label();
             this.btnDatHang = new Guna.UI.WinForms.GunaAdvenceButton();
             this.numSL = new Guna.UI.WinForms.GunaNumeric();
             this.lblMaSP = new System.Windows.Forms.Label();
-            this.panelGia = new System.Windows.Forms.Panel();
+            this.lblSL = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxSP)).BeginInit();
-            this.panelGia.SuspendLayout();
             this.SuspendLayout();
             // 
             // picBoxSP
@@ -76,18 +74,6 @@
             this.lblGia.TabIndex = 2;
             this.lblGia.Text = "Giá: 81.775.637 VNĐ";
             this.lblGia.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lblSL
-            // 
-            this.lblSL.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblSL.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
-            this.lblSL.ForeColor = System.Drawing.Color.Black;
-            this.lblSL.Location = new System.Drawing.Point(0, 0);
-            this.lblSL.Name = "lblSL";
-            this.lblSL.Size = new System.Drawing.Size(91, 51);
-            this.lblSL.TabIndex = 3;
-            this.lblSL.Text = "50 cái";
-            this.lblSL.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // lblNCC
             // 
@@ -163,13 +149,16 @@
             this.lblMaSP.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.lblMaSP.Visible = false;
             // 
-            // panelGia
+            // lblSL
             // 
-            this.panelGia.Controls.Add(this.lblSL);
-            this.panelGia.Location = new System.Drawing.Point(153, 251);
-            this.panelGia.Name = "panelGia";
-            this.panelGia.Size = new System.Drawing.Size(91, 51);
-            this.panelGia.TabIndex = 8;
+            this.lblSL.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
+            this.lblSL.ForeColor = System.Drawing.Color.Black;
+            this.lblSL.Location = new System.Drawing.Point(156, 248);
+            this.lblSL.Name = "lblSL";
+            this.lblSL.Size = new System.Drawing.Size(91, 29);
+            this.lblSL.TabIndex = 8;
+            this.lblSL.Text = "50 cái";
+            this.lblSL.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // OSanPham
             // 
@@ -177,7 +166,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Controls.Add(this.panelGia);
+            this.Controls.Add(this.lblSL);
             this.Controls.Add(this.lblMaSP);
             this.Controls.Add(this.numSL);
             this.Controls.Add(this.btnDatHang);
@@ -188,7 +177,6 @@
             this.Name = "OSanPham";
             this.Size = new System.Drawing.Size(247, 351);
             ((System.ComponentModel.ISupportInitialize)(this.picBoxSP)).EndInit();
-            this.panelGia.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -198,11 +186,10 @@
         private Guna.UI2.WinForms.Guna2PictureBox picBoxSP;
         private System.Windows.Forms.Label lblTenSP;
         private System.Windows.Forms.Label lblGia;
-        private System.Windows.Forms.Label lblSL;
         private System.Windows.Forms.Label lblNCC;
         private Guna.UI.WinForms.GunaAdvenceButton btnDatHang;
         private Guna.UI.WinForms.GunaNumeric numSL;
         private System.Windows.Forms.Label lblMaSP;
-        private System.Windows.Forms.Panel panelGia;
+        private System.Windows.Forms.Label lblSL;
     }
 }

@@ -26,6 +26,7 @@ namespace Home.FrmCon.FrmHienThi
             numSL.Value = SL;
             picBoxSP.Image = anh;
             lblKhuyenMai.Text = gia.ToString() + " VNĐ";
+            
         }
         //-------------NgocThanh--------------------
 

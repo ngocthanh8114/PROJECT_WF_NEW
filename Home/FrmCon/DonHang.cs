@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using Home;
 using Home.FrmCon.FrmHienThi;
 using Home.FrmCon;
-using Home.TinhNang;
+using Home.DuLieu;
 
 namespace Home.FrmCon
 {
@@ -35,6 +35,7 @@ namespace Home.FrmCon
                 int SL = row.Field<int>("SoLuong");
                 byte[] b = row.Field<byte[]>("Anh");
                 Image anh = xl.ByteArrToImage(b);
+                string tenTaiKhoan = TaiKhoanDangNhap.tenTaiKhoan;
                 oDonHang.themDonHang(tenSP, gia, SL, anh);
                 panelNoiDung.Controls.Add(oDonHang);
                 oDonHang.BringToFront();

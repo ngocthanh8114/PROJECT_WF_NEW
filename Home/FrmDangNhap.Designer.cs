@@ -1,4 +1,4 @@
-﻿namespace DoAnCKWin
+﻿namespace Home
 {
     partial class FrmDangNhap
     {
@@ -84,12 +84,14 @@
             // 
             // btn_Thoat
             // 
+            this.btn_Thoat.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Thoat.Image = ((System.Drawing.Image)(resources.GetObject("btn_Thoat.Image")));
             this.btn_Thoat.ImageRotate = 0F;
-            this.btn_Thoat.Location = new System.Drawing.Point(491, 0);
+            this.btn_Thoat.Location = new System.Drawing.Point(494, 3);
             this.btn_Thoat.Name = "btn_Thoat";
             this.btn_Thoat.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.btn_Thoat.Size = new System.Drawing.Size(34, 35);
-            this.btn_Thoat.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btn_Thoat.Size = new System.Drawing.Size(31, 29);
+            this.btn_Thoat.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btn_Thoat.TabIndex = 40;
             this.btn_Thoat.TabStop = false;
             this.btn_Thoat.Click += new System.EventHandler(this.btn_Thoat_Click);

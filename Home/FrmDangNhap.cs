@@ -1,5 +1,6 @@
 ﻿using Home;
-using Home.TinhNang;
+using Home.DuLieu;
+using Home.FrmCon;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -9,22 +10,31 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
-namespace DoAnCKWin
+namespace Home
 {
     public partial class FrmDangNhap : Form
     {
+        XuLiDuLieu xl = new XuLiDuLieu();
         public FrmDangNhap()
         {
             InitializeComponent();
         }
-      
+        
+       
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
             XuLiDuLieu xl = new XuLiDuLieu();
             xl.Connection_CSDL();
             FrmHome frmHome = new FrmHome();
+            DataTable dt = xl.layThongTinTK(txtTaiKhoan.Text, txtMatKhau.Text);
+            DataRow row = dt.Rows[0]; 
+            TaiKhoanDangNhap.tenTaiKhoan = row["TenTaiKhoan"].ToString();
+            TaiKhoanDangNhap.tenNguoiDung = row["TenNguoiDung"].ToString();
+            TaiKhoanDangNhap.email = row["Email"].ToString();
             xl.DangNhap(txtTaiKhoan.Text, txtMatKhau.Text, frmHome);
+
         }
 
         private void txtTaiKhoan_KeyPress(object sender, KeyPressEventArgs e)

@@ -10,10 +10,13 @@ using System.Threading.Tasks;
 using System.Reflection.Emit;
 using System.Windows.Forms;
 using System.Security.Cryptography;
-using static Bunifu.UI.WinForms.BunifuPictureBox;
+using Home;
+using Home.FrmCon.FrmHienThi;
 
-namespace Home.TinhNang
+
+namespace Home.DuLieu
 {
+    
     internal class XuLiDuLieu
     {
         KetNoiCSDL kn = new KetNoiCSDL();
@@ -99,9 +102,13 @@ namespace Home.TinhNang
         public void DatHang(string MaSP, string TenSP, decimal Gia, int SoLuong, Image Anh)
         {
             kn.myConnect();
-            string sql = "INSERT INTO DonHang_1 (MaSP, TenSP, Gia, SoLuong, Anh) VALUES (@MaSP, @TenSP, @Gia, @SoLuong, @Anh)";
+            string sql = "INSERT INTO DonHang_1 (TenTaiKhoan, MaSP, TenSP, Gia, SoLuong, Anh) VALUES (@TenTaiKhoan, @MaSP, @TenSP, @Gia, @SoLuong, @Anh)";
             SqlCommand cmd = kn.con.CreateCommand();
             cmd.CommandText = sql;
+
+            SqlParameter sqlParameter0 = new SqlParameter("@TenTaiKhoan", SqlDbType.NChar, 10);
+            sqlParameter0.Value = TaiKhoanDangNhap.tenTaiKhoan;
+            cmd.Parameters.Add(sqlParameter0);
 
             SqlParameter sqlParameter1 = new SqlParameter("@MaSP", SqlDbType.NChar, 10);
             sqlParameter1.Value = MaSP;
@@ -127,6 +134,20 @@ namespace Home.TinhNang
 
         }
 
+        public DataTable layThongTinTK(string taikhoan, string matkhau)
+        {
+            string sql = "select * from TaiKhoan where TenTaiKhoan= @TenTK and MatKhau= @MatKhau";
+            SqlCommand command = new SqlCommand(sql, conn);
+            command.Parameters.AddWithValue("@TenTK", taikhoan);
+            command.Parameters.AddWithValue("@MatKhau", matkhau);
+
+            SqlDataAdapter da = new SqlDataAdapter(command);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            return dt;
+        }
+
+        
         public void DangNhap(string taikhoan, string matkhau, Form Home)
         {
             // Tạo và thực thi câu truy vấn

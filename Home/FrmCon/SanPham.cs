@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.IO;
-using Home.TinhNang;
+using Home.DuLieu;
 
 namespace Home.FrmCon
 {
@@ -51,7 +51,7 @@ namespace Home.FrmCon
                 string loaiSP = dr["LoaiSP"].ToString();
                 cboLoaiSP.Items.Add(loaiSP);
             }
-            cboLoaiSP.StartIndex = 0;
+            cboLoaiSP.StartIndex = 4;
         }
 
         private void cboLoaiSP_SelectedIndexChanged(object sender, EventArgs e)

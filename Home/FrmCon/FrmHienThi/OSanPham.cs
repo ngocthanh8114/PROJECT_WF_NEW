@@ -1,5 +1,5 @@
 ﻿using Home.FrmCon.FrmHienThi;
-using Home.TinhNang;
+using Home.DuLieu;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;

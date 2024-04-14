@@ -9,10 +9,12 @@ using System.Threading.Tasks;
 using System.Drawing;
 using System.Text.RegularExpressions;
 
-namespace Home.TinhNang
+namespace Home.DuLieu
 {
+    
     internal class KetNoiCSDL
     {
+        
         private static string sqlCon = "Data Source=.;Initial Catalog=BanXeMay;User ID=sa;Password=123";
         public SqlConnection con = new SqlConnection(sqlCon);
 

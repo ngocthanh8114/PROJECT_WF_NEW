@@ -31,19 +31,19 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ODonHang));
             this.panelTong = new Guna.UI2.WinForms.Guna2Panel();
             this.panelGiua = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            this.panelTrai = new Guna.UI2.WinForms.Guna2Panel();
-            this.panelPhai = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Shapes1 = new Guna.UI2.WinForms.Guna2Shapes();
             this.btnXoa = new Guna.UI.WinForms.GunaAdvenceButton();
             this.lblKhuyenMai = new System.Windows.Forms.Label();
             this.lblSoLuong = new System.Windows.Forms.Label();
             this.numSL = new Guna.UI.WinForms.GunaNumeric();
             this.lblGia = new System.Windows.Forms.Label();
             this.lblTenSP = new System.Windows.Forms.Label();
-            this.guna2Shapes1 = new Guna.UI2.WinForms.Guna2Shapes();
-            this.picBoxSP = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.guna2CustomCheckBox1 = new Guna.UI2.WinForms.Guna2CustomCheckBox();
+            this.picBoxSP = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.panelTrai = new Guna.UI2.WinForms.Guna2Panel();
+            this.panelPhai = new Guna.UI2.WinForms.Guna2Panel();
             this.panelTong.SuspendLayout();
             this.panelGiua.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
@@ -74,37 +74,6 @@
             this.panelGiua.Size = new System.Drawing.Size(874, 185);
             this.panelGiua.TabIndex = 6;
             // 
-            // guna2CustomGradientPanel1
-            // 
-            this.guna2CustomGradientPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2CustomGradientPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.guna2CustomGradientPanel1.FillColor2 = System.Drawing.Color.Tomato;
-            this.guna2CustomGradientPanel1.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.guna2CustomGradientPanel1.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(0, 0);
-            this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
-            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(874, 35);
-            this.guna2CustomGradientPanel1.TabIndex = 27;
-            // 
-            // panelTrai
-            // 
-            this.panelTrai.BackColor = System.Drawing.SystemColors.Control;
-            this.panelTrai.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelTrai.Location = new System.Drawing.Point(0, 0);
-            this.panelTrai.Name = "panelTrai";
-            this.panelTrai.Size = new System.Drawing.Size(587, 185);
-            this.panelTrai.TabIndex = 4;
-            // 
-            // panelPhai
-            // 
-            this.panelPhai.BackColor = System.Drawing.SystemColors.Control;
-            this.panelPhai.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.panelPhai.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panelPhai.Location = new System.Drawing.Point(1461, 0);
-            this.panelPhai.Name = "panelPhai";
-            this.panelPhai.Size = new System.Drawing.Size(587, 185);
-            this.panelPhai.TabIndex = 5;
-            // 
             // guna2Panel1
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.Transparent;
@@ -120,6 +89,23 @@
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(577, 150);
             this.guna2Panel1.TabIndex = 36;
+            // 
+            // guna2Shapes1
+            // 
+            this.guna2Shapes1.BorderColor = System.Drawing.Color.Transparent;
+            this.guna2Shapes1.BorderThickness = 0;
+            this.guna2Shapes1.FillColor = System.Drawing.Color.Maroon;
+            this.guna2Shapes1.LineThickness = 1;
+            this.guna2Shapes1.Location = new System.Drawing.Point(151, 85);
+            this.guna2Shapes1.Name = "guna2Shapes1";
+            this.guna2Shapes1.PolygonSides = 2;
+            this.guna2Shapes1.PolygonSkip = 1;
+            this.guna2Shapes1.Rotate = 0F;
+            this.guna2Shapes1.Shape = Guna.UI2.WinForms.Enums.ShapeType.Line;
+            this.guna2Shapes1.Size = new System.Drawing.Size(262, 10);
+            this.guna2Shapes1.TabIndex = 42;
+            this.guna2Shapes1.Text = "guna2Shapes1";
+            this.guna2Shapes1.Zoom = 80;
             // 
             // btnXoa
             // 
@@ -158,12 +144,12 @@
             // 
             this.lblKhuyenMai.Font = new System.Drawing.Font("Segoe UI", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Strikeout))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblKhuyenMai.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblKhuyenMai.Location = new System.Drawing.Point(215, 87);
+            this.lblKhuyenMai.Location = new System.Drawing.Point(188, 90);
             this.lblKhuyenMai.Name = "lblKhuyenMai";
             this.lblKhuyenMai.Size = new System.Drawing.Size(203, 41);
             this.lblKhuyenMai.TabIndex = 40;
             this.lblKhuyenMai.Text = "81.775.637 VNĐ";
-            this.lblKhuyenMai.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblKhuyenMai.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // lblSoLuong
             // 
@@ -200,12 +186,12 @@
             // 
             this.lblGia.Font = new System.Drawing.Font("Segoe UI", 12.2F, System.Drawing.FontStyle.Bold);
             this.lblGia.ForeColor = System.Drawing.Color.Tomato;
-            this.lblGia.Location = new System.Drawing.Point(139, 49);
+            this.lblGia.Location = new System.Drawing.Point(122, 49);
             this.lblGia.Name = "lblGia";
-            this.lblGia.Size = new System.Drawing.Size(274, 41);
+            this.lblGia.Size = new System.Drawing.Size(269, 41);
             this.lblGia.TabIndex = 36;
             this.lblGia.Text = "Giá: 80.775.637 VNĐ";
-            this.lblGia.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblGia.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // lblTenSP
             // 
@@ -219,34 +205,17 @@
             this.lblTenSP.Text = "SH 150i";
             this.lblTenSP.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // guna2Shapes1
+            // guna2CustomGradientPanel1
             // 
-            this.guna2Shapes1.BorderColor = System.Drawing.Color.Transparent;
-            this.guna2Shapes1.BorderThickness = 0;
-            this.guna2Shapes1.FillColor = System.Drawing.Color.Maroon;
-            this.guna2Shapes1.LineThickness = 1;
-            this.guna2Shapes1.Location = new System.Drawing.Point(122, 85);
-            this.guna2Shapes1.Name = "guna2Shapes1";
-            this.guna2Shapes1.PolygonSides = 2;
-            this.guna2Shapes1.PolygonSkip = 1;
-            this.guna2Shapes1.Rotate = 0F;
-            this.guna2Shapes1.Shape = Guna.UI2.WinForms.Enums.ShapeType.Line;
-            this.guna2Shapes1.Size = new System.Drawing.Size(262, 10);
-            this.guna2Shapes1.TabIndex = 42;
-            this.guna2Shapes1.Text = "guna2Shapes1";
-            this.guna2Shapes1.Zoom = 80;
-            // 
-            // picBoxSP
-            // 
-            this.picBoxSP.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picBoxSP.Image = ((System.Drawing.Image)(resources.GetObject("picBoxSP.Image")));
-            this.picBoxSP.ImageRotate = 0F;
-            this.picBoxSP.Location = new System.Drawing.Point(104, 29);
-            this.picBoxSP.Name = "picBoxSP";
-            this.picBoxSP.Size = new System.Drawing.Size(190, 167);
-            this.picBoxSP.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picBoxSP.TabIndex = 28;
-            this.picBoxSP.TabStop = false;
+            this.guna2CustomGradientPanel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2CustomGradientPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.guna2CustomGradientPanel1.FillColor2 = System.Drawing.Color.Tomato;
+            this.guna2CustomGradientPanel1.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.guna2CustomGradientPanel1.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(0, 0);
+            this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
+            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(874, 35);
+            this.guna2CustomGradientPanel1.TabIndex = 27;
             // 
             // guna2CustomCheckBox1
             // 
@@ -264,6 +233,37 @@
             this.guna2CustomCheckBox1.UncheckedState.BorderRadius = 2;
             this.guna2CustomCheckBox1.UncheckedState.BorderThickness = 2;
             this.guna2CustomCheckBox1.UncheckedState.FillColor = System.Drawing.Color.White;
+            // 
+            // picBoxSP
+            // 
+            this.picBoxSP.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.picBoxSP.Image = ((System.Drawing.Image)(resources.GetObject("picBoxSP.Image")));
+            this.picBoxSP.ImageRotate = 0F;
+            this.picBoxSP.Location = new System.Drawing.Point(104, 29);
+            this.picBoxSP.Name = "picBoxSP";
+            this.picBoxSP.Size = new System.Drawing.Size(190, 167);
+            this.picBoxSP.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picBoxSP.TabIndex = 28;
+            this.picBoxSP.TabStop = false;
+            // 
+            // panelTrai
+            // 
+            this.panelTrai.BackColor = System.Drawing.SystemColors.Control;
+            this.panelTrai.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelTrai.Location = new System.Drawing.Point(0, 0);
+            this.panelTrai.Name = "panelTrai";
+            this.panelTrai.Size = new System.Drawing.Size(587, 185);
+            this.panelTrai.TabIndex = 4;
+            // 
+            // panelPhai
+            // 
+            this.panelPhai.BackColor = System.Drawing.SystemColors.Control;
+            this.panelPhai.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panelPhai.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panelPhai.Location = new System.Drawing.Point(1461, 0);
+            this.panelPhai.Name = "panelPhai";
+            this.panelPhai.Size = new System.Drawing.Size(587, 185);
+            this.panelPhai.TabIndex = 5;
             // 
             // ODonHang
             // 

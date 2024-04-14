@@ -104,6 +104,17 @@ namespace Home
             btnTaiKhoan.Checked = false;
         }
 
+        private void btnTaiKhoan_Click(object sender, EventArgs e)
+        {
+            TaiKhoan taiKhoan = new TaiKhoan();
+            addHienThi(taiKhoan);
+            btnSanPham.Checked = false;
+            btnGioiThieu.Checked = false;
+            btnDichVu.Checked = false;
+            btnDonHang.Checked = false;
+            btnTaiKhoan.Checked = true;
+        }
+
         /*thử commit*/
     }
 }
