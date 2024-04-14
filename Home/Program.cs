@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DoAnCKWin;
 using Home.FrmCon.FrmHienThi;
 
 namespace Home
@@ -17,7 +18,9 @@ namespace Home
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmHome());
+
+            Application.Run(new FrmDangNhap());
+            //Application.Run(new FrmHome());
         }
     }
 }

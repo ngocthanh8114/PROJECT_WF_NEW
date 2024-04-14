@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Home;
+using Home.TinhNang;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,7 +21,10 @@ namespace DoAnCKWin
       
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
-            
+            XuLiDuLieu xl = new XuLiDuLieu();
+            xl.Connection_CSDL();
+            FrmHome frmHome = new FrmHome();
+            xl.DangNhap(txtTaiKhoan.Text, txtMatKhau.Text, frmHome);
         }
 
         private void txtTaiKhoan_KeyPress(object sender, KeyPressEventArgs e)

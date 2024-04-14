@@ -126,6 +126,46 @@ namespace Home.TinhNang
             cmd.ExecuteNonQuery();
 
         }
+
+        public void DangNhap(string taikhoan, string matkhau, Form Home)
+        {
+            // Tạo và thực thi câu truy vấn
+            string sql = "select PhanQuyen from TaiKhoan where TenTaiKhoan= @TenTK and MatKhau= @MatKhau";
+            SqlCommand command = new SqlCommand(sql, conn);
+            command.Parameters.AddWithValue("@TenTK", taikhoan);
+            command.Parameters.AddWithValue("@MatKhau", matkhau);
+
+            // Thử thực hiện truy vấn
+            try
+            {
+                object result = command.ExecuteScalar();
+                if (result != null)
+                {
+                    string PhanQuyen = result.ToString();
+                    if (PhanQuyen == "user")
+                    {
+                        Home.ShowDialog();
+                    }
+                    else if (PhanQuyen == "admin")
+                    {
+                        //Chưa có formAdmin...làm sau
+                    }
+                }
+                else
+                {
+                    // Xử lý trường hợp không tìm thấy dữ liệu
+                    MessageBox.Show("Bạn đã nhập sai tài khoản hoặc mật khẩu!");
+                }
+
+                //RESET TB
+                taikhoan = matkhau = "";
+            }
+            catch (Exception ex)
+            {
+                // Xử lý exception (nếu có)
+                MessageBox.Show("Đã xảy ra lỗi: " + ex.Message);
+            }
+        }
         //------------------------------------------NgocThanh---------------------------------------------
 
         /*    public DataTable themSanPham(string MaLoai)
@@ -159,6 +199,8 @@ namespace Home.TinhNang
             img.Save(m, System.Drawing.Imaging.ImageFormat.Png);
             return m.ToArray();
         }
+
+
 
     }
 }
