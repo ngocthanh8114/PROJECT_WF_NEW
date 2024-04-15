@@ -43,13 +43,10 @@ namespace Home
             }
             catch
             {
-<<<<<<< HEAD
                 MessageBox.Show("Bạn đã nhập tài khoản hoặc mật khẩu sai");
-=======
                 lberror.Visible = true;
                 txtMatKhau.ResetText();
                 txtMatKhau.Focus();
->>>>>>> bec037ac245ed5c90afa40c8f7f7ad693736e960
             }
         }
 
