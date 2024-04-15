@@ -178,6 +178,30 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <Content Include="Font\Montserrat-Black.ttf" />
+    <Content Include="Font\Montserrat-BlackItalic.ttf" />
+    <Content Include="Font\Montserrat-Bold.ttf" />
+    <Content Include="Font\Montserrat-BoldItalic.ttf" />
+    <Content Include="Font\Montserrat-ExtraBold.ttf" />
+    <Content Include="Font\Montserrat-ExtraBoldItalic.ttf" />
+    <Content Include="Font\Montserrat-ExtraLight.ttf" />
+    <Content Include="Font\Montserrat-ExtraLightItalic.ttf" />
+    <Content Include="Font\Montserrat-Italic.ttf" />
+    <Content Include="Font\Montserrat-Light.ttf" />
+    <Content Include="Font\Montserrat-LightItalic.ttf" />
+    <Content Include="Font\Montserrat-Medium.ttf" />
+    <Content Include="Font\Montserrat-MediumItalic.ttf" />
+    <Content Include="Font\Montserrat-Regular.ttf" />
+    <Content Include="Font\Montserrat-SemiBold.ttf" />
+    <Content Include="Font\Montserrat-SemiBoldItalic.ttf" />
+    <Content Include="Font\Montserrat-Thin.ttf" />
+    <Content Include="Font\Montserrat-ThinItalic.ttf" />
+    <Content Include="Font\SVN-Neutraface 2.otf" />
+    <Content Include="Font\UTM FacebookB K&amp;T.ttf" />
+    <Content Include="Font\UTM FacebookK&amp;TBoldItalic.ttf" />
+    <Content Include="Font\UTM FacebookR K&amp;T.ttf" />
+    <Content Include="Font\UTM Neutra.ttf" />
+    <Content Include="Font\UTMFacebookK&amp;TItalic.ttf" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
