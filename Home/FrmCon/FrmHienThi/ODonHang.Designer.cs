@@ -139,6 +139,7 @@
             this.btnXoa.TabIndex = 41;
             this.btnXoa.Text = "Xoá";
             this.btnXoa.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // lblKhuyenMai
             // 
@@ -154,7 +155,7 @@
             // lblSoLuong
             // 
             this.lblSoLuong.BackColor = System.Drawing.Color.Transparent;
-            this.lblSoLuong.Font = new System.Drawing.Font("UVN Nhan", 10F);
+            this.lblSoLuong.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.lblSoLuong.ForeColor = System.Drawing.Color.Black;
             this.lblSoLuong.Location = new System.Drawing.Point(3, 49);
             this.lblSoLuong.Name = "lblSoLuong";

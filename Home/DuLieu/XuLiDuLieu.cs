@@ -105,7 +105,7 @@ namespace Home.DuLieu
             cmd.CommandText = sql;
             SqlParameter sqlParameter0 = new SqlParameter("@TenTaiKhoan", SqlDbType.NChar, 10);
             sqlParameter0.Value = TaiKhoanDangNhap.tenTaiKhoan;
-            cmd.Parameters.Add(sqlParameter0);
+             cmd.Parameters.Add(sqlParameter0);
 
             SqlParameter sqlParameter1 = new SqlParameter("@MaSP", SqlDbType.NChar, 10);
             sqlParameter1.Value = MaSP;
@@ -281,7 +281,15 @@ namespace Home.DuLieu
             return m.ToArray();
         }
 
-
+        public void xoaDonHang(string tenSP)
+        {
+            kn.myConnect();
+            string query = "delete  from DonHang_1 where tenSP = @TenSP and TenTaiKhoan = @TenTK";
+            SqlCommand sqlCmd = new SqlCommand(query, conn);
+            sqlCmd.Parameters.AddWithValue("TenSP", tenSP);
+            sqlCmd.Parameters.AddWithValue("TenTK", TaiKhoanDangNhap.tenTaiKhoan);
+            sqlCmd.ExecuteNonQuery();
+        }
 
     }
 }

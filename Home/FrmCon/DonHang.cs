@@ -45,6 +45,10 @@ namespace Home.FrmCon
 
         public void DonHang_Load(object sender, EventArgs e)
         {
+            if (panelNoiDung.Controls.Count > 0)
+            {
+                panelNoiDung.Controls.Clear();
+            }
             addDonHang(xl.doDuLieu());
         }
     }

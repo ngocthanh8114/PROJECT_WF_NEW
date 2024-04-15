@@ -21,7 +21,7 @@ namespace Home.FrmCon
             InitializeComponent();
         }
 
-        private void TaiKhoan_Load(object sender, EventArgs e)
+        public void TaiKhoan_Load(object sender, EventArgs e)
         {
             lblEmail.Text = TaiKhoanDangNhap.email;
             lblTenNguoiDung.Text = TaiKhoanDangNhap.tenNguoiDung;

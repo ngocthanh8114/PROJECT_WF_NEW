@@ -69,6 +69,7 @@
     <Compile Include="FrmCon\DonHang.Designer.cs">
       <DependentUpon>DonHang.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmCon\TongForm.cs" />
     <Compile Include="FrmCon\FrmHienThi\FrmMuaHang.cs">
       <SubType>Form</SubType>
     </Compile>

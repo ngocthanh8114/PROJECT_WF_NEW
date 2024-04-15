@@ -43,12 +43,14 @@ namespace Home.FrmCon
         }
 
 
-        private void SanPham_Load(object sender, EventArgs e)
+        public void SanPham_Load(object sender, EventArgs e)
         {
             DataTable dt = xl.themLoaiSP();
+            cboLoaiSP.Items.Clear();
             foreach (DataRow dr in dt.Rows) 
             {
                 string loaiSP = dr["LoaiSP"].ToString();
+
                 cboLoaiSP.Items.Add(loaiSP);
             }
             cboLoaiSP.StartIndex = 4;

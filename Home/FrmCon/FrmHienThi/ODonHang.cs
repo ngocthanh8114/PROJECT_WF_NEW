@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Home.DuLieu;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,8 @@ namespace Home.FrmCon.FrmHienThi
 {
     public partial class ODonHang : UserControl
     {
+        DonHang dh = new DonHang();
+        XuLiDuLieu xl = new XuLiDuLieu();
         public ODonHang()
         {
             InitializeComponent();
@@ -27,6 +30,13 @@ namespace Home.FrmCon.FrmHienThi
             picBoxSP.Image = anh;
             lblKhuyenMai.Text = gia.ToString() + " VNĐ";
             
+        }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            xl.Connection_CSDL();
+            xl.xoaDonHang(lblTenSP.Text);
+            TongForm.DonHang.DonHang_Load(TongForm.DonHang, e);
         }
         //-------------NgocThanh--------------------
 

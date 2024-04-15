@@ -14,7 +14,7 @@ namespace Home
 {
     public partial class FrmHome : Form
     {
-
+        
         public bool flagDangNhap = false;
         public FrmHome()
         {
@@ -64,6 +64,7 @@ namespace Home
             panelHienThi.Controls.Clear();
             panelHienThi.Controls.Add(uc);
             uc.BringToFront();
+
         }
 
         private void btnGioiThieu_Click(object sender, EventArgs e)
@@ -84,8 +85,8 @@ namespace Home
 
         private void btnSanPham_Click(object sender, EventArgs e)
         {
-            SanPham sp = new SanPham();
-            addHienThi(sp);
+            addHienThi(TongForm.SanPham);
+            TongForm.SanPham.SanPham_Load(TongForm.SanPham, e);
             btnSanPham.Checked = true;
             btnGioiThieu.Checked = false;
             btnDichVu.Checked = false;
@@ -95,8 +96,9 @@ namespace Home
 
         private void btnDonHang_Click(object sender, EventArgs e)
         {
-            DonHang donHang = new DonHang();
-            addHienThi(donHang);
+            
+            addHienThi(TongForm.DonHang);
+            TongForm.DonHang.DonHang_Load(TongForm.DonHang, e);
             btnSanPham.Checked = false;
             btnGioiThieu.Checked = false;
             btnDichVu.Checked = false;
@@ -106,8 +108,9 @@ namespace Home
 
         private void btnTaiKhoan_Click(object sender, EventArgs e)
         {
-            TaiKhoan taiKhoan = new TaiKhoan();
-            addHienThi(taiKhoan);
+            
+            addHienThi(TongForm.TaiKhoan);
+            TongForm.TaiKhoan.TaiKhoan_Load(TongForm.TaiKhoan, e);
             btnSanPham.Checked = false;
             btnGioiThieu.Checked = false;
             btnDichVu.Checked = false;

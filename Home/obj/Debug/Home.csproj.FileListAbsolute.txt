@@ -93,3 +93,43 @@ D:\STUDY\NAM_2_KI_2\LAP_TRINH_WINDOWS\DM_PROJECT\PROJECT_WF_NEW\Home\obj\Debug\H
 D:\STUDY\NAM_2_KI_2\LAP_TRINH_WINDOWS\DM_PROJECT\PROJECT_WF_NEW\Home\obj\Debug\Home.pdb
 D:\VS Code\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.TaiKhoan.resources
 D:\VS Code\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmDangNhap.resources
+D:\CODE C#\PROJECT\PROJECT_WF_NEW\Home\bin\Debug\Home.exe.config
+D:\CODE C#\PROJECT\PROJECT_WF_NEW\Home\bin\Debug\Home.exe
+D:\CODE C#\PROJECT\PROJECT_WF_NEW\Home\bin\Debug\Home.pdb
+D:\CODE C#\PROJECT\PROJECT_WF_NEW\Home\bin\Debug\Guna.UI2.dll
+D:\CODE C#\PROJECT\PROJECT_WF_NEW\Home\obj\Debug\Home.csproj.AssemblyReference.cache
+D:\CODE C#\PROJECT\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.DonHang.resources
+D:\CODE C#\PROJECT\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.FrmMuaHang.resources
+D:\CODE C#\PROJECT\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.FrmThongBao.resources
+D:\CODE C#\PROJECT\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.ODonHang.resources
+D:\CODE C#\PROJECT\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.TaiKhoan.resources
+D:\CODE C#\PROJECT\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmDangNhap.resources
+D:\CODE C#\PROJECT\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmHome.resources
+D:\CODE C#\PROJECT\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.OSanPham.resources
+D:\CODE C#\PROJECT\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.SanPham.resources
+D:\CODE C#\PROJECT\PROJECT_WF_NEW\Home\obj\Debug\Home.Properties.Resources.resources
+D:\CODE C#\PROJECT\PROJECT_WF_NEW\Home\obj\Debug\Home.csproj.GenerateResource.cache
+D:\CODE C#\PROJECT\PROJECT_WF_NEW\Home\obj\Debug\Home.csproj.CoreCompileInputs.cache
+D:\CODE C#\PROJECT\PROJECT_WF_NEW\Home\obj\Debug\Home.csproj.Up2Date
+D:\CODE C#\PROJECT\PROJECT_WF_NEW\Home\obj\Debug\Home.exe
+D:\CODE C#\PROJECT\PROJECT_WF_NEW\Home\obj\Debug\Home.pdb
+E:\Backup\DB\PROJECT_WF_NEW\Home\obj\Debug\Home.csproj.AssemblyReference.cache
+E:\Backup\DB\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.DonHang.resources
+E:\Backup\DB\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.FrmMuaHang.resources
+E:\Backup\DB\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.FrmThongBao.resources
+E:\Backup\DB\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.ODonHang.resources
+E:\Backup\DB\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.TaiKhoan.resources
+E:\Backup\DB\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmDangNhap.resources
+E:\Backup\DB\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmHome.resources
+E:\Backup\DB\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.OSanPham.resources
+E:\Backup\DB\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.SanPham.resources
+E:\Backup\DB\PROJECT_WF_NEW\Home\obj\Debug\Home.Properties.Resources.resources
+E:\Backup\DB\PROJECT_WF_NEW\Home\obj\Debug\Home.csproj.GenerateResource.cache
+E:\Backup\DB\PROJECT_WF_NEW\Home\obj\Debug\Home.csproj.CoreCompileInputs.cache
+E:\Backup\DB\PROJECT_WF_NEW\Home\obj\Debug\Home.exe
+E:\Backup\DB\PROJECT_WF_NEW\Home\obj\Debug\Home.pdb
+E:\Backup\DB\PROJECT_WF_NEW\Home\bin\Debug\Home.exe.config
+E:\Backup\DB\PROJECT_WF_NEW\Home\bin\Debug\Home.exe
+E:\Backup\DB\PROJECT_WF_NEW\Home\bin\Debug\Home.pdb
+E:\Backup\DB\PROJECT_WF_NEW\Home\bin\Debug\Guna.UI2.dll
+E:\Backup\DB\PROJECT_WF_NEW\Home\obj\Debug\Home.csproj.Up2Date
