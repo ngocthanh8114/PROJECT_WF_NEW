@@ -54,12 +54,12 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Montserrat", 10.2F, System.Drawing.FontStyle.Bold);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label1.Location = new System.Drawing.Point(6, 136);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(406, 24);
+            this.label1.Size = new System.Drawing.Size(402, 20);
             this.label1.TabIndex = 11;
             this.label1.Text = "SẢN PHẨM ĐÃ ĐƯỢC THÊM VÀO ĐƠN HÀNG";
             // 
@@ -97,7 +97,7 @@
             // timerTat
             // 
             this.timerTat.Enabled = true;
-            this.timerTat.Interval = 2000;
+            this.timerTat.Interval = 1000;
             this.timerTat.Tick += new System.EventHandler(this.timerTat_Tick);
             // 
             // guna2AnimateWindow1

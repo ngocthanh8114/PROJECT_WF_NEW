@@ -136,6 +136,19 @@ namespace Home.DuLieu
             cmd.ExecuteNonQuery();
         }
 
+        // Tính số lượng sp hiện có
+        public int soLuongSP(string MaSP)
+        {
+            string sql = "SELECT SoLuong FROM SanPham where MaSP = @MaSP";
+            SqlCommand cmd = kn.con.CreateCommand();
+            cmd.CommandText = sql;
+
+            SqlParameter sqlParameter1 = new SqlParameter("@MaSP", SqlDbType.NChar, 10);
+            sqlParameter1.Value = MaSP;
+            cmd.Parameters.Add(sqlParameter1);
+            return (int)cmd.ExecuteScalar();
+        }
+
         //------------------------------------------NgocThanh---------------------------------------------
         public void DatHang(string MaSP, string TenSP, decimal Gia, int SoLuong, Image Anh)
         {
@@ -155,8 +168,21 @@ namespace Home.DuLieu
                 cmd.Parameters.Add(sqlParameter1);
 
                 int SL = (int)cmd.ExecuteScalar() + SoLuong;
+                if(SL > soLuongSP(MaSP))
+                {
+                    
+                    FrmBaoLoi frmBaoLoi = new FrmBaoLoi();
+                    frmBaoLoi.hienThiLoi("Số lượng sản phẩm vượt quá mức cho phép");
+                    frmBaoLoi.Show();
+                    return;
+                }
+                else
+                {
+                    FrmThongBao frmThongBao = new FrmThongBao();
+                    frmThongBao.Show();
+                    themSL(SL, MaSP);
+                }    
                 
-                themSL(SL,MaSP);
             }   
             else 
             {
@@ -187,8 +213,20 @@ namespace Home.DuLieu
                 byte[] bytes = ImageToByteArray(Anh);
                 SqlParameter sqlParameter5 = new SqlParameter("@Anh", bytes);
                 cmd.Parameters.Add(sqlParameter5);
-
-                cmd.ExecuteNonQuery();
+                if (SoLuong > soLuongSP(MaSP))
+                {
+                    FrmBaoLoi frmBaoLoi = new FrmBaoLoi();
+                    frmBaoLoi.hienThiLoi("Số lượng sản phẩm vượt quá mức cho phép");
+                    frmBaoLoi.Show();
+                    return;
+                }
+                else 
+                {
+                    FrmThongBao frmThongBao = new FrmThongBao();
+                    frmThongBao.Show();
+                    cmd.ExecuteNonQuery();
+                }
+                
             }
             
 
@@ -253,9 +291,12 @@ namespace Home.DuLieu
         public DataTable doDuLieu()
         {
             kn.myConnect();
-            string lenh = "select * from DonHang_1";
+            string lenh = "select * from DonHang_1 where TenTaiKhoan= @TenTaiKhoan";
             SqlCommand cmd = kn.con.CreateCommand();
             cmd.CommandText = lenh;
+            SqlParameter sqlParameter0 = new SqlParameter("@TenTaiKhoan", SqlDbType.NChar, 10);
+            sqlParameter0.Value = TaiKhoanDangNhap.tenTaiKhoan;
+            cmd.Parameters.Add(sqlParameter0);
 
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
