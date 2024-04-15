@@ -264,9 +264,12 @@ namespace Home.DuLieu
         public DataTable doDuLieu()
         {
             kn.myConnect();
-            string lenh = "select * from DonHang_1";
+            string lenh = "select * from DonHang_1 where TenTaiKhoan= @TenTaiKhoan";
             SqlCommand cmd = kn.con.CreateCommand();
             cmd.CommandText = lenh;
+            SqlParameter sqlParameter0 = new SqlParameter("@TenTaiKhoan", SqlDbType.NChar, 10);
+            sqlParameter0.Value = TaiKhoanDangNhap.tenTaiKhoan;
+            cmd.Parameters.Add(sqlParameter0);
 
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
