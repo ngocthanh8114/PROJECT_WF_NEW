@@ -97,6 +97,7 @@
             this.btnTimKiem.OnHoverImage = null;
             this.btnTimKiem.OnPressedColor = System.Drawing.Color.Black;
             this.btnTimKiem.Size = new System.Drawing.Size(65, 55);
+
             this.btnTimKiem.TabIndex = 3;
             this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
             // 

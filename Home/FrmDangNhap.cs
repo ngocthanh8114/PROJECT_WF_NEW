@@ -25,13 +25,12 @@ namespace Home
        
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
-            XuLiDuLieu xl = new XuLiDuLieu();
-            xl.Connection_CSDL();
-
             try
             {
+                XuLiDuLieu xl = new XuLiDuLieu();
+                xl.Connection_CSDL();
                 FrmHome frmHome = new FrmHome();
-                
+
                 DataTable dt = xl.layThongTinTK(txtTaiKhoan.Text, txtMatKhau.Text);
                 DataRow row = dt.Rows[0];
                 TaiKhoanDangNhap.tenTaiKhoan = row["TenTaiKhoan"].ToString();
@@ -44,6 +43,7 @@ namespace Home
             }
             catch
             {
+                MessageBox.Show("Bạn đã nhập tài khoản hoặc mật khẩu sai");
                 lberror.Visible = true;
                 txtMatKhau.ResetText();
                 txtMatKhau.Focus();

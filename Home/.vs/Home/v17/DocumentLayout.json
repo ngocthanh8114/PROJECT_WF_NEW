@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "D:\\VS Code\\PROJECT_WF_NEW\\Home\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|D:\\VS Code\\PROJECT_WF_NEW\\Home\\frmcon\\donhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|d:\\vs code\\project_wf_new\\home\\frmcon\\donhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|solutionrelative:frmcon\\donhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -11,11 +11,11 @@
       "RelativeMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|solutionrelative:frmcon\\donhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|d:\\vs code\\project_wf_new\\home\\frmcon\\frmhienthi\\odonhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|D:\\VS Code\\PROJECT_WF_NEW\\Home\\frmcon\\frmhienthi\\odonhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|solutionrelative:frmcon\\frmhienthi\\odonhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|d:\\vs code\\project_wf_new\\home\\frmcon\\frmhienthi\\osanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|D:\\VS Code\\PROJECT_WF_NEW\\Home\\frmcon\\frmhienthi\\osanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|solutionrelative:frmcon\\frmhienthi\\osanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -48,7 +48,7 @@
               "RelativeDocumentMoniker": "FrmCon\\DonHang.cs",
               "ToolTip": "D:\\VS Code\\PROJECT_WF_NEW\\Home\\FrmCon\\DonHang.cs",
               "RelativeToolTip": "FrmCon\\DonHang.cs",
-              "ViewState": "AQIAAGMAAAAAAAAAAAD4v24AAAAnAAAA",
+              "ViewState": "AQIAAGMAAAAAAAAAAAD4v3MAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-15T20:33:30.757Z",
               "EditorCaption": ""
@@ -61,9 +61,8 @@
               "RelativeDocumentMoniker": "FrmCon\\DonHang.cs",
               "ToolTip": "D:\\VS Code\\PROJECT_WF_NEW\\Home\\FrmCon\\DonHang.cs [Design]",
               "RelativeToolTip": "FrmCon\\DonHang.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T20:33:25.362Z",
-              "EditorCaption": " [Design]"
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003302|",
+              "WhenOpened": "2024-04-15T20:33:25.362Z"
             },
             {
               "$type": "Document",
@@ -73,9 +72,8 @@
               "RelativeDocumentMoniker": "FrmCon\\FrmHienThi\\ODonHang.cs",
               "ToolTip": "D:\\VS Code\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmHienThi\\ODonHang.cs [Design]",
               "RelativeToolTip": "FrmCon\\FrmHienThi\\ODonHang.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T21:03:05.456Z",
-              "EditorCaption": " [Design]"
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003302|",
+              "WhenOpened": "2024-04-15T21:03:05.456Z"
             },
             {
               "$type": "Document",
@@ -85,9 +83,8 @@
               "RelativeDocumentMoniker": "FrmCon\\FrmHienThi\\OSanPham.cs",
               "ToolTip": "D:\\VS Code\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmHienThi\\OSanPham.cs [Design]",
               "RelativeToolTip": "FrmCon\\FrmHienThi\\OSanPham.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T21:03:03.042Z",
-              "EditorCaption": " [Design]"
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003302|",
+              "WhenOpened": "2024-04-15T21:03:03.042Z"
             }
           ]
         }

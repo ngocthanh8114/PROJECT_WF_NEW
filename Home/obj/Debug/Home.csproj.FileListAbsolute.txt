@@ -155,6 +155,9 @@ D:\STUDY\NAM_2_KI_2\LAP_TRINH_WINDOWS\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Hom
 D:\STUDY\NAM_2_KI_2\LAP_TRINH_WINDOWS\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.pdb
 D:\VS Code\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.FrmBaoLoi.resources
 D:\STUDY\NAM_2_KI_2\LAP_TRINH_WINDOWS\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.FrmBaoLoi.resources
+<<<<<<< HEAD
+D:\CODE C#\PROJECT\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.FrmBaoLoi.resources
+=======
 C:\Users\PC\OneDrive\Desktop\New folder (5)\PROJECT_WF_NEW\Home\bin\Debug\Home.exe.config
 C:\Users\PC\OneDrive\Desktop\New folder (5)\PROJECT_WF_NEW\Home\bin\Debug\Home.exe
 C:\Users\PC\OneDrive\Desktop\New folder (5)\PROJECT_WF_NEW\Home\bin\Debug\Home.pdb
@@ -177,11 +180,13 @@ C:\Users\PC\OneDrive\Desktop\New folder (5)\PROJECT_WF_NEW\Home\obj\Debug\Home.c
 C:\Users\PC\OneDrive\Desktop\New folder (5)\PROJECT_WF_NEW\Home\obj\Debug\Home.exe
 C:\Users\PC\OneDrive\Desktop\New folder (5)\PROJECT_WF_NEW\Home\obj\Debug\Home.pdb
 C:\Users\PC\OneDrive\Desktop\New folder (5)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmDangKi.resources
-<<<<<<< HEAD
 C:\Users\PC\OneDrive\Desktop\New folder (5)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmAdmin.resources
-=======
+>>>>>>> 76c161d5c57a5e67ad2b40b09bdc2de26ad138f4
 D:\STUDY\NAM_2_KI_2\LAP_TRINH_WINDOWS\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmDangKi.resources
 D:\VS Code\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmDangKi.resources
 >>>>>>> 111d2ef752b58e24e88868c85ab7dced4daa3791
 >>>>>>> bec037ac245ed5c90afa40c8f7f7ad693736e960
+D:\CODE C#\PROJECT\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmDangKi.resources
+D:\CODE C#\PROJECT\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmAdmin.resources
 D:\VS Code\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmAdmin.resources
+>>>>>>> a147e538e99437b53bb8f5fbedc47274cd4c0a7f
