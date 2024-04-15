@@ -101,5 +101,11 @@ namespace Home.FrmCon
             string[] str= lblGiaThanhToan.Text.Split(' ');
             lblGiaThanhToan.Text = (xl.tinhTongTien()).ToString() + " VNĐ";
         }
+
+        private void btnMua_Click(object sender, EventArgs e)
+        {
+            FrmMuaHang frmMuaHang = new FrmMuaHang();
+            frmMuaHang.ShowDialog();
+        }
     }
 }

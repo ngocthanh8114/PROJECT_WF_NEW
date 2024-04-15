@@ -187,30 +187,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Font\Montserrat-Black.ttf" />
-    <EmbeddedResource Include="Font\Montserrat-BlackItalic.ttf" />
-    <EmbeddedResource Include="Font\Montserrat-Bold.ttf" />
-    <EmbeddedResource Include="Font\Montserrat-BoldItalic.ttf" />
-    <EmbeddedResource Include="Font\Montserrat-ExtraBold.ttf" />
-    <EmbeddedResource Include="Font\Montserrat-ExtraBoldItalic.ttf" />
-    <EmbeddedResource Include="Font\Montserrat-ExtraLight.ttf" />
-    <EmbeddedResource Include="Font\Montserrat-ExtraLightItalic.ttf" />
-    <EmbeddedResource Include="Font\Montserrat-Italic.ttf" />
-    <EmbeddedResource Include="Font\Montserrat-Light.ttf" />
-    <EmbeddedResource Include="Font\Montserrat-LightItalic.ttf" />
-    <EmbeddedResource Include="Font\Montserrat-Medium.ttf" />
-    <EmbeddedResource Include="Font\Montserrat-MediumItalic.ttf" />
-    <EmbeddedResource Include="Font\Montserrat-Regular.ttf" />
-    <EmbeddedResource Include="Font\Montserrat-SemiBold.ttf" />
-    <EmbeddedResource Include="Font\Montserrat-SemiBoldItalic.ttf" />
-    <EmbeddedResource Include="Font\Montserrat-Thin.ttf" />
-    <EmbeddedResource Include="Font\Montserrat-ThinItalic.ttf" />
-    <EmbeddedResource Include="Font\SVN-Neutraface 2.otf" />
-    <EmbeddedResource Include="Font\UTM FacebookB K&amp;T.ttf" />
-    <EmbeddedResource Include="Font\UTM FacebookK&amp;TBoldItalic.ttf" />
-    <EmbeddedResource Include="Font\UTM FacebookR K&amp;T.ttf" />
-    <EmbeddedResource Include="Font\UTM Neutra.ttf" />
-    <EmbeddedResource Include="Font\UTMFacebookK&amp;TItalic.ttf" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

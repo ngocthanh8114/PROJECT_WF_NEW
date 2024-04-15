@@ -206,6 +206,7 @@
             this.btnMua.TabIndex = 36;
             this.btnMua.Text = "Mua hàng";
             this.btnMua.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnMua.Click += new System.EventHandler(this.btnMua_Click);
             // 
             // lblGiaThanhToan
             // 
