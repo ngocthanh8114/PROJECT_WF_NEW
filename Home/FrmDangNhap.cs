@@ -44,9 +44,6 @@ namespace Home
             {
                 MessageBox.Show("Bạn đã nhập tài khoản hoặc mật khẩu sai!");
             }
-
-            
-
         }
 
         private void txtTaiKhoan_KeyPress(object sender, KeyPressEventArgs e)

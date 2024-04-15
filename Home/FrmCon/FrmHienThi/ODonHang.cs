@@ -38,6 +38,11 @@ namespace Home.FrmCon.FrmHienThi
             xl.xoaDonHang(lblTenSP.Text);
             TongForm.DonHang.DonHang_Load(TongForm.DonHang, e);
         }
+
+        private void guna2CustomCheckBox1_Click(object sender, EventArgs e)
+        {
+
+        }
         //-------------NgocThanh--------------------
 
     }

@@ -210,12 +210,10 @@ namespace Home.DuLieu
         
         public void DangNhap(string taikhoan, string matkhau, Form Home)
         {
-            // Tạo và thực thi câu truy vấn
             string sql = "select PhanQuyen from TaiKhoan where TenTaiKhoan= @TenTK and MatKhau= @MatKhau";
             SqlCommand command = new SqlCommand(sql, conn);
             command.Parameters.AddWithValue("@TenTK", taikhoan);
             command.Parameters.AddWithValue("@MatKhau", matkhau);
-
             // Thử thực hiện truy vấn
             object result = command.ExecuteScalar();
             if (result != null)
@@ -228,10 +226,14 @@ namespace Home.DuLieu
                 else if (PhanQuyen == "admin")
                 {
                     //Chưa có formAdmin...làm sau
+
                 }
             }
-                //RESET TB
-                taikhoan = matkhau = "";
+
+            // Tạo và thực thi câu truy vấn
+           
+            //RESET TB
+            taikhoan = matkhau = "";
         
         }
         //------------------------------------------NgocThanh---------------------------------------------
@@ -261,6 +263,7 @@ namespace Home.DuLieu
             return dt;
         }
 
+
         public byte[] ImageToByteArray(Image img)
         {
             MemoryStream m = new MemoryStream();
@@ -276,6 +279,20 @@ namespace Home.DuLieu
             sqlCmd.Parameters.AddWithValue("TenSP", tenSP);
             sqlCmd.Parameters.AddWithValue("TenTK", TaiKhoanDangNhap.tenTaiKhoan);
             sqlCmd.ExecuteNonQuery();
+        }
+
+        public DataTable doDuLieu_TimKiem(string TenSP)
+        {
+            kn.myConnect();
+            string sql = "SELECT TenSP, Gia, SoLuong, Anh FROM DonHang_1 WHERE TenSP LIKE '%" + @TenSP + "%'";
+            SqlCommand cmd = kn.con.CreateCommand();
+            //cmd.Parameters.AddWithValue("TenSP", TenSP);
+            cmd.CommandText = sql;
+
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            return dt;
         }
 
     }

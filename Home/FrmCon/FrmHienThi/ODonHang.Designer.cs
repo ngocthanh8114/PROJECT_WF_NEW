@@ -234,6 +234,7 @@
             this.guna2CustomCheckBox1.UncheckedState.BorderRadius = 2;
             this.guna2CustomCheckBox1.UncheckedState.BorderThickness = 2;
             this.guna2CustomCheckBox1.UncheckedState.FillColor = System.Drawing.Color.White;
+            this.guna2CustomCheckBox1.Click += new System.EventHandler(this.guna2CustomCheckBox1_Click);
             // 
             // picBoxSP
             // 
