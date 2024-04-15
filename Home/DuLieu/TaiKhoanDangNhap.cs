@@ -11,5 +11,6 @@ namespace Home
         public static string tenTaiKhoan;
         public static string tenNguoiDung;
         public static string email;
+        public static string soDienThoai;
     }
 }

@@ -33,6 +33,7 @@ namespace Home
             TaiKhoanDangNhap.tenTaiKhoan = row["TenTaiKhoan"].ToString();
             TaiKhoanDangNhap.tenNguoiDung = row["TenNguoiDung"].ToString();
             TaiKhoanDangNhap.email = row["Email"].ToString();
+            TaiKhoanDangNhap.soDienThoai = row["SoDienThoai"].ToString() ;
             xl.DangNhap(txtTaiKhoan.Text, txtMatKhau.Text, frmHome);
 
         }

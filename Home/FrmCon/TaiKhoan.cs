@@ -26,6 +26,7 @@ namespace Home.FrmCon
             lblEmail.Text = TaiKhoanDangNhap.email;
             lblTenNguoiDung.Text = TaiKhoanDangNhap.tenNguoiDung;
             lblTenTaiKhoan.Text = TaiKhoanDangNhap.tenTaiKhoan;
+            lblSoDT.Text = TaiKhoanDangNhap.soDienThoai;
         }
     }
 }
