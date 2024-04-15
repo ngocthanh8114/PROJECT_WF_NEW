@@ -12,7 +12,8 @@ using System.Windows.Forms;
 using System.Security.Cryptography;
 using Home;
 using Home.FrmCon.FrmHienThi;
-
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
+using System.Windows.Media.Media3D;
 
 namespace Home.DuLieu
 {
@@ -335,6 +336,33 @@ namespace Home.DuLieu
             DataTable dt = new DataTable();
             da.Fill(dt);
             return dt;
+        }
+
+        public void DangKyTK(string TenTaiKhoan, string MatKhau, string TenNguoiDung, string Email, string SoDienThoai)
+        {
+            try
+            {
+                string PhanQuyen = "user";
+                kn.myConnect();
+                string sql = "INSERT INTO TaiKhoan (TenTaiKhoan, MatKhau, TenNguoiDung, Email, SoDienThoai, PhanQuyen) VALUES (@TenTaiKhoan, @MatKhau, @TenNguoiDung, @Email, @SoDienThoai, @PhanQuyen)";
+                SqlCommand cmd = new SqlCommand(sql, conn);
+                cmd.Parameters.AddWithValue("TenTaiKhoan", TenTaiKhoan);   
+                cmd.Parameters.AddWithValue("MatKhau", MatKhau);   
+                cmd.Parameters.AddWithValue("TenNguoiDung", TenNguoiDung);   
+                cmd.Parameters.AddWithValue("Email", Email);   
+                cmd.Parameters.AddWithValue("SoDienThoai", SoDienThoai);   
+                cmd.Parameters.AddWithValue("PhanQuyen", PhanQuyen);
+                cmd.ExecuteNonQuery();
+                FrmThongBao frmThongBao = new FrmThongBao();
+                frmThongBao.hienThiThongBao("Đăng ký tài khoản thành công");
+                frmThongBao.Show();
+            }
+            catch
+            {
+                FrmBaoLoi frmBaoLoi = new FrmBaoLoi();
+                frmBaoLoi.hienThiLoi("Vui lòng kiểm tra lại thông tin");
+                frmBaoLoi.Show();
+            }
         }
 
     }

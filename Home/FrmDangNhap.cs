@@ -93,5 +93,14 @@ namespace Home
         {
             Application.Exit();
         }
+
+        
+
+        private void linkLabel1_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            FrmDangKi frmDangKi = new FrmDangKi();
+            frmDangKi.Show();
+            this.Hide();
+        }
     }
 }
