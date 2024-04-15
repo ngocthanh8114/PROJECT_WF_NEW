@@ -1,6 +1,6 @@
 ﻿namespace Home
 {
-    partial class FrmHome
+    partial class FrmAdmin
     {
         /// <summary>
         /// Required designer variable.
@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmHome));
-            this.panelTong = new Guna.UI.WinForms.GunaPanel();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAdmin));
             this.panelHienThi = new Guna.UI.WinForms.GunaPanel();
+            this.panelTong = new Guna.UI.WinForms.GunaPanel();
             this.gunaPanel2 = new Guna.UI.WinForms.GunaPanel();
             this.btnTaiKhoan = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnDichVu = new Guna.UI.WinForms.GunaAdvenceButton();
@@ -50,6 +50,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
+            // panelHienThi
+            // 
+            this.panelHienThi.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelHienThi.Location = new System.Drawing.Point(0, 135);
+            this.panelHienThi.Name = "panelHienThi";
+            this.panelHienThi.Size = new System.Drawing.Size(1251, 916);
+            this.panelHienThi.TabIndex = 21;
+            // 
             // panelTong
             // 
             this.panelTong.Controls.Add(this.panelHienThi);
@@ -60,15 +68,7 @@
             this.panelTong.Location = new System.Drawing.Point(0, 0);
             this.panelTong.Name = "panelTong";
             this.panelTong.Size = new System.Drawing.Size(1251, 1051);
-            this.panelTong.TabIndex = 0;
-            // 
-            // panelHienThi
-            // 
-            this.panelHienThi.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelHienThi.Location = new System.Drawing.Point(0, 135);
-            this.panelHienThi.Name = "panelHienThi";
-            this.panelHienThi.Size = new System.Drawing.Size(1251, 916);
-            this.panelHienThi.TabIndex = 21;
+            this.panelTong.TabIndex = 1;
             // 
             // gunaPanel2
             // 
@@ -117,7 +117,6 @@
             this.btnTaiKhoan.TabIndex = 4;
             this.btnTaiKhoan.Text = "Tài khoản";
             this.btnTaiKhoan.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btnTaiKhoan.Click += new System.EventHandler(this.btnTaiKhoan_Click);
             // 
             // btnDichVu
             // 
@@ -149,7 +148,7 @@
             this.btnDichVu.OnPressedColor = System.Drawing.Color.Black;
             this.btnDichVu.Size = new System.Drawing.Size(250, 50);
             this.btnDichVu.TabIndex = 3;
-            this.btnDichVu.Text = "Dịch vụ";
+            this.btnDichVu.Text = "Báo cáo";
             this.btnDichVu.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // btnDonHang
@@ -182,9 +181,8 @@
             this.btnDonHang.OnPressedColor = System.Drawing.Color.Black;
             this.btnDonHang.Size = new System.Drawing.Size(250, 50);
             this.btnDonHang.TabIndex = 2;
-            this.btnDonHang.Text = "Đơn hàng";
+            this.btnDonHang.Text = "Hóa đơn";
             this.btnDonHang.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btnDonHang.Click += new System.EventHandler(this.btnDonHang_Click);
             // 
             // btnSanPham
             // 
@@ -216,9 +214,8 @@
             this.btnSanPham.OnPressedColor = System.Drawing.Color.Black;
             this.btnSanPham.Size = new System.Drawing.Size(250, 50);
             this.btnSanPham.TabIndex = 1;
-            this.btnSanPham.Text = "Sản phẩm";
+            this.btnSanPham.Text = "Khách hàng";
             this.btnSanPham.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btnSanPham.Click += new System.EventHandler(this.btnSanPham_Click);
             // 
             // btnGioiThieu
             // 
@@ -250,9 +247,8 @@
             this.btnGioiThieu.OnPressedColor = System.Drawing.Color.Black;
             this.btnGioiThieu.Size = new System.Drawing.Size(250, 50);
             this.btnGioiThieu.TabIndex = 0;
-            this.btnGioiThieu.Text = "Giới thiệu";
+            this.btnGioiThieu.Text = "Sản phẩm";
             this.btnGioiThieu.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btnGioiThieu.Click += new System.EventHandler(this.btnGioiThieu_Click);
             // 
             // panelMenu
             // 
@@ -275,7 +271,6 @@
             this.panelThanhTieuDe.Name = "panelThanhTieuDe";
             this.panelThanhTieuDe.Size = new System.Drawing.Size(1251, 40);
             this.panelThanhTieuDe.TabIndex = 13;
-            this.panelThanhTieuDe.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitleBar_MouseDown);
             // 
             // lblTieude
             // 
@@ -332,25 +327,22 @@
             this.btnDong.OnPressedColor = System.Drawing.Color.Black;
             this.btnDong.Size = new System.Drawing.Size(40, 40);
             this.btnDong.TabIndex = 13;
-            this.btnDong.Click += new System.EventHandler(this.btnClose_Click);
+            this.btnDong.Click += new System.EventHandler(this.btnDong_Click);
             // 
             // guna2AnimateWindow1
             // 
             this.guna2AnimateWindow1.AnimationType = Guna.UI2.WinForms.Guna2AnimateWindow.AnimateWindowType.AW_VER_NEGATIVE;
-            this.guna2AnimateWindow1.TargetForm = this;
             // 
-            // FrmHome
+            // FrmAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1251, 1051);
             this.Controls.Add(this.panelTong);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "FrmHome";
-            this.Text = "Home";
+            this.Name = "FrmAdmin";
+            this.Text = "FrmAdmin";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.Home_Load);
             this.panelTong.ResumeLayout(false);
             this.gunaPanel2.ResumeLayout(false);
             this.panelThanhTieuDe.ResumeLayout(false);
@@ -361,19 +353,19 @@
 
         #endregion
 
+        private Guna.UI.WinForms.GunaPanel panelHienThi;
         private Guna.UI.WinForms.GunaPanel panelTong;
         private Guna.UI.WinForms.GunaPanel gunaPanel2;
+        private Guna.UI.WinForms.GunaAdvenceButton btnTaiKhoan;
         private Guna.UI.WinForms.GunaAdvenceButton btnDichVu;
         private Guna.UI.WinForms.GunaAdvenceButton btnDonHang;
-        private Guna.UI.WinForms.GunaAdvenceButton btnGioiThieu;
-        private Guna.UI2.WinForms.Guna2AnimateWindow guna2AnimateWindow1;
-        private Guna.UI.WinForms.GunaAdvenceButton btnTaiKhoan;
         private Guna.UI.WinForms.GunaAdvenceButton btnSanPham;
+        private Guna.UI.WinForms.GunaAdvenceButton btnGioiThieu;
         private Guna.UI.WinForms.GunaPanel panelMenu;
         private Guna.UI.WinForms.GunaPanel panelThanhTieuDe;
         private Guna.UI.WinForms.GunaLabel lblTieude;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI.WinForms.GunaAdvenceButton btnDong;
-        private Guna.UI.WinForms.GunaPanel panelHienThi;
+        private Guna.UI2.WinForms.Guna2AnimateWindow guna2AnimateWindow1;
     }
 }
