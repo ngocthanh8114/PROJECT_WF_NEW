@@ -11,6 +11,7 @@ using Home;
 using Home.FrmCon.FrmHienThi;
 using Home.FrmCon;
 using Home.DuLieu;
+using Microsoft.VisualBasic;
 
 namespace Home.FrmCon
 {
@@ -51,6 +52,8 @@ namespace Home.FrmCon
             }
             addDonHang(xl.doDuLieu());
             btnMua.Enabled = false;
+            xl.resetTongTien();
+            loadGiaTien();
         }
 
         private void cbDieuKhoan_Click(object sender, EventArgs e)
@@ -80,11 +83,23 @@ namespace Home.FrmCon
                 }
                 else
                 {
-                    MessageBox.Show("Không tìm thấy tên sản phẩm " + txtTimKiem.Text);
+                    FrmBaoLoi frmBaoLoi = new FrmBaoLoi();
+                    frmBaoLoi.hienThiLoi("Không tìm thấy tên sản phẩm " + txtTimKiem.Text);
+                    frmBaoLoi.Show();
 
                 }
                 txtTimKiem.Text = "";
             }
+        }
+        decimal tongTien = 0;
+        int tongSP = 0;
+        // Load giá tiền
+        public void loadGiaTien()
+        {
+            lblTongTien.Text = xl.tinhTongTien().ToString() + " VNĐ";
+            lblTongSP.Text = xl.tinhSP().ToString() + " sản phẩm";
+            string[] str= lblGiaThanhToan.Text.Split(' ');
+            lblGiaThanhToan.Text = (xl.tinhTongTien()).ToString() + " VNĐ";
         }
     }
 }

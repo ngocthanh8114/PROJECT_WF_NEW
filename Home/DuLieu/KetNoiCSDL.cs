@@ -8,19 +8,20 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Drawing;
 using System.Text.RegularExpressions;
-
+using Microsoft.VisualBasic.ApplicationServices;
+using System.Windows.Markup;
+using System.Windows.Media;
 namespace Home.DuLieu
 {
-    
     internal class KetNoiCSDL
     {
-        
-        private static string sqlCon = "Data Source=LAPTOP-IGR3NG0G\\SQLEXPRESS;Initial Catalog=BanXeMay;Integrated Security=True;Encrypt=False";
+
+        private static string sqlCon = "Data Source=.;Initial Catalog=BanXeMay;User ID=sa;Password=123";
+
         public SqlConnection con = new SqlConnection(sqlCon);
 
+        string strconn = "Data Source=.;Initial Catalog=BanXeMay;User ID=sa;Password=123";
 
-        //---------------------------------NgocThanh-------------------------------------
-        string strconn = "Data Source=LAPTOP-IGR3NG0G\\SQLEXPRESS;Initial Catalog=BanXeMay;Integrated Security=True;Encrypt=False";
         SqlDataAdapter da = null;
         SqlConnection conn = null;
         SqlCommand cmd = null;

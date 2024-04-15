@@ -177,4 +177,10 @@ C:\Users\PC\OneDrive\Desktop\New folder (5)\PROJECT_WF_NEW\Home\obj\Debug\Home.c
 C:\Users\PC\OneDrive\Desktop\New folder (5)\PROJECT_WF_NEW\Home\obj\Debug\Home.exe
 C:\Users\PC\OneDrive\Desktop\New folder (5)\PROJECT_WF_NEW\Home\obj\Debug\Home.pdb
 C:\Users\PC\OneDrive\Desktop\New folder (5)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmDangKi.resources
+<<<<<<< HEAD
 C:\Users\PC\OneDrive\Desktop\New folder (5)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmAdmin.resources
+=======
+D:\STUDY\NAM_2_KI_2\LAP_TRINH_WINDOWS\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmDangKi.resources
+D:\VS Code\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmDangKi.resources
+>>>>>>> 111d2ef752b58e24e88868c85ab7dced4daa3791
+>>>>>>> bec037ac245ed5c90afa40c8f7f7ad693736e960

@@ -38,5 +38,10 @@ namespace Home.FrmCon.FrmHienThi
         {
             this.Close();
         }
+
+        public void hienThiThongBao(string loi)
+        {
+            label1.Text = loi;
+        }
     }
 }
