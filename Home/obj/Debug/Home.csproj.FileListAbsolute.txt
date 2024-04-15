@@ -155,4 +155,33 @@ D:\STUDY\NAM_2_KI_2\LAP_TRINH_WINDOWS\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Hom
 D:\STUDY\NAM_2_KI_2\LAP_TRINH_WINDOWS\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.pdb
 D:\VS Code\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.FrmBaoLoi.resources
 D:\STUDY\NAM_2_KI_2\LAP_TRINH_WINDOWS\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.FrmBaoLoi.resources
+<<<<<<< HEAD
 D:\CODE C#\PROJECT\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.FrmBaoLoi.resources
+=======
+C:\Users\PC\OneDrive\Desktop\New folder (5)\PROJECT_WF_NEW\Home\bin\Debug\Home.exe.config
+C:\Users\PC\OneDrive\Desktop\New folder (5)\PROJECT_WF_NEW\Home\bin\Debug\Home.exe
+C:\Users\PC\OneDrive\Desktop\New folder (5)\PROJECT_WF_NEW\Home\bin\Debug\Home.pdb
+C:\Users\PC\OneDrive\Desktop\New folder (5)\PROJECT_WF_NEW\Home\bin\Debug\Guna.UI2.dll
+C:\Users\PC\OneDrive\Desktop\New folder (5)\PROJECT_WF_NEW\Home\obj\Debug\Home.csproj.AssemblyReference.cache
+C:\Users\PC\OneDrive\Desktop\New folder (5)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.DonHang.resources
+C:\Users\PC\OneDrive\Desktop\New folder (5)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.FrmBaoLoi.resources
+C:\Users\PC\OneDrive\Desktop\New folder (5)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.FrmMuaHang.resources
+C:\Users\PC\OneDrive\Desktop\New folder (5)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.FrmThongBao.resources
+C:\Users\PC\OneDrive\Desktop\New folder (5)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.ODonHang.resources
+C:\Users\PC\OneDrive\Desktop\New folder (5)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.TaiKhoan.resources
+C:\Users\PC\OneDrive\Desktop\New folder (5)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmDangNhap.resources
+C:\Users\PC\OneDrive\Desktop\New folder (5)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmHome.resources
+C:\Users\PC\OneDrive\Desktop\New folder (5)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.OSanPham.resources
+C:\Users\PC\OneDrive\Desktop\New folder (5)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.SanPham.resources
+C:\Users\PC\OneDrive\Desktop\New folder (5)\PROJECT_WF_NEW\Home\obj\Debug\Home.Properties.Resources.resources
+C:\Users\PC\OneDrive\Desktop\New folder (5)\PROJECT_WF_NEW\Home\obj\Debug\Home.csproj.GenerateResource.cache
+C:\Users\PC\OneDrive\Desktop\New folder (5)\PROJECT_WF_NEW\Home\obj\Debug\Home.csproj.CoreCompileInputs.cache
+C:\Users\PC\OneDrive\Desktop\New folder (5)\PROJECT_WF_NEW\Home\obj\Debug\Home.csproj.Up2Date
+C:\Users\PC\OneDrive\Desktop\New folder (5)\PROJECT_WF_NEW\Home\obj\Debug\Home.exe
+C:\Users\PC\OneDrive\Desktop\New folder (5)\PROJECT_WF_NEW\Home\obj\Debug\Home.pdb
+C:\Users\PC\OneDrive\Desktop\New folder (5)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmDangKi.resources
+D:\STUDY\NAM_2_KI_2\LAP_TRINH_WINDOWS\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmDangKi.resources
+D:\VS Code\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmDangKi.resources
+>>>>>>> 111d2ef752b58e24e88868c85ab7dced4daa3791
+>>>>>>> bec037ac245ed5c90afa40c8f7f7ad693736e960
+D:\CODE C#\PROJECT\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmDangKi.resources

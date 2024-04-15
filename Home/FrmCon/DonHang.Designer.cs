@@ -36,9 +36,6 @@
             this.lblTen = new System.Windows.Forms.Label();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.panelMuaHang = new Guna.UI2.WinForms.Guna2Panel();
-            this.lblKhuyenMai = new System.Windows.Forms.Label();
-            this.lblTongSP = new System.Windows.Forms.Label();
-            this.lblTongTien = new System.Windows.Forms.Label();
             this.btnMua = new Guna.UI.WinForms.GunaAdvenceButton();
             this.lblGiaThanhToan = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -50,11 +47,16 @@
             this.label1 = new System.Windows.Forms.Label();
             this.cbDieuKhoan = new Guna.UI2.WinForms.Guna2CustomCheckBox();
             this.btnXoaAll = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.panelGia = new Guna.UI2.WinForms.Guna2Panel();
+            this.lblKhuyenMai = new System.Windows.Forms.Label();
+            this.lblTongSP = new System.Windows.Forms.Label();
+            this.lblTongTien = new System.Windows.Forms.Label();
             this.panelNoiDung = new System.Windows.Forms.FlowLayoutPanel();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxLoGO)).BeginInit();
             this.panelMuaHang.SuspendLayout();
             this.panelCheckDieuKhoan.SuspendLayout();
+            this.panelGia.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2Panel1
@@ -157,9 +159,6 @@
             // panelMuaHang
             // 
             this.panelMuaHang.BackColor = System.Drawing.Color.White;
-            this.panelMuaHang.Controls.Add(this.lblKhuyenMai);
-            this.panelMuaHang.Controls.Add(this.lblTongSP);
-            this.panelMuaHang.Controls.Add(this.lblTongTien);
             this.panelMuaHang.Controls.Add(this.btnMua);
             this.panelMuaHang.Controls.Add(this.lblGiaThanhToan);
             this.panelMuaHang.Controls.Add(this.label4);
@@ -169,44 +168,12 @@
             this.panelMuaHang.Controls.Add(this.guna2Panel5);
             this.panelMuaHang.Controls.Add(this.panelCheckDieuKhoan);
             this.panelMuaHang.Controls.Add(this.btnXoaAll);
+            this.panelMuaHang.Controls.Add(this.panelGia);
             this.panelMuaHang.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panelMuaHang.Location = new System.Drawing.Point(0, 716);
             this.panelMuaHang.Name = "panelMuaHang";
             this.panelMuaHang.Size = new System.Drawing.Size(2050, 172);
             this.panelMuaHang.TabIndex = 3;
-            // 
-            // lblKhuyenMai
-            // 
-            this.lblKhuyenMai.AutoSize = true;
-            this.lblKhuyenMai.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblKhuyenMai.ForeColor = System.Drawing.Color.DimGray;
-            this.lblKhuyenMai.Location = new System.Drawing.Point(905, 133);
-            this.lblKhuyenMai.Name = "lblKhuyenMai";
-            this.lblKhuyenMai.Size = new System.Drawing.Size(131, 25);
-            this.lblKhuyenMai.TabIndex = 39;
-            this.lblKhuyenMai.Text = "1.064.363 VNĐ";
-            // 
-            // lblTongSP
-            // 
-            this.lblTongSP.AutoSize = true;
-            this.lblTongSP.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTongSP.ForeColor = System.Drawing.Color.DimGray;
-            this.lblTongSP.Location = new System.Drawing.Point(930, 101);
-            this.lblTongSP.Name = "lblTongSP";
-            this.lblTongSP.Size = new System.Drawing.Size(106, 25);
-            this.lblTongSP.TabIndex = 38;
-            this.lblTongSP.Text = "3 sản phẩm";
-            // 
-            // lblTongTien
-            // 
-            this.lblTongTien.AutoSize = true;
-            this.lblTongTien.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTongTien.ForeColor = System.Drawing.Color.Black;
-            this.lblTongTien.Location = new System.Drawing.Point(895, 69);
-            this.lblTongTien.Name = "lblTongTien";
-            this.lblTongTien.Size = new System.Drawing.Size(141, 25);
-            this.lblTongTien.TabIndex = 37;
-            this.lblTongTien.Text = "81.840.000 VNĐ";
             // 
             // btnMua
             // 
@@ -227,7 +194,7 @@
             this.btnMua.Image = null;
             this.btnMua.ImageSize = new System.Drawing.Size(20, 20);
             this.btnMua.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnMua.Location = new System.Drawing.Point(1122, 116);
+            this.btnMua.Location = new System.Drawing.Point(1189, 116);
             this.btnMua.Name = "btnMua";
             this.btnMua.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.btnMua.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -249,8 +216,8 @@
             this.lblGiaThanhToan.Name = "lblGiaThanhToan";
             this.lblGiaThanhToan.Size = new System.Drawing.Size(265, 41);
             this.lblGiaThanhToan.TabIndex = 31;
-            this.lblGiaThanhToan.Text = "80.775.637 VNĐ";
-            this.lblGiaThanhToan.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblGiaThanhToan.Text = "0 VNĐ";
+            this.lblGiaThanhToan.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label4
             // 
@@ -399,6 +366,52 @@
             this.btnXoaAll.Text = "Xóa tất cả";
             this.btnXoaAll.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // panelGia
+            // 
+            this.panelGia.Controls.Add(this.lblKhuyenMai);
+            this.panelGia.Controls.Add(this.lblTongSP);
+            this.panelGia.Controls.Add(this.lblTongTien);
+            this.panelGia.Location = new System.Drawing.Point(846, 54);
+            this.panelGia.Name = "panelGia";
+            this.panelGia.Size = new System.Drawing.Size(270, 118);
+            this.panelGia.TabIndex = 40;
+            // 
+            // lblKhuyenMai
+            // 
+            this.lblKhuyenMai.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblKhuyenMai.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblKhuyenMai.ForeColor = System.Drawing.Color.DimGray;
+            this.lblKhuyenMai.Location = new System.Drawing.Point(0, 72);
+            this.lblKhuyenMai.Name = "lblKhuyenMai";
+            this.lblKhuyenMai.Size = new System.Drawing.Size(270, 32);
+            this.lblKhuyenMai.TabIndex = 42;
+            this.lblKhuyenMai.Text = "0 VNĐ";
+            this.lblKhuyenMai.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // lblTongSP
+            // 
+            this.lblTongSP.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblTongSP.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTongSP.ForeColor = System.Drawing.Color.DimGray;
+            this.lblTongSP.Location = new System.Drawing.Point(0, 40);
+            this.lblTongSP.Name = "lblTongSP";
+            this.lblTongSP.Size = new System.Drawing.Size(270, 32);
+            this.lblTongSP.TabIndex = 41;
+            this.lblTongSP.Text = "0 sản phẩm";
+            this.lblTongSP.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // lblTongTien
+            // 
+            this.lblTongTien.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblTongTien.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTongTien.ForeColor = System.Drawing.Color.Black;
+            this.lblTongTien.Location = new System.Drawing.Point(0, 0);
+            this.lblTongTien.Name = "lblTongTien";
+            this.lblTongTien.Size = new System.Drawing.Size(270, 40);
+            this.lblTongTien.TabIndex = 40;
+            this.lblTongTien.Text = "0 VNĐ";
+            this.lblTongTien.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // panelNoiDung
             // 
             this.panelNoiDung.AutoScroll = true;
@@ -427,6 +440,7 @@
             this.panelMuaHang.PerformLayout();
             this.panelCheckDieuKhoan.ResumeLayout(false);
             this.panelCheckDieuKhoan.PerformLayout();
+            this.panelGia.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -451,9 +465,10 @@
         private System.Windows.Forms.Label label2;
         private Guna.UI.WinForms.GunaAdvenceButton btnThemAll;
         private System.Windows.Forms.Label lblGiaThanhToan;
+        private Guna.UI.WinForms.GunaAdvenceButton btnMua;
+        private Guna.UI2.WinForms.Guna2Panel panelGia;
         private System.Windows.Forms.Label lblKhuyenMai;
         private System.Windows.Forms.Label lblTongSP;
         private System.Windows.Forms.Label lblTongTien;
-        private Guna.UI.WinForms.GunaAdvenceButton btnMua;
     }
 }

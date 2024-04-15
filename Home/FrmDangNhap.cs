@@ -38,10 +38,18 @@ namespace Home
                 TaiKhoanDangNhap.email = row["Email"].ToString();
                 TaiKhoanDangNhap.soDienThoai = row["SoDienThoai"].ToString();
                 xl.DangNhap(txtTaiKhoan.Text, txtMatKhau.Text, frmHome);
+                this.Hide();
+                
             }
             catch
             {
+<<<<<<< HEAD
                 MessageBox.Show("Bạn đã nhập tài khoản hoặc mật khẩu sai");
+=======
+                lberror.Visible = true;
+                txtMatKhau.ResetText();
+                txtMatKhau.Focus();
+>>>>>>> bec037ac245ed5c90afa40c8f7f7ad693736e960
             }
         }
 
@@ -87,6 +95,15 @@ namespace Home
         private void btn_Thoat_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        
+
+        private void linkLabel1_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            FrmDangKi frmDangKi = new FrmDangKi();
+            frmDangKi.Show();
+            this.Hide();
         }
     }
 }

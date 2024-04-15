@@ -40,7 +40,8 @@
             this.lblGia = new System.Windows.Forms.Label();
             this.lblTenSP = new System.Windows.Forms.Label();
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            this.guna2CustomCheckBox1 = new Guna.UI2.WinForms.Guna2CustomCheckBox();
+            this.cbDonHang = new Guna.UI2.WinForms.Guna2CustomCheckBox();
+            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.picBoxSP = new Guna.UI2.WinForms.Guna2PictureBox();
             this.panelTrai = new Guna.UI2.WinForms.Guna2Panel();
             this.panelPhai = new Guna.UI2.WinForms.Guna2Panel();
@@ -58,7 +59,7 @@
             this.panelTong.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelTong.Location = new System.Drawing.Point(0, 0);
             this.panelTong.Name = "panelTong";
-            this.panelTong.Size = new System.Drawing.Size(2048, 185);
+            this.panelTong.Size = new System.Drawing.Size(2048, 202);
             this.panelTong.TabIndex = 0;
             // 
             // panelGiua
@@ -66,12 +67,13 @@
             this.panelGiua.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.panelGiua.Controls.Add(this.guna2Panel1);
             this.panelGiua.Controls.Add(this.guna2CustomGradientPanel1);
-            this.panelGiua.Controls.Add(this.guna2CustomCheckBox1);
+            this.panelGiua.Controls.Add(this.cbDonHang);
+            this.panelGiua.Controls.Add(this.guna2Panel2);
             this.panelGiua.Controls.Add(this.picBoxSP);
             this.panelGiua.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelGiua.Location = new System.Drawing.Point(587, 0);
             this.panelGiua.Name = "panelGiua";
-            this.panelGiua.Size = new System.Drawing.Size(874, 185);
+            this.panelGiua.Size = new System.Drawing.Size(874, 202);
             this.panelGiua.TabIndex = 6;
             // 
             // guna2Panel1
@@ -87,7 +89,7 @@
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Right;
             this.guna2Panel1.Location = new System.Drawing.Point(297, 35);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(577, 150);
+            this.guna2Panel1.Size = new System.Drawing.Size(577, 164);
             this.guna2Panel1.TabIndex = 36;
             // 
             // guna2Shapes1
@@ -218,23 +220,31 @@
             this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(874, 35);
             this.guna2CustomGradientPanel1.TabIndex = 27;
             // 
-            // guna2CustomCheckBox1
+            // cbDonHang
             // 
-            this.guna2CustomCheckBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2CustomCheckBox1.CheckedState.BorderColor = System.Drawing.Color.Tomato;
-            this.guna2CustomCheckBox1.CheckedState.BorderRadius = 2;
-            this.guna2CustomCheckBox1.CheckedState.BorderThickness = 2;
-            this.guna2CustomCheckBox1.CheckedState.FillColor = System.Drawing.Color.Tomato;
-            this.guna2CustomCheckBox1.Location = new System.Drawing.Point(42, 102);
-            this.guna2CustomCheckBox1.Name = "guna2CustomCheckBox1";
-            this.guna2CustomCheckBox1.Size = new System.Drawing.Size(20, 20);
-            this.guna2CustomCheckBox1.TabIndex = 29;
-            this.guna2CustomCheckBox1.Text = "guna2CustomCheckBox1";
-            this.guna2CustomCheckBox1.UncheckedState.BorderColor = System.Drawing.Color.Silver;
-            this.guna2CustomCheckBox1.UncheckedState.BorderRadius = 2;
-            this.guna2CustomCheckBox1.UncheckedState.BorderThickness = 2;
-            this.guna2CustomCheckBox1.UncheckedState.FillColor = System.Drawing.Color.White;
-            this.guna2CustomCheckBox1.Click += new System.EventHandler(this.guna2CustomCheckBox1_Click);
+            this.cbDonHang.BackColor = System.Drawing.Color.Transparent;
+            this.cbDonHang.CheckedState.BorderColor = System.Drawing.Color.Tomato;
+            this.cbDonHang.CheckedState.BorderRadius = 2;
+            this.cbDonHang.CheckedState.BorderThickness = 2;
+            this.cbDonHang.CheckedState.FillColor = System.Drawing.Color.Tomato;
+            this.cbDonHang.Location = new System.Drawing.Point(42, 102);
+            this.cbDonHang.Name = "cbDonHang";
+            this.cbDonHang.Size = new System.Drawing.Size(20, 20);
+            this.cbDonHang.TabIndex = 29;
+            this.cbDonHang.UncheckedState.BorderColor = System.Drawing.Color.Silver;
+            this.cbDonHang.UncheckedState.BorderRadius = 2;
+            this.cbDonHang.UncheckedState.BorderThickness = 2;
+            this.cbDonHang.UncheckedState.FillColor = System.Drawing.Color.White;
+            this.cbDonHang.Click += new System.EventHandler(this.cbDonHang_Click);
+            // 
+            // guna2Panel2
+            // 
+            this.guna2Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.guna2Panel2.Location = new System.Drawing.Point(0, 199);
+            this.guna2Panel2.Name = "guna2Panel2";
+            this.guna2Panel2.Size = new System.Drawing.Size(874, 3);
+            this.guna2Panel2.TabIndex = 37;
             // 
             // picBoxSP
             // 
@@ -243,7 +253,7 @@
             this.picBoxSP.ImageRotate = 0F;
             this.picBoxSP.Location = new System.Drawing.Point(104, 29);
             this.picBoxSP.Name = "picBoxSP";
-            this.picBoxSP.Size = new System.Drawing.Size(190, 167);
+            this.picBoxSP.Size = new System.Drawing.Size(190, 173);
             this.picBoxSP.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picBoxSP.TabIndex = 28;
             this.picBoxSP.TabStop = false;
@@ -254,7 +264,7 @@
             this.panelTrai.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelTrai.Location = new System.Drawing.Point(0, 0);
             this.panelTrai.Name = "panelTrai";
-            this.panelTrai.Size = new System.Drawing.Size(587, 185);
+            this.panelTrai.Size = new System.Drawing.Size(587, 202);
             this.panelTrai.TabIndex = 4;
             // 
             // panelPhai
@@ -264,7 +274,7 @@
             this.panelPhai.Dock = System.Windows.Forms.DockStyle.Right;
             this.panelPhai.Location = new System.Drawing.Point(1461, 0);
             this.panelPhai.Name = "panelPhai";
-            this.panelPhai.Size = new System.Drawing.Size(587, 185);
+            this.panelPhai.Size = new System.Drawing.Size(587, 202);
             this.panelPhai.TabIndex = 5;
             // 
             // ODonHang
@@ -274,7 +284,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.panelTong);
             this.Name = "ODonHang";
-            this.Size = new System.Drawing.Size(2048, 185);
+            this.Size = new System.Drawing.Size(2048, 202);
             this.panelTong.ResumeLayout(false);
             this.panelGiua.ResumeLayout(false);
             this.guna2Panel1.ResumeLayout(false);
@@ -298,7 +308,8 @@
         private System.Windows.Forms.Label lblGia;
         private System.Windows.Forms.Label lblTenSP;
         private Guna.UI2.WinForms.Guna2Shapes guna2Shapes1;
-        private Guna.UI2.WinForms.Guna2CustomCheckBox guna2CustomCheckBox1;
+        private Guna.UI2.WinForms.Guna2CustomCheckBox cbDonHang;
         private Guna.UI2.WinForms.Guna2PictureBox picBoxSP;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
     }
 }

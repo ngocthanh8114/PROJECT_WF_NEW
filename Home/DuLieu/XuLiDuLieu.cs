@@ -12,6 +12,8 @@ using System.Windows.Forms;
 using System.Security.Cryptography;
 using Home;
 using Home.FrmCon.FrmHienThi;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
+using System.Windows.Media.Media3D;
 
 
 namespace Home.DuLieu
@@ -20,8 +22,9 @@ namespace Home.DuLieu
     internal class XuLiDuLieu
     {
         KetNoiCSDL kn = new KetNoiCSDL();
-        //------------------------------------------NgocThanh---------------------------------------------
+
         string strconn = "Data Source=.;Initial Catalog=BanXeMay;User ID=sa;Password=123";
+
         SqlDataAdapter da = null;
         SqlConnection conn = null;
         SqlCommand cmd = null;
@@ -259,7 +262,8 @@ namespace Home.DuLieu
                 string PhanQuyen = result.ToString();
                 if (PhanQuyen == "user")
                 {
-                    Home.ShowDialog();
+                    Home.Show();
+                    
                 }
                 else if (PhanQuyen == "admin")
                 {
@@ -325,10 +329,10 @@ namespace Home.DuLieu
         public DataTable doDuLieu_TimKiem(string TenSP)
         {
             kn.myConnect();
-            string sql = "SELECT TenSP, Gia, SoLuong, Anh FROM DonHang_1 WHERE TenSP LIKE '%" + @TenSP + "%'";
-            SqlCommand cmd = kn.con.CreateCommand();
-            //cmd.Parameters.AddWithValue("TenSP", TenSP);
-            cmd.CommandText = sql;
+            string sql = "SELECT TenSP, Gia, SoLuong, Anh FROM DonHang_1 WHERE TenSP LIKE @TenSP AND TenTaiKhoan = @TenTK";
+            SqlCommand cmd = new SqlCommand(sql, kn.con);
+            cmd.Parameters.AddWithValue("@TenSP", "%" + TenSP + "%");
+            cmd.Parameters.AddWithValue("@TenTK", TaiKhoanDangNhap.tenTaiKhoan);
 
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
@@ -336,5 +340,104 @@ namespace Home.DuLieu
             return dt;
         }
 
+        public void DangKyTK(string TenTaiKhoan, string MatKhau, string TenNguoiDung, string Email, string SoDienThoai)
+        {
+            try
+            {
+                string PhanQuyen = "user";
+                kn.myConnect();
+                string sql = "INSERT INTO TaiKhoan (TenTaiKhoan, MatKhau, TenNguoiDung, Email, SoDienThoai, PhanQuyen) VALUES (@TenTaiKhoan, @MatKhau, @TenNguoiDung, @Email, @SoDienThoai, @PhanQuyen)";
+                SqlCommand cmd = new SqlCommand(sql, conn);
+                cmd.Parameters.AddWithValue("TenTaiKhoan", TenTaiKhoan);   
+                cmd.Parameters.AddWithValue("MatKhau", MatKhau);   
+                cmd.Parameters.AddWithValue("TenNguoiDung", TenNguoiDung);   
+                cmd.Parameters.AddWithValue("Email", Email);   
+                cmd.Parameters.AddWithValue("SoDienThoai", SoDienThoai);   
+                cmd.Parameters.AddWithValue("PhanQuyen", PhanQuyen);
+                cmd.ExecuteNonQuery();
+                FrmThongBao frmThongBao = new FrmThongBao();
+                frmThongBao.hienThiThongBao("Đăng ký tài khoản thành công");
+                frmThongBao.Show();
+            }
+            catch
+            {
+                FrmBaoLoi frmBaoLoi = new FrmBaoLoi();
+                frmBaoLoi.hienThiLoi("Vui lòng kiểm tra lại thông tin");
+                frmBaoLoi.Show();
+            }
+        }
+
+        public void DangDatHang(string tenSP)
+        {
+            kn.myConnect();
+            string sql = "update DonHang_1 set TrangThai = 1 where tenSP = @TenSP and TenTaiKhoan = @TenTK";
+            SqlCommand cmd = new SqlCommand(sql, kn.con);
+            cmd.Parameters.AddWithValue("TenSP", tenSP);
+            cmd.Parameters.AddWithValue("TenTK", TaiKhoanDangNhap.tenTaiKhoan);
+
+            cmd.ExecuteNonQuery();
+        }
+
+        public void BoDatHang(string tenSP)
+        {
+            kn.myConnect();
+            string sql = "update DonHang_1 set TrangThai = 0 where tenSP = @TenSP and TenTaiKhoan = @TenTK";
+            SqlCommand cmd = new SqlCommand(sql, kn.con);
+            cmd.Parameters.AddWithValue("TenSP", tenSP);
+            cmd.Parameters.AddWithValue("TenTK", TaiKhoanDangNhap.tenTaiKhoan);
+
+            cmd.ExecuteNonQuery();
+        }
+
+        public void MuaHang(string tenSP)
+        {
+            kn.myConnect();
+            string sql = "update DonHang_1 set TrangThai = 2 where tenSP = @TenSP and TenTaiKhoan = @TenTK";
+            SqlCommand cmd = new SqlCommand(sql, kn.con);
+            cmd.Parameters.AddWithValue("TenSP", tenSP);
+            cmd.Parameters.AddWithValue("TenTK", TaiKhoanDangNhap.tenTaiKhoan);
+
+            cmd.ExecuteNonQuery();
+        }
+        public DataTable capNhatDatHang()
+        {
+            kn.myConnect();
+            string sql = "SELECT Gia, SoLuong, Gia*SoLuong as TongTien FROM DonHang_1 group by Gia,SoLuong,TrangThai having TrangThai = 1";
+            SqlCommand cmd = new SqlCommand(sql, kn.con);
+
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            return dt;
+        }
+
+        public decimal tinhTongTien()
+        {
+            decimal result = 0;
+            foreach (DataRow row in capNhatDatHang().Rows)
+            {
+                result += row.Field<decimal>("TongTien");
+            }
+            return result;
+        }
+
+        public decimal tinhSP()
+        {
+            decimal result = 0;
+            foreach (DataRow row in capNhatDatHang().Rows)
+            {
+                result += row.Field<int>("SoLuong");
+            }
+            return result;
+        }
+
+        public void resetTongTien()
+        {
+            kn.myConnect();
+            string sql = "update DonHang_1 set TrangThai = 0 ";
+            SqlCommand cmd = new SqlCommand(sql, kn.con);
+            
+            cmd.ExecuteNonQuery();
+        }
     }
 }
