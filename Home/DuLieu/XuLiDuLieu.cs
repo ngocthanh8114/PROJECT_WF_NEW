@@ -325,10 +325,10 @@ namespace Home.DuLieu
         public DataTable doDuLieu_TimKiem(string TenSP)
         {
             kn.myConnect();
-            string sql = "SELECT TenSP, Gia, SoLuong, Anh FROM DonHang_1 WHERE TenSP LIKE '%" + @TenSP + "%'";
-            SqlCommand cmd = kn.con.CreateCommand();
-            //cmd.Parameters.AddWithValue("TenSP", TenSP);
-            cmd.CommandText = sql;
+            string sql = "SELECT TenSP, Gia, SoLuong, Anh FROM DonHang_1 WHERE TenSP LIKE @TenSP AND TenTaiKhoan = @TenTK";
+            SqlCommand cmd = new SqlCommand(sql, kn.con);
+            cmd.Parameters.AddWithValue("@TenSP", "%" + TenSP + "%");
+            cmd.Parameters.AddWithValue("@TenTK", TaiKhoanDangNhap.tenTaiKhoan);
 
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();

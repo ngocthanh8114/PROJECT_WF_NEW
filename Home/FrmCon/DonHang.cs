@@ -63,7 +63,9 @@ namespace Home.FrmCon
         {
             if(txtTimKiem.Text == "")
             {
-                MessageBox.Show("Bạn chưa nhập thông tin tìm kiếm");
+                FrmBaoLoi frmBaoLoi = new FrmBaoLoi();
+                frmBaoLoi.hienThiLoi("Bạn chưa nhập thông tin tìm kiếm");
+                frmBaoLoi.Show();
             }
             else
             {
