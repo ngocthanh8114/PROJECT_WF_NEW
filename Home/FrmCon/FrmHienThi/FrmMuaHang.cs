@@ -51,6 +51,11 @@ namespace Home.FrmCon.FrmHienThi
             this.Close();
         }
 
-
+        public void loadGia(decimal tienHang, int SL)
+        {
+            lblTienHang.Text = tienHang.ToString() + " VNĐ";
+            lblPhiVanChuyen.Text = (SL*100000).ToString() + " VNĐ";
+            lblTong.Text = (tienHang + SL*100000).ToString() + " VNĐ";
+        }
     }
 }
