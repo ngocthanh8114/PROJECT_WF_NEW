@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmHome));
             this.panelTong = new Guna.UI.WinForms.GunaPanel();
+            this.panelHienThi = new Guna.UI.WinForms.GunaPanel();
             this.gunaPanel2 = new Guna.UI.WinForms.GunaPanel();
             this.btnTaiKhoan = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnDichVu = new Guna.UI.WinForms.GunaAdvenceButton();
@@ -43,7 +44,6 @@
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.btnDong = new Guna.UI.WinForms.GunaAdvenceButton();
             this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
-            this.panelHienThi = new Guna.UI.WinForms.GunaPanel();
             this.panelTong.SuspendLayout();
             this.gunaPanel2.SuspendLayout();
             this.panelThanhTieuDe.SuspendLayout();
@@ -61,6 +61,14 @@
             this.panelTong.Name = "panelTong";
             this.panelTong.Size = new System.Drawing.Size(1251, 1051);
             this.panelTong.TabIndex = 0;
+            // 
+            // panelHienThi
+            // 
+            this.panelHienThi.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelHienThi.Location = new System.Drawing.Point(0, 135);
+            this.panelHienThi.Name = "panelHienThi";
+            this.panelHienThi.Size = new System.Drawing.Size(1251, 916);
+            this.panelHienThi.TabIndex = 21;
             // 
             // gunaPanel2
             // 
@@ -92,7 +100,7 @@
             this.btnTaiKhoan.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnTaiKhoan.Dock = System.Windows.Forms.DockStyle.Left;
             this.btnTaiKhoan.FocusedColor = System.Drawing.Color.Empty;
-            this.btnTaiKhoan.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTaiKhoan.Font = new System.Drawing.Font("UTM Facebook", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTaiKhoan.ForeColor = System.Drawing.Color.White;
             this.btnTaiKhoan.Image = null;
             this.btnTaiKhoan.ImageSize = new System.Drawing.Size(20, 20);
@@ -126,7 +134,7 @@
             this.btnDichVu.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnDichVu.Dock = System.Windows.Forms.DockStyle.Left;
             this.btnDichVu.FocusedColor = System.Drawing.Color.Empty;
-            this.btnDichVu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDichVu.Font = new System.Drawing.Font("UTM Facebook", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDichVu.ForeColor = System.Drawing.Color.White;
             this.btnDichVu.Image = null;
             this.btnDichVu.ImageSize = new System.Drawing.Size(20, 20);
@@ -159,7 +167,7 @@
             this.btnDonHang.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnDonHang.Dock = System.Windows.Forms.DockStyle.Left;
             this.btnDonHang.FocusedColor = System.Drawing.Color.Empty;
-            this.btnDonHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDonHang.Font = new System.Drawing.Font("UTM Facebook", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDonHang.ForeColor = System.Drawing.Color.White;
             this.btnDonHang.Image = null;
             this.btnDonHang.ImageSize = new System.Drawing.Size(20, 20);
@@ -193,7 +201,7 @@
             this.btnSanPham.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnSanPham.Dock = System.Windows.Forms.DockStyle.Left;
             this.btnSanPham.FocusedColor = System.Drawing.Color.Empty;
-            this.btnSanPham.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSanPham.Font = new System.Drawing.Font("UTM Facebook", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSanPham.ForeColor = System.Drawing.Color.White;
             this.btnSanPham.Image = null;
             this.btnSanPham.ImageSize = new System.Drawing.Size(20, 20);
@@ -227,7 +235,7 @@
             this.btnGioiThieu.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnGioiThieu.Dock = System.Windows.Forms.DockStyle.Left;
             this.btnGioiThieu.FocusedColor = System.Drawing.Color.Empty;
-            this.btnGioiThieu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGioiThieu.Font = new System.Drawing.Font("UTM Facebook", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGioiThieu.ForeColor = System.Drawing.Color.White;
             this.btnGioiThieu.Image = null;
             this.btnGioiThieu.ImageSize = new System.Drawing.Size(20, 20);
@@ -272,7 +280,7 @@
             // lblTieude
             // 
             this.lblTieude.Dock = System.Windows.Forms.DockStyle.Left;
-            this.lblTieude.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTieude.Font = new System.Drawing.Font("UTM Neutra", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTieude.Location = new System.Drawing.Point(50, 0);
             this.lblTieude.Name = "lblTieude";
             this.lblTieude.Size = new System.Drawing.Size(194, 40);
@@ -330,14 +338,6 @@
             // 
             this.guna2AnimateWindow1.AnimationType = Guna.UI2.WinForms.Guna2AnimateWindow.AnimateWindowType.AW_VER_NEGATIVE;
             this.guna2AnimateWindow1.TargetForm = this;
-            // 
-            // panelHienThi
-            // 
-            this.panelHienThi.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelHienThi.Location = new System.Drawing.Point(0, 135);
-            this.panelHienThi.Name = "panelHienThi";
-            this.panelHienThi.Size = new System.Drawing.Size(1251, 916);
-            this.panelHienThi.TabIndex = 21;
             // 
             // FrmHome
             // 

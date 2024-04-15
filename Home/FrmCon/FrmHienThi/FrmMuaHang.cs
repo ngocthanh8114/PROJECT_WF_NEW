@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Home;
 
 namespace Home.FrmCon.FrmHienThi
 {
@@ -49,5 +50,7 @@ namespace Home.FrmCon.FrmHienThi
         {
             this.Close();
         }
+
+
     }
 }
