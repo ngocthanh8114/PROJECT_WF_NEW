@@ -39,10 +39,14 @@ namespace Home
                 TaiKhoanDangNhap.email = row["Email"].ToString();
                 TaiKhoanDangNhap.soDienThoai = row["SoDienThoai"].ToString();
                 xl.DangNhap(txtTaiKhoan.Text, txtMatKhau.Text, frmHome);
+                this.Hide();
+                
             }
             catch
             {
-                MessageBox.Show("Bạn đã nhập tài khoản hoặc mật khẩu sai!");
+                lberror.Visible = true;
+                txtMatKhau.ResetText();
+                txtMatKhau.Focus();
             }
         }
 

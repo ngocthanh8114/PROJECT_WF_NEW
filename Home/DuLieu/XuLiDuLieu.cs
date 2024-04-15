@@ -259,7 +259,8 @@ namespace Home.DuLieu
                 string PhanQuyen = result.ToString();
                 if (PhanQuyen == "user")
                 {
-                    Home.ShowDialog();
+                    Home.Show();
+                    
                 }
                 else if (PhanQuyen == "admin")
                 {
