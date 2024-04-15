@@ -12,6 +12,7 @@ using System.Windows.Forms;
 using System.Security.Cryptography;
 using Home;
 using Home.FrmCon.FrmHienThi;
+using System.Data.SqlTypes;
 
 
 namespace Home.DuLieu
@@ -334,6 +335,66 @@ namespace Home.DuLieu
             DataTable dt = new DataTable();
             da.Fill(dt);
             return dt;
+        }
+
+        public void DangDatHang(string tenSP)
+        {
+            string sql = "update DonHang_1 set TrangThai = 1 where tenSP = @TenSP and TenTaiKhoan = @TenTK";
+            SqlCommand cmd = new SqlCommand(sql, kn.con);
+            cmd.Parameters.AddWithValue("TenSP", tenSP);
+            cmd.Parameters.AddWithValue("TenTK", TaiKhoanDangNhap.tenTaiKhoan);
+
+            cmd.ExecuteNonQuery();
+        }
+
+        public void BoDatHang(string tenSP)
+        {
+            string sql = "update DonHang_1 set TrangThai = 0 where tenSP = @TenSP and TenTaiKhoan = @TenTK";
+            SqlCommand cmd = new SqlCommand(sql, kn.con);
+            cmd.Parameters.AddWithValue("TenSP", tenSP);
+            cmd.Parameters.AddWithValue("TenTK", TaiKhoanDangNhap.tenTaiKhoan);
+
+            cmd.ExecuteNonQuery();
+        }
+
+        public void MuaHang(string tenSP)
+        {
+            string sql = "update DonHang_1 set TrangThai = 2 where tenSP = @TenSP and TenTaiKhoan = @TenTK";
+            SqlCommand cmd = new SqlCommand(sql, kn.con);
+            cmd.Parameters.AddWithValue("TenSP", tenSP);
+            cmd.Parameters.AddWithValue("TenTK", TaiKhoanDangNhap.tenTaiKhoan);
+
+            cmd.ExecuteNonQuery();
+        }
+        public DataTable capNhatDatHang()
+        {
+            string sql = "SELECT Gia, SoLuong, Gia*SoLuong as TongTien FROM DonHang_1 group by Gia,SoLuong,TrangThai";
+            SqlCommand cmd = new SqlCommand(sql, kn.con);
+
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            return dt;
+        }
+
+        public decimal tinhTongTien()
+        {
+            decimal result = 0;
+            foreach (DataRow row in capNhatDatHang().Rows)
+            {
+                result += row.Field<decimal>("TongTien");
+            }
+            return result;
+        }
+
+        public decimal tinhSP()
+        {
+            decimal result = 0;
+            foreach (DataRow row in capNhatDatHang().Rows)
+            {
+                result += row.Field<int>("SoLuong");
+            }
+            return result;
         }
 
     }

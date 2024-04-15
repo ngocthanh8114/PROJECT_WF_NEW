@@ -39,10 +39,20 @@ namespace Home.FrmCon.FrmHienThi
             TongForm.DonHang.DonHang_Load(TongForm.DonHang, e);
         }
 
-        private void guna2CustomCheckBox1_Click(object sender, EventArgs e)
+        private void cbDonHang_Click(object sender, EventArgs e)
         {
-
+            if(cbDonHang.Checked) 
+            { 
+                xl.DangDatHang(lblTenSP.Text);
+            }
+            else
+            {
+                xl.BoDatHang(lblTenSP.Text);
+            }
+            TongForm.DonHang.loadGiaTien();
         }
+
+
         //-------------NgocThanh--------------------
 
     }
