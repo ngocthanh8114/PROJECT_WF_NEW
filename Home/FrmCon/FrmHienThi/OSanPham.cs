@@ -32,8 +32,7 @@ namespace Home.FrmCon.FrmHienThi
         private void btnDatHang_Click(object sender, EventArgs e)
         {
             XuLiDuLieu xl = new XuLiDuLieu();
-            FrmThongBao frmThongBao = new FrmThongBao();
-            frmThongBao.Show();
+            
 
             // Them MaSP vao table DonHang_1
 

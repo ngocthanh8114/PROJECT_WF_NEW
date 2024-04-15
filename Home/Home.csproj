@@ -69,6 +69,12 @@
     <Compile Include="FrmCon\DonHang.Designer.cs">
       <DependentUpon>DonHang.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmCon\FrmHienThi\FrmBaoLoi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCon\FrmHienThi\FrmBaoLoi.Designer.cs">
+      <DependentUpon>FrmBaoLoi.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmCon\TongForm.cs" />
     <Compile Include="FrmCon\FrmHienThi\FrmMuaHang.cs">
       <SubType>Form</SubType>
@@ -125,6 +131,9 @@
     <Compile Include="DuLieu\TaiKhoanDangNhap.cs" />
     <EmbeddedResource Include="FrmCon\DonHang.resx">
       <DependentUpon>DonHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCon\FrmHienThi\FrmBaoLoi.resx">
+      <DependentUpon>FrmBaoLoi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmCon\FrmHienThi\FrmMuaHang.resx">
       <DependentUpon>FrmMuaHang.cs</DependentUpon>
