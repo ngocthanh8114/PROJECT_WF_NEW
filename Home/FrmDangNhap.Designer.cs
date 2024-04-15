@@ -33,8 +33,8 @@
             this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.lbquenmk = new System.Windows.Forms.LinkLabel();
             this.btn_Thoat = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.guna2CheckBox1 = new Guna.UI2.WinForms.Guna2CheckBox();
             this.phide = new Guna.UI2.WinForms.Guna2PictureBox();
             this.peye = new Guna.UI2.WinForms.Guna2PictureBox();
             this.lberror = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -45,6 +45,8 @@
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.btnThoat = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.guna2Panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Thoat)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.phide)).BeginInit();
@@ -66,8 +68,10 @@
             // guna2Panel2
             // 
             this.guna2Panel2.BackColor = System.Drawing.Color.Silver;
+            this.guna2Panel2.Controls.Add(this.linkLabel1);
+            this.guna2Panel2.Controls.Add(this.guna2HtmlLabel2);
+            this.guna2Panel2.Controls.Add(this.lbquenmk);
             this.guna2Panel2.Controls.Add(this.btn_Thoat);
-            this.guna2Panel2.Controls.Add(this.guna2CheckBox1);
             this.guna2Panel2.Controls.Add(this.phide);
             this.guna2Panel2.Controls.Add(this.peye);
             this.guna2Panel2.Controls.Add(this.lberror);
@@ -82,6 +86,16 @@
             this.guna2Panel2.Size = new System.Drawing.Size(528, 585);
             this.guna2Panel2.TabIndex = 25;
             // 
+            // lbquenmk
+            // 
+            this.lbquenmk.AutoSize = true;
+            this.lbquenmk.Location = new System.Drawing.Point(86, 399);
+            this.lbquenmk.Name = "lbquenmk";
+            this.lbquenmk.Size = new System.Drawing.Size(103, 16);
+            this.lbquenmk.TabIndex = 41;
+            this.lbquenmk.TabStop = true;
+            this.lbquenmk.Text = "Quên mật khẩu?";
+            // 
             // btn_Thoat
             // 
             this.btn_Thoat.BackColor = System.Drawing.Color.Transparent;
@@ -95,24 +109,6 @@
             this.btn_Thoat.TabIndex = 40;
             this.btn_Thoat.TabStop = false;
             this.btn_Thoat.Click += new System.EventHandler(this.btn_Thoat_Click);
-            // 
-            // guna2CheckBox1
-            // 
-            this.guna2CheckBox1.AutoSize = true;
-            this.guna2CheckBox1.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CheckBox1.CheckedState.BorderRadius = 0;
-            this.guna2CheckBox1.CheckedState.BorderThickness = 0;
-            this.guna2CheckBox1.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CheckBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
-            this.guna2CheckBox1.Location = new System.Drawing.Point(95, 392);
-            this.guna2CheckBox1.Name = "guna2CheckBox1";
-            this.guna2CheckBox1.Size = new System.Drawing.Size(141, 20);
-            this.guna2CheckBox1.TabIndex = 39;
-            this.guna2CheckBox1.Text = "Ghi nhớ đăng nhập";
-            this.guna2CheckBox1.UncheckedState.BorderColor = System.Drawing.Color.White;
-            this.guna2CheckBox1.UncheckedState.BorderRadius = 0;
-            this.guna2CheckBox1.UncheckedState.BorderThickness = 0;
-            this.guna2CheckBox1.UncheckedState.FillColor = System.Drawing.Color.White;
             // 
             // phide
             // 
@@ -267,8 +263,28 @@
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(610, 585);
+            this.guna2Panel1.Size = new System.Drawing.Size(609, 585);
             this.guna2Panel1.TabIndex = 0;
+            // 
+            // guna2HtmlLabel2
+            // 
+            this.guna2HtmlLabel2.AutoSize = false;
+            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(251, 399);
+            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(242, 18);
+            this.guna2HtmlLabel2.TabIndex = 42;
+            this.guna2HtmlLabel2.Text = "Bạn chưa có tài khoản?";
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.Location = new System.Drawing.Point(403, 399);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(167, 24);
+            this.linkLabel1.TabIndex = 43;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Đăng kí";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked_1);
             // 
             // FrmDangNhap
             // 
@@ -309,7 +325,9 @@
         private Guna.UI2.WinForms.Guna2TextBox txtMatKhau;
         private Guna.UI2.WinForms.Guna2TextBox txtTaiKhoan;
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
-        private Guna.UI2.WinForms.Guna2CheckBox guna2CheckBox1;
         private Guna.UI2.WinForms.Guna2CirclePictureBox btn_Thoat;
+        private System.Windows.Forms.LinkLabel lbquenmk;
+        private System.Windows.Forms.LinkLabel linkLabel1;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
     }
 }

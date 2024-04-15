@@ -176,3 +176,4 @@ C:\Users\PC\OneDrive\Desktop\New folder (5)\PROJECT_WF_NEW\Home\obj\Debug\Home.c
 C:\Users\PC\OneDrive\Desktop\New folder (5)\PROJECT_WF_NEW\Home\obj\Debug\Home.csproj.Up2Date
 C:\Users\PC\OneDrive\Desktop\New folder (5)\PROJECT_WF_NEW\Home\obj\Debug\Home.exe
 C:\Users\PC\OneDrive\Desktop\New folder (5)\PROJECT_WF_NEW\Home\obj\Debug\Home.pdb
+C:\Users\PC\OneDrive\Desktop\New folder (5)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmDangKi.resources
