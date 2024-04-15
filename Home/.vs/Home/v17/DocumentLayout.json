@@ -23,7 +23,7 @@
       "RelativeMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|solutionrelative:dulieu\\xulidulieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|d:\\code c#\\project\\project_wf_new\\home\\frmcon\\donhang.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|D:\\CODE C#\\PROJECT\\PROJECT_WF_NEW\\Home\\frmcon\\donhang.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|solutionrelative:frmcon\\donhang.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -43,7 +43,7 @@
       "RelativeMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|solutionrelative:frmcon\\taikhoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|d:\\code c#\\project\\project_wf_new\\home\\frmhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|D:\\CODE C#\\PROJECT\\PROJECT_WF_NEW\\Home\\frmhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|solutionrelative:frmhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -126,8 +126,7 @@
               "RelativeToolTip": "FrmCon\\DonHang.Designer.cs",
               "ViewState": "AQIAAGEBAAAAAAAAAAAUwGwBAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T13:57:29.449Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-15T13:57:29.449Z"
             },
             {
               "$type": "Document",
@@ -137,7 +136,7 @@
               "RelativeDocumentMoniker": "FrmCon\\DonHang.cs",
               "ToolTip": "D:\\CODE C#\\PROJECT\\PROJECT_WF_NEW\\Home\\FrmCon\\DonHang.cs",
               "RelativeToolTip": "FrmCon\\DonHang.cs",
-              "ViewState": "AQIAACYAAAAAAAAAAAAIwDQAAAAjAAAA",
+              "ViewState": "AQIAABsAAAAAAAAAAAAqwDQAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-15T13:56:44.26Z",
               "EditorCaption": ""
@@ -152,8 +151,7 @@
               "RelativeToolTip": "FrmCon\\TaiKhoan.cs",
               "ViewState": "AQIAAAwAAAAAAAAAAAAAABcAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T02:50:22.193Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-15T02:50:22.193Z"
             },
             {
               "$type": "Document",
@@ -165,8 +163,7 @@
               "RelativeToolTip": "FrmCon\\TongForm.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T02:15:49.057Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-15T02:15:49.057Z"
             },
             {
               "$type": "Document",
@@ -177,8 +174,7 @@
               "ToolTip": "D:\\CODE C#\\PROJECT\\PROJECT_WF_NEW\\Home\\FrmCon\\SanPham.cs [Design]",
               "RelativeToolTip": "FrmCon\\SanPham.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T02:14:31.648Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-04-15T02:14:31.648Z"
             },
             {
               "$type": "Document",
@@ -190,8 +186,7 @@
               "RelativeToolTip": "FrmCon\\SanPham.cs",
               "ViewState": "AQIAAA8AAAAAAAAAAAAAADAAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T02:41:42.562Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-15T02:41:42.562Z"
             },
             {
               "$type": "Document",
@@ -203,8 +198,7 @@
               "RelativeToolTip": "FrmHome.cs",
               "ViewState": "AQIAACEAAAAAAAAAAAA/wHAAAAA9AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T02:03:53.715Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-15T02:03:53.715Z"
             },
             {
               "$type": "Document",
@@ -215,8 +209,7 @@
               "ToolTip": "D:\\CODE C#\\PROJECT\\PROJECT_WF_NEW\\Home\\FrmCon\\TaiKhoan.cs [Design]",
               "RelativeToolTip": "FrmCon\\TaiKhoan.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T02:15:22.261Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-04-15T02:15:22.261Z"
             },
             {
               "$type": "Document",
@@ -227,8 +220,7 @@
               "ToolTip": "D:\\CODE C#\\PROJECT\\PROJECT_WF_NEW\\Home\\FrmHome.cs [Design]",
               "RelativeToolTip": "FrmHome.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T02:03:50.13Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-04-15T02:03:50.13Z"
             },
             {
               "$type": "Document",
@@ -240,8 +232,7 @@
               "RelativeToolTip": "FrmDangNhap.cs",
               "ViewState": "AQIAAD4AAAAAAAAAAAAUwB8AAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T02:16:47.438Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-15T02:16:47.438Z"
             },
             {
               "$type": "Document",
@@ -252,8 +243,7 @@
               "ToolTip": "D:\\CODE C#\\PROJECT\\PROJECT_WF_NEW\\Home\\FrmCon\\DonHang.cs [Design]",
               "RelativeToolTip": "FrmCon\\DonHang.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T01:49:03.49Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-04-15T01:49:03.49Z"
             },
             {
               "$type": "Document",
@@ -264,8 +254,7 @@
               "ToolTip": "D:\\CODE C#\\PROJECT\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmHienThi\\OSanPham.cs [Design]",
               "RelativeToolTip": "FrmCon\\FrmHienThi\\OSanPham.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T02:20:31.424Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-04-15T02:20:31.424Z"
             },
             {
               "$type": "Document",
@@ -277,8 +266,7 @@
               "RelativeToolTip": "FrmCon\\FrmHienThi\\ODonHang.cs",
               "ViewState": "AQIAABgAAAAAAAAAAIAxwCYAAAA/AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-14T02:28:21.377Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-14T02:28:21.377Z"
             },
             {
               "$type": "Document",
@@ -289,8 +277,7 @@
               "ToolTip": "D:\\CODE C#\\PROJECT\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmHienThi\\ODonHang.cs [Design]",
               "RelativeToolTip": "FrmCon\\FrmHienThi\\ODonHang.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T01:54:26.951Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-04-15T01:54:26.951Z"
             },
             {
               "$type": "Document",
@@ -302,8 +289,7 @@
               "RelativeToolTip": "DuLieu\\XuLiDuLieu.cs",
               "ViewState": "AQIAABAAAAAAAAAAAAAowCAAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-14T10:32:34.607Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-14T10:32:34.607Z"
             },
             {
               "$type": "Document",
@@ -315,8 +301,7 @@
               "RelativeToolTip": "DuLieu\\KetNoiCSDL.cs",
               "ViewState": "AQIAAAkAAAAAAAAAAAAAABEAAABmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-14T01:14:41.779Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-14T01:14:41.779Z"
             },
             {
               "$type": "Document",
@@ -328,8 +313,7 @@
               "RelativeToolTip": "DuLieu\\TaiKhoanDangNhap.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T02:14:27.373Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-15T02:14:27.373Z"
             },
             {
               "$type": "Document",
@@ -340,8 +324,7 @@
               "ToolTip": "D:\\CODE C#\\PROJECT\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmHienThi\\FrmThongBao.cs [Design]",
               "RelativeToolTip": "FrmCon\\FrmHienThi\\FrmThongBao.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T02:22:33.699Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-04-15T02:22:33.699Z"
             },
             {
               "$type": "Document",
@@ -353,8 +336,7 @@
               "RelativeToolTip": "FrmCon\\FrmHienThi\\FrmMuaHang.cs",
               "ViewState": "AQIAACYAAAAAAAAAAAAcwA8AAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T02:21:28.137Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-15T02:21:28.137Z"
             },
             {
               "$type": "Document",
@@ -365,8 +347,7 @@
               "ToolTip": "D:\\CODE C#\\PROJECT\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmHienThi\\FrmMuaHang.cs [Design]",
               "RelativeToolTip": "FrmCon\\FrmHienThi\\FrmMuaHang.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T02:22:36.979Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-04-15T02:22:36.979Z"
             },
             {
               "$type": "Document",
@@ -378,8 +359,7 @@
               "RelativeToolTip": "FrmCon\\FrmHienThi\\FrmThongBao.cs",
               "ViewState": "AQIAAB4AAAAAAAAAAAAYwA0AAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T02:21:21.729Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-15T02:21:21.729Z"
             },
             {
               "$type": "Document",
@@ -390,8 +370,7 @@
               "ToolTip": "D:\\CODE C#\\PROJECT\\PROJECT_WF_NEW\\Home\\FrmDangNhap.cs [Design]",
               "RelativeToolTip": "FrmDangNhap.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T02:15:25.178Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-04-15T02:15:25.178Z"
             }
           ]
         }
