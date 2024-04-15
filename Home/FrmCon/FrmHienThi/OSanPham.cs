@@ -32,8 +32,7 @@ namespace Home.FrmCon.FrmHienThi
         private void btnDatHang_Click(object sender, EventArgs e)
         {
             XuLiDuLieu xl = new XuLiDuLieu();
-            FrmThongBao frmThongBao = new FrmThongBao();
-            frmThongBao.Show();
+            
 
             // Them MaSP vao table DonHang_1
 
@@ -48,6 +47,8 @@ namespace Home.FrmCon.FrmHienThi
             Image anh = picBoxSP.Image;
 
             xl.DatHang(MaSP, TenSP, Gia, SL, anh);
+
+            numSL.Value = 1;
             
 
 

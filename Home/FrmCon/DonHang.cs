@@ -58,5 +58,31 @@ namespace Home.FrmCon
             if (cbDieuKhoan.Checked == true) btnMua.Enabled = true;
             else btnMua.Enabled = false;
         }
+
+        private void btnTimKiem_Click(object sender, EventArgs e)
+        {
+            if(txtTimKiem.Text == "")
+            {
+                MessageBox.Show("Bạn chưa nhập thông tin tìm kiếm");
+            }
+            else
+            {
+                if(xl.doDuLieu_TimKiem(txtTimKiem.Text).Rows.Count > 0)
+                {
+                    xl.Connection_CSDL();
+                    if (panelNoiDung.Controls.Count > 0)
+                    {
+                        panelNoiDung.Controls.Clear();
+                    }
+                    addDonHang(xl.doDuLieu_TimKiem(txtTimKiem.Text));
+                }
+                else
+                {
+                    MessageBox.Show("Không tìm thấy tên sản phẩm " + txtTimKiem.Text);
+
+                }
+                txtTimKiem.Text = "";
+            }
+        }
     }
 }
