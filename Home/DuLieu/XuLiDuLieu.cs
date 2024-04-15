@@ -265,6 +265,8 @@ namespace Home.DuLieu
                 else if (PhanQuyen == "admin")
                 {
                     //Chưa có formAdmin...làm sau
+                    FrmAdmin frmAdmin = new FrmAdmin();
+                    frmAdmin.Show();
 
                 }
             }
