@@ -27,14 +27,25 @@ namespace Home
         {
             XuLiDuLieu xl = new XuLiDuLieu();
             xl.Connection_CSDL();
-            FrmHome frmHome = new FrmHome();
-            DataTable dt = xl.layThongTinTK(txtTaiKhoan.Text, txtMatKhau.Text);
-            DataRow row = dt.Rows[0]; 
-            TaiKhoanDangNhap.tenTaiKhoan = row["TenTaiKhoan"].ToString();
-            TaiKhoanDangNhap.tenNguoiDung = row["TenNguoiDung"].ToString();
-            TaiKhoanDangNhap.email = row["Email"].ToString();
-            TaiKhoanDangNhap.soDienThoai = row["SoDienThoai"].ToString() ;
-            xl.DangNhap(txtTaiKhoan.Text, txtMatKhau.Text, frmHome);
+
+            try
+            {
+                FrmHome frmHome = new FrmHome();
+                
+                DataTable dt = xl.layThongTinTK(txtTaiKhoan.Text, txtMatKhau.Text);
+                DataRow row = dt.Rows[0];
+                TaiKhoanDangNhap.tenTaiKhoan = row["TenTaiKhoan"].ToString();
+                TaiKhoanDangNhap.tenNguoiDung = row["TenNguoiDung"].ToString();
+                TaiKhoanDangNhap.email = row["Email"].ToString();
+                TaiKhoanDangNhap.soDienThoai = row["SoDienThoai"].ToString();
+                xl.DangNhap(txtTaiKhoan.Text, txtMatKhau.Text, frmHome);
+            }
+            catch
+            {
+                MessageBox.Show("Bạn đã nhập tài khoản hoặc mật khẩu sai!");
+            }
+
+            
 
         }
 
