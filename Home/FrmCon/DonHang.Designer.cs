@@ -95,13 +95,10 @@
             this.btnTimKiem.OnHoverImage = null;
             this.btnTimKiem.OnPressedColor = System.Drawing.Color.Black;
             this.btnTimKiem.Size = new System.Drawing.Size(65, 55);
-<<<<<<< HEAD
-            this.btnTimKiem.TabIndex = 3;            // 
-=======
+
             this.btnTimKiem.TabIndex = 3;
             this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
             // 
->>>>>>> 8d61a2ae6d1eedeac31dbcfd4ed76e8591094dc9
             // txtTimKiem
             // 
             this.txtTimKiem.Animated = true;
