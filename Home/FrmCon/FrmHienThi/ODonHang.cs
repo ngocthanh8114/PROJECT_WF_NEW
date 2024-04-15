@@ -41,7 +41,7 @@ namespace Home.FrmCon.FrmHienThi
 
         private void cbDonHang_Click(object sender, EventArgs e)
         {
-            if(cbDonHang.Checked) 
+            if(cbDonHang.Checked == true) 
             { 
                 xl.DangDatHang(lblTenSP.Text);
             }

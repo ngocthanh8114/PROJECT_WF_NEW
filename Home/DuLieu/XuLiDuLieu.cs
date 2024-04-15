@@ -22,7 +22,7 @@ namespace Home.DuLieu
     {
         KetNoiCSDL kn = new KetNoiCSDL();
         //------------------------------------------NgocThanh---------------------------------------------
-        string strconn = "Data Source=.;Initial Catalog=BanXeMay;User ID=sa;Password=123";
+        string strconn = "Data Source=.;Initial Catalog=BanXeMay;Persist Security Info=True;User ID=sa;Password=123";
         SqlDataAdapter da = null;
         SqlConnection conn = null;
         SqlCommand cmd = null;
@@ -260,7 +260,8 @@ namespace Home.DuLieu
                 string PhanQuyen = result.ToString();
                 if (PhanQuyen == "user")
                 {
-                    Home.ShowDialog();
+                    Home.Show();
+                    
                 }
                 else if (PhanQuyen == "admin")
                 {
@@ -339,6 +340,7 @@ namespace Home.DuLieu
 
         public void DangDatHang(string tenSP)
         {
+            kn.myConnect();
             string sql = "update DonHang_1 set TrangThai = 1 where tenSP = @TenSP and TenTaiKhoan = @TenTK";
             SqlCommand cmd = new SqlCommand(sql, kn.con);
             cmd.Parameters.AddWithValue("TenSP", tenSP);
@@ -349,6 +351,7 @@ namespace Home.DuLieu
 
         public void BoDatHang(string tenSP)
         {
+            kn.myConnect();
             string sql = "update DonHang_1 set TrangThai = 0 where tenSP = @TenSP and TenTaiKhoan = @TenTK";
             SqlCommand cmd = new SqlCommand(sql, kn.con);
             cmd.Parameters.AddWithValue("TenSP", tenSP);
@@ -359,6 +362,7 @@ namespace Home.DuLieu
 
         public void MuaHang(string tenSP)
         {
+            kn.myConnect();
             string sql = "update DonHang_1 set TrangThai = 2 where tenSP = @TenSP and TenTaiKhoan = @TenTK";
             SqlCommand cmd = new SqlCommand(sql, kn.con);
             cmd.Parameters.AddWithValue("TenSP", tenSP);
@@ -368,7 +372,8 @@ namespace Home.DuLieu
         }
         public DataTable capNhatDatHang()
         {
-            string sql = "SELECT Gia, SoLuong, Gia*SoLuong as TongTien FROM DonHang_1 group by Gia,SoLuong,TrangThai";
+            kn.myConnect();
+            string sql = "SELECT Gia, SoLuong, Gia*SoLuong as TongTien FROM DonHang_1 group by Gia,SoLuong,TrangThai having TrangThai = 1";
             SqlCommand cmd = new SqlCommand(sql, kn.con);
 
             SqlDataAdapter da = new SqlDataAdapter(cmd);
@@ -397,5 +402,13 @@ namespace Home.DuLieu
             return result;
         }
 
+        public void resetTongTien()
+        {
+            kn.myConnect();
+            string sql = "update DonHang_1 set TrangThai = 0 ";
+            SqlCommand cmd = new SqlCommand(sql, kn.con);
+            
+            cmd.ExecuteNonQuery();
+        }
     }
 }

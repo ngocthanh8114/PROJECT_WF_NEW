@@ -11,6 +11,7 @@ using Home;
 using Home.FrmCon.FrmHienThi;
 using Home.FrmCon;
 using Home.DuLieu;
+using Microsoft.VisualBasic;
 
 namespace Home.FrmCon
 {
@@ -51,6 +52,8 @@ namespace Home.FrmCon
             }
             addDonHang(xl.doDuLieu());
             btnMua.Enabled = false;
+            xl.resetTongTien();
+            loadGiaTien();
         }
 
         private void cbDieuKhoan_Click(object sender, EventArgs e)
@@ -96,8 +99,7 @@ namespace Home.FrmCon
             lblTongTien.Text = xl.tinhTongTien().ToString() + " VNĐ";
             lblTongSP.Text = xl.tinhSP().ToString() + " sản phẩm";
             string[] str= lblGiaThanhToan.Text.Split(' ');
-            decimal khuyenMai = int.Parse(str[0]);
-            lblGiaThanhToan.Text = (xl.tinhTongTien() - khuyenMai).ToString() + " VNĐ";
+            lblGiaThanhToan.Text = (xl.tinhTongTien()).ToString() + " VNĐ";
         }
     }
 }
