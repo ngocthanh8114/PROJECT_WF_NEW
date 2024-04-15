@@ -21,7 +21,7 @@ namespace Home.DuLieu
     {
         KetNoiCSDL kn = new KetNoiCSDL();
         //------------------------------------------NgocThanh---------------------------------------------
-        string strconn = "Data Source=.;Initial Catalog=BanXeMay;User ID=sa;Password=123";
+        string strconn = "Data Source=LAPTOP-IGR3NG0G\\SQLEXPRESS;Initial Catalog=BanXeMay;Integrated Security=True;Encrypt=False";
         SqlDataAdapter da = null;
         SqlConnection conn = null;
         SqlCommand cmd = null;
@@ -259,7 +259,8 @@ namespace Home.DuLieu
                 string PhanQuyen = result.ToString();
                 if (PhanQuyen == "user")
                 {
-                    Home.ShowDialog();
+                    Home.Show();
+                    
                 }
                 else if (PhanQuyen == "admin")
                 {
