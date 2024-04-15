@@ -50,6 +50,13 @@ namespace Home.FrmCon
                 panelNoiDung.Controls.Clear();
             }
             addDonHang(xl.doDuLieu());
+            btnMua.Enabled = false;
+        }
+
+        private void cbDieuKhoan_Click(object sender, EventArgs e)
+        {
+            if(cbDieuKhoan.Checked == true) btnMua.Enabled = true;
+            else btnMua.Enabled = false;
         }
     }
 }

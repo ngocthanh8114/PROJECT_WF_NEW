@@ -217,35 +217,22 @@ namespace Home.DuLieu
             command.Parameters.AddWithValue("@MatKhau", matkhau);
 
             // Thử thực hiện truy vấn
-            try
+            object result = command.ExecuteScalar();
+            if (result != null)
             {
-                object result = command.ExecuteScalar();
-                if (result != null)
+                string PhanQuyen = result.ToString();
+                if (PhanQuyen == "user")
                 {
-                    string PhanQuyen = result.ToString();
-                    if (PhanQuyen == "user")
-                    {
-                        Home.ShowDialog();
-                    }
-                    else if (PhanQuyen == "admin")
-                    {
-                        //Chưa có formAdmin...làm sau
-                    }
+                    Home.ShowDialog();
                 }
-                else
+                else if (PhanQuyen == "admin")
                 {
-                    // Xử lý trường hợp không tìm thấy dữ liệu
-                    MessageBox.Show("Bạn đã nhập sai tài khoản hoặc mật khẩu!");
+                    //Chưa có formAdmin...làm sau
                 }
-
+            }
                 //RESET TB
                 taikhoan = matkhau = "";
-            }
-            catch (Exception ex)
-            {
-                // Xử lý exception (nếu có)
-                MessageBox.Show("Đã xảy ra lỗi: " + ex.Message);
-            }
+        
         }
         //------------------------------------------NgocThanh---------------------------------------------
 

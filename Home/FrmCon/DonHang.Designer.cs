@@ -48,7 +48,7 @@
             this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
             this.panelCheckDieuKhoan = new Guna.UI2.WinForms.Guna2Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.guna2CustomCheckBox1 = new Guna.UI2.WinForms.Guna2CustomCheckBox();
+            this.cbDieuKhoan = new Guna.UI2.WinForms.Guna2CustomCheckBox();
             this.btnXoaAll = new Guna.UI.WinForms.GunaAdvenceButton();
             this.panelNoiDung = new System.Windows.Forms.FlowLayoutPanel();
             this.guna2Panel1.SuspendLayout();
@@ -135,7 +135,7 @@
             // 
             // lblTen
             // 
-            this.lblTen.Font = new System.Drawing.Font("Montserrat", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTen.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTen.Location = new System.Drawing.Point(130, 25);
             this.lblTen.Name = "lblTen";
             this.lblTen.Size = new System.Drawing.Size(270, 30);
@@ -225,7 +225,7 @@
             this.btnMua.Image = null;
             this.btnMua.ImageSize = new System.Drawing.Size(20, 20);
             this.btnMua.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnMua.Location = new System.Drawing.Point(1118, 116);
+            this.btnMua.Location = new System.Drawing.Point(1122, 116);
             this.btnMua.Name = "btnMua";
             this.btnMua.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.btnMua.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -329,7 +329,7 @@
             // panelCheckDieuKhoan
             // 
             this.panelCheckDieuKhoan.Controls.Add(this.label1);
-            this.panelCheckDieuKhoan.Controls.Add(this.guna2CustomCheckBox1);
+            this.panelCheckDieuKhoan.Controls.Add(this.cbDieuKhoan);
             this.panelCheckDieuKhoan.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelCheckDieuKhoan.Location = new System.Drawing.Point(0, 0);
             this.panelCheckDieuKhoan.Name = "panelCheckDieuKhoan";
@@ -346,21 +346,22 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Tôi đồng ý với Điều khoản dịch vụ, Chính sách của SMOTORYCYCLE";
             // 
-            // guna2CustomCheckBox1
+            // cbDieuKhoan
             // 
-            this.guna2CustomCheckBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2CustomCheckBox1.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.guna2CustomCheckBox1.CheckedState.BorderRadius = 2;
-            this.guna2CustomCheckBox1.CheckedState.BorderThickness = 0;
-            this.guna2CustomCheckBox1.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.guna2CustomCheckBox1.Location = new System.Drawing.Point(651, 12);
-            this.guna2CustomCheckBox1.Name = "guna2CustomCheckBox1";
-            this.guna2CustomCheckBox1.Size = new System.Drawing.Size(41, 26);
-            this.guna2CustomCheckBox1.TabIndex = 0;
-            this.guna2CustomCheckBox1.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2CustomCheckBox1.UncheckedState.BorderRadius = 2;
-            this.guna2CustomCheckBox1.UncheckedState.BorderThickness = 0;
-            this.guna2CustomCheckBox1.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.cbDieuKhoan.BackColor = System.Drawing.Color.Transparent;
+            this.cbDieuKhoan.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.cbDieuKhoan.CheckedState.BorderRadius = 2;
+            this.cbDieuKhoan.CheckedState.BorderThickness = 0;
+            this.cbDieuKhoan.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.cbDieuKhoan.Location = new System.Drawing.Point(651, 12);
+            this.cbDieuKhoan.Name = "cbDieuKhoan";
+            this.cbDieuKhoan.Size = new System.Drawing.Size(41, 26);
+            this.cbDieuKhoan.TabIndex = 0;
+            this.cbDieuKhoan.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.cbDieuKhoan.UncheckedState.BorderRadius = 2;
+            this.cbDieuKhoan.UncheckedState.BorderThickness = 0;
+            this.cbDieuKhoan.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.cbDieuKhoan.Click += new System.EventHandler(this.cbDieuKhoan_Click);
             // 
             // btnXoaAll
             // 
@@ -439,7 +440,7 @@
         private Guna.UI2.WinForms.Guna2Panel panelMuaHang;
         private System.Windows.Forms.FlowLayoutPanel panelNoiDung;
         private Guna.UI2.WinForms.Guna2Panel panelCheckDieuKhoan;
-        private Guna.UI2.WinForms.Guna2CustomCheckBox guna2CustomCheckBox1;
+        private Guna.UI2.WinForms.Guna2CustomCheckBox cbDieuKhoan;
         private Guna.UI.WinForms.GunaAdvenceButton btnXoaAll;
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel5;
