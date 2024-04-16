@@ -115,6 +115,7 @@
             this.lbquenmk.TabIndex = 41;
             this.lbquenmk.TabStop = true;
             this.lbquenmk.Text = "Quên mật khẩu?";
+            this.lbquenmk.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lbquenmk_LinkClicked);
             // 
             // btn_Thoat
             // 

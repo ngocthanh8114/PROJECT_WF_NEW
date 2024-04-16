@@ -190,3 +190,5 @@ D:\CODE C#\PROJECT\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmDangKi.resources
 D:\CODE C#\PROJECT\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmAdmin.resources
 D:\VS Code\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmAdmin.resources
 >>>>>>> a147e538e99437b53bb8f5fbedc47274cd4c0a7f
+C:\Users\PC\OneDrive\Desktop\New folder (5)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmQuenMatKhau.resources
+D:\CODE C#\PROJECT\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmQuenMatKhau.resources
