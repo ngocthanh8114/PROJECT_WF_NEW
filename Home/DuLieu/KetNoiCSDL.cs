@@ -22,18 +22,13 @@ namespace Home.DuLieu
 
         string strconn = "Data Source=.;Initial Catalog=BanXeMay;Persist Security Info=True;User ID=sa;Password=123";
 
-        SqlDataAdapter da = null;
         SqlConnection conn = null;
-        SqlCommand cmd = null;
-        DataSet ds = null;
 
         public void Connection()
         {
             conn = new SqlConnection(strconn);
             conn.Open();
         }
-        //---------------------------------NgocThanh-------------------------------------
-
 
         public void myConnect()
         {

@@ -24,21 +24,14 @@ namespace Home.DuLieu
     internal class XuLiDuLieu
     {
         KetNoiCSDL kn = new KetNoiCSDL();
-
         string strconn = "Data Source=.;Initial Catalog=BanXeMay;Persist Security Info=True;User ID=sa;Password=123";
-
-        SqlDataAdapter da = null;
         SqlConnection conn = null;
-        SqlCommand cmd = null;
-        DataSet ds = null;
 
         public void Connection_CSDL()
         {
             conn = new SqlConnection(strconn);
             conn.Open();
         }
-        //------------------------------------------NgocThanh---------------------------------------------
-
         public string xuLiMaNCC(string maNCC)
         {
             kn.myConnect();
@@ -153,8 +146,6 @@ namespace Home.DuLieu
             cmd.Parameters.Add(sqlParameter1);
             return (int)cmd.ExecuteScalar();
         }
-
-        //------------------------------------------NgocThanh---------------------------------------------
         public void DatHang(string MaSP, string TenSP, decimal Gia, int SoLuong, Image Anh)
         {
             kn.myConnect();
@@ -275,15 +266,8 @@ namespace Home.DuLieu
 
                 }
             }
-
-            // Tạo và thực thi câu truy vấn
-           
-            //RESET TB
-            taikhoan = matkhau = "";
         
         }
-        //------------------------------------------NgocThanh---------------------------------------------
-
         /*    public DataTable themSanPham(string MaLoai)
             {
                 kn.myConnect();
