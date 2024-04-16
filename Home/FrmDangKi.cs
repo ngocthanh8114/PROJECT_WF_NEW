@@ -35,7 +35,10 @@ namespace Home
         {
             xl.Connection_CSDL();
             xl.DangKyTK(txtTenTaiKhoan.Text, txtMatKhau.Text, txtXacNhanMatKhau.Text, txtTenNguoiDung.Text, txtEmail.Text, txtSoDienThoai.Text, lblTaiKhoan, lblMatKhau, lblEmail, lblSDT);
-            txtTenTaiKhoan.Text = txtMatKhau.Text = txtTenNguoiDung.Text = txtEmail.Text = txtSoDienThoai.Text = txtXacNhanMatKhau.Text = "";
+            if (xl.dangKyThanhCong && lblTaiKhoan.Visible == false && lblMatKhau.Visible == false && lblEmail.Visible == false && lblSDT.Visible == false)
+            {
+                txtTenTaiKhoan.Text = txtMatKhau.Text = txtTenNguoiDung.Text = txtEmail.Text = txtSoDienThoai.Text = txtXacNhanMatKhau.Text = "";
+            }
         }
 
         private void FrmDangKi_Load(object sender, EventArgs e)

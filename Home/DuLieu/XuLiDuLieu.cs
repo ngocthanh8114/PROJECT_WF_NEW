@@ -355,7 +355,7 @@ namespace Home.DuLieu
         {
             return Regex.IsMatch(sdt, @"^[0-9]{6,24}$");
         }
-
+        public bool dangKyThanhCong = false;
         public void DangKyTK(string TenTaiKhoan, string MatKhau, string xnMatKhau, string TenNguoiDung, string Email, string SoDienThoai, Guna2HtmlLabel taiKhoan, Guna2HtmlLabel matKhau, Guna2HtmlLabel email, Guna2HtmlLabel sdt)
         {
             if ((TenTaiKhoan == "" || MatKhau == "" || TenNguoiDung == "" || Email == "" || SoDienThoai == ""))
@@ -419,12 +419,15 @@ namespace Home.DuLieu
                     FrmThongBao frmThongBao = new FrmThongBao();
                     frmThongBao.hienThiThongBao("Đăng ký tài khoản thành công");
                     frmThongBao.Show();
+                    dangKyThanhCong = true;
+                    
                 }
                 catch
                 {
                     FrmBaoLoi frmBaoLoi = new FrmBaoLoi();
                     frmBaoLoi.hienThiLoi("Vui lòng kiểm tra lại thông tin");
                     frmBaoLoi.Show();
+                    dangKyThanhCong = false;
                 }
             }
         }

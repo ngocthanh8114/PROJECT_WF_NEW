@@ -90,7 +90,7 @@
             this.lblMatKhau.Name = "lblMatKhau";
             this.lblMatKhau.Size = new System.Drawing.Size(381, 18);
             this.lblMatKhau.TabIndex = 56;
-            this.lblMatKhau.Text = "Mật khẩu không khớp";
+            this.lblMatKhau.Text = "Mật khẩu không khớp.";
             this.lblMatKhau.Visible = false;
             // 
             // txtXacNhanMatKhau
@@ -148,7 +148,7 @@
             this.lblTaiKhoan.Name = "lblTaiKhoan";
             this.lblTaiKhoan.Size = new System.Drawing.Size(416, 20);
             this.lblTaiKhoan.TabIndex = 52;
-            this.lblTaiKhoan.Text = "Tên tài khoản không bao gồm kí tự đặc biệt";
+            this.lblTaiKhoan.Text = "Tên tài khoản không bao gồm ký tự đặc biệt.";
             this.lblTaiKhoan.Visible = false;
             // 
             // txtTenTaiKhoan
@@ -183,7 +183,7 @@
             this.lblSDT.Name = "lblSDT";
             this.lblSDT.Size = new System.Drawing.Size(416, 18);
             this.lblSDT.TabIndex = 50;
-            this.lblSDT.Text = "SĐT không khớp";
+            this.lblSDT.Text = "SĐT không bao gồm chữ và ký tự đặc biệt.";
             this.lblSDT.Visible = false;
             // 
             // txtSoDienThoai
@@ -218,7 +218,7 @@
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(434, 18);
             this.lblEmail.TabIndex = 46;
-            this.lblEmail.Text = "Vui lòng nhập đúng định dạng email (@gmail.com)";
+            this.lblEmail.Text = "Vui lòng nhập đúng định dạng email (@gmail.com).";
             this.lblEmail.Visible = false;
             // 
             // txtEmail
@@ -257,7 +257,7 @@
             this.btn_Thoat.BackColor = System.Drawing.Color.Transparent;
             this.btn_Thoat.Image = ((System.Drawing.Image)(resources.GetObject("btn_Thoat.Image")));
             this.btn_Thoat.ImageRotate = 0F;
-            this.btn_Thoat.Location = new System.Drawing.Point(494, 3);
+            this.btn_Thoat.Location = new System.Drawing.Point(484, 3);
             this.btn_Thoat.Name = "btn_Thoat";
             this.btn_Thoat.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.btn_Thoat.Size = new System.Drawing.Size(31, 29);
