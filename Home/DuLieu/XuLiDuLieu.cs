@@ -353,15 +353,19 @@ namespace Home.DuLieu
         }
         public bool checkSDT(string sdt) 
         {
-            return Regex.IsMatch(sdt, @"^[0-9]{6,12}$");
+            return Regex.IsMatch(sdt, @"^[0-9]{6,24}$");
         }
-
-        public void DangKyTK(string TenTaiKhoan, string MatKhau, string xnMatKhau, string TenNguoiDung, string Email, string SoDienThoai, Guna2HtmlLabel taiKhoan, Guna2HtmlLabel matKhau, Guna2HtmlLabel email, Guna2HtmlLabel sdt)
+        public bool checkTenNguoiDung(string tnd)
+        {
+            return Regex.IsMatch(tnd, @"^[\p{L}\s]{1,50}$");
+        }
+        public bool dangKyThanhCong = false;
+        public void DangKyTK(string TenTaiKhoan, string MatKhau, string xnMatKhau, string TenNguoiDung, string Email, string SoDienThoai, Guna2HtmlLabel taiKhoan, Guna2HtmlLabel matKhau, Guna2HtmlLabel email, Guna2HtmlLabel sdt, Guna2HtmlLabel tnd)
         {
             if ((TenTaiKhoan == "" || MatKhau == "" || TenNguoiDung == "" || Email == "" || SoDienThoai == ""))
             {
                 FrmBaoLoi frmBaoLoi = new FrmBaoLoi();
-                frmBaoLoi.hienThiLoi("Vui lòng kiểm tra lại thông tin");
+                frmBaoLoi.hienThiLoi("Bạn chưa nhập đầy đủ thông tin!");
                 frmBaoLoi.Show();
             }
             else
@@ -383,6 +387,15 @@ namespace Home.DuLieu
                 else
                 {
                     matKhau.Visible = false;
+                }
+                if (!checkTenNguoiDung(TenNguoiDung))
+                {
+                    tnd.Visible = true;
+                    return;
+                }
+                else
+                {
+                    tnd.Visible = false;
                 }
                 if (!CheckEmail(Email))
                 {
@@ -419,16 +432,61 @@ namespace Home.DuLieu
                     FrmThongBao frmThongBao = new FrmThongBao();
                     frmThongBao.hienThiThongBao("Đăng ký tài khoản thành công");
                     frmThongBao.Show();
+                    dangKyThanhCong = true;
+                    
                 }
                 catch
                 {
                     FrmBaoLoi frmBaoLoi = new FrmBaoLoi();
-                    frmBaoLoi.hienThiLoi("Vui lòng kiểm tra lại thông tin");
+                    frmBaoLoi.hienThiLoi("Tên tài khoản đã được sử dụng!");
                     frmBaoLoi.Show();
+                    dangKyThanhCong = false;
                 }
             }
         }
-        
+        public void LayLaiMatKhau(string Email, Guna2HtmlLabel matKhau2, Guna2HtmlLabel tenTaiKhoan)
+        {
+            kn.myConnect();
+            string sql = "Select MatKhau, TenTaiKhoan from TaiKhoan where Email = @Email";
+            SqlCommand cmd = new SqlCommand(sql, conn);
+            cmd.Parameters.AddWithValue("@Email", Email);
+            try
+            {
+                SqlDataReader reader = cmd.ExecuteReader();
+
+                if (reader.Read())
+                {
+                    // Lấy mật khẩu và tên tài khoản từ dữ liệu đọc được
+                    string matKhau = reader["MatKhau"].ToString();
+                    string TenTaiKhoan = reader["TenTaiKhoan"].ToString();
+
+                    tenTaiKhoan.ForeColor = Color.Blue;
+                    matKhau2.ForeColor = Color.Blue;
+
+                    matKhau2.Text = "Mật Khẩu: " + matKhau;
+                    tenTaiKhoan.Text = "Tên tài khoản: " + TenTaiKhoan;
+                    matKhau2.Visible = true;
+                    tenTaiKhoan.Visible = true;
+                }
+                else
+                {
+                    tenTaiKhoan.ForeColor = Color.Red;
+                    tenTaiKhoan.Text = "Email chưa được đăng kí";
+                    matKhau2.Visible = false;
+                    tenTaiKhoan.Visible = true;
+                }
+
+                reader.Close(); // Đóng đối tượng SqlDataReader
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi: " + ex.Message);
+            }
+            finally
+            {
+                kn.myClose(); // Đóng kết nối đến cơ sở dữ liệu
+            }
+        }
         public void DangDatHang(string tenSP)
         {
             kn.myConnect();

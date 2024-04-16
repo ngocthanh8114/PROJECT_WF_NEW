@@ -88,7 +88,7 @@
             // 
             // linkLabel1
             // 
-            this.linkLabel1.Location = new System.Drawing.Point(403, 399);
+            this.linkLabel1.Location = new System.Drawing.Point(394, 399);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(167, 24);
             this.linkLabel1.TabIndex = 43;
@@ -100,7 +100,7 @@
             // 
             this.guna2HtmlLabel2.AutoSize = false;
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(251, 399);
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(240, 399);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(242, 18);
             this.guna2HtmlLabel2.TabIndex = 42;
@@ -115,6 +115,7 @@
             this.lbquenmk.TabIndex = 41;
             this.lbquenmk.TabStop = true;
             this.lbquenmk.Text = "Quên mật khẩu?";
+            this.lbquenmk.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lbquenmk_LinkClicked);
             // 
             // btn_Thoat
             // 
