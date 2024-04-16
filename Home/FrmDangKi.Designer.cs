@@ -34,18 +34,6 @@
             this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
 
-//<<<<<<< HEAD
-            //this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-          //  this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.txtXacNhanMatKhau = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtMatKhau = new Guna.UI2.WinForms.Guna2TextBox();
-           // this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.txtTenTaiKhoan = new Guna.UI2.WinForms.Guna2TextBox();
-            //this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.txtSoDienThoai = new Guna.UI2.WinForms.Guna2TextBox();
-            //this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-//=======
-
             this.lblTenNguoiDung = new Guna.UI2.WinForms.Guna2HtmlLabel();
 
             this.lblMatKhau = new Guna.UI2.WinForms.Guna2HtmlLabel();
