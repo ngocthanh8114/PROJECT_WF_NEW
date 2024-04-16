@@ -14,6 +14,8 @@ using Home;
 using Home.FrmCon.FrmHienThi;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 using System.Windows.Media.Media3D;
+using Guna.UI2.WinForms;
+using System.Text.RegularExpressions;
 
 
 namespace Home.DuLieu
@@ -341,34 +343,92 @@ namespace Home.DuLieu
             da.Fill(dt);
             return dt;
         }
-
-        public void DangKyTK(string TenTaiKhoan, string MatKhau, string TenNguoiDung, string Email, string SoDienThoai)
+        public bool CheckEmail(string em) //Check email
         {
-            try
-            {
-                string PhanQuyen = "user";
-                kn.myConnect();
-                string sql = "INSERT INTO TaiKhoan (TenTaiKhoan, MatKhau, TenNguoiDung, Email, SoDienThoai, PhanQuyen) VALUES (@TenTaiKhoan, @MatKhau, @TenNguoiDung, @Email, @SoDienThoai, @PhanQuyen)";
-                SqlCommand cmd = new SqlCommand(sql, conn);
-                cmd.Parameters.AddWithValue("TenTaiKhoan", TenTaiKhoan);   
-                cmd.Parameters.AddWithValue("MatKhau", MatKhau);   
-                cmd.Parameters.AddWithValue("TenNguoiDung", TenNguoiDung);   
-                cmd.Parameters.AddWithValue("Email", Email);   
-                cmd.Parameters.AddWithValue("SoDienThoai", SoDienThoai);   
-                cmd.Parameters.AddWithValue("PhanQuyen", PhanQuyen);
-                cmd.ExecuteNonQuery();
-                FrmThongBao frmThongBao = new FrmThongBao();
-                frmThongBao.hienThiThongBao("Đăng ký tài khoản thành công");
-                frmThongBao.Show();
-            }
-            catch
+            return Regex.IsMatch(em, @"^[\w.]{3,20}@gmail.com(.vn|)$");
+        }
+        public bool CheckAccount(string ac)
+        {
+            return !Regex.IsMatch(ac, @"[^\w]");
+        }
+        public bool checkSDT(string sdt) 
+        {
+            return Regex.IsMatch(sdt, @"^[0-9]{6,12}$");
+        }
+
+        public void DangKyTK(string TenTaiKhoan, string MatKhau, string xnMatKhau, string TenNguoiDung, string Email, string SoDienThoai, Guna2HtmlLabel taiKhoan, Guna2HtmlLabel matKhau, Guna2HtmlLabel email, Guna2HtmlLabel sdt)
+        {
+            if ((TenTaiKhoan == "" || MatKhau == "" || TenNguoiDung == "" || Email == "" || SoDienThoai == ""))
             {
                 FrmBaoLoi frmBaoLoi = new FrmBaoLoi();
                 frmBaoLoi.hienThiLoi("Vui lòng kiểm tra lại thông tin");
                 frmBaoLoi.Show();
             }
-        }
+            else
+            {
+                if (!CheckAccount(TenTaiKhoan))
+                {
+                    taiKhoan.Visible = true;
+                    return;
+                }
+                else
+                {
+                    taiKhoan.Visible = false;
+                }
+                if (MatKhau != xnMatKhau)
+                {
+                    matKhau.Visible = true;
+                    return;
+                }
+                else
+                {
+                    matKhau.Visible = false;
+                }
+                if (!CheckEmail(Email))
+                {
+                    email.Visible = true;
+                    return;
+                }
+                else
+                {
+                    email.Visible = false;
+                }
 
+                if (!checkSDT(SoDienThoai))
+                {
+                    sdt.Visible = true;
+                    return;
+                }
+                else
+                {
+                    sdt.Visible = false;
+                }
+                try
+                {
+                    string PhanQuyen = "user";
+                    kn.myConnect();
+                    string sql = "INSERT INTO TaiKhoan (TenTaiKhoan, MatKhau, TenNguoiDung, Email, SoDienThoai, PhanQuyen) VALUES (@TenTaiKhoan, @MatKhau, @TenNguoiDung, @Email, @SoDienThoai, @PhanQuyen)";
+                    SqlCommand cmd = new SqlCommand(sql, conn);
+                    cmd.Parameters.AddWithValue("TenTaiKhoan", TenTaiKhoan);
+                    cmd.Parameters.AddWithValue("MatKhau", MatKhau);
+                    cmd.Parameters.AddWithValue("TenNguoiDung", TenNguoiDung);
+                    cmd.Parameters.AddWithValue("Email", Email);
+                    cmd.Parameters.AddWithValue("SoDienThoai", SoDienThoai);
+                    cmd.Parameters.AddWithValue("PhanQuyen", PhanQuyen);
+                   
+                    FrmThongBao frmThongBao = new FrmThongBao();
+                    frmThongBao.hienThiThongBao("Đăng ký tài khoản thành công");
+                    frmThongBao.Show();
+                }
+                catch
+                {
+                    FrmBaoLoi frmBaoLoi = new FrmBaoLoi();
+                    frmBaoLoi.hienThiLoi("Vui lòng kiểm tra lại thông tin");
+                    frmBaoLoi.Show();
+                }
+            }
+        }
+        
         public void DangDatHang(string tenSP)
         {
             kn.myConnect();

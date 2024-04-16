@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Home;
 
 namespace Home.FrmCon.FrmHienThi
 {
@@ -48,6 +49,13 @@ namespace Home.FrmCon.FrmHienThi
         private void gunaCircleButton1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        public void loadGia(decimal tienHang, int SL)
+        {
+            lblTienHang.Text = tienHang.ToString() + " VNĐ";
+            lblPhiVanChuyen.Text = (SL*100000).ToString() + " VNĐ";
+            lblTong.Text = (tienHang + SL*100000).ToString() + " VNĐ";
         }
     }
 }

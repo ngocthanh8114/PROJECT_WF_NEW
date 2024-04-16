@@ -97,6 +97,7 @@
             this.btnTimKiem.OnHoverImage = null;
             this.btnTimKiem.OnPressedColor = System.Drawing.Color.Black;
             this.btnTimKiem.Size = new System.Drawing.Size(65, 55);
+
             this.btnTimKiem.TabIndex = 3;
             this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
             // 
@@ -206,6 +207,7 @@
             this.btnMua.TabIndex = 36;
             this.btnMua.Text = "Mua hàng";
             this.btnMua.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnMua.Click += new System.EventHandler(this.btnMua_Click);
             // 
             // lblGiaThanhToan
             // 

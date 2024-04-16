@@ -58,7 +58,7 @@ namespace Home.FrmCon
 
         private void cbDieuKhoan_Click(object sender, EventArgs e)
         {
-            if(cbDieuKhoan.Checked == true) btnMua.Enabled = true;
+            if (cbDieuKhoan.Checked == true) btnMua.Enabled = true;
             else btnMua.Enabled = false;
         }
 
@@ -100,6 +100,17 @@ namespace Home.FrmCon
             lblTongSP.Text = xl.tinhSP().ToString() + " sản phẩm";
             string[] str= lblGiaThanhToan.Text.Split(' ');
             lblGiaThanhToan.Text = (xl.tinhTongTien()).ToString() + " VNĐ";
+        }
+
+        private void btnMua_Click(object sender, EventArgs e)
+        {
+            FrmMuaHang frmMuaHang = new FrmMuaHang();
+            string[] str= lblTongTien.Text.Split(' ');
+            decimal tongTien = decimal.Parse(str[0]);
+            string[] str1 = lblTongSP.Text.Split(' ');
+            int tongSP = int.Parse(str1[0]);
+            frmMuaHang.loadGia(tongTien,tongSP);
+            frmMuaHang.ShowDialog();
         }
     }
 }
