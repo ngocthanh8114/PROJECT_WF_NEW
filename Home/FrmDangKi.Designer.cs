@@ -33,6 +33,7 @@
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.lblTenNguoiDung = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblMatKhau = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtXacNhanMatKhau = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtMatKhau = new Guna.UI2.WinForms.Guna2TextBox();
@@ -62,6 +63,7 @@
             // guna2Panel2
             // 
             this.guna2Panel2.BackColor = System.Drawing.Color.Silver;
+            this.guna2Panel2.Controls.Add(this.lblTenNguoiDung);
             this.guna2Panel2.Controls.Add(this.lblMatKhau);
             this.guna2Panel2.Controls.Add(this.txtXacNhanMatKhau);
             this.guna2Panel2.Controls.Add(this.txtMatKhau);
@@ -80,6 +82,18 @@
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.Size = new System.Drawing.Size(518, 585);
             this.guna2Panel2.TabIndex = 28;
+            // 
+            // lblTenNguoiDung
+            // 
+            this.lblTenNguoiDung.AutoSize = false;
+            this.lblTenNguoiDung.BackColor = System.Drawing.Color.Transparent;
+            this.lblTenNguoiDung.ForeColor = System.Drawing.Color.Red;
+            this.lblTenNguoiDung.Location = new System.Drawing.Point(90, 275);
+            this.lblTenNguoiDung.Name = "lblTenNguoiDung";
+            this.lblTenNguoiDung.Size = new System.Drawing.Size(545, 20);
+            this.lblTenNguoiDung.TabIndex = 57;
+            this.lblTenNguoiDung.Text = "Tên người dùng không bao gồm ký tự đặc biệt và số.";
+            this.lblTenNguoiDung.Visible = false;
             // 
             // lblMatKhau
             // 
@@ -353,5 +367,6 @@
         private Guna.UI2.WinForms.Guna2TextBox txtTenTaiKhoan;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblSDT;
         private Guna.UI2.WinForms.Guna2TextBox txtSoDienThoai;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblTenNguoiDung;
     }
 }

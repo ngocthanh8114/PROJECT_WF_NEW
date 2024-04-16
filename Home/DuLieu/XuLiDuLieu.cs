@@ -353,15 +353,19 @@ namespace Home.DuLieu
         }
         public bool checkSDT(string sdt) 
         {
-            return Regex.IsMatch(sdt, @"^[0-9]{6,24}$");
+            return Regex.IsMatch(sdt, @"^[0-9]{10,11}$");
+        }
+        public bool checkTenNguoiDung(string tnd)
+        {
+            return Regex.IsMatch(tnd, @"^[\p{L}\s]{1,50}$");
         }
         public bool dangKyThanhCong = false;
-        public void DangKyTK(string TenTaiKhoan, string MatKhau, string xnMatKhau, string TenNguoiDung, string Email, string SoDienThoai, Guna2HtmlLabel taiKhoan, Guna2HtmlLabel matKhau, Guna2HtmlLabel email, Guna2HtmlLabel sdt)
+        public void DangKyTK(string TenTaiKhoan, string MatKhau, string xnMatKhau, string TenNguoiDung, string Email, string SoDienThoai, Guna2HtmlLabel taiKhoan, Guna2HtmlLabel matKhau, Guna2HtmlLabel email, Guna2HtmlLabel sdt, Guna2HtmlLabel tnd)
         {
             if ((TenTaiKhoan == "" || MatKhau == "" || TenNguoiDung == "" || Email == "" || SoDienThoai == ""))
             {
                 FrmBaoLoi frmBaoLoi = new FrmBaoLoi();
-                frmBaoLoi.hienThiLoi("Vui lòng kiểm tra lại thông tin");
+                frmBaoLoi.hienThiLoi("Bạn chưa nhập đầy đủ thông tin!");
                 frmBaoLoi.Show();
             }
             else
@@ -383,6 +387,15 @@ namespace Home.DuLieu
                 else
                 {
                     matKhau.Visible = false;
+                }
+                if (!checkTenNguoiDung(TenNguoiDung))
+                {
+                    tnd.Visible = true;
+                    return;
+                }
+                else
+                {
+                    tnd.Visible = false;
                 }
                 if (!CheckEmail(Email))
                 {
@@ -425,7 +438,7 @@ namespace Home.DuLieu
                 catch
                 {
                     FrmBaoLoi frmBaoLoi = new FrmBaoLoi();
-                    frmBaoLoi.hienThiLoi("Vui lòng kiểm tra lại thông tin");
+                    frmBaoLoi.hienThiLoi("Tên tài khoản đã được sử dụng!");
                     frmBaoLoi.Show();
                     dangKyThanhCong = false;
                 }
