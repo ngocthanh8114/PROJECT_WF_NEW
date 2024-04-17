@@ -200,8 +200,7 @@
             this.btnDangNhap.Size = new System.Drawing.Size(177, 41);
             this.btnDangNhap.TabIndex = 32;
             this.btnDangNhap.Text = "Đăng nhập";
-            this.btnDangNhap.Click += new System.EventHandler(this.btnDangNhap_Click);
-            this.btnDangNhap.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.btnDangNhap_KeyPress);
+            this.btnDangNhap.Click += new System.EventHandler(this.btnDangNhap_Click);            this.btnDangNhap.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.btnDangNhap_KeyPress);
             // 
             // txtMatKhau
             // 

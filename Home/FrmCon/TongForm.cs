@@ -15,7 +15,7 @@ namespace Home.FrmCon
         public static void ResetFrm()
         {
             TaiKhoan = new TaiKhoan();
-            SanPham = new SanPham();
+            //SanPham = new SanPham();
             DonHang = new DonHang();
         }
     }

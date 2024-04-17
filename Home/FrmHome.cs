@@ -84,7 +84,7 @@ namespace Home
             //btnGioiThieu.Enabled = false;*/
         }
 
-        private void btnSanPham_Click(object sender, EventArgs e)
+        public void btnSanPham_Click(object sender, EventArgs e)
         {
             addHienThi(TongForm.SanPham);
             TongForm.SanPham.SanPham_Load(TongForm.SanPham, e);
