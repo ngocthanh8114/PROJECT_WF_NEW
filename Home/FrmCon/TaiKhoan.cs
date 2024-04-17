@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Home;
 using Home.DuLieu;
+using Home.FrmCon.FrmHienThi;
 
 namespace Home.FrmCon
 {
@@ -27,6 +28,19 @@ namespace Home.FrmCon
             lblTenNguoiDung.Text = TaiKhoanDangNhap.tenNguoiDung;
             lblTenTaiKhoan.Text = TaiKhoanDangNhap.tenTaiKhoan;
             lblSoDT.Text = TaiKhoanDangNhap.soDienThoai;
+        }
+
+        private void btnSua_Click(object sender, EventArgs e)
+        {
+            FrmCapNhatTT frmCapNhatTT = new FrmCapNhatTT();
+            frmCapNhatTT.ShowDialog();
+        }
+
+        private void btnDangXuat_Click(object sender, EventArgs e)
+        {
+            FrmHome frmHome = new FrmHome();
+            frmHome.Close();
+
         }
     }
 }

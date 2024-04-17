@@ -16,6 +16,7 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 using System.Windows.Media.Media3D;
 using Guna.UI2.WinForms;
 using System.Text.RegularExpressions;
+using Home.FrmCon;
 
 
 namespace Home.DuLieu
@@ -546,6 +547,61 @@ namespace Home.DuLieu
             SqlCommand cmd = new SqlCommand(sql, kn.con);
             
             cmd.ExecuteNonQuery();
+        }
+        public bool capNhatTaiKhoan = false;
+        public void CapNhatTaiKhoan(string tenNguoiDung, string email, string soDienThoai, Guna2HtmlLabel em, Guna2HtmlLabel soDT, Guna2HtmlLabel tenND)
+        {
+            if ((tenNguoiDung == "" || email == "" || soDienThoai == ""))
+            {
+                FrmBaoLoi frmBaoLoi = new FrmBaoLoi();
+                frmBaoLoi.hienThiLoi("Bạn chưa nhập đầy đủ thông tin!");
+                frmBaoLoi.Show();
+            }
+            else
+            {
+                if (!checkTenNguoiDung(tenNguoiDung))
+                {
+                    tenND.Visible = true;
+                    return;
+                }
+                else
+                {
+                    tenND.Visible = false;
+                }
+                if (!CheckEmail(email))
+                {
+                    em.Visible = true;
+                    return;
+                }
+                else
+                {
+                    em.Visible = false;
+                }
+
+                if (!checkSDT(soDienThoai))
+                {
+                    soDT.Visible = true;
+                    return;
+                }
+                else
+                {
+                    soDT.Visible = false;
+                }
+                kn.myConnect();
+                string sql = "UPDATE TaiKhoan SET TenNguoiDung = @TenND, Email = @Email, SoDienThoai = @SoDT WHERE TenTaiKhoan = @TenTK";
+                SqlCommand cmd = new SqlCommand(sql, conn);
+                cmd.Parameters.AddWithValue("TenTK", TaiKhoanDangNhap.tenTaiKhoan);
+                cmd.Parameters.AddWithValue("TenND", tenNguoiDung);
+                cmd.Parameters.AddWithValue("Email", email);
+                cmd.Parameters.AddWithValue("SoDT", soDienThoai);
+
+                cmd.ExecuteNonQuery();
+                TaiKhoanDangNhap.tenNguoiDung = tenNguoiDung;
+                TaiKhoanDangNhap.email = email;
+                TaiKhoanDangNhap.soDienThoai = soDienThoai;
+                capNhatTaiKhoan = true;
+                
+            }
         }
     }
 }

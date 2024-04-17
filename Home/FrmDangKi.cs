@@ -38,7 +38,7 @@ namespace Home
             
 
             xl.DangKyTK(txtTenTaiKhoan.Text, txtMatKhau.Text, txtXacNhanMatKhau.Text, txtTenNguoiDung.Text, txtEmail.Text, txtSoDienThoai.Text, lblTaiKhoan, lblMatKhau, lblEmail, lblSDT, lblTenNguoiDung);
-            if (xl.dangKyThanhCong && lblTaiKhoan.Visible == false && lblMatKhau.Visible == false && lblEmail.Visible == false && lblSDT.Visible == false)
+            if (xl.dangKyThanhCong && lblTaiKhoan.Visible == false && lblMatKhau.Visible == false && lblEmail.Visible == false && lblSDT.Visible == false && lblTenNguoiDung.Visible == false)
             {
                 txtTenTaiKhoan.Text = txtMatKhau.Text = txtTenNguoiDung.Text = txtEmail.Text = txtSoDienThoai.Text = txtXacNhanMatKhau.Text = "";
             }
