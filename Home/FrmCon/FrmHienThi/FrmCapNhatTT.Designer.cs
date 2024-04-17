@@ -47,6 +47,9 @@
             this.guna2Panel6 = new Guna.UI2.WinForms.Guna2Panel();
             this.btn_Luu = new Guna.UI.WinForms.GunaAdvenceButton();
             this.pn_NoiDungSua = new Guna.UI2.WinForms.Guna2Panel();
+            this.lblSoDT = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblEm = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblTenND = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txt_TenTK = new Guna.UI2.WinForms.Guna2TextBox();
             this.cbtnXoa = new Guna.UI.WinForms.GunaCircleButton();
             this.txt_SDT = new Guna.UI2.WinForms.Guna2TextBox();
@@ -55,9 +58,6 @@
             this.guna2Shapes1 = new Guna.UI2.WinForms.Guna2Shapes();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
-            this.lblTenND = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblEm = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblSoDT = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             this.guna2Panel1.SuspendLayout();
@@ -334,6 +334,42 @@
             this.pn_NoiDungSua.Size = new System.Drawing.Size(511, 462);
             this.pn_NoiDungSua.TabIndex = 7;
             // 
+            // lblSoDT
+            // 
+            this.lblSoDT.AutoSize = false;
+            this.lblSoDT.BackColor = System.Drawing.Color.Transparent;
+            this.lblSoDT.ForeColor = System.Drawing.Color.Red;
+            this.lblSoDT.Location = new System.Drawing.Point(59, 341);
+            this.lblSoDT.Name = "lblSoDT";
+            this.lblSoDT.Size = new System.Drawing.Size(1085, 34);
+            this.lblSoDT.TabIndex = 60;
+            this.lblSoDT.Text = "SĐT không bao gồm chữ và ký tự đặc biệt (10-11 ký tự).";
+            this.lblSoDT.Visible = false;
+            // 
+            // lblEm
+            // 
+            this.lblEm.AutoSize = false;
+            this.lblEm.BackColor = System.Drawing.Color.Transparent;
+            this.lblEm.ForeColor = System.Drawing.Color.Red;
+            this.lblEm.Location = new System.Drawing.Point(58, 239);
+            this.lblEm.Name = "lblEm";
+            this.lblEm.Size = new System.Drawing.Size(1232, 27);
+            this.lblEm.TabIndex = 59;
+            this.lblEm.Text = "Vui lòng nhập đúng định dạng email (@gmail.com).";
+            this.lblEm.Visible = false;
+            // 
+            // lblTenND
+            // 
+            this.lblTenND.AutoSize = false;
+            this.lblTenND.BackColor = System.Drawing.Color.Transparent;
+            this.lblTenND.ForeColor = System.Drawing.Color.Red;
+            this.lblTenND.Location = new System.Drawing.Point(58, 144);
+            this.lblTenND.Name = "lblTenND";
+            this.lblTenND.Size = new System.Drawing.Size(1075, 31);
+            this.lblTenND.TabIndex = 58;
+            this.lblTenND.Text = "Tên người dùng không bao gồm ký tự đặc biệt và số.";
+            this.lblTenND.Visible = false;
+            // 
             // txt_TenTK
             // 
             this.txt_TenTK.BorderRadius = 8;
@@ -483,42 +519,6 @@
             this.gunaLabel1.Size = new System.Drawing.Size(207, 18);
             this.gunaLabel1.TabIndex = 2;
             this.gunaLabel1.Text = "Cập nhật thông tin khách hàng";
-            // 
-            // lblTenND
-            // 
-            this.lblTenND.AutoSize = false;
-            this.lblTenND.BackColor = System.Drawing.Color.Transparent;
-            this.lblTenND.ForeColor = System.Drawing.Color.Red;
-            this.lblTenND.Location = new System.Drawing.Point(58, 144);
-            this.lblTenND.Name = "lblTenND";
-            this.lblTenND.Size = new System.Drawing.Size(1075, 31);
-            this.lblTenND.TabIndex = 58;
-            this.lblTenND.Text = "Tên người dùng không bao gồm ký tự đặc biệt và số.";
-            this.lblTenND.Visible = false;
-            // 
-            // lblEm
-            // 
-            this.lblEm.AutoSize = false;
-            this.lblEm.BackColor = System.Drawing.Color.Transparent;
-            this.lblEm.ForeColor = System.Drawing.Color.Red;
-            this.lblEm.Location = new System.Drawing.Point(58, 239);
-            this.lblEm.Name = "lblEm";
-            this.lblEm.Size = new System.Drawing.Size(1232, 27);
-            this.lblEm.TabIndex = 59;
-            this.lblEm.Text = "Vui lòng nhập đúng định dạng email (@gmail.com).";
-            this.lblEm.Visible = false;
-            // 
-            // lblSoDT
-            // 
-            this.lblSoDT.AutoSize = false;
-            this.lblSoDT.BackColor = System.Drawing.Color.Transparent;
-            this.lblSoDT.ForeColor = System.Drawing.Color.Red;
-            this.lblSoDT.Location = new System.Drawing.Point(59, 341);
-            this.lblSoDT.Name = "lblSoDT";
-            this.lblSoDT.Size = new System.Drawing.Size(1085, 34);
-            this.lblSoDT.TabIndex = 60;
-            this.lblSoDT.Text = "SĐT không bao gồm chữ và ký tự đặc biệt.";
-            this.lblSoDT.Visible = false;
             // 
             // FrmCapNhatTT
             // 

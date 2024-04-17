@@ -33,9 +33,7 @@
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-
             this.lblTenNguoiDung = new Guna.UI2.WinForms.Guna2HtmlLabel();
-
             this.lblMatKhau = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtXacNhanMatKhau = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtMatKhau = new Guna.UI2.WinForms.Guna2TextBox();
@@ -44,7 +42,6 @@
             this.lblSDT = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtSoDienThoai = new Guna.UI2.WinForms.Guna2TextBox();
             this.lblEmail = new Guna.UI2.WinForms.Guna2HtmlLabel();
-//>>>>>>> 695dc4a9c43c33b6a4cf4a22252c646766ae9d31
             this.txtEmail = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btn_Thoat = new Guna.UI2.WinForms.Guna2CirclePictureBox();
@@ -86,142 +83,6 @@
             this.guna2Panel2.Size = new System.Drawing.Size(518, 585);
             this.guna2Panel2.TabIndex = 28;
             // 
-//<<<<<<< HEAD
-            // guna2HtmlLabel5
-            // 
-           // this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
-           
-            // 
-            // guna2HtmlLabel4
-            // 
-           // this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
-            /*this.guna2HtmlLabel4.ForeColor = System.Drawing.Color.Red;
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(97, 125);
-            this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            this.guna2HtmlLabel4.Size = new System.Drawing.Size(191, 18);
-            this.guna2HtmlLabel4.TabIndex = 55;
-            this.guna2HtmlLabel4.Text = "Vui lòng nhập lại mật khẩu đúng ";
-            this.guna2HtmlLabel4.Visible = false;
-            */
-                // 
-            // txtXacNhanMatKhau
-            // 
-            this.txtXacNhanMatKhau.AutoRoundedCorners = true;
-            this.txtXacNhanMatKhau.BorderRadius = 21;
-            this.txtXacNhanMatKhau.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtXacNhanMatKhau.DefaultText = "";
-            this.txtXacNhanMatKhau.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtXacNhanMatKhau.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtXacNhanMatKhau.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtXacNhanMatKhau.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtXacNhanMatKhau.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtXacNhanMatKhau.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtXacNhanMatKhau.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtXacNhanMatKhau.Location = new System.Drawing.Point(84, 223);
-            this.txtXacNhanMatKhau.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtXacNhanMatKhau.Name = "txtXacNhanMatKhau";
-            this.txtXacNhanMatKhau.PasswordChar = '•';
-            this.txtXacNhanMatKhau.PlaceholderText = "Xác nhận mật khẩu";
-            this.txtXacNhanMatKhau.SelectedText = "";
-            this.txtXacNhanMatKhau.Size = new System.Drawing.Size(361, 44);
-            this.txtXacNhanMatKhau.TabIndex = 54;
-            this.txtXacNhanMatKhau.TextOffset = new System.Drawing.Point(8, 0);
-            // 
-            // txtMatKhau
-            // 
-            this.txtMatKhau.AutoRoundedCorners = true;
-            this.txtMatKhau.BorderRadius = 21;
-            this.txtMatKhau.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtMatKhau.DefaultText = "";
-            this.txtMatKhau.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtMatKhau.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtMatKhau.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtMatKhau.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtMatKhau.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMatKhau.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtMatKhau.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMatKhau.Location = new System.Drawing.Point(84, 147);
-            this.txtMatKhau.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtMatKhau.Name = "txtMatKhau";
-            this.txtMatKhau.PasswordChar = '•';
-            this.txtMatKhau.PlaceholderText = "Mật khẩu";
-            this.txtMatKhau.SelectedText = "";
-            this.txtMatKhau.Size = new System.Drawing.Size(361, 44);
-            this.txtMatKhau.TabIndex = 53;
-            this.txtMatKhau.TextOffset = new System.Drawing.Point(8, 0);
-            // 
-            // guna2HtmlLabel2
-            // 
-           /* this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.Red;
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(99, 54);
-            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(212, 18);
-            this.guna2HtmlLabel2.TabIndex = 52;
-            this.guna2HtmlLabel2.Text = "Vui lòng nhập lại tên tài khoản đúng";
-            this.guna2HtmlLabel2.Visible = false;
-            */
-           // 
-            // txtTenTaiKhoan
-            // 
-            this.txtTenTaiKhoan.AutoRoundedCorners = true;
-            this.txtTenTaiKhoan.BorderRadius = 21;
-            this.txtTenTaiKhoan.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtTenTaiKhoan.DefaultText = "";
-            this.txtTenTaiKhoan.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtTenTaiKhoan.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtTenTaiKhoan.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtTenTaiKhoan.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtTenTaiKhoan.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTenTaiKhoan.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtTenTaiKhoan.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTenTaiKhoan.Location = new System.Drawing.Point(86, 75);
-            this.txtTenTaiKhoan.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtTenTaiKhoan.Name = "txtTenTaiKhoan";
-            this.txtTenTaiKhoan.PasswordChar = '\0';
-            this.txtTenTaiKhoan.PlaceholderText = "Tên tài khoản";
-            this.txtTenTaiKhoan.SelectedText = "";
-            this.txtTenTaiKhoan.Size = new System.Drawing.Size(361, 44);
-            this.txtTenTaiKhoan.TabIndex = 51;
-            this.txtTenTaiKhoan.TextOffset = new System.Drawing.Point(8, 0);
-            // 
-            // guna2HtmlLabel6
-            // 
-            /*this.guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel6.ForeColor = System.Drawing.Color.Red;
-            this.guna2HtmlLabel6.Location = new System.Drawing.Point(99, 430);
-            this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
-            this.guna2HtmlLabel6.Size = new System.Drawing.Size(103, 18);
-            this.guna2HtmlLabel6.TabIndex = 50;
-            this.guna2HtmlLabel6.Text = "SĐT không khớp";
-            this.guna2HtmlLabel6.Visible = false;
-            // */
-            // txtSoDienThoai
-            // 
-            this.txtSoDienThoai.AutoRoundedCorners = true;
-            this.txtSoDienThoai.BorderRadius = 21;
-            this.txtSoDienThoai.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtSoDienThoai.DefaultText = "";
-            this.txtSoDienThoai.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtSoDienThoai.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtSoDienThoai.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSoDienThoai.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSoDienThoai.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSoDienThoai.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtSoDienThoai.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSoDienThoai.Location = new System.Drawing.Point(86, 451);
-            this.txtSoDienThoai.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtSoDienThoai.Name = "txtSoDienThoai";
-            this.txtSoDienThoai.PasswordChar = '\0';
-            this.txtSoDienThoai.PlaceholderText = "Số điện thoại";
-            this.txtSoDienThoai.SelectedText = "";
-            this.txtSoDienThoai.Size = new System.Drawing.Size(361, 44);
-            this.txtSoDienThoai.TabIndex = 49;
-            this.txtSoDienThoai.TextOffset = new System.Drawing.Point(8, 0);
-            // 
-            // guna2HtmlLabel3
-//=======
-
             // lblTenNguoiDung
             // 
             this.lblTenNguoiDung.AutoSize = false;
@@ -234,9 +95,7 @@
             this.lblTenNguoiDung.Text = "Tên người dùng không bao gồm ký tự đặc biệt và số.";
             this.lblTenNguoiDung.Visible = false;
             // 
-
             // lblMatKhau
-//>>>>>>> 695dc4a9c43c33b6a4cf4a22252c646766ae9d31
             // 
             this.lblMatKhau.AutoSize = false;
             this.lblMatKhau.BackColor = System.Drawing.Color.Transparent;
@@ -336,9 +195,9 @@
             this.lblSDT.ForeColor = System.Drawing.Color.Red;
             this.lblSDT.Location = new System.Drawing.Point(99, 430);
             this.lblSDT.Name = "lblSDT";
-            this.lblSDT.Size = new System.Drawing.Size(416, 18);
+            this.lblSDT.Size = new System.Drawing.Size(852, 18);
             this.lblSDT.TabIndex = 50;
-            this.lblSDT.Text = "SĐT không bao gồm chữ và ký tự đặc biệt.";
+            this.lblSDT.Text = "SĐT không bao gồm chữ và ký tự đặc biệt.(10-11 ký tự)";
             this.lblSDT.Visible = false;
             // 
             // txtSoDienThoai

@@ -45,7 +45,6 @@ namespace Home.FrmCon
             {
                 frmHome.Close();
             }
-            TaiKhoanDangNhap.ResetTaiKhoan();
             FrmDangNhap dn = new FrmDangNhap();
             dn.ShowDialog();
         }
