@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Home.DuLieu;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,5 +13,6 @@ namespace Home
         public static string tenNguoiDung;
         public static string email;
         public static string soDienThoai;
+
     }
 }

@@ -17,6 +17,7 @@ namespace Home
     public partial class FrmDangNhap : Form
     {
         XuLiDuLieu xl = new XuLiDuLieu();
+        TongForm tp = new TongForm();
         public FrmDangNhap()
         {
             InitializeComponent();
@@ -43,6 +44,7 @@ namespace Home
                     TaiKhoanDangNhap.tenNguoiDung = row["TenNguoiDung"].ToString();
                     TaiKhoanDangNhap.email = row["Email"].ToString();
                     TaiKhoanDangNhap.soDienThoai = row["SoDienThoai"].ToString();
+                    TongForm.ResetFrm();
                     xl.DangNhap(txtTaiKhoan.Text, txtMatKhau.Text, frmHome);
                     this.Hide();
 

@@ -58,7 +58,7 @@ namespace Home.FrmCon
 
         private void cbDieuKhoan_Click(object sender, EventArgs e)
         {
-            if (cbDieuKhoan.Checked == true) btnMua.Enabled = true;
+            if (cbDieuKhoan.Checked == true && lblTongSP.Text != "0 sản phẩm") btnMua.Enabled = true;
             else btnMua.Enabled = false;
         }
 
