@@ -10,12 +10,14 @@ using System.Windows.Forms;
 using Home;
 using Home.DuLieu;
 using Home.FrmCon.FrmHienThi;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace Home.FrmCon
 {
     
     public partial class TaiKhoan : UserControl
     {
+
        
         public TaiKhoan()
         {
@@ -38,9 +40,14 @@ namespace Home.FrmCon
 
         private void btnDangXuat_Click(object sender, EventArgs e)
         {
-            FrmHome frmHome = new FrmHome();
-            frmHome.Close();
-
+            FrmHome frmHome = this.ParentForm as FrmHome;
+            if (frmHome != null)
+            {
+                frmHome.Close();
+            }
+            TaiKhoanDangNhap.ResetTaiKhoan();
+            FrmDangNhap dn = new FrmDangNhap();
+            dn.ShowDialog();
         }
     }
 }

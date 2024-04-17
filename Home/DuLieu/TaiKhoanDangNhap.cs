@@ -13,5 +13,13 @@ namespace Home
         public static string tenNguoiDung;
         public static string email;
         public static string soDienThoai;
+        public static void ResetTaiKhoan()
+        {
+            tenTaiKhoan = "";
+            tenNguoiDung = "";
+            email = "";
+            soDienThoai = "";
+        }
+
     }
 }
