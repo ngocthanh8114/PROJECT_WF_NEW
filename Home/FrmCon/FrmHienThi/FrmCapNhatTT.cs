@@ -41,7 +41,9 @@ namespace Home.FrmCon.FrmHienThi
                 //this.Close();
                 FrmThongBao frmThongBao = new FrmThongBao();
                 frmThongBao.hienThiThongBao("Cập nhật thông tin tài khoản thành công!");
-                frmThongBao.Show();
+                frmThongBao.ShowDialog();
+                frmThongBao.Dispose();
+                this.Close();
                 TongForm.TaiKhoan.TaiKhoan_Load(TongForm.TaiKhoan, e);
             }
         }

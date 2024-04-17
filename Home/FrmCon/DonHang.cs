@@ -112,5 +112,15 @@ namespace Home.FrmCon
             frmMuaHang.loadGia(tongTien,tongSP);
             frmMuaHang.ShowDialog();
         }
+
+        private void lblTen_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void picBoxLoGO_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
