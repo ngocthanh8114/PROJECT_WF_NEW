@@ -338,7 +338,7 @@ namespace Home.DuLieu
         }
         public bool checkSDT(string sdt) 
         {
-            return Regex.IsMatch(sdt, @"^[0-9]{6,24}$");
+            return Regex.IsMatch(sdt, @"^[0-9]{10,11}$");
         }
         public bool checkTenNguoiDung(string tnd)
         {

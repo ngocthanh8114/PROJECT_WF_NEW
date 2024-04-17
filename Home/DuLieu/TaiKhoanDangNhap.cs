@@ -13,6 +13,9 @@ namespace Home
         public static string tenNguoiDung;
         public static string email;
         public static string soDienThoai;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 7081ee7b6b3e6fa6d589e9b21dabec4f79c9155a
     }
 }
