@@ -8,9 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Xaml;
 using Home;
-using Home.DuLieu;
 
 namespace Home.FrmCon.FrmHienThi
 {
@@ -20,7 +18,7 @@ namespace Home.FrmCon.FrmHienThi
         {
             InitializeComponent();
         }
-        XuLiDuLieu xl = new XuLiDuLieu();
+
         private void RoundFormCorners(Form form, int radius)
         {
             // Tạo một GraphicsPath để chứa hình dạng của form
@@ -46,8 +44,6 @@ namespace Home.FrmCon.FrmHienThi
         private void FrmMuaHang_Load(object sender, EventArgs e)
         {
             RoundFormCorners(this, 5);
-            lblMaDH.Text = xl.DonHangHienTai();
-            MaDonHangHienTai.maDH = int.Parse(xl.DonHangHienTai());
         }
 
         private void gunaCircleButton1_Click(object sender, EventArgs e)
@@ -55,33 +51,11 @@ namespace Home.FrmCon.FrmHienThi
             this.Close();
         }
 
-        public void loadFormMua(decimal tienHang, int SL)
+        public void loadGia(decimal tienHang, int SL)
         {
             lblTienHang.Text = tienHang.ToString() + " VNĐ";
             lblPhiVanChuyen.Text = (SL*100000).ToString() + " VNĐ";
             lblTong.Text = (tienHang + SL*100000).ToString() + " VNĐ";
-            
-        }
-
-        private void btnMuaHang_Click(object sender, EventArgs e)
-        {
-            if(!string.IsNullOrWhiteSpace(txtHoTen.Text) || !string.IsNullOrWhiteSpace(txtSDT.Text) || !string.IsNullOrWhiteSpace(txtDiaChi.Text))
-            {
-                xl.MuaHang(txtHoTen.Text, txtEmail.Text, txtSDT.Text, txtDiaChi.Text, txtLoiNhan.Text, lblTienHang.Text, lblPhiVanChuyen.Text, lblTong.Text);
-                xl.DaMuaHang();
-                xl.truSoLuongDaMua();
-                FrmThongBao frmThongBao = new FrmThongBao();
-                frmThongBao.hienThiThongBao("Mua hàng thành công");
-                frmThongBao.ShowDialog();
-                this.Close();
-                TongForm.DonHang.DonHang_Load(TongForm.DonHang, e);
-            }
-            else
-            {
-                FrmBaoLoi frmBaoLoi = new FrmBaoLoi();
-                frmBaoLoi.hienThiLoi("Bạn chưa nhập đầy đủ thông tin cần thiết");
-                frmBaoLoi.Show();
-            }
         }
     }
 }

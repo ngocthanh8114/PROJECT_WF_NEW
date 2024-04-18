@@ -82,6 +82,12 @@
     <Compile Include="FrmCon\FrmHienThi\FrmBaoLoi.Designer.cs">
       <DependentUpon>FrmBaoLoi.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmCon\FrmHienThi\FrmCapNhatTT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCon\FrmHienThi\FrmCapNhatTT.Designer.cs">
+      <DependentUpon>FrmCapNhatTT.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmCon\TongForm.cs" />
     <Compile Include="FrmCon\FrmHienThi\FrmMuaHang.cs">
       <SubType>Form</SubType>
@@ -137,6 +143,12 @@
     <Compile Include="FrmCon\SanPham.Designer.cs">
       <DependentUpon>SanPham.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmQuenMatKhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmQuenMatKhau.Designer.cs">
+      <DependentUpon>FrmQuenMatKhau.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="DuLieu\KetNoiCSDL.cs" />
@@ -150,6 +162,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmCon\FrmHienThi\FrmBaoLoi.resx">
       <DependentUpon>FrmBaoLoi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCon\FrmHienThi\FrmCapNhatTT.resx">
+      <DependentUpon>FrmCapNhatTT.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmCon\FrmHienThi\FrmMuaHang.resx">
       <DependentUpon>FrmMuaHang.cs</DependentUpon>
@@ -177,6 +192,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmCon\SanPham.resx">
       <DependentUpon>SanPham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmQuenMatKhau.resx">
+      <DependentUpon>FrmQuenMatKhau.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

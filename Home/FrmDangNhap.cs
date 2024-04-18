@@ -17,6 +17,7 @@ namespace Home
     public partial class FrmDangNhap : Form
     {
         XuLiDuLieu xl = new XuLiDuLieu();
+        TongForm tp = new TongForm();
         public FrmDangNhap()
         {
             InitializeComponent();
@@ -25,29 +26,38 @@ namespace Home
        
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
-            try
+            if(txtMatKhau.Text == "" || txtTaiKhoan.Text == "")
             {
-                XuLiDuLieu xl = new XuLiDuLieu();
-                xl.Connection_CSDL();
-                FrmHome frmHome = new FrmHome();
-
-                DataTable dt = xl.layThongTinTK(txtTaiKhoan.Text, txtMatKhau.Text);
-                DataRow row = dt.Rows[0];
-                TaiKhoanDangNhap.tenTaiKhoan = row["TenTaiKhoan"].ToString();
-                TaiKhoanDangNhap.tenNguoiDung = row["TenNguoiDung"].ToString();
-                TaiKhoanDangNhap.email = row["Email"].ToString();
-                TaiKhoanDangNhap.soDienThoai = row["SoDienThoai"].ToString();
-                xl.DangNhap(txtTaiKhoan.Text, txtMatKhau.Text, frmHome);
-                this.Hide();
-                
-            }
-            catch
-            {
-                MessageBox.Show("Bạn đã nhập tài khoản hoặc mật khẩu sai");
                 lberror.Visible = true;
-                txtMatKhau.ResetText();
-                txtMatKhau.Focus();
             }
+            else
+            {
+                try
+                {
+                    XuLiDuLieu xl = new XuLiDuLieu();
+                    xl.Connection_CSDL();
+                    FrmHome frmHome = new FrmHome();
+
+                    DataTable dt = xl.layThongTinTK(txtTaiKhoan.Text, txtMatKhau.Text);
+                    DataRow row = dt.Rows[0];
+                    TaiKhoanDangNhap.tenTaiKhoan = row["TenTaiKhoan"].ToString();
+                    TaiKhoanDangNhap.tenNguoiDung = row["TenNguoiDung"].ToString();
+                    TaiKhoanDangNhap.email = row["Email"].ToString();
+                    TaiKhoanDangNhap.soDienThoai = row["SoDienThoai"].ToString();
+                    TongForm.ResetFrm();
+                    xl.DangNhap(txtTaiKhoan.Text, txtMatKhau.Text, frmHome);
+                    this.Hide();
+
+                }
+                catch
+                {
+                    MessageBox.Show("Bạn đã nhập tài khoản hoặc mật khẩu sai");
+                    lberror.Visible = true;
+                    txtMatKhau.ResetText();
+                    txtMatKhau.Focus();
+                }
+            }
+            
         }
 
         private void txtTaiKhoan_KeyPress(object sender, KeyPressEventArgs e)
@@ -100,6 +110,13 @@ namespace Home
         {
             FrmDangKi frmDangKi = new FrmDangKi();
             frmDangKi.Show();
+            this.Hide();
+        }
+
+        private void lbquenmk_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            FrmQuenMatKhau frm = new FrmQuenMatKhau();
+            frm.Show();
             this.Hide();
         }
     }

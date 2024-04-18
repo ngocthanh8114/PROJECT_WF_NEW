@@ -56,9 +56,9 @@ namespace Home.FrmCon
             loadGiaTien();
         }
 
-        private void cbDieuKhoan_Click(object sender, EventArgs e)
+        public void cbDieuKhoan_Click(object sender, EventArgs e)
         {
-            if (cbDieuKhoan.Checked == true) btnMua.Enabled = true;
+            if (cbDieuKhoan.Checked == true && lblTongSP.Text != "0 sản phẩm") btnMua.Enabled = true;
             else btnMua.Enabled = false;
         }
 
@@ -91,8 +91,7 @@ namespace Home.FrmCon
                 txtTimKiem.Text = "";
             }
         }
-        decimal tongTien = 0;
-        int tongSP = 0;
+
         // Load giá tiền
         public void loadGiaTien()
         {
@@ -115,6 +114,24 @@ namespace Home.FrmCon
             int tongSP = int.Parse(str1[0]);
             frmMuaHang.loadFormMua(tongTien,tongSP);
             frmMuaHang.ShowDialog();
+        }
+        private void quayLaiSanPham()
+        {
+            FrmHome parentForm = this.ParentForm as FrmHome;
+
+            if (parentForm != null)
+            {
+                parentForm.btnSanPham_Click(this, EventArgs.Empty);
+            }
+        }
+        private void lblTen_Click(object sender, EventArgs e)
+        {
+            quayLaiSanPham();
+        }
+
+        private void picBoxLoGO_Click(object sender, EventArgs e)
+        {
+            quayLaiSanPham();
         }
     }
 }

@@ -21,27 +21,21 @@ using Microsoft.VisualBasic;
 using System.Collections;
 
 
+
 namespace Home.DuLieu
 {
     
     internal class XuLiDuLieu
     {
         KetNoiCSDL kn = new KetNoiCSDL();
-
-        string strconn = "Data Source=.;Initial Catalog=BanXeMay;User ID=sa;Password=123";
-
-        SqlDataAdapter da = null;
+        string strconn = "Data Source=.;Initial Catalog=BanXeMay;Persist Security Info=True;User ID=sa;Password=123";
         SqlConnection conn = null;
-        SqlCommand cmd = null;
-        DataSet ds = null;
 
         public void Connection_CSDL()
         {
             conn = new SqlConnection(strconn);
             conn.Open();
         }
-        //------------------------------------------NgocThanh---------------------------------------------
-
         public string xuLiMaNCC(string maNCC)
         {
             kn.myConnect();
@@ -156,8 +150,6 @@ namespace Home.DuLieu
             cmd.Parameters.Add(sqlParameter1);
             return (int)cmd.ExecuteScalar();
         }
-
-        //------------------------------------------NgocThanh---------------------------------------------
         public void DatHang(string MaSP, string TenSP, decimal Gia, int SoLuong, Image Anh)
         {
             kn.myConnect();
@@ -278,15 +270,8 @@ namespace Home.DuLieu
 
                 }
             }
-
-            // Tạo và thực thi câu truy vấn
-           
-            //RESET TB
-            taikhoan = matkhau = "";
         
         }
-        //------------------------------------------NgocThanh---------------------------------------------
-
         /*    public DataTable themSanPham(string MaLoai)
             {
                 kn.myConnect();
@@ -350,7 +335,7 @@ namespace Home.DuLieu
         }
         public bool CheckEmail(string em) //Check email
         {
-            return Regex.IsMatch(em, @"^[\w.]{3,20}@gmail.com(.vn|)$");
+            return Regex.IsMatch(em, @"^[\w.]{3,50}@gmail.com(.vn|)$");
         }
         public bool CheckAccount(string ac)
         {
@@ -358,15 +343,19 @@ namespace Home.DuLieu
         }
         public bool checkSDT(string sdt) 
         {
-            return Regex.IsMatch(sdt, @"^[0-9]{6,24}$");
+            return Regex.IsMatch(sdt, @"^[0-9]{10,11}$");
         }
-
-        public void DangKyTK(string TenTaiKhoan, string MatKhau, string xnMatKhau, string TenNguoiDung, string Email, string SoDienThoai, Guna2HtmlLabel taiKhoan, Guna2HtmlLabel matKhau, Guna2HtmlLabel email, Guna2HtmlLabel sdt)
+        public bool checkTenNguoiDung(string tnd)
+        {
+            return Regex.IsMatch(tnd, @"^[\p{L}\s]{1,50}$");
+        }
+        public bool dangKyThanhCong = false;
+        public void DangKyTK(string TenTaiKhoan, string MatKhau, string xnMatKhau, string TenNguoiDung, string Email, string SoDienThoai, Guna2HtmlLabel taiKhoan, Guna2HtmlLabel matKhau, Guna2HtmlLabel email, Guna2HtmlLabel sdt, Guna2HtmlLabel tnd)
         {
             if ((TenTaiKhoan == "" || MatKhau == "" || TenNguoiDung == "" || Email == "" || SoDienThoai == ""))
             {
                 FrmBaoLoi frmBaoLoi = new FrmBaoLoi();
-                frmBaoLoi.hienThiLoi("Vui lòng kiểm tra lại thông tin");
+                frmBaoLoi.hienThiLoi("Bạn chưa nhập đầy đủ thông tin!");
                 frmBaoLoi.Show();
             }
             else
@@ -388,6 +377,15 @@ namespace Home.DuLieu
                 else
                 {
                     matKhau.Visible = false;
+                }
+                if (!checkTenNguoiDung(TenNguoiDung))
+                {
+                    tnd.Visible = true;
+                    return;
+                }
+                else
+                {
+                    tnd.Visible = false;
                 }
                 if (!CheckEmail(Email))
                 {
@@ -439,20 +437,68 @@ namespace Home.DuLieu
                     sqlParameter5.Value = PhanQuyen;
                     cmd.Parameters.Add(sqlParameter5);
 
-                    cmd.ExecuteNonQuery();
-                    FrmThongBao frmThongBao = new FrmThongBao();
-                    frmThongBao.hienThiThongBao("Đăng ký tài khoản thành công");
-                    frmThongBao.Show();
+                    int rowsAffected = cmd.ExecuteNonQuery();
+                    if (rowsAffected > 0)
+                    {
+                        FrmThongBao frmThongBao = new FrmThongBao();
+                        frmThongBao.hienThiThongBao("Đăng ký tài khoản thành công");
+                        frmThongBao.Show();
+                        dangKyThanhCong = true;
+                    }
+
                 }
                 catch
                 {
                     FrmBaoLoi frmBaoLoi = new FrmBaoLoi();
-                    frmBaoLoi.hienThiLoi("Vui lòng kiểm tra lại thông tin");
+                    frmBaoLoi.hienThiLoi("Tên tài khoản đã được sử dụng");
                     frmBaoLoi.Show();
+                    dangKyThanhCong = false;
                 }
             }
         }
+        public void LayLaiMatKhau(string Email, Guna2HtmlLabel matKhau2, Guna2HtmlLabel tenTaiKhoan)
+        {
+            kn.myConnect();
+            string sql = "Select MatKhau, TenTaiKhoan from TaiKhoan where Email = @Email";
+            SqlCommand cmd = new SqlCommand(sql, conn);
+            cmd.Parameters.AddWithValue("@Email", Email);
+            try
+            {
+                SqlDataReader reader = cmd.ExecuteReader();
 
+                if (reader.Read())
+                {
+                    // Lấy mật khẩu và tên tài khoản từ dữ liệu đọc được
+                    string matKhau = reader["MatKhau"].ToString();
+                    string TenTaiKhoan = reader["TenTaiKhoan"].ToString();
+
+                    tenTaiKhoan.ForeColor = Color.Blue;
+                    matKhau2.ForeColor = Color.Blue;
+
+                    matKhau2.Text = "Mật Khẩu: " + matKhau;
+                    tenTaiKhoan.Text = "Tên tài khoản: " + TenTaiKhoan;
+                    matKhau2.Visible = true;
+                    tenTaiKhoan.Visible = true;
+                }
+                else
+                {
+                    tenTaiKhoan.ForeColor = Color.Red;
+                    tenTaiKhoan.Text = "Email chưa được đăng kí";
+                    matKhau2.Visible = false;
+                    tenTaiKhoan.Visible = true;
+                }
+
+                reader.Close(); // Đóng đối tượng SqlDataReader
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi: " + ex.Message);
+            }
+            finally
+            {
+                kn.myClose(); // Đóng kết nối đến cơ sở dữ liệu
+            }
+        }
         public void DangDatHang(string tenSP)
         {
             kn.myConnect();
@@ -524,6 +570,7 @@ namespace Home.DuLieu
             
             cmd.ExecuteNonQuery();
         }
+
 
         public void turnTongTien()
         {
@@ -741,5 +788,62 @@ namespace Home.DuLieu
             cmd.ExecuteNonQuery();
         }
         */
+
+        public bool capNhatTaiKhoan = false;
+        public void CapNhatTaiKhoan(string tenNguoiDung, string email, string soDienThoai, Guna2HtmlLabel em, Guna2HtmlLabel soDT, Guna2HtmlLabel tenND)
+        {
+            if ((tenNguoiDung == "" || email == "" || soDienThoai == ""))
+            {
+                FrmBaoLoi frmBaoLoi = new FrmBaoLoi();
+                frmBaoLoi.hienThiLoi("Bạn chưa nhập đầy đủ thông tin!");
+                frmBaoLoi.Show();
+            }
+            else
+            {
+                if (!checkTenNguoiDung(tenNguoiDung))
+                {
+                    tenND.Visible = true;
+                    return;
+                }
+                else
+                {
+                    tenND.Visible = false;
+                }
+                if (!CheckEmail(email))
+                {
+                    em.Visible = true;
+                    return;
+                }
+                else
+                {
+                    em.Visible = false;
+                }
+
+                if (!checkSDT(soDienThoai))
+                {
+                    soDT.Visible = true;
+                    return;
+                }
+                else
+                {
+                    soDT.Visible = false;
+                }
+                kn.myConnect();
+                string sql = "UPDATE TaiKhoan SET TenNguoiDung = @TenND, Email = @Email, SoDienThoai = @SoDT WHERE TenTaiKhoan = @TenTK";
+                SqlCommand cmd = new SqlCommand(sql, conn);
+                cmd.Parameters.AddWithValue("TenTK", TaiKhoanDangNhap.tenTaiKhoan);
+                cmd.Parameters.AddWithValue("TenND", tenNguoiDung);
+                cmd.Parameters.AddWithValue("Email", email);
+                cmd.Parameters.AddWithValue("SoDT", soDienThoai);
+
+                cmd.ExecuteNonQuery();
+                TaiKhoanDangNhap.tenNguoiDung = tenNguoiDung;
+                TaiKhoanDangNhap.email = email;
+                TaiKhoanDangNhap.soDienThoai = soDienThoai;
+                capNhatTaiKhoan = true;
+                
+            }
+        }
+
     }
 }
