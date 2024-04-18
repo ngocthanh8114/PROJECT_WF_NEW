@@ -144,7 +144,7 @@
             this.lblTen.Name = "lblTen";
             this.lblTen.Size = new System.Drawing.Size(270, 30);
             this.lblTen.TabIndex = 0;
-            this.lblTen.Text = "SMOTORYCYLE";
+            this.lblTen.Text = "SMOTORYCYCLE";
             this.lblTen.Click += new System.EventHandler(this.lblTen_Click);
             // 
             // guna2Panel2
@@ -287,6 +287,7 @@
             this.btnThemAll.TabIndex = 4;
             this.btnThemAll.Text = "Thêm tất cả";
             this.btnThemAll.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnThemAll.Click += new System.EventHandler(this.btnThemAll_Click);
             // 
             // guna2Panel5
             // 
@@ -367,6 +368,7 @@
             this.btnXoaAll.TabIndex = 0;
             this.btnXoaAll.Text = "Xóa tất cả";
             this.btnXoaAll.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnXoaAll.Click += new System.EventHandler(this.btnXoaAll_Click);
             // 
             // panelGia
             // 

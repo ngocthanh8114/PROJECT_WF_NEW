@@ -22,14 +22,17 @@ namespace Home.FrmCon.FrmHienThi
 
 
         //-------------NgocThanh--------------------
-        public void themDonHang(string tenSP, decimal gia, int SL, Image anh)
+        public void themDonHang(string tenSP, decimal gia, int SL, Image anh, byte TrangThai)
         {
             lblTenSP.Text = tenSP;
             lblGia.Text = "Giá: " + gia.ToString() + " VNĐ";
             numSL.Value = SL;
             picBoxSP.Image = anh;
             lblKhuyenMai.Text = gia.ToString() + " VNĐ";
-            
+            if (TrangThai == 1)
+            {
+                cbDonHang.Checked = true;
+            }
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
