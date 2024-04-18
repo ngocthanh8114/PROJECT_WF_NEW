@@ -41,7 +41,7 @@ namespace Home.FrmCon.FrmHienThi
 
         public void hienThiThongBao(string loi)
         {
-            label1.Text = loi;
+            lblThongBao.Text = loi;
         }
     }
 }

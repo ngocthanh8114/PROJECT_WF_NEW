@@ -16,6 +16,9 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 using System.Windows.Media.Media3D;
 using Guna.UI2.WinForms;
 using System.Text.RegularExpressions;
+using Home.FrmCon;
+using Microsoft.VisualBasic;
+using System.Collections;
 
 
 namespace Home.DuLieu
@@ -160,7 +163,7 @@ namespace Home.DuLieu
             kn.myConnect();
             if(kiemTraDonHang(MaSP))
             {
-                string sql = "select SoLuong from DonHang_1 where TenTaiKhoan= @TenTaiKhoan and MaSP= @MaSP";
+                string sql = "select SoLuong from DonHang_1 where TenTaiKhoan= @TenTaiKhoan and MaSP= @MaSP ";
                 SqlCommand cmd = kn.con.CreateCommand();
                 cmd.CommandText = sql;
 
@@ -191,7 +194,7 @@ namespace Home.DuLieu
             }   
             else 
             {
-                string sql = "INSERT INTO DonHang_1 (TenTaiKhoan, MaSP, TenSP, Gia, SoLuong, Anh) VALUES (@TenTaiKhoan, @MaSP, @TenSP, @Gia, @SoLuong, @Anh)";
+                string sql = "INSERT INTO DonHang_1 (TenTaiKhoan, MaSP, TenSP, Gia, SoLuong, Anh, TrangThai) VALUES (@TenTaiKhoan, @MaSP, @TenSP, @Gia, @SoLuong, @Anh, 0)";
                 SqlCommand cmd = kn.con.CreateCommand();
                 cmd.CommandText = sql;
 
@@ -299,7 +302,7 @@ namespace Home.DuLieu
         public DataTable doDuLieu()
         {
             kn.myConnect();
-            string lenh = "select * from DonHang_1 where TenTaiKhoan= @TenTaiKhoan";
+            string lenh = "select * from DonHang_1 where TenTaiKhoan= @TenTaiKhoan and TrangThai not like 2";
             SqlCommand cmd = kn.con.CreateCommand();
             cmd.CommandText = lenh;
             SqlParameter sqlParameter0 = new SqlParameter("@TenTaiKhoan", SqlDbType.NChar, 10);
@@ -325,7 +328,9 @@ namespace Home.DuLieu
             kn.myConnect();
             string query = "delete  from DonHang_1 where tenSP = @TenSP and TenTaiKhoan = @TenTK";
             SqlCommand sqlCmd = new SqlCommand(query, conn);
-            sqlCmd.Parameters.AddWithValue("TenSP", tenSP);
+            SqlParameter sqlParameter = new SqlParameter("@TenSP", SqlDbType.NVarChar, 50);
+            sqlParameter.Value = tenSP;
+            sqlCmd.Parameters.Add(sqlParameter);
             sqlCmd.Parameters.AddWithValue("TenTK", TaiKhoanDangNhap.tenTaiKhoan);
             sqlCmd.ExecuteNonQuery();
         }
@@ -408,13 +413,32 @@ namespace Home.DuLieu
                     string PhanQuyen = "user";
                     kn.myConnect();
                     string sql = "INSERT INTO TaiKhoan (TenTaiKhoan, MatKhau, TenNguoiDung, Email, SoDienThoai, PhanQuyen) VALUES (@TenTaiKhoan, @MatKhau, @TenNguoiDung, @Email, @SoDienThoai, @PhanQuyen)";
-                    SqlCommand cmd = new SqlCommand(sql, conn);
-                    cmd.Parameters.AddWithValue("TenTaiKhoan", TenTaiKhoan);
-                    cmd.Parameters.AddWithValue("MatKhau", MatKhau);
-                    cmd.Parameters.AddWithValue("TenNguoiDung", TenNguoiDung);
-                    cmd.Parameters.AddWithValue("Email", Email);
-                    cmd.Parameters.AddWithValue("SoDienThoai", SoDienThoai);
-                    cmd.Parameters.AddWithValue("PhanQuyen", PhanQuyen);
+                    SqlCommand cmd = new SqlCommand(sql, kn.con);
+
+                    SqlParameter sqlParameter0 = new SqlParameter("@TenTaiKhoan", SqlDbType.NVarChar, 50);
+                    sqlParameter0.Value = TenTaiKhoan;
+                    cmd.Parameters.Add(sqlParameter0);
+
+                    SqlParameter sqlParameter1 = new SqlParameter("@MatKhau", SqlDbType.NVarChar, 50);
+                    sqlParameter1.Value = MatKhau;
+                    cmd.Parameters.Add(sqlParameter1);
+
+                    SqlParameter sqlParameter2 = new SqlParameter("@TenNguoiDung", SqlDbType.NVarChar, 50);
+                    sqlParameter2.Value = TenNguoiDung;
+                    cmd.Parameters.Add(sqlParameter2);
+
+                    SqlParameter sqlParameter3 = new SqlParameter("@Email", SqlDbType.NVarChar, 50);
+                    sqlParameter3.Value = Email;
+                    cmd.Parameters.Add(sqlParameter3);
+
+                    SqlParameter sqlParameter4 = new SqlParameter("@SoDienThoai", SqlDbType.NVarChar, 50);
+                    sqlParameter4.Value = SoDienThoai;
+                    cmd.Parameters.Add(sqlParameter4);
+
+                    SqlParameter sqlParameter5 = new SqlParameter("@PhanQuyen", SqlDbType.NVarChar, 50);
+                    sqlParameter5.Value = PhanQuyen;
+                    cmd.Parameters.Add(sqlParameter5);
+
                     cmd.ExecuteNonQuery();
                     FrmThongBao frmThongBao = new FrmThongBao();
                     frmThongBao.hienThiThongBao("Đăng ký tài khoản thành công");
@@ -445,20 +469,19 @@ namespace Home.DuLieu
             kn.myConnect();
             string sql = "update DonHang_1 set TrangThai = 0 where tenSP = @TenSP and TenTaiKhoan = @TenTK";
             SqlCommand cmd = new SqlCommand(sql, kn.con);
-            cmd.Parameters.AddWithValue("TenSP", tenSP);
+            SqlParameter sqlParameter = new SqlParameter("@TenSP", SqlDbType.NVarChar, 50);
+            sqlParameter.Value = tenSP;
+            cmd.Parameters.Add(sqlParameter);
             cmd.Parameters.AddWithValue("TenTK", TaiKhoanDangNhap.tenTaiKhoan);
 
             cmd.ExecuteNonQuery();
         }
 
-        public void MuaHang(string tenSP)
+        public void DaMuaHang()
         {
             kn.myConnect();
-            string sql = "update DonHang_1 set TrangThai = 2 where tenSP = @TenSP and TenTaiKhoan = @TenTK";
+            string sql = "update DonHang_1 set TrangThai = 2 where TrangThai = 1";
             SqlCommand cmd = new SqlCommand(sql, kn.con);
-            cmd.Parameters.AddWithValue("TenSP", tenSP);
-            cmd.Parameters.AddWithValue("TenTK", TaiKhoanDangNhap.tenTaiKhoan);
-
             cmd.ExecuteNonQuery();
         }
         public DataTable capNhatDatHang()
@@ -501,5 +524,222 @@ namespace Home.DuLieu
             
             cmd.ExecuteNonQuery();
         }
+
+        public void turnTongTien()
+        {
+            kn.myConnect();
+            string sql = "update DonHang_1 set TrangThai = 1 where TenTaiKhoan = @TenTK ";
+            SqlCommand cmd = new SqlCommand(sql, kn.con);
+            cmd.Parameters.AddWithValue("TenTK", TaiKhoanDangNhap.tenTaiKhoan);
+            cmd.ExecuteNonQuery();
+        }
+
+        public void MuaHang(string TenKH, string Email, string SoDienThoai, string DiaChi, string LoiNhan, string TongTienHang, string PhiVanChuyen, string TongThanhToan)
+        {
+            kn.myConnect();
+            string sql = "UPDATE ThongTinDH set TenTaiKhoan = @TenTaiKhoan, TenKH = @TenKH, Email = @Email, SoDienThoai = @SoDienThoai, DiaChi = @DiaChi, LoiNhan = @LoiNhan, TongTienHang = @TongTienHang, PhiVanChuyen = @PhiVanChuyen, TongThanhToan = @TongThanhToan where MaDH = @MaDH";
+            SqlCommand cmd = new SqlCommand(sql, kn.con);
+
+            SqlParameter sqlParameter0 = new SqlParameter("@TenTaiKhoan", SqlDbType.NVarChar, 50);
+            sqlParameter0.Value = TaiKhoanDangNhap.tenTaiKhoan;
+            cmd.Parameters.Add(sqlParameter0);
+
+            SqlParameter sqlParameter1 = new SqlParameter("@TenKH", SqlDbType.NVarChar, 50);
+            sqlParameter1.Value = TenKH;
+            cmd.Parameters.Add(sqlParameter1);
+
+            SqlParameter sqlParameter2 = new SqlParameter("@DiaChi", SqlDbType.NVarChar, 50);
+            sqlParameter2.Value = DiaChi;
+            cmd.Parameters.Add(sqlParameter2);
+
+            SqlParameter sqlParameter3 = new SqlParameter("@Email", SqlDbType.NVarChar, 50);
+            sqlParameter3.Value = Email;
+            cmd.Parameters.Add(sqlParameter3);
+
+            SqlParameter sqlParameter4 = new SqlParameter("@SoDienThoai", SqlDbType.NVarChar, 50);
+            sqlParameter4.Value = SoDienThoai;
+            cmd.Parameters.Add(sqlParameter4);
+
+            SqlParameter sqlParameter5 = new SqlParameter("@LoiNhan", SqlDbType.NVarChar);
+            sqlParameter5.Value = LoiNhan;
+            cmd.Parameters.Add(sqlParameter5);
+
+            SqlParameter sqlParameter6 = new SqlParameter("@TongTienHang", SqlDbType.NVarChar, 50);
+            sqlParameter6.Value = TongTienHang;
+            cmd.Parameters.Add(sqlParameter6);
+
+            SqlParameter sqlParameter7 = new SqlParameter("@PhiVanChuyen", SqlDbType.NVarChar, 50);
+            sqlParameter7.Value = PhiVanChuyen;
+            cmd.Parameters.Add(sqlParameter7);
+
+            SqlParameter sqlParameter8 = new SqlParameter("@TongThanhToan", SqlDbType.NVarChar, 50);
+            sqlParameter8.Value = TongThanhToan;
+            cmd.Parameters.Add(sqlParameter8);
+
+            SqlParameter sqlParameter9 = new SqlParameter("@MaDH", SqlDbType.Int);
+            sqlParameter9.Value = MaDonHangHienTai.maDH;
+            cmd.Parameters.Add(sqlParameter9);
+
+            cmd.ExecuteNonQuery();
+        }
+
+        // Lấy ra các sản phẩm đã mua
+        public DataTable hangDaMua()
+        {
+            kn.myConnect();
+            string sql = "SELECT MaSP,SoLuong FROM DonHang_1 where TrangThai = 2";
+            SqlCommand cmd = new SqlCommand(sql, kn.con);
+
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            return dt;
+        }
+        // Cập nhật số lượng
+        public void xoaSL(string MaSP,int SL)
+        {
+            kn.myConnect();
+            // Trừ đi sản phẩm
+            string sql = "SELECT SoLuong FROM SanPham where MaSP = @MaSP";
+            SqlCommand cmd = new SqlCommand(sql, kn.con);
+            cmd.Parameters.AddWithValue("MaSP", MaSP);
+            int SLHT = (int)cmd.ExecuteScalar() - SL;
+
+            string sql1 = "update SanPham set SoLuong = @SL where MaSP = @MaSP";
+            SqlCommand cmd1 = new SqlCommand(sql1, kn.con);
+            cmd1.Parameters.AddWithValue("MaSP", MaSP);
+            cmd1.Parameters.AddWithValue("SL", SLHT);
+            cmd1.ExecuteNonQuery();
+        }
+        // Xóa sản phẩm đã mua
+        public void xoaDonHangDaMua()
+        {
+            kn.myConnect();
+            string query = "delete  from DonHang_1 where TrangThai = 2";
+            SqlCommand cmd = new SqlCommand(query, kn.con);
+            cmd.ExecuteNonQuery();
+        }
+        
+        //Chuyển sản phẩm qua bảng đơn hàng đã mua
+        public void chuyenSP(string MaSP, int SL)
+        {
+            kn.myConnect();
+            string sql = "INSERT INTO DonHangDaMua (TenTaiKhoan,MaSP,MaDH,SoLuong) VALUES (@TenTaiKhoan,@MaSP,@MaDH,@SL)";
+            SqlCommand cmd = new SqlCommand(sql, kn.con);
+
+            SqlParameter sqlParameter0 = new SqlParameter("@TenTaiKhoan", SqlDbType.NVarChar, 50);
+            sqlParameter0.Value = TaiKhoanDangNhap.tenTaiKhoan;
+            cmd.Parameters.Add(sqlParameter0);
+
+            SqlParameter sqlParameter1 = new SqlParameter("@MaSP", SqlDbType.NVarChar, 50);
+            sqlParameter1.Value = MaSP;
+            cmd.Parameters.Add(sqlParameter1);
+
+            SqlParameter sqlParameter2 = new SqlParameter("@MaDH", SqlDbType.Int);
+            sqlParameter2.Value = MaDonHangHienTai.maDH;
+            cmd.Parameters.Add(sqlParameter2);
+
+            SqlParameter sqlParameter3 = new SqlParameter("@SL", SqlDbType.Int);
+            sqlParameter3.Value = SL;
+            cmd.Parameters.Add(sqlParameter3);
+            
+            cmd.ExecuteNonQuery();
+        }
+
+        // Trừ đi số lượng
+        public void truSoLuongDaMua()
+        {
+            foreach(DataRow row in hangDaMua().Rows)
+            {
+                string MaSP  = row["MaSP"].ToString();
+                int SL = row.Field<int>("SoLuong");
+                xoaSL(MaSP,SL);
+                chuyenSP(MaSP,SL);
+            }    
+            xoaDonHangDaMua();
+        }
+
+        //Thêm đơn hàng;
+        public void themDonMua()
+        {
+            kn.myConnect();
+            string sql = "INSERT INTO ThongTinDH (TenTaiKhoan) VALUES (NULL)";
+            SqlCommand cmd = new SqlCommand(sql, kn.con);
+
+            cmd.ExecuteNonQuery();
+        }
+
+       
+        // Lấy MaDH hiện tại
+        public string DonHangHienTai()
+        {
+            kn.myConnect();
+            string sql = "SELECT MaDH from ThongTinDH where TenTaiKhoan is Null ";
+            SqlCommand cmd = new SqlCommand(sql, kn.con);
+
+            string maDH = cmd.ExecuteScalar().ToString();
+            return maDH;
+        }
+
+        //Kiểm tra đơn hàng có tồn tại tên TK chưa
+        public bool kiemTraDonMua()
+        {
+            kn.myConnect();
+            string sql = "SELECT count(*) from ThongTinDH where TenTaiKhoan is Null ";
+            SqlCommand cmd = new SqlCommand(sql, kn.con);
+
+            int check = (int)cmd.ExecuteScalar();
+            if (check > 0)
+            {
+                return false;
+            }
+            return true;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /* // Chèn đơn hàng
+        public void chenDonHang()
+        {
+            string sql = "update ThongTinDH set TenTaiKhoan = @TenTaiKhoan where TongTienHang is NULL";
+            SqlCommand cmd = new SqlCommand(sql, kn.con);
+
+            SqlParameter sqlParameter0 = new SqlParameter("@TenTaiKhoan", SqlDbType.NVarChar, 50);
+            sqlParameter0.Value = TaiKhoanDangNhap.tenTaiKhoan;
+            cmd.Parameters.Add(sqlParameter0);
+
+            cmd.ExecuteNonQuery();
+        }
+
+        // Xóa đi đơn hàng nếu thoát mà chưa đặt
+        public void loaiBoDonHang()
+        {
+            string sql = "update ThongTinDH set TenTaiKhoan = NULL where TongTienHang is NULL";
+            SqlCommand cmd = new SqlCommand(sql, kn.con);
+
+            SqlParameter sqlParameter0 = new SqlParameter("@TenTaiKhoan", SqlDbType.NVarChar, 50);
+            sqlParameter0.Value = TaiKhoanDangNhap.tenTaiKhoan;
+            cmd.Parameters.Add(sqlParameter0);
+
+            cmd.ExecuteNonQuery();
+        }
+        */
     }
 }
