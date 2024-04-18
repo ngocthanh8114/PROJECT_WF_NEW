@@ -63,6 +63,7 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DuLieu\MaDonHangHienTai.cs" />
     <Compile Include="FrmAdmin.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -50,6 +50,9 @@ namespace Home.FrmCon.FrmHienThi
                 xl.BoDatHang(lblTenSP.Text);
             }
             TongForm.DonHang.loadGiaTien();
+            TongForm.DonHang.cbDieuKhoan_Click(sender, e);  
+
+
         }
 
 

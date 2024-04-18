@@ -190,6 +190,29 @@ D:\CODE C#\PROJECT\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmDangKi.resources
 D:\CODE C#\PROJECT\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmAdmin.resources
 D:\VS Code\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmAdmin.resources
 >>>>>>> a147e538e99437b53bb8f5fbedc47274cd4c0a7f
+D:\VS Code\PROJECT_WF_NEW\PROJECT_WF_NEW\Home\bin\Debug\Home.exe.config
+D:\VS Code\PROJECT_WF_NEW\PROJECT_WF_NEW\Home\bin\Debug\Home.exe
+D:\VS Code\PROJECT_WF_NEW\PROJECT_WF_NEW\Home\bin\Debug\Home.pdb
+D:\VS Code\PROJECT_WF_NEW\PROJECT_WF_NEW\Home\bin\Debug\Guna.UI2.dll
+D:\VS Code\PROJECT_WF_NEW\PROJECT_WF_NEW\Home\obj\Debug\Home.csproj.AssemblyReference.cache
+D:\VS Code\PROJECT_WF_NEW\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmAdmin.resources
+D:\VS Code\PROJECT_WF_NEW\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.DonHang.resources
+D:\VS Code\PROJECT_WF_NEW\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.FrmBaoLoi.resources
+D:\VS Code\PROJECT_WF_NEW\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.FrmMuaHang.resources
+D:\VS Code\PROJECT_WF_NEW\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.FrmThongBao.resources
+D:\VS Code\PROJECT_WF_NEW\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.ODonHang.resources
+D:\VS Code\PROJECT_WF_NEW\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.TaiKhoan.resources
+D:\VS Code\PROJECT_WF_NEW\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmDangKi.resources
+D:\VS Code\PROJECT_WF_NEW\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmDangNhap.resources
+D:\VS Code\PROJECT_WF_NEW\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmHome.resources
+D:\VS Code\PROJECT_WF_NEW\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.OSanPham.resources
+D:\VS Code\PROJECT_WF_NEW\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.SanPham.resources
+D:\VS Code\PROJECT_WF_NEW\PROJECT_WF_NEW\Home\obj\Debug\Home.Properties.Resources.resources
+D:\VS Code\PROJECT_WF_NEW\PROJECT_WF_NEW\Home\obj\Debug\Home.csproj.GenerateResource.cache
+D:\VS Code\PROJECT_WF_NEW\PROJECT_WF_NEW\Home\obj\Debug\Home.csproj.CoreCompileInputs.cache
+D:\VS Code\PROJECT_WF_NEW\PROJECT_WF_NEW\Home\obj\Debug\Home.csproj.Up2Date
+D:\VS Code\PROJECT_WF_NEW\PROJECT_WF_NEW\Home\obj\Debug\Home.exe
+D:\VS Code\PROJECT_WF_NEW\PROJECT_WF_NEW\Home\obj\Debug\Home.pdb
 C:\Users\PC\OneDrive\Desktop\New folder (5)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmQuenMatKhau.resources
 D:\CODE C#\PROJECT\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmQuenMatKhau.resources
 D:\STUDY\NAM_2_KI_2\LAP_TRINH_WINDOWS\BanXeMay\PROJECT_WF_NEW\PROJECT_WF_NEW\PROJECT_WF_NEW\Home\bin\Debug\Home.exe.config
@@ -218,3 +241,6 @@ D:\STUDY\NAM_2_KI_2\LAP_TRINH_WINDOWS\BanXeMay\PROJECT_WF_NEW\PROJECT_WF_NEW\PRO
 D:\STUDY\NAM_2_KI_2\LAP_TRINH_WINDOWS\BanXeMay\PROJECT_WF_NEW\PROJECT_WF_NEW\PROJECT_WF_NEW\Home\obj\Debug\Home.pdb
 D:\CODE C#\PROJECT\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.FrmCapNhatTT.resources
 D:\STUDY\NAM_2_KI_2\LAP_TRINH_WINDOWS\BanXeMay\PROJECT_WF_NEW\PROJECT_WF_NEW\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.FrmCapNhatTT.resources
+>>>>>>> 798bf668f53be9f52b2c9da28b651ea9f00edaa4
+D:\VS Code\PROJECT_WF_NEW\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.FrmCapNhatTT.resources
+D:\VS Code\PROJECT_WF_NEW\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmQuenMatKhau.resources

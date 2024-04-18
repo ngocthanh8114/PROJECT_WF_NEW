@@ -56,7 +56,7 @@ namespace Home.FrmCon
             loadGiaTien();
         }
 
-        private void cbDieuKhoan_Click(object sender, EventArgs e)
+        public void cbDieuKhoan_Click(object sender, EventArgs e)
         {
             if (cbDieuKhoan.Checked == true && lblTongSP.Text != "0 sản phẩm") btnMua.Enabled = true;
             else btnMua.Enabled = false;
@@ -91,8 +91,7 @@ namespace Home.FrmCon
                 txtTimKiem.Text = "";
             }
         }
-        decimal tongTien = 0;
-        int tongSP = 0;
+
         // Load giá tiền
         public void loadGiaTien()
         {
@@ -104,12 +103,16 @@ namespace Home.FrmCon
 
         private void btnMua_Click(object sender, EventArgs e)
         {
+            if(xl.kiemTraDonMua())
+            {
+                xl.themDonMua();
+            }    
             FrmMuaHang frmMuaHang = new FrmMuaHang();
             string[] str= lblTongTien.Text.Split(' ');
             decimal tongTien = decimal.Parse(str[0]);
             string[] str1 = lblTongSP.Text.Split(' ');
             int tongSP = int.Parse(str1[0]);
-            frmMuaHang.loadGia(tongTien,tongSP);
+            frmMuaHang.loadFormMua(tongTien,tongSP);
             frmMuaHang.ShowDialog();
         }
         private void quayLaiSanPham()
