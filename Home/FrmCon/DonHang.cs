@@ -12,6 +12,7 @@ using Home.FrmCon.FrmHienThi;
 using Home.FrmCon;
 using Home.DuLieu;
 using Microsoft.VisualBasic;
+using System.Data.SqlTypes;
 
 namespace Home.FrmCon
 {
@@ -37,7 +38,8 @@ namespace Home.FrmCon
                 byte[] b = row.Field<byte[]>("Anh");
                 Image anh = xl.ByteArrToImage(b);
                 string tenTaiKhoan = TaiKhoanDangNhap.tenTaiKhoan;
-                oDonHang.themDonHang(tenSP, gia, SL, anh);
+                byte trangThai = row.Field<byte>(6);
+                oDonHang.themDonHang(tenSP, gia, SL, anh, trangThai);
                 panelNoiDung.Controls.Add(oDonHang);
                 oDonHang.BringToFront();
             }
@@ -50,9 +52,9 @@ namespace Home.FrmCon
             {
                 panelNoiDung.Controls.Clear();
             }
-            addDonHang(xl.doDuLieu());
             btnMua.Enabled = false;
             xl.resetTongTien();
+            addDonHang(xl.doDuLieu());
             loadGiaTien();
         }
 
@@ -132,6 +134,21 @@ namespace Home.FrmCon
         private void picBoxLoGO_Click(object sender, EventArgs e)
         {
             quayLaiSanPham();
+        }
+
+        private void btnThemAll_Click(object sender, EventArgs e)
+        {
+            xl.turnTongTien();
+            panelNoiDung.Controls.Clear();
+            addDonHang(xl.doDuLieu());
+            btnMua.Enabled = true;
+            loadGiaTien();
+
+        }
+
+        private void btnXoaAll_Click(object sender, EventArgs e)
+        {
+            DonHang_Load(sender, EventArgs.Empty);
         }
     }
 }

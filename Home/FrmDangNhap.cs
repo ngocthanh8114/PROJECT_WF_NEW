@@ -51,7 +51,6 @@ namespace Home
                 }
                 catch
                 {
-                    MessageBox.Show("Bạn đã nhập tài khoản hoặc mật khẩu sai");
                     lberror.Visible = true;
                     txtMatKhau.ResetText();
                     txtMatKhau.Focus();
