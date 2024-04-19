@@ -88,6 +88,12 @@
     <Compile Include="FrmCon\FrmHienThi\FrmCapNhatTT.Designer.cs">
       <DependentUpon>FrmCapNhatTT.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmCon\FrmHienThi\FrmCapNhatHH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCon\FrmHienThi\FrmCapNhatHH.Designer.cs">
+      <DependentUpon>FrmCapNhatHH.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmCon\FrmHienThi\OSanPhamAdmin.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -175,6 +181,9 @@
     <EmbeddedResource Include="FrmCon\FrmHienThi\FrmBaoLoi.resx">
       <DependentUpon>FrmBaoLoi.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmCon\FrmHienThi\FrmCapNhatHH.resx">
+      <DependentUpon>FrmCapNhatHH.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmCon\FrmHienThi\FrmCapNhatTT.resx">
       <DependentUpon>FrmCapNhatTT.cs</DependentUpon>
     </EmbeddedResource>
@@ -243,6 +252,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\anh_thoat.jpg" />
+    <None Include="Resources\hanghoa.jpg" />
     <Content Include="Resources\view.png" />
   </ItemGroup>
   <ItemGroup>

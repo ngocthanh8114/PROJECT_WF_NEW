@@ -1,4 +1,5 @@
 ﻿using Home.DuLieu;
+using Home.FrmCon.FrmHienThi;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -65,6 +66,12 @@ namespace Home.FrmCon
         private void panelNoiDung_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            FrmCapNhatHH frmCapNhatHH = new FrmCapNhatHH();
+            frmCapNhatHH.ShowDialog();
         }
     }
 }

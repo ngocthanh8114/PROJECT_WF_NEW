@@ -246,3 +246,4 @@ D:\VS Code\PROJECT_WF_NEW\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.F
 D:\VS Code\PROJECT_WF_NEW\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmQuenMatKhau.resources
 D:\CODE C#\PROJECT\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.OSanPhamAdmin.resources
 D:\CODE C#\PROJECT\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.SanPhamAdmin.resources
+D:\CODE C#\PROJECT\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.FrmCapNhatHH.resources

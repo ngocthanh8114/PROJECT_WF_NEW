@@ -25,5 +25,11 @@ namespace Home.FrmCon.FrmHienThi
             lblSL.Text = sL.ToString() + " cái";
             picBoxSP.Image = anh;
         }
+
+        private void btnSua_Click(object sender, EventArgs e)
+        {
+            FrmCapNhatHH frmCapNhatHH = new FrmCapNhatHH();
+            frmCapNhatHH.ShowDialog();
+        }
     }
 }
