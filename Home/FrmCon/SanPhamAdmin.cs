@@ -49,6 +49,7 @@ namespace Home.FrmCon
                 cboLoaiSP.Items.Add(loaiSP);
             }
             cboLoaiSP.StartIndex = 4;
+            
         }
 
         private void cboLoaiSP_SelectedIndexChanged(object sender, EventArgs e)
@@ -61,6 +62,10 @@ namespace Home.FrmCon
             string LoaiSP = cboLoaiSP.Text;
             string MaLoai = xl.xuLiMaLoai(LoaiSP);
             addSanPham(xl.doDuLieu(MaLoai));
+            FrmCon.FrmHienThi.OThem oThem = new OThem();
+            panelNoiDung.Controls.Add(oThem);
+            oThem.BringToFront();
+
         }
 
         private void panelNoiDung_Paint(object sender, PaintEventArgs e)
@@ -68,10 +73,6 @@ namespace Home.FrmCon
 
         }
 
-        private void btnThem_Click(object sender, EventArgs e)
-        {
-            FrmThemHH frmThemHH = new FrmThemHH();
-            frmThemHH.ShowDialog();
-        }
+       
     }
 }

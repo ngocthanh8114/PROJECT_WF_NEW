@@ -28,6 +28,12 @@ namespace Home.FrmCon.FrmHienThi
         {
             OSanPhamAdmin oSanPhamAdmin = new OSanPhamAdmin();
             txtMaSP.Text = oSanPhamAdmin.Get_lblMaSP();
+            txtGia.Text = oSanPhamAdmin.Get_lbGia();
+            //txtMaLoai.Text = oSanPhamAdmin.Get_lbMaLoai();
+            txtSoLuong.Text = oSanPhamAdmin.Get_lbSL();
+            txtTenSP.Text = oSanPhamAdmin.Get_lbTenSP();
+            txt_MaNCC.Text = oSanPhamAdmin.Get_lbNCC();
+            
         }
 
         private void btnLuu_Click(object sender, EventArgs e)

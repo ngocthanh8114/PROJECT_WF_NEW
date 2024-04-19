@@ -29,28 +29,16 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OSanPham));
-            this.picBoxSP = new Guna.UI2.WinForms.Guna2PictureBox();
             this.lblTenSP = new System.Windows.Forms.Label();
             this.lblGia = new System.Windows.Forms.Label();
             this.lblNCC = new System.Windows.Forms.Label();
-            this.btnDatHang = new Guna.UI.WinForms.GunaAdvenceButton();
             this.numSL = new Guna.UI.WinForms.GunaNumeric();
             this.lblMaSP = new System.Windows.Forms.Label();
             this.lblSL = new System.Windows.Forms.Label();
+            this.btnDatHang = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.picBoxSP = new Guna.UI2.WinForms.Guna2PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxSP)).BeginInit();
             this.SuspendLayout();
-            // 
-            // picBoxSP
-            // 
-            this.picBoxSP.Dock = System.Windows.Forms.DockStyle.Top;
-            this.picBoxSP.Image = ((System.Drawing.Image)(resources.GetObject("picBoxSP.Image")));
-            this.picBoxSP.ImageRotate = 0F;
-            this.picBoxSP.Location = new System.Drawing.Point(0, 0);
-            this.picBoxSP.Name = "picBoxSP";
-            this.picBoxSP.Size = new System.Drawing.Size(247, 200);
-            this.picBoxSP.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picBoxSP.TabIndex = 0;
-            this.picBoxSP.TabStop = false;
             // 
             // lblTenSP
             // 
@@ -85,40 +73,6 @@
             this.lblNCC.TabIndex = 4;
             this.lblNCC.Text = "Hệ thống cửa hàng xe máy Phát Thịnh";
             this.lblNCC.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // btnDatHang
-            // 
-            this.btnDatHang.AnimationHoverSpeed = 0.07F;
-            this.btnDatHang.AnimationSpeed = 0.03F;
-            this.btnDatHang.BackColor = System.Drawing.Color.Transparent;
-            this.btnDatHang.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnDatHang.BorderColor = System.Drawing.Color.Black;
-            this.btnDatHang.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.btnDatHang.CheckedBorderColor = System.Drawing.Color.Black;
-            this.btnDatHang.CheckedForeColor = System.Drawing.Color.White;
-            this.btnDatHang.CheckedImage = ((System.Drawing.Image)(resources.GetObject("btnDatHang.CheckedImage")));
-            this.btnDatHang.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.btnDatHang.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnDatHang.FocusedColor = System.Drawing.Color.Empty;
-            this.btnDatHang.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnDatHang.ForeColor = System.Drawing.Color.White;
-            this.btnDatHang.Image = ((System.Drawing.Image)(resources.GetObject("btnDatHang.Image")));
-            this.btnDatHang.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnDatHang.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnDatHang.Location = new System.Drawing.Point(5, 306);
-            this.btnDatHang.Name = "btnDatHang";
-            this.btnDatHang.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnDatHang.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnDatHang.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnDatHang.OnHoverImage = null;
-            this.btnDatHang.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnDatHang.OnPressedColor = System.Drawing.Color.Black;
-            this.btnDatHang.Radius = 5;
-            this.btnDatHang.Size = new System.Drawing.Size(121, 42);
-            this.btnDatHang.TabIndex = 5;
-            this.btnDatHang.Text = "Đặt hàng";
-            this.btnDatHang.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.btnDatHang.Click += new System.EventHandler(this.btnDatHang_Click);
             // 
             // numSL
             // 
@@ -159,6 +113,52 @@
             this.lblSL.TabIndex = 8;
             this.lblSL.Text = "50 cái";
             this.lblSL.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // btnDatHang
+            // 
+            this.btnDatHang.AnimationHoverSpeed = 0.07F;
+            this.btnDatHang.AnimationSpeed = 0.03F;
+            this.btnDatHang.BackColor = System.Drawing.Color.Transparent;
+            this.btnDatHang.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnDatHang.BorderColor = System.Drawing.Color.Black;
+            this.btnDatHang.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.btnDatHang.CheckedBorderColor = System.Drawing.Color.Black;
+            this.btnDatHang.CheckedForeColor = System.Drawing.Color.White;
+            this.btnDatHang.CheckedImage = ((System.Drawing.Image)(resources.GetObject("btnDatHang.CheckedImage")));
+            this.btnDatHang.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.btnDatHang.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnDatHang.FocusedColor = System.Drawing.Color.Empty;
+            this.btnDatHang.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnDatHang.ForeColor = System.Drawing.Color.White;
+            this.btnDatHang.Image = ((System.Drawing.Image)(resources.GetObject("btnDatHang.Image")));
+            this.btnDatHang.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnDatHang.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btnDatHang.Location = new System.Drawing.Point(5, 306);
+            this.btnDatHang.Name = "btnDatHang";
+            this.btnDatHang.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnDatHang.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnDatHang.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnDatHang.OnHoverImage = null;
+            this.btnDatHang.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btnDatHang.OnPressedColor = System.Drawing.Color.Black;
+            this.btnDatHang.Radius = 5;
+            this.btnDatHang.Size = new System.Drawing.Size(121, 42);
+            this.btnDatHang.TabIndex = 5;
+            this.btnDatHang.Text = "Đặt hàng";
+            this.btnDatHang.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.btnDatHang.Click += new System.EventHandler(this.btnDatHang_Click);
+            // 
+            // picBoxSP
+            // 
+            this.picBoxSP.Dock = System.Windows.Forms.DockStyle.Top;
+            this.picBoxSP.Image = ((System.Drawing.Image)(resources.GetObject("picBoxSP.Image")));
+            this.picBoxSP.ImageRotate = 0F;
+            this.picBoxSP.Location = new System.Drawing.Point(0, 0);
+            this.picBoxSP.Name = "picBoxSP";
+            this.picBoxSP.Size = new System.Drawing.Size(247, 200);
+            this.picBoxSP.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picBoxSP.TabIndex = 0;
+            this.picBoxSP.TabStop = false;
             // 
             // OSanPham
             // 

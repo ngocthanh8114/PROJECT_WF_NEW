@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.btnThem = new Guna.UI.WinForms.GunaAdvenceButton();
             this.cboLoaiSP = new Guna.UI2.WinForms.Guna2ComboBox();
             this.panelNoiDung = new System.Windows.Forms.FlowLayoutPanel();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
@@ -40,46 +39,11 @@
             // 
             this.guna2Panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.guna2Panel1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.guna2Panel1.Controls.Add(this.btnThem);
             this.guna2Panel1.Controls.Add(this.cboLoaiSP);
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(2050, 75);
             this.guna2Panel1.TabIndex = 3;
-            // 
-            // btnThem
-            // 
-            this.btnThem.AnimationHoverSpeed = 0.07F;
-            this.btnThem.AnimationSpeed = 0.03F;
-            this.btnThem.BackColor = System.Drawing.Color.Transparent;
-            this.btnThem.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnThem.BorderColor = System.Drawing.Color.Black;
-            this.btnThem.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.btnThem.CheckedBorderColor = System.Drawing.Color.Black;
-            this.btnThem.CheckedForeColor = System.Drawing.Color.White;
-            this.btnThem.CheckedImage = null;
-            this.btnThem.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.btnThem.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnThem.FocusedColor = System.Drawing.Color.Empty;
-            this.btnThem.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnThem.ForeColor = System.Drawing.Color.White;
-            this.btnThem.Image = null;
-            this.btnThem.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnThem.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnThem.Location = new System.Drawing.Point(1920, 21);
-            this.btnThem.Name = "btnThem";
-            this.btnThem.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnThem.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnThem.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnThem.OnHoverImage = null;
-            this.btnThem.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnThem.OnPressedColor = System.Drawing.Color.Black;
-            this.btnThem.Radius = 5;
-            this.btnThem.Size = new System.Drawing.Size(109, 36);
-            this.btnThem.TabIndex = 14;
-            this.btnThem.Text = "Thêm";
-            this.btnThem.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // cboLoaiSP
             // 
@@ -147,7 +111,6 @@
         private Guna.UI2.WinForms.Guna2ComboBox cboLoaiSP;
         private System.Windows.Forms.FlowLayoutPanel panelNoiDung;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
-        private Guna.UI.WinForms.GunaAdvenceButton btnThem;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
     }
 }
