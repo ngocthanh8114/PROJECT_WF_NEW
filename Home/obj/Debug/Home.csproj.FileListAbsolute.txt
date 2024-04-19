@@ -244,3 +244,5 @@ D:\STUDY\NAM_2_KI_2\LAP_TRINH_WINDOWS\BanXeMay\PROJECT_WF_NEW\PROJECT_WF_NEW\PRO
 >>>>>>> 798bf668f53be9f52b2c9da28b651ea9f00edaa4
 D:\VS Code\PROJECT_WF_NEW\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.FrmCapNhatTT.resources
 D:\VS Code\PROJECT_WF_NEW\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmQuenMatKhau.resources
+D:\CODE C#\PROJECT\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.OSanPhamAdmin.resources
+D:\CODE C#\PROJECT\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.SanPhamAdmin.resources
