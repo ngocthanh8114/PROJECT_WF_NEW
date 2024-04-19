@@ -836,5 +836,20 @@ namespace Home.DuLieu
             cmd.ExecuteNonQuery(); 
         }
 
+        public void SuaThongTinSanPhamAdmin(string MaNCC, string TenSP, string MaLoai, string SoLuong, string Gia, string MaSP)
+        {
+            // Sửa
+            kn.myConnect();
+            string sql = "UPDATE SanPham SET MaNCC= @MaNCC, TenSP= @TenSP, MaLoai= @MaLoai, SoLuong= @SoLuong, Gia= @Gia WHERE MaSP= @MaSP";
+            SqlCommand cmd = new SqlCommand(sql, conn);
+            cmd.Parameters.AddWithValue("MaNCC", MaNCC);
+            cmd.Parameters.AddWithValue("TenSP", TenSP);
+            cmd.Parameters.AddWithValue("MaLoai", MaLoai);
+            cmd.Parameters.AddWithValue("SoLuong", SoLuong);
+            cmd.Parameters.AddWithValue("Gia", Gia);
+            cmd.Parameters.AddWithValue("MaSP", MaSP);
+            cmd.ExecuteNonQuery();
+        }
+
     }
 }

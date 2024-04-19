@@ -23,7 +23,6 @@ namespace Home.FrmCon
             InitializeComponent();
         }
 
-        //-----------------------------------------NgocThanh------------------------------------------------
         XuLiDuLieu xl = new XuLiDuLieu();
 
         public void addDonHang(DataTable dt)
@@ -44,7 +43,6 @@ namespace Home.FrmCon
                 oDonHang.BringToFront();
             }
         }
-        //-----------------------------------------NgocThanh------------------------------------------------
 
         public void DonHang_Load(object sender, EventArgs e)
         {

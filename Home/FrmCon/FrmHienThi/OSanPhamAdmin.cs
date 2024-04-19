@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -18,6 +19,12 @@ namespace Home.FrmCon.FrmHienThi
         {
             InitializeComponent();
         }
+
+        public string Get_lblMaSP()
+        {
+            return lblMaSP.Text;
+        }
+
         public void themSPAdmin(string MaSP, string tenSP, decimal gia, string nCC, int sL, Image anh)
         {
             lblMaSP.Text = MaSP;
@@ -39,6 +46,12 @@ namespace Home.FrmCon.FrmHienThi
                 //Load lại SP
                 TongForm.SanPhamAdmin.SanPhamAdmin_Load(TongForm.SanPhamAdmin, e);
             }
+        }
+        private void btnSua_Click(object sender, EventArgs e)
+        {
+            // Hiện Form
+            FrmCapNhatHH frmCapNhatHH = new FrmCapNhatHH();
+            frmCapNhatHH.ShowDialog();
         }
     }
 }

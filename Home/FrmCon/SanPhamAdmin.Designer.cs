@@ -79,6 +79,7 @@
             this.btnThem.TabIndex = 14;
             this.btnThem.Text = "Thêm";
             this.btnThem.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // cboLoaiSP
             // 
