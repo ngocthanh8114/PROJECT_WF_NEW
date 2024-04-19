@@ -743,25 +743,6 @@ namespace Home.DuLieu
             return true;
         }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         /* // Chèn đơn hàng
         public void chenDonHang()
         {
@@ -843,6 +824,16 @@ namespace Home.DuLieu
                 capNhatTaiKhoan = true;
                 
             }
+        }
+
+        public void XoaSanPhamAdmin(string MaSP)
+        {
+            // Truy vấn xóa
+            kn.myConnect();
+            string sql = "DELETE FROM SanPham WHERE MaSP= @MaSP";
+            SqlCommand cmd = new SqlCommand(sql, conn);
+            cmd.Parameters.AddWithValue("MaSP", MaSP);
+            cmd.ExecuteNonQuery(); 
         }
 
     }

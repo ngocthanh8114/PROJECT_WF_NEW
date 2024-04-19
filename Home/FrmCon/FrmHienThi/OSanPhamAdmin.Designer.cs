@@ -61,7 +61,6 @@
             this.lblMaSP.TabIndex = 15;
             this.lblMaSP.Text = "SP1";
             this.lblMaSP.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblMaSP.Visible = false;
             // 
             // btnSua
             // 
@@ -161,7 +160,7 @@
             this.btnXoa.Image = null;
             this.btnXoa.ImageSize = new System.Drawing.Size(20, 20);
             this.btnXoa.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnXoa.Location = new System.Drawing.Point(133, 307);
+            this.btnXoa.Location = new System.Drawing.Point(135, 304);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnXoa.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -174,6 +173,7 @@
             this.btnXoa.TabIndex = 17;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // OSanPhamAdmin
             // 
