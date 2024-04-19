@@ -850,6 +850,105 @@ namespace Home.DuLieu
             cmd.Parameters.AddWithValue("MaSP", MaSP);
             cmd.ExecuteNonQuery();
         }
+        //Nhập hàng
+        public byte[] ImageToByte(Image img)
+        {
+            using (Bitmap bmp = new Bitmap(img))
+            {
+                using (MemoryStream m = new MemoryStream())
+                {
+                    bmp.Save(m, System.Drawing.Imaging.ImageFormat.Png);
+                    return m.ToArray();
+                }
+            }
+        }
+        public bool checkSo(string sdt)
+        {
+            return Regex.IsMatch(sdt, @"^[0-9]{1,50}$");
+        }
+        public bool NhapHang = false;
+        public void NhapHangAdmin(string MaSP, string TenSP, string Gia,string MaNCC, string SoLuong, Image Anh, string MaLoai, Guna2HtmlLabel gia, Guna2HtmlLabel soluong)
+        {
+            if ((MaSP == "" || TenSP == "" || Gia == "" || MaNCC == "" || SoLuong == "" || Anh == null || MaLoai == ""))
+            {
+                FrmBaoLoi frmBaoLoi = new FrmBaoLoi();
+                frmBaoLoi.hienThiLoi("Bạn chưa nhập đầy đủ thông tin!");
+                frmBaoLoi.Show();
+            }
+            else
+            {
+                if (!checkSo(SoLuong))
+                {
+                    soluong.Visible = true;
+                    return;
+                }
+                else
+                {
+                    soluong.Visible = false;
+                }
+                if (!checkSo(Gia))
+                {
+                    gia.Visible = true;
+                    return;
+                }
+                else
+                {
+                    gia.Visible = false;
+                }
+                kn.myConnect();
+                try
+                {
+                    string sql = "INSERT INTO SanPham VALUES (@MaSP, @TenSP, @Gia, @MaNCC, @SoLuong, @Anh, @MaLoai)";
+                    SqlCommand cmd = kn.con.CreateCommand();
+                    cmd.CommandText = sql;
+
+                    SqlParameter sqlParameter1 = new SqlParameter("@MaSP", SqlDbType.NChar, 10);
+                    sqlParameter1.Value = MaSP;
+                    cmd.Parameters.Add(sqlParameter1);
+
+                    SqlParameter sqlParameter2 = new SqlParameter("@TenSP", SqlDbType.NVarChar, 50);
+                    sqlParameter2.Value = TenSP;
+                    cmd.Parameters.Add(sqlParameter2);
+
+                    SqlParameter sqlParameter3 = new SqlParameter("@Gia", SqlDbType.Decimal, 18);
+                    sqlParameter3.Value = Gia;
+                    cmd.Parameters.Add(sqlParameter3);
+
+                    SqlParameter sqlParameter4 = new SqlParameter("@MaNCC", SqlDbType.NChar, 10);
+                    sqlParameter4.Value = MaNCC;
+                    cmd.Parameters.Add(sqlParameter4);
+
+                    SqlParameter sqlParameter5 = new SqlParameter("@SoLuong", SqlDbType.Int);
+                    sqlParameter5.Value = SoLuong;
+                    cmd.Parameters.Add(sqlParameter5);
+
+                    byte[] bytes = ImageToByte(Anh);
+                    SqlParameter sqlParameter6 = new SqlParameter("@Anh", SqlDbType.VarBinary, bytes.Length);
+                    sqlParameter6.Value = bytes;
+                    cmd.Parameters.Add(sqlParameter6);
+
+                    SqlParameter sqlParameter7 = new SqlParameter("@MaLoai", SqlDbType.NChar, 10);
+                    sqlParameter7.Value = MaLoai;
+                    cmd.Parameters.Add(sqlParameter7);
+
+                    int rowsAffected = cmd.ExecuteNonQuery();
+                    if (rowsAffected > 0)
+                    {
+                        FrmThongBao frmThongBao = new FrmThongBao();
+                        frmThongBao.hienThiThongBao("Thêm hàng thành công!");
+                        frmThongBao.Show();
+                        NhapHang = true;
+                    }
+                }
+                catch
+                {
+                    FrmBaoLoi frmBaoLoi = new FrmBaoLoi();
+                    frmBaoLoi.hienThiLoi("Vui lòng kiểm tra lại dữ liệu nhập vào!");
+                    frmBaoLoi.Show();
+                    NhapHang = false;
+                }
+            }
+        }
 
     }
 }

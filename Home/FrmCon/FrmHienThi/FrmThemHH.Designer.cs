@@ -32,7 +32,7 @@
             this.guna2Panel9 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel10 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel12 = new Guna.UI2.WinForms.Guna2Panel();
-            this.btnLuu = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.btnLuuThem = new Guna.UI.WinForms.GunaAdvenceButton();
             this.pn_NoiDungSua = new Guna.UI2.WinForms.Guna2Panel();
             this.txtSoLuong = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_MaNCC = new Guna.UI2.WinForms.Guna2TextBox();
@@ -58,6 +58,8 @@
             this.guna2CustomCheckBox3 = new Guna.UI2.WinForms.Guna2CustomCheckBox();
             this.guna2CustomCheckBox4 = new Guna.UI2.WinForms.Guna2CustomCheckBox();
             this.guna2Shapes2 = new Guna.UI2.WinForms.Guna2Shapes();
+            this.lblSoluong = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblDonGia = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.pn_NoiDungSua.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxSP)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -93,38 +95,39 @@
             this.guna2Panel12.Size = new System.Drawing.Size(515, 2);
             this.guna2Panel12.TabIndex = 17;
             // 
-            // btnLuu
+            // btnLuuThem
             // 
-            this.btnLuu.AnimationHoverSpeed = 0.07F;
-            this.btnLuu.AnimationSpeed = 0.03F;
-            this.btnLuu.BackColor = System.Drawing.Color.Transparent;
-            this.btnLuu.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnLuu.BorderColor = System.Drawing.Color.Black;
-            this.btnLuu.CheckedBaseColor = System.Drawing.Color.DimGray;
-            this.btnLuu.CheckedBorderColor = System.Drawing.Color.Black;
-            this.btnLuu.CheckedForeColor = System.Drawing.Color.White;
-            this.btnLuu.CheckedImage = null;
-            this.btnLuu.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.btnLuu.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnLuu.FocusedColor = System.Drawing.Color.Empty;
-            this.btnLuu.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLuu.ForeColor = System.Drawing.Color.White;
-            this.btnLuu.Image = null;
-            this.btnLuu.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnLuu.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnLuu.Location = new System.Drawing.Point(163, 627);
-            this.btnLuu.Name = "btnLuu";
-            this.btnLuu.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btnLuu.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnLuu.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnLuu.OnHoverImage = null;
-            this.btnLuu.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnLuu.OnPressedColor = System.Drawing.Color.Black;
-            this.btnLuu.Radius = 5;
-            this.btnLuu.Size = new System.Drawing.Size(180, 42);
-            this.btnLuu.TabIndex = 40;
-            this.btnLuu.Text = "Lưu";
-            this.btnLuu.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnLuuThem.AnimationHoverSpeed = 0.07F;
+            this.btnLuuThem.AnimationSpeed = 0.03F;
+            this.btnLuuThem.BackColor = System.Drawing.Color.Transparent;
+            this.btnLuuThem.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnLuuThem.BorderColor = System.Drawing.Color.Black;
+            this.btnLuuThem.CheckedBaseColor = System.Drawing.Color.DimGray;
+            this.btnLuuThem.CheckedBorderColor = System.Drawing.Color.Black;
+            this.btnLuuThem.CheckedForeColor = System.Drawing.Color.White;
+            this.btnLuuThem.CheckedImage = null;
+            this.btnLuuThem.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.btnLuuThem.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnLuuThem.FocusedColor = System.Drawing.Color.Empty;
+            this.btnLuuThem.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLuuThem.ForeColor = System.Drawing.Color.White;
+            this.btnLuuThem.Image = null;
+            this.btnLuuThem.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnLuuThem.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btnLuuThem.Location = new System.Drawing.Point(163, 633);
+            this.btnLuuThem.Name = "btnLuuThem";
+            this.btnLuuThem.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btnLuuThem.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnLuuThem.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnLuuThem.OnHoverImage = null;
+            this.btnLuuThem.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btnLuuThem.OnPressedColor = System.Drawing.Color.Black;
+            this.btnLuuThem.Radius = 5;
+            this.btnLuuThem.Size = new System.Drawing.Size(180, 42);
+            this.btnLuuThem.TabIndex = 40;
+            this.btnLuuThem.Text = "Lưu";
+            this.btnLuuThem.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnLuuThem.Click += new System.EventHandler(this.btnLuuThem_Click);
             // 
             // pn_NoiDungSua
             // 
@@ -132,7 +135,9 @@
             this.pn_NoiDungSua.BorderColor = System.Drawing.Color.White;
             this.pn_NoiDungSua.BorderRadius = 15;
             this.pn_NoiDungSua.BorderThickness = 3;
-            this.pn_NoiDungSua.Controls.Add(this.btnLuu);
+            this.pn_NoiDungSua.Controls.Add(this.lblDonGia);
+            this.pn_NoiDungSua.Controls.Add(this.lblSoluong);
+            this.pn_NoiDungSua.Controls.Add(this.btnLuuThem);
             this.pn_NoiDungSua.Controls.Add(this.txtSoLuong);
             this.pn_NoiDungSua.Controls.Add(this.txt_MaNCC);
             this.pn_NoiDungSua.Controls.Add(this.btnChonAnh);
@@ -229,6 +234,7 @@
             // 
             // picBoxSP
             // 
+            this.picBoxSP.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.picBoxSP.Image = ((System.Drawing.Image)(resources.GetObject("picBoxSP.Image")));
             this.picBoxSP.ImageRotate = 0F;
             this.picBoxSP.Location = new System.Drawing.Point(131, 57);
@@ -294,7 +300,7 @@
             this.txtGia.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtGia.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
             this.txtGia.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtGia.Location = new System.Drawing.Point(59, 555);
+            this.txtGia.Location = new System.Drawing.Point(59, 560);
             this.txtGia.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtGia.Name = "txtGia";
             this.txtGia.PasswordChar = '\0';
@@ -315,7 +321,7 @@
             this.txtTenSP.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTenSP.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
             this.txtTenSP.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTenSP.Location = new System.Drawing.Point(59, 404);
+            this.txtTenSP.Location = new System.Drawing.Point(59, 401);
             this.txtTenSP.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtTenSP.Name = "txtTenSP";
             this.txtTenSP.PasswordChar = '\0';
@@ -560,6 +566,30 @@
             this.guna2Shapes2.Text = "guna2Shapes2";
             this.guna2Shapes2.Zoom = 80;
             // 
+            // lblSoluong
+            // 
+            this.lblSoluong.AutoSize = false;
+            this.lblSoluong.BackColor = System.Drawing.Color.Transparent;
+            this.lblSoluong.ForeColor = System.Drawing.Color.Red;
+            this.lblSoluong.Location = new System.Drawing.Point(285, 456);
+            this.lblSoluong.Name = "lblSoluong";
+            this.lblSoluong.Size = new System.Drawing.Size(381, 24);
+            this.lblSoluong.TabIndex = 57;
+            this.lblSoluong.Text = "Vui lòng nhập số.";
+            this.lblSoluong.Visible = false;
+            // 
+            // lblDonGia
+            // 
+            this.lblDonGia.AutoSize = false;
+            this.lblDonGia.BackColor = System.Drawing.Color.Transparent;
+            this.lblDonGia.ForeColor = System.Drawing.Color.Red;
+            this.lblDonGia.Location = new System.Drawing.Point(59, 536);
+            this.lblDonGia.Name = "lblDonGia";
+            this.lblDonGia.Size = new System.Drawing.Size(381, 27);
+            this.lblDonGia.TabIndex = 58;
+            this.lblDonGia.Text = "Vui lòng nhập số.";
+            this.lblDonGia.Visible = false;
+            // 
             // FrmThemHH
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -590,7 +620,7 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel9;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel10;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel12;
-        private Guna.UI.WinForms.GunaAdvenceButton btnLuu;
+        private Guna.UI.WinForms.GunaAdvenceButton btnLuuThem;
         private Guna.UI2.WinForms.Guna2Panel pn_NoiDungSua;
         private Guna.UI2.WinForms.Guna2TextBox txtSoLuong;
         private Guna.UI2.WinForms.Guna2TextBox txt_MaNCC;
@@ -616,5 +646,7 @@
         private Guna.UI2.WinForms.Guna2CustomCheckBox guna2CustomCheckBox3;
         private Guna.UI2.WinForms.Guna2CustomCheckBox guna2CustomCheckBox4;
         private Guna.UI2.WinForms.Guna2Shapes guna2Shapes2;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblDonGia;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblSoluong;
     }
 }
