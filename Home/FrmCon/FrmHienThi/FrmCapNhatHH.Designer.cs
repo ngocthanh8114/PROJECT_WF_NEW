@@ -376,6 +376,7 @@
             // 
             // picBoxSP
             // 
+            this.picBoxSP.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.picBoxSP.Image = ((System.Drawing.Image)(resources.GetObject("picBoxSP.Image")));
             this.picBoxSP.ImageRotate = 0F;
             this.picBoxSP.Location = new System.Drawing.Point(131, 57);
@@ -488,6 +489,7 @@
             this.txtMaSP.Name = "txtMaSP";
             this.txtMaSP.PasswordChar = '\0';
             this.txtMaSP.PlaceholderText = "Mã sản phẩm...";
+            this.txtMaSP.ReadOnly = true;
             this.txtMaSP.SelectedText = "";
             this.txtMaSP.Size = new System.Drawing.Size(189, 48);
             this.txtMaSP.TabIndex = 5;

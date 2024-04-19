@@ -835,22 +835,36 @@ namespace Home.DuLieu
             cmd.Parameters.AddWithValue("MaSP", MaSP);
             cmd.ExecuteNonQuery(); 
         }
-
-        public void SuaThongTinSanPhamAdmin(string MaNCC, string TenSP, string MaLoai, string SoLuong, string Gia, string MaSP)
+        public void LoadFrmCapNhatHH(string masp, Guna2TextBox maSP, Guna2TextBox tenSP, Guna2TextBox gia, Guna2TextBox maNCC, Guna2TextBox soLuong, Guna2PictureBox Anh, Guna2TextBox maLoai)
         {
-            // Sửa
             kn.myConnect();
-            string sql = "UPDATE SanPham SET MaNCC= @MaNCC, TenSP= @TenSP, MaLoai= @MaLoai, SoLuong= @SoLuong, Gia= @Gia WHERE MaSP= @MaSP";
+            string sql = "SELECT * FROM SanPham WHERE MaSP = @MaSP";
             SqlCommand cmd = new SqlCommand(sql, conn);
-            cmd.Parameters.AddWithValue("MaNCC", MaNCC);
-            cmd.Parameters.AddWithValue("TenSP", TenSP);
-            cmd.Parameters.AddWithValue("MaLoai", MaLoai);
-            cmd.Parameters.AddWithValue("SoLuong", SoLuong);
-            cmd.Parameters.AddWithValue("Gia", Gia);
-            cmd.Parameters.AddWithValue("MaSP", MaSP);
-            cmd.ExecuteNonQuery();
+            cmd.Parameters.AddWithValue("MaSP", masp);
+
+            SqlDataReader reader = cmd.ExecuteReader();
+            if (reader.Read())
+            {
+                string idsp = reader.GetString(0);
+                string name = reader.GetString(1);
+                string price = reader.GetDecimal(2).ToString();
+                string idncc = reader.GetString(3);
+                string sl = reader.GetInt32(4).ToString();
+                Image anh = ByteArrToImage((byte[])reader.GetValue(5));
+                string idloai = reader.GetString(6);
+
+                //Hiển thị
+                maSP.Text = idsp.Trim();
+                tenSP.Text = name.Trim();
+                gia.Text = price.Trim();
+                maNCC.Text = idncc.Trim();
+                soLuong.Text = sl.Trim();
+                Anh.Image = anh;
+                maLoai.Text = idloai.Trim();
+            }
+            //Đóng đầu đọc
+            reader.Close();
         }
-        //Nhập hàng
         public byte[] ImageToByte(Image img)
         {
             using (Bitmap bmp = new Bitmap(img))
@@ -862,6 +876,24 @@ namespace Home.DuLieu
                 }
             }
         }
+        public void SuaThongTinSanPhamAdmin(string MaNCC, string TenSP, string MaLoai, string SoLuong, string Gia, string MaSP, Image hinhAnh)
+        {
+            // Sửa
+            kn.myConnect();
+            string sql = "UPDATE SanPham SET MaNCC= @MaNCC, TenSP= @TenSP, MaLoai= @MaLoai, SoLuong= @SoLuong, Gia= @Gia, HinhAnh =@HinhAnh WHERE MaSP= @MaSP";
+            SqlCommand cmd = new SqlCommand(sql, conn);
+            cmd.Parameters.AddWithValue("MaNCC", MaNCC);
+            cmd.Parameters.AddWithValue("TenSP", TenSP);
+            cmd.Parameters.AddWithValue("MaLoai", MaLoai);
+            cmd.Parameters.AddWithValue("SoLuong", SoLuong);
+            cmd.Parameters.AddWithValue("Gia", Gia);
+            cmd.Parameters.AddWithValue("MaSP", MaSP);
+            byte[] bytes = ImageToByte(hinhAnh);
+            cmd.Parameters.AddWithValue("HinhAnh", bytes);
+            cmd.ExecuteNonQuery();
+        }
+        //Nhập hàng
+        
         public bool checkSo(string sdt)
         {
             return Regex.IsMatch(sdt, @"^[0-9]{1,50}$");

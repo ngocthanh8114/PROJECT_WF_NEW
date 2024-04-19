@@ -65,8 +65,10 @@ namespace Home.FrmCon.FrmHienThi
                 TongForm.SanPhamAdmin.SanPhamAdmin_Load(TongForm.SanPhamAdmin, e);
             }
         }
-        private void btnSua_Click(object sender, EventArgs e)
-        {
+        public static string maSP;
+        public void btnSua_Click(object sender, EventArgs e)
+        {   
+            maSP = lblMaSP.Text.ToString();
             // Hiện Form
             FrmCapNhatHH frmCapNhatHH = new FrmCapNhatHH();
             frmCapNhatHH.ShowDialog();
