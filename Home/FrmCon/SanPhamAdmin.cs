@@ -70,8 +70,8 @@ namespace Home.FrmCon
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-            FrmCapNhatHH frmCapNhatHH = new FrmCapNhatHH();
-            frmCapNhatHH.ShowDialog();
+            FrmThemHH frmThemHH = new FrmThemHH();
+            frmThemHH.ShowDialog();
         }
     }
 }

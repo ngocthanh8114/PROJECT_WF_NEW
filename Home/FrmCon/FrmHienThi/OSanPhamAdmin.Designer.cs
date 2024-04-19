@@ -161,7 +161,7 @@
             this.btnXoa.Image = null;
             this.btnXoa.ImageSize = new System.Drawing.Size(20, 20);
             this.btnXoa.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnXoa.Location = new System.Drawing.Point(135, 304);
+            this.btnXoa.Location = new System.Drawing.Point(135, 307);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnXoa.OnHoverBorderColor = System.Drawing.Color.Black;

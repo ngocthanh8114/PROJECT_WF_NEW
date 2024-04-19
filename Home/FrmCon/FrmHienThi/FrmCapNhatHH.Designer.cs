@@ -42,6 +42,7 @@
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.gunaLabel6 = new Guna.UI.WinForms.GunaLabel();
             this.pn_NoiDungSua = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnLuu = new Guna.UI.WinForms.GunaAdvenceButton();
             this.txtSoLuong = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_MaNCC = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnChonAnh = new Guna.UI.WinForms.GunaAdvenceButton();
@@ -57,7 +58,6 @@
             this.guna2Panel9 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel10 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel12 = new Guna.UI2.WinForms.Guna2Panel();
-            this.btnLuu = new Guna.UI.WinForms.GunaAdvenceButton();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
@@ -264,6 +264,40 @@
             this.pn_NoiDungSua.Size = new System.Drawing.Size(511, 699);
             this.pn_NoiDungSua.TabIndex = 7;
             // 
+            // btnLuu
+            // 
+            this.btnLuu.AnimationHoverSpeed = 0.07F;
+            this.btnLuu.AnimationSpeed = 0.03F;
+            this.btnLuu.BackColor = System.Drawing.Color.Transparent;
+            this.btnLuu.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnLuu.BorderColor = System.Drawing.Color.Black;
+            this.btnLuu.CheckedBaseColor = System.Drawing.Color.DimGray;
+            this.btnLuu.CheckedBorderColor = System.Drawing.Color.Black;
+            this.btnLuu.CheckedForeColor = System.Drawing.Color.White;
+            this.btnLuu.CheckedImage = null;
+            this.btnLuu.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.btnLuu.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnLuu.FocusedColor = System.Drawing.Color.Empty;
+            this.btnLuu.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLuu.ForeColor = System.Drawing.Color.White;
+            this.btnLuu.Image = null;
+            this.btnLuu.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnLuu.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btnLuu.Location = new System.Drawing.Point(163, 627);
+            this.btnLuu.Name = "btnLuu";
+            this.btnLuu.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btnLuu.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnLuu.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnLuu.OnHoverImage = null;
+            this.btnLuu.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btnLuu.OnPressedColor = System.Drawing.Color.Black;
+            this.btnLuu.Radius = 5;
+            this.btnLuu.Size = new System.Drawing.Size(180, 42);
+            this.btnLuu.TabIndex = 40;
+            this.btnLuu.Text = "Lưu";
+            this.btnLuu.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
+            // 
             // txtSoLuong
             // 
             this.txtSoLuong.BorderRadius = 8;
@@ -338,6 +372,7 @@
             this.btnChonAnh.TabIndex = 37;
             this.btnChonAnh.Text = "Chọn Ảnh";
             this.btnChonAnh.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnChonAnh.Click += new System.EventHandler(this.btnChonAnh_Click);
             // 
             // picBoxSP
             // 
@@ -525,40 +560,6 @@
             this.guna2Panel12.Name = "guna2Panel12";
             this.guna2Panel12.Size = new System.Drawing.Size(515, 2);
             this.guna2Panel12.TabIndex = 17;
-            // 
-            // btnLuu
-            // 
-            this.btnLuu.AnimationHoverSpeed = 0.07F;
-            this.btnLuu.AnimationSpeed = 0.03F;
-            this.btnLuu.BackColor = System.Drawing.Color.Transparent;
-            this.btnLuu.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnLuu.BorderColor = System.Drawing.Color.Black;
-            this.btnLuu.CheckedBaseColor = System.Drawing.Color.DimGray;
-            this.btnLuu.CheckedBorderColor = System.Drawing.Color.Black;
-            this.btnLuu.CheckedForeColor = System.Drawing.Color.White;
-            this.btnLuu.CheckedImage = null;
-            this.btnLuu.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.btnLuu.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnLuu.FocusedColor = System.Drawing.Color.Empty;
-            this.btnLuu.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLuu.ForeColor = System.Drawing.Color.White;
-            this.btnLuu.Image = null;
-            this.btnLuu.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnLuu.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnLuu.Location = new System.Drawing.Point(163, 627);
-            this.btnLuu.Name = "btnLuu";
-            this.btnLuu.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btnLuu.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnLuu.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnLuu.OnHoverImage = null;
-            this.btnLuu.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnLuu.OnPressedColor = System.Drawing.Color.Black;
-            this.btnLuu.Radius = 5;
-            this.btnLuu.Size = new System.Drawing.Size(180, 42);
-            this.btnLuu.TabIndex = 40;
-            this.btnLuu.Text = "Lưu";
-            this.btnLuu.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // FrmCapNhatHH
             // 
