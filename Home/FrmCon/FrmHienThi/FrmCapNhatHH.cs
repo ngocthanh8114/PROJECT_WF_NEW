@@ -7,6 +7,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.UI.Design;
 using System.Windows.Forms;
 
 namespace Home.FrmCon.FrmHienThi
@@ -26,14 +27,16 @@ namespace Home.FrmCon.FrmHienThi
 
         private void FrmCapNhatHH_Load(object sender, EventArgs e)
         {
-            OSanPhamAdmin oSanPhamAdmin = new OSanPhamAdmin();
-            txtMaSP.Text = oSanPhamAdmin.Get_lblMaSP();
+            xl.Connection_CSDL();
+            string idsp = OSanPhamAdmin.maSP;
+            txtMaSP.Text = idsp;
+            xl.LoadFrmCapNhatHH(idsp, txtMaSP, txtTenSP, txtGia, txt_MaNCC, txtSoLuong, picBoxSP, txtMaLoai);
         }
 
         private void btnLuu_Click(object sender, EventArgs e)
         {
             xl.Connection_CSDL();
-            xl.SuaThongTinSanPhamAdmin(txt_MaNCC.Text, txtTenSP.Text, txtMaLoai.Text, txtSoLuong.Text, txtGia.Text, txtMaSP.Text);
+            xl.SuaThongTinSanPhamAdmin(txt_MaNCC.Text, txtTenSP.Text, txtMaLoai.Text, txtSoLuong.Text, txtGia.Text, txtMaSP.Text, picBoxSP.Image);
             FrmThongBao frmThongBao = new FrmThongBao();
             frmThongBao.hienThiThongBao("Sửa thông tin thành công");
             frmThongBao.Show();
@@ -42,6 +45,7 @@ namespace Home.FrmCon.FrmHienThi
 
             //Reset Text
             txt_MaNCC.Text = txtTenSP.Text = txtMaLoai.Text = txtSoLuong.Text = txtGia.Text = txtMaSP.Text = "";
+            picBoxSP.Image =null;
         }
 
         private void btnChonAnh_Click(object sender, EventArgs e)
