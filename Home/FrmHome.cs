@@ -37,9 +37,9 @@ namespace Home
 
         private void btnClose_Click(object sender, EventArgs e)
         {
-            Application.Exit();
-            /*FrmDangNhap frmDangNhap = new FrmDangNhap();
-            frmDangNhap.ShowDialog();*/
+            this.Close();
+            FrmDangNhap frmDangNhap = new FrmDangNhap();
+            frmDangNhap.ShowDialog();
         }
 
         private void panelTitleBar_MouseDown(object sender, MouseEventArgs e)

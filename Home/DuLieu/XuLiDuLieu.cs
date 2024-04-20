@@ -742,45 +742,33 @@ namespace Home.DuLieu
             }
             return true;
         }
-<<<<<<< HEAD
-        
-        // Lấy dữ liệu đơn mua
-        public DataTable doDuLieuDonMua()
-=======
 
         /* // Chèn đơn hàng
         public void chenDonHang()
->>>>>>> 9217937c50c2305e98291891d167bd7f0c9eac12
         {
-            kn.myConnect();
-            string sql = "SELECT * FROM DonHangDaMua,SanPham WHERE TenTaiKhoan = @TenTaiKhoan and DonHangDaMua.MaSP = SanPham.MaSP ";
+            string sql = "update ThongTinDH set TenTaiKhoan = @TenTaiKhoan where TongTienHang is NULL";
             SqlCommand cmd = new SqlCommand(sql, kn.con);
 
             SqlParameter sqlParameter0 = new SqlParameter("@TenTaiKhoan", SqlDbType.NVarChar, 50);
             sqlParameter0.Value = TaiKhoanDangNhap.tenTaiKhoan;
             cmd.Parameters.Add(sqlParameter0);
 
-            SqlDataAdapter da = new SqlDataAdapter(cmd);
-            DataTable dt = new DataTable();
-            da.Fill(dt);
-            return dt;
+            cmd.ExecuteNonQuery();
         }
-        public DataTable doDiaChi()
+
+        // Xóa đi đơn hàng nếu thoát mà chưa đặt
+        public void loaiBoDonHang()
         {
-            kn.myConnect();
-            string sql = "SELECT distinct * from DiaChiKhachHang where TenTaiKhoan = @TenTaiKhoan";
+            string sql = "update ThongTinDH set TenTaiKhoan = NULL where TongTienHang is NULL";
             SqlCommand cmd = new SqlCommand(sql, kn.con);
 
             SqlParameter sqlParameter0 = new SqlParameter("@TenTaiKhoan", SqlDbType.NVarChar, 50);
             sqlParameter0.Value = TaiKhoanDangNhap.tenTaiKhoan;
             cmd.Parameters.Add(sqlParameter0);
 
-            SqlDataAdapter da = new SqlDataAdapter(cmd);
-            DataTable dt = new DataTable();
-            da.Fill(dt);
-            return dt;
+            cmd.ExecuteNonQuery();
         }
-        
+        */
 
         public bool capNhatTaiKhoan = false;
         public void CapNhatTaiKhoan(string tenNguoiDung, string email, string soDienThoai, Guna2HtmlLabel em, Guna2HtmlLabel soDT, Guna2HtmlLabel tenND)
@@ -888,21 +876,36 @@ namespace Home.DuLieu
                 }
             }
         }
+        public bool SuaHang = false;
         public void SuaThongTinSanPhamAdmin(string MaNCC, string TenSP, string MaLoai, string SoLuong, string Gia, string MaSP, Image hinhAnh)
         {
-            // Sửa
-            kn.myConnect();
-            string sql = "UPDATE SanPham SET MaNCC= @MaNCC, TenSP= @TenSP, MaLoai= @MaLoai, SoLuong= @SoLuong, Gia= @Gia, HinhAnh =@HinhAnh WHERE MaSP= @MaSP";
-            SqlCommand cmd = new SqlCommand(sql, conn);
-            cmd.Parameters.AddWithValue("MaNCC", MaNCC);
-            cmd.Parameters.AddWithValue("TenSP", TenSP);
-            cmd.Parameters.AddWithValue("MaLoai", MaLoai);
-            cmd.Parameters.AddWithValue("SoLuong", SoLuong);
-            cmd.Parameters.AddWithValue("Gia", Gia);
-            cmd.Parameters.AddWithValue("MaSP", MaSP);
-            byte[] bytes = ImageToByte(hinhAnh);
-            cmd.Parameters.AddWithValue("HinhAnh", bytes);
-            cmd.ExecuteNonQuery();
+            if(MaNCC == "" || TenSP == "" || MaLoai == "" || SoLuong == "" || Gia == "" || hinhAnh == null)
+            {
+                FrmBaoLoi frmBaoLoi = new FrmBaoLoi();
+                frmBaoLoi.hienThiLoi("Bạn chưa nhập đầy đủ thông tin!");
+                frmBaoLoi.Show();
+            }
+            else
+            {
+                // Sửa
+                kn.myConnect();
+                string sql = "UPDATE SanPham SET MaNCC= @MaNCC, TenSP= @TenSP, MaLoai= @MaLoai, SoLuong= @SoLuong, Gia= @Gia, HinhAnh =@HinhAnh WHERE MaSP= @MaSP";
+                SqlCommand cmd = new SqlCommand(sql, conn);
+                cmd.Parameters.AddWithValue("MaNCC", MaNCC);
+                cmd.Parameters.AddWithValue("TenSP", TenSP);
+                cmd.Parameters.AddWithValue("MaLoai", MaLoai);
+                cmd.Parameters.AddWithValue("SoLuong", SoLuong);
+                cmd.Parameters.AddWithValue("Gia", Gia);
+                cmd.Parameters.AddWithValue("MaSP", MaSP);
+                byte[] bytes = ImageToByte(hinhAnh);
+                cmd.Parameters.AddWithValue("HinhAnh", bytes);
+                cmd.ExecuteNonQuery();
+
+                FrmThongBao frmThongBao = new FrmThongBao();
+                frmThongBao.hienThiThongBao("Sửa thông tin thành công");
+                frmThongBao.Show();
+                SuaHang = true;
+            }
         }
         //Nhập hàng
         

@@ -83,30 +83,5 @@ namespace Home.FrmCon.FrmHienThi
                 frmBaoLoi.Show();
             }
         }
-
-        private void cbGiaoHang1_Click(object sender, EventArgs e)
-        {
-            if(cbGiaoHang1.Checked == true) 
-            { 
-                cbGiaoHang2.Checked = false;
-            }
-            else
-            {
-                cbGiaoHang1.Checked = true;
-            } 
-                
-        }
-
-        private void cbGiaoHang2_Click(object sender, EventArgs e)
-        {
-            if (cbGiaoHang2.Checked == true)
-            {
-                cbGiaoHang1.Checked = false;
-            }
-            else
-            {
-                cbGiaoHang2.Checked = true;
-            }
-        }
     }
 }

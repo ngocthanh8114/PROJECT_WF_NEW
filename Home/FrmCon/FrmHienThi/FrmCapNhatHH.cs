@@ -37,15 +37,16 @@ namespace Home.FrmCon.FrmHienThi
         {
             xl.Connection_CSDL();
             xl.SuaThongTinSanPhamAdmin(txt_MaNCC.Text, txtTenSP.Text, txtMaLoai.Text, txtSoLuong.Text, txtGia.Text, txtMaSP.Text, picBoxSP.Image);
-            FrmThongBao frmThongBao = new FrmThongBao();
-            frmThongBao.hienThiThongBao("Sửa thông tin thành công");
-            frmThongBao.Show();
-            TongForm.SanPhamAdmin.SanPhamAdmin_Load(TongForm.SanPhamAdmin, e);
+            
 
-
+            if (xl.SuaHang)
+            {
+                txt_MaNCC.Text = txtTenSP.Text = txtMaLoai.Text = txtSoLuong.Text = txtGia.Text = txtMaSP.Text = "";
+                picBoxSP.Image =null;
+                TongForm.SanPhamAdmin.SanPhamAdmin_Load(TongForm.SanPhamAdmin, e);
+            }
             //Reset Text
-            txt_MaNCC.Text = txtTenSP.Text = txtMaLoai.Text = txtSoLuong.Text = txtGia.Text = txtMaSP.Text = "";
-            picBoxSP.Image =null;
+           
         }
 
         private void btnChonAnh_Click(object sender, EventArgs e)

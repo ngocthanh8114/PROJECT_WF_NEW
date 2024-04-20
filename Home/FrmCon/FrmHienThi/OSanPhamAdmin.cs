@@ -19,29 +19,6 @@ namespace Home.FrmCon.FrmHienThi
         {
             InitializeComponent();
         }
-
-        public string Get_lblMaSP()
-        {
-            return lblMaSP.Text;
-        }
-        public string Get_lbTenSP()
-        {
-            return lblTenSP.Text;
-        }
-        public string Get_lbNCC()
-        {
-            return lblNCC.Text;
-        }
-        public string Get_lbSL()
-        {
-            return lblSL.Text ;
-        }
-
-        public string Get_lbGia()
-        {
-            return lblGia.Text;
-        }
-       
        
         public void themSPAdmin(string MaSP, string tenSP, decimal gia, string nCC, int sL, Image anh)
         {

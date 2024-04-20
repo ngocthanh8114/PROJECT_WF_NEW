@@ -30,8 +30,8 @@
         {
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.cboLoaiSP = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.panelNoiDung = new System.Windows.Forms.FlowLayoutPanel();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.panelNoiDung = new System.Windows.Forms.FlowLayoutPanel();
             this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -40,7 +40,8 @@
             this.guna2Panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.guna2Panel1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.guna2Panel1.Controls.Add(this.cboLoaiSP);
-            this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
+            this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2Panel1.Location = new System.Drawing.Point(0, 4);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(2050, 75);
             this.guna2Panel1.TabIndex = 3;
@@ -72,15 +73,6 @@
             this.cboLoaiSP.TextOffset = new System.Drawing.Point(10, 3);
             this.cboLoaiSP.SelectedIndexChanged += new System.EventHandler(this.cboLoaiSP_SelectedIndexChanged);
             // 
-            // panelNoiDung
-            // 
-            this.panelNoiDung.AutoScroll = true;
-            this.panelNoiDung.Location = new System.Drawing.Point(0, 79);
-            this.panelNoiDung.Name = "panelNoiDung";
-            this.panelNoiDung.Size = new System.Drawing.Size(2050, 809);
-            this.panelNoiDung.TabIndex = 2;
-            this.panelNoiDung.Paint += new System.Windows.Forms.PaintEventHandler(this.panelNoiDung_Paint);
-            // 
             // guna2Panel2
             // 
             this.guna2Panel2.BackColor = System.Drawing.SystemColors.Control;
@@ -89,15 +81,24 @@
             this.guna2Panel2.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.Size = new System.Drawing.Size(2050, 4);
-            this.guna2Panel2.TabIndex = 4;
+            this.guna2Panel2.TabIndex = 0;
+            // 
+            // panelNoiDung
+            // 
+            this.panelNoiDung.AutoScroll = true;
+            this.panelNoiDung.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelNoiDung.Location = new System.Drawing.Point(0, 79);
+            this.panelNoiDung.Name = "panelNoiDung";
+            this.panelNoiDung.Size = new System.Drawing.Size(2050, 809);
+            this.panelNoiDung.TabIndex = 4;
             // 
             // SanPhamAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.panelNoiDung);
+            this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.guna2Panel2);
             this.Name = "SanPhamAdmin";
             this.Size = new System.Drawing.Size(2050, 888);
@@ -109,8 +110,8 @@
 
         #endregion
         private Guna.UI2.WinForms.Guna2ComboBox cboLoaiSP;
-        private System.Windows.Forms.FlowLayoutPanel panelNoiDung;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        private System.Windows.Forms.FlowLayoutPanel panelNoiDung;
     }
 }
