@@ -34,10 +34,10 @@
             this.panelTong = new Guna.UI.WinForms.GunaPanel();
             this.gunaPanel2 = new Guna.UI.WinForms.GunaPanel();
             this.btnTaiKhoan = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.btnDichVu = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.btnDonHang = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.btnBaoCao = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.btnHoaDon = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.btnKhachHang = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnSanPham = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.btnGioiThieu = new Guna.UI.WinForms.GunaAdvenceButton();
             this.panelMenu = new Guna.UI.WinForms.GunaPanel();
             this.panelThanhTieuDe = new Guna.UI.WinForms.GunaPanel();
             this.lblTieude = new Guna.UI.WinForms.GunaLabel();
@@ -75,10 +75,10 @@
             this.gunaPanel2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.gunaPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.gunaPanel2.Controls.Add(this.btnTaiKhoan);
-            this.gunaPanel2.Controls.Add(this.btnDichVu);
-            this.gunaPanel2.Controls.Add(this.btnDonHang);
+            this.gunaPanel2.Controls.Add(this.btnBaoCao);
+            this.gunaPanel2.Controls.Add(this.btnHoaDon);
+            this.gunaPanel2.Controls.Add(this.btnKhachHang);
             this.gunaPanel2.Controls.Add(this.btnSanPham);
-            this.gunaPanel2.Controls.Add(this.btnGioiThieu);
             this.gunaPanel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.gunaPanel2.Location = new System.Drawing.Point(0, 85);
             this.gunaPanel2.Name = "gunaPanel2";
@@ -100,7 +100,7 @@
             this.btnTaiKhoan.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnTaiKhoan.Dock = System.Windows.Forms.DockStyle.Left;
             this.btnTaiKhoan.FocusedColor = System.Drawing.Color.Empty;
-            this.btnTaiKhoan.Font = new System.Drawing.Font("UTM Facebook", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTaiKhoan.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTaiKhoan.ForeColor = System.Drawing.Color.White;
             this.btnTaiKhoan.Image = null;
             this.btnTaiKhoan.ImageSize = new System.Drawing.Size(20, 20);
@@ -118,71 +118,104 @@
             this.btnTaiKhoan.Text = "Tài khoản";
             this.btnTaiKhoan.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // btnDichVu
+            // btnBaoCao
             // 
-            this.btnDichVu.Animated = true;
-            this.btnDichVu.AnimationHoverSpeed = 0.07F;
-            this.btnDichVu.AnimationSpeed = 0.03F;
-            this.btnDichVu.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnDichVu.BorderColor = System.Drawing.Color.Black;
-            this.btnDichVu.CheckedBaseColor = System.Drawing.Color.Tomato;
-            this.btnDichVu.CheckedBorderColor = System.Drawing.Color.Transparent;
-            this.btnDichVu.CheckedForeColor = System.Drawing.Color.White;
-            this.btnDichVu.CheckedImage = null;
-            this.btnDichVu.CheckedLineColor = System.Drawing.Color.Tomato;
-            this.btnDichVu.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnDichVu.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btnDichVu.FocusedColor = System.Drawing.Color.Empty;
-            this.btnDichVu.Font = new System.Drawing.Font("UTM Facebook", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDichVu.ForeColor = System.Drawing.Color.White;
-            this.btnDichVu.Image = null;
-            this.btnDichVu.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnDichVu.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnDichVu.Location = new System.Drawing.Point(750, 0);
-            this.btnDichVu.Name = "btnDichVu";
-            this.btnDichVu.OnHoverBaseColor = System.Drawing.Color.Tomato;
-            this.btnDichVu.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnDichVu.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnDichVu.OnHoverImage = null;
-            this.btnDichVu.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnDichVu.OnPressedColor = System.Drawing.Color.Black;
-            this.btnDichVu.Size = new System.Drawing.Size(250, 50);
-            this.btnDichVu.TabIndex = 3;
-            this.btnDichVu.Text = "Báo cáo";
-            this.btnDichVu.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnBaoCao.Animated = true;
+            this.btnBaoCao.AnimationHoverSpeed = 0.07F;
+            this.btnBaoCao.AnimationSpeed = 0.03F;
+            this.btnBaoCao.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnBaoCao.BorderColor = System.Drawing.Color.Black;
+            this.btnBaoCao.CheckedBaseColor = System.Drawing.Color.Tomato;
+            this.btnBaoCao.CheckedBorderColor = System.Drawing.Color.Transparent;
+            this.btnBaoCao.CheckedForeColor = System.Drawing.Color.White;
+            this.btnBaoCao.CheckedImage = null;
+            this.btnBaoCao.CheckedLineColor = System.Drawing.Color.Tomato;
+            this.btnBaoCao.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnBaoCao.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btnBaoCao.FocusedColor = System.Drawing.Color.Empty;
+            this.btnBaoCao.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBaoCao.ForeColor = System.Drawing.Color.White;
+            this.btnBaoCao.Image = null;
+            this.btnBaoCao.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnBaoCao.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btnBaoCao.Location = new System.Drawing.Point(750, 0);
+            this.btnBaoCao.Name = "btnBaoCao";
+            this.btnBaoCao.OnHoverBaseColor = System.Drawing.Color.Tomato;
+            this.btnBaoCao.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnBaoCao.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnBaoCao.OnHoverImage = null;
+            this.btnBaoCao.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btnBaoCao.OnPressedColor = System.Drawing.Color.Black;
+            this.btnBaoCao.Size = new System.Drawing.Size(250, 50);
+            this.btnBaoCao.TabIndex = 3;
+            this.btnBaoCao.Text = "Báo cáo";
+            this.btnBaoCao.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // btnDonHang
+            // btnHoaDon
             // 
-            this.btnDonHang.Animated = true;
-            this.btnDonHang.AnimationHoverSpeed = 0.07F;
-            this.btnDonHang.AnimationSpeed = 0.03F;
-            this.btnDonHang.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnDonHang.BorderColor = System.Drawing.Color.Black;
-            this.btnDonHang.CheckedBaseColor = System.Drawing.Color.Tomato;
-            this.btnDonHang.CheckedBorderColor = System.Drawing.Color.Transparent;
-            this.btnDonHang.CheckedForeColor = System.Drawing.Color.White;
-            this.btnDonHang.CheckedImage = null;
-            this.btnDonHang.CheckedLineColor = System.Drawing.Color.Tomato;
-            this.btnDonHang.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnDonHang.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btnDonHang.FocusedColor = System.Drawing.Color.Empty;
-            this.btnDonHang.Font = new System.Drawing.Font("UTM Facebook", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDonHang.ForeColor = System.Drawing.Color.White;
-            this.btnDonHang.Image = null;
-            this.btnDonHang.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnDonHang.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnDonHang.Location = new System.Drawing.Point(500, 0);
-            this.btnDonHang.Name = "btnDonHang";
-            this.btnDonHang.OnHoverBaseColor = System.Drawing.Color.Tomato;
-            this.btnDonHang.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnDonHang.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnDonHang.OnHoverImage = null;
-            this.btnDonHang.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnDonHang.OnPressedColor = System.Drawing.Color.Black;
-            this.btnDonHang.Size = new System.Drawing.Size(250, 50);
-            this.btnDonHang.TabIndex = 2;
-            this.btnDonHang.Text = "Hóa đơn";
-            this.btnDonHang.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnHoaDon.Animated = true;
+            this.btnHoaDon.AnimationHoverSpeed = 0.07F;
+            this.btnHoaDon.AnimationSpeed = 0.03F;
+            this.btnHoaDon.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnHoaDon.BorderColor = System.Drawing.Color.Black;
+            this.btnHoaDon.CheckedBaseColor = System.Drawing.Color.Tomato;
+            this.btnHoaDon.CheckedBorderColor = System.Drawing.Color.Transparent;
+            this.btnHoaDon.CheckedForeColor = System.Drawing.Color.White;
+            this.btnHoaDon.CheckedImage = null;
+            this.btnHoaDon.CheckedLineColor = System.Drawing.Color.Tomato;
+            this.btnHoaDon.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnHoaDon.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btnHoaDon.FocusedColor = System.Drawing.Color.Empty;
+            this.btnHoaDon.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHoaDon.ForeColor = System.Drawing.Color.White;
+            this.btnHoaDon.Image = null;
+            this.btnHoaDon.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnHoaDon.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btnHoaDon.Location = new System.Drawing.Point(500, 0);
+            this.btnHoaDon.Name = "btnHoaDon";
+            this.btnHoaDon.OnHoverBaseColor = System.Drawing.Color.Tomato;
+            this.btnHoaDon.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnHoaDon.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnHoaDon.OnHoverImage = null;
+            this.btnHoaDon.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btnHoaDon.OnPressedColor = System.Drawing.Color.Black;
+            this.btnHoaDon.Size = new System.Drawing.Size(250, 50);
+            this.btnHoaDon.TabIndex = 2;
+            this.btnHoaDon.Text = "Hóa đơn";
+            this.btnHoaDon.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // btnKhachHang
+            // 
+            this.btnKhachHang.Animated = true;
+            this.btnKhachHang.AnimationHoverSpeed = 0.07F;
+            this.btnKhachHang.AnimationSpeed = 0.03F;
+            this.btnKhachHang.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnKhachHang.BorderColor = System.Drawing.Color.Black;
+            this.btnKhachHang.CheckedBaseColor = System.Drawing.Color.Tomato;
+            this.btnKhachHang.CheckedBorderColor = System.Drawing.Color.Transparent;
+            this.btnKhachHang.CheckedForeColor = System.Drawing.Color.White;
+            this.btnKhachHang.CheckedImage = null;
+            this.btnKhachHang.CheckedLineColor = System.Drawing.Color.Tomato;
+            this.btnKhachHang.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnKhachHang.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btnKhachHang.FocusedColor = System.Drawing.Color.Empty;
+            this.btnKhachHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnKhachHang.ForeColor = System.Drawing.Color.White;
+            this.btnKhachHang.Image = null;
+            this.btnKhachHang.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnKhachHang.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btnKhachHang.Location = new System.Drawing.Point(250, 0);
+            this.btnKhachHang.Name = "btnKhachHang";
+            this.btnKhachHang.OnHoverBaseColor = System.Drawing.Color.Tomato;
+            this.btnKhachHang.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnKhachHang.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnKhachHang.OnHoverImage = null;
+            this.btnKhachHang.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btnKhachHang.OnPressedColor = System.Drawing.Color.Black;
+            this.btnKhachHang.Size = new System.Drawing.Size(250, 50);
+            this.btnKhachHang.TabIndex = 1;
+            this.btnKhachHang.Text = "Khách hàng";
+            this.btnKhachHang.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // btnSanPham
             // 
@@ -190,65 +223,33 @@
             this.btnSanPham.AnimationHoverSpeed = 0.07F;
             this.btnSanPham.AnimationSpeed = 0.03F;
             this.btnSanPham.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnSanPham.BorderColor = System.Drawing.Color.Black;
+            this.btnSanPham.BorderColor = System.Drawing.Color.Transparent;
             this.btnSanPham.CheckedBaseColor = System.Drawing.Color.Tomato;
             this.btnSanPham.CheckedBorderColor = System.Drawing.Color.Transparent;
             this.btnSanPham.CheckedForeColor = System.Drawing.Color.White;
             this.btnSanPham.CheckedImage = null;
-            this.btnSanPham.CheckedLineColor = System.Drawing.Color.Tomato;
+            this.btnSanPham.CheckedLineColor = System.Drawing.Color.IndianRed;
             this.btnSanPham.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnSanPham.Dock = System.Windows.Forms.DockStyle.Left;
             this.btnSanPham.FocusedColor = System.Drawing.Color.Empty;
-            this.btnSanPham.Font = new System.Drawing.Font("UTM Facebook", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSanPham.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSanPham.ForeColor = System.Drawing.Color.White;
             this.btnSanPham.Image = null;
             this.btnSanPham.ImageSize = new System.Drawing.Size(20, 20);
             this.btnSanPham.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnSanPham.Location = new System.Drawing.Point(250, 0);
+            this.btnSanPham.Location = new System.Drawing.Point(0, 0);
             this.btnSanPham.Name = "btnSanPham";
             this.btnSanPham.OnHoverBaseColor = System.Drawing.Color.Tomato;
-            this.btnSanPham.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnSanPham.OnHoverBorderColor = System.Drawing.Color.Transparent;
             this.btnSanPham.OnHoverForeColor = System.Drawing.Color.White;
             this.btnSanPham.OnHoverImage = null;
             this.btnSanPham.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.btnSanPham.OnPressedColor = System.Drawing.Color.Black;
             this.btnSanPham.Size = new System.Drawing.Size(250, 50);
-            this.btnSanPham.TabIndex = 1;
-            this.btnSanPham.Text = "Khách hàng";
+            this.btnSanPham.TabIndex = 0;
+            this.btnSanPham.Text = "Sản phẩm";
             this.btnSanPham.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // btnGioiThieu
-            // 
-            this.btnGioiThieu.Animated = true;
-            this.btnGioiThieu.AnimationHoverSpeed = 0.07F;
-            this.btnGioiThieu.AnimationSpeed = 0.03F;
-            this.btnGioiThieu.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnGioiThieu.BorderColor = System.Drawing.Color.Transparent;
-            this.btnGioiThieu.CheckedBaseColor = System.Drawing.Color.Tomato;
-            this.btnGioiThieu.CheckedBorderColor = System.Drawing.Color.Transparent;
-            this.btnGioiThieu.CheckedForeColor = System.Drawing.Color.White;
-            this.btnGioiThieu.CheckedImage = null;
-            this.btnGioiThieu.CheckedLineColor = System.Drawing.Color.IndianRed;
-            this.btnGioiThieu.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnGioiThieu.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btnGioiThieu.FocusedColor = System.Drawing.Color.Empty;
-            this.btnGioiThieu.Font = new System.Drawing.Font("UTM Facebook", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGioiThieu.ForeColor = System.Drawing.Color.White;
-            this.btnGioiThieu.Image = null;
-            this.btnGioiThieu.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnGioiThieu.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnGioiThieu.Location = new System.Drawing.Point(0, 0);
-            this.btnGioiThieu.Name = "btnGioiThieu";
-            this.btnGioiThieu.OnHoverBaseColor = System.Drawing.Color.Tomato;
-            this.btnGioiThieu.OnHoverBorderColor = System.Drawing.Color.Transparent;
-            this.btnGioiThieu.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnGioiThieu.OnHoverImage = null;
-            this.btnGioiThieu.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnGioiThieu.OnPressedColor = System.Drawing.Color.Black;
-            this.btnGioiThieu.Size = new System.Drawing.Size(250, 50);
-            this.btnGioiThieu.TabIndex = 0;
-            this.btnGioiThieu.Text = "Sản phẩm";
-            this.btnGioiThieu.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnSanPham.Click += new System.EventHandler(this.btnSanPham_Click);
             // 
             // panelMenu
             // 
@@ -271,11 +272,12 @@
             this.panelThanhTieuDe.Name = "panelThanhTieuDe";
             this.panelThanhTieuDe.Size = new System.Drawing.Size(1251, 40);
             this.panelThanhTieuDe.TabIndex = 13;
+            this.panelThanhTieuDe.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitleBar_MouseDown);
             // 
             // lblTieude
             // 
             this.lblTieude.Dock = System.Windows.Forms.DockStyle.Left;
-            this.lblTieude.Font = new System.Drawing.Font("UTM Neutra", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTieude.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTieude.Location = new System.Drawing.Point(50, 0);
             this.lblTieude.Name = "lblTieude";
             this.lblTieude.Size = new System.Drawing.Size(194, 40);
@@ -356,16 +358,16 @@
         private Guna.UI.WinForms.GunaPanel panelHienThi;
         private Guna.UI.WinForms.GunaPanel panelTong;
         private Guna.UI.WinForms.GunaPanel gunaPanel2;
-        private Guna.UI.WinForms.GunaAdvenceButton btnTaiKhoan;
-        private Guna.UI.WinForms.GunaAdvenceButton btnDichVu;
-        private Guna.UI.WinForms.GunaAdvenceButton btnDonHang;
+        private Guna.UI.WinForms.GunaAdvenceButton btnBaoCao;
+        private Guna.UI.WinForms.GunaAdvenceButton btnHoaDon;
+        private Guna.UI.WinForms.GunaAdvenceButton btnKhachHang;
         private Guna.UI.WinForms.GunaAdvenceButton btnSanPham;
-        private Guna.UI.WinForms.GunaAdvenceButton btnGioiThieu;
         private Guna.UI.WinForms.GunaPanel panelMenu;
         private Guna.UI.WinForms.GunaPanel panelThanhTieuDe;
         private Guna.UI.WinForms.GunaLabel lblTieude;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI.WinForms.GunaAdvenceButton btnDong;
         private Guna.UI2.WinForms.Guna2AnimateWindow guna2AnimateWindow1;
+        private Guna.UI.WinForms.GunaAdvenceButton btnTaiKhoan;
     }
 }

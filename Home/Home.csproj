@@ -100,6 +100,7 @@
     <Compile Include="FrmCon\FrmHienThi\FrmCapNhatTT.Designer.cs">
       <DependentUpon>FrmCapNhatTT.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="FrmCon\FrmHienThi\ODiaChi.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -117,6 +118,37 @@
     </Compile>
     <Compile Include="FrmCon\FrmHienThi\ThongTin.Designer.cs">
       <DependentUpon>ThongTin.cs</DependentUpon>
+=======
+    <Compile Include="FrmCon\FrmHienThi\FrmCapNhatHH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCon\FrmHienThi\FrmCapNhatHH.Designer.cs">
+      <DependentUpon>FrmCapNhatHH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCon\FrmHienThi\FrmThemHH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCon\FrmHienThi\FrmThemHH.Designer.cs">
+      <DependentUpon>FrmThemHH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCon\FrmHienThi\OSanPhamAdmin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmCon\FrmHienThi\OSanPhamAdmin.Designer.cs">
+      <DependentUpon>OSanPhamAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCon\FrmHienThi\OThem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmCon\FrmHienThi\OThem.Designer.cs">
+      <DependentUpon>OThem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCon\SanPhamAdmin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmCon\SanPhamAdmin.Designer.cs">
+      <DependentUpon>SanPhamAdmin.cs</DependentUpon>
+>>>>>>> 9217937c50c2305e98291891d167bd7f0c9eac12
     </Compile>
     <Compile Include="FrmCon\TongForm.cs" />
     <Compile Include="FrmCon\FrmHienThi\FrmMuaHang.cs">
@@ -199,11 +231,17 @@
     <EmbeddedResource Include="FrmCon\FrmHienThi\FrmBaoLoi.resx">
       <DependentUpon>FrmBaoLoi.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmCon\FrmHienThi\FrmCapNhatHH.resx">
+      <DependentUpon>FrmCapNhatHH.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmCon\FrmHienThi\FrmCapNhatTT.resx">
       <DependentUpon>FrmCapNhatTT.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmCon\FrmHienThi\FrmMuaHang.resx">
       <DependentUpon>FrmMuaHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCon\FrmHienThi\FrmThemHH.resx">
+      <DependentUpon>FrmThemHH.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmCon\FrmHienThi\FrmThongBao.resx">
       <DependentUpon>FrmThongBao.cs</DependentUpon>
@@ -214,11 +252,22 @@
     <EmbeddedResource Include="FrmCon\FrmHienThi\ODonHang.resx">
       <DependentUpon>ODonHang.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
     <EmbeddedResource Include="FrmCon\FrmHienThi\ODonHangDaMua.resx">
       <DependentUpon>ODonHangDaMua.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmCon\FrmHienThi\ThongTin.resx">
       <DependentUpon>ThongTin.cs</DependentUpon>
+=======
+    <EmbeddedResource Include="FrmCon\FrmHienThi\OSanPhamAdmin.resx">
+      <DependentUpon>OSanPhamAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCon\FrmHienThi\OThem.resx">
+      <DependentUpon>OThem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCon\SanPhamAdmin.resx">
+      <DependentUpon>SanPhamAdmin.cs</DependentUpon>
+>>>>>>> 9217937c50c2305e98291891d167bd7f0c9eac12
     </EmbeddedResource>
     <EmbeddedResource Include="FrmCon\TaiKhoan.resx">
       <DependentUpon>TaiKhoan.cs</DependentUpon>
@@ -270,6 +319,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\anh_thoat.jpg" />
+    <None Include="Resources\hanghoa.jpg" />
     <Content Include="Resources\view.png" />
   </ItemGroup>
   <ItemGroup>
