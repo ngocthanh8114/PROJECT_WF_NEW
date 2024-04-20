@@ -997,5 +997,37 @@ namespace Home.DuLieu
             }
         }
 
+        public DataTable doDuLieuDonMua()
+        {
+            kn.myConnect();
+            string sql = "SELECT * FROM DonHangDaMua,SanPham WHERE TenTaiKhoan = @TenTaiKhoan and DonHangDaMua.MaSP = SanPham.MaSP ";
+            SqlCommand cmd = new SqlCommand(sql, kn.con);
+
+            SqlParameter sqlParameter0 = new SqlParameter("@TenTaiKhoan", SqlDbType.NVarChar, 50);
+            sqlParameter0.Value = TaiKhoanDangNhap.tenTaiKhoan;
+            cmd.Parameters.Add(sqlParameter0);
+
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            return dt;
+        }
+        public DataTable doDiaChi()
+        {
+            kn.myConnect();
+            string sql = "SELECT distinct * from DiaChiKhachHang where TenTaiKhoan = @TenTaiKhoan";
+            SqlCommand cmd = new SqlCommand(sql, kn.con);
+
+            SqlParameter sqlParameter0 = new SqlParameter("@TenTaiKhoan", SqlDbType.NVarChar, 50);
+            sqlParameter0.Value = TaiKhoanDangNhap.tenTaiKhoan;
+            cmd.Parameters.Add(sqlParameter0);
+
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            return dt;
+        }
+
+
     }
 }

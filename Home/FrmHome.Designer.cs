@@ -33,6 +33,7 @@
             this.panelTong = new Guna.UI.WinForms.GunaPanel();
             this.panelHienThi = new Guna.UI.WinForms.GunaPanel();
             this.gunaPanel2 = new Guna.UI.WinForms.GunaPanel();
+            this.btnTaiKhoan = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnDichVu = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnDonHang = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnSanPham = new Guna.UI.WinForms.GunaAdvenceButton();
@@ -43,7 +44,6 @@
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.btnDong = new Guna.UI.WinForms.GunaAdvenceButton();
             this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
-            this.btnTaiKhoan = new Guna.UI.WinForms.GunaAdvenceButton();
             this.panelTong.SuspendLayout();
             this.gunaPanel2.SuspendLayout();
             this.panelThanhTieuDe.SuspendLayout();
@@ -85,6 +85,40 @@
             this.gunaPanel2.Size = new System.Drawing.Size(1251, 50);
             this.gunaPanel2.TabIndex = 14;
             // 
+            // btnTaiKhoan
+            // 
+            this.btnTaiKhoan.Animated = true;
+            this.btnTaiKhoan.AnimationHoverSpeed = 0.07F;
+            this.btnTaiKhoan.AnimationSpeed = 0.03F;
+            this.btnTaiKhoan.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnTaiKhoan.BorderColor = System.Drawing.Color.Black;
+            this.btnTaiKhoan.CheckedBaseColor = System.Drawing.Color.Tomato;
+            this.btnTaiKhoan.CheckedBorderColor = System.Drawing.Color.Transparent;
+            this.btnTaiKhoan.CheckedForeColor = System.Drawing.Color.White;
+            this.btnTaiKhoan.CheckedImage = null;
+            this.btnTaiKhoan.CheckedLineColor = System.Drawing.Color.Tomato;
+            this.btnTaiKhoan.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnTaiKhoan.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btnTaiKhoan.FocusedColor = System.Drawing.Color.Empty;
+            this.btnTaiKhoan.Font = new System.Drawing.Font("UTM Facebook", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTaiKhoan.ForeColor = System.Drawing.Color.White;
+            this.btnTaiKhoan.Image = null;
+            this.btnTaiKhoan.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnTaiKhoan.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btnTaiKhoan.Location = new System.Drawing.Point(1000, 0);
+            this.btnTaiKhoan.Name = "btnTaiKhoan";
+            this.btnTaiKhoan.OnHoverBaseColor = System.Drawing.Color.Tomato;
+            this.btnTaiKhoan.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnTaiKhoan.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnTaiKhoan.OnHoverImage = null;
+            this.btnTaiKhoan.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btnTaiKhoan.OnPressedColor = System.Drawing.Color.Black;
+            this.btnTaiKhoan.Size = new System.Drawing.Size(250, 50);
+            this.btnTaiKhoan.TabIndex = 4;
+            this.btnTaiKhoan.Text = "Tài khoản";
+            this.btnTaiKhoan.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnTaiKhoan.Click += new System.EventHandler(this.btnTaiKhoan_Click);
+            // 
             // btnDichVu
             // 
             this.btnDichVu.Animated = true;
@@ -100,7 +134,7 @@
             this.btnDichVu.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnDichVu.Dock = System.Windows.Forms.DockStyle.Left;
             this.btnDichVu.FocusedColor = System.Drawing.Color.Empty;
-            this.btnDichVu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDichVu.Font = new System.Drawing.Font("UTM Facebook", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDichVu.ForeColor = System.Drawing.Color.White;
             this.btnDichVu.Image = null;
             this.btnDichVu.ImageSize = new System.Drawing.Size(20, 20);
@@ -133,7 +167,7 @@
             this.btnDonHang.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnDonHang.Dock = System.Windows.Forms.DockStyle.Left;
             this.btnDonHang.FocusedColor = System.Drawing.Color.Empty;
-            this.btnDonHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDonHang.Font = new System.Drawing.Font("UTM Facebook", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDonHang.ForeColor = System.Drawing.Color.White;
             this.btnDonHang.Image = null;
             this.btnDonHang.ImageSize = new System.Drawing.Size(20, 20);
@@ -167,7 +201,7 @@
             this.btnSanPham.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnSanPham.Dock = System.Windows.Forms.DockStyle.Left;
             this.btnSanPham.FocusedColor = System.Drawing.Color.Empty;
-            this.btnSanPham.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSanPham.Font = new System.Drawing.Font("UTM Facebook", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSanPham.ForeColor = System.Drawing.Color.White;
             this.btnSanPham.Image = null;
             this.btnSanPham.ImageSize = new System.Drawing.Size(20, 20);
@@ -201,7 +235,7 @@
             this.btnGioiThieu.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnGioiThieu.Dock = System.Windows.Forms.DockStyle.Left;
             this.btnGioiThieu.FocusedColor = System.Drawing.Color.Empty;
-            this.btnGioiThieu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGioiThieu.Font = new System.Drawing.Font("UTM Facebook", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGioiThieu.ForeColor = System.Drawing.Color.White;
             this.btnGioiThieu.Image = null;
             this.btnGioiThieu.ImageSize = new System.Drawing.Size(20, 20);
@@ -304,40 +338,6 @@
             // 
             this.guna2AnimateWindow1.AnimationType = Guna.UI2.WinForms.Guna2AnimateWindow.AnimateWindowType.AW_VER_NEGATIVE;
             this.guna2AnimateWindow1.TargetForm = this;
-            // 
-            // btnTaiKhoan
-            // 
-            this.btnTaiKhoan.Animated = true;
-            this.btnTaiKhoan.AnimationHoverSpeed = 0.07F;
-            this.btnTaiKhoan.AnimationSpeed = 0.03F;
-            this.btnTaiKhoan.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnTaiKhoan.BorderColor = System.Drawing.Color.Black;
-            this.btnTaiKhoan.CheckedBaseColor = System.Drawing.Color.Tomato;
-            this.btnTaiKhoan.CheckedBorderColor = System.Drawing.Color.Transparent;
-            this.btnTaiKhoan.CheckedForeColor = System.Drawing.Color.White;
-            this.btnTaiKhoan.CheckedImage = null;
-            this.btnTaiKhoan.CheckedLineColor = System.Drawing.Color.Tomato;
-            this.btnTaiKhoan.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnTaiKhoan.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btnTaiKhoan.FocusedColor = System.Drawing.Color.Empty;
-            this.btnTaiKhoan.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTaiKhoan.ForeColor = System.Drawing.Color.White;
-            this.btnTaiKhoan.Image = null;
-            this.btnTaiKhoan.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnTaiKhoan.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnTaiKhoan.Location = new System.Drawing.Point(1000, 0);
-            this.btnTaiKhoan.Name = "btnTaiKhoan";
-            this.btnTaiKhoan.OnHoverBaseColor = System.Drawing.Color.Tomato;
-            this.btnTaiKhoan.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnTaiKhoan.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnTaiKhoan.OnHoverImage = null;
-            this.btnTaiKhoan.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnTaiKhoan.OnPressedColor = System.Drawing.Color.Black;
-            this.btnTaiKhoan.Size = new System.Drawing.Size(250, 50);
-            this.btnTaiKhoan.TabIndex = 4;
-            this.btnTaiKhoan.Text = "Tài khoản";
-            this.btnTaiKhoan.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btnTaiKhoan.Click += new System.EventHandler(this.btnTaiKhoan_Click);
             // 
             // FrmHome
             // 
