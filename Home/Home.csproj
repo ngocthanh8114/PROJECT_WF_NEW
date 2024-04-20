@@ -112,6 +112,12 @@
     <Compile Include="FrmCon\FrmHienThi\FrmThemHH.Designer.cs">
       <DependentUpon>FrmThemHH.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmCon\FrmHienThi\FrmXacNhan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCon\FrmHienThi\FrmXacNhan.Designer.cs">
+      <DependentUpon>FrmXacNhan.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmCon\FrmHienThi\ODiaChi.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -243,6 +249,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmCon\FrmHienThi\FrmThongBao.resx">
       <DependentUpon>FrmThongBao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCon\FrmHienThi\FrmXacNhan.resx">
+      <DependentUpon>FrmXacNhan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmCon\FrmHienThi\ODiaChi.resx">
       <DependentUpon>ODiaChi.cs</DependentUpon>

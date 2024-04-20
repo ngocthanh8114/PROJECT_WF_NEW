@@ -25,5 +25,9 @@ namespace Home.FrmCon.FrmHienThi
             picBoxSP.Image = Anh;
         }
 
+        private void lblTieuDe_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
