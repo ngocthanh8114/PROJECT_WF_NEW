@@ -27,21 +27,10 @@ namespace Home.FrmCon.FrmHienThi
 
         private void FrmCapNhatHH_Load(object sender, EventArgs e)
         {
-<<<<<<< HEAD
-            OSanPhamAdmin oSanPhamAdmin = new OSanPhamAdmin();
-            txtMaSP.Text = oSanPhamAdmin.Get_lblMaSP();
-            txtGia.Text = oSanPhamAdmin.Get_lbGia();
-            //txtMaLoai.Text = oSanPhamAdmin.Get_lbMaLoai();
-            txtSoLuong.Text = oSanPhamAdmin.Get_lbSL();
-            txtTenSP.Text = oSanPhamAdmin.Get_lbTenSP();
-            txt_MaNCC.Text = oSanPhamAdmin.Get_lbNCC();
-            
-=======
             xl.Connection_CSDL();
             string idsp = OSanPhamAdmin.maSP;
             txtMaSP.Text = idsp;
             xl.LoadFrmCapNhatHH(idsp, txtMaSP, txtTenSP, txtGia, txt_MaNCC, txtSoLuong, picBoxSP, txtMaLoai);
->>>>>>> 1fb9ad1de2af11d861840c619f5ced8804de11a6
         }
 
         private void btnLuu_Click(object sender, EventArgs e)

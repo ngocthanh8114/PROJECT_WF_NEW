@@ -37,11 +37,11 @@
             // 
             this.PBThem.Image = ((System.Drawing.Image)(resources.GetObject("PBThem.Image")));
             this.PBThem.ImageRotate = 0F;
-            this.PBThem.Location = new System.Drawing.Point(21, 80);
+            this.PBThem.Location = new System.Drawing.Point(36, 79);
             this.PBThem.Name = "PBThem";
             this.PBThem.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.PBThem.Size = new System.Drawing.Size(176, 179);
-            this.PBThem.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PBThem.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PBThem.TabIndex = 0;
             this.PBThem.TabStop = false;
             this.PBThem.Click += new System.EventHandler(this.PBThem_Click);
@@ -50,9 +50,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Controls.Add(this.PBThem);
             this.Name = "OThem";
-            this.Size = new System.Drawing.Size(222, 290);
+            this.Size = new System.Drawing.Size(245, 349);
             ((System.ComponentModel.ISupportInitialize)(this.PBThem)).EndInit();
             this.ResumeLayout(false);
 

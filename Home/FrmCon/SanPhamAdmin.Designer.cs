@@ -100,7 +100,7 @@
             this.Controls.Add(this.panelNoiDung);
             this.Controls.Add(this.guna2Panel2);
             this.Name = "SanPhamAdmin";
-            this.Size = new System.Drawing.Size(2050, 809);
+            this.Size = new System.Drawing.Size(2050, 888);
             this.Load += new System.EventHandler(this.SanPhamAdmin_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.ResumeLayout(false);
