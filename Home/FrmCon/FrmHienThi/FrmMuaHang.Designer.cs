@@ -32,6 +32,7 @@
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel11 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel6 = new Guna.UI2.WinForms.Guna2Panel();
+            this.lblMaDH = new System.Windows.Forms.Label();
             this.btnMuaHang = new Guna.UI.WinForms.GunaAdvenceButton();
             this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
@@ -70,7 +71,6 @@
             this.guna2Panel9 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel10 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel12 = new Guna.UI2.WinForms.Guna2Panel();
-            this.lblMaDH = new System.Windows.Forms.Label();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel6.SuspendLayout();
             this.guna2Panel5.SuspendLayout();
@@ -124,6 +124,16 @@
             this.guna2Panel6.Name = "guna2Panel6";
             this.guna2Panel6.Size = new System.Drawing.Size(616, 69);
             this.guna2Panel6.TabIndex = 12;
+            // 
+            // lblMaDH
+            // 
+            this.lblMaDH.AutoSize = true;
+            this.lblMaDH.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.lblMaDH.Location = new System.Drawing.Point(26, 33);
+            this.lblMaDH.Name = "lblMaDH";
+            this.lblMaDH.Size = new System.Drawing.Size(91, 16);
+            this.lblMaDH.TabIndex = 37;
+            this.lblMaDH.Text = "Mã đơn hàng: ";
             // 
             // btnMuaHang
             // 
@@ -408,6 +418,7 @@
             this.cbGiaoHang2.UncheckedState.BorderRadius = 7;
             this.cbGiaoHang2.UncheckedState.BorderThickness = 1;
             this.cbGiaoHang2.UncheckedState.FillColor = System.Drawing.Color.White;
+            this.cbGiaoHang2.Click += new System.EventHandler(this.cbGiaoHang2_Click);
             // 
             // cbGiaoHang1
             // 
@@ -426,6 +437,7 @@
             this.cbGiaoHang1.UncheckedState.BorderRadius = 7;
             this.cbGiaoHang1.UncheckedState.BorderThickness = 1;
             this.cbGiaoHang1.UncheckedState.FillColor = System.Drawing.Color.White;
+            this.cbGiaoHang1.Click += new System.EventHandler(this.cbGiaoHang1_Click);
             // 
             // guna2Shapes2
             // 
@@ -672,16 +684,6 @@
             this.guna2Panel12.Name = "guna2Panel12";
             this.guna2Panel12.Size = new System.Drawing.Size(620, 2);
             this.guna2Panel12.TabIndex = 17;
-            // 
-            // lblMaDH
-            // 
-            this.lblMaDH.AutoSize = true;
-            this.lblMaDH.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.lblMaDH.Location = new System.Drawing.Point(26, 33);
-            this.lblMaDH.Name = "lblMaDH";
-            this.lblMaDH.Size = new System.Drawing.Size(91, 16);
-            this.lblMaDH.TabIndex = 37;
-            this.lblMaDH.Text = "Mã đơn hàng: ";
             // 
             // FrmMuaHang
             // 

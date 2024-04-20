@@ -742,52 +742,39 @@ namespace Home.DuLieu
             }
             return true;
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        /* // Chèn đơn hàng
-        public void chenDonHang()
+        
+        // Lấy dữ liệu đơn mua
+        public DataTable doDuLieuDonMua()
         {
-            string sql = "update ThongTinDH set TenTaiKhoan = @TenTaiKhoan where TongTienHang is NULL";
+            kn.myConnect();
+            string sql = "SELECT * FROM DonHangDaMua,SanPham WHERE TenTaiKhoan = @TenTaiKhoan and DonHangDaMua.MaSP = SanPham.MaSP ";
             SqlCommand cmd = new SqlCommand(sql, kn.con);
 
             SqlParameter sqlParameter0 = new SqlParameter("@TenTaiKhoan", SqlDbType.NVarChar, 50);
             sqlParameter0.Value = TaiKhoanDangNhap.tenTaiKhoan;
             cmd.Parameters.Add(sqlParameter0);
 
-            cmd.ExecuteNonQuery();
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            return dt;
         }
-
-        // Xóa đi đơn hàng nếu thoát mà chưa đặt
-        public void loaiBoDonHang()
+        public DataTable doDiaChi()
         {
-            string sql = "update ThongTinDH set TenTaiKhoan = NULL where TongTienHang is NULL";
+            kn.myConnect();
+            string sql = "SELECT distinct * from DiaChiKhachHang where TenTaiKhoan = @TenTaiKhoan";
             SqlCommand cmd = new SqlCommand(sql, kn.con);
 
             SqlParameter sqlParameter0 = new SqlParameter("@TenTaiKhoan", SqlDbType.NVarChar, 50);
             sqlParameter0.Value = TaiKhoanDangNhap.tenTaiKhoan;
             cmd.Parameters.Add(sqlParameter0);
 
-            cmd.ExecuteNonQuery();
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            return dt;
         }
-        */
+        
 
         public bool capNhatTaiKhoan = false;
         public void CapNhatTaiKhoan(string tenNguoiDung, string email, string soDienThoai, Guna2HtmlLabel em, Guna2HtmlLabel soDT, Guna2HtmlLabel tenND)
