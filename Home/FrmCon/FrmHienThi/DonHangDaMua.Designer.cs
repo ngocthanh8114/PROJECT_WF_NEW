@@ -86,6 +86,7 @@
             this.btnTimKiem.OnPressedColor = System.Drawing.Color.Black;
             this.btnTimKiem.Size = new System.Drawing.Size(53, 53);
             this.btnTimKiem.TabIndex = 17;
+            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
             // 
             // txtTimKiem
             // 
@@ -111,6 +112,7 @@
             this.txtTimKiem.SelectedText = "";
             this.txtTimKiem.Size = new System.Drawing.Size(447, 53);
             this.txtTimKiem.TabIndex = 18;
+            this.txtTimKiem.TextChanged += new System.EventHandler(this.txtTimKiem_TextChanged);
             // 
             // label4
             // 

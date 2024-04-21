@@ -24,20 +24,28 @@ namespace Home.FrmCon.FrmHienThi
         {
             foreach (DataRow row in dt.Rows)
             {
-                ODiaChi oDiaChi = new ODiaChi();
+                ODiaChi oDiaChi = new ODiaChi(this);
                 // Lấy giá trị từng cột trong hàng hiện tại
                 string diaChi = row["DiaChi"].ToString();
                 string tenKhachHang = row["TenKhachHang"].ToString();
                 string soDienThoai = row["SoDienThoai"].ToString();
-                oDiaChi.themDiaChi(tenKhachHang, soDienThoai, diaChi);
+                oDiaChi.themDiaChi(tenKhachHang, soDienThoai, diaChi, 0);
                 panelNoiDung.Controls.Add(oDiaChi);
                 oDiaChi.BringToFront();
             }
         }
 
-        private void DiaChi_Load(object sender, EventArgs e)
+        public void DiaChi_Load(object sender, EventArgs e)
         {
+            panelNoiDung.Controls.Clear();
             addDiaChi(xl.doDiaChi());
+        }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            SuaDiaChi suaDiaChi = new SuaDiaChi(this);
+            suaDiaChi.ShowDialog();
+            btnXoa.Checked = false;
         }
     }
 }

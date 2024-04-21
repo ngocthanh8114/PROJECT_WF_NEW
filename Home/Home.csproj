@@ -136,6 +136,12 @@
     <Compile Include="FrmCon\FrmHienThi\OThem.Designer.cs">
       <DependentUpon>OThem.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmCon\FrmHienThi\SuaDiaChi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCon\FrmHienThi\SuaDiaChi.Designer.cs">
+      <DependentUpon>SuaDiaChi.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmCon\FrmHienThi\ThongTin.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -258,6 +264,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmCon\FrmHienThi\OThem.resx">
       <DependentUpon>OThem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCon\FrmHienThi\SuaDiaChi.resx">
+      <DependentUpon>SuaDiaChi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmCon\FrmHienThi\ThongTin.resx">
       <DependentUpon>ThongTin.cs</DependentUpon>

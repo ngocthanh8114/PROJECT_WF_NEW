@@ -156,6 +156,7 @@
             this.btnMuaLai.TabIndex = 53;
             this.btnMuaLai.Text = "Mua Lại";
             this.btnMuaLai.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnMuaLai.Click += new System.EventHandler(this.btnMuaLai_Click);
             // 
             // lblMaDH
             // 

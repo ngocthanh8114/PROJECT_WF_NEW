@@ -318,3 +318,5 @@ D:\VS Code\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.DonHang
 D:\VS Code\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.ODiaChi.resources
 D:\VS Code\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.ODonHangDaMua.resources
 D:\VS Code\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.ThongTin.resources
+D:\VS Code\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.FrmDiaChi.resources
+D:\VS Code\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.SuaDiaChi.resources

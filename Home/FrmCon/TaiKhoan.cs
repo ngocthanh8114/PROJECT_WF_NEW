@@ -93,5 +93,10 @@ namespace Home.FrmCon
             btnDonHang.Checked = false;
             btnThongTin.Checked = false;
         }
+
+        private void btnQC_Click(object sender, EventArgs e)
+        {
+            quayLaiSanPham();
+        }
     }
 }

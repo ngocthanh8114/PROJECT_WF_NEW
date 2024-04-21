@@ -114,6 +114,7 @@ namespace Home.FrmCon
             int tongSP = int.Parse(str1[0]);
             frmMuaHang.loadFormMua(tongTien,tongSP);
             frmMuaHang.ShowDialog();
+            btnMua.Checked = false;
         }
         private void quayLaiSanPham()
         {

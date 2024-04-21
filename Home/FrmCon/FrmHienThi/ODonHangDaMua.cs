@@ -25,5 +25,19 @@ namespace Home.FrmCon.FrmHienThi
             picBoxSP.Image = Anh;
         }
 
+        private void btnMuaLai_Click(object sender, EventArgs e)
+        {
+            quayLaiSanPham();
+        }
+
+        private void quayLaiSanPham()
+        {
+            FrmHome parentForm = this.ParentForm as FrmHome;
+
+            if (parentForm != null)
+            {
+                parentForm.btnSanPham_Click(this, EventArgs.Empty);
+            }
+        }
     }
 }
