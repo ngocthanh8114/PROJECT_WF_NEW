@@ -67,7 +67,7 @@
             // 
             // guna2Panel2
             // 
-            this.guna2Panel2.BackColor = System.Drawing.Color.Silver;
+            this.guna2Panel2.BackColor = System.Drawing.Color.LightGray;
             this.guna2Panel2.Controls.Add(this.linkLabel1);
             this.guna2Panel2.Controls.Add(this.guna2HtmlLabel2);
             this.guna2Panel2.Controls.Add(this.lbquenmk);

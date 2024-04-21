@@ -58,6 +58,8 @@ namespace Home.FrmCon.FrmHienThi
                 btnChon.Visible = true;
                 btnSua.Enabled = false;
                 btnSua.Visible = false;
+                btnXoa.Enabled = false;
+                btnXoa.Visible = false;
             }    
         }
 

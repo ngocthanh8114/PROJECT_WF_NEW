@@ -195,14 +195,14 @@
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(497, 472);
+            this.guna2Panel1.Size = new System.Drawing.Size(497, 416);
             this.guna2Panel1.TabIndex = 2;
             // 
             // guna2Panel11
             // 
             this.guna2Panel11.BackColor = System.Drawing.Color.Gainsboro;
             this.guna2Panel11.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.guna2Panel11.Location = new System.Drawing.Point(2, 471);
+            this.guna2Panel11.Location = new System.Drawing.Point(2, 415);
             this.guna2Panel11.Name = "guna2Panel11";
             this.guna2Panel11.Size = new System.Drawing.Size(493, 1);
             this.guna2Panel11.TabIndex = 16;
@@ -213,7 +213,7 @@
             this.guna2Panel6.Controls.Add(this.btnHuy);
             this.guna2Panel6.Controls.Add(this.btn_Luu);
             this.guna2Panel6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel6.Location = new System.Drawing.Point(2, 386);
+            this.guna2Panel6.Location = new System.Drawing.Point(2, 330);
             this.guna2Panel6.Name = "guna2Panel6";
             this.guna2Panel6.Size = new System.Drawing.Size(493, 87);
             this.guna2Panel6.TabIndex = 12;
@@ -257,7 +257,7 @@
             // 
             this.guna2Panel3.BackColor = System.Drawing.Color.DimGray;
             this.guna2Panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel3.Location = new System.Drawing.Point(2, 382);
+            this.guna2Panel3.Location = new System.Drawing.Point(2, 326);
             this.guna2Panel3.Name = "guna2Panel3";
             this.guna2Panel3.Size = new System.Drawing.Size(493, 4);
             this.guna2Panel3.TabIndex = 8;
@@ -277,7 +277,7 @@
             this.guna2Panel8.Controls.Add(this.guna2PictureBox2);
             this.guna2Panel8.Controls.Add(this.gunaLabel6);
             this.guna2Panel8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel8.Location = new System.Drawing.Point(2, 382);
+            this.guna2Panel8.Location = new System.Drawing.Point(2, 326);
             this.guna2Panel8.Name = "guna2Panel8";
             this.guna2Panel8.Size = new System.Drawing.Size(493, 0);
             this.guna2Panel8.TabIndex = 9;
@@ -415,7 +415,7 @@
             this.pn_NoiDungSua.Dock = System.Windows.Forms.DockStyle.Top;
             this.pn_NoiDungSua.Location = new System.Drawing.Point(2, 2);
             this.pn_NoiDungSua.Name = "pn_NoiDungSua";
-            this.pn_NoiDungSua.Size = new System.Drawing.Size(493, 380);
+            this.pn_NoiDungSua.Size = new System.Drawing.Size(493, 324);
             this.pn_NoiDungSua.TabIndex = 7;
             // 
             // txtDiaChi
@@ -445,7 +445,7 @@
             this.guna2Panel9.Dock = System.Windows.Forms.DockStyle.Right;
             this.guna2Panel9.Location = new System.Drawing.Point(495, 2);
             this.guna2Panel9.Name = "guna2Panel9";
-            this.guna2Panel9.Size = new System.Drawing.Size(2, 470);
+            this.guna2Panel9.Size = new System.Drawing.Size(2, 414);
             this.guna2Panel9.TabIndex = 14;
             // 
             // guna2Panel10
@@ -454,7 +454,7 @@
             this.guna2Panel10.Dock = System.Windows.Forms.DockStyle.Left;
             this.guna2Panel10.Location = new System.Drawing.Point(0, 2);
             this.guna2Panel10.Name = "guna2Panel10";
-            this.guna2Panel10.Size = new System.Drawing.Size(2, 470);
+            this.guna2Panel10.Size = new System.Drawing.Size(2, 414);
             this.guna2Panel10.TabIndex = 15;
             // 
             // guna2Panel12
@@ -470,7 +470,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(497, 472);
+            this.ClientSize = new System.Drawing.Size(497, 416);
             this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "SuaDiaChi";

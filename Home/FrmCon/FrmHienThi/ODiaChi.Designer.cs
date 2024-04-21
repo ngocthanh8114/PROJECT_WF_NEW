@@ -162,7 +162,7 @@
             // lblTenKH
             // 
             this.lblTenKH.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblTenKH.Font = new System.Drawing.Font("Montserrat Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTenKH.Font = new System.Drawing.Font("Montserrat Medium", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTenKH.Location = new System.Drawing.Point(0, 0);
             this.lblTenKH.Name = "lblTenKH";
             this.lblTenKH.Size = new System.Drawing.Size(572, 63);
