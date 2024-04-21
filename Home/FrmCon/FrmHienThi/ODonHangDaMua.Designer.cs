@@ -33,13 +33,13 @@
             this.lblTenSP = new System.Windows.Forms.Label();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.lblTieuDe = new System.Windows.Forms.Label();
-            this.picBoxSP = new Guna.UI2.WinForms.Guna2PictureBox();
             this.lblSoLuong = new System.Windows.Forms.Label();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.btnMuaLai = new Guna.UI.WinForms.GunaAdvenceButton();
             this.lblMaDH = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.picBoxSP)).BeginInit();
+            this.picBoxSP = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxSP)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2CustomGradientPanel1
@@ -87,19 +87,6 @@
             this.lblTieuDe.TabIndex = 47;
             this.lblTieuDe.Text = "  Số lượng:";
             this.lblTieuDe.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // picBoxSP
-            // 
-            this.picBoxSP.BackColor = System.Drawing.Color.White;
-            this.picBoxSP.Dock = System.Windows.Forms.DockStyle.Top;
-            this.picBoxSP.Image = ((System.Drawing.Image)(resources.GetObject("picBoxSP.Image")));
-            this.picBoxSP.ImageRotate = 0F;
-            this.picBoxSP.Location = new System.Drawing.Point(0, 10);
-            this.picBoxSP.Name = "picBoxSP";
-            this.picBoxSP.Size = new System.Drawing.Size(283, 176);
-            this.picBoxSP.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picBoxSP.TabIndex = 45;
-            this.picBoxSP.TabStop = false;
             // 
             // lblSoLuong
             // 
@@ -168,6 +155,19 @@
             this.lblMaDH.Text = "MaDH";
             this.lblMaDH.Visible = false;
             // 
+            // picBoxSP
+            // 
+            this.picBoxSP.BackColor = System.Drawing.Color.White;
+            this.picBoxSP.Dock = System.Windows.Forms.DockStyle.Top;
+            this.picBoxSP.Image = ((System.Drawing.Image)(resources.GetObject("picBoxSP.Image")));
+            this.picBoxSP.ImageRotate = 0F;
+            this.picBoxSP.Location = new System.Drawing.Point(0, 10);
+            this.picBoxSP.Name = "picBoxSP";
+            this.picBoxSP.Size = new System.Drawing.Size(283, 176);
+            this.picBoxSP.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picBoxSP.TabIndex = 45;
+            this.picBoxSP.TabStop = false;
+            // 
             // ODonHangDaMua
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -182,8 +182,8 @@
             this.Controls.Add(this.guna2CustomGradientPanel1);
             this.Name = "ODonHangDaMua";
             this.Size = new System.Drawing.Size(283, 330);
-            ((System.ComponentModel.ISupportInitialize)(this.picBoxSP)).EndInit();
             this.guna2Panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxSP)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

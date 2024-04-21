@@ -25,6 +25,7 @@ namespace Home.FrmCon.FrmHienThi
             picBoxSP.Image = Anh;
         }
 
+
         private void btnMuaLai_Click(object sender, EventArgs e)
         {
             quayLaiSanPham();
@@ -39,5 +40,6 @@ namespace Home.FrmCon.FrmHienThi
                 parentForm.btnSanPham_Click(this, EventArgs.Empty);
             }
         }
+
     }
 }

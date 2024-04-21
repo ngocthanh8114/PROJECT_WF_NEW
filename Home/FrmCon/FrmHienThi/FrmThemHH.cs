@@ -47,6 +47,7 @@ namespace Home.FrmCon.FrmHienThi
                 txtGia.Text = txtMaLoai.Text = txtMaSP.Text = txtSoLuong.Text = txtTenSP.Text = txt_MaNCC.Text = "";
                 picBoxSP.Image = null;
             }    
+            this.Close();
         }
     }
 }

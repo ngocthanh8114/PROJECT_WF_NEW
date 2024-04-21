@@ -15,11 +15,16 @@ namespace Home.FrmCon.FrmHienThi
     public partial class OSanPhamAdmin : UserControl
     {
         XuLiDuLieu xl = new XuLiDuLieu();
+        string masanpham;
         public OSanPhamAdmin()
         {
             InitializeComponent();
         }
-       
+        
+        public string LayMSP()
+        {
+            return lblMaSP.Text;
+        }
         public void themSPAdmin(string MaSP, string tenSP, decimal gia, string nCC, int sL, Image anh)
         {
             lblMaSP.Text = MaSP;
@@ -32,15 +37,9 @@ namespace Home.FrmCon.FrmHienThi
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show("Bạn có chắc chắn xóa không?", "Warning!", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (result == DialogResult.Yes)
-            {
-                // Xóa trong DB
-                xl.Connection_CSDL();
-                xl.XoaSanPhamAdmin(lblMaSP.Text);
-                //Load lại SP
-                TongForm.SanPhamAdmin.SanPhamAdmin_Load(TongForm.SanPhamAdmin, e);
-            }
+            masanpham = LayMSP();
+            FrmXacNhan frmXacNhan = new FrmXacNhan(masanpham);
+            frmXacNhan.ShowDialog();
         }
         public static string maSP;
         public void btnSua_Click(object sender, EventArgs e)
