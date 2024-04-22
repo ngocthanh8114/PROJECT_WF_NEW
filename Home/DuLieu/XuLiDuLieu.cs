@@ -28,7 +28,7 @@ namespace Home.DuLieu
     internal class XuLiDuLieu
     {
         KetNoiCSDL kn = new KetNoiCSDL();
-        string strconn = "Data Source=LAPTOP-IGR3NG0G\\THANHAN;Initial Catalog=BanXeMay;Integrated Security=True;Encrypt=False";
+        string strconn = "Data Source=DESKTOP-74RKBUS;Initial Catalog = BanXeMay; Integrated Security = True";
         SqlConnection conn = null;
 
         public void Connection_CSDL()
@@ -64,6 +64,45 @@ namespace Home.DuLieu
 
             cmd1.Dispose();
             return maLoai;
+        }
+        public DataTable LocSanPhamTheoLoaiVaGia(string LoaiSP, decimal minPrice, decimal maxPrice)
+        {
+            kn.myConnect();
+            string lenh = "SELECT * FROM SANPHAM WHERE  MaLoai = @LoaiSP AND Gia BETWEEN @MinPrice AND @MaxPrice";
+            SqlCommand cmd = kn.con.CreateCommand();
+            cmd.CommandText = lenh;
+            SqlParameter sqlParameter = new SqlParameter("@LoaiSP", SqlDbType.NVarChar, 50);
+            sqlParameter.Value = LoaiSP;
+            cmd.Parameters.Add(sqlParameter);
+
+            SqlParameter minParameter = new SqlParameter("@MinPrice", SqlDbType.Decimal);
+            minParameter.Value = minPrice;
+            cmd.Parameters.Add(minParameter);
+
+            SqlParameter maxParameter = new SqlParameter("@MaxPrice", SqlDbType.Decimal);
+            maxParameter.Value = maxPrice;
+            cmd.Parameters.Add(maxParameter);
+
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            return dt;
+        }
+
+        public DataTable TimKiemSanPham(string TenSP)
+        {
+            kn.myConnect();
+            string lenh = "SELECT * FROM SANPHAM WHERE TenSP LIKE @TenSP + '%'";
+            SqlCommand cmd = kn.con.CreateCommand();
+            cmd.CommandText = lenh;
+            SqlParameter sqlParameter = new SqlParameter("@TenSP", SqlDbType.NVarChar, 50);
+            sqlParameter.Value = TenSP;
+            cmd.Parameters.Add(sqlParameter);
+
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            return dt;
         }
 
         public Image ByteArrToImage(byte[] b)
