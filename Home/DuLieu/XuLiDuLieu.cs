@@ -849,7 +849,27 @@ namespace Home.DuLieu
             cmd.Parameters.AddWithValue("MaSP", MaSP);
             cmd.ExecuteNonQuery(); 
         }
-        public void LoadFrmCapNhatHH(string masp, Guna2TextBox maSP, Guna2TextBox tenSP, Guna2TextBox gia, Guna2TextBox maNCC, Guna2TextBox soLuong, Guna2PictureBox Anh, Guna2TextBox maLoai)
+        public void LoadMaNCC(Guna2ComboBox maNCC)
+        {
+            kn.Connection();
+            SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM NCC", conn);
+            DataSet ds = new DataSet();
+            da.Fill(ds, "NCC");
+            maNCC.DataSource = ds.Tables["NCC"];
+            maNCC.DisplayMember = "TenNCC";
+            maNCC.ValueMember = "MaNCC";
+        }
+        public void LoadMaLoai(Guna2ComboBox maLoai)
+        {
+            kn.Connection();
+            SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM LoaiSP", conn);
+            DataSet ds = new DataSet();
+            da.Fill(ds, "LoaiSP");
+            maLoai.DataSource = ds.Tables["LoaiSP"];
+            maLoai.DisplayMember = "LoaiSP";
+            maLoai.ValueMember = "MaLoai";
+        }
+        public void LoadFrmCapNhatHH(string masp, Guna2TextBox maSP, Guna2TextBox tenSP, Guna2TextBox gia, Guna2TextBox soLuong, Guna2PictureBox Anh)
         {
             kn.myConnect();
             string sql = "SELECT * FROM SanPham WHERE MaSP = @MaSP";
@@ -862,19 +882,15 @@ namespace Home.DuLieu
                 string idsp = reader.GetString(0);
                 string name = reader.GetString(1);
                 string price = reader.GetDecimal(2).ToString();
-                string idncc = reader.GetString(3);
                 string sl = reader.GetInt32(4).ToString();
                 Image anh = ByteArrToImage((byte[])reader.GetValue(5));
-                string idloai = reader.GetString(6);
 
                 //Hiển thị
                 maSP.Text = idsp.Trim();
                 tenSP.Text = name.Trim();
                 gia.Text = price.Trim();
-                maNCC.Text = idncc.Trim();
                 soLuong.Text = sl.Trim();
                 Anh.Image = anh;
-                maLoai.Text = idloai.Trim();
             }
             //Đóng đầu đọc
             reader.Close();
