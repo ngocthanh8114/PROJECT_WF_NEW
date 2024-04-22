@@ -30,18 +30,23 @@ namespace Home.FrmCon.FrmHienThi
             xl.Connection_CSDL();
             string idsp = OSanPhamAdmin.maSP;
             txtMaSP.Text = idsp;
-            xl.LoadFrmCapNhatHH(idsp, txtMaSP, txtTenSP, txtGia, txt_MaNCC, txtSoLuong, picBoxSP, txtMaLoai);
+            xl.LoadMaNCC(cboMaNCC);
+            xl.LoadMaLoai(cboMaLoai);
+            cboMaLoai.StartIndex = 4;
+            xl.LoadFrmCapNhatHH(idsp, txtMaSP, txtTenSP, txtGia, txtSoLuong, picBoxSP);
         }
 
         private void btnLuu_Click(object sender, EventArgs e)
         {
+            string maloai = cboMaLoai.SelectedValue.ToString();
+            string mancc = cboMaNCC.SelectedValue.ToString();
             xl.Connection_CSDL();
-            xl.SuaThongTinSanPhamAdmin(txt_MaNCC.Text, txtTenSP.Text, txtMaLoai.Text, txtSoLuong.Text, txtGia.Text, txtMaSP.Text, picBoxSP.Image);
+            xl.SuaThongTinSanPhamAdmin(mancc, txtTenSP.Text, maloai, txtSoLuong.Text, txtGia.Text, txtMaSP.Text, picBoxSP.Image);
             
 
             if (xl.SuaHang)
             {
-                txt_MaNCC.Text = txtTenSP.Text = txtMaLoai.Text = txtSoLuong.Text = txtGia.Text = txtMaSP.Text = "";
+                txtTenSP.Text = txtSoLuong.Text = txtGia.Text = txtMaSP.Text = "";
                 picBoxSP.Image =null;
                 TongForm.SanPhamAdmin.SanPhamAdmin_Load(TongForm.SanPhamAdmin, e);
             }

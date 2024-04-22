@@ -81,7 +81,9 @@ namespace Home.FrmCon.FrmHienThi
 
         private void btnMuaHang_Click(object sender, EventArgs e)
         {
-            if(!string.IsNullOrWhiteSpace(txtHoTen.Text) || !string.IsNullOrWhiteSpace(txtSDT.Text) || !string.IsNullOrWhiteSpace(txtDiaChi.Text))
+            char sdt = char.Parse(txtSDT.Text);
+            //if(!string.IsNullOrWhiteSpace(txtHoTen.Text) || !string.IsNullOrWhiteSpace(txtSDT.Text) || !string.IsNullOrWhiteSpace(txtDiaChi.Text))
+            if(txtHoTen.Text != "" && (txtSDT.Text != "" && char.IsDigit(sdt) && txtDiaChi.Text != ""))
             {
                 xl.MuaHang(txtHoTen.Text, txtEmail.Text, txtSDT.Text, txtDiaChi.Text, txtLoiNhan.Text, lblTienHang.Text, lblPhiVanChuyen.Text, lblTong.Text);
                 xl.DaMuaHang();

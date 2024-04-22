@@ -440,7 +440,7 @@
             this.txtLoiNhan.Multiline = true;
             this.txtLoiNhan.Name = "txtLoiNhan";
             this.txtLoiNhan.PasswordChar = '\0';
-            this.txtLoiNhan.PlaceholderText = "Lời nhắn...";
+            this.txtLoiNhan.PlaceholderText = "Lời nhắn (không bắt buộc)";
             this.txtLoiNhan.SelectedText = "";
             this.txtLoiNhan.Size = new System.Drawing.Size(253, 124);
             this.txtLoiNhan.TabIndex = 37;

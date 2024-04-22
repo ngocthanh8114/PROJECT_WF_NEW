@@ -39,15 +39,25 @@ namespace Home.FrmCon.FrmHienThi
         private void btnLuuThem_Click(object sender, EventArgs e)
         {
             xl.Connection_CSDL();
-
-            xl.NhapHangAdmin(txtMaSP.Text, txtTenSP.Text, txtGia.Text, txt_MaNCC.Text, txtSoLuong.Text, picBoxSP.Image, txtMaLoai.Text, lblDonGia, lblSoluong);
+            string maloai = cboMaLoai.SelectedValue.ToString();
+            string mancc = cboMaNCC.SelectedValue.ToString();
+            xl.NhapHangAdmin(txtMaSP.Text, txtTenSP.Text, txtGia.Text, mancc, txtSoLuong.Text, picBoxSP.Image, maloai, lblDonGia, lblSoluong);
             if(xl.NhapHang && lblDonGia.Visible == false && lblSoluong.Visible == false)
             {
                 TongForm.SanPhamAdmin.SanPhamAdmin_Load(TongForm.SanPhamAdmin, e);
-                txtGia.Text = txtMaLoai.Text = txtMaSP.Text = txtSoLuong.Text = txtTenSP.Text = txt_MaNCC.Text = "";
+                txtGia.Text = txtMaSP.Text = txtSoLuong.Text = txtTenSP.Text = "";
                 picBoxSP.Image = null;
             }    
             this.Close();
         }
+
+        private void FrmThemHH_Load(object sender, EventArgs e)
+        {
+            xl.Connection_CSDL();
+            xl.LoadMaLoai(cboMaLoai);
+            xl.LoadMaNCC(cboMaNCC);
+            cboMaLoai.StartIndex = 4;
+        }
+
     }
 }
