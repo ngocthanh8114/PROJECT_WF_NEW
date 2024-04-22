@@ -41,24 +41,41 @@ namespace Home.FrmCon.FrmHienThi
         {
             if(flag == 0 )
             {
-                List<string> list = oDiaChi.GetList();
-                xl.suaDiaChi(list[0], list[2], list[1], txt_HoTen.Text, txtDiaChi.Text, txt_SDT.Text);
-                FrmThongBao frmThongBao = new FrmThongBao();
-                frmThongBao.hienThiThongBao("Cập nhật thành công");
-                frmThongBao.ShowDialog();
-                this.Close();
-                oDiaChi.themDiaChi(txt_HoTen.Text, txt_SDT.Text, txtDiaChi.Text, 0);
+                if(txt_HoTen.Text == "" || txtDiaChi.Text == ""  || txt_SDT.Text == "")
+                {
+                    FrmBaoLoi frmBaoLoi = new FrmBaoLoi();
+                    frmBaoLoi.hienThiLoi("Vui lòng nhập đầy đủ thông tin!");
+                    frmBaoLoi.Show();
+                }
+                else
+                {
+                    List<string> list = oDiaChi.GetList();
+                    xl.suaDiaChi(list[0], list[2], list[1], txt_HoTen.Text, txtDiaChi.Text, txt_SDT.Text);
+                    FrmThongBao frmThongBao = new FrmThongBao();
+                    frmThongBao.hienThiThongBao("Cập nhật thành công");
+                    frmThongBao.ShowDialog();
+                    this.Close();
+                    oDiaChi.themDiaChi(txt_HoTen.Text, txt_SDT.Text, txtDiaChi.Text, 0);
+                }
             }   
             else
             {
-                xl.themDiaChiVaoDB(txt_HoTen.Text, txtDiaChi.Text, txt_SDT.Text);
-                FrmThongBao frmThongBao = new FrmThongBao();
-                frmThongBao.hienThiThongBao("Cập nhật thành công");
-                frmThongBao.ShowDialog();
-                this.Close();
-                diaChi.DiaChi_Load(diaChi, e);
+                if (txt_HoTen.Text == "" || txtDiaChi.Text == "" || txt_SDT.Text == "")
+                {
+                    FrmBaoLoi frmBaoLoi = new FrmBaoLoi();
+                    frmBaoLoi.hienThiLoi("Vui lòng nhập đầy đủ thông tin!");
+                    frmBaoLoi.Show();
+                }
+                else
+                {
+                    xl.themDiaChiVaoDB(txt_HoTen.Text, txtDiaChi.Text, txt_SDT.Text);
+                    FrmThongBao frmThongBao = new FrmThongBao();
+                    frmThongBao.hienThiThongBao("Cập nhật thành công");
+                    frmThongBao.ShowDialog();
+                    this.Close();
+                    diaChi.DiaChi_Load(diaChi, e);
+                }  
             }    
-            
         }
 
         private void SuaDiaChi_Load(object sender, EventArgs e)

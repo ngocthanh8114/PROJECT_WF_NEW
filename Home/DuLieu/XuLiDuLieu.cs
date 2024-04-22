@@ -65,6 +65,45 @@ namespace Home.DuLieu
             cmd1.Dispose();
             return maLoai;
         }
+        public DataTable LocSanPhamTheoLoaiVaGia(string LoaiSP, decimal minPrice, decimal maxPrice)
+        {
+            kn.myConnect();
+            string lenh = "SELECT * FROM SANPHAM WHERE  MaLoai = @LoaiSP AND Gia BETWEEN @MinPrice AND @MaxPrice";
+            SqlCommand cmd = kn.con.CreateCommand();
+            cmd.CommandText = lenh;
+            SqlParameter sqlParameter = new SqlParameter("@LoaiSP", SqlDbType.NVarChar, 50);
+            sqlParameter.Value = LoaiSP;
+            cmd.Parameters.Add(sqlParameter);
+
+            SqlParameter minParameter = new SqlParameter("@MinPrice", SqlDbType.Decimal);
+            minParameter.Value = minPrice;
+            cmd.Parameters.Add(minParameter);
+
+            SqlParameter maxParameter = new SqlParameter("@MaxPrice", SqlDbType.Decimal);
+            maxParameter.Value = maxPrice;
+            cmd.Parameters.Add(maxParameter);
+
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            return dt;
+        }
+
+        public DataTable TimKiemSanPham(string TenSP)
+        {
+            kn.myConnect();
+            string lenh = "SELECT * FROM SANPHAM WHERE TenSP LIKE @TenSP + '%'";
+            SqlCommand cmd = kn.con.CreateCommand();
+            cmd.CommandText = lenh;
+            SqlParameter sqlParameter = new SqlParameter("@TenSP", SqlDbType.NVarChar, 50);
+            sqlParameter.Value = TenSP;
+            cmd.Parameters.Add(sqlParameter);
+
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            return dt;
+        }
 
         public Image ByteArrToImage(byte[] b)
         {
@@ -1110,28 +1149,33 @@ namespace Home.DuLieu
         //Xóa địa chỉ
         public void xoaDiaChi(string ten, string diachi, string sdt)
         {
-            kn.myConnect();
-            string sql = "DELETE FROM DiaChiKhachHang where DiaChi = @DiaChi and TenTaiKhoan = @TenTaiKhoan and SoDienThoai = @SDT and TenKhachHang = @TenKH";
-            SqlCommand cmd = new SqlCommand(sql, kn.con);
+            //Confirm?
+            DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn xóa?", "Thông báo!", MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+            {
+                kn.myConnect();
+                string sql = "DELETE FROM DiaChiKhachHang where DiaChi = @DiaChi and TenTaiKhoan = @TenTaiKhoan and SoDienThoai = @SDT and TenKhachHang = @TenKH";
+                SqlCommand cmd = new SqlCommand(sql, kn.con);
 
-            SqlParameter sqlParameter0 = new SqlParameter("@TenTaiKhoan", SqlDbType.NVarChar, 50);
-            sqlParameter0.Value = TaiKhoanDangNhap.tenTaiKhoan;
-            cmd.Parameters.Add(sqlParameter0);
+                SqlParameter sqlParameter0 = new SqlParameter("@TenTaiKhoan", SqlDbType.NVarChar, 50);
+                sqlParameter0.Value = TaiKhoanDangNhap.tenTaiKhoan;
+                cmd.Parameters.Add(sqlParameter0);
 
-            SqlParameter sqlParameter1 = new SqlParameter("@DiaChi", SqlDbType.NVarChar);
-            sqlParameter1.Value = diachi;
-            cmd.Parameters.Add(sqlParameter1);
+                SqlParameter sqlParameter1 = new SqlParameter("@DiaChi", SqlDbType.NVarChar);
+                sqlParameter1.Value = diachi;
+                cmd.Parameters.Add(sqlParameter1);
 
-            SqlParameter sqlParameter2 = new SqlParameter("@SDT", SqlDbType.NVarChar, 50);
-            sqlParameter2.Value = sdt;
-            cmd.Parameters.Add(sqlParameter2);
+                SqlParameter sqlParameter2 = new SqlParameter("@SDT", SqlDbType.NVarChar, 50);
+                sqlParameter2.Value = sdt;
+                cmd.Parameters.Add(sqlParameter2);
 
 
-            SqlParameter sqlParameter4 = new SqlParameter("@TenKH", SqlDbType.NVarChar, 50);
-            sqlParameter4.Value = ten;
-            cmd.Parameters.Add(sqlParameter4);
+                SqlParameter sqlParameter4 = new SqlParameter("@TenKH", SqlDbType.NVarChar, 50);
+                sqlParameter4.Value = ten;
+                cmd.Parameters.Add(sqlParameter4);
 
-            cmd.ExecuteNonQuery();
+                cmd.ExecuteNonQuery();
+            }
         }
 
         public DataTable doDuLieuTimKiemDH(string TenSP)
