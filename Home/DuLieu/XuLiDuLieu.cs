@@ -28,7 +28,7 @@ namespace Home.DuLieu
     internal class XuLiDuLieu
     {
         KetNoiCSDL kn = new KetNoiCSDL();
-        string strconn = "Data Source=.;Initial Catalog=BanXeMay;Persist Security Info=True;User ID=sa;Password=123";
+        string strconn = "Data Source=LAPTOP-IGR3NG0G\\THANHAN;Initial Catalog=BanXeMay;Integrated Security=True;Encrypt=False";
         SqlConnection conn = null;
 
         public void Connection_CSDL()
@@ -1187,5 +1187,65 @@ namespace Home.DuLieu
             return dt;
         }
 
+        //Hiện thông tin đơn hàng 
+        public void TTDonHang(int madonhang, out string tenkhachhang, out string email, out string sodienthoai, out string giaxe, out string phivanchuyen, out DateTime ngaymua, out string diachi, out string tongthanhtoan)
+        {
+            SqlConnection connection = new SqlConnection(strconn);
+
+            try
+            {
+                connection.Open();
+
+                string query = "SELECT TenKhachHang, Email, SoDienThoai, TongTienHang, PhiVanChuyen, NgayDH, DiaChi, TongThanhToan FROM ThongTinDH WHERE MaDH = @MaDH";
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@MaDH", madonhang);
+
+                SqlDataReader reader = command.ExecuteReader();
+
+                if (reader.Read())
+                {
+                    tenkhachhang = reader.GetString(0);
+                    email = reader.GetString(1);
+                    sodienthoai = reader.GetString(2);
+                    giaxe = reader.GetString(3);
+                    phivanchuyen = reader.GetString(4);
+                    ngaymua = reader.GetDateTime(5);
+                    diachi = reader.GetString(6);
+                    tongthanhtoan = reader.GetString(7);
+                }
+                else
+                {
+                    tenkhachhang = "";
+                    email = "";
+                    sodienthoai = "";
+                    giaxe = "";
+                    phivanchuyen = "";
+                    ngaymua = DateTime.MinValue;
+                    diachi = "";
+                    tongthanhtoan = ""; 
+                }
+
+                reader.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+                tenkhachhang = "";
+                email = "";
+                sodienthoai = "";
+                giaxe = "";
+                phivanchuyen = "";
+                ngaymua = DateTime.MinValue;
+                diachi = "";
+                tongthanhtoan = ""; 
+            }
+            finally
+            {
+                connection.Close();
+            }
+        }
+
     }
 }
+
+

@@ -16,19 +16,15 @@ namespace Home.DuLieu
     internal class KetNoiCSDL
     {
 
-<<<<<<< HEAD
-        private static string sqlCon = "Data Source=DESKTOP-74RKBUS;Initial Catalog = BanXeMay; Integrated Security = True";
+
+        private static string sqlCon = "Data Source=LAPTOP-IGR3NG0G\\THANHAN;Initial Catalog=BanXeMay;Integrated Security=True;Encrypt=False";
 
         public SqlConnection con = new SqlConnection(sqlCon);
 
-        string strconn = "Data Source=DESKTOP-74RKBUS;Initial Catalog = BanXeMay; Integrated Security = True";
-=======
-        private static string sqlCon = "Data Source=.;Initial Catalog=BanXeMay;Persist Security Info=True;User ID=sa;Password=123";
+        string strconn = "Data Source=LAPTOP-IGR3NG0G\\THANHAN;Initial Catalog=BanXeMay;Integrated Security=True;Encrypt=False";
 
-        public SqlConnection con = new SqlConnection(sqlCon);
+       
 
-        string strconn = "Data Source=.;Initial Catalog=BanXeMay;Persist Security Info=True;User ID=sa;Password=123";
->>>>>>> 576e5ab1c21e31974fc8fa8c4ecd7cfb917b918b
 
         SqlConnection conn = null;
 

@@ -16,13 +16,18 @@ namespace Home.FrmCon.FrmHienThi
 {
     public partial class FrmMuaHang : Form
     {
+        int madh;
         public FrmMuaHang()
         {
             InitializeComponent();
-
             
         }
         XuLiDuLieu xl = new XuLiDuLieu();
+
+        public int LayMaDH()
+        {
+            return int.Parse(lblMaDH.Text);
+        }
         private void RoundFormCorners(Form form, int radius)
         {
             // Tạo một GraphicsPath để chứa hình dạng của form
@@ -87,6 +92,10 @@ namespace Home.FrmCon.FrmHienThi
                 frmThongBao.ShowDialog();
                 this.Close();
                 TongForm.DonHang.DonHang_Load(TongForm.DonHang, e);
+                madh = LayMaDH();
+                FrmThongTinDH frmThongTinDH = new FrmThongTinDH(madh);
+                frmThongTinDH.ShowDialog();
+
             }
             else
             {
@@ -94,6 +103,7 @@ namespace Home.FrmCon.FrmHienThi
                 frmBaoLoi.hienThiLoi("Bạn chưa nhập đầy đủ thông tin cần thiết");
                 frmBaoLoi.Show();
             }
+
         }
 
         private void gunaAdvenceButton1_Click(object sender, EventArgs e)

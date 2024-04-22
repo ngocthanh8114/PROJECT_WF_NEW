@@ -398,3 +398,42 @@ D:\DKCK\PROJECT_WF_NEW\Home\obj\Debug\Home.pdb
 D:\VS Code\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.FrmXacNhan.resources
 >>>>>>> 576e5ab1c21e31974fc8fa8c4ecd7cfb917b918b
 D:\DKCK\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.SuaDiaChi.resources
+C:\Users\PC\OneDrive\Desktop\New folder (6)\PROJECT_WF_NEW\Home\obj\Debug\Home.csproj.AssemblyReference.cache
+C:\Users\PC\OneDrive\Desktop\New folder (6)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmAdmin.resources
+C:\Users\PC\OneDrive\Desktop\New folder (6)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.DonHang.resources
+C:\Users\PC\OneDrive\Desktop\New folder (6)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.DiaChi.resources
+C:\Users\PC\OneDrive\Desktop\New folder (6)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.DonHangDaMua.resources
+C:\Users\PC\OneDrive\Desktop\New folder (6)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.FrmBaoLoi.resources
+C:\Users\PC\OneDrive\Desktop\New folder (6)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.FrmCapNhatHH.resources
+C:\Users\PC\OneDrive\Desktop\New folder (6)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.FrmCapNhatTT.resources
+C:\Users\PC\OneDrive\Desktop\New folder (6)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.FrmMuaHang.resources
+C:\Users\PC\OneDrive\Desktop\New folder (6)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.FrmThemHH.resources
+C:\Users\PC\OneDrive\Desktop\New folder (6)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.FrmThongBao.resources
+C:\Users\PC\OneDrive\Desktop\New folder (6)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.FrmXacNhan.resources
+C:\Users\PC\OneDrive\Desktop\New folder (6)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.ODiaChi.resources
+C:\Users\PC\OneDrive\Desktop\New folder (6)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.ODonHang.resources
+C:\Users\PC\OneDrive\Desktop\New folder (6)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.ODonHangDaMua.resources
+C:\Users\PC\OneDrive\Desktop\New folder (6)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.OSanPhamAdmin.resources
+C:\Users\PC\OneDrive\Desktop\New folder (6)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.OThem.resources
+C:\Users\PC\OneDrive\Desktop\New folder (6)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.SuaDiaChi.resources
+C:\Users\PC\OneDrive\Desktop\New folder (6)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.ThongTin.resources
+C:\Users\PC\OneDrive\Desktop\New folder (6)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.SanPhamAdmin.resources
+C:\Users\PC\OneDrive\Desktop\New folder (6)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.TaiKhoan.resources
+C:\Users\PC\OneDrive\Desktop\New folder (6)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmDangKi.resources
+C:\Users\PC\OneDrive\Desktop\New folder (6)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmDangNhap.resources
+C:\Users\PC\OneDrive\Desktop\New folder (6)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmHome.resources
+C:\Users\PC\OneDrive\Desktop\New folder (6)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.OSanPham.resources
+C:\Users\PC\OneDrive\Desktop\New folder (6)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.SanPham.resources
+C:\Users\PC\OneDrive\Desktop\New folder (6)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmQuenMatKhau.resources
+C:\Users\PC\OneDrive\Desktop\New folder (6)\PROJECT_WF_NEW\Home\obj\Debug\Home.Properties.Resources.resources
+C:\Users\PC\OneDrive\Desktop\New folder (6)\PROJECT_WF_NEW\Home\obj\Debug\Home.csproj.GenerateResource.cache
+C:\Users\PC\OneDrive\Desktop\New folder (6)\PROJECT_WF_NEW\Home\obj\Debug\Home.csproj.CoreCompileInputs.cache
+C:\Users\PC\OneDrive\Desktop\New folder (6)\PROJECT_WF_NEW\Home\obj\Debug\Home.exe
+C:\Users\PC\OneDrive\Desktop\New folder (6)\PROJECT_WF_NEW\Home\obj\Debug\Home.pdb
+C:\Users\PC\OneDrive\Desktop\New folder (6)\PROJECT_WF_NEW\Home\bin\Debug\Home.exe.config
+C:\Users\PC\OneDrive\Desktop\New folder (6)\PROJECT_WF_NEW\Home\bin\Debug\Home.exe
+C:\Users\PC\OneDrive\Desktop\New folder (6)\PROJECT_WF_NEW\Home\bin\Debug\Home.pdb
+C:\Users\PC\OneDrive\Desktop\New folder (6)\PROJECT_WF_NEW\Home\bin\Debug\Guna.UI2.dll
+C:\Users\PC\OneDrive\Desktop\New folder (6)\PROJECT_WF_NEW\Home\obj\Debug\Home.csproj.Up2Date
+C:\Users\PC\OneDrive\Desktop\New folder (6)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.FrmHoaDon.resources
+C:\Users\PC\OneDrive\Desktop\New folder (6)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmThongTinDH.resources
