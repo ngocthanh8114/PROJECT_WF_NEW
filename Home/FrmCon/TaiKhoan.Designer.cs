@@ -33,6 +33,7 @@
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.panelChuaQC = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnQC = new Guna.UI2.WinForms.Guna2PictureBox();
             this.panelNoiDung = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
             this.btnDangXuat = new Guna.UI.WinForms.GunaAdvenceButton();
@@ -52,9 +53,9 @@
             this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel3.SuspendLayout();
             this.panelChuaQC.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnQC)).BeginInit();
             this.guna2Panel5.SuspendLayout();
             this.guna2Panel4.SuspendLayout();
             this.guna2Panel6.SuspendLayout();
@@ -62,7 +63,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Panel1
@@ -100,11 +100,24 @@
             // panelChuaQC
             // 
             this.panelChuaQC.BackColor = System.Drawing.Color.White;
-            this.panelChuaQC.Controls.Add(this.guna2PictureBox1);
+            this.panelChuaQC.Controls.Add(this.btnQC);
             this.panelChuaQC.Location = new System.Drawing.Point(1652, 44);
             this.panelChuaQC.Name = "panelChuaQC";
             this.panelChuaQC.Size = new System.Drawing.Size(374, 703);
             this.panelChuaQC.TabIndex = 15;
+            // 
+            // btnQC
+            // 
+            this.btnQC.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnQC.Image = ((System.Drawing.Image)(resources.GetObject("btnQC.Image")));
+            this.btnQC.ImageRotate = 0F;
+            this.btnQC.Location = new System.Drawing.Point(0, 0);
+            this.btnQC.Name = "btnQC";
+            this.btnQC.Size = new System.Drawing.Size(374, 703);
+            this.btnQC.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnQC.TabIndex = 0;
+            this.btnQC.TabStop = false;
+            this.btnQC.Click += new System.EventHandler(this.btnQC_Click);
             // 
             // panelNoiDung
             // 
@@ -437,18 +450,6 @@
             this.guna2PictureBox2.TabIndex = 21;
             this.guna2PictureBox2.TabStop = false;
             // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(374, 703);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox1.TabIndex = 0;
-            this.guna2PictureBox1.TabStop = false;
-            // 
             // TaiKhoan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -462,6 +463,7 @@
             this.Load += new System.EventHandler(this.TaiKhoan_Load);
             this.guna2Panel3.ResumeLayout(false);
             this.panelChuaQC.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.btnQC)).EndInit();
             this.guna2Panel5.ResumeLayout(false);
             this.guna2Panel4.ResumeLayout(false);
             this.guna2Panel6.ResumeLayout(false);
@@ -470,7 +472,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -499,6 +500,6 @@
         private Guna.UI.WinForms.GunaAdvenceButton btnDiaChi;
         private Guna.UI.WinForms.GunaAdvenceButton btnDonHang;
         private Guna.UI2.WinForms.Guna2Panel panelNoiDung;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
+        private Guna.UI2.WinForms.Guna2PictureBox btnQC;
     }
 }

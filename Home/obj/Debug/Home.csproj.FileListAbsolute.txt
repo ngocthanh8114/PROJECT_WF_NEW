@@ -318,6 +318,8 @@ D:\VS Code\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.DonHang
 D:\VS Code\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.ODiaChi.resources
 D:\VS Code\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.ODonHangDaMua.resources
 D:\VS Code\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.ThongTin.resources
+D:\VS Code\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.FrmDiaChi.resources
+D:\VS Code\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.SuaDiaChi.resources
 C:\Users\PC\OneDrive\Desktop\DoAn\PROJECT_WF_NEW\Home\bin\Debug\Home.exe.config
 C:\Users\PC\OneDrive\Desktop\DoAn\PROJECT_WF_NEW\Home\bin\Debug\Home.exe
 C:\Users\PC\OneDrive\Desktop\DoAn\PROJECT_WF_NEW\Home\bin\Debug\Home.pdb
@@ -392,3 +394,7 @@ D:\DKCK\PROJECT_WF_NEW\Home\obj\Debug\Home.csproj.CoreCompileInputs.cache
 D:\DKCK\PROJECT_WF_NEW\Home\obj\Debug\Home.csproj.CopyComplete
 D:\DKCK\PROJECT_WF_NEW\Home\obj\Debug\Home.exe
 D:\DKCK\PROJECT_WF_NEW\Home\obj\Debug\Home.pdb
+>>>>>>> 40b2044077b39d259946f9f6809a41788b498893
+D:\VS Code\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.FrmXacNhan.resources
+>>>>>>> 576e5ab1c21e31974fc8fa8c4ecd7cfb917b918b
+D:\DKCK\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.SuaDiaChi.resources

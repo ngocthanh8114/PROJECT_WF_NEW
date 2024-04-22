@@ -87,7 +87,6 @@
             this.lblTieuDe.TabIndex = 47;
             this.lblTieuDe.Text = "  Số lượng:";
             this.lblTieuDe.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblTieuDe.Click += new System.EventHandler(this.lblTieuDe_Click);
             // 
             // lblSoLuong
             // 
@@ -144,6 +143,7 @@
             this.btnMuaLai.TabIndex = 53;
             this.btnMuaLai.Text = "Mua Lại";
             this.btnMuaLai.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnMuaLai.Click += new System.EventHandler(this.btnMuaLai_Click);
             // 
             // lblMaDH
             // 

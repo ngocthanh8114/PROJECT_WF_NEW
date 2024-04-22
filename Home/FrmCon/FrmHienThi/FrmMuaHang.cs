@@ -19,6 +19,8 @@ namespace Home.FrmCon.FrmHienThi
         public FrmMuaHang()
         {
             InitializeComponent();
+
+            
         }
         XuLiDuLieu xl = new XuLiDuLieu();
         private void RoundFormCorners(Form form, int radius)
@@ -45,15 +47,24 @@ namespace Home.FrmCon.FrmHienThi
 
         private void FrmMuaHang_Load(object sender, EventArgs e)
         {
+            
             RoundFormCorners(this, 5);
             lblMaDH.Text = xl.DonHangHienTai();
             MaDonHangHienTai.maDH = int.Parse(xl.DonHangHienTai());
+            foreach (DataRow row in xl.doDiaChi().Rows)
+            {
+                ODiaChi oDiaChi = new ODiaChi(this);
+                // Lấy giá trị từng cột trong hàng hiện tại
+                string diaChi = row["DiaChi"].ToString();
+                string tenKhachHang = row["TenKhachHang"].ToString();
+                string soDienThoai = row["SoDienThoai"].ToString();
+                oDiaChi.themDiaChi(tenKhachHang, soDienThoai, diaChi, 1);
+                panelNoiDung.Controls.Add(oDiaChi);
+                oDiaChi.BringToFront();
+            }
+
         }
 
-        private void gunaCircleButton1_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
 
         public void loadFormMua(decimal tienHang, int SL)
         {
@@ -71,6 +82,7 @@ namespace Home.FrmCon.FrmHienThi
                 xl.DaMuaHang();
                 xl.truSoLuongDaMua();
                 FrmThongBao frmThongBao = new FrmThongBao();
+                xl.themDiaChiVaoDB(txtHoTen.Text, txtDiaChi.Text, txtSDT.Text);
                 frmThongBao.hienThiThongBao("Mua hàng thành công");
                 frmThongBao.ShowDialog();
                 this.Close();
@@ -82,6 +94,86 @@ namespace Home.FrmCon.FrmHienThi
                 frmBaoLoi.hienThiLoi("Bạn chưa nhập đầy đủ thông tin cần thiết");
                 frmBaoLoi.Show();
             }
+        }
+
+        private void gunaAdvenceButton1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            timerMuaHang.Start();
+        }
+
+        private void cbGiaoHang1_Click(object sender, EventArgs e)
+        {
+            if(cbGiaoHang1.Checked == true) 
+            { 
+                cbGiaoHang2.Checked = false;
+            }
+            else
+            {
+                cbGiaoHang1.Checked = true;
+            }    
+        }
+
+        private void cbGiaoHang2_Click(object sender, EventArgs e)
+        {
+            if (cbGiaoHang2.Checked == true)
+            {
+                cbGiaoHang1.Checked = false;
+            }
+            else
+            {
+                cbGiaoHang2.Checked = true;
+            }
+        }
+
+        private void gunaAdvenceButton1_Click_1(object sender, EventArgs e)
+        {
+            timerMuaHang.Start();
+        }
+        bool muaHangExpand = true;
+        
+        private void timerMuaHang_Tick(object sender, EventArgs e)
+        {
+            Point formLocation = this.Location;
+            if (muaHangExpand == true) 
+            {
+                this.Width = this.MinimumSize.Width;
+                if (this.Width == this.MinimumSize.Width )
+                {
+                    
+                    muaHangExpand = false;
+                    timerMuaHang.Stop();
+                    this.Location = new Point(formLocation.X + 630 / 2 - 70, formLocation.Y);
+
+                }
+                
+
+            }
+            else
+            {
+                this.Width = this.MaximumSize.Width;
+                
+                if (this.Width == this.MaximumSize.Width)
+                {
+                    
+                    muaHangExpand = true;
+                    timerMuaHang.Stop();
+                    this.Location = new Point(formLocation.X - 630 / 2 + 70, formLocation.Y);
+                }
+                
+            }    
+        }
+
+        public void themDiaChi(string hoTen, string sdt, string diaChi)
+        {
+            txtHoTen.Text = hoTen;
+            txtSDT.Text = sdt;
+            txtDiaChi.Text = diaChi;
         }
     }
 }

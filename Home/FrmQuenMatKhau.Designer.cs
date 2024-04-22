@@ -38,9 +38,9 @@
             this.btnLayLaiMK = new Guna.UI2.WinForms.Guna2Button();
             this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.lbemail = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lbMatKhau = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lbMatKhau = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lbemail = new Guna.UI2.WinForms.Guna2HtmlLabel();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Thoat)).BeginInit();
             this.guna2Panel2.SuspendLayout();
             this.SuspendLayout();
@@ -133,7 +133,7 @@
             // 
             // guna2Panel2
             // 
-            this.guna2Panel2.BackColor = System.Drawing.Color.Silver;
+            this.guna2Panel2.BackColor = System.Drawing.Color.LightGray;
             this.guna2Panel2.Controls.Add(this.guna2HtmlLabel2);
             this.guna2Panel2.Controls.Add(this.lbMatKhau);
             this.guna2Panel2.Controls.Add(this.lbemail);
@@ -147,15 +147,16 @@
             this.guna2Panel2.Size = new System.Drawing.Size(518, 585);
             this.guna2Panel2.TabIndex = 30;
             // 
-            // lbemail
+            // guna2HtmlLabel2
             // 
-            this.lbemail.BackColor = System.Drawing.Color.Transparent;
-            this.lbemail.Location = new System.Drawing.Point(99, 285);
-            this.lbemail.Name = "lbemail";
-            this.lbemail.Size = new System.Drawing.Size(58, 18);
-            this.lbemail.TabIndex = 47;
-            this.lbemail.Text = "Mật Khẩu";
-            this.lbemail.Visible = false;
+            this.guna2HtmlLabel2.AutoSize = false;
+            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(76, 133);
+            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(537, 28);
+            this.guna2HtmlLabel2.TabIndex = 49;
+            this.guna2HtmlLabel2.Text = "Vui lòng không cung cấp email cho bất kì ai";
             // 
             // lbMatKhau
             // 
@@ -167,16 +168,15 @@
             this.lbMatKhau.Text = "Email";
             this.lbMatKhau.Visible = false;
             // 
-            // guna2HtmlLabel2
+            // lbemail
             // 
-            this.guna2HtmlLabel2.AutoSize = false;
-            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(76, 133);
-            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(537, 28);
-            this.guna2HtmlLabel2.TabIndex = 49;
-            this.guna2HtmlLabel2.Text = "Vui lòng không cung cấp email cho bất kì ai";
+            this.lbemail.BackColor = System.Drawing.Color.Transparent;
+            this.lbemail.Location = new System.Drawing.Point(99, 285);
+            this.lbemail.Name = "lbemail";
+            this.lbemail.Size = new System.Drawing.Size(58, 18);
+            this.lbemail.TabIndex = 47;
+            this.lbemail.Text = "Mật Khẩu";
+            this.lbemail.Visible = false;
             // 
             // FrmQuenMatKhau
             // 

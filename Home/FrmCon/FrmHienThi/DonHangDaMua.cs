@@ -41,5 +41,39 @@ namespace Home.FrmCon.FrmHienThi
                 oDonHangDaMua.BringToFront();
             }
         }
+
+        private void txtTimKiem_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnTimKiem_Click(object sender, EventArgs e)
+        {
+            if (txtTimKiem.Text == "")
+            {
+                FrmBaoLoi frmBaoLoi = new FrmBaoLoi();
+                frmBaoLoi.hienThiLoi("Bạn chưa nhập thông tin tìm kiếm");
+                frmBaoLoi.Show();
+            }
+            else
+            {
+                if (xl.doDuLieuTimKiemDH(txtTimKiem.Text).Rows.Count > 0)
+                {
+                    if (panelNoiDung.Controls.Count > 0)
+                    {
+                        panelNoiDung.Controls.Clear();
+                    }
+                    addDonMua(xl.doDuLieuTimKiemDH(txtTimKiem.Text));
+                }
+                else
+                {
+                    FrmBaoLoi frmBaoLoi = new FrmBaoLoi();
+                    frmBaoLoi.hienThiLoi("Không tìm thấy tên sản phẩm " + txtTimKiem.Text);
+                    frmBaoLoi.Show();
+
+                }
+                txtTimKiem.Text = "";
+            }
+        }
     }
 }

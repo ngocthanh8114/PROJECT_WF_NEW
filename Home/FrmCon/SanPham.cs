@@ -45,14 +45,17 @@ namespace Home.FrmCon
 
         public void SanPham_Load(object sender, EventArgs e)
         {
-            DataTable dt = xl.themLoaiSP();
+            
             cboLoaiSP.Items.Clear();
-            foreach (DataRow dr in dt.Rows) 
+            DataTable dt = xl.themLoaiSP();
+            
+            foreach (DataRow dr in dt.Rows)
             {
                 string loaiSP = dr["LoaiSP"].ToString();
 
                 cboLoaiSP.Items.Add(loaiSP);
             }
+            
             cboLoaiSP.StartIndex = 4;
         }
 
