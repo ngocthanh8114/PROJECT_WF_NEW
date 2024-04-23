@@ -560,3 +560,7 @@ D:\VS Code\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmThongTinDH.resources
 C:\Users\PC\OneDrive\Desktop\New folder (6)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.SanPhamDaMua.resources
 C:\Users\PC\OneDrive\Desktop\New folder (6)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.OSanPhamDaMua.resources
 C:\Users\PC\OneDrive\Desktop\New folder (6)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.FrmSuaDiaChi.resources
+E:\study\NAM_2_KI_2\LAP_TRINH_WINDOWS\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.SanPhamDaMua.resources
+E:\study\NAM_2_KI_2\LAP_TRINH_WINDOWS\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.OSanPhamDaMua.resources
+E:\study\NAM_2_KI_2\LAP_TRINH_WINDOWS\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.FrmSuaDiaChi.resources
+E:\study\NAM_2_KI_2\LAP_TRINH_WINDOWS\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmThongTinDH.resources
