@@ -551,4 +551,9 @@ D:\DKCK1\PROJECT_WF_NEW\Home\obj\Debug\Home.csproj.CoreCompileInputs.cache
 D:\DKCK1\PROJECT_WF_NEW\Home\obj\Debug\Home.csproj.CopyComplete
 D:\DKCK1\PROJECT_WF_NEW\Home\obj\Debug\Home.exe
 D:\DKCK1\PROJECT_WF_NEW\Home\obj\Debug\Home.pdb
+D:\VS Code\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.SanPhamDaMua.resources
+D:\VS Code\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.FrmSuaDiaChi.resources
 >>>>>>> 92cbfe04b132fc2bf2f528e2e2f09f400713666b
+>>>>>>> e430d54929aa9c130707f5bd159c26dbfd5ed9f8
+D:\VS Code\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.OSanPhamDaMua.resources
+D:\VS Code\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmThongTinDH.resources

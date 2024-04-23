@@ -28,7 +28,11 @@ namespace Home.DuLieu
     internal class XuLiDuLieu
     {
         KetNoiCSDL kn = new KetNoiCSDL();
+<<<<<<< HEAD
         string strconn = "Data Source=.;Initial Catalog=BanXeMay;User ID=sa;Password=123;Encrypt=False";
+=======
+        string strconn = "Data Source=.;Initial Catalog=BanXeMay;Persist Security Info=True;User ID=sa;Password=123";
+>>>>>>> 9b1212134c3b9e76507413ea0214c9292ab7ab2f
         SqlConnection conn = null;
 
         public void Connection_CSDL()

@@ -12,20 +12,20 @@ using System.Windows.Forms;
 namespace Home.FrmCon.FrmHienThi
 {
     
-    public partial class SuaDiaChi : Form
+    public partial class FrmSuaDiaChi : Form
     {
         private int flag;
 
         XuLiDuLieu xl = new XuLiDuLieu();
         private ODiaChi oDiaChi;
         private DiaChi diaChi;
-        public SuaDiaChi(ODiaChi oDiaChi)
+        public FrmSuaDiaChi(ODiaChi oDiaChi)
         {
             InitializeComponent();
             this.oDiaChi = oDiaChi;
             this.flag = 0;
         }
-        public SuaDiaChi(DiaChi diaChi)
+        public FrmSuaDiaChi(DiaChi diaChi)
         {
             InitializeComponent();
             this.diaChi = diaChi;

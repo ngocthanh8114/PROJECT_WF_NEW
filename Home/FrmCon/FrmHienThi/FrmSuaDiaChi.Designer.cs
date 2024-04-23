@@ -1,6 +1,6 @@
 ﻿namespace Home.FrmCon.FrmHienThi
 {
-    partial class SuaDiaChi
+    partial class FrmSuaDiaChi
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SuaDiaChi));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmSuaDiaChi));
             this.txt_SDT = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_HoTen = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Shapes1 = new Guna.UI2.WinForms.Guna2Shapes();

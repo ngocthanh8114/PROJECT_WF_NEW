@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Home.FrmCon.FrmHienThi
 {
-    public partial class ODonHangDaMua : UserControl
+    public partial class OSanPhamDaMua : UserControl
     {
-        public ODonHangDaMua()
+        public OSanPhamDaMua()
         {
             InitializeComponent();
         }

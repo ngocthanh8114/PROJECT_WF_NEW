@@ -65,7 +65,7 @@ namespace Home.FrmCon.FrmHienThi
 
         private void btnSua_Click(object sender, EventArgs e)
         {
-            SuaDiaChi suaDiaChi = new SuaDiaChi(this);
+            FrmSuaDiaChi suaDiaChi = new FrmSuaDiaChi(this);
             suaDiaChi.ShowDialog();
         }
 

@@ -12,10 +12,10 @@ using Home;
 
 namespace Home.FrmCon.FrmHienThi
 {
-    public partial class DonHangDaMua : UserControl
+    public partial class SanPhamDaMua : UserControl
     {
         XuLiDuLieu xl = new XuLiDuLieu();
-        public DonHangDaMua()
+        public SanPhamDaMua()
         {
             InitializeComponent();
         }
@@ -29,7 +29,7 @@ namespace Home.FrmCon.FrmHienThi
         {
             foreach (DataRow row in dt.Rows)
             {
-                ODonHangDaMua oDonHangDaMua = new ODonHangDaMua();
+                OSanPhamDaMua oDonHangDaMua = new OSanPhamDaMua();
                 // Lấy giá trị từng cột trong hàng hiện tại
                 string tenSP = row["TenSP"].ToString();
                 int MaDH = row.Field<int>("MaDH");

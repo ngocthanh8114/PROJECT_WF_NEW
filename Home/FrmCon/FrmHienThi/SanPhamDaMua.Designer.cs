@@ -1,6 +1,6 @@
 ﻿namespace Home.FrmCon.FrmHienThi
 {
-    partial class DonHangDaMua
+    partial class SanPhamDaMua
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DonHangDaMua));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SanPhamDaMua));
             this.guna2Panel9 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel8 = new Guna.UI2.WinForms.Guna2Panel();
             this.btnTimKiem = new Guna.UI.WinForms.GunaCircleButton();
@@ -120,9 +120,9 @@
             this.label4.Font = new System.Drawing.Font("Montserrat", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(37, 24);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(231, 32);
+            this.label4.Size = new System.Drawing.Size(234, 32);
             this.label4.TabIndex = 16;
-            this.label4.Text = "Đơn hàng đã mua";
+            this.label4.Text = "Sản phẩm đã mua";
             // 
             // panelNoiDung
             // 

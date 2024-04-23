@@ -18,11 +18,19 @@ namespace Home.DuLieu
 
 
 
+<<<<<<< HEAD
         private static string sqlCon = "Data Source=.;Initial Catalog=BanXeMay;User ID=sa;Password=123;Encrypt=False";
 
         public SqlConnection con = new SqlConnection(sqlCon);
 
         string strconn = "Data Source=.;Initial Catalog=BanXeMay;User ID=sa;Password=123;Encrypt=False";
+=======
+        private static string sqlCon = "Data Source=.;Initial Catalog=BanXeMay;Persist Security Info=True;User ID=sa;Password=123";
+
+        public SqlConnection con = new SqlConnection(sqlCon);
+
+        string strconn = "Data Source=.;Initial Catalog=BanXeMay;Persist Security Info=True;User ID=sa;Password=123";
+>>>>>>> 9b1212134c3b9e76507413ea0214c9292ab7ab2f
 
         SqlConnection conn = null;
 
