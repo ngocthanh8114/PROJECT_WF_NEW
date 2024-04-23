@@ -78,11 +78,6 @@
             "Từ 20 triệu đến 50 triệu",
             "Từ 50 triệu đến 150 triệu",
             "Trừ 150 triệu đến 300 triệu",
-            "Trên 300 triệu",
-            "Dưới 20 triệu",
-            "Từ 20 triệu đến 50 triệu",
-            "Từ 50 triệu đến 150 triệu",
-            "Từ 150 triệu đến 300 triệu",
             "Trên 300 triệu"});
             this.cbLocGia.Location = new System.Drawing.Point(23, 21);
             this.cbLocGia.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);

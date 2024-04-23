@@ -35,7 +35,7 @@ namespace Home.FrmCon
         private void btnDangXuat_Click(object sender, EventArgs e)
         {
             btnDiaChi.Checked = false;
-            btnDonHang.Checked = false;
+            btnSanPham.Checked = false;
             btnThongTin.Checked = false;
 
             FrmHome frmHome = this.ParentForm as FrmHome;
@@ -54,7 +54,7 @@ namespace Home.FrmCon
             panelNoiDung.Controls.Add(thongTin);
             btnThongTin.Checked = true;
             btnDiaChi.Checked = false;
-            btnDonHang.Checked = false;
+            btnSanPham.Checked = false;
             
         }
 
@@ -74,13 +74,13 @@ namespace Home.FrmCon
             quayLaiSanPham();
         }
 
-        private void btnDonHang_Click(object sender, EventArgs e)
+        private void btnSanPham_Click(object sender, EventArgs e)
         {
             SanPhamDaMua donHangDaMua = new SanPhamDaMua();
             panelNoiDung.Controls.Clear();
             panelNoiDung.Controls.Add(donHangDaMua);
             btnDiaChi.Checked = false;
-            btnDonHang.Checked = true;
+            btnSanPham.Checked = true;
             btnThongTin.Checked = false;
         }
 
@@ -90,7 +90,7 @@ namespace Home.FrmCon
             panelNoiDung.Controls.Clear();
             panelNoiDung.Controls.Add(diaChi);
             btnDiaChi.Checked = true;
-            btnDonHang.Checked = false;
+            btnSanPham.Checked = false;
             btnThongTin.Checked = false;
         }
 

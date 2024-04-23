@@ -82,6 +82,12 @@
     <Compile Include="FrmCon\FrmHienThi\DiaChi.Designer.cs">
       <DependentUpon>DiaChi.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmCon\FrmHienThi\DonHangDaMua.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmCon\FrmHienThi\DonHangDaMua.Designer.cs">
+      <DependentUpon>DonHangDaMua.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmCon\FrmHienThi\SanPhamDaMua.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -240,6 +246,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmCon\FrmHienThi\DiaChi.resx">
       <DependentUpon>DiaChi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCon\FrmHienThi\DonHangDaMua.resx">
+      <DependentUpon>DonHangDaMua.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmCon\FrmHienThi\SanPhamDaMua.resx">
       <DependentUpon>SanPhamDaMua.cs</DependentUpon>

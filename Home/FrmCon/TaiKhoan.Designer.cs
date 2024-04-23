@@ -36,9 +36,9 @@
             this.btnQC = new Guna.UI2.WinForms.Guna2PictureBox();
             this.panelNoiDung = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
-            this.btnDangXuat = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.btnBill = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnDiaChi = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.btnDonHang = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.btnSanPham = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnThongTin = new Guna.UI.WinForms.GunaAdvenceButton();
             this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
             this.lblSDT = new System.Windows.Forms.Label();
@@ -130,47 +130,46 @@
             // guna2Panel5
             // 
             this.guna2Panel5.BackColor = System.Drawing.Color.White;
-            this.guna2Panel5.Controls.Add(this.btnDangXuat);
+            this.guna2Panel5.Controls.Add(this.btnBill);
             this.guna2Panel5.Controls.Add(this.btnDiaChi);
-            this.guna2Panel5.Controls.Add(this.btnDonHang);
+            this.guna2Panel5.Controls.Add(this.btnSanPham);
             this.guna2Panel5.Controls.Add(this.btnThongTin);
             this.guna2Panel5.Location = new System.Drawing.Point(45, 470);
             this.guna2Panel5.Name = "guna2Panel5";
             this.guna2Panel5.Size = new System.Drawing.Size(330, 277);
             this.guna2Panel5.TabIndex = 13;
             // 
-            // btnDangXuat
+            // btnBill
             // 
-            this.btnDangXuat.AnimationHoverSpeed = 0.07F;
-            this.btnDangXuat.AnimationSpeed = 0.03F;
-            this.btnDangXuat.BaseColor = System.Drawing.Color.White;
-            this.btnDangXuat.BorderColor = System.Drawing.Color.Black;
-            this.btnDangXuat.CheckedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(232)))), ((int)(((byte)(233)))));
-            this.btnDangXuat.CheckedBorderColor = System.Drawing.Color.Black;
-            this.btnDangXuat.CheckedForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnDangXuat.CheckedImage = ((System.Drawing.Image)(resources.GetObject("btnDangXuat.CheckedImage")));
-            this.btnDangXuat.CheckedLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnDangXuat.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnDangXuat.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnDangXuat.FocusedColor = System.Drawing.Color.Empty;
-            this.btnDangXuat.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnDangXuat.ForeColor = System.Drawing.Color.Black;
-            this.btnDangXuat.Image = ((System.Drawing.Image)(resources.GetObject("btnDangXuat.Image")));
-            this.btnDangXuat.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnDangXuat.LineColor = System.Drawing.Color.White;
-            this.btnDangXuat.LineLeft = 5;
-            this.btnDangXuat.Location = new System.Drawing.Point(0, 207);
-            this.btnDangXuat.Name = "btnDangXuat";
-            this.btnDangXuat.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(249)))));
-            this.btnDangXuat.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnDangXuat.OnHoverForeColor = System.Drawing.Color.Black;
-            this.btnDangXuat.OnHoverImage = ((System.Drawing.Image)(resources.GetObject("btnDangXuat.OnHoverImage")));
-            this.btnDangXuat.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(249)))));
-            this.btnDangXuat.OnPressedColor = System.Drawing.Color.Black;
-            this.btnDangXuat.Size = new System.Drawing.Size(330, 69);
-            this.btnDangXuat.TabIndex = 3;
-            this.btnDangXuat.Text = "Đăng xuất";
-            this.btnDangXuat.Click += new System.EventHandler(this.btnDangXuat_Click);
+            this.btnBill.AnimationHoverSpeed = 0.07F;
+            this.btnBill.AnimationSpeed = 0.03F;
+            this.btnBill.BaseColor = System.Drawing.Color.White;
+            this.btnBill.BorderColor = System.Drawing.Color.Black;
+            this.btnBill.CheckedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(232)))), ((int)(((byte)(233)))));
+            this.btnBill.CheckedBorderColor = System.Drawing.Color.Black;
+            this.btnBill.CheckedForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnBill.CheckedImage = ((System.Drawing.Image)(resources.GetObject("btnBill.CheckedImage")));
+            this.btnBill.CheckedLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnBill.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnBill.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnBill.FocusedColor = System.Drawing.Color.Empty;
+            this.btnBill.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnBill.ForeColor = System.Drawing.Color.Black;
+            this.btnBill.Image = ((System.Drawing.Image)(resources.GetObject("btnBill.Image")));
+            this.btnBill.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnBill.LineColor = System.Drawing.Color.White;
+            this.btnBill.LineLeft = 5;
+            this.btnBill.Location = new System.Drawing.Point(0, 207);
+            this.btnBill.Name = "btnBill";
+            this.btnBill.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(249)))));
+            this.btnBill.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnBill.OnHoverForeColor = System.Drawing.Color.Black;
+            this.btnBill.OnHoverImage = ((System.Drawing.Image)(resources.GetObject("btnBill.OnHoverImage")));
+            this.btnBill.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(249)))));
+            this.btnBill.OnPressedColor = System.Drawing.Color.Black;
+            this.btnBill.Size = new System.Drawing.Size(330, 69);
+            this.btnBill.TabIndex = 3;
+            this.btnBill.Text = "Đơn hàng của tôi";
             // 
             // btnDiaChi
             // 
@@ -205,38 +204,38 @@
             this.btnDiaChi.Text = "Sổ địa chỉ nhận hàng";
             this.btnDiaChi.Click += new System.EventHandler(this.btnDiaChi_Click);
             // 
-            // btnDonHang
+            // btnSanPham
             // 
-            this.btnDonHang.AnimationHoverSpeed = 0.07F;
-            this.btnDonHang.AnimationSpeed = 0.03F;
-            this.btnDonHang.BaseColor = System.Drawing.Color.White;
-            this.btnDonHang.BorderColor = System.Drawing.Color.Black;
-            this.btnDonHang.CheckedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(232)))), ((int)(((byte)(233)))));
-            this.btnDonHang.CheckedBorderColor = System.Drawing.Color.Black;
-            this.btnDonHang.CheckedForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnDonHang.CheckedImage = ((System.Drawing.Image)(resources.GetObject("btnDonHang.CheckedImage")));
-            this.btnDonHang.CheckedLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnDonHang.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnDonHang.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnDonHang.FocusedColor = System.Drawing.Color.Empty;
-            this.btnDonHang.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnDonHang.ForeColor = System.Drawing.Color.Black;
-            this.btnDonHang.Image = ((System.Drawing.Image)(resources.GetObject("btnDonHang.Image")));
-            this.btnDonHang.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnDonHang.LineColor = System.Drawing.Color.White;
-            this.btnDonHang.LineLeft = 5;
-            this.btnDonHang.Location = new System.Drawing.Point(0, 69);
-            this.btnDonHang.Name = "btnDonHang";
-            this.btnDonHang.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(249)))));
-            this.btnDonHang.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnDonHang.OnHoverForeColor = System.Drawing.Color.Black;
-            this.btnDonHang.OnHoverImage = ((System.Drawing.Image)(resources.GetObject("btnDonHang.OnHoverImage")));
-            this.btnDonHang.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(249)))));
-            this.btnDonHang.OnPressedColor = System.Drawing.Color.Black;
-            this.btnDonHang.Size = new System.Drawing.Size(330, 69);
-            this.btnDonHang.TabIndex = 1;
-            this.btnDonHang.Text = "Đơn hàng của tôi";
-            this.btnDonHang.Click += new System.EventHandler(this.btnDonHang_Click);
+            this.btnSanPham.AnimationHoverSpeed = 0.07F;
+            this.btnSanPham.AnimationSpeed = 0.03F;
+            this.btnSanPham.BaseColor = System.Drawing.Color.White;
+            this.btnSanPham.BorderColor = System.Drawing.Color.Black;
+            this.btnSanPham.CheckedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(232)))), ((int)(((byte)(233)))));
+            this.btnSanPham.CheckedBorderColor = System.Drawing.Color.Black;
+            this.btnSanPham.CheckedForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnSanPham.CheckedImage = ((System.Drawing.Image)(resources.GetObject("btnSanPham.CheckedImage")));
+            this.btnSanPham.CheckedLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnSanPham.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnSanPham.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnSanPham.FocusedColor = System.Drawing.Color.Empty;
+            this.btnSanPham.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnSanPham.ForeColor = System.Drawing.Color.Black;
+            this.btnSanPham.Image = ((System.Drawing.Image)(resources.GetObject("btnSanPham.Image")));
+            this.btnSanPham.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnSanPham.LineColor = System.Drawing.Color.White;
+            this.btnSanPham.LineLeft = 5;
+            this.btnSanPham.Location = new System.Drawing.Point(0, 69);
+            this.btnSanPham.Name = "btnSanPham";
+            this.btnSanPham.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(249)))));
+            this.btnSanPham.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnSanPham.OnHoverForeColor = System.Drawing.Color.Black;
+            this.btnSanPham.OnHoverImage = ((System.Drawing.Image)(resources.GetObject("btnSanPham.OnHoverImage")));
+            this.btnSanPham.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(249)))));
+            this.btnSanPham.OnPressedColor = System.Drawing.Color.Black;
+            this.btnSanPham.Size = new System.Drawing.Size(330, 69);
+            this.btnSanPham.TabIndex = 1;
+            this.btnSanPham.Text = "Sản phẩm đã mua";
+            this.btnSanPham.Click += new System.EventHandler(this.btnSanPham_Click);
             // 
             // btnThongTin
             // 
@@ -496,10 +495,10 @@
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox3;
         private System.Windows.Forms.Label label2;
         private Guna.UI.WinForms.GunaAdvenceButton btnMua;
-        private Guna.UI.WinForms.GunaAdvenceButton btnDangXuat;
         private Guna.UI.WinForms.GunaAdvenceButton btnDiaChi;
-        private Guna.UI.WinForms.GunaAdvenceButton btnDonHang;
+        private Guna.UI.WinForms.GunaAdvenceButton btnSanPham;
         private Guna.UI2.WinForms.Guna2Panel panelNoiDung;
         private Guna.UI2.WinForms.Guna2PictureBox btnQC;
+        private Guna.UI.WinForms.GunaAdvenceButton btnBill;
     }
 }

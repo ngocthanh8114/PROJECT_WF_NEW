@@ -137,17 +137,39 @@ namespace Home.FrmCon
 
         private void btnThemAll_Click(object sender, EventArgs e)
         {
-            xl.turnTongTien();
-            panelNoiDung.Controls.Clear();
-            addDonHang(xl.doDuLieu());
-            btnMua.Enabled = true;
-            loadGiaTien();
+            if(panelNoiDung.Controls.Count == 0)
+            {
+                FrmBaoLoi frmBaoLoi = new FrmBaoLoi();
+                frmBaoLoi.BackColor = SystemColors.Window;
+                frmBaoLoi.hienThiLoi("Không có sản phẩm để thêm");
+                frmBaoLoi.ShowDialog();
+            }
+            else
+            {
+                xl.turnTongTien();
+                panelNoiDung.Controls.Clear();
+                addDonHang(xl.doDuLieu());
+                btnMua.Enabled = true;
+                loadGiaTien();
+            }
+            
 
         }
 
         private void btnXoaAll_Click(object sender, EventArgs e)
         {
-            DonHang_Load(sender, EventArgs.Empty);
+            if (panelNoiDung.Controls.Count == 0)
+            {
+                FrmBaoLoi frmBaoLoi = new FrmBaoLoi();
+                frmBaoLoi.BackColor = SystemColors.Window;
+                frmBaoLoi.hienThiLoi("Không có sản phẩm để xóa");
+                frmBaoLoi.ShowDialog();
+            }
+            else
+            {
+                DonHang_Load(sender, EventArgs.Empty);
+            }    
+            
         }
     }
 }

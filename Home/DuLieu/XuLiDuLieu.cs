@@ -92,11 +92,11 @@ namespace Home.DuLieu
         public DataTable TimKiemSanPham(string TenSP)
         {
             kn.myConnect();
-            string lenh = "SELECT * FROM SANPHAM WHERE TenSP LIKE @TenSP + '%'";
+            string lenh = "SELECT * FROM SANPHAM WHERE TenSP LIKE @TenSP";
             SqlCommand cmd = kn.con.CreateCommand();
             cmd.CommandText = lenh;
             SqlParameter sqlParameter = new SqlParameter("@TenSP", SqlDbType.NVarChar, 50);
-            sqlParameter.Value = TenSP;
+            sqlParameter.Value = '%' + TenSP + '%';
             cmd.Parameters.Add(sqlParameter);
 
             SqlDataAdapter da = new SqlDataAdapter(cmd);

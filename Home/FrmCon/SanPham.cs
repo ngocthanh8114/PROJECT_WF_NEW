@@ -98,6 +98,8 @@ namespace Home.FrmCon
             }
             else
             {
+                cboLoaiSP.ResetText();
+                cbLocGia.Visible=false;
                 if (xl.TimKiemSanPham(txtTimKiem.Text).Rows.Count > 0)
                 {
                     xl.Connection_CSDL();
