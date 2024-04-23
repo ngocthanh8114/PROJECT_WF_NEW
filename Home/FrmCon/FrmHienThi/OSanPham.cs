@@ -32,8 +32,6 @@ namespace Home.FrmCon.FrmHienThi
         private void btnDatHang_Click(object sender, EventArgs e)
         {
             XuLiDuLieu xl = new XuLiDuLieu();
-            
-
             // Them MaSP vao table DonHang_1
 
             //Lấy Giá
@@ -46,9 +44,20 @@ namespace Home.FrmCon.FrmHienThi
             int SL = (int)numSL.Value;
             Image anh = picBoxSP.Image;
 
-            xl.DatHang(MaSP, TenSP, Gia, SL, anh);
+            // Xử lí nếu số lượng = 0 thì không cho đặt và thông báo lên
+            if (SL > 0)
+            {
+                xl.DatHang(MaSP, TenSP, Gia, SL, anh);
+                numSL.Value = 1;
+            }
+            else
+            {
+                FrmBaoLoi frmBaoLoi = new FrmBaoLoi();
+                frmBaoLoi.hienThiLoi("Vui lòng kiểm tra lại số lượng sản phẩm!");
+                frmBaoLoi.Show();
+            }
 
-            numSL.Value = 1;
+            
             
 
 

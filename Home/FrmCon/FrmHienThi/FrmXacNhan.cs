@@ -34,5 +34,7 @@ namespace Home.FrmCon.FrmHienThi
         {
             this.Close();
         }
+
+        
     }
 }

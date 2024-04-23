@@ -76,7 +76,7 @@ namespace Home.FrmCon
 
         private void btnDonHang_Click(object sender, EventArgs e)
         {
-            DonHangDaMua donHangDaMua = new DonHangDaMua();
+            SanPhamDaMua donHangDaMua = new SanPhamDaMua();
             panelNoiDung.Controls.Clear();
             panelNoiDung.Controls.Add(donHangDaMua);
             btnDiaChi.Checked = false;

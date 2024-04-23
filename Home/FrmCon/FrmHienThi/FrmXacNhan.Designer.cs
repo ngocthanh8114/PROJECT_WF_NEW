@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblNoiDung = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btnKhong = new Guna.UI2.WinForms.Guna2Button();
             this.btnCo = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1.SuspendLayout();
@@ -41,28 +41,30 @@
             // guna2Panel1
             // 
             this.guna2Panel1.BorderThickness = 1;
-            this.guna2Panel1.Controls.Add(this.guna2HtmlLabel1);
+            this.guna2Panel1.Controls.Add(this.lbl);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(415, 46);
             this.guna2Panel1.TabIndex = 0;
             // 
-            // guna2HtmlLabel1
+            // lbl
             // 
-            this.guna2HtmlLabel1.AutoSize = false;
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(156, 8);
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(163, 28);
-            this.guna2HtmlLabel1.TabIndex = 0;
-            this.guna2HtmlLabel1.Text = "Xác nhận";
+            this.lbl.AutoSize = false;
+            this.lbl.BackColor = System.Drawing.Color.Transparent;
+            this.lbl.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl.Location = new System.Drawing.Point(0, 0);
+            this.lbl.Name = "lbl";
+            this.lbl.Size = new System.Drawing.Size(415, 46);
+            this.lbl.TabIndex = 0;
+            this.lbl.Text = "Xác nhận";
+            this.lbl.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // guna2Panel2
             // 
             this.guna2Panel2.BorderThickness = 1;
-            this.guna2Panel2.Controls.Add(this.guna2HtmlLabel2);
+            this.guna2Panel2.Controls.Add(this.lblNoiDung);
             this.guna2Panel2.Controls.Add(this.btnKhong);
             this.guna2Panel2.Controls.Add(this.btnCo);
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -71,16 +73,18 @@
             this.guna2Panel2.Size = new System.Drawing.Size(415, 210);
             this.guna2Panel2.TabIndex = 1;
             // 
-            // guna2HtmlLabel2
+            // lblNoiDung
             // 
-            this.guna2HtmlLabel2.AutoSize = false;
-            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(24, 60);
-            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(1009, 45);
-            this.guna2HtmlLabel2.TabIndex = 2;
-            this.guna2HtmlLabel2.Text = "Bạn có chắc chắn muốn xóa không?";
+            this.lblNoiDung.AutoSize = false;
+            this.lblNoiDung.BackColor = System.Drawing.Color.Transparent;
+            this.lblNoiDung.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblNoiDung.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNoiDung.Location = new System.Drawing.Point(0, 0);
+            this.lblNoiDung.Name = "lblNoiDung";
+            this.lblNoiDung.Size = new System.Drawing.Size(415, 137);
+            this.lblNoiDung.TabIndex = 2;
+            this.lblNoiDung.Text = "Bạn có chắc chắn muốn xóa không?";
+            this.lblNoiDung.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnKhong
             // 
@@ -136,8 +140,8 @@
 
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lbl;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblNoiDung;
         private Guna.UI2.WinForms.Guna2Button btnKhong;
         private Guna.UI2.WinForms.Guna2Button btnCo;
     }
