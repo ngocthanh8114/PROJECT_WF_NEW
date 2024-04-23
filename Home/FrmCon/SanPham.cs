@@ -63,12 +63,9 @@ namespace Home.FrmCon
 
         private void cboLoaiSP_SelectedIndexChanged(object sender, EventArgs e)
         {
-<<<<<<< HEAD
             txtTimKiem.Text = "";
             
-=======
             cbLocGia.SelectedIndex = -1;
->>>>>>> 9b1212134c3b9e76507413ea0214c9292ab7ab2f
             if (panelNoiDung != null)
             {
                 panelNoiDung.Controls.Clear();
@@ -77,65 +74,20 @@ namespace Home.FrmCon
             string LoaiSP = cboLoaiSP.Text;
             string MaLoai = xl.xuLiMaLoai(LoaiSP);
             addSanPham(xl.doDuLieu(MaLoai));
-<<<<<<< HEAD
             UpdateGiaComboBox();
         }
+
+       
+               
+
+        
         private void LocSanPham()
-=======
-            
-            if (LoaiSP != "Xe Phân Khối Lớn" && LoaiSP != "Xe Côn Tay" && LoaiSP != "Xe Tay Ga" && LoaiSP != "Xe Số")
-            {
-                cbLocGia.Visible = false;
-            }
-            else
-            {
-                cbLocGia.Visible = true;
-            }
-            
-        }
-        private void panelNoiDung_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void btnTimKiem_Click(object sender, EventArgs e)
-        {
-            if (txtTimKiem.Text == "")
-            {
-                FrmBaoLoi frmBaoLoi = new FrmBaoLoi();
-                frmBaoLoi.hienThiLoi("Bạn chưa nhập thông tin tìm kiếm");
-                frmBaoLoi.Show();
-            }
-            else
-            {
-                if (xl.TimKiemSanPham(txtTimKiem.Text).Rows.Count > 0)
-                {
-                    xl.Connection_CSDL();
-                    if (panelNoiDung.Controls.Count > 0)
-                    {
-                        panelNoiDung.Controls.Clear();
-                    }
-                    addSanPham(xl.TimKiemSanPham(txtTimKiem.Text));
-                }
-                else
-                {
-                    FrmBaoLoi frmBaoLoi = new FrmBaoLoi();
-                    frmBaoLoi.hienThiLoi("Không tìm thấy tên sản phẩm " + txtTimKiem.Text);
-                    frmBaoLoi.Show();
-                }
-                txtTimKiem.Text = "";
-                
-            }
-        }
-
-        private void cbLocGia_SelectedIndexChanged(object sender, EventArgs e)
->>>>>>> 9b1212134c3b9e76507413ea0214c9292ab7ab2f
         {
             if (panelNoiDung != null)
             {
                 panelNoiDung.Controls.Clear();
             }
-            
+
             string selectedGia = cbLocGia.SelectedItem as string;
             string selectedLoaiSP = cboLoaiSP.SelectedItem as string;
 
@@ -217,7 +169,12 @@ namespace Home.FrmCon
                     frmBaoLoi.Show();
                 }
             }
-
+            else
+            {
+                FrmBaoLoi frmBaoLoi = new FrmBaoLoi();
+                frmBaoLoi.hienThiLoi("Vui lòng chọn khoảng giá và loại sản phẩm để lọc sản phẩm.");
+                frmBaoLoi.Show();
+            }
         }
         private void UpdateGiaComboBox()
         {
@@ -287,6 +244,7 @@ namespace Home.FrmCon
 
         private void cbLocGia_SelectedIndexChanged(object sender, EventArgs e)
         {
+            txtTimKiem.Text = ""; 
             LocSanPham();
         }
 

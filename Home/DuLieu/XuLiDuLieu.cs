@@ -28,11 +28,9 @@ namespace Home.DuLieu
     internal class XuLiDuLieu
     {
         KetNoiCSDL kn = new KetNoiCSDL();
-<<<<<<< HEAD
+
         string strconn = "Data Source=.;Initial Catalog=BanXeMay;User ID=sa;Password=123;Encrypt=False";
-=======
-        string strconn = "Data Source=.;Initial Catalog=BanXeMay;Persist Security Info=True;User ID=sa;Password=123";
->>>>>>> 9b1212134c3b9e76507413ea0214c9292ab7ab2f
+
         SqlConnection conn = null;
 
         public void Connection_CSDL()
@@ -93,7 +91,7 @@ namespace Home.DuLieu
             return dt;
         }
 
-        public DataTable TimKiemSanPham(string TenSP)
+      /*  public DataTable TimKiemSanPham(string TenSP)
         {
             kn.myConnect();
             string lenh = "SELECT * FROM SANPHAM WHERE TenSP LIKE @TenSP + '%'";
@@ -108,7 +106,7 @@ namespace Home.DuLieu
             da.Fill(dt);
             return dt;
         }
-
+*/
         public Image ByteArrToImage(byte[] b)
         {
             MemoryStream m = new MemoryStream(b);

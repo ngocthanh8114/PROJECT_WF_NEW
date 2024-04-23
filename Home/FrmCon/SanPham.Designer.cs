@@ -49,24 +49,23 @@
             this.guna2Panel1.Controls.Add(this.cboLoaiSP);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
-<<<<<<< HEAD
+
 
             this.guna2Panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 
             this.guna2Panel1.Margin = new System.Windows.Forms.Padding(2);
 
-=======
             this.guna2Panel1.Margin = new System.Windows.Forms.Padding(2);
->>>>>>> 9b1212134c3b9e76507413ea0214c9292ab7ab2f
+
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(2051, 75);
             this.guna2Panel1.TabIndex = 3;
             // 
             // cbLocGia
-<<<<<<< HEAD
 
-=======
->>>>>>> 9b1212134c3b9e76507413ea0214c9292ab7ab2f
+
+
+
             // 
             this.cbLocGia.AutoRoundedCorners = true;
             this.cbLocGia.BackColor = System.Drawing.Color.Transparent;
@@ -104,7 +103,7 @@
             this.cbLocGia.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.cbLocGia.TextOffset = new System.Drawing.Point(10, 3);
             this.cbLocGia.SelectedIndexChanged += new System.EventHandler(this.cbLocGia_SelectedIndexChanged);
-<<<<<<< HEAD
+
 
             // 
             this.cbLocGia.AutoRoundedCorners = true;
@@ -138,8 +137,7 @@
             this.cbLocGia.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.cbLocGia.TextOffset = new System.Drawing.Point(10, 3);
             this.cbLocGia.SelectedIndexChanged += new System.EventHandler(this.cbLocGia_SelectedIndexChanged);
-=======
->>>>>>> 9b1212134c3b9e76507413ea0214c9292ab7ab2f
+
             // 
             // btnTimKiem
             // 
@@ -156,7 +154,7 @@
             this.btnTimKiem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnTimKiem.ForeColor = System.Drawing.Color.White;
             this.btnTimKiem.Image = ((System.Drawing.Image)(resources.GetObject("btnTimKiem.Image")));
-<<<<<<< HEAD
+
             this.btnTimKiem.ImageSize = new System.Drawing.Size(30, 30);
             this.btnTimKiem.Location = new System.Drawing.Point(1220, 8);
             this.btnTimKiem.Margin = new System.Windows.Forms.Padding(2);
@@ -263,10 +261,10 @@
             this.btnTimKiem.Image = ((System.Drawing.Image)(resources.GetObject("btnTimKiem.Image")));
             this.btnTimKiem.ImageSize = new System.Drawing.Size(30, 30);
             this.btnTimKiem.Location = new System.Drawing.Point(1627, 21);
-=======
+
             this.btnTimKiem.ImageSize = new System.Drawing.Size(20, 20);
             this.btnTimKiem.Location = new System.Drawing.Point(1963, 20);
->>>>>>> 9b1212134c3b9e76507413ea0214c9292ab7ab2f
+
             this.btnTimKiem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnTimKiem.Name = "btnTimKiem";
             this.btnTimKiem.OnHoverBaseColor = System.Drawing.Color.Coral;
@@ -360,15 +358,15 @@
             this.Controls.Add(this.panelNoiDung);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2Panel1);
-<<<<<<< HEAD
+
 
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 
             this.Margin = new System.Windows.Forms.Padding(2);
 
-=======
+
             this.Margin = new System.Windows.Forms.Padding(2);
->>>>>>> 9b1212134c3b9e76507413ea0214c9292ab7ab2f
+
             this.Name = "SanPham";
             this.Size = new System.Drawing.Size(2051, 889);
             this.Load += new System.EventHandler(this.SanPham_Load);
