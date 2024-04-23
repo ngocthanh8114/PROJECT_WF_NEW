@@ -43,6 +43,7 @@ namespace Home.FrmCon
         }
 
 
+
         public void SanPham_Load(object sender, EventArgs e)
         {
             
@@ -57,10 +58,12 @@ namespace Home.FrmCon
             }
             
             cboLoaiSP.StartIndex = 4;
+
         }
 
         private void cboLoaiSP_SelectedIndexChanged(object sender, EventArgs e)
         {
+            cbLocGia.SelectedIndex = -1;
             if (panelNoiDung != null)
             {
                 panelNoiDung.Controls.Clear();
@@ -69,6 +72,16 @@ namespace Home.FrmCon
             string LoaiSP = cboLoaiSP.Text;
             string MaLoai = xl.xuLiMaLoai(LoaiSP);
             addSanPham(xl.doDuLieu(MaLoai));
+            
+            if (LoaiSP != "Xe Phân Khối Lớn" && LoaiSP != "Xe Côn Tay" && LoaiSP != "Xe Tay Ga" && LoaiSP != "Xe Số")
+            {
+                cbLocGia.Visible = false;
+            }
+            else
+            {
+                cbLocGia.Visible = true;
+            }
+            
         }
         private void panelNoiDung_Paint(object sender, PaintEventArgs e)
         {
@@ -101,7 +114,7 @@ namespace Home.FrmCon
                     frmBaoLoi.Show();
                 }
                 txtTimKiem.Text = "";
-                cbLocGia.SelectedIndex = -1;
+                
             }
         }
 
@@ -111,7 +124,7 @@ namespace Home.FrmCon
             {
                 panelNoiDung.Controls.Clear();
             }
-
+            
             string selectedGia = cbLocGia.SelectedItem as string;
             string selectedLoaiSP = cboLoaiSP.SelectedItem as string;
 
@@ -157,12 +170,7 @@ namespace Home.FrmCon
                     frmBaoLoi.Show();
                 }
             }
-            else
-            {
-                FrmBaoLoi frmBaoLoi = new FrmBaoLoi();
-                frmBaoLoi.hienThiLoi("Vui lòng chọn khoảng giá và loại sản phẩm để lọc sản phẩm.");
-                frmBaoLoi.Show();
-            }
+
         }
 
     }

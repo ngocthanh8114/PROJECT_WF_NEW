@@ -41,7 +41,7 @@
             // 
             // guna2Panel1
             // 
-            this.guna2Panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.guna2Panel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2Panel1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.guna2Panel1.Controls.Add(this.cbLocGia);
             this.guna2Panel1.Controls.Add(this.btnTimKiem);
@@ -49,7 +49,7 @@
             this.guna2Panel1.Controls.Add(this.cboLoaiSP);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(2051, 75);
             this.guna2Panel1.TabIndex = 3;
@@ -77,6 +77,11 @@
             "Dưới 20 triệu",
             "Từ 20 triệu đến 50 triệu",
             "Từ 50 triệu đến 150 triệu",
+            "Trừ 150 triệu đến 300 triệu",
+            "Trên 300 triệu",
+            "Dưới 20 triệu",
+            "Từ 20 triệu đến 50 triệu",
+            "Từ 50 triệu đến 150 triệu",
             "Từ 150 triệu đến 300 triệu",
             "Trên 300 triệu"});
             this.cbLocGia.Location = new System.Drawing.Point(23, 21);
@@ -95,7 +100,7 @@
             this.btnTimKiem.AnimationSpeed = 0.03F;
             this.btnTimKiem.BackColor = System.Drawing.Color.Transparent;
             this.btnTimKiem.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnTimKiem.BackgroundImage")));
-            this.btnTimKiem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnTimKiem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnTimKiem.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnTimKiem.BorderColor = System.Drawing.Color.Black;
             this.btnTimKiem.DialogResult = System.Windows.Forms.DialogResult.None;
@@ -104,7 +109,7 @@
             this.btnTimKiem.ForeColor = System.Drawing.Color.White;
             this.btnTimKiem.Image = ((System.Drawing.Image)(resources.GetObject("btnTimKiem.Image")));
             this.btnTimKiem.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnTimKiem.Location = new System.Drawing.Point(1990, 21);
+            this.btnTimKiem.Location = new System.Drawing.Point(1963, 20);
             this.btnTimKiem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnTimKiem.Name = "btnTimKiem";
             this.btnTimKiem.OnHoverBaseColor = System.Drawing.Color.Coral;
@@ -112,7 +117,7 @@
             this.btnTimKiem.OnHoverForeColor = System.Drawing.Color.White;
             this.btnTimKiem.OnHoverImage = null;
             this.btnTimKiem.OnPressedColor = System.Drawing.Color.Black;
-            this.btnTimKiem.Size = new System.Drawing.Size(36, 36);
+            this.btnTimKiem.Size = new System.Drawing.Size(50, 47);
             this.btnTimKiem.TabIndex = 5;
             this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
             // 
@@ -120,9 +125,8 @@
             // 
             this.txtTimKiem.Animated = true;
             this.txtTimKiem.AutoRoundedCorners = true;
-            this.txtTimKiem.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtTimKiem.BorderRadius = 17;
-            this.txtTimKiem.BorderThickness = 2;
+            this.txtTimKiem.BorderColor = System.Drawing.Color.Gray;
+            this.txtTimKiem.BorderRadius = 22;
             this.txtTimKiem.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtTimKiem.DefaultText = "";
             this.txtTimKiem.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -132,13 +136,13 @@
             this.txtTimKiem.FocusedState.BorderColor = System.Drawing.Color.Tomato;
             this.txtTimKiem.Font = new System.Drawing.Font("Segoe UI", 10.2F);
             this.txtTimKiem.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTimKiem.Location = new System.Drawing.Point(1611, 21);
+            this.txtTimKiem.Location = new System.Drawing.Point(1626, 20);
             this.txtTimKiem.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtTimKiem.Name = "txtTimKiem";
             this.txtTimKiem.PasswordChar = '\0';
             this.txtTimKiem.PlaceholderText = "Tìm kiếm";
             this.txtTimKiem.SelectedText = "";
-            this.txtTimKiem.Size = new System.Drawing.Size(371, 36);
+            this.txtTimKiem.Size = new System.Drawing.Size(324, 47);
             this.txtTimKiem.TabIndex = 4;
             // 
             // cboLoaiSP
@@ -160,10 +164,10 @@
             this.cboLoaiSP.HoverState.ForeColor = System.Drawing.Color.Tomato;
             this.cboLoaiSP.IntegralHeight = false;
             this.cboLoaiSP.ItemHeight = 30;
-            this.cboLoaiSP.Location = new System.Drawing.Point(773, 21);
+            this.cboLoaiSP.Location = new System.Drawing.Point(754, 21);
             this.cboLoaiSP.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboLoaiSP.Name = "cboLoaiSP";
-            this.cboLoaiSP.Size = new System.Drawing.Size(459, 36);
+            this.cboLoaiSP.Size = new System.Drawing.Size(542, 36);
             this.cboLoaiSP.TabIndex = 3;
             this.cboLoaiSP.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.cboLoaiSP.TextOffset = new System.Drawing.Point(10, 3);
@@ -199,7 +203,7 @@
             this.Controls.Add(this.panelNoiDung);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2Panel1);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "SanPham";
             this.Size = new System.Drawing.Size(2051, 889);
             this.Load += new System.EventHandler(this.SanPham_Load);
