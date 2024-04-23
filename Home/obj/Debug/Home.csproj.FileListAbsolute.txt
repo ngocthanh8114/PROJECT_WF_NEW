@@ -435,7 +435,6 @@ E:\study\NAM_2_KI_2\LAP_TRINH_WINDOWS\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Hom
 E:\study\NAM_2_KI_2\LAP_TRINH_WINDOWS\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.pdb
 >>>>>>> 576e5ab1c21e31974fc8fa8c4ecd7cfb917b918b
 D:\DKCK\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.SuaDiaChi.resources
-<<<<<<< HEAD
 C:\Users\PC\OneDrive\Desktop\New folder (6)\PROJECT_WF_NEW\Home\obj\Debug\Home.csproj.AssemblyReference.cache
 C:\Users\PC\OneDrive\Desktop\New folder (6)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmAdmin.resources
 C:\Users\PC\OneDrive\Desktop\New folder (6)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.DonHang.resources
@@ -475,7 +474,6 @@ C:\Users\PC\OneDrive\Desktop\New folder (6)\PROJECT_WF_NEW\Home\bin\Debug\Guna.U
 C:\Users\PC\OneDrive\Desktop\New folder (6)\PROJECT_WF_NEW\Home\obj\Debug\Home.csproj.Up2Date
 C:\Users\PC\OneDrive\Desktop\New folder (6)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.FrmHoaDon.resources
 C:\Users\PC\OneDrive\Desktop\New folder (6)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmThongTinDH.resources
-=======
 >>>>>>> da1fe6878ff4a88bba730932ec568d736db6a9f5
 D:\CODE C#\Đồ Án C#\PROJECT_WF_NEW\Home\obj\Debug\Home.csproj.AssemblyReference.cache
 D:\CODE C#\Đồ Án C#\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmAdmin.resources

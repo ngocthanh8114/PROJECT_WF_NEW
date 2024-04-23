@@ -28,7 +28,7 @@ namespace Home.DuLieu
     internal class XuLiDuLieu
     {
         KetNoiCSDL kn = new KetNoiCSDL();
-        string strconn = "Data Source=LAPTOP-IGR3NG0G\\THANHAN;Initial Catalog=BanXeMay;Integrated Security=True;Encrypt=False";
+        string strconn = "Data Source=.;Initial Catalog=BanXeMay;User ID=sa;Password=123;Encrypt=False";
         SqlConnection conn = null;
 
         public void Connection_CSDL()
@@ -1265,6 +1265,35 @@ namespace Home.DuLieu
                 connection.Close();
             }
         }
+        //Tìm kiếm sản phẩm theo loại
+        public DataTable TimKiemSanPhamTheoLoai(string timKiem, string maLoaiSP)
+        {
+            DataTable dt = new DataTable();
+            try
+            {
+                Connection_CSDL();
+                string query = "SELECT * FROM SanPham WHERE MaLoai = @MaLoai AND TenSP LIKE '%' + @TimKiem + '%'";
+                SqlCommand cmd = new SqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@TimKiem", timKiem);
+                cmd.Parameters.AddWithValue("@MaLoai", maLoaiSP);
+                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                adapter.Fill(dt);
+            }
+            catch (Exception ex)
+            {
+               MessageBox.Show("Lỗi: " + ex.Message);
+            }
+            finally
+            {
+                if (conn.State == ConnectionState.Open)
+                {
+                    conn.Close();
+                }
+            }
+            return dt;
+        }
+
+
 
     }
 }

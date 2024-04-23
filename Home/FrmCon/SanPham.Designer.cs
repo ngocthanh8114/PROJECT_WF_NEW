@@ -49,17 +49,17 @@
             this.guna2Panel1.Controls.Add(this.cboLoaiSP);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
-<<<<<<< HEAD
+
             this.guna2Panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-=======
+
             this.guna2Panel1.Margin = new System.Windows.Forms.Padding(2);
->>>>>>> 92cbfe04b132fc2bf2f528e2e2f09f400713666b
+
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(2051, 75);
             this.guna2Panel1.TabIndex = 3;
             // 
             // cbLocGia
-<<<<<<< HEAD
+
             // 
             this.cbLocGia.AutoRoundedCorners = true;
             this.cbLocGia.BackColor = System.Drawing.Color.Transparent;
@@ -92,7 +92,7 @@
             this.cbLocGia.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.cbLocGia.TextOffset = new System.Drawing.Point(10, 3);
             this.cbLocGia.SelectedIndexChanged += new System.EventHandler(this.cbLocGia_SelectedIndexChanged);
-=======
+
             // 
             this.cbLocGia.AutoRoundedCorners = true;
             this.cbLocGia.BackColor = System.Drawing.Color.Transparent;
@@ -228,7 +228,7 @@
             this.panelNoiDung.Size = new System.Drawing.Size(1538, 658);
             this.panelNoiDung.TabIndex = 2;
             this.panelNoiDung.Paint += new System.Windows.Forms.PaintEventHandler(this.panelNoiDung_Paint);
->>>>>>> 92cbfe04b132fc2bf2f528e2e2f09f400713666b
+
             // 
             // btnTimKiem
             // 
@@ -341,11 +341,11 @@
             this.Controls.Add(this.panelNoiDung);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2Panel1);
-<<<<<<< HEAD
+
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-=======
+
             this.Margin = new System.Windows.Forms.Padding(2);
->>>>>>> 92cbfe04b132fc2bf2f528e2e2f09f400713666b
+
             this.Name = "SanPham";
             this.Size = new System.Drawing.Size(2051, 889);
             this.Load += new System.EventHandler(this.SanPham_Load);
