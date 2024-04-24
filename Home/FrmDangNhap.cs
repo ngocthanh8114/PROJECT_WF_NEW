@@ -69,6 +69,11 @@ namespace Home
         {
             if (e.KeyChar == 13)
                 btnDangNhap.Focus();
+
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                btnDangNhap_Click(sender, e);
+            }
         }
 
         private void btnDangNhap_KeyPress(object sender, KeyPressEventArgs e)

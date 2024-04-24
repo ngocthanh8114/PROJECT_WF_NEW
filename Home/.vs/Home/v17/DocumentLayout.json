@@ -1,129 +1,129 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\",
+  "WorkspaceRootPath": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (7)\\PROJECT_WF_NEW\\Home\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|e:\\study\\nam_2_ki_2\\lap_trinh_windows\\banxemay\\project_wf_new\\home\\frmcon\\frmhienthi\\osanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|solutionrelative:frmcon\\frmhienthi\\osanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\frmcon\\frmhienthi\\osanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|solutionrelative:frmcon\\frmhienthi\\osanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|e:\\study\\nam_2_ki_2\\lap_trinh_windows\\banxemay\\project_wf_new\\home\\frmcon\\frmhienthi\\frmsuadiachi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|solutionrelative:frmcon\\frmhienthi\\frmsuadiachi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\frmcon\\frmhienthi\\odiachi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|solutionrelative:frmcon\\frmhienthi\\odiachi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\frmcon\\frmhienthi\\odiachi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|solutionrelative:frmcon\\frmhienthi\\odiachi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\frmcon\\frmhienthi\\frmmuahang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|solutionrelative:frmcon\\frmhienthi\\frmmuahang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|e:\\study\\nam_2_ki_2\\lap_trinh_windows\\banxemay\\project_wf_new\\home\\frmcon\\frmhienthi\\frmmuahang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|solutionrelative:frmcon\\frmhienthi\\frmmuahang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|e:\\study\\nam_2_ki_2\\lap_trinh_windows\\banxemay\\project_wf_new\\home\\dulieu\\xulidulieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|solutionrelative:dulieu\\xulidulieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\frmcon\\sanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|solutionrelative:frmcon\\sanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\frmcon\\sanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|solutionrelative:frmcon\\sanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\frmcon\\sanpham.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|solutionrelative:frmcon\\sanpham.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\dulieu\\ketnoicsdl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|solutionrelative:dulieu\\ketnoicsdl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\frmcon\\frmhienthi\\frmxacnhan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|solutionrelative:frmcon\\frmhienthi\\frmxacnhan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\frmcon\\frmhienthi\\frmthongtindh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|solutionrelative:frmcon\\frmhienthi\\frmthongtindh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\frmcon\\frmhienthi\\frmthongbao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|solutionrelative:frmcon\\frmhienthi\\frmthongbao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\frmcon\\frmhienthi\\frmcapnhathh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|solutionrelative:frmcon\\frmhienthi\\frmcapnhathh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\frmcon\\frmhienthi\\frmcapnhattt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|solutionrelative:frmcon\\frmhienthi\\frmcapnhattt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\frmcon\\frmhienthi\\diachi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|solutionrelative:frmcon\\frmhienthi\\diachi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\dulieu\\madonhanghientai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|solutionrelative:dulieu\\madonhanghientai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\dulieu\\taikhoandangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|solutionrelative:dulieu\\taikhoandangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\frmdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|c:\\users\\pc\\onedrive\\desktop\\new folder (7)\\project_wf_new\\home\\frmdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|solutionrelative:frmdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\frmdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|C:\\Users\\PC\\OneDrive\\Desktop\\New folder (7)\\PROJECT_WF_NEW\\Home\\dulieu\\xulidulieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|solutionrelative:dulieu\\xulidulieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|C:\\Users\\PC\\OneDrive\\Desktop\\New folder (7)\\PROJECT_WF_NEW\\Home\\frmdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|solutionrelative:frmdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\frmcon\\frmhienthi\\frmthongtindh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|C:\\Users\\PC\\OneDrive\\Desktop\\New folder (7)\\PROJECT_WF_NEW\\Home\\frmcon\\frmhienthi\\osanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|solutionrelative:frmcon\\frmhienthi\\osanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|C:\\Users\\PC\\OneDrive\\Desktop\\New folder (7)\\PROJECT_WF_NEW\\Home\\frmcon\\frmhienthi\\osanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|solutionrelative:frmcon\\frmhienthi\\osanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|C:\\Users\\PC\\OneDrive\\Desktop\\New folder (7)\\PROJECT_WF_NEW\\Home\\frmcon\\frmhienthi\\frmsuadiachi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|solutionrelative:frmcon\\frmhienthi\\frmsuadiachi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|C:\\Users\\PC\\OneDrive\\Desktop\\New folder (7)\\PROJECT_WF_NEW\\Home\\frmcon\\frmhienthi\\odiachi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|solutionrelative:frmcon\\frmhienthi\\odiachi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|C:\\Users\\PC\\OneDrive\\Desktop\\New folder (7)\\PROJECT_WF_NEW\\Home\\frmcon\\frmhienthi\\odiachi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|solutionrelative:frmcon\\frmhienthi\\odiachi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|C:\\Users\\PC\\OneDrive\\Desktop\\New folder (7)\\PROJECT_WF_NEW\\Home\\frmcon\\frmhienthi\\frmmuahang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|solutionrelative:frmcon\\frmhienthi\\frmmuahang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|C:\\Users\\PC\\OneDrive\\Desktop\\New folder (7)\\PROJECT_WF_NEW\\Home\\frmcon\\frmhienthi\\frmmuahang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|solutionrelative:frmcon\\frmhienthi\\frmmuahang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|C:\\Users\\PC\\OneDrive\\Desktop\\New folder (7)\\PROJECT_WF_NEW\\Home\\frmcon\\sanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|solutionrelative:frmcon\\sanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|C:\\Users\\PC\\OneDrive\\Desktop\\New folder (7)\\PROJECT_WF_NEW\\Home\\frmcon\\sanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|solutionrelative:frmcon\\sanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|C:\\Users\\PC\\OneDrive\\Desktop\\New folder (7)\\PROJECT_WF_NEW\\Home\\frmcon\\sanpham.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|solutionrelative:frmcon\\sanpham.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|C:\\Users\\PC\\OneDrive\\Desktop\\New folder (7)\\PROJECT_WF_NEW\\Home\\dulieu\\ketnoicsdl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|solutionrelative:dulieu\\ketnoicsdl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|C:\\Users\\PC\\OneDrive\\Desktop\\New folder (7)\\PROJECT_WF_NEW\\Home\\frmcon\\frmhienthi\\frmxacnhan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|solutionrelative:frmcon\\frmhienthi\\frmxacnhan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|C:\\Users\\PC\\OneDrive\\Desktop\\New folder (7)\\PROJECT_WF_NEW\\Home\\frmcon\\frmhienthi\\frmthongtindh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|solutionrelative:frmcon\\frmhienthi\\frmthongtindh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|C:\\Users\\PC\\OneDrive\\Desktop\\New folder (7)\\PROJECT_WF_NEW\\Home\\frmcon\\frmhienthi\\frmthongbao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|solutionrelative:frmcon\\frmhienthi\\frmthongbao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|C:\\Users\\PC\\OneDrive\\Desktop\\New folder (7)\\PROJECT_WF_NEW\\Home\\frmcon\\frmhienthi\\frmcapnhathh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|solutionrelative:frmcon\\frmhienthi\\frmcapnhathh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|C:\\Users\\PC\\OneDrive\\Desktop\\New folder (7)\\PROJECT_WF_NEW\\Home\\frmcon\\frmhienthi\\frmcapnhattt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|solutionrelative:frmcon\\frmhienthi\\frmcapnhattt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|C:\\Users\\PC\\OneDrive\\Desktop\\New folder (7)\\PROJECT_WF_NEW\\Home\\frmcon\\frmhienthi\\diachi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|solutionrelative:frmcon\\frmhienthi\\diachi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|C:\\Users\\PC\\OneDrive\\Desktop\\New folder (7)\\PROJECT_WF_NEW\\Home\\dulieu\\madonhanghientai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|solutionrelative:dulieu\\madonhanghientai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|C:\\Users\\PC\\OneDrive\\Desktop\\New folder (7)\\PROJECT_WF_NEW\\Home\\dulieu\\taikhoandangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|solutionrelative:dulieu\\taikhoandangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|C:\\Users\\PC\\OneDrive\\Desktop\\New folder (7)\\PROJECT_WF_NEW\\Home\\frmcon\\frmhienthi\\frmthongtindh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|solutionrelative:frmcon\\frmhienthi\\frmthongtindh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\frmcon\\frmhienthi\\frmbaoloi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|C:\\Users\\PC\\OneDrive\\Desktop\\New folder (7)\\PROJECT_WF_NEW\\Home\\frmcon\\frmhienthi\\frmbaoloi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|solutionrelative:frmcon\\frmhienthi\\frmbaoloi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\frmcon\\frmhienthi\\osanphamadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|C:\\Users\\PC\\OneDrive\\Desktop\\New folder (7)\\PROJECT_WF_NEW\\Home\\frmcon\\frmhienthi\\osanphamadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|solutionrelative:frmcon\\frmhienthi\\osanphamadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\frmcon\\taikhoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|C:\\Users\\PC\\OneDrive\\Desktop\\New folder (7)\\PROJECT_WF_NEW\\Home\\frmcon\\taikhoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|solutionrelative:frmcon\\taikhoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\frmquenmatkhau.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|C:\\Users\\PC\\OneDrive\\Desktop\\New folder (7)\\PROJECT_WF_NEW\\Home\\frmquenmatkhau.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|solutionrelative:frmquenmatkhau.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\frmhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|C:\\Users\\PC\\OneDrive\\Desktop\\New folder (7)\\PROJECT_WF_NEW\\Home\\frmhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|solutionrelative:frmhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\frmcon\\taikhoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|C:\\Users\\PC\\OneDrive\\Desktop\\New folder (7)\\PROJECT_WF_NEW\\Home\\frmcon\\taikhoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|solutionrelative:frmcon\\taikhoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\frmcon\\taikhoan.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|C:\\Users\\PC\\OneDrive\\Desktop\\New folder (7)\\PROJECT_WF_NEW\\Home\\frmcon\\taikhoan.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|solutionrelative:frmcon\\taikhoan.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\frmcon\\frmhienthi\\othem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|C:\\Users\\PC\\OneDrive\\Desktop\\New folder (7)\\PROJECT_WF_NEW\\Home\\frmcon\\frmhienthi\\othem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|solutionrelative:frmcon\\frmhienthi\\othem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -149,126 +149,153 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 8,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "OSanPham.cs",
-              "DocumentMoniker": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmHienThi\\OSanPham.cs",
-              "RelativeDocumentMoniker": "FrmCon\\FrmHienThi\\OSanPham.cs",
-              "ToolTip": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmHienThi\\OSanPham.cs",
-              "RelativeToolTip": "FrmCon\\FrmHienThi\\OSanPham.cs",
-              "ViewState": "AQIAACsAAAAAAAAAAAAcwEUAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T11:34:53.588Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FrmSuaDiaChi.cs",
-              "DocumentMoniker": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmHienThi\\FrmSuaDiaChi.cs",
-              "RelativeDocumentMoniker": "FrmCon\\FrmHienThi\\FrmSuaDiaChi.cs",
-              "ToolTip": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmHienThi\\FrmSuaDiaChi.cs",
-              "RelativeToolTip": "FrmCon\\FrmHienThi\\FrmSuaDiaChi.cs",
-              "ViewState": "AQIAAE0AAAAAAAAAAAAcwDMAAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T11:34:08.483Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ODiaChi.cs [Design]",
-              "DocumentMoniker": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmHienThi\\ODiaChi.cs",
-              "RelativeDocumentMoniker": "FrmCon\\FrmHienThi\\ODiaChi.cs",
-              "ToolTip": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmHienThi\\ODiaChi.cs [Design]",
-              "RelativeToolTip": "FrmCon\\FrmHienThi\\ODiaChi.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T19:25:03.51Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 1,
               "Title": "XuLiDuLieu.cs",
-              "DocumentMoniker": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\DuLieu\\XuLiDuLieu.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (7)\\PROJECT_WF_NEW\\Home\\DuLieu\\XuLiDuLieu.cs",
               "RelativeDocumentMoniker": "DuLieu\\XuLiDuLieu.cs",
-              "ToolTip": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\DuLieu\\XuLiDuLieu.cs",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (7)\\PROJECT_WF_NEW\\Home\\DuLieu\\XuLiDuLieu.cs",
               "RelativeToolTip": "DuLieu\\XuLiDuLieu.cs",
-              "ViewState": "AQIAALUEAAAAAAAAAAAAwLAEAAAbAAAA",
+              "ViewState": "AQIAABgBAAAAAAAAAAAAAC0BAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-22T14:53:57.281Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-22T14:53:57.281Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "SanPham.cs [Design]",
-              "DocumentMoniker": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\FrmCon\\SanPham.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (7)\\PROJECT_WF_NEW\\Home\\FrmCon\\SanPham.cs",
               "RelativeDocumentMoniker": "FrmCon\\SanPham.cs",
               "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (6)\\PROJECT_WF_NEW\\Home\\FrmCon\\SanPham.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\New folder (6)\\PROJECT_WF_NEW\\Home\\FrmCon\\SanPham.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-23T07:54:08.527Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "FrmMuaHang.cs",
-              "DocumentMoniker": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmHienThi\\FrmMuaHang.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (7)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmHienThi\\FrmMuaHang.cs",
               "RelativeDocumentMoniker": "FrmCon\\FrmHienThi\\FrmMuaHang.cs",
-              "ToolTip": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmHienThi\\FrmMuaHang.cs",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (7)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmHienThi\\FrmMuaHang.cs",
               "RelativeToolTip": "FrmCon\\FrmHienThi\\FrmMuaHang.cs",
               "ViewState": "AQIAAEkAAAAAAAAAAIA0wHEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-22T14:28:52.605Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-22T14:28:52.605Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "OSanPham.cs [Design]",
-              "DocumentMoniker": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmHienThi\\OSanPham.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (7)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmHienThi\\OSanPham.cs",
               "RelativeDocumentMoniker": "FrmCon\\FrmHienThi\\OSanPham.cs",
               "ToolTip": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmHienThi\\OSanPham.cs [Design]",
-              "RelativeToolTip": "FrmCon\\FrmHienThi\\OSanPham.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-22T14:16:50.136Z",
+              "WhenOpened": "2024-04-22T14:16:50.136Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FrmDangNhap.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (7)\\PROJECT_WF_NEW\\Home\\FrmDangNhap.cs",
+              "RelativeDocumentMoniker": "FrmDangNhap.cs",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (7)\\PROJECT_WF_NEW\\Home\\FrmDangNhap.cs [Design]",
+              "RelativeToolTip": "FrmDangNhap.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T19:20:25.695Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "FrmMuaHang.cs [Design]",
-              "DocumentMoniker": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmHienThi\\FrmMuaHang.cs",
-              "RelativeDocumentMoniker": "FrmCon\\FrmHienThi\\FrmMuaHang.cs",
-              "ToolTip": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmHienThi\\FrmMuaHang.cs [Design]",
-              "RelativeToolTip": "FrmCon\\FrmHienThi\\FrmMuaHang.cs [Design]",
+              "DocumentIndex": 0,
+              "Title": "FrmDangNhap.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (7)\\PROJECT_WF_NEW\\Home\\FrmDangNhap.cs",
+              "RelativeDocumentMoniker": "FrmDangNhap.cs",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (7)\\PROJECT_WF_NEW\\Home\\FrmDangNhap.cs",
+              "RelativeToolTip": "FrmDangNhap.cs",
+              "ViewState": "AQIAADcAAAAAAAAAAAAQwEoAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T11:33:18.073Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-04-21T19:20:52.953Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "ODiaChi.cs",
-              "DocumentMoniker": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmHienThi\\ODiaChi.cs",
-              "RelativeDocumentMoniker": "FrmCon\\FrmHienThi\\ODiaChi.cs",
-              "ToolTip": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmHienThi\\ODiaChi.cs",
-              "RelativeToolTip": "FrmCon\\FrmHienThi\\ODiaChi.cs",
-              "ViewState": "AQIAACwAAAAAAAAAAAAhwEMAAAA1AAAA",
+              "Title": "OSanPham.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (7)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmHienThi\\OSanPham.cs",
+              "RelativeDocumentMoniker": "FrmCon\\FrmHienThi\\OSanPham.cs",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (7)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmHienThi\\OSanPham.cs",
+              "RelativeToolTip": "FrmCon\\FrmHienThi\\OSanPham.cs",
+              "ViewState": "AQIAACsAAAAAAAAAAAAcwEUAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T19:29:35.286Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-23T11:34:53.588Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 7,
+              "Title": "ODiaChi.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (7)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmHienThi\\ODiaChi.cs",
+              "RelativeDocumentMoniker": "FrmCon\\FrmHienThi\\ODiaChi.cs",
+              "ToolTip": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmHienThi\\ODiaChi.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T19:25:03.51Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FrmSuaDiaChi.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (7)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmHienThi\\FrmSuaDiaChi.cs",
+              "RelativeDocumentMoniker": "FrmCon\\FrmHienThi\\FrmSuaDiaChi.cs",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (7)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmHienThi\\FrmSuaDiaChi.cs",
+              "RelativeToolTip": "FrmCon\\FrmHienThi\\FrmSuaDiaChi.cs",
+              "ViewState": "AQIAAE0AAAAAAAAAAAAcwDMAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T11:34:08.483Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "FrmMuaHang.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (7)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmHienThi\\FrmMuaHang.cs",
+              "RelativeDocumentMoniker": "FrmCon\\FrmHienThi\\FrmMuaHang.cs",
+              "ToolTip": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmHienThi\\FrmMuaHang.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T11:33:18.073Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ODiaChi.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (7)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmHienThi\\ODiaChi.cs",
+              "RelativeDocumentMoniker": "FrmCon\\FrmHienThi\\ODiaChi.cs",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (7)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmHienThi\\ODiaChi.cs",
+              "RelativeToolTip": "FrmCon\\FrmHienThi\\ODiaChi.cs",
+              "ViewState": "AQIAACwAAAAAAAAAAAAhwEMAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T19:29:35.286Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "SanPham.cs",
-              "DocumentMoniker": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\FrmCon\\SanPham.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (7)\\PROJECT_WF_NEW\\Home\\FrmCon\\SanPham.cs",
               "RelativeDocumentMoniker": "FrmCon\\SanPham.cs",
-              "ToolTip": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\FrmCon\\SanPham.cs",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (7)\\PROJECT_WF_NEW\\Home\\FrmCon\\SanPham.cs",
               "RelativeToolTip": "FrmCon\\SanPham.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAPYAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -276,21 +303,22 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "FrmThongBao.cs [Design]",
-              "DocumentMoniker": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmHienThi\\FrmThongBao.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (7)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmHienThi\\FrmThongBao.cs",
               "RelativeDocumentMoniker": "FrmCon\\FrmHienThi\\FrmThongBao.cs",
               "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (6)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmHienThi\\FrmThongBao.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\New folder (6)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmHienThi\\FrmThongBao.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-23T07:53:50.75Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "KetNoiCSDL.cs",
-              "DocumentMoniker": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\DuLieu\\KetNoiCSDL.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (7)\\PROJECT_WF_NEW\\Home\\DuLieu\\KetNoiCSDL.cs",
               "RelativeDocumentMoniker": "DuLieu\\KetNoiCSDL.cs",
-              "ToolTip": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\DuLieu\\KetNoiCSDL.cs",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (7)\\PROJECT_WF_NEW\\Home\\DuLieu\\KetNoiCSDL.cs",
               "RelativeToolTip": "DuLieu\\KetNoiCSDL.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -298,11 +326,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "SanPham.Designer.cs",
-              "DocumentMoniker": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\FrmCon\\SanPham.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (7)\\PROJECT_WF_NEW\\Home\\FrmCon\\SanPham.Designer.cs",
               "RelativeDocumentMoniker": "FrmCon\\SanPham.Designer.cs",
-              "ToolTip": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\FrmCon\\SanPham.Designer.cs",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (7)\\PROJECT_WF_NEW\\Home\\FrmCon\\SanPham.Designer.cs",
               "RelativeToolTip": "FrmCon\\SanPham.Designer.cs",
               "ViewState": "AQIAAFgBAAAAAAAAAAAuwG4BAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -310,41 +338,44 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "FrmCapNhatTT.cs [Design]",
-              "DocumentMoniker": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmHienThi\\FrmCapNhatTT.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (7)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmHienThi\\FrmCapNhatTT.cs",
               "RelativeDocumentMoniker": "FrmCon\\FrmHienThi\\FrmCapNhatTT.cs",
               "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (6)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmHienThi\\FrmCapNhatTT.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\New folder (6)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmHienThi\\FrmCapNhatTT.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-22T14:38:40.299Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "DiaChi.cs [Design]",
-              "DocumentMoniker": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmHienThi\\DiaChi.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (7)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmHienThi\\DiaChi.cs",
               "RelativeDocumentMoniker": "FrmCon\\FrmHienThi\\DiaChi.cs",
               "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (6)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmHienThi\\DiaChi.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\New folder (6)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmHienThi\\DiaChi.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-23T07:53:46.437Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "FrmXacNhan.cs [Design]",
-              "DocumentMoniker": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmHienThi\\FrmXacNhan.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (7)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmHienThi\\FrmXacNhan.cs",
               "RelativeDocumentMoniker": "FrmCon\\FrmHienThi\\FrmXacNhan.cs",
               "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (6)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmHienThi\\FrmXacNhan.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\New folder (6)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmHienThi\\FrmXacNhan.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-23T07:53:53.574Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "MaDonHangHienTai.cs",
-              "DocumentMoniker": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\DuLieu\\MaDonHangHienTai.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (7)\\PROJECT_WF_NEW\\Home\\DuLieu\\MaDonHangHienTai.cs",
               "RelativeDocumentMoniker": "DuLieu\\MaDonHangHienTai.cs",
-              "ToolTip": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\DuLieu\\MaDonHangHienTai.cs",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (7)\\PROJECT_WF_NEW\\Home\\DuLieu\\MaDonHangHienTai.cs",
               "RelativeToolTip": "DuLieu\\MaDonHangHienTai.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -352,11 +383,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 21,
               "Title": "TaiKhoanDangNhap.cs",
-              "DocumentMoniker": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\DuLieu\\TaiKhoanDangNhap.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (7)\\PROJECT_WF_NEW\\Home\\DuLieu\\TaiKhoanDangNhap.cs",
               "RelativeDocumentMoniker": "DuLieu\\TaiKhoanDangNhap.cs",
-              "ToolTip": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\DuLieu\\TaiKhoanDangNhap.cs",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (7)\\PROJECT_WF_NEW\\Home\\DuLieu\\TaiKhoanDangNhap.cs",
               "RelativeToolTip": "DuLieu\\TaiKhoanDangNhap.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -364,62 +395,44 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "FrmThongTinDH.cs [Design]",
-              "DocumentMoniker": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmHienThi\\FrmThongTinDH.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (7)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmHienThi\\FrmThongTinDH.cs",
               "RelativeDocumentMoniker": "FrmCon\\FrmHienThi\\FrmThongTinDH.cs",
               "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (6)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmHienThi\\FrmThongTinDH.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\New folder (6)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmHienThi\\FrmThongTinDH.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-22T14:41:54.727Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "FrmCapNhatHH.cs [Design]",
-              "DocumentMoniker": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmHienThi\\FrmCapNhatHH.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (7)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmHienThi\\FrmCapNhatHH.cs",
               "RelativeDocumentMoniker": "FrmCon\\FrmHienThi\\FrmCapNhatHH.cs",
               "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (6)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmHienThi\\FrmCapNhatHH.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\New folder (6)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmHienThi\\FrmCapNhatHH.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-21T19:10:48.147Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "FrmDangNhap.cs [Design]",
-              "DocumentMoniker": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\FrmDangNhap.cs",
-              "RelativeDocumentMoniker": "FrmDangNhap.cs",
-              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (6)\\PROJECT_WF_NEW\\Home\\FrmDangNhap.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T19:20:25.695Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 31,
               "Title": "DonHangDaMua.cs [Design]",
               "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (6)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmHienThi\\DonHangDaMua.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\New folder (6)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmHienThi\\DonHangDaMua.cs",
               "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (6)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmHienThi\\DonHangDaMua.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\New folder (6)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmHienThi\\DonHangDaMua.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-23T10:05:48.211Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "FrmDangNhap.cs",
-              "DocumentMoniker": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\FrmDangNhap.cs",
-              "RelativeDocumentMoniker": "FrmDangNhap.cs",
-              "ToolTip": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\FrmDangNhap.cs",
-              "RelativeToolTip": "FrmDangNhap.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T19:20:52.953Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 22,
               "Title": "FrmThongTinDH.cs",
-              "DocumentMoniker": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmHienThi\\FrmThongTinDH.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (7)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmHienThi\\FrmThongTinDH.cs",
               "RelativeDocumentMoniker": "FrmCon\\FrmHienThi\\FrmThongTinDH.cs",
-              "ToolTip": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmHienThi\\FrmThongTinDH.cs",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (7)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmHienThi\\FrmThongTinDH.cs",
               "RelativeToolTip": "FrmCon\\FrmHienThi\\FrmThongTinDH.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -429,9 +442,10 @@
               "$type": "Document",
               "DocumentIndex": 23,
               "Title": "FrmBaoLoi.cs [Design]",
-              "DocumentMoniker": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmHienThi\\FrmBaoLoi.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (7)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmHienThi\\FrmBaoLoi.cs",
               "RelativeDocumentMoniker": "FrmCon\\FrmHienThi\\FrmBaoLoi.cs",
               "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (6)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmHienThi\\FrmBaoLoi.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\New folder (6)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmHienThi\\FrmBaoLoi.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-22T14:16:09.234Z"
             },
@@ -440,7 +454,9 @@
               "DocumentIndex": 32,
               "Title": "SuaDiaChi.cs [Design]",
               "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (6)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmHienThi\\SuaDiaChi.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\New folder (6)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmHienThi\\SuaDiaChi.cs",
               "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (6)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmHienThi\\SuaDiaChi.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\New folder (6)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmHienThi\\SuaDiaChi.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-23T10:05:48.216Z"
             },
@@ -448,9 +464,10 @@
               "$type": "Document",
               "DocumentIndex": 24,
               "Title": "OSanPhamAdmin.cs [Design]",
-              "DocumentMoniker": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmHienThi\\OSanPhamAdmin.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (7)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmHienThi\\OSanPhamAdmin.cs",
               "RelativeDocumentMoniker": "FrmCon\\FrmHienThi\\OSanPhamAdmin.cs",
               "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (6)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmHienThi\\OSanPhamAdmin.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\New folder (6)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmHienThi\\OSanPhamAdmin.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-21T19:10:40.89Z"
             },
@@ -459,7 +476,9 @@
               "DocumentIndex": 33,
               "Title": "ODonHangDaMua.cs [Design]",
               "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (6)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmHienThi\\ODonHangDaMua.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\New folder (6)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmHienThi\\ODonHangDaMua.cs",
               "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (6)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmHienThi\\ODonHangDaMua.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\New folder (6)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmHienThi\\ODonHangDaMua.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-23T10:05:48.217Z"
             },
@@ -467,9 +486,10 @@
               "$type": "Document",
               "DocumentIndex": 25,
               "Title": "TaiKhoan.cs [Design]",
-              "DocumentMoniker": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\FrmCon\\TaiKhoan.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (7)\\PROJECT_WF_NEW\\Home\\FrmCon\\TaiKhoan.cs",
               "RelativeDocumentMoniker": "FrmCon\\TaiKhoan.cs",
               "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (6)\\PROJECT_WF_NEW\\Home\\FrmCon\\TaiKhoan.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\New folder (6)\\PROJECT_WF_NEW\\Home\\FrmCon\\TaiKhoan.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-21T19:10:58.095Z"
             },
@@ -477,9 +497,10 @@
               "$type": "Document",
               "DocumentIndex": 27,
               "Title": "FrmHome.cs [Design]",
-              "DocumentMoniker": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\FrmHome.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (7)\\PROJECT_WF_NEW\\Home\\FrmHome.cs",
               "RelativeDocumentMoniker": "FrmHome.cs",
               "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (6)\\PROJECT_WF_NEW\\Home\\FrmHome.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\New folder (6)\\PROJECT_WF_NEW\\Home\\FrmHome.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-21T19:31:11.055Z"
             },
@@ -487,9 +508,10 @@
               "$type": "Document",
               "DocumentIndex": 26,
               "Title": "FrmQuenMatKhau.cs [Design]",
-              "DocumentMoniker": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\FrmQuenMatKhau.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (7)\\PROJECT_WF_NEW\\Home\\FrmQuenMatKhau.cs",
               "RelativeDocumentMoniker": "FrmQuenMatKhau.cs",
               "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (6)\\PROJECT_WF_NEW\\Home\\FrmQuenMatKhau.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\New folder (6)\\PROJECT_WF_NEW\\Home\\FrmQuenMatKhau.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-21T19:30:51.438Z"
             },
@@ -498,7 +520,9 @@
               "DocumentIndex": 34,
               "Title": "ODonHangDaMua.cs",
               "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (6)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmHienThi\\ODonHangDaMua.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\New folder (6)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmHienThi\\ODonHangDaMua.cs",
               "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (6)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmHienThi\\ODonHangDaMua.cs",
+              "RelativeToolTip": "..\\..\\..\\New folder (6)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmHienThi\\ODonHangDaMua.cs",
               "ViewState": "AQIAABMAAAAAAAAAAAAQwCIAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-23T10:05:48.231Z"
@@ -508,7 +532,9 @@
               "DocumentIndex": 35,
               "Title": "ODonHangDaMua.Designer.cs",
               "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (6)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmHienThi\\ODonHangDaMua.Designer.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\New folder (6)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmHienThi\\ODonHangDaMua.Designer.cs",
               "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (6)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmHienThi\\ODonHangDaMua.Designer.cs",
+              "RelativeToolTip": "..\\..\\..\\New folder (6)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmHienThi\\ODonHangDaMua.Designer.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAFkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-23T10:05:48.236Z"
@@ -517,9 +543,9 @@
               "$type": "Document",
               "DocumentIndex": 28,
               "Title": "TaiKhoan.cs",
-              "DocumentMoniker": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\FrmCon\\TaiKhoan.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (7)\\PROJECT_WF_NEW\\Home\\FrmCon\\TaiKhoan.cs",
               "RelativeDocumentMoniker": "FrmCon\\TaiKhoan.cs",
-              "ToolTip": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\FrmCon\\TaiKhoan.cs",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (7)\\PROJECT_WF_NEW\\Home\\FrmCon\\TaiKhoan.cs",
               "RelativeToolTip": "FrmCon\\TaiKhoan.cs",
               "ViewState": "AQIAAFQAAAAAAAAAAAAlwGIAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -529,9 +555,9 @@
               "$type": "Document",
               "DocumentIndex": 29,
               "Title": "TaiKhoan.Designer.cs",
-              "DocumentMoniker": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\FrmCon\\TaiKhoan.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (7)\\PROJECT_WF_NEW\\Home\\FrmCon\\TaiKhoan.Designer.cs",
               "RelativeDocumentMoniker": "FrmCon\\TaiKhoan.Designer.cs",
-              "ToolTip": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\FrmCon\\TaiKhoan.Designer.cs",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (7)\\PROJECT_WF_NEW\\Home\\FrmCon\\TaiKhoan.Designer.cs",
               "RelativeToolTip": "FrmCon\\TaiKhoan.Designer.cs",
               "ViewState": "AQIAAGgAAAAAAAAAAAApwHgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -541,9 +567,10 @@
               "$type": "Document",
               "DocumentIndex": 30,
               "Title": "OThem.cs [Design]",
-              "DocumentMoniker": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmHienThi\\OThem.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (7)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmHienThi\\OThem.cs",
               "RelativeDocumentMoniker": "FrmCon\\FrmHienThi\\OThem.cs",
               "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (6)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmHienThi\\OThem.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\New folder (6)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmHienThi\\OThem.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-21T19:10:39.747Z"
             }

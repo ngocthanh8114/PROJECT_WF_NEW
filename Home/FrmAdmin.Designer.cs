@@ -100,7 +100,7 @@
             this.btnTaiKhoan.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnTaiKhoan.Dock = System.Windows.Forms.DockStyle.Left;
             this.btnTaiKhoan.FocusedColor = System.Drawing.Color.Empty;
-            this.btnTaiKhoan.Font = new System.Drawing.Font("UTM Facebook", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTaiKhoan.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTaiKhoan.ForeColor = System.Drawing.Color.White;
             this.btnTaiKhoan.Image = null;
             this.btnTaiKhoan.ImageSize = new System.Drawing.Size(20, 20);
@@ -133,7 +133,7 @@
             this.btnBaoCao.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnBaoCao.Dock = System.Windows.Forms.DockStyle.Left;
             this.btnBaoCao.FocusedColor = System.Drawing.Color.Empty;
-            this.btnBaoCao.Font = new System.Drawing.Font("UTM Facebook", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBaoCao.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBaoCao.ForeColor = System.Drawing.Color.White;
             this.btnBaoCao.Image = null;
             this.btnBaoCao.ImageSize = new System.Drawing.Size(20, 20);
@@ -150,6 +150,7 @@
             this.btnBaoCao.TabIndex = 3;
             this.btnBaoCao.Text = "Báo cáo";
             this.btnBaoCao.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnBaoCao.Click += new System.EventHandler(this.btnBaoCao_Click);
             // 
             // btnHoaDon
             // 
@@ -166,7 +167,7 @@
             this.btnHoaDon.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnHoaDon.Dock = System.Windows.Forms.DockStyle.Left;
             this.btnHoaDon.FocusedColor = System.Drawing.Color.Empty;
-            this.btnHoaDon.Font = new System.Drawing.Font("UTM Facebook", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHoaDon.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHoaDon.ForeColor = System.Drawing.Color.White;
             this.btnHoaDon.Image = null;
             this.btnHoaDon.ImageSize = new System.Drawing.Size(20, 20);
@@ -199,7 +200,7 @@
             this.btnKhachHang.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnKhachHang.Dock = System.Windows.Forms.DockStyle.Left;
             this.btnKhachHang.FocusedColor = System.Drawing.Color.Empty;
-            this.btnKhachHang.Font = new System.Drawing.Font("UTM Facebook", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnKhachHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnKhachHang.ForeColor = System.Drawing.Color.White;
             this.btnKhachHang.Image = null;
             this.btnKhachHang.ImageSize = new System.Drawing.Size(20, 20);
@@ -232,7 +233,7 @@
             this.btnSanPham.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnSanPham.Dock = System.Windows.Forms.DockStyle.Left;
             this.btnSanPham.FocusedColor = System.Drawing.Color.Empty;
-            this.btnSanPham.Font = new System.Drawing.Font("UTM Facebook", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSanPham.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSanPham.ForeColor = System.Drawing.Color.White;
             this.btnSanPham.Image = null;
             this.btnSanPham.ImageSize = new System.Drawing.Size(20, 20);

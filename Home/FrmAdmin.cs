@@ -1,4 +1,5 @@
 ﻿using Home.FrmCon;
+using Home.FrmCon.FrmBaoCao;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -67,6 +68,13 @@ namespace Home
             btnHoaDon.Checked = false;
             btnBaoCao.Checked = false;
             btnTaiKhoan.Checked = false;
+        }
+
+        private void btnBaoCao_Click(object sender, EventArgs e)
+        {
+            UCBaoCao uCBaoCao = new UCBaoCao();
+            panelHienThi.Controls.Add(uCBaoCao);
+            uCBaoCao.BringToFront();
         }
     }
 }
