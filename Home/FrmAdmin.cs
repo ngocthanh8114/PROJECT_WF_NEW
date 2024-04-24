@@ -35,12 +35,10 @@ namespace Home
             SendMessage(this.Handle, 0x112, 0xf012, 0);
             if (this.WindowState == FormWindowState.Maximized)
             {
-                // Tắt border của form
                 this.FormBorderStyle = FormBorderStyle.None;
             }
             else
             {
-                // Khôi phục border khi form không phải là maximum
                 this.FormBorderStyle = FormBorderStyle.Sizable;
             }
         }
@@ -72,9 +70,12 @@ namespace Home
 
         private void btnBaoCao_Click(object sender, EventArgs e)
         {
-            UCBaoCao uCBaoCao = new UCBaoCao();
-            panelHienThi.Controls.Add(uCBaoCao);
-            uCBaoCao.BringToFront();
+            addHienThi(TongForm.BaoCao);
+            btnSanPham.Checked = false;
+            btnKhachHang.Checked = false;
+            btnHoaDon.Checked = false;
+            btnBaoCao.Checked = true;
+            btnTaiKhoan.Checked = false;
         }
     }
 }
