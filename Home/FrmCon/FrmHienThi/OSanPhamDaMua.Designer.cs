@@ -51,7 +51,7 @@
             this.guna2CustomGradientPanel1.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(0, 0);
             this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
-            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(283, 10);
+            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(280, 10);
             this.guna2CustomGradientPanel1.TabIndex = 37;
             // 
             // lblTenSP
@@ -61,7 +61,7 @@
             this.lblTenSP.ForeColor = System.Drawing.Color.Black;
             this.lblTenSP.Location = new System.Drawing.Point(0, 186);
             this.lblTenSP.Name = "lblTenSP";
-            this.lblTenSP.Size = new System.Drawing.Size(283, 43);
+            this.lblTenSP.Size = new System.Drawing.Size(280, 43);
             this.lblTenSP.TabIndex = 38;
             this.lblTenSP.Text = "SH 150i";
             this.lblTenSP.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -94,7 +94,7 @@
             this.lblSoLuong.Dock = System.Windows.Forms.DockStyle.Right;
             this.lblSoLuong.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.lblSoLuong.ForeColor = System.Drawing.Color.Black;
-            this.lblSoLuong.Location = new System.Drawing.Point(130, 0);
+            this.lblSoLuong.Location = new System.Drawing.Point(127, 0);
             this.lblSoLuong.Name = "lblSoLuong";
             this.lblSoLuong.Size = new System.Drawing.Size(153, 44);
             this.lblSoLuong.TabIndex = 51;
@@ -108,7 +108,7 @@
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 229);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(283, 44);
+            this.guna2Panel1.Size = new System.Drawing.Size(280, 44);
             this.guna2Panel1.TabIndex = 52;
             // 
             // btnMuaLai
@@ -139,7 +139,7 @@
             this.btnMuaLai.OnHoverImage = null;
             this.btnMuaLai.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.btnMuaLai.OnPressedColor = System.Drawing.Color.Black;
-            this.btnMuaLai.Size = new System.Drawing.Size(283, 45);
+            this.btnMuaLai.Size = new System.Drawing.Size(280, 45);
             this.btnMuaLai.TabIndex = 53;
             this.btnMuaLai.Text = "Mua Lại";
             this.btnMuaLai.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -163,12 +163,12 @@
             this.picBoxSP.ImageRotate = 0F;
             this.picBoxSP.Location = new System.Drawing.Point(0, 10);
             this.picBoxSP.Name = "picBoxSP";
-            this.picBoxSP.Size = new System.Drawing.Size(283, 176);
+            this.picBoxSP.Size = new System.Drawing.Size(280, 176);
             this.picBoxSP.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picBoxSP.TabIndex = 45;
             this.picBoxSP.TabStop = false;
             // 
-            // ODonHangDaMua
+            // OSanPhamDaMua
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -180,8 +180,8 @@
             this.Controls.Add(this.gunaLabel1);
             this.Controls.Add(this.picBoxSP);
             this.Controls.Add(this.guna2CustomGradientPanel1);
-            this.Name = "ODonHangDaMua";
-            this.Size = new System.Drawing.Size(283, 330);
+            this.Name = "OSanPhamDaMua";
+            this.Size = new System.Drawing.Size(280, 330);
             this.guna2Panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picBoxSP)).EndInit();
             this.ResumeLayout(false);

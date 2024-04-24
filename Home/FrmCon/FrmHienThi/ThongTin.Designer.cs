@@ -44,13 +44,13 @@
             this.lblTenNguoiDung = new System.Windows.Forms.Label();
             this.lblTenTaiKhoan = new System.Windows.Forms.Label();
             this.panelNoiDung = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel9 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel8 = new Guna.UI2.WinForms.Guna2Panel();
             this.label4 = new System.Windows.Forms.Label();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.panelNoiDung.SuspendLayout();
-            this.guna2Panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            this.guna2Panel8.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnDangXuat
@@ -72,7 +72,7 @@
             this.btnDangXuat.Image = null;
             this.btnDangXuat.ImageSize = new System.Drawing.Size(20, 20);
             this.btnDangXuat.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnDangXuat.Location = new System.Drawing.Point(723, 610);
+            this.btnDangXuat.Location = new System.Drawing.Point(723, 670);
             this.btnDangXuat.Name = "btnDangXuat";
             this.btnDangXuat.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.btnDangXuat.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -81,7 +81,7 @@
             this.btnDangXuat.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.btnDangXuat.OnPressedColor = System.Drawing.Color.Black;
             this.btnDangXuat.Radius = 15;
-            this.btnDangXuat.Size = new System.Drawing.Size(324, 42);
+            this.btnDangXuat.Size = new System.Drawing.Size(324, 56);
             this.btnDangXuat.TabIndex = 51;
             this.btnDangXuat.Text = "Đăng xuất";
             this.btnDangXuat.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -106,7 +106,7 @@
             this.btnSua.Image = null;
             this.btnSua.ImageSize = new System.Drawing.Size(20, 20);
             this.btnSua.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnSua.Location = new System.Drawing.Point(145, 610);
+            this.btnSua.Location = new System.Drawing.Point(145, 670);
             this.btnSua.Name = "btnSua";
             this.btnSua.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.btnSua.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -115,7 +115,7 @@
             this.btnSua.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.btnSua.OnPressedColor = System.Drawing.Color.Black;
             this.btnSua.Radius = 15;
-            this.btnSua.Size = new System.Drawing.Size(324, 42);
+            this.btnSua.Size = new System.Drawing.Size(324, 56);
             this.btnSua.TabIndex = 50;
             this.btnSua.Text = "Chỉnh sửa thông tin";
             this.btnSua.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -127,7 +127,7 @@
             this.guna2Shapes4.BorderThickness = 0;
             this.guna2Shapes4.FillColor = System.Drawing.Color.Maroon;
             this.guna2Shapes4.LineThickness = 1;
-            this.guna2Shapes4.Location = new System.Drawing.Point(208, 547);
+            this.guna2Shapes4.Location = new System.Drawing.Point(208, 564);
             this.guna2Shapes4.Name = "guna2Shapes4";
             this.guna2Shapes4.PolygonSides = 2;
             this.guna2Shapes4.PolygonSkip = 1;
@@ -142,7 +142,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(291, 515);
+            this.label1.Location = new System.Drawing.Point(291, 532);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(151, 27);
             this.label1.TabIndex = 48;
@@ -154,7 +154,7 @@
             this.guna2Shapes3.BorderThickness = 0;
             this.guna2Shapes3.FillColor = System.Drawing.Color.Maroon;
             this.guna2Shapes3.LineThickness = 1;
-            this.guna2Shapes3.Location = new System.Drawing.Point(208, 483);
+            this.guna2Shapes3.Location = new System.Drawing.Point(208, 500);
             this.guna2Shapes3.Name = "guna2Shapes3";
             this.guna2Shapes3.PolygonSides = 2;
             this.guna2Shapes3.PolygonSkip = 1;
@@ -169,7 +169,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(291, 451);
+            this.label6.Location = new System.Drawing.Point(291, 468);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(70, 27);
             this.label6.TabIndex = 46;
@@ -181,7 +181,7 @@
             this.guna2Shapes2.BorderThickness = 0;
             this.guna2Shapes2.FillColor = System.Drawing.Color.Maroon;
             this.guna2Shapes2.LineThickness = 1;
-            this.guna2Shapes2.Location = new System.Drawing.Point(208, 419);
+            this.guna2Shapes2.Location = new System.Drawing.Point(208, 436);
             this.guna2Shapes2.Name = "guna2Shapes2";
             this.guna2Shapes2.PolygonSides = 2;
             this.guna2Shapes2.PolygonSkip = 1;
@@ -196,7 +196,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(291, 387);
+            this.label5.Location = new System.Drawing.Point(291, 404);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(113, 27);
             this.label5.TabIndex = 44;
@@ -208,7 +208,7 @@
             this.guna2Shapes1.BorderThickness = 0;
             this.guna2Shapes1.FillColor = System.Drawing.Color.Maroon;
             this.guna2Shapes1.LineThickness = 1;
-            this.guna2Shapes1.Location = new System.Drawing.Point(208, 358);
+            this.guna2Shapes1.Location = new System.Drawing.Point(208, 375);
             this.guna2Shapes1.Name = "guna2Shapes1";
             this.guna2Shapes1.PolygonSides = 2;
             this.guna2Shapes1.PolygonSkip = 1;
@@ -223,7 +223,7 @@
             // 
             this.lblSoDT.AutoSize = true;
             this.lblSoDT.Font = new System.Drawing.Font("Fira Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSoDT.Location = new System.Drawing.Point(678, 517);
+            this.lblSoDT.Location = new System.Drawing.Point(678, 534);
             this.lblSoDT.Name = "lblSoDT";
             this.lblSoDT.Size = new System.Drawing.Size(128, 28);
             this.lblSoDT.TabIndex = 16;
@@ -233,7 +233,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(291, 326);
+            this.label3.Location = new System.Drawing.Point(291, 343);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(155, 27);
             this.label3.TabIndex = 15;
@@ -243,7 +243,7 @@
             // 
             this.lblEmail.AutoSize = true;
             this.lblEmail.Font = new System.Drawing.Font("Fira Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmail.Location = new System.Drawing.Point(678, 453);
+            this.lblEmail.Location = new System.Drawing.Point(678, 470);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(63, 28);
             this.lblEmail.TabIndex = 14;
@@ -253,7 +253,7 @@
             // 
             this.lblTenNguoiDung.AutoSize = true;
             this.lblTenNguoiDung.Font = new System.Drawing.Font("Fira Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTenNguoiDung.Location = new System.Drawing.Point(678, 389);
+            this.lblTenNguoiDung.Location = new System.Drawing.Point(678, 406);
             this.lblTenNguoiDung.Name = "lblTenNguoiDung";
             this.lblTenNguoiDung.Size = new System.Drawing.Size(144, 28);
             this.lblTenNguoiDung.TabIndex = 13;
@@ -263,7 +263,7 @@
             // 
             this.lblTenTaiKhoan.AutoSize = true;
             this.lblTenTaiKhoan.Font = new System.Drawing.Font("Fira Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTenTaiKhoan.Location = new System.Drawing.Point(678, 328);
+            this.lblTenTaiKhoan.Location = new System.Drawing.Point(678, 345);
             this.lblTenTaiKhoan.Name = "lblTenTaiKhoan";
             this.lblTenTaiKhoan.Size = new System.Drawing.Size(127, 28);
             this.lblTenTaiKhoan.TabIndex = 12;
@@ -292,8 +292,19 @@
             this.panelNoiDung.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelNoiDung.Location = new System.Drawing.Point(0, 0);
             this.panelNoiDung.Name = "panelNoiDung";
-            this.panelNoiDung.Size = new System.Drawing.Size(1174, 703);
+            this.panelNoiDung.Size = new System.Drawing.Size(1174, 815);
             this.panelNoiDung.TabIndex = 15;
+            // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(468, 126);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.Size = new System.Drawing.Size(216, 130);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox1.TabIndex = 20;
+            this.guna2PictureBox1.TabStop = false;
             // 
             // guna2Panel9
             // 
@@ -326,30 +337,19 @@
             this.label4.TabIndex = 16;
             this.label4.Text = "Thông tin cá nhân";
             // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(468, 126);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(216, 130);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox1.TabIndex = 20;
-            this.guna2PictureBox1.TabStop = false;
-            // 
             // ThongTin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panelNoiDung);
             this.Name = "ThongTin";
-            this.Size = new System.Drawing.Size(1174, 703);
+            this.Size = new System.Drawing.Size(1174, 815);
             this.Load += new System.EventHandler(this.ThongTin_Load);
             this.panelNoiDung.ResumeLayout(false);
             this.panelNoiDung.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.guna2Panel8.ResumeLayout(false);
             this.guna2Panel8.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

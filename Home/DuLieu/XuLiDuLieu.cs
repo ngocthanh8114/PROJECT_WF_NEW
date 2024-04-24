@@ -19,6 +19,7 @@ using System.Text.RegularExpressions;
 using Home.FrmCon;
 using Microsoft.VisualBasic;
 using System.Collections;
+using System.Data.Common;
 
 
 
@@ -28,9 +29,13 @@ namespace Home.DuLieu
     internal class XuLiDuLieu
     {
         KetNoiCSDL kn = new KetNoiCSDL();
+<<<<<<< HEAD
         string strconn = "Data Source=.;Initial Catalog=BanXeMay;User ID=sa;Password=123;Encrypt=False";
+=======
+        //string strconn = "Data Source=DESKTOP-74RKBUS;Initial Catalog=BanXeMay;Integrated Security=True";
+>>>>>>> d08e7ae5ccd16c85e36256f6101af6f5e9317dac
 
-        //string strconn = "Data Source=.;Initial Catalog=BanXeMay;User ID=sa;Password=123;Encrypt=False";
+        string strconn = "Data Source=.;Initial Catalog=BanXeMay;User ID=sa;Password=123;Encrypt=False";
 
         SqlConnection conn = null;
         
@@ -241,11 +246,11 @@ namespace Home.DuLieu
       /*  public DataTable TimKiemSanPham(string TenSP)
         {
             kn.myConnect();
-            string lenh = "SELECT * FROM SANPHAM WHERE TenSP LIKE @TenSP + '%'";
+            string lenh = "SELECT * FROM SANPHAM WHERE TenSP LIKE @TenSP";
             SqlCommand cmd = kn.con.CreateCommand();
             cmd.CommandText = lenh;
             SqlParameter sqlParameter = new SqlParameter("@TenSP", SqlDbType.NVarChar, 50);
-            sqlParameter.Value = TenSP;
+            sqlParameter.Value = '%' + TenSP + '%';
             cmd.Parameters.Add(sqlParameter);
 
             SqlDataAdapter da = new SqlDataAdapter(cmd);
@@ -769,10 +774,10 @@ namespace Home.DuLieu
             cmd.ExecuteNonQuery();
         }
 
-        public void MuaHang(string TenKH, string Email, string SoDienThoai, string DiaChi, string LoiNhan, string TongTienHang, string PhiVanChuyen, string TongThanhToan)
+        public void MuaHang(string TenKH, string Email, string SoDienThoai, string DiaChi, string LoiNhan, decimal TongTienHang, decimal PhiVanChuyen, decimal TongThanhToan, DateTime NgayMua)
         {
             kn.myConnect();
-            string sql = "UPDATE ThongTinDH set TenTaiKhoan = @TenTaiKhoan, TenKhachHang = @TenKH, Email = @Email, SoDienThoai = @SoDienThoai, DiaChi = @DiaChi, LoiNhan = @LoiNhan, TongTienHang = @TongTienHang, PhiVanChuyen = @PhiVanChuyen, TongThanhToan = @TongThanhToan where MaDH = @MaDH";
+            string sql = "UPDATE ThongTinDH set TenTaiKhoan = @TenTaiKhoan, TenKhachHang = @TenKH, Email = @Email, SoDienThoai = @SoDienThoai, DiaChi = @DiaChi, LoiNhan = @LoiNhan, TongTienHang = @TongTienHang, PhiVanChuyen = @PhiVanChuyen, TongThanhToan = @TongThanhToan, NgayDH = @NgayMua where MaDH = @MaDH";
             SqlCommand cmd = new SqlCommand(sql, kn.con);
 
             SqlParameter sqlParameter0 = new SqlParameter("@TenTaiKhoan", SqlDbType.NVarChar, 50);
@@ -799,21 +804,25 @@ namespace Home.DuLieu
             sqlParameter5.Value = LoiNhan;
             cmd.Parameters.Add(sqlParameter5);
 
-            SqlParameter sqlParameter6 = new SqlParameter("@TongTienHang", SqlDbType.NVarChar, 50);
+            SqlParameter sqlParameter6 = new SqlParameter("@TongTienHang", SqlDbType.Decimal);
             sqlParameter6.Value = TongTienHang;
             cmd.Parameters.Add(sqlParameter6);
 
-            SqlParameter sqlParameter7 = new SqlParameter("@PhiVanChuyen", SqlDbType.NVarChar, 50);
+            SqlParameter sqlParameter7 = new SqlParameter("@PhiVanChuyen", SqlDbType.Decimal);
             sqlParameter7.Value = PhiVanChuyen;
             cmd.Parameters.Add(sqlParameter7);
 
-            SqlParameter sqlParameter8 = new SqlParameter("@TongThanhToan", SqlDbType.NVarChar, 50);
+            SqlParameter sqlParameter8 = new SqlParameter("@TongThanhToan", SqlDbType.Decimal);
             sqlParameter8.Value = TongThanhToan;
             cmd.Parameters.Add(sqlParameter8);
 
             SqlParameter sqlParameter9 = new SqlParameter("@MaDH", SqlDbType.Int);
             sqlParameter9.Value = MaDonHangHienTai.maDH;
             cmd.Parameters.Add(sqlParameter9);
+
+            SqlParameter sqlParameter10 = new SqlParameter("@NgayMua", SqlDbType.DateTime);
+            sqlParameter10.Value = NgayMua;
+            cmd.Parameters.Add(sqlParameter10);
 
             cmd.ExecuteNonQuery();
         }
@@ -1191,6 +1200,25 @@ namespace Home.DuLieu
             da.Fill(dt);
             return dt;
         }
+        public DataTable doDuLieuDonMua(int MaDH)
+        {
+            kn.myConnect();
+            string sql = "SELECT * FROM DonHangDaMua,SanPham WHERE TenTaiKhoan = @TenTaiKhoan and DonHangDaMua.MaSP = SanPham.MaSP and DonHangDaMua.MaDH = @MaDH ";
+            SqlCommand cmd = new SqlCommand(sql, kn.con);
+
+            SqlParameter sqlParameter0 = new SqlParameter("@TenTaiKhoan", SqlDbType.NVarChar, 50);
+            sqlParameter0.Value = TaiKhoanDangNhap.tenTaiKhoan;
+            cmd.Parameters.Add(sqlParameter0);
+
+            SqlParameter sqlParameter1 = new SqlParameter("@MaDH", SqlDbType.Int);
+            sqlParameter1.Value = MaDH;
+            cmd.Parameters.Add(sqlParameter1);
+
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            return dt;
+        }
         public DataTable doDiaChi()
         {
             kn.myConnect();
@@ -1441,10 +1469,42 @@ namespace Home.DuLieu
             }
             return dt;
         }
+        public DataTable themDonHang()
+        {
+            kn.myConnect();
+            string sql = "select MaDH from ThongTinDH where TenTaiKhoan = @TenTaiKhoan";
+            SqlCommand cmd = new SqlCommand(sql, kn.con);
+
+
+            SqlParameter sqlParameter0 = new SqlParameter("@TenTaiKhoan", SqlDbType.NVarChar, 50);
+            sqlParameter0.Value = TaiKhoanDangNhap.tenTaiKhoan;
+            cmd.Parameters.Add(sqlParameter0);
+
+            DataTable dt = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            da.Fill(dt);
+            return dt;
+        }
+
+        public DataTable themDonHang(int MaDH)
+        {
+            kn.myConnect();
+            string sql = "select * from ThongTinDH where MaDH = @MaDH";
+            SqlCommand cmd = new SqlCommand(sql, kn.con);
+
+            SqlParameter sqlParameter0 = new SqlParameter("@MaDH", SqlDbType.Int);
+            sqlParameter0.Value = MaDH;
+            cmd.Parameters.Add(sqlParameter0);
+
+            DataTable dt = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            da.Fill(dt);
+            return dt;
+        }
+
         //Đổ dữ liệu vào bảng nhập hàng
         public DataTable DoDuLieuBaoCaoNhapHang()
         {
-
             DataTable dt = new DataTable();
             try
             {

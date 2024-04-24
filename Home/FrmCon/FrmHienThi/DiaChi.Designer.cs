@@ -110,7 +110,7 @@
             this.panelNoiDung.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelNoiDung.Location = new System.Drawing.Point(0, 79);
             this.panelNoiDung.Name = "panelNoiDung";
-            this.panelNoiDung.Size = new System.Drawing.Size(1174, 624);
+            this.panelNoiDung.Size = new System.Drawing.Size(1174, 736);
             this.panelNoiDung.TabIndex = 23;
             // 
             // DiaChi
@@ -121,7 +121,7 @@
             this.Controls.Add(this.guna2Panel9);
             this.Controls.Add(this.guna2Panel8);
             this.Name = "DiaChi";
-            this.Size = new System.Drawing.Size(1174, 703);
+            this.Size = new System.Drawing.Size(1174, 815);
             this.Load += new System.EventHandler(this.DiaChi_Load);
             this.guna2Panel8.ResumeLayout(false);
             this.guna2Panel8.PerformLayout();

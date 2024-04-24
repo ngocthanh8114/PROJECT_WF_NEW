@@ -162,19 +162,14 @@ namespace Home.FrmCon
                 {
                     addSanPham(filteredProducts);
                 }
-                else
+                else 
                 {
                     FrmBaoLoi frmBaoLoi = new FrmBaoLoi();
                     frmBaoLoi.hienThiLoi("Không tìm thấy sản phẩm trong khoảng giá và loại sản phẩm này.");
                     frmBaoLoi.Show();
                 }
             }
-            else
-            {
-                FrmBaoLoi frmBaoLoi = new FrmBaoLoi();
-                frmBaoLoi.hienThiLoi("Vui lòng chọn khoảng giá và loại sản phẩm để lọc sản phẩm.");
-                frmBaoLoi.Show();
-            }
+
         }
         private void UpdateGiaComboBox()
         {

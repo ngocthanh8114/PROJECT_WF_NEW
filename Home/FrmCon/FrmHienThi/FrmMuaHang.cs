@@ -16,7 +16,7 @@ namespace Home.FrmCon.FrmHienThi
 {
     public partial class FrmMuaHang : Form
     {
-        int madh;
+        //int madh;
         public FrmMuaHang()
         {
             InitializeComponent();
@@ -80,7 +80,9 @@ namespace Home.FrmCon.FrmHienThi
             lblTienHang.Text = tienHang.ToString() + " VNĐ";
             lblPhiVanChuyen.Text = (SL*100000).ToString() + " VNĐ";
             lblTong.Text = (tienHang + SL*100000).ToString() + " VNĐ";
-            
+            dtpNgayMua.Text = DateTime.Now.ToString();
+
+
         }
 
         private void btnMuaHang_Click(object sender, EventArgs e)
@@ -92,7 +94,15 @@ namespace Home.FrmCon.FrmHienThi
             {
                 if (check == true)
                 {
-                    xl.MuaHang(txtHoTen.Text, txtEmail.Text, txtSDT.Text, txtDiaChi.Text, txtLoiNhan.Text, lblTienHang.Text, lblPhiVanChuyen.Text, lblTong.Text);
+                    string[] str1 = lblTienHang.Text.Split(' ');
+                    string[] str2 = lblPhiVanChuyen.Text.Split(' ');
+                    string[] str3 = lblTong.Text.Split(' ');
+                    decimal tienHang = decimal.Parse(str1[0]);
+                    decimal phiVC = decimal.Parse(str2[0]);
+                    decimal tong = decimal.Parse(str3[0]);  
+                    DateTime NgayMua = DateTime.Now;
+
+                    xl.MuaHang(txtHoTen.Text, txtEmail.Text, txtSDT.Text, txtDiaChi.Text, txtLoiNhan.Text, tienHang, phiVC, tong, NgayMua);
                     xl.DaMuaHang();
                     xl.truSoLuongDaMua();
                     FrmThongBao frmThongBao = new FrmThongBao();

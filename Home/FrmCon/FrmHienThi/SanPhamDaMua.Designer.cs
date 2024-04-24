@@ -130,18 +130,18 @@
             this.panelNoiDung.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelNoiDung.Location = new System.Drawing.Point(0, 79);
             this.panelNoiDung.Name = "panelNoiDung";
-            this.panelNoiDung.Size = new System.Drawing.Size(1174, 624);
+            this.panelNoiDung.Size = new System.Drawing.Size(1174, 736);
             this.panelNoiDung.TabIndex = 22;
             // 
-            // DonHangDaMua
+            // SanPhamDaMua
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panelNoiDung);
             this.Controls.Add(this.guna2Panel9);
             this.Controls.Add(this.guna2Panel8);
-            this.Name = "DonHangDaMua";
-            this.Size = new System.Drawing.Size(1174, 703);
+            this.Name = "SanPhamDaMua";
+            this.Size = new System.Drawing.Size(1174, 815);
             this.Load += new System.EventHandler(this.DonHangDaMua_Load);
             this.guna2Panel8.ResumeLayout(false);
             this.guna2Panel8.PerformLayout();
