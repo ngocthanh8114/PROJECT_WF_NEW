@@ -33,7 +33,6 @@
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel11 = new Guna.UI2.WinForms.Guna2Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.guna2Panel24 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel6 = new Guna.UI2.WinForms.Guna2Panel();
             this.btnHuy = new Guna.UI.WinForms.GunaAdvenceButton();
             this.lblMaDH = new System.Windows.Forms.Label();
@@ -74,6 +73,7 @@
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.guna2Panel23 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Panel24 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel9 = new Guna.UI2.WinForms.Guna2Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.guna2Panel20 = new Guna.UI2.WinForms.Guna2Panel();
@@ -83,8 +83,8 @@
             this.guna2Panel17 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel18 = new Guna.UI2.WinForms.Guna2Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.guna2Panel19 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel22 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Panel19 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel10 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel12 = new Guna.UI2.WinForms.Guna2Panel();
             this.timerMuaHang = new System.Windows.Forms.Timer(this.components);
@@ -149,17 +149,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(627, 652);
             this.panel2.TabIndex = 19;
-            // 
-            // guna2Panel24
-            // 
-            this.guna2Panel24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.guna2Panel24.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.guna2Panel24.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.guna2Panel24.Location = new System.Drawing.Point(0, 650);
-            this.guna2Panel24.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.guna2Panel24.Name = "guna2Panel24";
-            this.guna2Panel24.Size = new System.Drawing.Size(627, 2);
-            this.guna2Panel24.TabIndex = 41;
             // 
             // guna2Panel6
             // 
@@ -802,6 +791,17 @@
             this.guna2Panel23.Size = new System.Drawing.Size(3, 650);
             this.guna2Panel23.TabIndex = 21;
             // 
+            // guna2Panel24
+            // 
+            this.guna2Panel24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.guna2Panel24.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.guna2Panel24.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.guna2Panel24.Location = new System.Drawing.Point(0, 650);
+            this.guna2Panel24.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2Panel24.Name = "guna2Panel24";
+            this.guna2Panel24.Size = new System.Drawing.Size(627, 2);
+            this.guna2Panel24.TabIndex = 41;
+            // 
             // guna2Panel9
             // 
             this.guna2Panel9.BackColor = System.Drawing.Color.Gainsboro;
@@ -931,6 +931,16 @@
             this.label1.Text = "  Địa chỉ của tôi";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // guna2Panel22
+            // 
+            this.guna2Panel22.BackColor = System.Drawing.Color.Gainsboro;
+            this.guna2Panel22.Dock = System.Windows.Forms.DockStyle.Right;
+            this.guna2Panel22.Location = new System.Drawing.Point(608, 0);
+            this.guna2Panel22.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2Panel22.Name = "guna2Panel22";
+            this.guna2Panel22.Size = new System.Drawing.Size(3, 650);
+            this.guna2Panel22.TabIndex = 31;
+            // 
             // guna2Panel19
             // 
             this.guna2Panel19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -941,16 +951,6 @@
             this.guna2Panel19.Name = "guna2Panel19";
             this.guna2Panel19.Size = new System.Drawing.Size(611, 2);
             this.guna2Panel19.TabIndex = 28;
-            // 
-            // guna2Panel22
-            // 
-            this.guna2Panel22.BackColor = System.Drawing.Color.Gainsboro;
-            this.guna2Panel22.Dock = System.Windows.Forms.DockStyle.Right;
-            this.guna2Panel22.Location = new System.Drawing.Point(608, 0);
-            this.guna2Panel22.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.guna2Panel22.Name = "guna2Panel22";
-            this.guna2Panel22.Size = new System.Drawing.Size(3, 650);
-            this.guna2Panel22.TabIndex = 31;
             // 
             // guna2Panel10
             // 

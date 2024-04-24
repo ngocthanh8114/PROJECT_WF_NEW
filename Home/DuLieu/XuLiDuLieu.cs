@@ -29,6 +29,7 @@ namespace Home.DuLieu
     internal class XuLiDuLieu
     {
         KetNoiCSDL kn = new KetNoiCSDL();
+        //string strconn = "Data Source=DESKTOP-74RKBUS;Initial Catalog=BanXeMay;Integrated Security=True";
 
         string strconn = "Data Source=.;Initial Catalog=BanXeMay;User ID=sa;Password=123;Encrypt=False";
 
@@ -69,6 +70,151 @@ namespace Home.DuLieu
             cmd1.Dispose();
             return maLoai;
         }
+        public DataTable GetOrderInfoByDateRange(DateTime startDate, DateTime endDate)
+        {
+            kn.myConnect();
+            DataTable dt = new DataTable();
+            string query = @"SELECT THD.MaDH AS 'Mã Đơn Hàng', THD.TongTienHang AS 'Tổng tiền', THD.NgayDH AS 'Ngày mua hàng'
+                     FROM dbo.ThongTinDH THD
+                     WHERE THD.NgayDH >= @StartDate AND THD.NgayDH <= @EndDate";
+
+            SqlCommand cmd = new SqlCommand(query, kn.con);
+            cmd.Parameters.Add("@StartDate", SqlDbType.DateTime).Value = startDate;
+            cmd.Parameters.Add("@EndDate", SqlDbType.DateTime).Value = endDate;
+            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+            adapter.Fill(dt);
+
+            return dt;
+        }
+        public decimal CalculateTotalThanhTienTungSP(string tenSP, DateTime startDate, DateTime endDate)
+        {
+            kn.myConnect();
+            decimal totalThànhTiền = 0;
+            string query = @"SELECT DH.MaDH AS 'Mã Đơn Hàng', 
+                                           SP.TenSP AS 'Tên Sản Phẩm', 
+                                           DH.SoLuong AS 'Số Lượng', 
+                                           SP.Gia AS 'Giá', 
+                                           SP.Gia * DH.SoLuong AS 'Thành Tiền', 
+                                           TT.NgayDH AS 'Ngày Mua'
+                                    FROM dbo.DonHangDaMua DH
+                                    INNER JOIN dbo.SanPham SP ON DH.MaSP = SP.MaSP
+                                    INNER JOIN dbo.ThongTinDH TT ON DH.MaDH = TT.MaDH
+                                    WHERE SP.TenSP = @TenSP AND TT.NgayDH BETWEEN @StartDate AND @EndDate";
+            SqlCommand cmd = new SqlCommand(query, kn.con);
+            cmd.Parameters.AddWithValue("@TenSP", tenSP);
+            cmd.Parameters.AddWithValue("@StartDate", startDate);
+            cmd.Parameters.AddWithValue("@EndDate", endDate);
+            SqlDataReader reader = cmd.ExecuteReader();
+            while (reader.Read())
+            {
+                decimal thànhTiền = Convert.ToDecimal(reader["Thành Tiền"]);
+                totalThànhTiền += thànhTiền;
+            }
+            reader.Close();
+            return totalThànhTiền;
+        }
+        /* public decimal CalculateTotalTongTienAllSP(DateTime startDate, DateTime endDate)
+         {
+            *//* kn.myConnect();
+             decimal totalTongTien = 0;
+
+             string query = @"SELECT THD.TongTienHang
+                                      FROM dbo.ThongTinDH THD
+                                      WHERE THD.NgayDH >= @StartDate AND THD.NgayDH <= @EndDate";
+
+             SqlCommand command = new SqlCommand(query, kn.con);
+             command.Parameters.AddWithValue("@StartDate", startDate);
+             command.Parameters.AddWithValue("@EndDate", endDate);
+
+             SqlDataReader reader = command.ExecuteReader();
+
+             while (reader.Read())
+             {
+                 // Đọc giá trị của cột 'Tổng tiền' và cộng dồn vào tổng
+                 decimal tongTien = Convert.ToDecimal(reader["TongTienHang"]);
+                 totalTongTien += tongTien;
+             }
+
+             reader.Close();
+             return totalTongTien;*//*
+         }*/
+        public DataTable GetOrderDetailsByProductAndDate(string tenSP, DateTime startDate, DateTime endDate)
+        {
+            try
+            {
+                kn.Connection(); 
+                string query = @"SELECT DH.MaDH AS 'Mã Đơn Hàng', SP.TenSP AS 'Tên Sản Phẩm',
+                               DH.SoLuong AS 'Số Lượng', SP.Gia AS 'Giá', 
+                               SP.Gia * DH.SoLuong AS 'Thành Tiền', 
+                               TT.NgayDH AS 'Ngày Mua'
+                               FROM dbo.DonHangDaMua DH
+                               INNER JOIN dbo.SanPham SP ON DH.MaSP = SP.MaSP
+                               INNER JOIN dbo.ThongTinDH TT ON DH.MaDH = TT.MaDH
+                               WHERE SP.TenSP = @TenSP AND TT.NgayDH BETWEEN @StartDate AND @EndDate";
+
+                SqlCommand cmd = new SqlCommand(query, kn.con);
+                cmd.Parameters.AddWithValue("@TenSP", tenSP);
+                cmd.Parameters.AddWithValue("@StartDate", startDate);
+                cmd.Parameters.AddWithValue("@EndDate", endDate);
+
+                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                adapter.Fill(dt); 
+                return dt;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Lỗi: " + ex.Message);
+                return null;
+            }
+            finally
+            {
+                kn.myClose(); 
+            }
+        }
+
+        public void xuLiTenSP(Guna2ComboBox LoaiSP)
+        {
+            try
+            {
+                kn.Connection();
+
+                string query = "SELECT DISTINCT SP.TenSP, SP.MaSP " +
+                               "FROM dbo.DonHangDaMua DH " +
+                               "INNER JOIN dbo.SanPham SP ON DH.MaSP = SP.MaSP";
+
+                SqlCommand cmd = new SqlCommand(query, kn.con);
+
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+
+                DataSet ds = new DataSet();
+
+                da.Fill(ds, "SanPham");
+
+                DataTable dt = ds.Tables["SanPham"];
+
+                DataRow allRow = dt.NewRow();
+                allRow["TenSP"] = "Tất cả";
+                allRow["MaSP"] = -1; 
+
+                dt.Rows.InsertAt(allRow, 0);
+
+                LoaiSP.DataSource = dt;
+
+                LoaiSP.DisplayMember = "TenSP";
+
+                LoaiSP.ValueMember = "MaSP";
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Lỗi: " + ex.Message);
+            }
+            finally
+            {
+                kn.myClose();
+            }
+        }
+
         public DataTable LocSanPhamTheoLoaiVaGia(string LoaiSP, decimal minPrice, decimal maxPrice)
         {
             kn.myConnect();
