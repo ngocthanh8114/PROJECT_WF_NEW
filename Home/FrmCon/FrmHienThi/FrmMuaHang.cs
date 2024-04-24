@@ -20,7 +20,10 @@ namespace Home.FrmCon.FrmHienThi
         public FrmMuaHang()
         {
             InitializeComponent();
-            
+            this.MinimumSize = new Size(470, this.Height);
+     
+            this.Width = this.MinimumSize.Width;
+
         }
         XuLiDuLieu xl = new XuLiDuLieu();
 
@@ -28,7 +31,7 @@ namespace Home.FrmCon.FrmHienThi
         {
             return int.Parse(lblMaDH.Text);
         }
-        private void RoundFormCorners(Form form, int radius)
+       /* private void RoundFormCorners(Form form, int radius)
         {
             // Tạo một GraphicsPath để chứa hình dạng của form
             GraphicsPath path = new GraphicsPath();
@@ -49,11 +52,11 @@ namespace Home.FrmCon.FrmHienThi
             // Gán Region cho form
             form.Region = region;
         }
-
+*/
         private void FrmMuaHang_Load(object sender, EventArgs e)
         {
             
-            RoundFormCorners(this, 5);
+           // RoundFormCorners(this, 5);
             lblMaDH.Text = xl.DonHangHienTai();
             MaDonHangHienTai.maDH = int.Parse(xl.DonHangHienTai());
             foreach (DataRow row in xl.doDiaChi().Rows)
@@ -67,6 +70,7 @@ namespace Home.FrmCon.FrmHienThi
                 panelNoiDung.Controls.Add(oDiaChi);
                 oDiaChi.BringToFront();
             }
+            muaHangExpand = false;
 
         }
 
@@ -169,33 +173,26 @@ namespace Home.FrmCon.FrmHienThi
         private void timerMuaHang_Tick(object sender, EventArgs e)
         {
             Point formLocation = this.Location;
-            if (muaHangExpand == true) 
+            if (muaHangExpand == true)
             {
                 this.Width = this.MinimumSize.Width;
-                if (this.Width == this.MinimumSize.Width )
+                if (this.Width == this.MinimumSize.Width)
                 {
-                    
                     muaHangExpand = false;
                     timerMuaHang.Stop();
                     this.Location = new Point(formLocation.X + 630 / 2 - 70, formLocation.Y);
-
                 }
-                
-
             }
             else
             {
                 this.Width = this.MaximumSize.Width;
-                
                 if (this.Width == this.MaximumSize.Width)
                 {
-                    
                     muaHangExpand = true;
                     timerMuaHang.Stop();
                     this.Location = new Point(formLocation.X - 630 / 2 + 70, formLocation.Y);
                 }
-                
-            }    
+            }
         }
 
         public void themDiaChi(string hoTen, string sdt, string diaChi)

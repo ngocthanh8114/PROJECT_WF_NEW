@@ -29,7 +29,16 @@ namespace Home.DuLieu
     internal class XuLiDuLieu
     {
         KetNoiCSDL kn = new KetNoiCSDL();
+<<<<<<< HEAD
         
+=======
+<<<<<<< HEAD
+        string strconn = "Data Source=.;Initial Catalog=BanXeMay;User ID=sa;Password=123;Encrypt=False";
+=======
+        //string strconn = "Data Source=DESKTOP-74RKBUS;Initial Catalog=BanXeMay;Integrated Security=True";
+>>>>>>> d08e7ae5ccd16c85e36256f6101af6f5e9317dac
+
+>>>>>>> da77930e16f92cb61523814a831096c89c6b05de
         string strconn = "Data Source=.;Initial Catalog=BanXeMay;User ID=sa;Password=123;Encrypt=False";
 
         SqlConnection conn = null;

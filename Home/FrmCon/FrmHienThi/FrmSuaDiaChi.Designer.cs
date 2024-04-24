@@ -466,14 +466,15 @@
             this.guna2Panel12.Size = new System.Drawing.Size(497, 2);
             this.guna2Panel12.TabIndex = 17;
             // 
-            // SuaDiaChi
+            // FrmSuaDiaChi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(497, 416);
             this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "SuaDiaChi";
+            this.Name = "FrmSuaDiaChi";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SuaDiaChi";
             this.Load += new System.EventHandler(this.SuaDiaChi_Load);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
