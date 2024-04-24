@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TaiKhoan));
-            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.panelChuaQC = new Guna.UI2.WinForms.Guna2Panel();
@@ -65,22 +64,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
-            // guna2Panel1
-            // 
-            this.guna2Panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.guna2Panel1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(2050, 75);
-            this.guna2Panel1.TabIndex = 6;
-            // 
             // guna2Panel2
             // 
             this.guna2Panel2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.guna2Panel2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel2.Location = new System.Drawing.Point(0, 75);
+            this.guna2Panel2.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.Size = new System.Drawing.Size(2050, 4);
             this.guna2Panel2.TabIndex = 7;
@@ -92,9 +81,9 @@
             this.guna2Panel3.Controls.Add(this.guna2Panel5);
             this.guna2Panel3.Controls.Add(this.guna2Panel4);
             this.guna2Panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2Panel3.Location = new System.Drawing.Point(0, 79);
+            this.guna2Panel3.Location = new System.Drawing.Point(0, 4);
             this.guna2Panel3.Name = "guna2Panel3";
-            this.guna2Panel3.Size = new System.Drawing.Size(2050, 809);
+            this.guna2Panel3.Size = new System.Drawing.Size(2050, 884);
             this.guna2Panel3.TabIndex = 8;
             // 
             // panelChuaQC
@@ -103,7 +92,7 @@
             this.panelChuaQC.Controls.Add(this.btnQC);
             this.panelChuaQC.Location = new System.Drawing.Point(1652, 44);
             this.panelChuaQC.Name = "panelChuaQC";
-            this.panelChuaQC.Size = new System.Drawing.Size(374, 703);
+            this.panelChuaQC.Size = new System.Drawing.Size(375, 815);
             this.panelChuaQC.TabIndex = 15;
             // 
             // btnQC
@@ -113,7 +102,7 @@
             this.btnQC.ImageRotate = 0F;
             this.btnQC.Location = new System.Drawing.Point(0, 0);
             this.btnQC.Name = "btnQC";
-            this.btnQC.Size = new System.Drawing.Size(374, 703);
+            this.btnQC.Size = new System.Drawing.Size(375, 815);
             this.btnQC.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btnQC.TabIndex = 0;
             this.btnQC.TabStop = false;
@@ -124,7 +113,7 @@
             this.panelNoiDung.BackColor = System.Drawing.Color.White;
             this.panelNoiDung.Location = new System.Drawing.Point(432, 44);
             this.panelNoiDung.Name = "panelNoiDung";
-            this.panelNoiDung.Size = new System.Drawing.Size(1174, 703);
+            this.panelNoiDung.Size = new System.Drawing.Size(1174, 815);
             this.panelNoiDung.TabIndex = 14;
             // 
             // guna2Panel5
@@ -136,7 +125,7 @@
             this.guna2Panel5.Controls.Add(this.btnThongTin);
             this.guna2Panel5.Location = new System.Drawing.Point(45, 470);
             this.guna2Panel5.Name = "guna2Panel5";
-            this.guna2Panel5.Size = new System.Drawing.Size(330, 277);
+            this.guna2Panel5.Size = new System.Drawing.Size(330, 389);
             this.guna2Panel5.TabIndex = 13;
             // 
             // btnBill
@@ -457,7 +446,6 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(240)))), ((int)(((byte)(243)))));
             this.Controls.Add(this.guna2Panel3);
             this.Controls.Add(this.guna2Panel2);
-            this.Controls.Add(this.guna2Panel1);
             this.Name = "TaiKhoan";
             this.Size = new System.Drawing.Size(2050, 888);
             this.Load += new System.EventHandler(this.TaiKhoan_Load);
@@ -477,7 +465,6 @@
         }
 
         #endregion
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel5;

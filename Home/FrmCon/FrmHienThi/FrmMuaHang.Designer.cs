@@ -40,6 +40,7 @@
             this.btnMuaHang = new Guna.UI.WinForms.GunaAdvenceButton();
             this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
+            this.dtpNgayMua = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.guna2Panel13 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel16 = new Guna.UI2.WinForms.Guna2Panel();
             this.lblTong = new System.Windows.Forms.Label();
@@ -87,7 +88,6 @@
             this.guna2Panel10 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel12 = new Guna.UI2.WinForms.Guna2Panel();
             this.timerMuaHang = new System.Windows.Forms.Timer(this.components);
-            this.dtpNgayMua = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.guna2Panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.guna2Panel6.SuspendLayout();
@@ -134,7 +134,6 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.guna2Panel24);
             this.panel2.Controls.Add(this.guna2Panel6);
             this.panel2.Controls.Add(this.guna2Panel4);
             this.panel2.Controls.Add(this.guna2Panel5);
@@ -143,6 +142,7 @@
             this.panel2.Controls.Add(this.guna2Panel7);
             this.panel2.Controls.Add(this.guna2Panel2);
             this.panel2.Controls.Add(this.guna2Panel23);
+            this.panel2.Controls.Add(this.guna2Panel24);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(3, 2);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -152,13 +152,13 @@
             // 
             // guna2Panel24
             // 
-            this.guna2Panel24.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.guna2Panel24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.guna2Panel24.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.guna2Panel24.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.guna2Panel24.Location = new System.Drawing.Point(0, 650);
             this.guna2Panel24.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Panel24.Name = "guna2Panel24";
-            this.guna2Panel24.Size = new System.Drawing.Size(624, 2);
+            this.guna2Panel24.Size = new System.Drawing.Size(627, 2);
             this.guna2Panel24.TabIndex = 41;
             // 
             // guna2Panel6
@@ -171,7 +171,7 @@
             this.guna2Panel6.Location = new System.Drawing.Point(0, 582);
             this.guna2Panel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Panel6.Name = "guna2Panel6";
-            this.guna2Panel6.Size = new System.Drawing.Size(624, 69);
+            this.guna2Panel6.Size = new System.Drawing.Size(624, 68);
             this.guna2Panel6.TabIndex = 19;
             // 
             // btnHuy
@@ -282,6 +282,23 @@
             this.guna2Panel5.Name = "guna2Panel5";
             this.guna2Panel5.Size = new System.Drawing.Size(624, 204);
             this.guna2Panel5.TabIndex = 18;
+            // 
+            // dtpNgayMua
+            // 
+            this.dtpNgayMua.Checked = true;
+            this.dtpNgayMua.Enabled = false;
+            this.dtpNgayMua.FillColor = System.Drawing.Color.White;
+            this.dtpNgayMua.FocusedColor = System.Drawing.Color.White;
+            this.dtpNgayMua.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.dtpNgayMua.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.dtpNgayMua.Location = new System.Drawing.Point(304, 13);
+            this.dtpNgayMua.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.dtpNgayMua.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.dtpNgayMua.Name = "dtpNgayMua";
+            this.dtpNgayMua.Size = new System.Drawing.Size(302, 36);
+            this.dtpNgayMua.TabIndex = 50;
+            this.dtpNgayMua.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.dtpNgayMua.Value = new System.DateTime(2024, 4, 24, 16, 36, 5, 0);
             // 
             // guna2Panel13
             // 
@@ -782,7 +799,7 @@
             this.guna2Panel23.Location = new System.Drawing.Point(624, 0);
             this.guna2Panel23.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Panel23.Name = "guna2Panel23";
-            this.guna2Panel23.Size = new System.Drawing.Size(3, 652);
+            this.guna2Panel23.Size = new System.Drawing.Size(3, 650);
             this.guna2Panel23.TabIndex = 21;
             // 
             // guna2Panel9
@@ -801,8 +818,8 @@
             this.panel1.Controls.Add(this.panelNoiDung);
             this.panel1.Controls.Add(this.guna2Panel17);
             this.panel1.Controls.Add(this.guna2Panel18);
-            this.panel1.Controls.Add(this.guna2Panel19);
             this.panel1.Controls.Add(this.guna2Panel22);
+            this.panel1.Controls.Add(this.guna2Panel19);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel1.Location = new System.Drawing.Point(629, 2);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -916,13 +933,13 @@
             // 
             // guna2Panel19
             // 
-            this.guna2Panel19.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.guna2Panel19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.guna2Panel19.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.guna2Panel19.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.guna2Panel19.Location = new System.Drawing.Point(0, 650);
             this.guna2Panel19.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Panel19.Name = "guna2Panel19";
-            this.guna2Panel19.Size = new System.Drawing.Size(608, 2);
+            this.guna2Panel19.Size = new System.Drawing.Size(611, 2);
             this.guna2Panel19.TabIndex = 28;
             // 
             // guna2Panel22
@@ -932,7 +949,7 @@
             this.guna2Panel22.Location = new System.Drawing.Point(608, 0);
             this.guna2Panel22.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Panel22.Name = "guna2Panel22";
-            this.guna2Panel22.Size = new System.Drawing.Size(3, 652);
+            this.guna2Panel22.Size = new System.Drawing.Size(3, 650);
             this.guna2Panel22.TabIndex = 31;
             // 
             // guna2Panel10
@@ -959,22 +976,6 @@
             // 
             this.timerMuaHang.Interval = 10;
             this.timerMuaHang.Tick += new System.EventHandler(this.timerMuaHang_Tick);
-            // 
-            // dtpNgayMua
-            // 
-            this.dtpNgayMua.Enabled = false;
-            this.dtpNgayMua.FillColor = System.Drawing.Color.White;
-            this.dtpNgayMua.FocusedColor = System.Drawing.Color.White;
-            this.dtpNgayMua.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.dtpNgayMua.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.dtpNgayMua.Location = new System.Drawing.Point(304, 13);
-            this.dtpNgayMua.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.dtpNgayMua.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.dtpNgayMua.Name = "dtpNgayMua";
-            this.dtpNgayMua.Size = new System.Drawing.Size(302, 36);
-            this.dtpNgayMua.TabIndex = 50;
-            this.dtpNgayMua.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.dtpNgayMua.Value = new System.DateTime(2024, 4, 24, 16, 36, 5, 0);
             // 
             // FrmMuaHang
             // 

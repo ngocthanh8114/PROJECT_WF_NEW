@@ -91,7 +91,7 @@
             this.guna2Panel1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.guna2Panel1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.guna2Panel1.Location = new System.Drawing.Point(0, 538);
+            this.guna2Panel1.Location = new System.Drawing.Point(0, 523);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(1174, 4);
             this.guna2Panel1.TabIndex = 24;
@@ -100,9 +100,9 @@
             // 
             this.panelSP.AutoScroll = true;
             this.panelSP.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelSP.Location = new System.Drawing.Point(0, 542);
+            this.panelSP.Location = new System.Drawing.Point(0, 527);
             this.panelSP.Name = "panelSP";
-            this.panelSP.Size = new System.Drawing.Size(1174, 161);
+            this.panelSP.Size = new System.Drawing.Size(1174, 288);
             this.panelSP.TabIndex = 23;
             // 
             // panelNoiDung
@@ -112,7 +112,7 @@
             this.panelNoiDung.Location = new System.Drawing.Point(0, 64);
             this.panelNoiDung.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelNoiDung.Name = "panelNoiDung";
-            this.panelNoiDung.Size = new System.Drawing.Size(1174, 474);
+            this.panelNoiDung.Size = new System.Drawing.Size(1174, 459);
             this.panelNoiDung.TabIndex = 25;
             // 
             // DonHangDaMua
@@ -125,7 +125,7 @@
             this.Controls.Add(this.guna2Panel8);
             this.Controls.Add(this.panelSP);
             this.Name = "DonHangDaMua";
-            this.Size = new System.Drawing.Size(1174, 703);
+            this.Size = new System.Drawing.Size(1174, 815);
             this.Load += new System.EventHandler(this.DonHangDaMua_Load);
             this.guna2Panel8.ResumeLayout(false);
             this.guna2Panel8.PerformLayout();

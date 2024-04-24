@@ -33,6 +33,7 @@ namespace Home.DuLieu
         string strconn = "Data Source=.;Initial Catalog=BanXeMay;User ID=sa;Password=123;Encrypt=False";
 
         SqlConnection conn = null;
+        
 
         public void Connection_CSDL()
         {
@@ -1324,6 +1325,7 @@ namespace Home.DuLieu
             string sql = "select MaDH from ThongTinDH where TenTaiKhoan = @TenTaiKhoan";
             SqlCommand cmd = new SqlCommand(sql, kn.con);
 
+
             SqlParameter sqlParameter0 = new SqlParameter("@TenTaiKhoan", SqlDbType.NVarChar, 50);
             sqlParameter0.Value = TaiKhoanDangNhap.tenTaiKhoan;
             cmd.Parameters.Add(sqlParameter0);
@@ -1347,6 +1349,38 @@ namespace Home.DuLieu
             DataTable dt = new DataTable();
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             da.Fill(dt);
+            return dt;
+        }
+
+        //Đổ dữ liệu vào bảng nhập hàng
+        public DataTable DoDuLieuBaoCaoNhapHang()
+        {
+            DataTable dt = new DataTable();
+            try
+            {
+                Connection_CSDL();
+                string sql = @"SELECT SanPham.MaSP, SanPham.TenSP, SanPham.Gia, SanPham.SoLuong, NCC.TenNCC, NCC.DiaChi, NCC.SDT
+                       FROM SanPham
+                       INNER JOIN NCC ON SanPham.MaNCC = NCC.MaNCC";
+                using (SqlCommand cmd = new SqlCommand(sql, conn))
+                {
+                    using (SqlDataAdapter da = new SqlDataAdapter(cmd))
+                    {
+                        da.Fill(dt);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi: " + ex.Message);
+            }
+            finally
+            {
+                if (conn.State == ConnectionState.Open)
+                {
+                    conn.Close();
+                }
+            }
             return dt;
         }
 
