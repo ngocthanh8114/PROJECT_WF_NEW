@@ -87,6 +87,7 @@
             this.guna2Panel10 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel12 = new Guna.UI2.WinForms.Guna2Panel();
             this.timerMuaHang = new System.Windows.Forms.Timer(this.components);
+            this.dtpNgayMua = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.guna2Panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.guna2Panel6.SuspendLayout();
@@ -267,6 +268,7 @@
             // guna2Panel5
             // 
             this.guna2Panel5.BackColor = System.Drawing.Color.White;
+            this.guna2Panel5.Controls.Add(this.dtpNgayMua);
             this.guna2Panel5.Controls.Add(this.guna2Panel13);
             this.guna2Panel5.Controls.Add(this.label4);
             this.guna2Panel5.Controls.Add(this.label3);
@@ -958,6 +960,22 @@
             this.timerMuaHang.Interval = 10;
             this.timerMuaHang.Tick += new System.EventHandler(this.timerMuaHang_Tick);
             // 
+            // dtpNgayMua
+            // 
+            this.dtpNgayMua.Enabled = false;
+            this.dtpNgayMua.FillColor = System.Drawing.Color.White;
+            this.dtpNgayMua.FocusedColor = System.Drawing.Color.White;
+            this.dtpNgayMua.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.dtpNgayMua.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.dtpNgayMua.Location = new System.Drawing.Point(304, 13);
+            this.dtpNgayMua.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.dtpNgayMua.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.dtpNgayMua.Name = "dtpNgayMua";
+            this.dtpNgayMua.Size = new System.Drawing.Size(302, 36);
+            this.dtpNgayMua.TabIndex = 50;
+            this.dtpNgayMua.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.dtpNgayMua.Value = new System.DateTime(2024, 4, 24, 16, 36, 5, 0);
+            // 
             // FrmMuaHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1057,5 +1075,6 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel22;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel10;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel24;
+        private Guna.UI2.WinForms.Guna2DateTimePicker dtpNgayMua;
     }
 }

@@ -56,11 +56,7 @@ namespace Home.FrmCon.FrmHienThi
                 frmBaoLoi.hienThiLoi("Vui lòng kiểm tra lại số lượng sản phẩm!");
                 frmBaoLoi.Show();
             }
-
             
-            
-
-
         }
         // xử lí lỗi
     }

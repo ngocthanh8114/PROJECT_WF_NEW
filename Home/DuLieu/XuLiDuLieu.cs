@@ -19,6 +19,7 @@ using System.Text.RegularExpressions;
 using Home.FrmCon;
 using Microsoft.VisualBasic;
 using System.Collections;
+using System.Data.Common;
 
 
 
@@ -28,7 +29,9 @@ namespace Home.DuLieu
     internal class XuLiDuLieu
     {
         KetNoiCSDL kn = new KetNoiCSDL();
-        string strconn = "Data Source=.;Initial Catalog=BanXeMay;Persist Security Info=True;User ID=sa;Password=123";
+
+        string strconn = "Data Source=.;Initial Catalog=BanXeMay;User ID=sa;Password=123;Encrypt=False";
+
         SqlConnection conn = null;
 
         public void Connection_CSDL()
@@ -89,7 +92,7 @@ namespace Home.DuLieu
             return dt;
         }
 
-        public DataTable TimKiemSanPham(string TenSP)
+      /*  public DataTable TimKiemSanPham(string TenSP)
         {
             kn.myConnect();
             string lenh = "SELECT * FROM SANPHAM WHERE TenSP LIKE @TenSP";
@@ -104,7 +107,7 @@ namespace Home.DuLieu
             da.Fill(dt);
             return dt;
         }
-
+*/
         public Image ByteArrToImage(byte[] b)
         {
             MemoryStream m = new MemoryStream(b);
@@ -620,10 +623,10 @@ namespace Home.DuLieu
             cmd.ExecuteNonQuery();
         }
 
-        public void MuaHang(string TenKH, string Email, string SoDienThoai, string DiaChi, string LoiNhan, string TongTienHang, string PhiVanChuyen, string TongThanhToan)
+        public void MuaHang(string TenKH, string Email, string SoDienThoai, string DiaChi, string LoiNhan, decimal TongTienHang, decimal PhiVanChuyen, decimal TongThanhToan, DateTime NgayMua)
         {
             kn.myConnect();
-            string sql = "UPDATE ThongTinDH set TenTaiKhoan = @TenTaiKhoan, TenKhachHang = @TenKH, Email = @Email, SoDienThoai = @SoDienThoai, DiaChi = @DiaChi, LoiNhan = @LoiNhan, TongTienHang = @TongTienHang, PhiVanChuyen = @PhiVanChuyen, TongThanhToan = @TongThanhToan where MaDH = @MaDH";
+            string sql = "UPDATE ThongTinDH set TenTaiKhoan = @TenTaiKhoan, TenKhachHang = @TenKH, Email = @Email, SoDienThoai = @SoDienThoai, DiaChi = @DiaChi, LoiNhan = @LoiNhan, TongTienHang = @TongTienHang, PhiVanChuyen = @PhiVanChuyen, TongThanhToan = @TongThanhToan, NgayDH = @NgayMua where MaDH = @MaDH";
             SqlCommand cmd = new SqlCommand(sql, kn.con);
 
             SqlParameter sqlParameter0 = new SqlParameter("@TenTaiKhoan", SqlDbType.NVarChar, 50);
@@ -650,21 +653,25 @@ namespace Home.DuLieu
             sqlParameter5.Value = LoiNhan;
             cmd.Parameters.Add(sqlParameter5);
 
-            SqlParameter sqlParameter6 = new SqlParameter("@TongTienHang", SqlDbType.NVarChar, 50);
+            SqlParameter sqlParameter6 = new SqlParameter("@TongTienHang", SqlDbType.Decimal);
             sqlParameter6.Value = TongTienHang;
             cmd.Parameters.Add(sqlParameter6);
 
-            SqlParameter sqlParameter7 = new SqlParameter("@PhiVanChuyen", SqlDbType.NVarChar, 50);
+            SqlParameter sqlParameter7 = new SqlParameter("@PhiVanChuyen", SqlDbType.Decimal);
             sqlParameter7.Value = PhiVanChuyen;
             cmd.Parameters.Add(sqlParameter7);
 
-            SqlParameter sqlParameter8 = new SqlParameter("@TongThanhToan", SqlDbType.NVarChar, 50);
+            SqlParameter sqlParameter8 = new SqlParameter("@TongThanhToan", SqlDbType.Decimal);
             sqlParameter8.Value = TongThanhToan;
             cmd.Parameters.Add(sqlParameter8);
 
             SqlParameter sqlParameter9 = new SqlParameter("@MaDH", SqlDbType.Int);
             sqlParameter9.Value = MaDonHangHienTai.maDH;
             cmd.Parameters.Add(sqlParameter9);
+
+            SqlParameter sqlParameter10 = new SqlParameter("@NgayMua", SqlDbType.DateTime);
+            sqlParameter10.Value = NgayMua;
+            cmd.Parameters.Add(sqlParameter10);
 
             cmd.ExecuteNonQuery();
         }
@@ -1042,6 +1049,25 @@ namespace Home.DuLieu
             da.Fill(dt);
             return dt;
         }
+        public DataTable doDuLieuDonMua(int MaDH)
+        {
+            kn.myConnect();
+            string sql = "SELECT * FROM DonHangDaMua,SanPham WHERE TenTaiKhoan = @TenTaiKhoan and DonHangDaMua.MaSP = SanPham.MaSP and DonHangDaMua.MaDH = @MaDH ";
+            SqlCommand cmd = new SqlCommand(sql, kn.con);
+
+            SqlParameter sqlParameter0 = new SqlParameter("@TenTaiKhoan", SqlDbType.NVarChar, 50);
+            sqlParameter0.Value = TaiKhoanDangNhap.tenTaiKhoan;
+            cmd.Parameters.Add(sqlParameter0);
+
+            SqlParameter sqlParameter1 = new SqlParameter("@MaDH", SqlDbType.Int);
+            sqlParameter1.Value = MaDH;
+            cmd.Parameters.Add(sqlParameter1);
+
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            return dt;
+        }
         public DataTable doDiaChi()
         {
             kn.myConnect();
@@ -1264,6 +1290,64 @@ namespace Home.DuLieu
             {
                 connection.Close();
             }
+        }
+        //Tìm kiếm sản phẩm theo loại
+        public DataTable TimKiemSanPhamTheoLoai(string timKiem, string maLoaiSP)
+        {
+            DataTable dt = new DataTable();
+            try
+            {
+                Connection_CSDL();
+                string query = "SELECT * FROM SanPham WHERE MaLoai = @MaLoai AND TenSP LIKE '%' + @TimKiem + '%'";
+                SqlCommand cmd = new SqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@TimKiem", timKiem);
+                cmd.Parameters.AddWithValue("@MaLoai", maLoaiSP);
+                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                adapter.Fill(dt);
+            }
+            catch (Exception ex)
+            {
+               MessageBox.Show("Lỗi: " + ex.Message);
+            }
+            finally
+            {
+                if (conn.State == ConnectionState.Open)
+                {
+                    conn.Close();
+                }
+            }
+            return dt;
+        }
+        public DataTable themDonHang()
+        {
+            kn.myConnect();
+            string sql = "select MaDH from ThongTinDH where TenTaiKhoan = @TenTaiKhoan";
+            SqlCommand cmd = new SqlCommand(sql, kn.con);
+
+            SqlParameter sqlParameter0 = new SqlParameter("@TenTaiKhoan", SqlDbType.NVarChar, 50);
+            sqlParameter0.Value = TaiKhoanDangNhap.tenTaiKhoan;
+            cmd.Parameters.Add(sqlParameter0);
+
+            DataTable dt = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            da.Fill(dt);
+            return dt;
+        }
+
+        public DataTable themDonHang(int MaDH)
+        {
+            kn.myConnect();
+            string sql = "select * from ThongTinDH where MaDH = @MaDH";
+            SqlCommand cmd = new SqlCommand(sql, kn.con);
+
+            SqlParameter sqlParameter0 = new SqlParameter("@MaDH", SqlDbType.Int);
+            sqlParameter0.Value = MaDH;
+            cmd.Parameters.Add(sqlParameter0);
+
+            DataTable dt = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            da.Fill(dt);
+            return dt;
         }
 
     }

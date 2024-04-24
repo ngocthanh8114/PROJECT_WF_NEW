@@ -78,11 +78,16 @@
             "Từ 20 triệu đến 50 triệu",
             "Từ 50 triệu đến 150 triệu",
             "Trừ 150 triệu đến 300 triệu",
+            "Trên 300 triệu",
+            "Dưới 20 triệu",
+            "Từ 20 triệu đến 50 triệu",
+            "Từ 50 triệu đến 150 triệu",
+            "Từ 150 triệu đến 300 triệu",
             "Trên 300 triệu"});
-            this.cbLocGia.Location = new System.Drawing.Point(23, 21);
-            this.cbLocGia.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cbLocGia.Location = new System.Drawing.Point(17, 17);
+            this.cbLocGia.Margin = new System.Windows.Forms.Padding(2);
             this.cbLocGia.Name = "cbLocGia";
-            this.cbLocGia.Size = new System.Drawing.Size(371, 36);
+            this.cbLocGia.Size = new System.Drawing.Size(279, 36);
             this.cbLocGia.TabIndex = 6;
             this.cbLocGia.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.cbLocGia.TextOffset = new System.Drawing.Point(10, 3);
@@ -122,6 +127,7 @@
             this.txtTimKiem.AutoRoundedCorners = true;
             this.txtTimKiem.BorderColor = System.Drawing.Color.Gray;
             this.txtTimKiem.BorderRadius = 22;
+            this.txtTimKiem.BorderThickness = 2;
             this.txtTimKiem.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtTimKiem.DefaultText = "";
             this.txtTimKiem.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));

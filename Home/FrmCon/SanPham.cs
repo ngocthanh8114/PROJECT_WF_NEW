@@ -63,6 +63,8 @@ namespace Home.FrmCon
 
         private void cboLoaiSP_SelectedIndexChanged(object sender, EventArgs e)
         {
+            txtTimKiem.Text = "";
+            
             cbLocGia.SelectedIndex = -1;
             if (panelNoiDung != null)
             {
@@ -72,61 +74,20 @@ namespace Home.FrmCon
             string LoaiSP = cboLoaiSP.Text;
             string MaLoai = xl.xuLiMaLoai(LoaiSP);
             addSanPham(xl.doDuLieu(MaLoai));
-            
-            if (LoaiSP != "Xe Phân Khối Lớn" && LoaiSP != "Xe Côn Tay" && LoaiSP != "Xe Tay Ga" && LoaiSP != "Xe Số")
-            {
-                cbLocGia.Visible = false;
-            }
-            else
-            {
-                cbLocGia.Visible = true;
-            }
-            
-        }
-        private void panelNoiDung_Paint(object sender, PaintEventArgs e)
-        {
-
+            UpdateGiaComboBox();
         }
 
-        private void btnTimKiem_Click(object sender, EventArgs e)
-        {
-            if (txtTimKiem.Text == "")
-            {
-                FrmBaoLoi frmBaoLoi = new FrmBaoLoi();
-                frmBaoLoi.hienThiLoi("Bạn chưa nhập thông tin tìm kiếm");
-                frmBaoLoi.Show();
-            }
-            else
-            {
-                cboLoaiSP.ResetText();
-                cbLocGia.Visible=false;
-                if (xl.TimKiemSanPham(txtTimKiem.Text).Rows.Count > 0)
-                {
-                    xl.Connection_CSDL();
-                    if (panelNoiDung.Controls.Count > 0)
-                    {
-                        panelNoiDung.Controls.Clear();
-                    }
-                    addSanPham(xl.TimKiemSanPham(txtTimKiem.Text));
-                }
-                else
-                {
-                    FrmBaoLoi frmBaoLoi = new FrmBaoLoi();
-                    frmBaoLoi.hienThiLoi("Không tìm thấy tên sản phẩm " + txtTimKiem.Text);
-                    frmBaoLoi.Show();
-                }
-                txtTimKiem.Text = "";
-                
-            }
-        }
+       
+               
 
-        private void cbLocGia_SelectedIndexChanged(object sender, EventArgs e)
+        
+        private void LocSanPham()
         {
             if (panelNoiDung != null)
             {
                 panelNoiDung.Controls.Clear();
             }
-            
+
             string selectedGia = cbLocGia.SelectedItem as string;
             string selectedLoaiSP = cboLoaiSP.SelectedItem as string;
 
@@ -135,28 +96,64 @@ namespace Home.FrmCon
                 decimal minPrice = 0;
                 decimal maxPrice = decimal.MaxValue;
 
-                if (selectedGia == "Dưới 20 triệu")
+                switch (selectedGia)
                 {
-                    maxPrice = 20000000;
-                }
-                else if (selectedGia == "Từ 20 triệu đến 50 triệu")
-                {
-                    minPrice = 20000000;
-                    maxPrice = 50000000;
-                }
-                else if (selectedGia == "Từ 50 triệu đến 150 triệu")
-                {
-                    minPrice = 50000000;
-                    maxPrice = 150000000;
-                }
-                else if (selectedGia == "Từ 150 triệu đến 300 triệu")
-                {
-                    minPrice = 150000000;
-                    maxPrice = 300000000;
-                }
-                else if (selectedGia == "Trên 300 triệu")
-                {
-                    minPrice = 300000000;
+                    case "Dưới 20 triệu":
+                        maxPrice = 20000000;
+                        break;
+                    case "Từ 20 triệu đến 50 triệu":
+                        minPrice = 20000000;
+                        maxPrice = 50000000;
+                        break;
+                    case "Từ 50 triệu đến 150 triệu":
+                        minPrice = 50000000;
+                        maxPrice = 150000000;
+                        break;
+                    case "Từ 150 triệu đến 300 triệu":
+                        minPrice = 150000000;
+                        maxPrice = 300000000;
+                        break;
+                    case "Trên 300 triệu":
+                        minPrice = 300000000;
+                        break;
+                    case "Dưới 50 nghìn":
+                        maxPrice = 50000;
+                        break;
+                    case "Từ 50 nghìn đến 100 nghìn":
+                        minPrice = 50000;
+                        maxPrice = 100000;
+                        break;
+                    case "Từ 100 nghìn đến 200 nghìn":
+                        minPrice = 100000;
+                        maxPrice = 200000;
+                        break;
+                    case "Từ 200 nghìn đến 300 nghìn":
+                        minPrice = 200000;
+                        maxPrice = 300000;
+                        break;
+                    case "Trên 300 nghìn":
+                        minPrice = 300000;
+                        break;
+                    case "Dưới 100 nghìn":
+                        maxPrice = 100000;
+                        break;
+                    case "Từ 100 nghìn đến 500 nghìn":
+                        minPrice = 100000;
+                        maxPrice = 500000;
+                        break;
+                    case "Từ 500 nghìn đến 1 triệu":
+                        minPrice = 500000;
+                        maxPrice = 1000000;
+                        break;
+                    case "Từ 1 triệu đến 5 triệu":
+                        minPrice = 1000000;
+                        maxPrice = 5000000;
+                        break;
+                    case "Trên 5 triệu":
+                        minPrice = 5000000;
+                        break;
+                    default:
+                        break;
                 }
 
                 string maLoaiSP = xl.xuLiMaLoai(selectedLoaiSP);
@@ -165,7 +162,7 @@ namespace Home.FrmCon
                 {
                     addSanPham(filteredProducts);
                 }
-                else
+                else 
                 {
                     FrmBaoLoi frmBaoLoi = new FrmBaoLoi();
                     frmBaoLoi.hienThiLoi("Không tìm thấy sản phẩm trong khoảng giá và loại sản phẩm này.");
@@ -173,6 +170,77 @@ namespace Home.FrmCon
                 }
             }
 
+        }
+        private void UpdateGiaComboBox()
+        {
+            if (cboLoaiSP.SelectedItem == null)
+            {
+                return;
+            }
+            cbLocGia.Items.Clear();
+            string selectedLoaiSP = cboLoaiSP.SelectedItem.ToString();
+            switch (selectedLoaiSP)
+            {
+                case "Xe Phân Khối Lớn":
+                    cbLocGia.Items.AddRange(new string[] { "Dưới 20 triệu", "Từ 20 triệu đến 50 triệu", "Từ 50 triệu đến 150 triệu", "Từ 150 triệu đến 300 triệu", "Trên 300 triệu" });
+                    break;
+                case "Xe Số":
+                    cbLocGia.Items.AddRange(new string[] { "Dưới 20 triệu", "Từ 20 triệu đến 50 triệu", "Từ 50 triệu đến 150 triệu", "Từ 150 triệu đến 300 triệu", "Trên 300 triệu" });
+                    break;
+                case "Xe Côn Tay":
+                    cbLocGia.Items.AddRange(new string[] { "Dưới 20 triệu", "Từ 20 triệu đến 50 triệu", "Từ 50 triệu đến 150 triệu", "Từ 150 triệu đến 300 triệu", "Trên 300 triệu" });
+                    break;
+                case "Xe Tay Ga":
+                    cbLocGia.Items.AddRange(new string[] { "Dưới 20 triệu", "Từ 20 triệu đến 50 triệu", "Từ 50 triệu đến 150 triệu", "Từ 150 triệu đến 300 triệu", "Trên 300 triệu" });
+                    break;
+                case "Hóa Chất":
+                    cbLocGia.Items.AddRange(new string[] { "Dưới 50 nghìn", "Từ 50 nghìn đến 100 nghìn", "Từ 100 nghìn đến 200 nghìn", "Từ 200 nghìn đến 300 nghìn", "Trên 300 nghìn" });
+                    break;
+                case "Phụ Tùng":
+                    cbLocGia.Items.AddRange(new string[] { "Dưới 100 nghìn", "Từ 100 nghìn đến 500 nghìn", "Từ 500 nghìn đến 1 triệu", "Từ 1 triệu đến 5 triệu", "Trên 5 triệu" });
+                    break;
+                default:
+                    break;
+            }
+        }
+        private void panelNoiDung_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnTimKiem_Click(object sender, EventArgs e)
+        {
+
+            if (string.IsNullOrEmpty(txtTimKiem.Text))
+            {
+               cboLoaiSP_SelectedIndexChanged(sender, e);
+            }
+            else
+            {
+                string timKiem = txtTimKiem.Text;
+                string selectedLoaiSP = cboLoaiSP.SelectedItem.ToString();
+                string maLoaiSP = xl.xuLiMaLoai(selectedLoaiSP);
+                DataTable dtSanPham = xl.TimKiemSanPhamTheoLoai(timKiem, maLoaiSP);
+
+                if (dtSanPham.Rows.Count > 0)
+                {
+                    panelNoiDung.Controls.Clear();
+                    addSanPham(dtSanPham);
+                }
+                else
+                {
+                    FrmBaoLoi frmBaoLoi = new FrmBaoLoi();
+                    frmBaoLoi.hienThiLoi("Không tìm thấy sản phẩm trong loại sản phẩm này.");
+                    frmBaoLoi.Show();
+                }
+                cbLocGia.SelectedIndex = -1;
+            }
+        }
+
+        private void cbLocGia_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            txtTimKiem.Text = ""; 
+            LocSanPham();
         }
 
     }

@@ -170,6 +170,7 @@
             this.btnBill.Size = new System.Drawing.Size(330, 69);
             this.btnBill.TabIndex = 3;
             this.btnBill.Text = "Đơn hàng của tôi";
+            this.btnBill.Click += new System.EventHandler(this.btnBill_Click);
             // 
             // btnDiaChi
             // 

@@ -16,7 +16,7 @@ namespace Home.FrmCon.FrmHienThi
 {
     public partial class FrmMuaHang : Form
     {
-        int madh;
+        //int madh;
         public FrmMuaHang()
         {
             InitializeComponent();
@@ -76,28 +76,44 @@ namespace Home.FrmCon.FrmHienThi
             lblTienHang.Text = tienHang.ToString() + " VNĐ";
             lblPhiVanChuyen.Text = (SL*100000).ToString() + " VNĐ";
             lblTong.Text = (tienHang + SL*100000).ToString() + " VNĐ";
-            
+            dtpNgayMua.Text = DateTime.Now.ToString();
+
+
         }
 
         private void btnMuaHang_Click(object sender, EventArgs e)
         {
-            char sdt = char.Parse(txtSDT.Text);
+            int number;
+            bool check = int.TryParse(txtSDT.Text, out number);
             //if(!string.IsNullOrWhiteSpace(txtHoTen.Text) || !string.IsNullOrWhiteSpace(txtSDT.Text) || !string.IsNullOrWhiteSpace(txtDiaChi.Text))
-            if(txtHoTen.Text != "" && (txtSDT.Text != "" && char.IsDigit(sdt) && txtDiaChi.Text != ""))
+            if (txtHoTen.Text != "" && (txtSDT.Text != "" && txtDiaChi.Text != ""))
             {
-                xl.MuaHang(txtHoTen.Text, txtEmail.Text, txtSDT.Text, txtDiaChi.Text, txtLoiNhan.Text, lblTienHang.Text, lblPhiVanChuyen.Text, lblTong.Text);
-                xl.DaMuaHang();
-                xl.truSoLuongDaMua();
-                FrmThongBao frmThongBao = new FrmThongBao();
-                xl.themDiaChiVaoDB(txtHoTen.Text, txtDiaChi.Text, txtSDT.Text);
-                frmThongBao.hienThiThongBao("Mua hàng thành công");
-                frmThongBao.ShowDialog();
-                this.Close();
-                TongForm.DonHang.DonHang_Load(TongForm.DonHang, e);
-                madh = LayMaDH();
-                FrmThongTinDH frmThongTinDH = new FrmThongTinDH(madh);
-                frmThongTinDH.ShowDialog();
+                if (check == true)
+                {
+                    string[] str1 = lblTienHang.Text.Split(' ');
+                    string[] str2 = lblPhiVanChuyen.Text.Split(' ');
+                    string[] str3 = lblTong.Text.Split(' ');
+                    decimal tienHang = decimal.Parse(str1[0]);
+                    decimal phiVC = decimal.Parse(str2[0]);
+                    decimal tong = decimal.Parse(str3[0]);  
+                    DateTime NgayMua = DateTime.Now;
 
+                    xl.MuaHang(txtHoTen.Text, txtEmail.Text, txtSDT.Text, txtDiaChi.Text, txtLoiNhan.Text, tienHang, phiVC, tong, NgayMua);
+                    xl.DaMuaHang();
+                    xl.truSoLuongDaMua();
+                    FrmThongBao frmThongBao = new FrmThongBao();
+                    xl.themDiaChiVaoDB(txtHoTen.Text, txtDiaChi.Text, txtSDT.Text);
+                    frmThongBao.hienThiThongBao("Mua hàng thành công");
+                    frmThongBao.ShowDialog();
+                    this.Close();
+                    TongForm.DonHang.DonHang_Load(TongForm.DonHang, e);
+                }
+                else
+                {
+                    FrmBaoLoi frmBaoLoi = new FrmBaoLoi();
+                    frmBaoLoi.hienThiLoi("Vui lòng kiểm tra lại số điện thoại!");
+                    frmBaoLoi.Show();
+                }
             }
             else
             {
@@ -105,6 +121,7 @@ namespace Home.FrmCon.FrmHienThi
                 frmBaoLoi.hienThiLoi("Bạn chưa nhập đầy đủ thông tin cần thiết");
                 frmBaoLoi.Show();
             }
+
 
         }
 

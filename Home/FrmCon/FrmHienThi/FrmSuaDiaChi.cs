@@ -39,12 +39,20 @@ namespace Home.FrmCon.FrmHienThi
 
         private void btn_Luu_Click(object sender, EventArgs e)
         {
-            if(flag == 0 )
+            int number;
+            bool check = int.TryParse(txt_SDT.Text, out number);
+            if (flag == 0)
             {
-                if(txt_HoTen.Text == "" || txtDiaChi.Text == ""  || txt_SDT.Text == "")
+                if (txt_HoTen.Text == "" || txtDiaChi.Text == "" || txt_SDT.Text == "")
                 {
                     FrmBaoLoi frmBaoLoi = new FrmBaoLoi();
                     frmBaoLoi.hienThiLoi("Vui lòng nhập đầy đủ thông tin!");
+                    frmBaoLoi.Show();
+                }
+                else if (check == false)
+                {
+                    FrmBaoLoi frmBaoLoi = new FrmBaoLoi();
+                    frmBaoLoi.hienThiLoi("Vui lòng kiểm tra lại số điện thoại!");
                     frmBaoLoi.Show();
                 }
                 else
@@ -57,13 +65,20 @@ namespace Home.FrmCon.FrmHienThi
                     this.Close();
                     oDiaChi.themDiaChi(txt_HoTen.Text, txt_SDT.Text, txtDiaChi.Text, 0);
                 }
-            }   
+            }
             else
             {
+                check = int.TryParse(txt_SDT.Text, out number);
                 if (txt_HoTen.Text == "" || txtDiaChi.Text == "" || txt_SDT.Text == "")
                 {
                     FrmBaoLoi frmBaoLoi = new FrmBaoLoi();
                     frmBaoLoi.hienThiLoi("Vui lòng nhập đầy đủ thông tin!");
+                    frmBaoLoi.Show();
+                }
+                else if (check == false)
+                {
+                    FrmBaoLoi frmBaoLoi = new FrmBaoLoi();
+                    frmBaoLoi.hienThiLoi("Vui lòng kiểm tra lại số điện thoại!");
                     frmBaoLoi.Show();
                 }
                 else
@@ -74,8 +89,8 @@ namespace Home.FrmCon.FrmHienThi
                     frmThongBao.ShowDialog();
                     this.Close();
                     diaChi.DiaChi_Load(diaChi, e);
-                }  
-            }    
+                }
+            }
         }
 
         private void SuaDiaChi_Load(object sender, EventArgs e)
