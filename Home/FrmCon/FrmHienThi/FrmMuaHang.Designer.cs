@@ -932,7 +932,7 @@
             this.label1.Text = "  Địa chỉ của tôi";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-<<<<<<< HEAD
+
             // guna2Panel19
             // 
             this.guna2Panel19.BackColor = System.Drawing.SystemColors.ControlDarkDark;
@@ -944,8 +944,6 @@
             this.guna2Panel19.Size = new System.Drawing.Size(610, 2);
             this.guna2Panel19.TabIndex = 28;
             // 
-=======
->>>>>>> d08e7ae5ccd16c85e36256f6101af6f5e9317dac
             // guna2Panel22
             // 
             this.guna2Panel22.BackColor = System.Drawing.Color.Gainsboro;

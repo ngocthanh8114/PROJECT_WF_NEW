@@ -58,6 +58,32 @@ namespace Home.FrmCon.FrmHienThi
 
         }
 
+        private void ODonHang_Load(object sender, EventArgs e)
+        {
+            numSL.Minimum = 0;
+            numSL.Maximum = 100;
+
+            numSL.ValueChanged += new EventHandler(numSL_ValueChanged);
+        }
+
+        private void numSL_ValueChanged(object sender, EventArgs e)
+        {
+            int value = (int)numSL.Value;
+            string TenSP = lblTenSP.Text.ToString();
+
+            // Lấy số lượng từ numSL
+            int SL = (int)numSL.Value;
+
+            if (value > xl.KiemTraSoLuongSP(TenSP))
+            {
+                FrmBaoLoi frmBaoLoi = new FrmBaoLoi();
+                frmBaoLoi.hienThiLoi("Số lượng sản phẩm không đủ để mua");
+                frmBaoLoi.Show();
+
+                numSL.Value = xl.KiemTraSoLuongSP(TenSP);
+            }
+        }
+
 
         //-------------NgocThanh--------------------
 

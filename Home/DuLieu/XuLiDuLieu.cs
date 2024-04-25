@@ -29,16 +29,8 @@ namespace Home.DuLieu
     internal class XuLiDuLieu
     {
         KetNoiCSDL kn = new KetNoiCSDL();
-<<<<<<< HEAD
-        
-=======
-<<<<<<< HEAD
-        string strconn = "Data Source=.;Initial Catalog=BanXeMay;User ID=sa;Password=123;Encrypt=False";
-=======
-        //string strconn = "Data Source=DESKTOP-74RKBUS;Initial Catalog=BanXeMay;Integrated Security=True";
->>>>>>> d08e7ae5ccd16c85e36256f6101af6f5e9317dac
 
->>>>>>> da77930e16f92cb61523814a831096c89c6b05de
+
         string strconn = "Data Source=.;Initial Catalog=BanXeMay;User ID=sa;Password=123;Encrypt=False";
 
         SqlConnection conn = null;
@@ -334,7 +326,31 @@ namespace Home.DuLieu
 
             cmd.ExecuteNonQuery();
         }
-        
+        public int KiemTraSoLuongSP(string TenSP)
+        {
+            kn.myConnect();
+
+            string sql = "SELECT SoLuong FROM SanPham WHERE TenSP = @TenSP";
+            SqlCommand cmd = kn.con.CreateCommand();
+            cmd.CommandText = sql;
+
+            // Thêm tham số @TenSP vào câu lệnh SQL
+            SqlParameter sqlParameter1 = new SqlParameter("@TenSP", SqlDbType.NVarChar, 50);
+            sqlParameter1.Value = TenSP;
+            cmd.Parameters.Add(sqlParameter1);
+
+            object result = cmd.ExecuteScalar();
+            if (result != null)
+            {
+                return (int)result;
+            }
+            else
+            {
+                return -1;
+            }
+
+        }
+
         // Tính số lượng sp hiện có
         public int soLuongSP(string MaSP)
         {

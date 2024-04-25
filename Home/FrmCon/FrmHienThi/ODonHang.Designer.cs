@@ -71,9 +71,9 @@
             this.panelGiua.Controls.Add(this.guna2Panel2);
             this.panelGiua.Controls.Add(this.picBoxSP);
             this.panelGiua.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelGiua.Location = new System.Drawing.Point(587, 0);
+            this.panelGiua.Location = new System.Drawing.Point(438, 0);
             this.panelGiua.Name = "panelGiua";
-            this.panelGiua.Size = new System.Drawing.Size(874, 202);
+            this.panelGiua.Size = new System.Drawing.Size(1023, 202);
             this.panelGiua.TabIndex = 6;
             // 
             // guna2Panel1
@@ -87,7 +87,7 @@
             this.guna2Panel1.Controls.Add(this.lblGia);
             this.guna2Panel1.Controls.Add(this.lblTenSP);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.guna2Panel1.Location = new System.Drawing.Point(297, 35);
+            this.guna2Panel1.Location = new System.Drawing.Point(446, 35);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(577, 164);
             this.guna2Panel1.TabIndex = 36;
@@ -184,6 +184,7 @@
             this.numSL.TabIndex = 37;
             this.numSL.Text = "gunaNumeric1";
             this.numSL.Value = ((long)(1));
+            this.numSL.ValueChanged += new System.EventHandler(this.numSL_ValueChanged);
             // 
             // lblGia
             // 
@@ -217,7 +218,7 @@
             this.guna2CustomGradientPanel1.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(0, 0);
             this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
-            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(874, 35);
+            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(1023, 35);
             this.guna2CustomGradientPanel1.TabIndex = 27;
             // 
             // cbDonHang
@@ -243,7 +244,7 @@
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.guna2Panel2.Location = new System.Drawing.Point(0, 199);
             this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(874, 3);
+            this.guna2Panel2.Size = new System.Drawing.Size(1023, 3);
             this.guna2Panel2.TabIndex = 37;
             // 
             // picBoxSP
@@ -264,7 +265,7 @@
             this.panelTrai.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelTrai.Location = new System.Drawing.Point(0, 0);
             this.panelTrai.Name = "panelTrai";
-            this.panelTrai.Size = new System.Drawing.Size(587, 202);
+            this.panelTrai.Size = new System.Drawing.Size(438, 202);
             this.panelTrai.TabIndex = 4;
             // 
             // panelPhai
@@ -285,6 +286,7 @@
             this.Controls.Add(this.panelTong);
             this.Name = "ODonHang";
             this.Size = new System.Drawing.Size(2048, 202);
+            this.Load += new System.EventHandler(this.ODonHang_Load);
             this.panelTong.ResumeLayout(false);
             this.panelGiua.ResumeLayout(false);
             this.guna2Panel1.ResumeLayout(false);
