@@ -36,7 +36,8 @@ namespace Home.FrmCon.FrmHienThi
                 int SL = row.Field<int>("SoLuong");
                 byte[] b = row.Field<byte[]>("HinhAnh");
                 Image anh = xl.ByteArrToImage(b);
-                oDonHangDaMua.themDonMua(tenSP,MaDH,SL,anh);
+                DateTime ngayMua = row.Field<DateTime>("NgayDH");
+                oDonHangDaMua.themDonMua(tenSP,MaDH,SL,anh, ngayMua);
                 panelNoiDung.Controls.Add(oDonHangDaMua);
                 oDonHangDaMua.BringToFront();
             }

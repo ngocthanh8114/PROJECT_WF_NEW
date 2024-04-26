@@ -241,11 +241,11 @@
             this.dtpNgayMua.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.dtpNgayMua.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.dtpNgayMua.IndicateFocus = true;
-            this.dtpNgayMua.Location = new System.Drawing.Point(531, 45);
+            this.dtpNgayMua.Location = new System.Drawing.Point(531, 46);
             this.dtpNgayMua.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtpNgayMua.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtpNgayMua.Name = "dtpNgayMua";
-            this.dtpNgayMua.Size = new System.Drawing.Size(233, 42);
+            this.dtpNgayMua.Size = new System.Drawing.Size(233, 41);
             this.dtpNgayMua.TabIndex = 64;
             this.dtpNgayMua.Value = new System.DateTime(2024, 4, 24, 1, 35, 11, 460);
             // 

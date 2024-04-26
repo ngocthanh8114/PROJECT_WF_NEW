@@ -704,3 +704,5 @@ D:\DACK\PROJECT_WF_NEW\Home\obj\Debug\Home.pdb
 D:\DACK\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.BaoCao.resources
 >>>>>>> 4c534c0dbc1eb435227ef706a8bf72107a48f05a
 D:\VS Code\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.BaoCao.resources
+D:\VS Code\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmCuaAdmin.KhachHang.resources
+D:\VS Code\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmCuaAdmin.OKhachHang.resources

@@ -96,5 +96,15 @@ namespace Home.FrmCon
             btnThongTin.Checked = false;
             btnBill.Checked = true;
         }
+
+        private void panelChuaQC_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panelNoiDung_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

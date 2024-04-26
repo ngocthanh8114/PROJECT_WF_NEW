@@ -17,12 +17,13 @@ namespace Home.FrmCon.FrmHienThi
             InitializeComponent();
         }
 
-        public void themDonMua(string tenSP, int MaDH, int SL, Image Anh)
+        public void themDonMua(string tenSP, int MaDH, int SL, Image Anh, DateTime NgayMua)
         {
             lblMaDH.Text = MaDH.ToString();
             lblTenSP.Text = tenSP;
             lblSoLuong.Text = SL.ToString() + " sản phẩm";
             picBoxSP.Image = Anh;
+            dtpNgayMua.Text = NgayMua.ToString();
         }
 
 
