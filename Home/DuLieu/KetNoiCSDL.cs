@@ -15,7 +15,6 @@ namespace Home.DuLieu
 {
     internal class KetNoiCSDL
     {
-
         private static string sqlCon = "Data Source=.;Initial Catalog=BanXeMay;User ID=sa;Password=123;Encrypt=False";
 
         public SqlConnection con = new SqlConnection(sqlCon);

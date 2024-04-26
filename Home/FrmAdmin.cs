@@ -70,7 +70,9 @@ namespace Home
 
         private void btnBaoCao_Click(object sender, EventArgs e)
         {
-            addHienThi(TongForm.BaoCao);
+            UCBaoCao uCBaoCao = new UCBaoCao();
+            panelHienThi.Controls.Add(uCBaoCao);
+            uCBaoCao.BringToFront();
             btnSanPham.Checked = false;
             btnKhachHang.Checked = false;
             btnHoaDon.Checked = false;

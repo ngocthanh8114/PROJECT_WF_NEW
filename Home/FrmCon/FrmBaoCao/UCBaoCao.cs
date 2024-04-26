@@ -23,5 +23,12 @@ namespace Home.FrmCon.FrmBaoCao
             PanelNoidung.Controls.Add(uCBaoCaoNhapHang);
             uCBaoCaoNhapHang.BringToFront();
         }
+
+        private void btnBCDoanhThu_Click(object sender, EventArgs e)
+        {
+            BaoCao baoCao = new BaoCao();
+            PanelNoidung.Controls.Add(baoCao);
+            baoCao.BringToFront();
+        }
     }
 }
