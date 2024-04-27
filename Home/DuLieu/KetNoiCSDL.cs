@@ -19,7 +19,7 @@ namespace Home.DuLieu
 
         public SqlConnection con = new SqlConnection(sqlCon);
 
-        string strconn = "Data Source=.;Initial Catalog=BanXeMay;User ID=sa;Password=123;Encrypt=False";
+        public static string strconn = "Data Source=.;Initial Catalog=BanXeMay;User ID=sa;Password=123;Encrypt=False";
 
 
 

@@ -888,7 +888,6 @@ C:\Users\PC\OneDrive\Desktop\New folder (9)\PROJECT_WF_NEW\Home\bin\Debug\Crysta
 C:\Users\PC\OneDrive\Desktop\New folder (9)\PROJECT_WF_NEW\Home\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
 C:\Users\PC\OneDrive\Desktop\New folder (9)\PROJECT_WF_NEW\Home\bin\Debug\stdole.dll
 C:\Users\PC\OneDrive\Desktop\New folder (9)\PROJECT_WF_NEW\Home\obj\Debug\Home.csproj.Up2Date
-<<<<<<< HEAD
 C:\Users\PC\OneDrive\Desktop\Đồ-Án-WinForm\PROJECT_WF_NEW\Home\bin\Debug\Home.exe.config
 C:\Users\PC\OneDrive\Desktop\Đồ-Án-WinForm\PROJECT_WF_NEW\Home\bin\Debug\Home.exe
 C:\Users\PC\OneDrive\Desktop\Đồ-Án-WinForm\PROJECT_WF_NEW\Home\bin\Debug\Home.pdb
@@ -949,6 +948,7 @@ C:\Users\PC\OneDrive\Desktop\Đồ-Án-WinForm\PROJECT_WF_NEW\Home\obj\Debug\Hom
 C:\Users\PC\OneDrive\Desktop\Đồ-Án-WinForm\PROJECT_WF_NEW\Home\obj\Debug\Home.csproj.Up2Date
 C:\Users\PC\OneDrive\Desktop\Đồ-Án-WinForm\PROJECT_WF_NEW\Home\obj\Debug\Home.exe
 C:\Users\PC\OneDrive\Desktop\Đồ-Án-WinForm\PROJECT_WF_NEW\Home\obj\Debug\Home.pdb
-=======
 >>>>>>> 260367f0471b785d88c94a45b15522496a120424
 >>>>>>> 6ffb559f3eaa4227b2ff9a2b127267dc74c4cf5e
+C:\Users\PC\OneDrive\Desktop\Đồ-Án-WinForm\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmCuaAdmin.OKhachHang.resources
+C:\Users\PC\OneDrive\Desktop\Đồ-Án-WinForm\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmCuaAdmin.KhachHang.resources
