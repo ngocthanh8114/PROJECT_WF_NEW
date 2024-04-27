@@ -19,8 +19,8 @@ namespace Home.FrmCon.FrmBaoCao
             InitializeComponent();
         }
         XuLiDuLieu xl = new XuLiDuLieu();
-        static string strcon = "Data Source=.;Initial Catalog=BanXeMay;User ID=sa;Password=123;Encrypt=False";
-        static SqlConnection conn = new SqlConnection(strcon);
+
+        SqlConnection conn = null;
         public void LoadDataToDataGridView()
         {
             DataTable dt = xl.DoDuLieuBaoCaoNhapHang();
@@ -43,9 +43,9 @@ namespace Home.FrmCon.FrmBaoCao
 
         private void btnIn_Click(object sender, EventArgs e)
         {
-            string sql = @"Select SanPham.MaSP, SanPham.TenSP, SanPham.Gia, SanPham.SoLuong, NCC.TenNCC, NCC.DiaChi, NCC.SDT from SanPham inner join NCC on SanPham.MaNCC = NCC.MaNCC  ";
-            SqlCommand cmd = new SqlCommand(sql, conn);
-            conn.Open();
+            xl.Connection_CSDL();
+            string sql = @"Select NhapHang.MaSP, NhapHang.TenSP, NhapHang.Gia, NhapHang.SoLuong, NCC.TenNCC, NCC.DiaChi, NCC.SDT, NhapHang.NgayNhapHang from NhapHang inner join NCC on NhapHang.MaNCC = NCC.MaNCC ";
+            SqlCommand cmd = new SqlCommand(sql,conn);
             DataTable dt = new DataTable();
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             da.Fill(dt);
