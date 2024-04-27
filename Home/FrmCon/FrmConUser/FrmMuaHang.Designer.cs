@@ -932,18 +932,6 @@
             this.label1.Text = "  Địa chỉ của tôi";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-
-            // guna2Panel19
-            // 
-            this.guna2Panel19.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.guna2Panel19.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.guna2Panel19.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.guna2Panel19.Location = new System.Drawing.Point(0, 650);
-            this.guna2Panel19.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.guna2Panel19.Name = "guna2Panel19";
-            this.guna2Panel19.Size = new System.Drawing.Size(610, 2);
-            this.guna2Panel19.TabIndex = 28;
-            // 
             // guna2Panel22
             // 
             this.guna2Panel22.BackColor = System.Drawing.Color.Gainsboro;
@@ -962,7 +950,7 @@
             this.guna2Panel19.Location = new System.Drawing.Point(0, 650);
             this.guna2Panel19.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Panel19.Name = "guna2Panel19";
-            this.guna2Panel19.Size = new System.Drawing.Size(611, 2);
+            this.guna2Panel19.Size = new System.Drawing.Size(613, 2);
             this.guna2Panel19.TabIndex = 28;
             // 
             // guna2Panel10

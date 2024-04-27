@@ -175,7 +175,7 @@
             this.numSL.ButtonForeColor = System.Drawing.Color.White;
             this.numSL.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.numSL.ForeColor = System.Drawing.Color.Black;
-            this.numSL.Location = new System.Drawing.Point(7, 87);
+            this.numSL.Location = new System.Drawing.Point(7, 90);
             this.numSL.Maximum = ((long)(9999999));
             this.numSL.Minimum = ((long)(0));
             this.numSL.Name = "numSL";

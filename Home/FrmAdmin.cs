@@ -73,6 +73,21 @@ namespace Home
             UCBaoCao uCBaoCao = new UCBaoCao();
             panelHienThi.Controls.Add(uCBaoCao);
             uCBaoCao.BringToFront();
+            btnSanPham.Checked = false;
+            btnKhachHang.Checked = false;
+            btnHoaDon.Checked = false;
+            btnBaoCao.Checked = true;
+            btnTaiKhoan.Checked = false;
+        }
+
+        private void btnKhachHang_Click(object sender, EventArgs e)
+        {
+            addHienThi(TongForm.KhachHang);
+            btnSanPham.Checked = false;
+            btnKhachHang.Checked = true;
+            btnHoaDon.Checked = false;
+            btnBaoCao.Checked = false ;
+            btnTaiKhoan.Checked = false;
         }
     }
 }

@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OSanPhamDaMua));
-            this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.lblTenSP = new System.Windows.Forms.Label();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.lblTieuDe = new System.Windows.Forms.Label();
@@ -38,28 +37,17 @@
             this.btnMuaLai = new Guna.UI.WinForms.GunaAdvenceButton();
             this.lblMaDH = new System.Windows.Forms.Label();
             this.picBoxSP = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.dtpNgayMua = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxSP)).BeginInit();
             this.SuspendLayout();
-            // 
-            // guna2CustomGradientPanel1
-            // 
-            this.guna2CustomGradientPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2CustomGradientPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.guna2CustomGradientPanel1.FillColor2 = System.Drawing.Color.Tomato;
-            this.guna2CustomGradientPanel1.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.guna2CustomGradientPanel1.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(0, 0);
-            this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
-            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(280, 10);
-            this.guna2CustomGradientPanel1.TabIndex = 37;
             // 
             // lblTenSP
             // 
             this.lblTenSP.Dock = System.Windows.Forms.DockStyle.Top;
             this.lblTenSP.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTenSP.ForeColor = System.Drawing.Color.Black;
-            this.lblTenSP.Location = new System.Drawing.Point(0, 186);
+            this.lblTenSP.Location = new System.Drawing.Point(0, 212);
             this.lblTenSP.Name = "lblTenSP";
             this.lblTenSP.Size = new System.Drawing.Size(280, 43);
             this.lblTenSP.TabIndex = 38;
@@ -106,7 +94,7 @@
             this.guna2Panel1.Controls.Add(this.lblTieuDe);
             this.guna2Panel1.Controls.Add(this.lblSoLuong);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel1.Location = new System.Drawing.Point(0, 229);
+            this.guna2Panel1.Location = new System.Drawing.Point(0, 255);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(280, 44);
             this.guna2Panel1.TabIndex = 52;
@@ -131,7 +119,7 @@
             this.btnMuaLai.Image = null;
             this.btnMuaLai.ImageSize = new System.Drawing.Size(20, 20);
             this.btnMuaLai.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnMuaLai.Location = new System.Drawing.Point(0, 285);
+            this.btnMuaLai.Location = new System.Drawing.Point(0, 307);
             this.btnMuaLai.Name = "btnMuaLai";
             this.btnMuaLai.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.btnMuaLai.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -161,12 +149,29 @@
             this.picBoxSP.Dock = System.Windows.Forms.DockStyle.Top;
             this.picBoxSP.Image = ((System.Drawing.Image)(resources.GetObject("picBoxSP.Image")));
             this.picBoxSP.ImageRotate = 0F;
-            this.picBoxSP.Location = new System.Drawing.Point(0, 10);
+            this.picBoxSP.Location = new System.Drawing.Point(0, 36);
             this.picBoxSP.Name = "picBoxSP";
             this.picBoxSP.Size = new System.Drawing.Size(280, 176);
             this.picBoxSP.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picBoxSP.TabIndex = 45;
             this.picBoxSP.TabStop = false;
+            // 
+            // dtpNgayMua
+            // 
+            this.dtpNgayMua.Checked = true;
+            this.dtpNgayMua.Dock = System.Windows.Forms.DockStyle.Top;
+            this.dtpNgayMua.Enabled = false;
+            this.dtpNgayMua.FillColor = System.Drawing.Color.Tomato;
+            this.dtpNgayMua.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.dtpNgayMua.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.dtpNgayMua.Location = new System.Drawing.Point(0, 0);
+            this.dtpNgayMua.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.dtpNgayMua.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.dtpNgayMua.Name = "dtpNgayMua";
+            this.dtpNgayMua.Size = new System.Drawing.Size(280, 36);
+            this.dtpNgayMua.TabIndex = 55;
+            this.dtpNgayMua.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.dtpNgayMua.Value = new System.DateTime(2024, 4, 24, 22, 54, 14, 282);
             // 
             // OSanPhamDaMua
             // 
@@ -179,9 +184,9 @@
             this.Controls.Add(this.lblTenSP);
             this.Controls.Add(this.gunaLabel1);
             this.Controls.Add(this.picBoxSP);
-            this.Controls.Add(this.guna2CustomGradientPanel1);
+            this.Controls.Add(this.dtpNgayMua);
             this.Name = "OSanPhamDaMua";
-            this.Size = new System.Drawing.Size(280, 330);
+            this.Size = new System.Drawing.Size(280, 352);
             this.guna2Panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picBoxSP)).EndInit();
             this.ResumeLayout(false);
@@ -190,7 +195,6 @@
         }
 
         #endregion
-        private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel1;
         private System.Windows.Forms.Label lblTenSP;
         private Guna.UI.WinForms.GunaLabel gunaLabel1;
         private System.Windows.Forms.Label lblTieuDe;
@@ -199,5 +203,6 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI.WinForms.GunaAdvenceButton btnMuaLai;
         private System.Windows.Forms.Label lblMaDH;
+        private Guna.UI2.WinForms.Guna2DateTimePicker dtpNgayMua;
     }
 }

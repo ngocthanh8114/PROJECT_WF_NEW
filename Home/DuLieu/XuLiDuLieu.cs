@@ -1320,7 +1320,7 @@ namespace Home.DuLieu
         public DataTable doDuLieuDonMua()
         {
             kn.myConnect();
-            string sql = "SELECT * FROM DonHangDaMua,SanPham WHERE TenTaiKhoan = @TenTaiKhoan and DonHangDaMua.MaSP = SanPham.MaSP ";
+            string sql = "SELECT sp.TenSP, dhdm.SoLuong, dhdm.MaDH,HinhAnh,NgayDH FROM DonHangDaMua AS dhdm JOIN ThongTinDH AS ttdh ON dhdm.MaDH = ttdh.MaDH JOIN SanPham AS sp ON sp.MaSP = dhdm.MaSP where dhdm.TenTaiKhoan = @TenTaiKhoan ";
             SqlCommand cmd = new SqlCommand(sql, kn.con);
 
             SqlParameter sqlParameter0 = new SqlParameter("@TenTaiKhoan", SqlDbType.NVarChar, 50);
@@ -1335,7 +1335,7 @@ namespace Home.DuLieu
         public DataTable doDuLieuDonMua(int MaDH)
         {
             kn.myConnect();
-            string sql = "SELECT * FROM DonHangDaMua,SanPham WHERE TenTaiKhoan = @TenTaiKhoan and DonHangDaMua.MaSP = SanPham.MaSP and DonHangDaMua.MaDH = @MaDH ";
+            string sql = "SELECT sp.TenSP, dhdm.SoLuong, dhdm.MaDH,HinhAnh,NgayDH FROM DonHangDaMua AS dhdm JOIN ThongTinDH AS ttdh ON dhdm.MaDH = ttdh.MaDH JOIN SanPham AS sp ON sp.MaSP = dhdm.MaSP where dhdm.TenTaiKhoan = @TenTaiKhoan and dhdm.MaDH = @MaDH ";
             SqlCommand cmd = new SqlCommand(sql, kn.con);
 
             SqlParameter sqlParameter0 = new SqlParameter("@TenTaiKhoan", SqlDbType.NVarChar, 50);
@@ -1664,6 +1664,18 @@ namespace Home.DuLieu
             return dt;
         }
 
+        public DataTable doDuLieuKhachHang()
+        {
+            string sql = "SELECT distinct TenKhachHang,SoDienThoai,DiaChi FROM ThongTinDH where TenTaiKhoan is not null";
+            SqlCommand cmd = new SqlCommand(sql, kn.con);
+
+            DataTable dt = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            da.Fill(dt);
+            return dt;
+        }
+
+        
     }
 }
 

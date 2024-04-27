@@ -90,9 +90,9 @@
             this.label4.Font = new System.Drawing.Font("Montserrat", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(33, 23);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(231, 32);
+            this.label4.Size = new System.Drawing.Size(188, 32);
             this.label4.TabIndex = 16;
-            this.label4.Text = "Đơn hàng đã mua";
+            this.label4.Text = "Địa chỉ của tôi";
             // 
             // guna2Panel9
             // 
