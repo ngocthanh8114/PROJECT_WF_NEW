@@ -1556,6 +1556,7 @@ namespace Home.DuLieu
 
         public DataTable doDuLieuKhachHang()
         {
+            kn.myConnect();
             string sql = "SELECT distinct TenKhachHang,SoDienThoai,DiaChi FROM ThongTinDH where TenTaiKhoan is not null";
             SqlCommand cmd = new SqlCommand(sql, kn.con);
 
@@ -1565,8 +1566,99 @@ namespace Home.DuLieu
             return dt;
         }
 
-        
+        public decimal tinhTongTien(string ten, string sdt, string diaChi)
+        {
+            kn.myConnect();
+            string sql = "SELECT sum(TongThanhToan) FROM ThongTinDH where TenKhachHang = @TenKhachHang and SoDienThoai = @SoDienThoai and DiaChi = @DiaChi";
+            SqlCommand cmd = new SqlCommand(sql, kn.con);
+
+            SqlParameter sqlParameter1 = new SqlParameter("@DiaChi", SqlDbType.NVarChar);
+            sqlParameter1.Value = diaChi;
+            cmd.Parameters.Add(sqlParameter1);
+
+            SqlParameter sqlParameter2 = new SqlParameter("@SoDienThoai", SqlDbType.NVarChar, 50);
+            sqlParameter2.Value = sdt;
+            cmd.Parameters.Add(sqlParameter2);
+
+
+            SqlParameter sqlParameter4 = new SqlParameter("@TenKhachHang", SqlDbType.NVarChar, 50);
+            sqlParameter4.Value = ten;
+            cmd.Parameters.Add(sqlParameter4);
+
+            decimal tongTien = (decimal)cmd.ExecuteScalar();
+            return tongTien;
+        }
+
+        public int tinhSL(string ten, string sdt, string diaChi)
+        {
+            kn.myConnect();
+            string sql = "SELECT sum(SoLuong) FROM ThongTinDH as ttdh, DonHangDaMua as dhdm where ttdh.MaDH = dhdm.MaDH and  TenKhachHang = @TenKhachHang and SoDienThoai = @SoDienThoai and DiaChi = @DiaChi";
+            SqlCommand cmd = new SqlCommand(sql, kn.con);
+
+            SqlParameter sqlParameter1 = new SqlParameter("@DiaChi", SqlDbType.NVarChar);
+            sqlParameter1.Value = diaChi;
+            cmd.Parameters.Add(sqlParameter1);
+
+            SqlParameter sqlParameter2 = new SqlParameter("@SoDienThoai", SqlDbType.NVarChar, 50);
+            sqlParameter2.Value = sdt;
+            cmd.Parameters.Add(sqlParameter2);
+
+
+            SqlParameter sqlParameter4 = new SqlParameter("@TenKhachHang", SqlDbType.NVarChar, 50);
+            sqlParameter4.Value = ten;
+            cmd.Parameters.Add(sqlParameter4);
+
+            int tongSL = (int)cmd.ExecuteScalar();
+            return tongSL;
+        }
+
+        public string tenTK(string ten, string sdt, string diaChi)
+        {
+            kn.myConnect();
+            string sql = "SELECT distinct TenTaiKhoan FROM ThongTinDH  where  TenKhachHang = @TenKhachHang and SoDienThoai = @SoDienThoai and DiaChi = @DiaChi";
+            SqlCommand cmd = new SqlCommand(sql, kn.con);
+
+            SqlParameter sqlParameter1 = new SqlParameter("@DiaChi", SqlDbType.NVarChar);
+            sqlParameter1.Value = diaChi;
+            cmd.Parameters.Add(sqlParameter1);
+
+            SqlParameter sqlParameter2 = new SqlParameter("@SoDienThoai", SqlDbType.NVarChar, 50);
+            sqlParameter2.Value = sdt;
+            cmd.Parameters.Add(sqlParameter2);
+
+
+            SqlParameter sqlParameter4 = new SqlParameter("@TenKhachHang", SqlDbType.NVarChar, 50);
+            sqlParameter4.Value = ten;
+            cmd.Parameters.Add(sqlParameter4);
+
+            string tenTK = (string)cmd.ExecuteScalar();
+            return tenTK;
+        }
+        public DataTable doDuLieuDonMuaAdmin(string ten, string sdt, string diaChi)
+        {
+            kn.myConnect();
+            string sql = "SELECT sp.TenSP, dhdm.SoLuong, dhdm.MaDH,HinhAnh,NgayDH FROM DonHangDaMua AS dhdm JOIN ThongTinDH AS ttdh ON dhdm.MaDH = ttdh.MaDH JOIN SanPham AS sp ON sp.MaSP = dhdm.MaSP and TenKhachHang = @TenKhachHang and SoDienThoai = @SoDienThoai and DiaChi = @DiaChi ";
+            SqlCommand cmd = new SqlCommand(sql, kn.con);
+
+            SqlParameter sqlParameter1 = new SqlParameter("@DiaChi", SqlDbType.NVarChar);
+            sqlParameter1.Value = diaChi;
+            cmd.Parameters.Add(sqlParameter1);
+
+            SqlParameter sqlParameter2 = new SqlParameter("@SoDienThoai", SqlDbType.NVarChar, 50);
+            sqlParameter2.Value = sdt;
+            cmd.Parameters.Add(sqlParameter2);
+
+            SqlParameter sqlParameter4 = new SqlParameter("@TenKhachHang", SqlDbType.NVarChar, 50);
+            sqlParameter4.Value = ten;
+            cmd.Parameters.Add(sqlParameter4);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            return dt;
+        }
     }
+   
 }
 
 

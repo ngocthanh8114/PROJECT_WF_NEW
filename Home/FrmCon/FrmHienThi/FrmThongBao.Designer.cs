@@ -131,6 +131,7 @@
             this.Name = "FrmThongBao";
             this.Opacity = 0.95D;
             this.ShowIcon = false;
+            this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmThongBao";
             this.Load += new System.EventHandler(this.FrmThongBao_Load);

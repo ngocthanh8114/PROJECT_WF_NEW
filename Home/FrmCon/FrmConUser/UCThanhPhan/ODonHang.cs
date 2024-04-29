@@ -25,10 +25,10 @@ namespace Home.FrmCon.FrmHienThi
         public void themDonHang(string tenSP, decimal gia, int SL, Image anh, byte TrangThai)
         {
             lblTenSP.Text = tenSP;
-            lblGia.Text = "Giá: " + gia.ToString() + " VNĐ";
+            lblGia.Text = "Giá: " + gia.ToString("N0") + " VNĐ";
             numSL.Value = SL;
             picBoxSP.Image = anh;
-            lblKhuyenMai.Text = gia.ToString() + " VNĐ";
+            lblKhuyenMai.Text = gia.ToString("N0") + " VNĐ";
             if (TrangThai == 1)
             {
                 cbDonHang.Checked = true;

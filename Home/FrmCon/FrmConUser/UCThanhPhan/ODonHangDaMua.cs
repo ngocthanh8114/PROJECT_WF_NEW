@@ -24,10 +24,10 @@ namespace Home.FrmCon.FrmHienThi
             txtEmail.Text = email;
             txtLoiNhac.Text = loiNhac;
             txtSDT.Text = sdt;
-            txtGia.Text = gia.ToString();
-            txtVanChuyen.Text = vanChuyen.ToString();
-            txtTong.Text = tong.ToString();
-            dtpNgayMua.Text = ngay.ToString();
+            txtGia.Text = gia.ToString("N0") + " VNĐ";
+            txtVanChuyen.Text = vanChuyen.ToString("N0") + " VNĐ";
+            txtTong.Text = tong.ToString("N0") + " VNĐ";
+            dtpNgayMua.Text = ngay.ToString(); 
         }
 
         private void guna2Shapes8_Click(object sender, EventArgs e)

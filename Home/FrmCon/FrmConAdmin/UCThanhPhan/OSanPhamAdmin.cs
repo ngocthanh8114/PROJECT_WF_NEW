@@ -29,9 +29,9 @@ namespace Home.FrmCon.FrmHienThi
         {
             lblMaSP.Text = MaSP;
             lblTenSP.Text = tenSP;
-            lblGia.Text = "Giá: " + gia.ToString() + " VNĐ";
+            lblGia.Text = "Giá: " + gia.ToString("N0") + " VNĐ";
             lblNCC.Text = nCC;
-            lblSL.Text = sL.ToString() + " cái";
+            lblSL.Text = sL.ToString() + " sản phẩm";
             picBoxSP.Image = anh;
         }
 
@@ -48,6 +48,26 @@ namespace Home.FrmCon.FrmHienThi
             // Hiện Form
             FrmCapNhatHH frmCapNhatHH = new FrmCapNhatHH();
             frmCapNhatHH.ShowDialog();
+        }
+
+        private void lblNCC_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblMaSP_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblSL_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblGia_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

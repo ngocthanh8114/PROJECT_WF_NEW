@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OSanPhamDaMua));
             this.lblTenSP = new System.Windows.Forms.Label();
-            this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.lblTieuDe = new System.Windows.Forms.Label();
             this.lblSoLuong = new System.Windows.Forms.Label();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
@@ -45,23 +44,14 @@
             // lblTenSP
             // 
             this.lblTenSP.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblTenSP.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTenSP.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTenSP.ForeColor = System.Drawing.Color.Black;
             this.lblTenSP.Location = new System.Drawing.Point(0, 212);
             this.lblTenSP.Name = "lblTenSP";
-            this.lblTenSP.Size = new System.Drawing.Size(280, 43);
+            this.lblTenSP.Size = new System.Drawing.Size(280, 56);
             this.lblTenSP.TabIndex = 38;
             this.lblTenSP.Text = "SH 150i";
             this.lblTenSP.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // gunaLabel1
-            // 
-            this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel1.Location = new System.Drawing.Point(-74, 91);
-            this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(79, 23);
-            this.gunaLabel1.TabIndex = 50;
-            this.gunaLabel1.Text = "10 cái";
             // 
             // lblTieuDe
             // 
@@ -94,7 +84,7 @@
             this.guna2Panel1.Controls.Add(this.lblTieuDe);
             this.guna2Panel1.Controls.Add(this.lblSoLuong);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel1.Location = new System.Drawing.Point(0, 255);
+            this.guna2Panel1.Location = new System.Drawing.Point(0, 268);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(280, 44);
             this.guna2Panel1.TabIndex = 52;
@@ -119,7 +109,7 @@
             this.btnMuaLai.Image = null;
             this.btnMuaLai.ImageSize = new System.Drawing.Size(20, 20);
             this.btnMuaLai.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnMuaLai.Location = new System.Drawing.Point(0, 307);
+            this.btnMuaLai.Location = new System.Drawing.Point(0, 323);
             this.btnMuaLai.Name = "btnMuaLai";
             this.btnMuaLai.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.btnMuaLai.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -182,11 +172,10 @@
             this.Controls.Add(this.btnMuaLai);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.lblTenSP);
-            this.Controls.Add(this.gunaLabel1);
             this.Controls.Add(this.picBoxSP);
             this.Controls.Add(this.dtpNgayMua);
             this.Name = "OSanPhamDaMua";
-            this.Size = new System.Drawing.Size(280, 352);
+            this.Size = new System.Drawing.Size(280, 368);
             this.guna2Panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picBoxSP)).EndInit();
             this.ResumeLayout(false);
@@ -196,7 +185,6 @@
 
         #endregion
         private System.Windows.Forms.Label lblTenSP;
-        private Guna.UI.WinForms.GunaLabel gunaLabel1;
         private System.Windows.Forms.Label lblTieuDe;
         private Guna.UI2.WinForms.Guna2PictureBox picBoxSP;
         private System.Windows.Forms.Label lblSoLuong;

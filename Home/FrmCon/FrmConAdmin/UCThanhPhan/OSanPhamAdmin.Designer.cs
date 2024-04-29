@@ -44,23 +44,25 @@
             // 
             this.lblSL.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
             this.lblSL.ForeColor = System.Drawing.Color.Black;
-            this.lblSL.Location = new System.Drawing.Point(148, 249);
+            this.lblSL.Location = new System.Drawing.Point(110, 284);
             this.lblSL.Name = "lblSL";
-            this.lblSL.Size = new System.Drawing.Size(91, 29);
+            this.lblSL.Size = new System.Drawing.Size(135, 29);
             this.lblSL.TabIndex = 16;
-            this.lblSL.Text = "50 cái";
+            this.lblSL.Text = "50 sản phẩm";
             this.lblSL.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblSL.Click += new System.EventHandler(this.lblSL_Click);
             // 
             // lblMaSP
             // 
             this.lblMaSP.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
             this.lblMaSP.ForeColor = System.Drawing.Color.Black;
-            this.lblMaSP.Location = new System.Drawing.Point(154, 278);
+            this.lblMaSP.Location = new System.Drawing.Point(136, 313);
             this.lblMaSP.Name = "lblMaSP";
-            this.lblMaSP.Size = new System.Drawing.Size(85, 23);
+            this.lblMaSP.Size = new System.Drawing.Size(109, 23);
             this.lblMaSP.TabIndex = 15;
             this.lblMaSP.Text = "SP1";
             this.lblMaSP.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblMaSP.Click += new System.EventHandler(this.lblMaSP_Click);
             // 
             // btnSua
             // 
@@ -81,7 +83,7 @@
             this.btnSua.Image = null;
             this.btnSua.ImageSize = new System.Drawing.Size(20, 20);
             this.btnSua.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnSua.Location = new System.Drawing.Point(5, 307);
+            this.btnSua.Location = new System.Drawing.Point(4, 352);
             this.btnSua.Name = "btnSua";
             this.btnSua.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnSua.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -100,23 +102,26 @@
             // 
             this.lblNCC.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNCC.ForeColor = System.Drawing.Color.Black;
-            this.lblNCC.Location = new System.Drawing.Point(0, 251);
+            this.lblNCC.Location = new System.Drawing.Point(3, 279);
             this.lblNCC.Name = "lblNCC";
-            this.lblNCC.Size = new System.Drawing.Size(146, 50);
+            this.lblNCC.Size = new System.Drawing.Size(114, 70);
             this.lblNCC.TabIndex = 12;
             this.lblNCC.Text = "Hệ thống cửa hàng xe máy Phát Thịnh";
             this.lblNCC.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblNCC.Click += new System.EventHandler(this.lblNCC_Click);
             // 
             // lblGia
             // 
+            this.lblGia.Dock = System.Windows.Forms.DockStyle.Top;
             this.lblGia.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
             this.lblGia.ForeColor = System.Drawing.Color.Black;
-            this.lblGia.Location = new System.Drawing.Point(-1, 226);
+            this.lblGia.Location = new System.Drawing.Point(0, 251);
             this.lblGia.Name = "lblGia";
-            this.lblGia.Size = new System.Drawing.Size(265, 23);
+            this.lblGia.Size = new System.Drawing.Size(247, 23);
             this.lblGia.TabIndex = 11;
             this.lblGia.Text = "Giá: 81.775.637 VNĐ";
             this.lblGia.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblGia.Click += new System.EventHandler(this.lblGia_Click);
             // 
             // lblTenSP
             // 
@@ -125,10 +130,10 @@
             this.lblTenSP.ForeColor = System.Drawing.Color.Black;
             this.lblTenSP.Location = new System.Drawing.Point(0, 200);
             this.lblTenSP.Name = "lblTenSP";
-            this.lblTenSP.Size = new System.Drawing.Size(247, 25);
+            this.lblTenSP.Size = new System.Drawing.Size(247, 51);
             this.lblTenSP.TabIndex = 10;
             this.lblTenSP.Text = "SH 150i";
-            this.lblTenSP.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblTenSP.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // picBoxSP
             // 
@@ -161,7 +166,7 @@
             this.btnXoa.Image = null;
             this.btnXoa.ImageSize = new System.Drawing.Size(20, 20);
             this.btnXoa.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnXoa.Location = new System.Drawing.Point(135, 307);
+            this.btnXoa.Location = new System.Drawing.Point(134, 352);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnXoa.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -191,7 +196,7 @@
             this.Controls.Add(this.lblTenSP);
             this.Controls.Add(this.picBoxSP);
             this.Name = "OSanPhamAdmin";
-            this.Size = new System.Drawing.Size(247, 351);
+            this.Size = new System.Drawing.Size(247, 398);
             ((System.ComponentModel.ISupportInitialize)(this.picBoxSP)).EndInit();
             this.ResumeLayout(false);
 

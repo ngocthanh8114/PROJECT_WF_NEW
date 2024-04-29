@@ -344,6 +344,7 @@
             this.ClientSize = new System.Drawing.Size(1251, 1051);
             this.Controls.Add(this.panelTong);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmAdmin";
             this.Text = "FrmAdmin";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

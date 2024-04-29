@@ -95,10 +95,10 @@ namespace Home.FrmCon
         // Load giá tiền
         public void loadGiaTien()
         {
-            lblTongTien.Text = xl.tinhTongTien().ToString() + " VNĐ";
+            lblTongTien.Text = xl.tinhTongTien().ToString("N0") + " VNĐ";
             lblTongSP.Text = xl.tinhSP().ToString() + " sản phẩm";
             string[] str= lblGiaThanhToan.Text.Split(' ');
-            lblGiaThanhToan.Text = (xl.tinhTongTien()).ToString() + " VNĐ";
+            lblGiaThanhToan.Text = (xl.tinhTongTien()).ToString("N0") + " VNĐ";
         }
 
         private void btnMua_Click(object sender, EventArgs e)
@@ -149,7 +149,6 @@ namespace Home.FrmCon
                 xl.turnTongTien();
                 panelNoiDung.Controls.Clear();
                 addDonHang(xl.doDuLieu());
-                btnMua.Enabled = true;
                 loadGiaTien();
             }
             

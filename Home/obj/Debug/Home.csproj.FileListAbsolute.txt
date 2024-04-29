@@ -889,3 +889,6 @@ C:\Users\PC\OneDrive\Desktop\New folder (9)\PROJECT_WF_NEW\Home\bin\Debug\Crysta
 C:\Users\PC\OneDrive\Desktop\New folder (9)\PROJECT_WF_NEW\Home\bin\Debug\stdole.dll
 C:\Users\PC\OneDrive\Desktop\New folder (9)\PROJECT_WF_NEW\Home\obj\Debug\Home.csproj.Up2Date
 >>>>>>> 260367f0471b785d88c94a45b15522496a120424
+D:\VS Code\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.HoaDon.resources
+D:\VS Code\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.ChiTietKH.resources
+D:\VS Code\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.UCThanhPhan.ODaMua.resources

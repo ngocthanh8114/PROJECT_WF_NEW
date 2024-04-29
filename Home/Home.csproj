@@ -81,6 +81,18 @@
     <Compile Include="FrmCon\FrmConAdmin\BaoCao.Designer.cs">
       <DependentUpon>BaoCao.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmCon\FrmConAdmin\ChiTietKH.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmCon\FrmConAdmin\ChiTietKH.Designer.cs">
+      <DependentUpon>ChiTietKH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCon\FrmConAdmin\UCThanhPhan\ODaMua.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmCon\FrmConAdmin\UCThanhPhan\ODaMua.Designer.cs">
+      <DependentUpon>ODaMua.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmCon\FrmConUser\DonHang.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -290,6 +302,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmCon\FrmConAdmin\BaoCao.resx">
       <DependentUpon>BaoCao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCon\FrmConAdmin\ChiTietKH.resx">
+      <DependentUpon>ChiTietKH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCon\FrmConAdmin\UCThanhPhan\ODaMua.resx">
+      <DependentUpon>ODaMua.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmCon\FrmConUser\DonHang.resx">
       <DependentUpon>DonHang.cs</DependentUpon>

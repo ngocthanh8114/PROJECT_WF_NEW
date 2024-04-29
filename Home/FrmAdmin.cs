@@ -49,7 +49,7 @@ namespace Home
             frmDangNhap.ShowDialog();
             
         }
-        private void addHienThi(UserControl uc)
+        public void addHienThi(UserControl uc)
         {
             uc.Dock = DockStyle.Fill;
             panelHienThi.Controls.Clear();
@@ -57,6 +57,7 @@ namespace Home
             uc.BringToFront();
 
         }
+ 
         private void btnSanPham_Click(object sender, EventArgs e)
         {
             addHienThi(TongForm.SanPhamAdmin);

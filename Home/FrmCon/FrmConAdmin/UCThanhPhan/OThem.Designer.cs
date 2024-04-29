@@ -37,7 +37,7 @@
             // 
             this.PBThem.Image = ((System.Drawing.Image)(resources.GetObject("PBThem.Image")));
             this.PBThem.ImageRotate = 0F;
-            this.PBThem.Location = new System.Drawing.Point(36, 79);
+            this.PBThem.Location = new System.Drawing.Point(36, 114);
             this.PBThem.Name = "PBThem";
             this.PBThem.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.PBThem.Size = new System.Drawing.Size(176, 179);
@@ -53,7 +53,7 @@
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Controls.Add(this.PBThem);
             this.Name = "OThem";
-            this.Size = new System.Drawing.Size(245, 349);
+            this.Size = new System.Drawing.Size(247, 398);
             ((System.ComponentModel.ISupportInitialize)(this.PBThem)).EndInit();
             this.ResumeLayout(false);
 

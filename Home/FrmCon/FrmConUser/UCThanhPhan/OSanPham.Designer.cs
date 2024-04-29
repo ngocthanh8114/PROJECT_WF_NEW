@@ -47,18 +47,19 @@
             this.lblTenSP.ForeColor = System.Drawing.Color.Black;
             this.lblTenSP.Location = new System.Drawing.Point(0, 200);
             this.lblTenSP.Name = "lblTenSP";
-            this.lblTenSP.Size = new System.Drawing.Size(247, 25);
+            this.lblTenSP.Size = new System.Drawing.Size(247, 47);
             this.lblTenSP.TabIndex = 1;
             this.lblTenSP.Text = "SH 150i";
-            this.lblTenSP.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblTenSP.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblGia
             // 
+            this.lblGia.Dock = System.Windows.Forms.DockStyle.Top;
             this.lblGia.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
             this.lblGia.ForeColor = System.Drawing.Color.Black;
-            this.lblGia.Location = new System.Drawing.Point(-1, 225);
+            this.lblGia.Location = new System.Drawing.Point(0, 247);
             this.lblGia.Name = "lblGia";
-            this.lblGia.Size = new System.Drawing.Size(265, 23);
+            this.lblGia.Size = new System.Drawing.Size(247, 23);
             this.lblGia.TabIndex = 2;
             this.lblGia.Text = "Giá: 81.775.637 VNĐ";
             this.lblGia.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -67,9 +68,9 @@
             // 
             this.lblNCC.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNCC.ForeColor = System.Drawing.Color.Black;
-            this.lblNCC.Location = new System.Drawing.Point(1, 250);
+            this.lblNCC.Location = new System.Drawing.Point(3, 270);
             this.lblNCC.Name = "lblNCC";
-            this.lblNCC.Size = new System.Drawing.Size(146, 50);
+            this.lblNCC.Size = new System.Drawing.Size(111, 71);
             this.lblNCC.TabIndex = 4;
             this.lblNCC.Text = "Hệ thống cửa hàng xe máy Phát Thịnh";
             this.lblNCC.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -82,7 +83,7 @@
             this.numSL.ButtonForeColor = System.Drawing.Color.White;
             this.numSL.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.numSL.ForeColor = System.Drawing.Color.Black;
-            this.numSL.Location = new System.Drawing.Point(162, 313);
+            this.numSL.Location = new System.Drawing.Point(161, 360);
             this.numSL.Maximum = ((long)(9999999));
             this.numSL.Minimum = ((long)(0));
             this.numSL.Name = "numSL";
@@ -95,7 +96,7 @@
             // 
             this.lblMaSP.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
             this.lblMaSP.ForeColor = System.Drawing.Color.Black;
-            this.lblMaSP.Location = new System.Drawing.Point(162, 277);
+            this.lblMaSP.Location = new System.Drawing.Point(164, 297);
             this.lblMaSP.Name = "lblMaSP";
             this.lblMaSP.Size = new System.Drawing.Size(85, 23);
             this.lblMaSP.TabIndex = 7;
@@ -107,11 +108,11 @@
             // 
             this.lblSL.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
             this.lblSL.ForeColor = System.Drawing.Color.Black;
-            this.lblSL.Location = new System.Drawing.Point(156, 248);
+            this.lblSL.Location = new System.Drawing.Point(116, 290);
             this.lblSL.Name = "lblSL";
-            this.lblSL.Size = new System.Drawing.Size(91, 29);
+            this.lblSL.Size = new System.Drawing.Size(130, 29);
             this.lblSL.TabIndex = 8;
-            this.lblSL.Text = "50 cái";
+            this.lblSL.Text = "50 sản phẩm";
             this.lblSL.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // btnDatHang
@@ -133,7 +134,7 @@
             this.btnDatHang.Image = ((System.Drawing.Image)(resources.GetObject("btnDatHang.Image")));
             this.btnDatHang.ImageSize = new System.Drawing.Size(20, 20);
             this.btnDatHang.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnDatHang.Location = new System.Drawing.Point(5, 306);
+            this.btnDatHang.Location = new System.Drawing.Point(4, 353);
             this.btnDatHang.Name = "btnDatHang";
             this.btnDatHang.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnDatHang.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -166,16 +167,16 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Controls.Add(this.lblNCC);
             this.Controls.Add(this.lblSL);
             this.Controls.Add(this.lblMaSP);
             this.Controls.Add(this.numSL);
             this.Controls.Add(this.btnDatHang);
-            this.Controls.Add(this.lblNCC);
             this.Controls.Add(this.lblGia);
             this.Controls.Add(this.lblTenSP);
             this.Controls.Add(this.picBoxSP);
             this.Name = "OSanPham";
-            this.Size = new System.Drawing.Size(247, 351);
+            this.Size = new System.Drawing.Size(247, 398);
             ((System.ComponentModel.ISupportInitialize)(this.picBoxSP)).EndInit();
             this.ResumeLayout(false);
 

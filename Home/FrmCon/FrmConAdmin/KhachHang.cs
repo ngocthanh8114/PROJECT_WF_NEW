@@ -18,6 +18,7 @@ namespace Home.FrmCon.FrmCuaAdmin
         public KhachHang()
         {
             InitializeComponent();
+
         }
 
         private void KhachHang_Load(object sender, EventArgs e)

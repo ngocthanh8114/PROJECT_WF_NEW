@@ -95,6 +95,7 @@
             this.btnChiTiet.TabIndex = 1;
             this.btnChiTiet.Text = "Chi Tiết";
             this.btnChiTiet.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnChiTiet.Click += new System.EventHandler(this.btnChiTiet_Click);
             // 
             // guna2PictureBox1
             // 
@@ -184,7 +185,7 @@
             this.gunaLabel2.Name = "gunaLabel2";
             this.gunaLabel2.Size = new System.Drawing.Size(174, 53);
             this.gunaLabel2.TabIndex = 31;
-            this.gunaLabel2.Text = "  Tên Khách Hàng:";
+            this.gunaLabel2.Text = "  Tên khách hàng:";
             this.gunaLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblTenKH

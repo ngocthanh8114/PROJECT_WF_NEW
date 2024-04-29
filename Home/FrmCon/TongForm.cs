@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Home;
+using Home.FrmCon.FrmConAdmin;
 
 namespace Home.FrmCon
 {
@@ -16,6 +17,7 @@ namespace Home.FrmCon
         public static SanPhamAdmin SanPhamAdmin;
         public static BaoCao BaoCao;
         public static KhachHang KhachHang;
+        public static ChiTietKH ChiTietKH;
         public static void ResetFrm()
         {
             TaiKhoan = new TaiKhoan();
@@ -24,6 +26,7 @@ namespace Home.FrmCon
             SanPhamAdmin = new SanPhamAdmin();
             BaoCao = new BaoCao();
             KhachHang = new KhachHang();
+            ChiTietKH = new ChiTietKH();
         }
     }
 }

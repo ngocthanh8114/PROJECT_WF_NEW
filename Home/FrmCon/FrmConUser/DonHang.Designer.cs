@@ -30,7 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DonHang));
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnTimKiem = new Guna.UI.WinForms.GunaCircleButton();
             this.txtTimKiem = new Guna.UI2.WinForms.Guna2TextBox();
+            this.picBoxLoGO = new Guna.UI2.WinForms.Guna2PictureBox();
             this.lblTen = new System.Windows.Forms.Label();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.panelMuaHang = new Guna.UI2.WinForms.Guna2Panel();
@@ -50,13 +52,11 @@
             this.lblTongSP = new System.Windows.Forms.Label();
             this.lblTongTien = new System.Windows.Forms.Label();
             this.panelNoiDung = new System.Windows.Forms.FlowLayoutPanel();
-            this.btnTimKiem = new Guna.UI.WinForms.GunaCircleButton();
-            this.picBoxLoGO = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxLoGO)).BeginInit();
             this.panelMuaHang.SuspendLayout();
             this.panelCheckDieuKhoan.SuspendLayout();
             this.panelGia.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picBoxLoGO)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Panel1
@@ -72,6 +72,33 @@
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(2050, 75);
             this.guna2Panel1.TabIndex = 1;
+            // 
+            // btnTimKiem
+            // 
+            this.btnTimKiem.Animated = true;
+            this.btnTimKiem.AnimationHoverSpeed = 0.07F;
+            this.btnTimKiem.AnimationSpeed = 0.03F;
+            this.btnTimKiem.BackColor = System.Drawing.Color.Transparent;
+            this.btnTimKiem.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnTimKiem.BackgroundImage")));
+            this.btnTimKiem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnTimKiem.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnTimKiem.BorderColor = System.Drawing.Color.Black;
+            this.btnTimKiem.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnTimKiem.FocusedColor = System.Drawing.Color.Empty;
+            this.btnTimKiem.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnTimKiem.ForeColor = System.Drawing.Color.White;
+            this.btnTimKiem.Image = ((System.Drawing.Image)(resources.GetObject("btnTimKiem.Image")));
+            this.btnTimKiem.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnTimKiem.Location = new System.Drawing.Point(1883, 10);
+            this.btnTimKiem.Name = "btnTimKiem";
+            this.btnTimKiem.OnHoverBaseColor = System.Drawing.Color.Coral;
+            this.btnTimKiem.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnTimKiem.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnTimKiem.OnHoverImage = null;
+            this.btnTimKiem.OnPressedColor = System.Drawing.Color.Black;
+            this.btnTimKiem.Size = new System.Drawing.Size(65, 55);
+            this.btnTimKiem.TabIndex = 3;
+            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
             // 
             // txtTimKiem
             // 
@@ -98,6 +125,18 @@
             this.txtTimKiem.Size = new System.Drawing.Size(570, 55);
             this.txtTimKiem.TabIndex = 3;
             // 
+            // picBoxLoGO
+            // 
+            this.picBoxLoGO.Image = ((System.Drawing.Image)(resources.GetObject("picBoxLoGO.Image")));
+            this.picBoxLoGO.ImageRotate = 0F;
+            this.picBoxLoGO.Location = new System.Drawing.Point(23, -7);
+            this.picBoxLoGO.Name = "picBoxLoGO";
+            this.picBoxLoGO.Size = new System.Drawing.Size(85, 85);
+            this.picBoxLoGO.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picBoxLoGO.TabIndex = 2;
+            this.picBoxLoGO.TabStop = false;
+            this.picBoxLoGO.Click += new System.EventHandler(this.picBoxLoGO_Click);
+            // 
             // lblTen
             // 
             this.lblTen.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -110,7 +149,7 @@
             // 
             // guna2Panel2
             // 
-            this.guna2Panel2.BackColor = System.Drawing.SystemColors.Control;
+            this.guna2Panel2.BackColor = System.Drawing.Color.Gray;
             this.guna2Panel2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel2.Location = new System.Drawing.Point(0, 75);
@@ -388,45 +427,6 @@
             this.panelNoiDung.Size = new System.Drawing.Size(2050, 637);
             this.panelNoiDung.TabIndex = 4;
             // 
-            // btnTimKiem
-            // 
-            this.btnTimKiem.Animated = true;
-            this.btnTimKiem.AnimationHoverSpeed = 0.07F;
-            this.btnTimKiem.AnimationSpeed = 0.03F;
-            this.btnTimKiem.BackColor = System.Drawing.Color.Transparent;
-            this.btnTimKiem.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnTimKiem.BackgroundImage")));
-            this.btnTimKiem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnTimKiem.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnTimKiem.BorderColor = System.Drawing.Color.Black;
-            this.btnTimKiem.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnTimKiem.FocusedColor = System.Drawing.Color.Empty;
-            this.btnTimKiem.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnTimKiem.ForeColor = System.Drawing.Color.White;
-            this.btnTimKiem.Image = ((System.Drawing.Image)(resources.GetObject("btnTimKiem.Image")));
-            this.btnTimKiem.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnTimKiem.Location = new System.Drawing.Point(1883, 10);
-            this.btnTimKiem.Name = "btnTimKiem";
-            this.btnTimKiem.OnHoverBaseColor = System.Drawing.Color.Coral;
-            this.btnTimKiem.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnTimKiem.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnTimKiem.OnHoverImage = null;
-            this.btnTimKiem.OnPressedColor = System.Drawing.Color.Black;
-            this.btnTimKiem.Size = new System.Drawing.Size(65, 55);
-            this.btnTimKiem.TabIndex = 3;
-            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
-            // 
-            // picBoxLoGO
-            // 
-            this.picBoxLoGO.Image = ((System.Drawing.Image)(resources.GetObject("picBoxLoGO.Image")));
-            this.picBoxLoGO.ImageRotate = 0F;
-            this.picBoxLoGO.Location = new System.Drawing.Point(23, -7);
-            this.picBoxLoGO.Name = "picBoxLoGO";
-            this.picBoxLoGO.Size = new System.Drawing.Size(85, 85);
-            this.picBoxLoGO.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picBoxLoGO.TabIndex = 2;
-            this.picBoxLoGO.TabStop = false;
-            this.picBoxLoGO.Click += new System.EventHandler(this.picBoxLoGO_Click);
-            // 
             // DonHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -439,12 +439,12 @@
             this.Size = new System.Drawing.Size(2050, 888);
             this.Load += new System.EventHandler(this.DonHang_Load);
             this.guna2Panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxLoGO)).EndInit();
             this.panelMuaHang.ResumeLayout(false);
             this.panelMuaHang.PerformLayout();
             this.panelCheckDieuKhoan.ResumeLayout(false);
             this.panelCheckDieuKhoan.PerformLayout();
             this.panelGia.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.picBoxLoGO)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -77,9 +77,9 @@ namespace Home.FrmCon.FrmHienThi
 
         public void loadFormMua(decimal tienHang, int SL)
         {
-            lblTienHang.Text = tienHang.ToString() + " VNĐ";
-            lblPhiVanChuyen.Text = (SL*100000).ToString() + " VNĐ";
-            lblTong.Text = (tienHang + SL*100000).ToString() + " VNĐ";
+            lblTienHang.Text = tienHang.ToString("N0") + " VNĐ";
+            lblPhiVanChuyen.Text = (SL*100000).ToString("N0") + " VNĐ";
+            lblTong.Text = (tienHang + SL*100000).ToString("N0") + " VNĐ";
             dtpNgayMua.Text = DateTime.Now.ToString();
 
 
