@@ -60,6 +60,7 @@
             this.guna2CustomCheckBox3 = new Guna.UI2.WinForms.Guna2CustomCheckBox();
             this.guna2CustomCheckBox4 = new Guna.UI2.WinForms.Guna2CustomCheckBox();
             this.guna2Shapes2 = new Guna.UI2.WinForms.Guna2Shapes();
+            this.dtNgayNhapHang = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.pn_NoiDungSua.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxSP)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -114,7 +115,7 @@
             this.btnLuuThem.Image = null;
             this.btnLuuThem.ImageSize = new System.Drawing.Size(20, 20);
             this.btnLuuThem.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnLuuThem.Location = new System.Drawing.Point(163, 633);
+            this.btnLuuThem.Location = new System.Drawing.Point(58, 633);
             this.btnLuuThem.Name = "btnLuuThem";
             this.btnLuuThem.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.btnLuuThem.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -135,6 +136,7 @@
             this.pn_NoiDungSua.BorderColor = System.Drawing.Color.White;
             this.pn_NoiDungSua.BorderRadius = 15;
             this.pn_NoiDungSua.BorderThickness = 3;
+            this.pn_NoiDungSua.Controls.Add(this.dtNgayNhapHang);
             this.pn_NoiDungSua.Controls.Add(this.cboMaLoai);
             this.pn_NoiDungSua.Controls.Add(this.cboMaNCC);
             this.pn_NoiDungSua.Controls.Add(this.lblDonGia);
@@ -186,7 +188,7 @@
             this.cboMaNCC.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
             this.cboMaNCC.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             this.cboMaNCC.ItemHeight = 35;
-            this.cboMaNCC.Location = new System.Drawing.Point(58, 479);
+            this.cboMaNCC.Location = new System.Drawing.Point(58, 473);
             this.cboMaNCC.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cboMaNCC.Name = "cboMaNCC";
             this.cboMaNCC.Size = new System.Drawing.Size(417, 41);
@@ -339,7 +341,7 @@
             this.txtTenSP.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTenSP.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
             this.txtTenSP.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTenSP.Location = new System.Drawing.Point(59, 401);
+            this.txtTenSP.Location = new System.Drawing.Point(59, 398);
             this.txtTenSP.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtTenSP.Name = "txtTenSP";
             this.txtTenSP.PasswordChar = '\0';
@@ -584,6 +586,20 @@
             this.guna2Shapes2.Text = "guna2Shapes2";
             this.guna2Shapes2.Zoom = 80;
             // 
+            // dtNgayNhapHang
+            // 
+            this.dtNgayNhapHang.Checked = true;
+            this.dtNgayNhapHang.FillColor = System.Drawing.Color.White;
+            this.dtNgayNhapHang.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.dtNgayNhapHang.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.dtNgayNhapHang.Location = new System.Drawing.Point(279, 639);
+            this.dtNgayNhapHang.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.dtNgayNhapHang.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.dtNgayNhapHang.Name = "dtNgayNhapHang";
+            this.dtNgayNhapHang.Size = new System.Drawing.Size(200, 36);
+            this.dtNgayNhapHang.TabIndex = 61;
+            this.dtNgayNhapHang.Value = new System.DateTime(2024, 4, 26, 22, 26, 20, 712);
+            // 
             // FrmThemHH
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -643,5 +659,6 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel lblSoluong;
         private Guna.UI2.WinForms.Guna2ComboBox cboMaNCC;
         private Guna.UI2.WinForms.Guna2ComboBox cboMaLoai;
+        private Guna.UI2.WinForms.Guna2DateTimePicker dtNgayNhapHang;
     }
 }

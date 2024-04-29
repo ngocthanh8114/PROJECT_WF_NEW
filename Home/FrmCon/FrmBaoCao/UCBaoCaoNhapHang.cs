@@ -14,13 +14,15 @@ namespace Home.FrmCon.FrmBaoCao
 {
     public partial class UCBaoCaoNhapHang : UserControl
     {
+        SqlConnection conn = null;
         public UCBaoCaoNhapHang()
         {
             InitializeComponent();
+            conn = new SqlConnection(KetNoiCSDL.strconn);
         }
         XuLiDuLieu xl = new XuLiDuLieu();
-        static string strcon = "Data Source=.;Initial Catalog=BanXeMay;User ID=sa;Password=123;Encrypt=False";
-        static SqlConnection conn = new SqlConnection(strcon);
+
+        
         public void LoadDataToDataGridView()
         {
             DataTable dt = xl.DoDuLieuBaoCaoNhapHang();
@@ -43,22 +45,30 @@ namespace Home.FrmCon.FrmBaoCao
 
         private void btnIn_Click(object sender, EventArgs e)
         {
-            string sql = @"Select SanPham.MaSP, SanPham.TenSP, SanPham.Gia, SanPham.SoLuong, NCC.TenNCC, NCC.DiaChi, NCC.SDT from SanPham inner join NCC on SanPham.MaNCC = NCC.MaNCC  ";
-            SqlCommand cmd = new SqlCommand(sql, conn);
-            conn.Open();
-            DataTable dt = new DataTable();
-            SqlDataAdapter da = new SqlDataAdapter(cmd);
-            da.Fill(dt);
-            conn.Close();
-            NhapHang nhapHang = new NhapHang();
-            FrmIn frmIn = new FrmIn();
+            try
+            {
+               
+                NhapHang nhapHang = new NhapHang();
 
-            nhapHang.SetDatabaseLogon("sa", "123");
-            nhapHang.SetDataSource(dt);
+           
+                nhapHang.SetDatabaseLogon("sa", "123");
 
-            frmIn.crystalnhaphang.ReportSource = nhapHang;
-            frmIn.crystalnhaphang.Refresh();
-            frmIn.Show();
+               
+                nhapHang.SetDataSource(dgNhapHang.DataSource as DataTable);
+
+            
+                FrmIn frmIn = new FrmIn();
+
+             
+                frmIn.crystalnhaphang.ReportSource = nhapHang;
+
+              
+                frmIn.Show();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi: " + ex.Message);
+            }
         }
     }
 }

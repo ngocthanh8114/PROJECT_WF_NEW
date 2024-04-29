@@ -58,6 +58,7 @@
             this.guna2Panel9 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel10 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel12 = new Guna.UI2.WinForms.Guna2Panel();
+            this.dtNgayNhapHang = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
@@ -245,6 +246,7 @@
             this.pn_NoiDungSua.BorderColor = System.Drawing.Color.White;
             this.pn_NoiDungSua.BorderRadius = 15;
             this.pn_NoiDungSua.BorderThickness = 3;
+            this.pn_NoiDungSua.Controls.Add(this.dtNgayNhapHang);
             this.pn_NoiDungSua.Controls.Add(this.cboMaLoai);
             this.pn_NoiDungSua.Controls.Add(this.cboMaNCC);
             this.pn_NoiDungSua.Controls.Add(this.btnLuu);
@@ -319,7 +321,7 @@
             this.btnLuu.Image = null;
             this.btnLuu.ImageSize = new System.Drawing.Size(20, 20);
             this.btnLuu.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnLuu.Location = new System.Drawing.Point(163, 627);
+            this.btnLuu.Location = new System.Drawing.Point(59, 627);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.btnLuu.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -557,6 +559,20 @@
             this.guna2Panel12.Size = new System.Drawing.Size(515, 2);
             this.guna2Panel12.TabIndex = 17;
             // 
+            // dtNgayNhapHang
+            // 
+            this.dtNgayNhapHang.Checked = true;
+            this.dtNgayNhapHang.FillColor = System.Drawing.Color.White;
+            this.dtNgayNhapHang.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.dtNgayNhapHang.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.dtNgayNhapHang.Location = new System.Drawing.Point(275, 627);
+            this.dtNgayNhapHang.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.dtNgayNhapHang.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.dtNgayNhapHang.Name = "dtNgayNhapHang";
+            this.dtNgayNhapHang.Size = new System.Drawing.Size(200, 36);
+            this.dtNgayNhapHang.TabIndex = 62;
+            this.dtNgayNhapHang.Value = new System.DateTime(2024, 4, 26, 22, 26, 20, 712);
+            // 
             // FrmCapNhatHH
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -613,5 +629,6 @@
         private Guna.UI.WinForms.GunaAdvenceButton btnLuu;
         private Guna.UI2.WinForms.Guna2ComboBox cboMaNCC;
         private Guna.UI2.WinForms.Guna2ComboBox cboMaLoai;
+        private Guna.UI2.WinForms.Guna2DateTimePicker dtNgayNhapHang;
     }
 }

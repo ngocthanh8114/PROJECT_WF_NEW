@@ -15,11 +15,12 @@ namespace Home.FrmCon.FrmHienThi
     public partial class FrmCapNhatHH : Form
     {
         XuLiDuLieu xl = new XuLiDuLieu();
+        
         public FrmCapNhatHH()
         {
             InitializeComponent();
         }
-
+        
         private void cbtnXoa_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -38,19 +39,24 @@ namespace Home.FrmCon.FrmHienThi
 
         private void btnLuu_Click(object sender, EventArgs e)
         {
-            string maloai = cboMaLoai.SelectedValue.ToString();
-            string mancc = cboMaNCC.SelectedValue.ToString();
-            xl.Connection_CSDL();
-            xl.SuaThongTinSanPhamAdmin(mancc, txtTenSP.Text, maloai, txtSoLuong.Text, txtGia.Text, txtMaSP.Text, picBoxSP.Image);
-            
-
-            if (xl.SuaHang)
+            int SoLuongCu = xl.LaySoLuong(txtMaSP.Text);
+            int SoLuongMoi = int.Parse(txtSoLuong.Text) - SoLuongCu;
+            if (SoLuongMoi < 0)
             {
-                txtTenSP.Text = txtSoLuong.Text = txtGia.Text = txtMaSP.Text = "";
-                picBoxSP.Image =null;
-                TongForm.SanPhamAdmin.SanPhamAdmin_Load(TongForm.SanPhamAdmin, e);
+                // Hiển thị thông báo hoặc xử lý lỗi khi số lượng mới là số âm
+                SoLuongMoi = 0;
             }
-            //Reset Text
+                string maloai = cboMaLoai.SelectedValue.ToString();
+                string mancc = cboMaNCC.SelectedValue.ToString();
+                xl.Connection_CSDL();
+                xl.SuaThongTinSanPhamAdmin(mancc, txtTenSP.Text, maloai, int.Parse(txtSoLuong.Text), SoLuongMoi, txtGia.Text, txtMaSP.Text, picBoxSP.Image, dtNgayNhapHang.Value);
+
+                if (xl.SuaHang)
+                {
+                    txtTenSP.Text = txtSoLuong.Text = txtGia.Text = txtMaSP.Text = "";
+                    picBoxSP.Image = null;
+                    TongForm.SanPhamAdmin.SanPhamAdmin_Load(TongForm.SanPhamAdmin, e);
+                }
            
         }
 

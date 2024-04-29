@@ -21,5 +21,27 @@ namespace Home.FrmCon.FrmBaoCao
         {
             this.Close();
         }
+
+        private void pb_MoTo_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Maximized;
+            pb_MoTo.Visible = false;
+            btnThuNho.Visible = true;
+            
+            btnThuNho.Dock = DockStyle.Right;
+            
+            
+        }
+
+        private void btnThuNho_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Normal;
+            btnThuNho.Visible = false;
+            pb_MoTo.Visible = true;
+            pb_MoTo.Dock = DockStyle.Right;
+            
+            
+           
+        }
     }
 }
