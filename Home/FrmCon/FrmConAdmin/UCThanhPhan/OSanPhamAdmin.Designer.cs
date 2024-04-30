@@ -50,7 +50,6 @@
             this.lblSL.TabIndex = 16;
             this.lblSL.Text = "50 sản phẩm";
             this.lblSL.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.lblSL.Click += new System.EventHandler(this.lblSL_Click);
             // 
             // lblMaSP
             // 
@@ -62,7 +61,6 @@
             this.lblMaSP.TabIndex = 15;
             this.lblMaSP.Text = "SP1";
             this.lblMaSP.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblMaSP.Click += new System.EventHandler(this.lblMaSP_Click);
             // 
             // btnSua
             // 
@@ -108,7 +106,6 @@
             this.lblNCC.TabIndex = 12;
             this.lblNCC.Text = "Hệ thống cửa hàng xe máy Phát Thịnh";
             this.lblNCC.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblNCC.Click += new System.EventHandler(this.lblNCC_Click);
             // 
             // lblGia
             // 
@@ -121,7 +118,6 @@
             this.lblGia.TabIndex = 11;
             this.lblGia.Text = "Giá: 81.775.637 VNĐ";
             this.lblGia.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblGia.Click += new System.EventHandler(this.lblGia_Click);
             // 
             // lblTenSP
             // 

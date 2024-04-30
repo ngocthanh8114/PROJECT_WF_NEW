@@ -50,24 +50,5 @@ namespace Home.FrmCon.FrmHienThi
             frmCapNhatHH.ShowDialog();
         }
 
-        private void lblNCC_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblMaSP_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblSL_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblGia_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

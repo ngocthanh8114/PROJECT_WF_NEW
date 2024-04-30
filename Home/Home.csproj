@@ -87,11 +87,29 @@
     <Compile Include="FrmCon\FrmConAdmin\ChiTietKH.Designer.cs">
       <DependentUpon>ChiTietKH.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmCon\FrmConAdmin\FrmThemLoiNhac.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCon\FrmConAdmin\FrmThemLoiNhac.Designer.cs">
+      <DependentUpon>FrmThemLoiNhac.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCon\FrmConAdmin\TaiKhoanAdmin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmCon\FrmConAdmin\TaiKhoanAdmin.Designer.cs">
+      <DependentUpon>TaiKhoanAdmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmCon\FrmConAdmin\UCThanhPhan\ODaMua.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="FrmCon\FrmConAdmin\UCThanhPhan\ODaMua.Designer.cs">
       <DependentUpon>ODaMua.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCon\FrmConAdmin\UCThanhPhan\OTop.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmCon\FrmConAdmin\UCThanhPhan\OTop.Designer.cs">
+      <DependentUpon>OTop.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmCon\FrmConUser\DonHang.cs">
       <SubType>UserControl</SubType>
@@ -189,10 +207,10 @@
     <Compile Include="FrmCon\FrmHienThi\FrmBaoLoi.Designer.cs">
       <DependentUpon>FrmBaoLoi.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmCon\FrmConUser\FrmCapNhatTT.cs">
+    <Compile Include="FrmCon\FrmHienThi\FrmCapNhatTT.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmCon\FrmConUser\FrmCapNhatTT.Designer.cs">
+    <Compile Include="FrmCon\FrmHienThi\FrmCapNhatTT.Designer.cs">
       <DependentUpon>FrmCapNhatTT.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmCon\FrmHienThi\FrmXacNhan.cs">
@@ -306,8 +324,17 @@
     <EmbeddedResource Include="FrmCon\FrmConAdmin\ChiTietKH.resx">
       <DependentUpon>ChiTietKH.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmCon\FrmConAdmin\FrmThemLoiNhac.resx">
+      <DependentUpon>FrmThemLoiNhac.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCon\FrmConAdmin\TaiKhoanAdmin.resx">
+      <DependentUpon>TaiKhoanAdmin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmCon\FrmConAdmin\UCThanhPhan\ODaMua.resx">
       <DependentUpon>ODaMua.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCon\FrmConAdmin\UCThanhPhan\OTop.resx">
+      <DependentUpon>OTop.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmCon\FrmConUser\DonHang.resx">
       <DependentUpon>DonHang.cs</DependentUpon>
@@ -355,7 +382,7 @@
     <EmbeddedResource Include="FrmCon\FrmHienThi\FrmBaoLoi.resx">
       <DependentUpon>FrmBaoLoi.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmCon\FrmConUser\FrmCapNhatTT.resx">
+    <EmbeddedResource Include="FrmCon\FrmHienThi\FrmCapNhatTT.resx">
       <DependentUpon>FrmCapNhatTT.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmCon\FrmConUser\FrmMuaHang.resx">

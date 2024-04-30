@@ -90,5 +90,15 @@ namespace Home
             btnBaoCao.Checked = false ;
             btnTaiKhoan.Checked = false;
         }
+
+        private void btnTaiKhoan_Click(object sender, EventArgs e)
+        {
+            addHienThi(TongForm.TaiKhoanAdmin);
+            btnSanPham.Checked = false;
+            btnKhachHang.Checked = false;
+            btnHoaDon.Checked = false;
+            btnBaoCao.Checked = false;
+            btnTaiKhoan.Checked = true;
+        }
     }
 }

@@ -1002,7 +1002,7 @@ namespace Home.DuLieu
                     soDT.Visible = false;
                 }
                 kn.myConnect();
-                string sql = "UPDATE TaiKhoan SET TenNguoiDung = @TenND, Email = @Email, SoDienThoai = @SoDT WHERE TenTaiKhoan = @TenTK";
+                string sql = "INSERT INTO TaiKhoan VALUE ( TenNguoiDung, Email, SoDienThoai, TenTaiKhoan, ) VALUES (@TenND, @Email, @SoDT, @TenTK, 'admin') ";
                 SqlCommand cmd = new SqlCommand(sql, conn);
                 cmd.Parameters.AddWithValue("TenTK", TaiKhoanDangNhap.tenTaiKhoan);
                 cmd.Parameters.AddWithValue("TenND", tenNguoiDung);
@@ -1766,6 +1766,99 @@ namespace Home.DuLieu
             DataTable dt = new DataTable();
             da.Fill(dt);
             return dt;
+        }
+        public DataTable doDuLieuTopKhachHang(DateTime thangNay)
+        {
+            kn.myConnect();
+            DateTime ThangSau = thangNay.AddMonths(1);
+
+            string sql = "SELECT TOP(5) SUM(TongThanhToan) AS TongThanhToan, TenKhachHang FROM ThongTinDH WHERE NgayDH Between @ThangNay AND  @ThangSau and TenKhachHang is not null GROUP BY TenKhachHang, SoDienThoai, DiaChi, NgayDH order by TongThanhToan desc";
+            SqlCommand cmd = new SqlCommand(sql, kn.con);
+            SqlParameter sqlParameter1 = new SqlParameter("@ThangNay", SqlDbType.DateTime);
+            sqlParameter1.Value = thangNay;
+            cmd.Parameters.Add(sqlParameter1);
+
+            SqlParameter sqlParameter2 = new SqlParameter("@ThangSau", SqlDbType.DateTime);
+            sqlParameter2.Value = ThangSau;
+            cmd.Parameters.Add(sqlParameter2);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            return dt;
+
+        }
+
+        public DataTable doDuLieuTopXe(DateTime thangNay)
+        {
+            kn.myConnect();
+            DateTime ThangSau = thangNay.AddMonths(1);
+
+            string sql = "SELECT top (5) sum(dhdm.SoLuong) as TongSL, dhdm.MaSP, TenSP\r\nFROM DonHangDaMua AS dhdm \r\nJOIN ThongTinDH AS ttdh ON dhdm.MaDH = ttdh.MaDH \r\nJOIN SanPham AS sp ON sp.MaSP = dhdm.MaSP \r\nwhere NgayDH Between @ThangNay AND @ThangSau \r\nGroup by dhdm.MaSP,TenSP\r\norder by TongSL desc";
+            SqlCommand cmd = new SqlCommand(sql, kn.con);
+
+            SqlParameter sqlParameter1 = new SqlParameter("@ThangNay", SqlDbType.DateTime);
+            sqlParameter1.Value = thangNay;
+            cmd.Parameters.Add(sqlParameter1);
+
+            SqlParameter sqlParameter2 = new SqlParameter("@ThangSau", SqlDbType.DateTime);
+            sqlParameter2.Value = ThangSau;
+            cmd.Parameters.Add(sqlParameter2);
+
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            return dt;
+        }
+
+        public void themLoiNhac(string loiNhac)
+        {
+            kn.myConnect();
+            string sql = "INSERT INTO LoiNhacCuaAdmin VALUES (@LoiNhac)";
+            SqlCommand cmd = new SqlCommand(sql, kn.con);
+
+            SqlParameter sqlParameter1 = new SqlParameter("@LoiNhac", SqlDbType.NVarChar);
+            sqlParameter1.Value = loiNhac;
+            cmd.Parameters.Add(sqlParameter1);
+            
+            cmd.ExecuteNonQuery();
+        }
+
+        public DataTable doLoiNhac()
+        {
+            kn.myConnect();
+            
+            string sql = "SELECT * FROM LoiNhacCuaAdmin";
+            SqlCommand cmd = new SqlCommand(sql, kn.con);
+
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            return dt;
+        }
+
+        public void xoaLoiNhac(string loiNhac)
+        {
+            string sql = "DELETE FROM LoiNhacCuaAdmin where LoiNhac = @LoiNhac";
+            SqlCommand cmd = new SqlCommand(sql, kn.con);
+
+            SqlParameter sqlParameter1 = new SqlParameter("@LoiNhac", SqlDbType.NVarChar);
+            sqlParameter1.Value = loiNhac;
+            cmd.Parameters.Add(sqlParameter1);
+
+            cmd.ExecuteNonQuery();
+        }
+
+        public bool checkLoiNhac()
+        {
+            string sql = "SELECT COUNT(*) FROM LoiNhacCuaAdmin ";
+            SqlCommand cmd = new SqlCommand(sql, kn.con);
+
+            int check = (int)cmd.ExecuteScalar();
+            if(check <= 0 ) 
+            {
+                return true;
+            }
+            return false;
         }
     }
    
