@@ -19,7 +19,7 @@ namespace Home.FrmCon.FrmHienThi
             InitializeComponent();
         }
 
-        public void themSP(string MaSP, string tenSP,decimal gia, string nCC, int sL, Image anh)
+        public void themSP(string MaSP, string tenSP,decimal gia, string nCC, int sL, Image anh, int nam)
         {
             lblMaSP.Text = MaSP;    
             lblTenSP.Text = tenSP;
@@ -27,6 +27,7 @@ namespace Home.FrmCon.FrmHienThi
             lblNCC.Text = nCC;
             lblSL.Text = sL.ToString() + " sản phẩm";
             picBoxSP.Image = anh;
+            lblNam.Text = nam.ToString() + " năm";
         }
 
         private void btnDatHang_Click(object sender, EventArgs e)

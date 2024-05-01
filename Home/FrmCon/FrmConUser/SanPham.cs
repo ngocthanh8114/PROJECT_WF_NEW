@@ -35,8 +35,9 @@ namespace Home.FrmCon
                 string NCC = xl.xuLiMaNCC(maNCC);
                 int SL = row.Field<int>("SoLuong");
                 byte[] b = row.Field<byte[]>("HinhAnh");
+                int nam = row.Field<int>("BaoHanh");
                 Image anh = xl.ByteArrToImage(b);
-                oSanPham.themSP(maSP, tenSP, gia, NCC, SL, anh);
+                oSanPham.themSP(maSP, tenSP, gia, NCC, SL, anh, nam);
                 panelNoiDung.Controls.Add(oSanPham);
                 oSanPham.BringToFront();
             }

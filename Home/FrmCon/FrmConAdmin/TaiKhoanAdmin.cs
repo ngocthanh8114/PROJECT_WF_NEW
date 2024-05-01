@@ -19,10 +19,15 @@ namespace Home.FrmCon.FrmConAdmin
         public TaiKhoanAdmin()
         {
             InitializeComponent();
+            dtpNgayKhach.Value = DateTime.Now;
+            panelTopKhach.Controls.Clear();
+            dtpNgayXe.Value = DateTime.Now;
+            panelTopXe.Controls.Clear();
         }
         static XuLiDuLieu xl = new XuLiDuLieu();
         private void TaiKhoanAdmin_Load(object sender, EventArgs e)
         {
+            
             btnThongTin_Click(sender, e); 
             lblHoTen.Text = TaiKhoanDangNhap.tenNguoiDung;
             lblEmail.Text = TaiKhoanDangNhap.email;
@@ -66,7 +71,8 @@ namespace Home.FrmCon.FrmConAdmin
             foreach (DataRow row in xl.doDuLieuTopKhachHang(firstDayOfMonth).Rows)
             {
                 string ten = row[1].ToString();
-                string tien = row[0].ToString() + " VNĐ";
+                decimal tt = row.Field<decimal>("TongThanhToan");
+                string tien = tt.ToString("N0") + " VNĐ";
                 string hienThi = ten + '/' + tien;
                 OTop oTop = new OTop();
                 Color color;
@@ -210,6 +216,16 @@ namespace Home.FrmCon.FrmConAdmin
             bangLoiNhac = xl.doLoiNhac();
             //loadLoiNhac();
             btnPrevious_Click(sender, e);
+        }
+
+        private void guna2Panel9_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void guna2Panel8_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

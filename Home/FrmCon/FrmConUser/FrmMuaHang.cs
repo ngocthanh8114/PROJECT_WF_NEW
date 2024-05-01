@@ -104,9 +104,10 @@ namespace Home.FrmCon.FrmHienThi
 
                     xl.MuaHang(txtHoTen.Text, txtEmail.Text, txtSDT.Text, txtDiaChi.Text, txtLoiNhan.Text, tienHang, phiVC, tong, NgayMua);
                     xl.DaMuaHang();
-                    xl.truSoLuongDaMua();
+                    xl.capNhatDonMua(NgayMua);
                     FrmThongBao frmThongBao = new FrmThongBao();
                     xl.themDiaChiVaoDB(txtHoTen.Text, txtDiaChi.Text, txtSDT.Text);
+                    //xl.themBaoHanh(txtHoTen.Text, txtSDT.Text, txtDiaChi.Text, lblMaDH.Text, NgayMua)
                     frmThongBao.hienThiThongBao("Mua hàng thành công");
                     frmThongBao.ShowDialog();
                     this.Close();

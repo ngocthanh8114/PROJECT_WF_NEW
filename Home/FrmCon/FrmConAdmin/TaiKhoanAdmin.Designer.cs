@@ -42,6 +42,7 @@
             this.guna2Shapes2 = new Guna.UI2.WinForms.Guna2Shapes();
             this.label5 = new System.Windows.Forms.Label();
             this.guna2Shapes1 = new Guna.UI2.WinForms.Guna2Shapes();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel9 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel10 = new Guna.UI2.WinForms.Guna2Panel();
             this.label7 = new System.Windows.Forms.Label();
@@ -51,41 +52,40 @@
             this.lblTenNguoiDung = new System.Windows.Forms.Label();
             this.lblTenTaiKhoan = new System.Windows.Forms.Label();
             this.panelChucNang = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnLoiNhac = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.btnThemTK = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.btnThongTin = new Guna.UI.WinForms.GunaAdvenceButton();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.panelTK = new Guna.UI2.WinForms.Guna2Panel();
             this.btnXoa = new Guna.UI.WinForms.GunaAdvenceButton();
             this.txtLoiNhac = new Guna.UI2.WinForms.Guna2TextBox();
             this.panelLoiNhac = new Guna.UI2.WinForms.Guna2Panel();
             this.label3 = new System.Windows.Forms.Label();
+            this.btnPrevious = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.btnNext = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.panelXe = new Guna.UI2.WinForms.Guna2Panel();
+            this.panelTopXe = new System.Windows.Forms.FlowLayoutPanel();
             this.guna2Panel7 = new Guna.UI2.WinForms.Guna2Panel();
             this.dtpNgayXe = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
             this.panelKhachHang = new Guna.UI2.WinForms.Guna2Panel();
+            this.panelTopKhach = new System.Windows.Forms.FlowLayoutPanel();
             this.guna2Panel6 = new Guna.UI2.WinForms.Guna2Panel();
             this.dtpNgayKhach = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.btnLoiNhac = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.btnThemTK = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.btnThongTin = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.btnPrevious = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.btnNext = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.panelTopKhach = new System.Windows.Forms.FlowLayoutPanel();
-            this.panelTopXe = new System.Windows.Forms.FlowLayoutPanel();
             this.panelNoiDung.SuspendLayout();
             this.guna2Panel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.guna2Panel10.SuspendLayout();
             this.panelChucNang.SuspendLayout();
             this.panelTK.SuspendLayout();
             this.panelLoiNhac.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             this.guna2Panel3.SuspendLayout();
             this.panelXe.SuspendLayout();
             this.panelKhachHang.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // lblChucDanh
@@ -144,6 +144,7 @@
             this.guna2Panel8.Name = "guna2Panel8";
             this.guna2Panel8.Size = new System.Drawing.Size(1174, 811);
             this.guna2Panel8.TabIndex = 16;
+            this.guna2Panel8.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel8_Paint);
             // 
             // btnDangXuat
             // 
@@ -311,6 +312,17 @@
             this.guna2Shapes1.Text = "guna2Shapes1";
             this.guna2Shapes1.Zoom = 80;
             // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(468, 126);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.Size = new System.Drawing.Size(216, 130);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox1.TabIndex = 20;
+            this.guna2PictureBox1.TabStop = false;
+            // 
             // guna2Panel9
             // 
             this.guna2Panel9.BackColor = System.Drawing.SystemColors.ControlDarkDark;
@@ -320,6 +332,7 @@
             this.guna2Panel9.Name = "guna2Panel9";
             this.guna2Panel9.Size = new System.Drawing.Size(1174, 4);
             this.guna2Panel9.TabIndex = 19;
+            this.guna2Panel9.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel9_Paint);
             // 
             // guna2Panel10
             // 
@@ -402,6 +415,105 @@
             this.panelChucNang.Name = "panelChucNang";
             this.panelChucNang.Size = new System.Drawing.Size(330, 322);
             this.panelChucNang.TabIndex = 13;
+            // 
+            // btnLoiNhac
+            // 
+            this.btnLoiNhac.AnimationHoverSpeed = 0.07F;
+            this.btnLoiNhac.AnimationSpeed = 0.03F;
+            this.btnLoiNhac.BaseColor = System.Drawing.Color.White;
+            this.btnLoiNhac.BorderColor = System.Drawing.Color.Black;
+            this.btnLoiNhac.CheckedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(232)))), ((int)(((byte)(233)))));
+            this.btnLoiNhac.CheckedBorderColor = System.Drawing.Color.Black;
+            this.btnLoiNhac.CheckedForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnLoiNhac.CheckedImage = ((System.Drawing.Image)(resources.GetObject("btnLoiNhac.CheckedImage")));
+            this.btnLoiNhac.CheckedLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnLoiNhac.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnLoiNhac.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnLoiNhac.FocusedColor = System.Drawing.Color.Empty;
+            this.btnLoiNhac.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnLoiNhac.ForeColor = System.Drawing.Color.Black;
+            this.btnLoiNhac.Image = ((System.Drawing.Image)(resources.GetObject("btnLoiNhac.Image")));
+            this.btnLoiNhac.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnLoiNhac.LineColor = System.Drawing.Color.White;
+            this.btnLoiNhac.LineLeft = 5;
+            this.btnLoiNhac.Location = new System.Drawing.Point(0, 138);
+            this.btnLoiNhac.Name = "btnLoiNhac";
+            this.btnLoiNhac.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(249)))));
+            this.btnLoiNhac.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnLoiNhac.OnHoverForeColor = System.Drawing.Color.Black;
+            this.btnLoiNhac.OnHoverImage = ((System.Drawing.Image)(resources.GetObject("btnLoiNhac.OnHoverImage")));
+            this.btnLoiNhac.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(249)))));
+            this.btnLoiNhac.OnPressedColor = System.Drawing.Color.Black;
+            this.btnLoiNhac.Size = new System.Drawing.Size(330, 69);
+            this.btnLoiNhac.TabIndex = 64;
+            this.btnLoiNhac.Text = "Thêm lời nhắc";
+            this.btnLoiNhac.Click += new System.EventHandler(this.btnLoiNhac_Click);
+            // 
+            // btnThemTK
+            // 
+            this.btnThemTK.AnimationHoverSpeed = 0.07F;
+            this.btnThemTK.AnimationSpeed = 0.03F;
+            this.btnThemTK.BaseColor = System.Drawing.Color.White;
+            this.btnThemTK.BorderColor = System.Drawing.Color.Black;
+            this.btnThemTK.CheckedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(232)))), ((int)(((byte)(233)))));
+            this.btnThemTK.CheckedBorderColor = System.Drawing.Color.Black;
+            this.btnThemTK.CheckedForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnThemTK.CheckedImage = ((System.Drawing.Image)(resources.GetObject("btnThemTK.CheckedImage")));
+            this.btnThemTK.CheckedLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnThemTK.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnThemTK.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnThemTK.FocusedColor = System.Drawing.Color.Empty;
+            this.btnThemTK.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnThemTK.ForeColor = System.Drawing.Color.Black;
+            this.btnThemTK.Image = ((System.Drawing.Image)(resources.GetObject("btnThemTK.Image")));
+            this.btnThemTK.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnThemTK.LineColor = System.Drawing.Color.White;
+            this.btnThemTK.LineLeft = 5;
+            this.btnThemTK.Location = new System.Drawing.Point(0, 69);
+            this.btnThemTK.Name = "btnThemTK";
+            this.btnThemTK.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(249)))));
+            this.btnThemTK.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnThemTK.OnHoverForeColor = System.Drawing.Color.Black;
+            this.btnThemTK.OnHoverImage = ((System.Drawing.Image)(resources.GetObject("btnThemTK.OnHoverImage")));
+            this.btnThemTK.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(249)))));
+            this.btnThemTK.OnPressedColor = System.Drawing.Color.Black;
+            this.btnThemTK.Size = new System.Drawing.Size(330, 69);
+            this.btnThemTK.TabIndex = 1;
+            this.btnThemTK.Text = "Thêm tài khoản quản lí";
+            this.btnThemTK.Click += new System.EventHandler(this.btnThemTK_Click);
+            // 
+            // btnThongTin
+            // 
+            this.btnThongTin.AnimationHoverSpeed = 0.07F;
+            this.btnThongTin.AnimationSpeed = 0.03F;
+            this.btnThongTin.BaseColor = System.Drawing.Color.White;
+            this.btnThongTin.BorderColor = System.Drawing.Color.Black;
+            this.btnThongTin.CheckedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(232)))), ((int)(((byte)(233)))));
+            this.btnThongTin.CheckedBorderColor = System.Drawing.Color.Black;
+            this.btnThongTin.CheckedForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnThongTin.CheckedImage = ((System.Drawing.Image)(resources.GetObject("btnThongTin.CheckedImage")));
+            this.btnThongTin.CheckedLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnThongTin.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnThongTin.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnThongTin.FocusedColor = System.Drawing.Color.Empty;
+            this.btnThongTin.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnThongTin.ForeColor = System.Drawing.Color.Black;
+            this.btnThongTin.Image = ((System.Drawing.Image)(resources.GetObject("btnThongTin.Image")));
+            this.btnThongTin.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnThongTin.LineColor = System.Drawing.Color.White;
+            this.btnThongTin.LineLeft = 5;
+            this.btnThongTin.Location = new System.Drawing.Point(0, 0);
+            this.btnThongTin.Name = "btnThongTin";
+            this.btnThongTin.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(249)))));
+            this.btnThongTin.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnThongTin.OnHoverForeColor = System.Drawing.Color.Black;
+            this.btnThongTin.OnHoverImage = ((System.Drawing.Image)(resources.GetObject("btnThongTin.OnHoverImage")));
+            this.btnThongTin.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(249)))));
+            this.btnThongTin.OnPressedColor = System.Drawing.Color.Black;
+            this.btnThongTin.Size = new System.Drawing.Size(330, 69);
+            this.btnThongTin.TabIndex = 0;
+            this.btnThongTin.Text = "Thông tin cá nhân";
+            this.btnThongTin.Click += new System.EventHandler(this.btnThongTin_Click);
             // 
             // guna2Panel2
             // 
@@ -505,229 +617,6 @@
             this.label3.Text = "Việc cần làm";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // guna2Panel3
-            // 
-            this.guna2Panel3.Controls.Add(this.panelXe);
-            this.guna2Panel3.Controls.Add(this.panelKhachHang);
-            this.guna2Panel3.Controls.Add(this.panelNoiDung);
-            this.guna2Panel3.Controls.Add(this.panelChucNang);
-            this.guna2Panel3.Controls.Add(this.panelTK);
-            this.guna2Panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2Panel3.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel3.Name = "guna2Panel3";
-            this.guna2Panel3.Size = new System.Drawing.Size(2050, 866);
-            this.guna2Panel3.TabIndex = 10;
-            // 
-            // panelXe
-            // 
-            this.panelXe.BackColor = System.Drawing.Color.White;
-            this.panelXe.Controls.Add(this.panelTopXe);
-            this.panelXe.Controls.Add(this.guna2Panel7);
-            this.panelXe.Controls.Add(this.dtpNgayXe);
-            this.panelXe.Controls.Add(this.label1);
-            this.panelXe.Location = new System.Drawing.Point(1667, 466);
-            this.panelXe.Name = "panelXe";
-            this.panelXe.Size = new System.Drawing.Size(330, 389);
-            this.panelXe.TabIndex = 16;
-            // 
-            // guna2Panel7
-            // 
-            this.guna2Panel7.BackColor = System.Drawing.Color.Tomato;
-            this.guna2Panel7.BorderColor = System.Drawing.Color.Tomato;
-            this.guna2Panel7.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.guna2Panel7.Location = new System.Drawing.Point(0, 385);
-            this.guna2Panel7.Name = "guna2Panel7";
-            this.guna2Panel7.Size = new System.Drawing.Size(330, 4);
-            this.guna2Panel7.TabIndex = 62;
-            // 
-            // dtpNgayXe
-            // 
-            this.dtpNgayXe.Checked = true;
-            this.dtpNgayXe.Dock = System.Windows.Forms.DockStyle.Top;
-            this.dtpNgayXe.FillColor = System.Drawing.Color.Tomato;
-            this.dtpNgayXe.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.dtpNgayXe.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.dtpNgayXe.Location = new System.Drawing.Point(0, 42);
-            this.dtpNgayXe.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.dtpNgayXe.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.dtpNgayXe.Name = "dtpNgayXe";
-            this.dtpNgayXe.Size = new System.Drawing.Size(330, 47);
-            this.dtpNgayXe.TabIndex = 56;
-            this.dtpNgayXe.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.dtpNgayXe.Value = new System.DateTime(2024, 4, 24, 22, 54, 14, 282);
-            this.dtpNgayXe.ValueChanged += new System.EventHandler(this.dtpNgayXe_ValueChanged);
-            // 
-            // label1
-            // 
-            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(330, 42);
-            this.label1.TabIndex = 23;
-            this.label1.Text = "Top sản phẩm bán chạy nhất";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // panelKhachHang
-            // 
-            this.panelKhachHang.BackColor = System.Drawing.Color.White;
-            this.panelKhachHang.Controls.Add(this.panelTopKhach);
-            this.panelKhachHang.Controls.Add(this.guna2Panel6);
-            this.panelKhachHang.Controls.Add(this.dtpNgayKhach);
-            this.panelKhachHang.Controls.Add(this.label2);
-            this.panelKhachHang.Location = new System.Drawing.Point(1667, 44);
-            this.panelKhachHang.Name = "panelKhachHang";
-            this.panelKhachHang.Size = new System.Drawing.Size(330, 389);
-            this.panelKhachHang.TabIndex = 15;
-            // 
-            // guna2Panel6
-            // 
-            this.guna2Panel6.BackColor = System.Drawing.Color.Tomato;
-            this.guna2Panel6.BorderColor = System.Drawing.Color.Tomato;
-            this.guna2Panel6.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.guna2Panel6.Location = new System.Drawing.Point(0, 385);
-            this.guna2Panel6.Name = "guna2Panel6";
-            this.guna2Panel6.Size = new System.Drawing.Size(330, 4);
-            this.guna2Panel6.TabIndex = 62;
-            // 
-            // dtpNgayKhach
-            // 
-            this.dtpNgayKhach.Checked = true;
-            this.dtpNgayKhach.Dock = System.Windows.Forms.DockStyle.Top;
-            this.dtpNgayKhach.FillColor = System.Drawing.Color.Tomato;
-            this.dtpNgayKhach.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.dtpNgayKhach.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.dtpNgayKhach.Location = new System.Drawing.Point(0, 42);
-            this.dtpNgayKhach.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.dtpNgayKhach.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.dtpNgayKhach.Name = "dtpNgayKhach";
-            this.dtpNgayKhach.Size = new System.Drawing.Size(330, 47);
-            this.dtpNgayKhach.TabIndex = 56;
-            this.dtpNgayKhach.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.dtpNgayKhach.Value = new System.DateTime(2024, 4, 24, 22, 54, 14, 282);
-            this.dtpNgayKhach.ValueChanged += new System.EventHandler(this.dtpNgayKhach_ValueChanged);
-            // 
-            // label2
-            // 
-            this.label2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(0, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(330, 42);
-            this.label2.TabIndex = 23;
-            this.label2.Text = "Top khách hàng tháng";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(468, 126);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(216, 130);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox1.TabIndex = 20;
-            this.guna2PictureBox1.TabStop = false;
-            // 
-            // btnLoiNhac
-            // 
-            this.btnLoiNhac.AnimationHoverSpeed = 0.07F;
-            this.btnLoiNhac.AnimationSpeed = 0.03F;
-            this.btnLoiNhac.BaseColor = System.Drawing.Color.White;
-            this.btnLoiNhac.BorderColor = System.Drawing.Color.Black;
-            this.btnLoiNhac.CheckedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(232)))), ((int)(((byte)(233)))));
-            this.btnLoiNhac.CheckedBorderColor = System.Drawing.Color.Black;
-            this.btnLoiNhac.CheckedForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnLoiNhac.CheckedImage = ((System.Drawing.Image)(resources.GetObject("btnLoiNhac.CheckedImage")));
-            this.btnLoiNhac.CheckedLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnLoiNhac.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnLoiNhac.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnLoiNhac.FocusedColor = System.Drawing.Color.Empty;
-            this.btnLoiNhac.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnLoiNhac.ForeColor = System.Drawing.Color.Black;
-            this.btnLoiNhac.Image = ((System.Drawing.Image)(resources.GetObject("btnLoiNhac.Image")));
-            this.btnLoiNhac.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnLoiNhac.LineColor = System.Drawing.Color.White;
-            this.btnLoiNhac.LineLeft = 5;
-            this.btnLoiNhac.Location = new System.Drawing.Point(0, 138);
-            this.btnLoiNhac.Name = "btnLoiNhac";
-            this.btnLoiNhac.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(249)))));
-            this.btnLoiNhac.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnLoiNhac.OnHoverForeColor = System.Drawing.Color.Black;
-            this.btnLoiNhac.OnHoverImage = ((System.Drawing.Image)(resources.GetObject("btnLoiNhac.OnHoverImage")));
-            this.btnLoiNhac.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(249)))));
-            this.btnLoiNhac.OnPressedColor = System.Drawing.Color.Black;
-            this.btnLoiNhac.Size = new System.Drawing.Size(330, 69);
-            this.btnLoiNhac.TabIndex = 64;
-            this.btnLoiNhac.Text = "Thêm lời nhắc";
-            this.btnLoiNhac.Click += new System.EventHandler(this.btnLoiNhac_Click);
-            // 
-            // btnThemTK
-            // 
-            this.btnThemTK.AnimationHoverSpeed = 0.07F;
-            this.btnThemTK.AnimationSpeed = 0.03F;
-            this.btnThemTK.BaseColor = System.Drawing.Color.White;
-            this.btnThemTK.BorderColor = System.Drawing.Color.Black;
-            this.btnThemTK.CheckedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(232)))), ((int)(((byte)(233)))));
-            this.btnThemTK.CheckedBorderColor = System.Drawing.Color.Black;
-            this.btnThemTK.CheckedForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnThemTK.CheckedImage = ((System.Drawing.Image)(resources.GetObject("btnThemTK.CheckedImage")));
-            this.btnThemTK.CheckedLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnThemTK.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnThemTK.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnThemTK.FocusedColor = System.Drawing.Color.Empty;
-            this.btnThemTK.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnThemTK.ForeColor = System.Drawing.Color.Black;
-            this.btnThemTK.Image = ((System.Drawing.Image)(resources.GetObject("btnThemTK.Image")));
-            this.btnThemTK.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnThemTK.LineColor = System.Drawing.Color.White;
-            this.btnThemTK.LineLeft = 5;
-            this.btnThemTK.Location = new System.Drawing.Point(0, 69);
-            this.btnThemTK.Name = "btnThemTK";
-            this.btnThemTK.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(249)))));
-            this.btnThemTK.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnThemTK.OnHoverForeColor = System.Drawing.Color.Black;
-            this.btnThemTK.OnHoverImage = ((System.Drawing.Image)(resources.GetObject("btnThemTK.OnHoverImage")));
-            this.btnThemTK.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(249)))));
-            this.btnThemTK.OnPressedColor = System.Drawing.Color.Black;
-            this.btnThemTK.Size = new System.Drawing.Size(330, 69);
-            this.btnThemTK.TabIndex = 1;
-            this.btnThemTK.Text = "Thêm tài khoản quản lí";
-            this.btnThemTK.Click += new System.EventHandler(this.btnThemTK_Click);
-            // 
-            // btnThongTin
-            // 
-            this.btnThongTin.AnimationHoverSpeed = 0.07F;
-            this.btnThongTin.AnimationSpeed = 0.03F;
-            this.btnThongTin.BaseColor = System.Drawing.Color.White;
-            this.btnThongTin.BorderColor = System.Drawing.Color.Black;
-            this.btnThongTin.CheckedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(232)))), ((int)(((byte)(233)))));
-            this.btnThongTin.CheckedBorderColor = System.Drawing.Color.Black;
-            this.btnThongTin.CheckedForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnThongTin.CheckedImage = ((System.Drawing.Image)(resources.GetObject("btnThongTin.CheckedImage")));
-            this.btnThongTin.CheckedLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnThongTin.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnThongTin.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnThongTin.FocusedColor = System.Drawing.Color.Empty;
-            this.btnThongTin.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnThongTin.ForeColor = System.Drawing.Color.Black;
-            this.btnThongTin.Image = ((System.Drawing.Image)(resources.GetObject("btnThongTin.Image")));
-            this.btnThongTin.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnThongTin.LineColor = System.Drawing.Color.White;
-            this.btnThongTin.LineLeft = 5;
-            this.btnThongTin.Location = new System.Drawing.Point(0, 0);
-            this.btnThongTin.Name = "btnThongTin";
-            this.btnThongTin.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(249)))));
-            this.btnThongTin.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnThongTin.OnHoverForeColor = System.Drawing.Color.Black;
-            this.btnThongTin.OnHoverImage = ((System.Drawing.Image)(resources.GetObject("btnThongTin.OnHoverImage")));
-            this.btnThongTin.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(249)))));
-            this.btnThongTin.OnPressedColor = System.Drawing.Color.Black;
-            this.btnThongTin.Size = new System.Drawing.Size(330, 69);
-            this.btnThongTin.TabIndex = 0;
-            this.btnThongTin.Text = "Thông tin cá nhân";
-            this.btnThongTin.Click += new System.EventHandler(this.btnThongTin_Click);
-            // 
             // btnPrevious
             // 
             this.btnPrevious.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
@@ -777,14 +666,30 @@
             this.guna2PictureBox2.TabIndex = 21;
             this.guna2PictureBox2.TabStop = false;
             // 
-            // panelTopKhach
+            // guna2Panel3
             // 
-            this.panelTopKhach.AutoScroll = true;
-            this.panelTopKhach.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelTopKhach.Location = new System.Drawing.Point(0, 89);
-            this.panelTopKhach.Name = "panelTopKhach";
-            this.panelTopKhach.Size = new System.Drawing.Size(330, 296);
-            this.panelTopKhach.TabIndex = 63;
+            this.guna2Panel3.Controls.Add(this.panelXe);
+            this.guna2Panel3.Controls.Add(this.panelKhachHang);
+            this.guna2Panel3.Controls.Add(this.panelNoiDung);
+            this.guna2Panel3.Controls.Add(this.panelChucNang);
+            this.guna2Panel3.Controls.Add(this.panelTK);
+            this.guna2Panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.guna2Panel3.Location = new System.Drawing.Point(0, 0);
+            this.guna2Panel3.Name = "guna2Panel3";
+            this.guna2Panel3.Size = new System.Drawing.Size(2050, 866);
+            this.guna2Panel3.TabIndex = 10;
+            // 
+            // panelXe
+            // 
+            this.panelXe.BackColor = System.Drawing.Color.White;
+            this.panelXe.Controls.Add(this.panelTopXe);
+            this.panelXe.Controls.Add(this.guna2Panel7);
+            this.panelXe.Controls.Add(this.dtpNgayXe);
+            this.panelXe.Controls.Add(this.label1);
+            this.panelXe.Location = new System.Drawing.Point(1667, 466);
+            this.panelXe.Name = "panelXe";
+            this.panelXe.Size = new System.Drawing.Size(330, 389);
+            this.panelXe.TabIndex = 16;
             // 
             // panelTopXe
             // 
@@ -794,6 +699,103 @@
             this.panelTopXe.Name = "panelTopXe";
             this.panelTopXe.Size = new System.Drawing.Size(330, 296);
             this.panelTopXe.TabIndex = 64;
+            // 
+            // guna2Panel7
+            // 
+            this.guna2Panel7.BackColor = System.Drawing.Color.Tomato;
+            this.guna2Panel7.BorderColor = System.Drawing.Color.Tomato;
+            this.guna2Panel7.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.guna2Panel7.Location = new System.Drawing.Point(0, 385);
+            this.guna2Panel7.Name = "guna2Panel7";
+            this.guna2Panel7.Size = new System.Drawing.Size(330, 4);
+            this.guna2Panel7.TabIndex = 62;
+            // 
+            // dtpNgayXe
+            // 
+            this.dtpNgayXe.Checked = true;
+            this.dtpNgayXe.Dock = System.Windows.Forms.DockStyle.Top;
+            this.dtpNgayXe.FillColor = System.Drawing.Color.Tomato;
+            this.dtpNgayXe.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.dtpNgayXe.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.dtpNgayXe.Location = new System.Drawing.Point(0, 42);
+            this.dtpNgayXe.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.dtpNgayXe.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.dtpNgayXe.Name = "dtpNgayXe";
+            this.dtpNgayXe.Size = new System.Drawing.Size(330, 47);
+            this.dtpNgayXe.TabIndex = 56;
+            this.dtpNgayXe.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.dtpNgayXe.Value = new System.DateTime(2024, 5, 1, 0, 0, 0, 0);
+            this.dtpNgayXe.ValueChanged += new System.EventHandler(this.dtpNgayXe_ValueChanged);
+            // 
+            // label1
+            // 
+            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(330, 42);
+            this.label1.TabIndex = 23;
+            this.label1.Text = "Top sản phẩm bán chạy nhất";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panelKhachHang
+            // 
+            this.panelKhachHang.BackColor = System.Drawing.Color.White;
+            this.panelKhachHang.Controls.Add(this.panelTopKhach);
+            this.panelKhachHang.Controls.Add(this.guna2Panel6);
+            this.panelKhachHang.Controls.Add(this.dtpNgayKhach);
+            this.panelKhachHang.Controls.Add(this.label2);
+            this.panelKhachHang.Location = new System.Drawing.Point(1667, 44);
+            this.panelKhachHang.Name = "panelKhachHang";
+            this.panelKhachHang.Size = new System.Drawing.Size(330, 389);
+            this.panelKhachHang.TabIndex = 15;
+            // 
+            // panelTopKhach
+            // 
+            this.panelTopKhach.AutoScroll = true;
+            this.panelTopKhach.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelTopKhach.Location = new System.Drawing.Point(0, 89);
+            this.panelTopKhach.Name = "panelTopKhach";
+            this.panelTopKhach.Size = new System.Drawing.Size(330, 296);
+            this.panelTopKhach.TabIndex = 63;
+            // 
+            // guna2Panel6
+            // 
+            this.guna2Panel6.BackColor = System.Drawing.Color.Tomato;
+            this.guna2Panel6.BorderColor = System.Drawing.Color.Tomato;
+            this.guna2Panel6.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.guna2Panel6.Location = new System.Drawing.Point(0, 385);
+            this.guna2Panel6.Name = "guna2Panel6";
+            this.guna2Panel6.Size = new System.Drawing.Size(330, 4);
+            this.guna2Panel6.TabIndex = 62;
+            // 
+            // dtpNgayKhach
+            // 
+            this.dtpNgayKhach.Checked = true;
+            this.dtpNgayKhach.Dock = System.Windows.Forms.DockStyle.Top;
+            this.dtpNgayKhach.FillColor = System.Drawing.Color.Tomato;
+            this.dtpNgayKhach.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.dtpNgayKhach.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.dtpNgayKhach.Location = new System.Drawing.Point(0, 42);
+            this.dtpNgayKhach.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.dtpNgayKhach.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.dtpNgayKhach.Name = "dtpNgayKhach";
+            this.dtpNgayKhach.Size = new System.Drawing.Size(330, 47);
+            this.dtpNgayKhach.TabIndex = 56;
+            this.dtpNgayKhach.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.dtpNgayKhach.Value = new System.DateTime(2024, 5, 1, 0, 0, 0, 0);
+            this.dtpNgayKhach.ValueChanged += new System.EventHandler(this.dtpNgayKhach_ValueChanged);
+            // 
+            // label2
+            // 
+            this.label2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(0, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(330, 42);
+            this.label2.TabIndex = 23;
+            this.label2.Text = "Top khách hàng tháng";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // TaiKhoanAdmin
             // 
@@ -807,16 +809,16 @@
             this.panelNoiDung.ResumeLayout(false);
             this.guna2Panel8.ResumeLayout(false);
             this.guna2Panel8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.guna2Panel10.ResumeLayout(false);
             this.guna2Panel10.PerformLayout();
             this.panelChucNang.ResumeLayout(false);
             this.panelTK.ResumeLayout(false);
             this.panelLoiNhac.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             this.guna2Panel3.ResumeLayout(false);
             this.panelXe.ResumeLayout(false);
             this.panelKhachHang.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
