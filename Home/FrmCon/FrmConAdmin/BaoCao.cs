@@ -1,4 +1,5 @@
 ﻿using Home.DuLieu;
+using Home.FrmCon.FrmHienThi;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -28,8 +29,10 @@ namespace Home.FrmCon
             {
                 if (startDate > currentDate || endDate > currentDate)
                 {
-                    MessageBox.Show("Ngày không hợp lệ. Ngày bắt đầu hoặc kết thúc không được lớn hơn thời gian hiện tại.");
-                    return;
+                    FrmBaoLoi frmBaoLoi = new FrmBaoLoi();
+                    frmBaoLoi.hienThiLoi("Ngày không hợp lệ. Ngày bắt đầu hoặc kết thúc không được lớn hơn thời gian hiện tại.");
+                    frmBaoLoi.Show();
+                
                 }
                 if (cboSanPham.SelectedItem != null && cboSanPham.Text != "Tất cả")
                 {
@@ -61,7 +64,9 @@ namespace Home.FrmCon
             }
             else
             {
-                MessageBox.Show("Ngày không hợp lệ. Ngày kết thúc phải lớn hơn hoặc bằng ngày bắt đầu.");
+                FrmBaoLoi frmBaoLoi = new FrmBaoLoi();
+                frmBaoLoi.hienThiLoi("Ngày không hợp lệ. Ngày kết thúc phải lớn hơn hoặc bằng ngày bắt đầu.");
+                frmBaoLoi.Show();
             }
         }
 
