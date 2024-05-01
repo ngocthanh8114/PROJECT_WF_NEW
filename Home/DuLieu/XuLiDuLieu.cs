@@ -33,6 +33,7 @@ namespace Home.DuLieu
 
         static string strconn = "Data Source=.;Initial Catalog=BanXeMay;User ID=sa;Password=123;Encrypt=False";
 
+
         SqlConnection conn = null;
         
         
@@ -113,31 +114,29 @@ namespace Home.DuLieu
             reader.Close();
             return totalThànhTiền;
         }
-        /* public decimal CalculateTotalTongTienAllSP(DateTime startDate, DateTime endDate)
-         {
-            *//* kn.myConnect();
-             decimal totalTongTien = 0;
+        public decimal CalculateTotalTongTienAllSP(DateTime startDate, DateTime endDate)
+        {
+            kn.myConnect();
+            decimal totalTongTien = 0;
 
-             string query = @"SELECT THD.TongTienHang
+            string query = @"SELECT THD.TongTienHang
                                       FROM dbo.ThongTinDH THD
                                       WHERE THD.NgayDH >= @StartDate AND THD.NgayDH <= @EndDate";
 
-             SqlCommand command = new SqlCommand(query, kn.con);
-             command.Parameters.AddWithValue("@StartDate", startDate);
-             command.Parameters.AddWithValue("@EndDate", endDate);
+            SqlCommand command = new SqlCommand(query, kn.con);
+            command.Parameters.AddWithValue("@StartDate", startDate);
+            command.Parameters.AddWithValue("@EndDate", endDate);
 
-             SqlDataReader reader = command.ExecuteReader();
+            SqlDataReader reader = command.ExecuteReader();
 
-             while (reader.Read())
-             {
-                 // Đọc giá trị của cột 'Tổng tiền' và cộng dồn vào tổng
-                 decimal tongTien = Convert.ToDecimal(reader["TongTienHang"]);
-                 totalTongTien += tongTien;
-             }
-
-             reader.Close();
-             return totalTongTien;*//*
-         }*/
+            while (reader.Read())
+            {
+                decimal tongTien = reader["TongTienHang"] != DBNull.Value ? Convert.ToDecimal(reader["TongTienHang"]) : 0;
+                totalTongTien += tongTien;
+            }
+            reader.Close();
+            return totalTongTien;
+        }
         public DataTable GetOrderDetailsByProductAndDate(string tenSP, DateTime startDate, DateTime endDate)
         {
             try

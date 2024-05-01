@@ -959,3 +959,12 @@ C:\Users\PC\OneDrive\Desktop\Đồ-Án-WinForm\PROJECT_WF_NEW\Home\obj\Debug\Hom
 D:\VS Code\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.TaiKhoanAdmin.resources
 D:\VS Code\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.FrmThemLoiNhac.resources
 D:\VS Code\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.UCThanhPhan.OTop.resources
+D:\DACK\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.ChiTietKH.resources
+D:\DACK\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.FrmThemLoiNhac.resources
+D:\DACK\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.TaiKhoanAdmin.resources
+D:\DACK\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.UCThanhPhan.ODaMua.resources
+D:\DACK\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.UCThanhPhan.OTop.resources
+D:\DACK\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmCuaAdmin.OKhachHang.resources
+D:\DACK\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.DonHangDaMua.resources
+D:\DACK\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.ODonHangDaMua.resources
+D:\DACK\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmCuaAdmin.KhachHang.resources

@@ -32,7 +32,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgNhapHang = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.btnIn = new Guna.UI2.WinForms.Guna2Button();
             this.masanpham = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tensanpham = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gia = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -41,6 +40,7 @@
             this.diachi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.sodienthoai = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ngaynhaphang = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnIn = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgNhapHang)).BeginInit();
             this.SuspendLayout();
             // 
@@ -76,12 +76,13 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgNhapHang.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgNhapHang.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgNhapHang.Location = new System.Drawing.Point(99, 30);
+            this.dgNhapHang.Location = new System.Drawing.Point(74, 24);
+            this.dgNhapHang.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgNhapHang.Name = "dgNhapHang";
             this.dgNhapHang.RowHeadersVisible = false;
             this.dgNhapHang.RowHeadersWidth = 51;
             this.dgNhapHang.RowTemplate.Height = 24;
-            this.dgNhapHang.Size = new System.Drawing.Size(1811, 665);
+            this.dgNhapHang.Size = new System.Drawing.Size(1358, 540);
             this.dgNhapHang.TabIndex = 0;
             this.dgNhapHang.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgNhapHang.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -104,22 +105,6 @@
             this.dgNhapHang.ThemeStyle.RowsStyle.Height = 24;
             this.dgNhapHang.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgNhapHang.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            // 
-            // btnIn
-            // 
-            this.btnIn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnIn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnIn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnIn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnIn.FillColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnIn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIn.ForeColor = System.Drawing.Color.White;
-            this.btnIn.Location = new System.Drawing.Point(1730, 723);
-            this.btnIn.Name = "btnIn";
-            this.btnIn.Size = new System.Drawing.Size(180, 45);
-            this.btnIn.TabIndex = 1;
-            this.btnIn.Text = "In";
-            this.btnIn.Click += new System.EventHandler(this.btnIn_Click);
             // 
             // masanpham
             // 
@@ -177,14 +162,32 @@
             this.ngaynhaphang.MinimumWidth = 6;
             this.ngaynhaphang.Name = "ngaynhaphang";
             // 
+            // btnIn
+            // 
+            this.btnIn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnIn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnIn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnIn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnIn.FillColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnIn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIn.ForeColor = System.Drawing.Color.White;
+            this.btnIn.Location = new System.Drawing.Point(1298, 587);
+            this.btnIn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnIn.Name = "btnIn";
+            this.btnIn.Size = new System.Drawing.Size(135, 37);
+            this.btnIn.TabIndex = 1;
+            this.btnIn.Text = "In";
+            this.btnIn.Click += new System.EventHandler(this.btnIn_Click);
+            // 
             // UCBaoCaoNhapHang
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.btnIn);
             this.Controls.Add(this.dgNhapHang);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "UCBaoCaoNhapHang";
-            this.Size = new System.Drawing.Size(2050, 813);
+            this.Size = new System.Drawing.Size(1538, 661);
             this.Load += new System.EventHandler(this.UCBaoCaoNhapHang_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgNhapHang)).EndInit();
             this.ResumeLayout(false);
