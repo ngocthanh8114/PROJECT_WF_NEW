@@ -71,9 +71,7 @@ namespace Home
 
         private void btnBaoCao_Click(object sender, EventArgs e)
         {
-            UCBaoCao uCBaoCao = new UCBaoCao();
-            panelHienThi.Controls.Add(uCBaoCao);
-            uCBaoCao.BringToFront();
+            addHienThi(TongForm.UCBaoCao);
             btnSanPham.Checked = false;
             btnKhachHang.Checked = false;
             btnHoaDon.Checked = false;
@@ -99,6 +97,11 @@ namespace Home
             btnHoaDon.Checked = false;
             btnBaoCao.Checked = false;
             btnTaiKhoan.Checked = true;
+        }
+
+        private void btnHoaDon_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

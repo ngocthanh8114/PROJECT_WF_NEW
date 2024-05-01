@@ -80,5 +80,7 @@ namespace Home.FrmCon.FrmHienThi
             panelSP.Controls.Clear();
             addSP(xl.doDuLieuDonMua(MaDH));
         }
+
+        
     }
 }

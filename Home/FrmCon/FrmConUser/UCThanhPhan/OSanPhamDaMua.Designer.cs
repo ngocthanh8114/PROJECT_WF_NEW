@@ -126,12 +126,11 @@
             // lblMaDH
             // 
             this.lblMaDH.AutoSize = true;
-            this.lblMaDH.Location = new System.Drawing.Point(232, 149);
+            this.lblMaDH.Location = new System.Drawing.Point(231, 196);
             this.lblMaDH.Name = "lblMaDH";
             this.lblMaDH.Size = new System.Drawing.Size(46, 16);
             this.lblMaDH.TabIndex = 54;
             this.lblMaDH.Text = "MaDH";
-            this.lblMaDH.Visible = false;
             // 
             // picBoxSP
             // 

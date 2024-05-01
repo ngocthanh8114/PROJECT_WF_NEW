@@ -20,10 +20,6 @@ using Home.FrmCon;
 using Microsoft.VisualBasic;
 using System.Collections;
 using System.Data.Common;
-using System.Web;
-
-
-
 namespace Home.DuLieu
 {
     
@@ -33,6 +29,7 @@ namespace Home.DuLieu
 
 
         static string strconn = "Data Source=.;Initial Catalog=BanXeMay;User ID=sa;Password=123;Encrypt=False";
+
 
         SqlConnection conn = null;
         
@@ -114,31 +111,29 @@ namespace Home.DuLieu
             reader.Close();
             return totalThànhTiền;
         }
-        /* public decimal CalculateTotalTongTienAllSP(DateTime startDate, DateTime endDate)
-         {
-            *//* kn.myConnect();
-             decimal totalTongTien = 0;
+        public decimal CalculateTotalTongTienAllSP(DateTime startDate, DateTime endDate)
+        {
+            kn.myConnect();
+            decimal totalTongTien = 0;
 
-             string query = @"SELECT THD.TongTienHang
+            string query = @"SELECT THD.TongTienHang
                                       FROM dbo.ThongTinDH THD
                                       WHERE THD.NgayDH >= @StartDate AND THD.NgayDH <= @EndDate";
 
-             SqlCommand command = new SqlCommand(query, kn.con);
-             command.Parameters.AddWithValue("@StartDate", startDate);
-             command.Parameters.AddWithValue("@EndDate", endDate);
+            SqlCommand command = new SqlCommand(query, kn.con);
+            command.Parameters.AddWithValue("@StartDate", startDate);
+            command.Parameters.AddWithValue("@EndDate", endDate);
 
-             SqlDataReader reader = command.ExecuteReader();
+            SqlDataReader reader = command.ExecuteReader();
 
-             while (reader.Read())
-             {
-                 // Đọc giá trị của cột 'Tổng tiền' và cộng dồn vào tổng
-                 decimal tongTien = Convert.ToDecimal(reader["TongTienHang"]);
-                 totalTongTien += tongTien;
-             }
-
-             reader.Close();
-             return totalTongTien;*//*
-         }*/
+            while (reader.Read())
+            {
+                decimal tongTien = reader["TongTienHang"] != DBNull.Value ? Convert.ToDecimal(reader["TongTienHang"]) : 0;
+                totalTongTien += tongTien;
+            }
+            reader.Close();
+            return totalTongTien;
+        }
         public DataTable GetOrderDetailsByProductAndDate(string tenSP, DateTime startDate, DateTime endDate)
         {
             try
@@ -240,22 +235,7 @@ namespace Home.DuLieu
             return dt;
         }
 
-      /*  public DataTable TimKiemSanPham(string TenSP)
-        {
-            kn.myConnect();
-            string lenh = "SELECT * FROM SANPHAM WHERE TenSP LIKE @TenSP";
-            SqlCommand cmd = kn.con.CreateCommand();
-            cmd.CommandText = lenh;
-            SqlParameter sqlParameter = new SqlParameter("@TenSP", SqlDbType.NVarChar, 50);
-            sqlParameter.Value = '%' + TenSP + '%';
-            cmd.Parameters.Add(sqlParameter);
-
-            SqlDataAdapter da = new SqlDataAdapter(cmd);
-            DataTable dt = new DataTable();
-            da.Fill(dt);
-            return dt;
-        }
-*/
+       
         public Image ByteArrToImage(byte[] b)
         {
             MemoryStream m = new MemoryStream(b);
@@ -486,17 +466,6 @@ namespace Home.DuLieu
             }
         
         }
-        /*    public DataTable themSanPham(string MaLoai)
-            {
-                kn.myConnect();
-                string lenh = "select * from SanPham where MaLoai = @Maloai";
-                SqlCommand cmd = kn.con.CreateCommand();
-                cmd.CommandText = lenh;
-                SqlParameter sqlParameter = new SqlParameter("@MaLoai", SqlDbType.NChar, 10);
-                sqlParameter.Value = MaLoai;
-                cmd.Parameters.Add(sqlParameter);
-
-            }*/
 
         public DataTable doDuLieu()
         {
@@ -954,7 +923,7 @@ namespace Home.DuLieu
             int nam = (int)cmd.ExecuteScalar();
             return nam;
         }
-        // Trừ đi số lượng
+        // Trừ đi số lượng và cập nhật
         public void capNhatDonMua(DateTime ngayMua)
         {
             foreach(DataRow row in hangDaMua().Rows)
@@ -1397,6 +1366,22 @@ namespace Home.DuLieu
             da.Fill(dt);
             return dt;
         }
+        public DataTable doDuLieuDonMua1(int MaDH)
+        {
+            kn.myConnect();
+            string sql = "SELECT sp.TenSP, dhdm.SoLuong, dhdm.MaDH,HinhAnh,NgayDH FROM DonHangDaMua AS dhdm JOIN ThongTinDH AS ttdh ON dhdm.MaDH = ttdh.MaDH JOIN SanPham AS sp ON sp.MaSP = dhdm.MaSP where dhdm.MaDH = @MaDH ";
+            SqlCommand cmd = new SqlCommand(sql, kn.con);
+
+
+            SqlParameter sqlParameter0 = new SqlParameter("@MaDH", SqlDbType.Int);
+            sqlParameter0.Value = MaDH;
+            cmd.Parameters.Add(sqlParameter0);
+
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            return dt;
+        }
         public DataTable doDiaChi()
         {
             kn.myConnect();
@@ -1552,7 +1537,7 @@ namespace Home.DuLieu
         public DataTable doDuLieuTimKiemDH(string TenSP)
         {
             kn.myConnect();
-            string sql = "SELECT * FROM DonHangDaMua,SanPham WHERE SanPham.MaSP = DonHangDaMua.MaSP and TenSP LIKE @TenSP AND TenTaiKhoan = @TenTK";
+            string sql = "SELECT sp.TenSP, dhdm.SoLuong, dhdm.MaDH,HinhAnh,NgayDH FROM DonHangDaMua AS dhdm JOIN ThongTinDH AS ttdh ON dhdm.MaDH = ttdh.MaDH JOIN SanPham AS sp ON sp.MaSP = dhdm.MaSP and TenSP LIKE @TenSP AND dhdm.TenTaiKhoan = @TenTK";
             SqlCommand cmd = new SqlCommand(sql, kn.con);
             cmd.Parameters.AddWithValue("@TenSP", "%" + TenSP + "%");
             cmd.Parameters.AddWithValue("@TenTK", TaiKhoanDangNhap.tenTaiKhoan);
@@ -1663,7 +1648,17 @@ namespace Home.DuLieu
             da.Fill(dt);
             return dt;
         }
+        public DataTable themDonHang1()
+        {
+            kn.myConnect();
+            string sql = "select MaDH from ThongTinDH";
+            SqlCommand cmd = new SqlCommand(sql, kn.con);
 
+            DataTable dt = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            da.Fill(dt);
+            return dt;
+        }
         public DataTable themDonHang(int MaDH)
         {
             kn.myConnect();
@@ -1893,6 +1888,72 @@ namespace Home.DuLieu
 
             cmd.ExecuteNonQuery();
         }
+
+        public void xoaHoaDon(string MaDH)
+        {
+            string sql = "DELETE FROM ThongTinDH where MaDH = @MaDH";
+            SqlCommand cmd = new SqlCommand(sql, kn.con);
+
+            SqlParameter sqlParameter1 = new SqlParameter("@MaDH", SqlDbType.NVarChar);
+            sqlParameter1.Value = MaDH;
+            cmd.Parameters.Add(sqlParameter1);
+
+            cmd.ExecuteNonQuery();
+        }
+        public void xoaHoaDon1(string MaDH)
+        {
+            kn.myConnect();
+
+            string sqlGetSoLuong = "SELECT MaSP, SoLuong FROM DonHangDaMua WHERE MaDH = @MaDH";
+
+            try
+            {
+                SqlCommand cmdGetSoLuong = new SqlCommand(sqlGetSoLuong, kn.con);
+                cmdGetSoLuong.Parameters.AddWithValue("@MaDH", MaDH);
+
+                SqlDataReader reader = cmdGetSoLuong.ExecuteReader();
+                Dictionary<string, int> sanPhamInfo = new Dictionary<string, int>();
+
+                while (reader.Read())
+                {
+                    string MaSP = reader.GetString(0).Trim(); 
+
+                    int SoLuong = reader.GetInt32(1);
+
+                    sanPhamInfo.Add(MaSP, SoLuong);
+                }
+
+                reader.Close();
+
+                string sqlDeleteDonHang = "DELETE FROM DonHangDaMua WHERE MaDH = @MaDH";
+                SqlCommand cmdDeleteDonHang = new SqlCommand(sqlDeleteDonHang, kn.con);
+                cmdDeleteDonHang.Parameters.AddWithValue("@MaDH", MaDH);
+                cmdDeleteDonHang.ExecuteNonQuery();
+
+                foreach (var pair in sanPhamInfo)
+                {
+                    string MaSP = pair.Key;
+                    int SoLuong = pair.Value;
+
+                    string sqlUpdateSanPham = "UPDATE SanPham SET SoLuong = SoLuong + @SoLuong WHERE MaSP = @MaSP";
+                    SqlCommand cmdUpdateSanPham = new SqlCommand(sqlUpdateSanPham, kn.con);
+                    cmdUpdateSanPham.Parameters.AddWithValue("@MaSP", MaSP);
+                    cmdUpdateSanPham.Parameters.AddWithValue("@SoLuong", SoLuong);
+                    cmdUpdateSanPham.ExecuteNonQuery();
+                }
+
+                MessageBox.Show("Đã hủy đơn hàng và cập nhật số lượng sản phẩm thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Lỗi khi hủy đơn hàng và cập nhật số lượng sản phẩm: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                kn.myClose();
+            }
+        }
+
 
         public bool checkLoiNhac()
         {

@@ -281,11 +281,12 @@
             this.dtpNgayMua.FocusedColor = System.Drawing.Color.White;
             this.dtpNgayMua.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.dtpNgayMua.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.dtpNgayMua.Location = new System.Drawing.Point(304, 13);
+            this.dtpNgayMua.Location = new System.Drawing.Point(304, 14);
+            this.dtpNgayMua.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtpNgayMua.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtpNgayMua.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtpNgayMua.Name = "dtpNgayMua";
-            this.dtpNgayMua.Size = new System.Drawing.Size(302, 36);
+            this.dtpNgayMua.Size = new System.Drawing.Size(301, 36);
             this.dtpNgayMua.TabIndex = 50;
             this.dtpNgayMua.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.dtpNgayMua.Value = new System.DateTime(2024, 4, 24, 16, 36, 5, 0);

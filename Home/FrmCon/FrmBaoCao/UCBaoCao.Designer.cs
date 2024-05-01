@@ -45,7 +45,7 @@
             this.guna2Panel1.Controls.Add(this.btnBCNhaphang);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(1538, 56);
             this.guna2Panel1.TabIndex = 4;
@@ -61,11 +61,12 @@
             this.btnHoaDon.Font = new System.Drawing.Font("Yu Gothic UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHoaDon.ForeColor = System.Drawing.Color.White;
             this.btnHoaDon.Location = new System.Drawing.Point(343, 10);
-            this.btnHoaDon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnHoaDon.Margin = new System.Windows.Forms.Padding(2);
             this.btnHoaDon.Name = "btnHoaDon";
             this.btnHoaDon.Size = new System.Drawing.Size(166, 32);
             this.btnHoaDon.TabIndex = 2;
             this.btnHoaDon.Text = "Báo cáo hóa đơn";
+            this.btnHoaDon.Click += new System.EventHandler(this.btnHoaDon_Click);
             // 
             // btnBCDoanhThu
             // 
@@ -78,7 +79,7 @@
             this.btnBCDoanhThu.Font = new System.Drawing.Font("Yu Gothic UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBCDoanhThu.ForeColor = System.Drawing.Color.White;
             this.btnBCDoanhThu.Location = new System.Drawing.Point(172, 10);
-            this.btnBCDoanhThu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBCDoanhThu.Margin = new System.Windows.Forms.Padding(2);
             this.btnBCDoanhThu.Name = "btnBCDoanhThu";
             this.btnBCDoanhThu.Size = new System.Drawing.Size(166, 32);
             this.btnBCDoanhThu.TabIndex = 1;
@@ -96,7 +97,7 @@
             this.btnBCNhaphang.Font = new System.Drawing.Font("Yu Gothic UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBCNhaphang.ForeColor = System.Drawing.Color.White;
             this.btnBCNhaphang.Location = new System.Drawing.Point(2, 10);
-            this.btnBCNhaphang.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBCNhaphang.Margin = new System.Windows.Forms.Padding(2);
             this.btnBCNhaphang.Name = "btnBCNhaphang";
             this.btnBCNhaphang.Size = new System.Drawing.Size(166, 32);
             this.btnBCNhaphang.TabIndex = 0;
@@ -107,7 +108,7 @@
             // 
             this.PanelNoidung.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PanelNoidung.Location = new System.Drawing.Point(0, 56);
-            this.PanelNoidung.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PanelNoidung.Margin = new System.Windows.Forms.Padding(2);
             this.PanelNoidung.Name = "PanelNoidung";
             this.PanelNoidung.Size = new System.Drawing.Size(1538, 666);
             this.PanelNoidung.TabIndex = 5;
@@ -118,7 +119,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.PanelNoidung);
             this.Controls.Add(this.guna2Panel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "UCBaoCao";
             this.Size = new System.Drawing.Size(1538, 722);
             this.guna2Panel1.ResumeLayout(false);

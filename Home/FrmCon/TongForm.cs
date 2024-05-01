@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Home;
 using Home.FrmCon.FrmConAdmin;
+using Home.FrmCon.FrmBaoCao;
 
 namespace Home.FrmCon
 {
@@ -15,7 +16,7 @@ namespace Home.FrmCon
         public static TaiKhoan TaiKhoan;
         public static DonHang DonHang;
         public static SanPhamAdmin SanPhamAdmin;
-        public static BaoCao BaoCao;
+        public static UCBaoCao UCBaoCao;
         public static KhachHang KhachHang;
         public static ChiTietKH ChiTietKH;
         public static TaiKhoanAdmin TaiKhoanAdmin;
@@ -25,7 +26,7 @@ namespace Home.FrmCon
             SanPham = new SanPham();
             DonHang = new DonHang();
             SanPhamAdmin = new SanPhamAdmin();
-            BaoCao = new BaoCao();
+            UCBaoCao = new UCBaoCao();
             KhachHang = new KhachHang();
             ChiTietKH = new ChiTietKH();
             TaiKhoanAdmin = new TaiKhoanAdmin();
