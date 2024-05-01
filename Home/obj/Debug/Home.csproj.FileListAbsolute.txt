@@ -968,3 +968,4 @@ D:\DACK\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmCuaAdmin.OKhachHang.resourc
 D:\DACK\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.DonHangDaMua.resources
 D:\DACK\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.ODonHangDaMua.resources
 D:\DACK\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmCuaAdmin.KhachHang.resources
+D:\DACK\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmBaoCao.UCBaoCaoHoaDon.resources

@@ -20,9 +20,6 @@ using Home.FrmCon;
 using Microsoft.VisualBasic;
 using System.Collections;
 using System.Data.Common;
-
-
-
 namespace Home.DuLieu
 {
     
@@ -1350,6 +1347,22 @@ namespace Home.DuLieu
             da.Fill(dt);
             return dt;
         }
+        public DataTable doDuLieuDonMua1(int MaDH)
+        {
+            kn.myConnect();
+            string sql = "SELECT sp.TenSP, dhdm.SoLuong, dhdm.MaDH,HinhAnh,NgayDH FROM DonHangDaMua AS dhdm JOIN ThongTinDH AS ttdh ON dhdm.MaDH = ttdh.MaDH JOIN SanPham AS sp ON sp.MaSP = dhdm.MaSP where dhdm.MaDH = @MaDH ";
+            SqlCommand cmd = new SqlCommand(sql, kn.con);
+
+
+            SqlParameter sqlParameter0 = new SqlParameter("@MaDH", SqlDbType.Int);
+            sqlParameter0.Value = MaDH;
+            cmd.Parameters.Add(sqlParameter0);
+
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            return dt;
+        }
         public DataTable doDiaChi()
         {
             kn.myConnect();
@@ -1616,7 +1629,17 @@ namespace Home.DuLieu
             da.Fill(dt);
             return dt;
         }
+        public DataTable themDonHang1()
+        {
+            kn.myConnect();
+            string sql = "select MaDH from ThongTinDH";
+            SqlCommand cmd = new SqlCommand(sql, kn.con);
 
+            DataTable dt = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            da.Fill(dt);
+            return dt;
+        }
         public DataTable themDonHang(int MaDH)
         {
             kn.myConnect();
@@ -1846,6 +1869,72 @@ namespace Home.DuLieu
 
             cmd.ExecuteNonQuery();
         }
+
+        public void xoaHoaDon(string MaDH)
+        {
+            string sql = "DELETE FROM ThongTinDH where MaDH = @MaDH";
+            SqlCommand cmd = new SqlCommand(sql, kn.con);
+
+            SqlParameter sqlParameter1 = new SqlParameter("@MaDH", SqlDbType.NVarChar);
+            sqlParameter1.Value = MaDH;
+            cmd.Parameters.Add(sqlParameter1);
+
+            cmd.ExecuteNonQuery();
+        }
+        public void xoaHoaDon1(string MaDH)
+        {
+            kn.myConnect();
+
+            string sqlGetSoLuong = "SELECT MaSP, SoLuong FROM DonHangDaMua WHERE MaDH = @MaDH";
+
+            try
+            {
+                SqlCommand cmdGetSoLuong = new SqlCommand(sqlGetSoLuong, kn.con);
+                cmdGetSoLuong.Parameters.AddWithValue("@MaDH", MaDH);
+
+                SqlDataReader reader = cmdGetSoLuong.ExecuteReader();
+                Dictionary<string, int> sanPhamInfo = new Dictionary<string, int>();
+
+                while (reader.Read())
+                {
+                    string MaSP = reader.GetString(0).Trim(); 
+
+                    int SoLuong = reader.GetInt32(1);
+
+                    sanPhamInfo.Add(MaSP, SoLuong);
+                }
+
+                reader.Close();
+
+                string sqlDeleteDonHang = "DELETE FROM DonHangDaMua WHERE MaDH = @MaDH";
+                SqlCommand cmdDeleteDonHang = new SqlCommand(sqlDeleteDonHang, kn.con);
+                cmdDeleteDonHang.Parameters.AddWithValue("@MaDH", MaDH);
+                cmdDeleteDonHang.ExecuteNonQuery();
+
+                foreach (var pair in sanPhamInfo)
+                {
+                    string MaSP = pair.Key;
+                    int SoLuong = pair.Value;
+
+                    string sqlUpdateSanPham = "UPDATE SanPham SET SoLuong = SoLuong + @SoLuong WHERE MaSP = @MaSP";
+                    SqlCommand cmdUpdateSanPham = new SqlCommand(sqlUpdateSanPham, kn.con);
+                    cmdUpdateSanPham.Parameters.AddWithValue("@MaSP", MaSP);
+                    cmdUpdateSanPham.Parameters.AddWithValue("@SoLuong", SoLuong);
+                    cmdUpdateSanPham.ExecuteNonQuery();
+                }
+
+                MessageBox.Show("Đã hủy đơn hàng và cập nhật số lượng sản phẩm thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Lỗi khi hủy đơn hàng và cập nhật số lượng sản phẩm: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                kn.myClose();
+            }
+        }
+
 
         public bool checkLoiNhac()
         {
