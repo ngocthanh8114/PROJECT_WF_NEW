@@ -100,5 +100,10 @@ namespace Home
             btnBaoCao.Checked = false;
             btnTaiKhoan.Checked = true;
         }
+
+        private void btnHoaDon_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

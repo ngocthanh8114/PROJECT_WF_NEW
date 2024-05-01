@@ -45,6 +45,11 @@ namespace Home.FrmCon
                     dgv_thongke.Columns["Giá"].HeaderText = "Giá";
                     dgv_thongke.Columns["Thành Tiền"].HeaderText = "Thành Tiền";
                     dgv_thongke.Columns["Ngày Mua"].HeaderText = "Ngày Mua";
+                    dgv_thongke.Columns["Mã Đơn Hàng"].Width = 240; 
+                    dgv_thongke.Columns["Tên Sản Phẩm"].Width = 400;
+                    dgv_thongke.Columns["Số Lượng"].Width = 160;
+                    dgv_thongke.Columns["Giá"].Width = 200;
+                    dgv_thongke.Columns["Thành Tiền"].Width = 200;
                     decimal totalThanhTien = xl.CalculateTotalThanhTienTungSP(selectedProduct, startDate, endDate);
                     lbl_TongTien.Text = $"Tổng tiền: {totalThanhTien.ToString("N0")} VNĐ";
                 }
@@ -52,8 +57,6 @@ namespace Home.FrmCon
                 {
                     DataTable dt = xl.GetOrderInfoByDateRange(startDate, endDate);
                     dgv_thongke.DataSource = dt;
-
-                    // Đặt tên cho các cột của DataGridView
                     dgv_thongke.Columns["Mã Đơn Hàng"].HeaderText = "Mã Đơn Hàng";
                     dgv_thongke.Columns["Tổng tiền"].HeaderText = "Tổng tiền";
                     dgv_thongke.Columns["Ngày mua hàng"].HeaderText = "Ngày mua hàng";
