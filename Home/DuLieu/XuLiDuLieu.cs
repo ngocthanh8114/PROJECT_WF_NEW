@@ -998,14 +998,26 @@ namespace Home.DuLieu
                     soDT.Visible = false;
                 }
                 kn.myConnect();
-                string sql = "INSERT INTO TaiKhoan VALUE ( TenNguoiDung, Email, SoDienThoai, TenTaiKhoan, ) VALUES (@TenND, @Email, @SoDT, @TenTK, 'admin') ";
-                SqlCommand cmd = new SqlCommand(sql, conn);
-                cmd.Parameters.AddWithValue("TenTK", TaiKhoanDangNhap.tenTaiKhoan);
-                cmd.Parameters.AddWithValue("TenND", tenNguoiDung);
-                cmd.Parameters.AddWithValue("Email", email);
-                cmd.Parameters.AddWithValue("SoDT", soDienThoai);
+                string sql = "UPDATE TaiKhoan SET TenNguoiDung = @TenND, Email = @Email, SoDienThoai = @SoDT WHERE TenTaiKhoan = @TenTK";
+                SqlCommand cmd = new SqlCommand(sql, kn.con);
+                cmd.Parameters.AddWithValue("@TenTK", TaiKhoanDangNhap.tenTaiKhoan);
+                cmd.Parameters.AddWithValue("@TenND", tenNguoiDung);
+                cmd.Parameters.AddWithValue("@Email", email);
+                cmd.Parameters.AddWithValue("@SoDT", soDienThoai);
 
-                cmd.ExecuteNonQuery();
+                int rowsAffected = cmd.ExecuteNonQuery();
+                if (rowsAffected > 0)
+                {
+                    FrmThongBao frmThongBao = new FrmThongBao();
+                    frmThongBao.hienThiThongBao("Cập nhật thành công!");
+                    frmThongBao.Show();
+                }
+                else
+                {
+                    FrmBaoLoi frmBaoLoi = new FrmBaoLoi();
+                    frmBaoLoi.hienThiLoi("Không thể cập nhật tài khoản. Vui lòng thử lại sau.");
+                    frmBaoLoi.Show();
+                }
                 TaiKhoanDangNhap.tenNguoiDung = tenNguoiDung;
                 TaiKhoanDangNhap.email = email;
                 TaiKhoanDangNhap.soDienThoai = soDienThoai;
@@ -1934,7 +1946,54 @@ namespace Home.DuLieu
                 kn.myClose();
             }
         }
+        public DataTable LayThongTinTaiKhoan(string PhanQuyen)
+        {
+            kn.myConnect();
+            string sql = "Select * from TaiKhoan where PhanQuyen = @PhanQuyen";
+            
+            SqlCommand cmd = new SqlCommand(sql,kn.con) ;
+            cmd.Parameters.AddWithValue("@PhanQuyen", PhanQuyen);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            return dt;
 
+        }
+        //Thêm tài khoản admin
+        public void ThemTaiKhoanAdmin(string tentaikhoan, string matkhau, string tennguoidung, string email, string sodienthoai, string phanquyen)
+        {
+            kn.myConnect();
+       
+            string sqlCheck = "SELECT COUNT(*) FROM TaiKhoan WHERE TenTaiKhoan = @TenTaiKhoan";
+            SqlCommand cmdCheck = new SqlCommand(sqlCheck, kn.con);
+            cmdCheck.Parameters.AddWithValue("@TenTaiKhoan", tentaikhoan);
+            int count = (int)cmdCheck.ExecuteScalar();
+
+            if (count > 0)
+            {
+            
+                FrmBaoLoi frmBaoLoi = new FrmBaoLoi();
+                frmBaoLoi.hienThiLoi("Tên tài khoản đã tồn tại. Vui lòng nhập lại...");
+                frmBaoLoi.Show();
+                return; 
+            }
+
+          
+            string sqlInsert = "INSERT INTO TaiKhoan (TenTaiKhoan, MatKhau, TenNguoiDung, Email, SoDienThoai, PhanQuyen) VALUES (@TenTaiKhoan, @MatKhau, @TenNguoiDung, @Email, @SoDienThoai, @PhanQuyen)";
+
+            SqlCommand cmd = new SqlCommand(sqlInsert, kn.con);
+
+            cmd.Parameters.AddWithValue("@TenTaiKhoan", tentaikhoan);
+            cmd.Parameters.AddWithValue("@MatKhau", matkhau);
+            cmd.Parameters.AddWithValue("@TenNguoiDung", tennguoidung);
+            cmd.Parameters.AddWithValue("@Email", email);
+            cmd.Parameters.AddWithValue("@SoDienThoai", sodienthoai);
+            cmd.Parameters.AddWithValue("@PhanQuyen", phanquyen);
+
+            cmd.ExecuteNonQuery();
+
+            kn.myClose();
+        }
 
         public bool checkLoiNhac()
         {

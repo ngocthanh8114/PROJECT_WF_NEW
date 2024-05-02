@@ -24,25 +24,29 @@ namespace Home.FrmCon.FrmConAdmin
         private void TaiKhoanAdmin_Load(object sender, EventArgs e)
         {
             btnThongTin_Click(sender, e); 
-            lblHoTen.Text = TaiKhoanDangNhap.tenNguoiDung;
+           /* lblHoTen.Text = TaiKhoanDangNhap.tenNguoiDung;
             lblEmail.Text = TaiKhoanDangNhap.email;
             lblTenNguoiDung.Text = TaiKhoanDangNhap.tenNguoiDung;
             lblTenTaiKhoan.Text = TaiKhoanDangNhap.tenTaiKhoan;
-            lblSoDT.Text = TaiKhoanDangNhap.soDienThoai;
+            lblSoDT.Text = TaiKhoanDangNhap.soDienThoai;*/
             themTopKhach(dtpNgayKhach.Value);
             themTopXe(dtpNgayXe.Value);
             loadLoiNhac();
-
         }
 
         private void btnThongTin_Click(object sender, EventArgs e)
         {
+            UCThongTinAdmin uCThongTinAdmin = new UCThongTinAdmin();
+            panelNoiDung.Controls.Add(uCThongTinAdmin);
+            uCThongTinAdmin.BringToFront();
+
+
             btnThongTin.Checked = true;
             btnLoiNhac.Checked = false;
             btnThemTK.Checked = false;
         }
 
-        private void btnDangXuat_Click(object sender, EventArgs e)
+        /*private void btnDangXuat_Click(object sender, EventArgs e)
         {
             FrmHome frmHome = this.ParentForm as FrmHome;
             if (frmHome != null)
@@ -51,13 +55,13 @@ namespace Home.FrmCon.FrmConAdmin
             }
             FrmDangNhap dn = new FrmDangNhap();
             dn.ShowDialog();
-        }
+        }*/
 
-        private void btnSua_Click(object sender, EventArgs e)
+      /*  private void btnSua_Click(object sender, EventArgs e)
         {
             FrmCapNhatTT frmCapNhatTT = new FrmCapNhatTT();
             frmCapNhatTT.ShowDialog();
-        }
+        }*/
 
         private void themTopKhach(DateTime dateTime)
         {
@@ -148,6 +152,10 @@ namespace Home.FrmCon.FrmConAdmin
 
         private void btnThemTK_Click(object sender, EventArgs e)
         {
+            UCTaiKhoanAdmin uCTaiKhoanAdmin = new UCTaiKhoanAdmin();
+            panelNoiDung.Controls.Add(uCTaiKhoanAdmin);
+            uCTaiKhoanAdmin.BringToFront();
+
             btnThongTin.Checked = false;
             btnLoiNhac.Checked = false;
             btnThemTK.Checked = true;
