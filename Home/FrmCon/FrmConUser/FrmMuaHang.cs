@@ -89,34 +89,42 @@ namespace Home.FrmCon.FrmHienThi
         {
             int number;
             bool check = int.TryParse(txtSDT.Text, out number);
-            //if(!string.IsNullOrWhiteSpace(txtHoTen.Text) || !string.IsNullOrWhiteSpace(txtSDT.Text) || !string.IsNullOrWhiteSpace(txtDiaChi.Text))
             if (txtHoTen.Text != "" && (txtSDT.Text != "" && txtDiaChi.Text != ""))
             {
-                if (check == true)
+                if (txtEmail.Text == "" || xl.CheckEmail(txtEmail.Text))
                 {
-                    string[] str1 = lblTienHang.Text.Split(' ');
-                    string[] str2 = lblPhiVanChuyen.Text.Split(' ');
-                    string[] str3 = lblTong.Text.Split(' ');
-                    decimal tienHang = decimal.Parse(str1[0]);
-                    decimal phiVC = decimal.Parse(str2[0]);
-                    decimal tong = decimal.Parse(str3[0]);  
-                    DateTime NgayMua = DateTime.Now;
+                    if (check == true && (txtSDT.Text.Length == 10 || txtSDT.Text.Length == 11))
+                    {
+                        string[] str1 = lblTienHang.Text.Split(' ');
+                        string[] str2 = lblPhiVanChuyen.Text.Split(' ');
+                        string[] str3 = lblTong.Text.Split(' ');
+                        decimal tienHang = decimal.Parse(str1[0]);
+                        decimal phiVC = decimal.Parse(str2[0]);
+                        decimal tong = decimal.Parse(str3[0]);
+                        DateTime NgayMua = DateTime.Now;
 
-                    xl.MuaHang(txtHoTen.Text, txtEmail.Text, txtSDT.Text, txtDiaChi.Text, txtLoiNhan.Text, tienHang, phiVC, tong, NgayMua);
-                    xl.DaMuaHang();
-                    xl.capNhatDonMua(NgayMua);
-                    FrmThongBao frmThongBao = new FrmThongBao();
-                    xl.themDiaChiVaoDB(txtHoTen.Text, txtDiaChi.Text, txtSDT.Text);
-                    //xl.themBaoHanh(txtHoTen.Text, txtSDT.Text, txtDiaChi.Text, lblMaDH.Text, NgayMua)
-                    frmThongBao.hienThiThongBao("Mua hàng thành công");
-                    frmThongBao.ShowDialog();
-                    this.Close();
-                    TongForm.DonHang.DonHang_Load(TongForm.DonHang, e);
+                        xl.MuaHang(txtHoTen.Text, txtEmail.Text, txtSDT.Text, txtDiaChi.Text, txtLoiNhan.Text, tienHang, phiVC, tong, NgayMua);
+                        xl.DaMuaHang();
+                        xl.capNhatDonMua(NgayMua);
+                        FrmThongBao frmThongBao = new FrmThongBao();
+                        xl.themDiaChiVaoDB(txtHoTen.Text, txtDiaChi.Text, txtSDT.Text);
+                        //xl.themBaoHanh(txtHoTen.Text, txtSDT.Text, txtDiaChi.Text, lblMaDH.Text, NgayMua)
+                        frmThongBao.hienThiThongBao("Mua hàng thành công");
+                        frmThongBao.ShowDialog();
+                        this.Close();
+                        TongForm.DonHang.DonHang_Load(TongForm.DonHang, e);
+                    }
+                    else
+                    {
+                        FrmBaoLoi frmBaoLoi = new FrmBaoLoi();
+                        frmBaoLoi.hienThiLoi("Vui lòng kiểm tra lại số điện thoại!");
+                        frmBaoLoi.Show();
+                    }
                 }
                 else
                 {
                     FrmBaoLoi frmBaoLoi = new FrmBaoLoi();
-                    frmBaoLoi.hienThiLoi("Vui lòng kiểm tra lại số điện thoại!");
+                    frmBaoLoi.hienThiLoi("Vui lòng kiểm tra lại Email!");
                     frmBaoLoi.Show();
                 }
             }
