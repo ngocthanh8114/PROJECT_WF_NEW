@@ -60,6 +60,7 @@ namespace Home.FrmCon.FrmConAdmin
 
         public void ChiTietKH_Load(object sender, EventArgs e)
         {
+            panelNoiDung.Controls.Clear();
             addDonMua(xl.doDuLieuDonMuaAdmin(lblTenKH.Text,lblSDT.Text,lblDiaChi.Text));
         }
     }

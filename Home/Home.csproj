@@ -81,10 +81,10 @@
     <Compile Include="FrmCon\FrmBaoCao\UCBaoCaoHoaDon.Designer.cs">
       <DependentUpon>UCBaoCaoHoaDon.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmCon\FrmConAdmin\BaoCao.cs">
+    <Compile Include="FrmCon\FrmBaoCao\BaoCao.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="FrmCon\FrmConAdmin\BaoCao.Designer.cs">
+    <Compile Include="FrmCon\FrmBaoCao\BaoCao.Designer.cs">
       <DependentUpon>BaoCao.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmCon\FrmConAdmin\ChiTietKH.cs">
@@ -345,7 +345,7 @@
     <EmbeddedResource Include="FrmCon\FrmBaoCao\UCBaoCaoHoaDon.resx">
       <DependentUpon>UCBaoCaoHoaDon.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmCon\FrmConAdmin\BaoCao.resx">
+    <EmbeddedResource Include="FrmCon\FrmBaoCao\BaoCao.resx">
       <DependentUpon>BaoCao.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmCon\FrmConAdmin\ChiTietKH.resx">

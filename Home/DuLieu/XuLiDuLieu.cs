@@ -235,22 +235,7 @@ namespace Home.DuLieu
             return dt;
         }
 
-      /*  public DataTable TimKiemSanPham(string TenSP)
-        {
-            kn.myConnect();
-            string lenh = "SELECT * FROM SANPHAM WHERE TenSP LIKE @TenSP";
-            SqlCommand cmd = kn.con.CreateCommand();
-            cmd.CommandText = lenh;
-            SqlParameter sqlParameter = new SqlParameter("@TenSP", SqlDbType.NVarChar, 50);
-            sqlParameter.Value = '%' + TenSP + '%';
-            cmd.Parameters.Add(sqlParameter);
-
-            SqlDataAdapter da = new SqlDataAdapter(cmd);
-            DataTable dt = new DataTable();
-            da.Fill(dt);
-            return dt;
-        }
-*/
+       
         public Image ByteArrToImage(byte[] b)
         {
             MemoryStream m = new MemoryStream(b);
@@ -481,17 +466,6 @@ namespace Home.DuLieu
             }
         
         }
-        /*    public DataTable themSanPham(string MaLoai)
-            {
-                kn.myConnect();
-                string lenh = "select * from SanPham where MaLoai = @Maloai";
-                SqlCommand cmd = kn.con.CreateCommand();
-                cmd.CommandText = lenh;
-                SqlParameter sqlParameter = new SqlParameter("@MaLoai", SqlDbType.NChar, 10);
-                sqlParameter.Value = MaLoai;
-                cmd.Parameters.Add(sqlParameter);
-
-            }*/
 
         public DataTable doDuLieu()
         {
@@ -906,8 +880,51 @@ namespace Home.DuLieu
             cmd.ExecuteNonQuery();
         }
 
-        // Trừ đi số lượng
-        public void truSoLuongDaMua()
+        // Chuyển sản phẩm qua bảo hành
+        public void themBaoHanh(string MaSP, DateTime ngayDH, DateTime hetHan)
+        {
+            kn.myConnect();
+            string sql = "INSERT INTO BaoHanhSanPham (TenTaiKhoan,MaSP,MaDH,NgayDH,HetHan) VALUES (@TenTaiKhoan,@MaSP,@MaDH,@NgayDH,@HetHan)";
+            SqlCommand cmd = new SqlCommand(sql, kn.con);
+
+            SqlParameter sqlParameter0 = new SqlParameter("@TenTaiKhoan", SqlDbType.NVarChar, 50);
+            sqlParameter0.Value = TaiKhoanDangNhap.tenTaiKhoan;
+            cmd.Parameters.Add(sqlParameter0);
+
+            SqlParameter sqlParameter1 = new SqlParameter("@MaSP", SqlDbType.NVarChar, 50);
+            sqlParameter1.Value = MaSP;
+            cmd.Parameters.Add(sqlParameter1);
+
+            SqlParameter sqlParameter2 = new SqlParameter("@MaDH", SqlDbType.Int);
+            sqlParameter2.Value = MaDonHangHienTai.maDH;
+            cmd.Parameters.Add(sqlParameter2);
+
+
+            SqlParameter sqlParameter3 = new SqlParameter("@NgayDH", SqlDbType.DateTime);
+            sqlParameter3.Value = ngayDH;
+            cmd.Parameters.Add(sqlParameter3);
+
+            SqlParameter sqlParameter4 = new SqlParameter("@HetHan", SqlDbType.DateTime);
+            sqlParameter4.Value = hetHan;
+            cmd.Parameters.Add(sqlParameter4);
+
+            cmd.ExecuteNonQuery();
+        }
+        // Lấy năm bảo hành
+        public int BaoHanh(string MaSP)
+        {
+            string sql = "SELECT BaoHanh FROM SanPham where MaSP = @MaSP";
+            SqlCommand cmd = new SqlCommand(sql, kn.con);
+
+            SqlParameter sqlParameter1 = new SqlParameter("@MaSP", SqlDbType.NVarChar, 50);
+            sqlParameter1.Value = MaSP;
+            cmd.Parameters.Add(sqlParameter1);
+
+            int nam = (int)cmd.ExecuteScalar();
+            return nam;
+        }
+        // Trừ đi số lượng và cập nhật
+        public void capNhatDonMua(DateTime ngayMua)
         {
             foreach(DataRow row in hangDaMua().Rows)
             {
@@ -915,6 +932,8 @@ namespace Home.DuLieu
                 int SL = row.Field<int>("SoLuong");
                 xoaSL(MaSP,SL);
                 chuyenSP(MaSP,SL);
+                DateTime hetHan = new DateTime(ngayMua.Year + BaoHanh(MaSP), ngayMua.Month, ngayMua.Day);
+                themBaoHanh(MaSP, ngayMua, hetHan);
             }    
             xoaDonHangDaMua();
         }
@@ -1530,7 +1549,7 @@ namespace Home.DuLieu
         public DataTable doDuLieuTimKiemDH(string TenSP)
         {
             kn.myConnect();
-            string sql = "SELECT * FROM DonHangDaMua,SanPham WHERE SanPham.MaSP = DonHangDaMua.MaSP and TenSP LIKE @TenSP AND TenTaiKhoan = @TenTK";
+            string sql = "SELECT sp.TenSP, dhdm.SoLuong, dhdm.MaDH,HinhAnh,NgayDH FROM DonHangDaMua AS dhdm JOIN ThongTinDH AS ttdh ON dhdm.MaDH = ttdh.MaDH JOIN SanPham AS sp ON sp.MaSP = dhdm.MaSP and TenSP LIKE @TenSP AND dhdm.TenTaiKhoan = @TenTK";
             SqlCommand cmd = new SqlCommand(sql, kn.con);
             cmd.Parameters.AddWithValue("@TenSP", "%" + TenSP + "%");
             cmd.Parameters.AddWithValue("@TenTK", TaiKhoanDangNhap.tenTaiKhoan);
@@ -1806,7 +1825,7 @@ namespace Home.DuLieu
             kn.myConnect();
             DateTime ThangSau = thangNay.AddMonths(1);
 
-            string sql = "SELECT TOP(5) SUM(TongThanhToan) AS TongThanhToan, TenKhachHang FROM ThongTinDH WHERE NgayDH Between @ThangNay AND  @ThangSau and TenKhachHang is not null GROUP BY TenKhachHang, SoDienThoai, DiaChi, NgayDH order by TongThanhToan desc";
+            string sql = "SELECT TOP(5) SUM(TongThanhToan) AS TongThanhToan, TenKhachHang FROM ThongTinDH WHERE NgayDH Between @ThangNay AND  @ThangSau and TenKhachHang is not null GROUP BY TenKhachHang, SoDienThoai, DiaChi order by TongThanhToan desc";
             SqlCommand cmd = new SqlCommand(sql, kn.con);
             SqlParameter sqlParameter1 = new SqlParameter("@ThangNay", SqlDbType.DateTime);
             sqlParameter1.Value = thangNay;

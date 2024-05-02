@@ -19,22 +19,28 @@ namespace Home.FrmCon.FrmBaoCao
 
         private void btnBCNhaphang_Click(object sender, EventArgs e)
         {
+            PanelNoidung.Controls.Clear();
             UCBaoCaoNhapHang uCBaoCaoNhapHang = new UCBaoCaoNhapHang();
             PanelNoidung.Controls.Add(uCBaoCaoNhapHang);
+            uCBaoCaoNhapHang.Dock = DockStyle.Fill;
             uCBaoCaoNhapHang.BringToFront();
         }
 
         private void btnBCDoanhThu_Click(object sender, EventArgs e)
         {
+            PanelNoidung.Controls.Clear();
             BaoCao baoCao = new BaoCao();
             PanelNoidung.Controls.Add(baoCao);
+            baoCao.Dock = DockStyle.Fill;
             baoCao.BringToFront();
         }
 
         private void btnHoaDon_Click(object sender, EventArgs e)
         {
+            PanelNoidung.Controls.Clear();
             UCBaoCaoHoaDon uCBaoCaoHoaDon = new UCBaoCaoHoaDon();
             PanelNoidung.Controls.Add(uCBaoCaoHoaDon);
+            uCBaoCaoHoaDon.Dock = DockStyle.Fill;
             uCBaoCaoHoaDon.BringToFront();
         }
     }

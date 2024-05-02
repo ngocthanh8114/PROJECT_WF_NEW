@@ -53,10 +53,10 @@
             // panelHienThi
             // 
             this.panelHienThi.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelHienThi.Location = new System.Drawing.Point(0, 110);
-            this.panelHienThi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelHienThi.Location = new System.Drawing.Point(0, 135);
+            this.panelHienThi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelHienThi.Name = "panelHienThi";
-            this.panelHienThi.Size = new System.Drawing.Size(938, 530);
+            this.panelHienThi.Size = new System.Drawing.Size(1251, 653);
             this.panelHienThi.TabIndex = 21;
             // 
             // panelTong
@@ -67,9 +67,9 @@
             this.panelTong.Controls.Add(this.panelThanhTieuDe);
             this.panelTong.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelTong.Location = new System.Drawing.Point(0, 0);
-            this.panelTong.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelTong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelTong.Name = "panelTong";
-            this.panelTong.Size = new System.Drawing.Size(938, 640);
+            this.panelTong.Size = new System.Drawing.Size(1251, 788);
             this.panelTong.TabIndex = 1;
             // 
             // gunaPanel2
@@ -82,10 +82,10 @@
             this.gunaPanel2.Controls.Add(this.btnKhachHang);
             this.gunaPanel2.Controls.Add(this.btnSanPham);
             this.gunaPanel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.gunaPanel2.Location = new System.Drawing.Point(0, 69);
-            this.gunaPanel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gunaPanel2.Location = new System.Drawing.Point(0, 85);
+            this.gunaPanel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gunaPanel2.Name = "gunaPanel2";
-            this.gunaPanel2.Size = new System.Drawing.Size(938, 41);
+            this.gunaPanel2.Size = new System.Drawing.Size(1251, 50);
             this.gunaPanel2.TabIndex = 14;
             // 
             // btnTaiKhoan
@@ -108,8 +108,8 @@
             this.btnTaiKhoan.Image = null;
             this.btnTaiKhoan.ImageSize = new System.Drawing.Size(20, 20);
             this.btnTaiKhoan.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnTaiKhoan.Location = new System.Drawing.Point(752, 0);
-            this.btnTaiKhoan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnTaiKhoan.Location = new System.Drawing.Point(1004, 0);
+            this.btnTaiKhoan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnTaiKhoan.Name = "btnTaiKhoan";
             this.btnTaiKhoan.OnHoverBaseColor = System.Drawing.Color.Tomato;
             this.btnTaiKhoan.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -117,7 +117,7 @@
             this.btnTaiKhoan.OnHoverImage = null;
             this.btnTaiKhoan.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.btnTaiKhoan.OnPressedColor = System.Drawing.Color.Black;
-            this.btnTaiKhoan.Size = new System.Drawing.Size(188, 41);
+            this.btnTaiKhoan.Size = new System.Drawing.Size(251, 50);
             this.btnTaiKhoan.TabIndex = 4;
             this.btnTaiKhoan.Text = "Tài khoản";
             this.btnTaiKhoan.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -143,8 +143,8 @@
             this.btnBaoCao.Image = null;
             this.btnBaoCao.ImageSize = new System.Drawing.Size(20, 20);
             this.btnBaoCao.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnBaoCao.Location = new System.Drawing.Point(564, 0);
-            this.btnBaoCao.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBaoCao.Location = new System.Drawing.Point(753, 0);
+            this.btnBaoCao.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBaoCao.Name = "btnBaoCao";
             this.btnBaoCao.OnHoverBaseColor = System.Drawing.Color.Tomato;
             this.btnBaoCao.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -152,7 +152,7 @@
             this.btnBaoCao.OnHoverImage = null;
             this.btnBaoCao.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.btnBaoCao.OnPressedColor = System.Drawing.Color.Black;
-            this.btnBaoCao.Size = new System.Drawing.Size(188, 41);
+            this.btnBaoCao.Size = new System.Drawing.Size(251, 50);
             this.btnBaoCao.TabIndex = 3;
             this.btnBaoCao.Text = "Báo cáo";
             this.btnBaoCao.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -178,8 +178,8 @@
             this.btnHoaDon.Image = null;
             this.btnHoaDon.ImageSize = new System.Drawing.Size(20, 20);
             this.btnHoaDon.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnHoaDon.Location = new System.Drawing.Point(376, 0);
-            this.btnHoaDon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnHoaDon.Location = new System.Drawing.Point(502, 0);
+            this.btnHoaDon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnHoaDon.Name = "btnHoaDon";
             this.btnHoaDon.OnHoverBaseColor = System.Drawing.Color.Tomato;
             this.btnHoaDon.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -187,9 +187,9 @@
             this.btnHoaDon.OnHoverImage = null;
             this.btnHoaDon.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.btnHoaDon.OnPressedColor = System.Drawing.Color.Black;
-            this.btnHoaDon.Size = new System.Drawing.Size(188, 41);
+            this.btnHoaDon.Size = new System.Drawing.Size(251, 50);
             this.btnHoaDon.TabIndex = 2;
-            this.btnHoaDon.Text = "Hóa đơn";
+            this.btnHoaDon.Text = "Bảo hành";
             this.btnHoaDon.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnHoaDon.Click += new System.EventHandler(this.btnHoaDon_Click);
             // 
@@ -213,8 +213,8 @@
             this.btnKhachHang.Image = null;
             this.btnKhachHang.ImageSize = new System.Drawing.Size(20, 20);
             this.btnKhachHang.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnKhachHang.Location = new System.Drawing.Point(188, 0);
-            this.btnKhachHang.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnKhachHang.Location = new System.Drawing.Point(251, 0);
+            this.btnKhachHang.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnKhachHang.Name = "btnKhachHang";
             this.btnKhachHang.OnHoverBaseColor = System.Drawing.Color.Tomato;
             this.btnKhachHang.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -222,7 +222,7 @@
             this.btnKhachHang.OnHoverImage = null;
             this.btnKhachHang.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.btnKhachHang.OnPressedColor = System.Drawing.Color.Black;
-            this.btnKhachHang.Size = new System.Drawing.Size(188, 41);
+            this.btnKhachHang.Size = new System.Drawing.Size(251, 50);
             this.btnKhachHang.TabIndex = 1;
             this.btnKhachHang.Text = "Khách hàng";
             this.btnKhachHang.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -249,7 +249,7 @@
             this.btnSanPham.ImageSize = new System.Drawing.Size(20, 20);
             this.btnSanPham.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.btnSanPham.Location = new System.Drawing.Point(0, 0);
-            this.btnSanPham.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSanPham.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSanPham.Name = "btnSanPham";
             this.btnSanPham.OnHoverBaseColor = System.Drawing.Color.Tomato;
             this.btnSanPham.OnHoverBorderColor = System.Drawing.Color.Transparent;
@@ -257,7 +257,7 @@
             this.btnSanPham.OnHoverImage = null;
             this.btnSanPham.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.btnSanPham.OnPressedColor = System.Drawing.Color.Black;
-            this.btnSanPham.Size = new System.Drawing.Size(188, 41);
+            this.btnSanPham.Size = new System.Drawing.Size(251, 50);
             this.btnSanPham.TabIndex = 0;
             this.btnSanPham.Text = "Sản phẩm";
             this.btnSanPham.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -268,10 +268,10 @@
             this.panelMenu.BackColor = System.Drawing.Color.MistyRose;
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelMenu.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.panelMenu.Location = new System.Drawing.Point(0, 32);
-            this.panelMenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelMenu.Location = new System.Drawing.Point(0, 39);
+            this.panelMenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(938, 37);
+            this.panelMenu.Size = new System.Drawing.Size(1251, 46);
             this.panelMenu.TabIndex = 23;
             // 
             // panelThanhTieuDe
@@ -282,9 +282,9 @@
             this.panelThanhTieuDe.Controls.Add(this.btnDong);
             this.panelThanhTieuDe.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelThanhTieuDe.Location = new System.Drawing.Point(0, 0);
-            this.panelThanhTieuDe.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelThanhTieuDe.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelThanhTieuDe.Name = "panelThanhTieuDe";
-            this.panelThanhTieuDe.Size = new System.Drawing.Size(938, 32);
+            this.panelThanhTieuDe.Size = new System.Drawing.Size(1251, 39);
             this.panelThanhTieuDe.TabIndex = 13;
             this.panelThanhTieuDe.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitleBar_MouseDown);
             // 
@@ -292,10 +292,9 @@
             // 
             this.lblTieude.Dock = System.Windows.Forms.DockStyle.Left;
             this.lblTieude.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTieude.Location = new System.Drawing.Point(38, 0);
-            this.lblTieude.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTieude.Location = new System.Drawing.Point(51, 0);
             this.lblTieude.Name = "lblTieude";
-            this.lblTieude.Size = new System.Drawing.Size(146, 32);
+            this.lblTieude.Size = new System.Drawing.Size(195, 39);
             this.lblTieude.TabIndex = 15;
             this.lblTieude.Text = "Smotorycycle";
             this.lblTieude.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -306,9 +305,9 @@
             this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
             this.guna2PictureBox1.ImageRotate = 0F;
             this.guna2PictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(38, 32);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(51, 39);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2PictureBox1.TabIndex = 14;
             this.guna2PictureBox1.TabStop = false;
@@ -335,8 +334,8 @@
             this.btnDong.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnDong.ImageSize = new System.Drawing.Size(20, 20);
             this.btnDong.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnDong.Location = new System.Drawing.Point(908, 0);
-            this.btnDong.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnDong.Location = new System.Drawing.Point(1211, 0);
+            this.btnDong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDong.Name = "btnDong";
             this.btnDong.OnHoverBaseColor = System.Drawing.Color.Red;
             this.btnDong.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -344,7 +343,7 @@
             this.btnDong.OnHoverImage = ((System.Drawing.Image)(resources.GetObject("btnDong.OnHoverImage")));
             this.btnDong.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.btnDong.OnPressedColor = System.Drawing.Color.Black;
-            this.btnDong.Size = new System.Drawing.Size(30, 32);
+            this.btnDong.Size = new System.Drawing.Size(40, 39);
             this.btnDong.TabIndex = 13;
             this.btnDong.Click += new System.EventHandler(this.btnDong_Click);
             // 
@@ -354,13 +353,13 @@
             // 
             // FrmAdmin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(938, 640);
+            this.ClientSize = new System.Drawing.Size(1251, 788);
             this.Controls.Add(this.panelTong);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FrmAdmin";
             this.Text = "FrmAdmin";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

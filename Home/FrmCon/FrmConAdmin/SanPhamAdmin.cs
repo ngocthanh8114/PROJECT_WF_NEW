@@ -33,7 +33,8 @@ namespace Home.FrmCon
                 int SL = row.Field<int>("SoLuong");
                 byte[] b = row.Field<byte[]>("HinhAnh");
                 Image anh = xl.ByteArrToImage(b);
-                oSanPhamAdmin.themSPAdmin(maSP, tenSP, gia, NCC, SL, anh);
+                int nam = row.Field<int>("BaoHanh");
+                oSanPhamAdmin.themSPAdmin(maSP, tenSP, gia, NCC, SL, anh, nam);
                 panelNoiDung.Controls.Add(oSanPhamAdmin);
                 oSanPhamAdmin.BringToFront();
             }
