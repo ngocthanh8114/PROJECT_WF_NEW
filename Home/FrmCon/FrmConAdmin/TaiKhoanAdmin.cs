@@ -25,15 +25,10 @@ namespace Home.FrmCon.FrmConAdmin
             panelTopXe.Controls.Clear();
         }
         static XuLiDuLieu xl = new XuLiDuLieu();
-        private void TaiKhoanAdmin_Load(object sender, EventArgs e)
+        public void TaiKhoanAdmin_Load(object sender, EventArgs e)
         {
             
             btnThongTin_Click(sender, e); 
-           /* lblHoTen.Text = TaiKhoanDangNhap.tenNguoiDung;
-            lblEmail.Text = TaiKhoanDangNhap.email;
-            lblTenNguoiDung.Text = TaiKhoanDangNhap.tenNguoiDung;
-            lblTenTaiKhoan.Text = TaiKhoanDangNhap.tenTaiKhoan;
-            lblSoDT.Text = TaiKhoanDangNhap.soDienThoai;*/
             themTopKhach(dtpNgayKhach.Value);
             themTopXe(dtpNgayXe.Value);
             loadLoiNhac();
@@ -72,6 +67,7 @@ namespace Home.FrmCon.FrmConAdmin
         {
             DateTime firstDayOfMonth = new DateTime(dateTime.Year, dateTime.Month, 1);
             int i = 1;
+            panelTopKhach.Controls.Clear();
             foreach (DataRow row in xl.doDuLieuTopKhachHang(firstDayOfMonth).Rows)
             {
                 string ten = row[1].ToString();
@@ -111,6 +107,7 @@ namespace Home.FrmCon.FrmConAdmin
             
             DateTime firstDayOfMonth = new DateTime(dateTime.Year, dateTime.Month, 1);
             int i = 1;
+            panelTopXe.Controls.Clear();
             foreach (DataRow row in xl.doDuLieuTopXe(firstDayOfMonth).Rows)
             {
                 string ten = row[2].ToString();
@@ -169,14 +166,32 @@ namespace Home.FrmCon.FrmConAdmin
 
         private void btnLoiNhac_Click(object sender, EventArgs e)
         {
+            int flag;
+            if(btnThongTin.Checked == true)
+            {
+                flag = 1;
+            }
+            else
+            {
+                flag = 2;
+            }   
             btnThongTin.Checked = false;
             btnLoiNhac.Checked = true;
             btnThemTK.Checked = false;
             FrmThemLoiNhac frmThemLoiNhac = new FrmThemLoiNhac();
             frmThemLoiNhac.ShowDialog();
-            btnThongTin.Checked = true;
-            btnLoiNhac.Checked = false;
-            btnThemTK.Checked = false;
+            if(flag == 1)
+            {
+                btnThongTin.Checked = true;
+                btnLoiNhac.Checked = false;
+                btnThemTK.Checked = false;
+            }    
+            else
+            {
+                btnThongTin.Checked = false;
+                btnLoiNhac.Checked = false;
+                btnThemTK.Checked = true;
+            }    
             bangLoiNhac = xl.doLoiNhac();
             btnPrevious_Click(sender, e);
         }

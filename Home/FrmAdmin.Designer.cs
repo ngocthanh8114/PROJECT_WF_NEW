@@ -35,7 +35,7 @@
             this.gunaPanel2 = new Guna.UI.WinForms.GunaPanel();
             this.btnTaiKhoan = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnBaoCao = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.btnHoaDon = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.btnDichVu = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnKhachHang = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnSanPham = new Guna.UI.WinForms.GunaAdvenceButton();
             this.panelMenu = new Guna.UI.WinForms.GunaPanel();
@@ -78,7 +78,7 @@
             this.gunaPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.gunaPanel2.Controls.Add(this.btnTaiKhoan);
             this.gunaPanel2.Controls.Add(this.btnBaoCao);
-            this.gunaPanel2.Controls.Add(this.btnHoaDon);
+            this.gunaPanel2.Controls.Add(this.btnDichVu);
             this.gunaPanel2.Controls.Add(this.btnKhachHang);
             this.gunaPanel2.Controls.Add(this.btnSanPham);
             this.gunaPanel2.Dock = System.Windows.Forms.DockStyle.Top;
@@ -158,40 +158,40 @@
             this.btnBaoCao.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnBaoCao.Click += new System.EventHandler(this.btnBaoCao_Click);
             // 
-            // btnHoaDon
+            // btnDichVu
             // 
-            this.btnHoaDon.Animated = true;
-            this.btnHoaDon.AnimationHoverSpeed = 0.07F;
-            this.btnHoaDon.AnimationSpeed = 0.03F;
-            this.btnHoaDon.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnHoaDon.BorderColor = System.Drawing.Color.Black;
-            this.btnHoaDon.CheckedBaseColor = System.Drawing.Color.Tomato;
-            this.btnHoaDon.CheckedBorderColor = System.Drawing.Color.Transparent;
-            this.btnHoaDon.CheckedForeColor = System.Drawing.Color.White;
-            this.btnHoaDon.CheckedImage = null;
-            this.btnHoaDon.CheckedLineColor = System.Drawing.Color.Tomato;
-            this.btnHoaDon.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnHoaDon.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btnHoaDon.FocusedColor = System.Drawing.Color.Empty;
-            this.btnHoaDon.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHoaDon.ForeColor = System.Drawing.Color.White;
-            this.btnHoaDon.Image = null;
-            this.btnHoaDon.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnHoaDon.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnHoaDon.Location = new System.Drawing.Point(502, 0);
-            this.btnHoaDon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnHoaDon.Name = "btnHoaDon";
-            this.btnHoaDon.OnHoverBaseColor = System.Drawing.Color.Tomato;
-            this.btnHoaDon.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnHoaDon.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnHoaDon.OnHoverImage = null;
-            this.btnHoaDon.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnHoaDon.OnPressedColor = System.Drawing.Color.Black;
-            this.btnHoaDon.Size = new System.Drawing.Size(251, 50);
-            this.btnHoaDon.TabIndex = 2;
-            this.btnHoaDon.Text = "Bảo hành";
-            this.btnHoaDon.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btnHoaDon.Click += new System.EventHandler(this.btnHoaDon_Click);
+            this.btnDichVu.Animated = true;
+            this.btnDichVu.AnimationHoverSpeed = 0.07F;
+            this.btnDichVu.AnimationSpeed = 0.03F;
+            this.btnDichVu.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnDichVu.BorderColor = System.Drawing.Color.Black;
+            this.btnDichVu.CheckedBaseColor = System.Drawing.Color.Tomato;
+            this.btnDichVu.CheckedBorderColor = System.Drawing.Color.Transparent;
+            this.btnDichVu.CheckedForeColor = System.Drawing.Color.White;
+            this.btnDichVu.CheckedImage = null;
+            this.btnDichVu.CheckedLineColor = System.Drawing.Color.Tomato;
+            this.btnDichVu.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnDichVu.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btnDichVu.FocusedColor = System.Drawing.Color.Empty;
+            this.btnDichVu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDichVu.ForeColor = System.Drawing.Color.White;
+            this.btnDichVu.Image = null;
+            this.btnDichVu.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnDichVu.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btnDichVu.Location = new System.Drawing.Point(502, 0);
+            this.btnDichVu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnDichVu.Name = "btnDichVu";
+            this.btnDichVu.OnHoverBaseColor = System.Drawing.Color.Tomato;
+            this.btnDichVu.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnDichVu.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnDichVu.OnHoverImage = null;
+            this.btnDichVu.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btnDichVu.OnPressedColor = System.Drawing.Color.Black;
+            this.btnDichVu.Size = new System.Drawing.Size(251, 50);
+            this.btnDichVu.TabIndex = 2;
+            this.btnDichVu.Text = "Dịch vụ";
+            this.btnDichVu.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnDichVu.Click += new System.EventHandler(this.btnDichVu_Click);
             // 
             // btnKhachHang
             // 
@@ -377,7 +377,7 @@
         private Guna.UI.WinForms.GunaPanel panelTong;
         private Guna.UI.WinForms.GunaPanel gunaPanel2;
         private Guna.UI.WinForms.GunaAdvenceButton btnBaoCao;
-        private Guna.UI.WinForms.GunaAdvenceButton btnHoaDon;
+        private Guna.UI.WinForms.GunaAdvenceButton btnDichVu;
         private Guna.UI.WinForms.GunaAdvenceButton btnKhachHang;
         private Guna.UI.WinForms.GunaAdvenceButton btnSanPham;
         private Guna.UI.WinForms.GunaPanel panelMenu;

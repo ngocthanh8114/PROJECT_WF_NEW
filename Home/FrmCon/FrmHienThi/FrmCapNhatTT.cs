@@ -45,6 +45,7 @@ namespace Home.FrmCon.FrmHienThi
                 frmThongBao.Dispose();
                 this.Close();
                 TongForm.TaiKhoan.TaiKhoan_Load(TongForm.TaiKhoan, e);
+                TongForm.TaiKhoanAdmin.TaiKhoanAdmin_Load(TongForm.TaiKhoanAdmin,e);
             }
         }
     }

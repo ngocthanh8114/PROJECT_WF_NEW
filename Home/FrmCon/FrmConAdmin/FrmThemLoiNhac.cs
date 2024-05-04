@@ -29,8 +29,12 @@ namespace Home.FrmCon.FrmConAdmin
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-            xl.themLoiNhac(txtLoiNhac.Text);
-            this.Close();
+            if(string.IsNullOrWhiteSpace(txtLoiNhac.Text))
+            {
+                xl.themLoiNhac(txtLoiNhac.Text);
+                this.Close();
+            }
+            
         }
         
     }   
