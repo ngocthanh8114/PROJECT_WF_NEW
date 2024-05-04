@@ -64,7 +64,7 @@ namespace Home
             TongForm.SanPhamAdmin.SanPhamAdmin_Load(TongForm.SanPhamAdmin, e);
             btnSanPham.Checked = true;
             btnKhachHang.Checked = false;
-            btnHoaDon.Checked = false;
+            btnDichVu.Checked = false;
             btnBaoCao.Checked = false;
             btnTaiKhoan.Checked = false;
         }
@@ -74,7 +74,7 @@ namespace Home
             addHienThi(TongForm.UCBaoCao);
             btnSanPham.Checked = false;
             btnKhachHang.Checked = false;
-            btnHoaDon.Checked = false;
+            btnDichVu.Checked = false;
             btnBaoCao.Checked = true;
             btnTaiKhoan.Checked = false;
         }
@@ -84,7 +84,7 @@ namespace Home
             addHienThi(TongForm.KhachHang);
             btnSanPham.Checked = false;
             btnKhachHang.Checked = true;
-            btnHoaDon.Checked = false;
+            btnDichVu.Checked = false;
             btnBaoCao.Checked = false ;
             btnTaiKhoan.Checked = false;
         }
@@ -94,12 +94,12 @@ namespace Home
             addHienThi(TongForm.TaiKhoanAdmin);
             btnSanPham.Checked = false;
             btnKhachHang.Checked = false;
-            btnHoaDon.Checked = false;
+            btnDichVu.Checked = false;
             btnBaoCao.Checked = false;
             btnTaiKhoan.Checked = true;
         }
 
-        private void btnHoaDon_Click(object sender, EventArgs e)
+        private void btnDichVu_Click(object sender, EventArgs e)
         {
 
         }

@@ -535,7 +535,7 @@ namespace Home.DuLieu
         public bool dangKyThanhCong = false;
         public void DangKyTK(string TenTaiKhoan, string MatKhau, string xnMatKhau, string TenNguoiDung, string Email, string SoDienThoai, Guna2HtmlLabel taiKhoan, Guna2HtmlLabel matKhau, Guna2HtmlLabel email, Guna2HtmlLabel sdt, Guna2HtmlLabel tnd)
         {
-            if ((TenTaiKhoan == "" || MatKhau == "" || TenNguoiDung == "" || Email == "" || SoDienThoai == ""))
+            if ((string.IsNullOrWhiteSpace(TenTaiKhoan) || string.IsNullOrWhiteSpace(MatKhau) || string.IsNullOrWhiteSpace(TenNguoiDung) || string.IsNullOrWhiteSpace(Email) || string.IsNullOrWhiteSpace(SoDienThoai)))
             {
                 FrmBaoLoi frmBaoLoi = new FrmBaoLoi();
                 frmBaoLoi.hienThiLoi("Bạn chưa nhập đầy đủ thông tin!");
@@ -980,7 +980,7 @@ namespace Home.DuLieu
         public bool capNhatTaiKhoan = false;
         public void CapNhatTaiKhoan(string tenNguoiDung, string email, string soDienThoai, Guna2HtmlLabel em, Guna2HtmlLabel soDT, Guna2HtmlLabel tenND)
         {
-            if ((tenNguoiDung == "" || email == "" || soDienThoai == ""))
+            if ((string.IsNullOrWhiteSpace(tenNguoiDung) || string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(soDienThoai)))
             {
                 FrmBaoLoi frmBaoLoi = new FrmBaoLoi();
                 frmBaoLoi.hienThiLoi("Bạn chưa nhập đầy đủ thông tin!");
@@ -1115,7 +1115,7 @@ namespace Home.DuLieu
         //Sửa sản phẩm
         public void SuaThongTinSanPhamAdmin(string MaNCC, string TenSP, string MaLoai, int SoLuongCu,int SoLuongMoi, string Gia, string MaSP, Image hinhAnh, DateTime ngaynhaphang)
         {
-            if(MaNCC == "" || TenSP == "" || MaLoai == "" || SoLuongCu.ToString() == "" || Gia == "" || hinhAnh == null)
+            if(string.IsNullOrWhiteSpace(MaNCC) || string.IsNullOrWhiteSpace(TenSP) || string.IsNullOrWhiteSpace(MaLoai) || string.IsNullOrWhiteSpace(SoLuongCu.ToString()) || string.IsNullOrWhiteSpace(Gia) || hinhAnh == null)
             {
                 FrmBaoLoi frmBaoLoi = new FrmBaoLoi();
                 frmBaoLoi.hienThiLoi("Bạn chưa nhập đầy đủ thông tin!");
@@ -1219,7 +1219,7 @@ namespace Home.DuLieu
         public bool NhapHang = false;
         public void NhapHangAdmin(string MaSP, string TenSP, string Gia,string MaNCC, string SoLuong, Image Anh, string MaLoai, Guna2HtmlLabel gia, Guna2HtmlLabel soluong, DateTime ngaynhaphang)
         {
-            if ((MaSP == "" || TenSP == "" || Gia == "" || MaNCC == "" || SoLuong == "" || Anh == null || MaLoai == ""))
+            if ((string.IsNullOrWhiteSpace(MaSP) || string.IsNullOrWhiteSpace(TenSP) || string.IsNullOrWhiteSpace(Gia) || string.IsNullOrWhiteSpace(MaNCC) || string.IsNullOrWhiteSpace(SoLuong) || Anh == null || string.IsNullOrWhiteSpace(MaLoai)))
             {
                 FrmBaoLoi frmBaoLoi = new FrmBaoLoi();
                 frmBaoLoi.hienThiLoi("Bạn chưa nhập đầy đủ thông tin!");
@@ -2025,6 +2025,39 @@ namespace Home.DuLieu
                 return true;
             }
             return false;
+        }
+
+        public void ThemDichVu(string ten, string sdt, string bienSo, string diaChi, string loaiDichVu, DateTime ngayThang)
+        {
+            try
+            {
+                kn.myConnect(); // Mở kết nối đến cơ sở dữ liệu
+
+                string sql = "INSERT INTO DichVu ([TenKhachHang],[TenTaiKhoan],[BienSoXe],[DiaChi],[SoDienThoai],[NgayThang],[LoaiDichVu]) VALUES (@TenKhachHang,@TenTaiKhoan,@BienSoXe,@DiaChi,@SoDienThoai,@NgayThang,@LoaiDichVu)";
+
+                SqlCommand cmd = new SqlCommand(sql, kn.con);
+
+                // Thêm các tham số vào câu lệnh SQL
+                cmd.Parameters.AddWithValue("@TenKhachHang", ten);
+                cmd.Parameters.AddWithValue("@SoDienThoai", sdt);
+                cmd.Parameters.AddWithValue("@BienSoXe", bienSo);
+                cmd.Parameters.AddWithValue("@DiaChi", diaChi);
+                cmd.Parameters.AddWithValue("@LoaiDichVu", loaiDichVu);
+                cmd.Parameters.AddWithValue("@NgayThang", ngayThang);
+                cmd.Parameters.AddWithValue("@TenTaiKhoan", TaiKhoanDangNhap.tenTaiKhoan); // Sử dụng giá trị từ biến global TaiKhoanDangNhap.tenTaiKhoan
+
+                // Thực thi câu lệnh SQL
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                // Xử lý các ngoại lệ nếu có
+                MessageBox.Show("Error: " + ex.Message);
+            }
+            finally
+            {
+                kn.myClose(); // Đóng kết nối đến cơ sở dữ liệu
+            }
         }
     }
    
