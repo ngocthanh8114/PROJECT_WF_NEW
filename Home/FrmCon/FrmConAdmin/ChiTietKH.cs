@@ -11,6 +11,7 @@ using System.Web;
 using System.Windows.Forms;
 using Home.FrmCon.FrmConAdmin.UCThanhPhan;
 using Home.DuLieu;
+using Home.FrmCon.FrmCuaAdmin;
 
 namespace Home.FrmCon.FrmConAdmin
 {
@@ -26,7 +27,11 @@ namespace Home.FrmCon.FrmConAdmin
 
         private void btnHuy_Click(object sender, EventArgs e)
         {
-
+           /*// this.Hide();
+            KhachHang khachHang = new KhachHang();
+            panelNoiDung.Controls.Add(khachHang);
+            63333333333333333333
+            khachHang.BringToFront();*/
         }
 
 
