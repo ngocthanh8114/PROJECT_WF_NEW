@@ -119,6 +119,11 @@ namespace Home
             btnTaiKhoan.Checked = true;
         }
 
+        private void btnDichVu_Click(object sender, EventArgs e)
+        {
+
+        }
+
         /*thử commit*/
     }
 }

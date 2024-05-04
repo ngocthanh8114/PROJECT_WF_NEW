@@ -969,7 +969,6 @@ D:\DACK\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.DonHangDaMua.resour
 D:\DACK\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.ODonHangDaMua.resources
 D:\DACK\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmCuaAdmin.KhachHang.resources
 D:\DACK\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmBaoCao.UCBaoCaoHoaDon.resources
-<<<<<<< HEAD
 C:\Users\PC\OneDrive\Desktop\Đồ_Án_CK_WF\PROJECT_WF_NEW\Home\bin\Debug\Home.exe.config
 C:\Users\PC\OneDrive\Desktop\Đồ_Án_CK_WF\PROJECT_WF_NEW\Home\bin\Debug\Home.exe
 C:\Users\PC\OneDrive\Desktop\Đồ_Án_CK_WF\PROJECT_WF_NEW\Home\bin\Debug\Home.pdb
@@ -1041,7 +1040,6 @@ C:\Users\PC\OneDrive\Desktop\Đồ_Án_CK_WF\PROJECT_WF_NEW\Home\obj\Debug\Home.
 C:\Users\PC\OneDrive\Desktop\Đồ_Án_CK_WF\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.UCThanhPhan.UCTaiKhoanAdmin.resources
 C:\Users\PC\OneDrive\Desktop\Đồ_Án_CK_WF\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.UCThanhPhan.UCThongTinAdmin.resources
 C:\Users\PC\OneDrive\Desktop\Đồ_Án_CK_WF\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.UCThanhPhan.OTaiKhoan.resources
-=======
 D:\VS Code\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmBaoCao.UCBaoCaoHoaDon.resources
 E:\study\NAM_2_KI_2\LAP_TRINH_WINDOWS\BanXeMay\PROJECT_WF_NEW\Home\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
 E:\study\NAM_2_KI_2\LAP_TRINH_WINDOWS\BanXeMay\PROJECT_WF_NEW\Home\bin\Debug\CrystalDecisions.ReportSource.dll

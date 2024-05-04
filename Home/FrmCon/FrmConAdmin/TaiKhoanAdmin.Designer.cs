@@ -32,9 +32,7 @@
             this.lblChucDanh = new System.Windows.Forms.Label();
             this.lblHoTen = new System.Windows.Forms.Label();
             this.panelNoiDung = new Guna.UI2.WinForms.Guna2Panel();
-<<<<<<< HEAD
-=======
-            this.guna2Panel8 = new Guna.UI2.WinForms.Guna2Panel();
+        /*    this.guna2Panel8 = new Guna.UI2.WinForms.Guna2Panel();
             this.btnDangXuat = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnSua = new Guna.UI.WinForms.GunaAdvenceButton();
             this.guna2Shapes4 = new Guna.UI2.WinForms.Guna2Shapes();
@@ -53,7 +51,7 @@
             this.lblEmail = new System.Windows.Forms.Label();
             this.lblTenNguoiDung = new System.Windows.Forms.Label();
             this.lblTenTaiKhoan = new System.Windows.Forms.Label();
->>>>>>> 8049cc8f23cd8a7cf69358b97a03c4dea1acb460
+*/
             this.panelChucNang = new Guna.UI2.WinForms.Guna2Panel();
             this.btnLoiNhac = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnThemTK = new Guna.UI.WinForms.GunaAdvenceButton();
@@ -78,13 +76,12 @@
             this.guna2Panel6 = new Guna.UI2.WinForms.Guna2Panel();
             this.dtpNgayKhach = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
-<<<<<<< HEAD
-=======
+
             this.panelNoiDung.SuspendLayout();
-            this.guna2Panel8.SuspendLayout();
+            /*this.guna2Panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
-            this.guna2Panel10.SuspendLayout();
->>>>>>> 8049cc8f23cd8a7cf69358b97a03c4dea1acb460
+            this.guna2Panel10.SuspendLayout();*/
+
             this.panelChucNang.SuspendLayout();
             this.panelTK.SuspendLayout();
             this.panelLoiNhac.SuspendLayout();
@@ -124,11 +121,11 @@
             this.panelNoiDung.Size = new System.Drawing.Size(1174, 811);
             this.panelNoiDung.TabIndex = 14;
             // 
-<<<<<<< HEAD
-=======
+
+
             // guna2Panel8
             // 
-            this.guna2Panel8.BackColor = System.Drawing.Color.White;
+    /*        this.guna2Panel8.BackColor = System.Drawing.Color.White;
             this.guna2Panel8.Controls.Add(this.btnDangXuat);
             this.guna2Panel8.Controls.Add(this.btnSua);
             this.guna2Panel8.Controls.Add(this.guna2Shapes4);
@@ -151,11 +148,11 @@
             this.guna2Panel8.Name = "guna2Panel8";
             this.guna2Panel8.Size = new System.Drawing.Size(1174, 811);
             this.guna2Panel8.TabIndex = 16;
-            this.guna2Panel8.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel8_Paint);
+            this.guna2Panel8.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel8_Paint);*/
             // 
             // btnDangXuat
             // 
-            this.btnDangXuat.AnimationHoverSpeed = 0.07F;
+          /*  this.btnDangXuat.AnimationHoverSpeed = 0.07F;
             this.btnDangXuat.AnimationSpeed = 0.03F;
             this.btnDangXuat.BackColor = System.Drawing.Color.Transparent;
             this.btnDangXuat.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
@@ -185,11 +182,11 @@
             this.btnDangXuat.TabIndex = 51;
             this.btnDangXuat.Text = "Đăng xuất";
             this.btnDangXuat.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btnDangXuat.Click += new System.EventHandler(this.btnDangXuat_Click);
+            this.btnDangXuat.Click += new System.EventHandler(this.btnDangXuat_Click);*/
             // 
             // btnSua
             // 
-            this.btnSua.AnimationHoverSpeed = 0.07F;
+          /*  this.btnSua.AnimationHoverSpeed = 0.07F;
             this.btnSua.AnimationSpeed = 0.03F;
             this.btnSua.BackColor = System.Drawing.Color.Transparent;
             this.btnSua.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
@@ -219,10 +216,10 @@
             this.btnSua.TabIndex = 50;
             this.btnSua.Text = "Chỉnh sửa thông tin";
             this.btnSua.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);*/
             // 
             // guna2Shapes4
-            // 
+       /*     // 
             this.guna2Shapes4.BorderColor = System.Drawing.Color.Transparent;
             this.guna2Shapes4.BorderThickness = 0;
             this.guna2Shapes4.FillColor = System.Drawing.Color.Maroon;
@@ -236,10 +233,10 @@
             this.guna2Shapes4.Size = new System.Drawing.Size(689, 15);
             this.guna2Shapes4.TabIndex = 49;
             this.guna2Shapes4.Text = "guna2Shapes4";
-            this.guna2Shapes4.Zoom = 80;
+            this.guna2Shapes4.Zoom = 80;*/
             // 
             // label4
-            // 
+           /* // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(291, 532);
@@ -263,11 +260,11 @@
             this.guna2Shapes3.Size = new System.Drawing.Size(689, 15);
             this.guna2Shapes3.TabIndex = 47;
             this.guna2Shapes3.Text = "guna2Shapes3";
-            this.guna2Shapes3.Zoom = 80;
+            this.guna2Shapes3.Zoom = 80;*/
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
+        /*    this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(291, 468);
             this.label6.Name = "label6";
@@ -410,9 +407,9 @@
             this.lblTenTaiKhoan.Name = "lblTenTaiKhoan";
             this.lblTenTaiKhoan.Size = new System.Drawing.Size(127, 28);
             this.lblTenTaiKhoan.TabIndex = 12;
-            this.lblTenTaiKhoan.Text = "TenTaiKhoan";
+            this.lblTenTaiKhoan.Text = "TenTaiKhoan";*/
             // 
->>>>>>> 8049cc8f23cd8a7cf69358b97a03c4dea1acb460
+
             // panelChucNang
             // 
             this.panelChucNang.BackColor = System.Drawing.Color.White;
@@ -732,11 +729,11 @@
             this.dtpNgayXe.Size = new System.Drawing.Size(330, 47);
             this.dtpNgayXe.TabIndex = 56;
             this.dtpNgayXe.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-<<<<<<< HEAD
+
             this.dtpNgayXe.Value = new System.DateTime(2024, 4, 24, 22, 54, 14, 282);
-=======
+
             this.dtpNgayXe.Value = new System.DateTime(2024, 5, 1, 0, 0, 0, 0);
->>>>>>> 8049cc8f23cd8a7cf69358b97a03c4dea1acb460
+
             this.dtpNgayXe.ValueChanged += new System.EventHandler(this.dtpNgayXe_ValueChanged);
             // 
             // label1
@@ -795,11 +792,11 @@
             this.dtpNgayKhach.Size = new System.Drawing.Size(330, 47);
             this.dtpNgayKhach.TabIndex = 56;
             this.dtpNgayKhach.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-<<<<<<< HEAD
+
             this.dtpNgayKhach.Value = new System.DateTime(2024, 4, 24, 22, 54, 14, 282);
-=======
+
             this.dtpNgayKhach.Value = new System.DateTime(2024, 5, 1, 0, 0, 0, 0);
->>>>>>> 8049cc8f23cd8a7cf69358b97a03c4dea1acb460
+
             this.dtpNgayKhach.ValueChanged += new System.EventHandler(this.dtpNgayKhach_ValueChanged);
             // 
             // label2
@@ -822,15 +819,13 @@
             this.Name = "TaiKhoanAdmin";
             this.Size = new System.Drawing.Size(2050, 866);
             this.Load += new System.EventHandler(this.TaiKhoanAdmin_Load);
-<<<<<<< HEAD
-=======
-            this.panelNoiDung.ResumeLayout(false);
-            this.guna2Panel8.ResumeLayout(false);
-            this.guna2Panel8.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
-            this.guna2Panel10.ResumeLayout(false);
-            this.guna2Panel10.PerformLayout();
->>>>>>> 8049cc8f23cd8a7cf69358b97a03c4dea1acb460
+
+            //this.guna2Panel8.ResumeLayout(false);
+            //this.guna2Panel8.PerformLayout();
+            //((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            //this.guna2Panel10.ResumeLayout(false);
+            //this.guna2Panel10.PerformLayout();
+
             this.panelChucNang.ResumeLayout(false);
             this.panelTK.ResumeLayout(false);
             this.panelLoiNhac.ResumeLayout(false);
