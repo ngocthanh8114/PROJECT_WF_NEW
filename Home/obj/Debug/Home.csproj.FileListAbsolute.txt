@@ -1071,7 +1071,6 @@ E:\study\NAM_2_KI_2\LAP_TRINH_WINDOWS\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Hom
 E:\study\NAM_2_KI_2\LAP_TRINH_WINDOWS\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmCuaAdmin.OKhachHang.resources
 E:\study\NAM_2_KI_2\LAP_TRINH_WINDOWS\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmCuaAdmin.KhachHang.resources
 >>>>>>> 8049cc8f23cd8a7cf69358b97a03c4dea1acb460
-<<<<<<< HEAD
 D:\CODE C#\PROJECT\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmBaoCao.UCBaoCaoHoaDon.resources
 D:\CODE C#\PROJECT\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.BaoCao.resources
 D:\CODE C#\PROJECT\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.ChiTietKH.resources
@@ -1113,10 +1112,11 @@ D:\CODE C#\PROJECT\PROJECT_WF_NEW\Home\bin\Debug\CrystalDecisions.ReportAppServe
 D:\CODE C#\PROJECT\PROJECT_WF_NEW\Home\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
 D:\CODE C#\PROJECT\PROJECT_WF_NEW\Home\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
 D:\CODE C#\PROJECT\PROJECT_WF_NEW\Home\bin\Debug\stdole.dll
-=======
 D:\VS Code\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.UCThanhPhan.OTaiKhoan.resources
 D:\VS Code\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.UCThanhPhan.UCThongTinAdmin.resources
 D:\VS Code\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.UCThanhPhan.UCTaiKhoanAdmin.resources
 D:\VS Code\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.DichVu.resources
 D:\VS Code\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.GioiThieu.resources
 >>>>>>> 5c88e87d5ceaaa151f5dfbdd2bc8fa8b89c3e0ae
+D:\CODE C#\PROJECT\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.DichVu.resources
+D:\CODE C#\PROJECT\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.GioiThieu.resources
