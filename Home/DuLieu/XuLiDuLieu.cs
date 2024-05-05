@@ -2059,6 +2059,98 @@ namespace Home.DuLieu
                 kn.myClose(); // Đóng kết nối đến cơ sở dữ liệu
             }
         }
+        public void ThemDichVu(string ten, string sdt, string bienSo, string diaChi, string loaiDichVu, DateTime ngayThang, string trangthai)
+        {
+            try
+            {
+                kn.myConnect(); // Mở kết nối đến cơ sở dữ liệu
+
+                string sql = "INSERT INTO DichVu ([TenKhachHang],[TenTaiKhoan],[BienSoXe],[DiaChi],[SoDienThoai],[NgayThang],[LoaiDichVu],[TrangThai]) VALUES (@TenKhachHang,@TenTaiKhoan,@BienSoXe,@DiaChi,@SoDienThoai,@NgayThang,@LoaiDichVu, @TrangThai)";
+
+                SqlCommand cmd = new SqlCommand(sql, kn.con);
+
+                // Thêm các tham số vào câu lệnh SQL
+                cmd.Parameters.AddWithValue("@TenKhachHang", ten);
+                cmd.Parameters.AddWithValue("@SoDienThoai", sdt);
+                cmd.Parameters.AddWithValue("@BienSoXe", bienSo);
+                cmd.Parameters.AddWithValue("@DiaChi", diaChi);
+                cmd.Parameters.AddWithValue("@LoaiDichVu", loaiDichVu);
+                cmd.Parameters.AddWithValue("@NgayThang", ngayThang);
+                cmd.Parameters.AddWithValue("@TenTaiKhoan", TaiKhoanDangNhap.tenTaiKhoan); // Sử dụng giá trị từ biến global TaiKhoanDangNhap.tenTaiKhoan
+                cmd.Parameters.AddWithValue("@TrangThai", trangthai);
+                // Thực thi câu lệnh SQL
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                // Xử lý các ngoại lệ nếu có
+                MessageBox.Show("Error: " + ex.Message);
+            }
+            finally
+            {
+                kn.myClose(); // Đóng kết nối đến cơ sở dữ liệu
+            }
+        }
+
+        public DataTable DoDuLieuVaoBangDichVu()
+        {
+            kn.myConnect();
+            string sql = "Select TenKhachHang, BienSoXe, NgayThang, SoDienThoai, LoaiDichVu, TrangThai from DichVu";
+            SqlCommand cmd = new SqlCommand(sql, kn.con);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            return dt;
+        }
+
+        //DichVu
+        public DataTable LayThongTinDichVu(string loaidichvu)
+        {
+            kn.myConnect();
+            string sql = "Select * from DichVu where LoaiDichVu = @LoaiDichVu";
+
+            SqlCommand cmd = new SqlCommand(sql, kn.con);
+            cmd.Parameters.AddWithValue("@LoaiDichVu", loaidichvu);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            return dt;
+        }
+
+
+        public DataTable DoDuLieuDichVuVaoTextBox(string sdt, string tenkhachhang)
+        {
+            kn.myConnect();
+            string sql = "SELECT TenKhachHang, BienSoXe, NgayThang, DiaChi, SoDienThoai, LoaiDichVu FROM DichVu WHERE SoDienThoai = @SoDienThoai AND TenKhachHang = @TenKhachHang";
+            SqlCommand cmd = new SqlCommand(sql, kn.con);
+            cmd.Parameters.AddWithValue("@SoDienThoai", sdt);
+            cmd.Parameters.AddWithValue("@TenKhachHang", tenkhachhang);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            return dt;
+        }
+
+        public void CapNhatTrangThai(string sdt, string trangThaiMoi)
+        {
+            kn.myConnect();
+            string sql = "UPDATE DichVu SET TrangThai = @TrangThai WHERE SoDienThoai = @SoDienThoai";
+            SqlCommand cmd = new SqlCommand(sql, kn.con);
+            cmd.Parameters.AddWithValue("@TrangThai", trangThaiMoi);
+            cmd.Parameters.AddWithValue("@SoDienThoai", sdt);
+
+            cmd.ExecuteNonQuery();
+           // kn.con.Close();
+        }
+        public string LayTrangThaiDaXuLi(string sodienthoai)
+        {
+            kn.myConnect();
+            string sql = "SELECT TrangThai FROM DichVu WHERE SoDienThoai = @SoDienThoai ";
+            SqlCommand cmd = new SqlCommand(sql, kn.con);
+            cmd.Parameters.AddWithValue("@SoDienThoai", sodienthoai);
+            string trangThai = cmd.ExecuteScalar()?.ToString();
+            return trangThai;
+        }
     }
    
 }

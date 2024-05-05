@@ -40,7 +40,7 @@ namespace Home.FrmCon
             }
             else 
             {
-                xl.ThemDichVu(txtHoTen.Text, txtSDT.Text, txtBienSo.Text, txtDiaChi.Text, cboLoaiDV.Text, dtpNgayMua.Value );
+                xl.ThemDichVu(txtHoTen.Text, txtSDT.Text, txtBienSo.Text, txtDiaChi.Text, cboLoaiDV.Text, dtpNgayMua.Value,"Chưa xử lí");
                 FrmThongBao frmThongBao = new FrmThongBao();
                 frmThongBao.hienThiThongBao("Đặt lịch thành công");
                 frmThongBao.ShowDialog();
