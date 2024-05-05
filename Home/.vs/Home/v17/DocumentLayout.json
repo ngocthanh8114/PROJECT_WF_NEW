@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|e:\\study\\nam_2_ki_2\\lap_trinh_windows\\banxemay\\project_wf_new\\home\\frmcon\\frmconadmin\\chitietkh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|solutionrelative:frmcon\\frmconadmin\\chitietkh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|e:\\study\\nam_2_ki_2\\lap_trinh_windows\\banxemay\\project_wf_new\\home\\frmcon\\frmconadmin\\chitietkh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|solutionrelative:frmcon\\frmconadmin\\chitietkh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|e:\\study\\nam_2_ki_2\\lap_trinh_windows\\banxemay\\project_wf_new\\home\\frmcon\\frmconuser\\frmmuahang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|solutionrelative:frmcon\\frmconuser\\frmmuahang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -23,19 +31,44 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ChiTietKH.cs [Design]",
+              "DocumentMoniker": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmConAdmin\\ChiTietKH.cs",
+              "RelativeDocumentMoniker": "FrmCon\\FrmConAdmin\\ChiTietKH.cs",
+              "ToolTip": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmConAdmin\\ChiTietKH.cs [Design]",
+              "RelativeToolTip": "FrmCon\\FrmConAdmin\\ChiTietKH.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-04T06:11:42.932Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ChiTietKH.cs",
+              "DocumentMoniker": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmConAdmin\\ChiTietKH.cs",
+              "RelativeDocumentMoniker": "FrmCon\\FrmConAdmin\\ChiTietKH.cs",
+              "ToolTip": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmConAdmin\\ChiTietKH.cs",
+              "RelativeToolTip": "FrmCon\\FrmConAdmin\\ChiTietKH.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAIAwwBgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-04T06:09:54.128Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "FrmMuaHang.cs",
               "DocumentMoniker": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmConUser\\FrmMuaHang.cs",
               "RelativeDocumentMoniker": "FrmCon\\FrmConUser\\FrmMuaHang.cs",
               "ToolTip": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmConUser\\FrmMuaHang.cs",
               "RelativeToolTip": "FrmCon\\FrmConUser\\FrmMuaHang.cs",
-              "ViewState": "AQIAADwAAAAAAAAAAAAqwGQAAAAkAAAA",
+              "ViewState": "AQIAADwAAAAAAAAAAAAqwEUAAAAzAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-02T12:37:18.259Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "FrmMuaHang.cs [Design]",
               "DocumentMoniker": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmConUser\\FrmMuaHang.cs",
               "RelativeDocumentMoniker": "FrmCon\\FrmConUser\\FrmMuaHang.cs",
