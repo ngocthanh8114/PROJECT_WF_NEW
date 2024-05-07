@@ -77,7 +77,6 @@ namespace Home
             btnDichVu.Checked = false;
             btnDonHang.Checked = false;
             btnTaiKhoan.Checked = false;
-            btnGioiThieu.Enabled = false;
         }
 
         public void btnSanPham_Click(object sender, EventArgs e)
