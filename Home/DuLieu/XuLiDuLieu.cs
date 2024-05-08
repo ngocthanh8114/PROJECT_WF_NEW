@@ -506,7 +506,7 @@ namespace Home.DuLieu
         public DataTable doDuLieu_TimKiem(string TenSP)
         {
             kn.myConnect();
-            string sql = "SELECT TenSP, Gia, SoLuong, Anh FROM DonHang_1 WHERE TenSP LIKE @TenSP AND TenTaiKhoan = @TenTK";
+            string sql = "SELECT TenSP, Gia, SoLuong, Anh, TrangThai FROM DonHang_1 WHERE TenSP LIKE @TenSP AND TenTaiKhoan = @TenTK";
             SqlCommand cmd = new SqlCommand(sql, kn.con);
             cmd.Parameters.AddWithValue("@TenSP", "%" + TenSP + "%");
             cmd.Parameters.AddWithValue("@TenTK", TaiKhoanDangNhap.tenTaiKhoan);
@@ -2150,6 +2150,56 @@ namespace Home.DuLieu
             cmd.Parameters.AddWithValue("@SoDienThoai", sodienthoai);
             string trangThai = cmd.ExecuteScalar()?.ToString();
             return trangThai;
+        }
+
+        public bool checkDonHang()
+        {
+            kn.myConnect();
+            string sql = "select count(*) from DonHang_1 where TenTaiKhoan=@TenTaiKhoan";
+            SqlCommand cmd = new SqlCommand(sql, kn.con);
+            SqlParameter sqlParameter0 = new SqlParameter("@TenTaiKhoan", SqlDbType.NVarChar, 50);
+            sqlParameter0.Value = TaiKhoanDangNhap.tenTaiKhoan;
+            cmd.Parameters.Add(sqlParameter0);
+
+            int check = (int)cmd.ExecuteScalar();
+            if (check == 0 ) 
+            { 
+                return true;
+            }
+            return false;
+        }
+        public bool checkDiaChi()
+        {
+            kn.myConnect();
+            string sql = "select count(*) from DiaChiKhachHang where TenTaiKhoan=@TenTaiKhoan";
+            SqlCommand cmd = new SqlCommand(sql, kn.con);
+            SqlParameter sqlParameter0 = new SqlParameter("@TenTaiKhoan", SqlDbType.NVarChar, 50);
+            sqlParameter0.Value = TaiKhoanDangNhap.tenTaiKhoan;
+            cmd.Parameters.Add(sqlParameter0);
+
+            int check = (int)cmd.ExecuteScalar();
+            if (check == 0)
+            {
+                return true;
+            }
+            return false;
+        }
+
+        public bool checkDonMua()
+        {
+            kn.myConnect();
+            string sql = "select count(*) from DonHangDaMua where TenTaiKhoan=@TenTaiKhoan";
+            SqlCommand cmd = new SqlCommand(sql, kn.con);
+            SqlParameter sqlParameter0 = new SqlParameter("@TenTaiKhoan", SqlDbType.NVarChar, 50);
+            sqlParameter0.Value = TaiKhoanDangNhap.tenTaiKhoan;
+            cmd.Parameters.Add(sqlParameter0);
+
+            int check = (int)cmd.ExecuteScalar();
+            if (check == 0)
+            {
+                return true;
+            }
+            return false;
         }
     }
    

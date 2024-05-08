@@ -32,7 +32,7 @@ namespace Home.FrmCon.FrmHienThi
         }
         private void DonHangDaMua_Load(object sender, EventArgs e)
         {
-            
+            donMuaTrong.themNoiDung("Bạn chưa chọn mã hóa đơn", "Hãy chọn mã hóa đơn để xem được sản phẩm bạn đã mua");
             addCBOMaHD();   
         }
         private void addSP(DataTable dt)

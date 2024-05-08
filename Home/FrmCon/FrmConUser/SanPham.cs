@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.IO;
 using Home.DuLieu;
+using Home.FrmCon.FrmConUser.UCThanhPhan.OTrong;
 
 namespace Home.FrmCon
 {
@@ -165,9 +166,10 @@ namespace Home.FrmCon
                 }
                 else 
                 {
-                    FrmBaoLoi frmBaoLoi = new FrmBaoLoi();
-                    frmBaoLoi.hienThiLoi("Không tìm thấy sản phẩm trong khoảng giá và loại sản phẩm này.");
-                    frmBaoLoi.Show();
+                    panelNoiDung.Controls.Clear();
+                    SanPhamTrong donHangTrong = new SanPhamTrong();
+                    donHangTrong.themNoiDung("Không có sản phẩm nào!", "Chúng tôi sẽ sớm cập nhật sản phẩm trong khoản giá này cho bạn!");
+                    panelNoiDung.Controls.Add(donHangTrong);
                 }
             }
 
@@ -211,7 +213,7 @@ namespace Home.FrmCon
 
         private void btnTimKiem_Click(object sender, EventArgs e)
         {
-
+            cbLocGia.SelectedIndex = -1;
             if (string.IsNullOrEmpty(txtTimKiem.Text))
             {
                cboLoaiSP_SelectedIndexChanged(sender, e);
@@ -230,11 +232,12 @@ namespace Home.FrmCon
                 }
                 else
                 {
-                    FrmBaoLoi frmBaoLoi = new FrmBaoLoi();
-                    frmBaoLoi.hienThiLoi("Không tìm thấy sản phẩm trong loại sản phẩm này.");
-                    frmBaoLoi.Show();
+                    panelNoiDung.Controls.Clear();
+                    SanPhamTrong donHangTrong = new SanPhamTrong();
+                    donHangTrong.themNoiDung("Không có sản phẩm nào!", "Chúng tôi sẽ sớm cập nhật sản phẩm này cho bạn!");
+                    panelNoiDung.Controls.Add(donHangTrong);
                 }
-                cbLocGia.SelectedIndex = -1;
+                //
             }
         }
 

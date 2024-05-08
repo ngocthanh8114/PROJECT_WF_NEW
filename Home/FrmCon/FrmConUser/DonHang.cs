@@ -13,6 +13,7 @@ using Home.FrmCon;
 using Home.DuLieu;
 using Microsoft.VisualBasic;
 using System.Data.SqlTypes;
+using Home.FrmCon.FrmConUser.UCThanhPhan.OTrong;
 
 namespace Home.FrmCon
 {
@@ -37,7 +38,7 @@ namespace Home.FrmCon
                 byte[] b = row.Field<byte[]>("Anh");
                 Image anh = xl.ByteArrToImage(b);
                 string tenTaiKhoan = TaiKhoanDangNhap.tenTaiKhoan;
-                byte trangThai = row.Field<byte>(6);
+                byte trangThai = row.Field<byte>("TrangThai");
                 oDonHang.themDonHang(tenSP, gia, SL, anh, trangThai);
                 panelNoiDung.Controls.Add(oDonHang);
                 oDonHang.BringToFront();
@@ -52,7 +53,16 @@ namespace Home.FrmCon
             }
             btnMua.Enabled = false;
             xl.resetTongTien();
-            addDonHang(xl.doDuLieu());
+            if(xl.checkDonHang())
+            {
+                DonHangTrong donHangTrong = new DonHangTrong();
+                panelNoiDung.Controls.Add(donHangTrong);
+                donHangTrong.BringToFront();
+            }
+            else 
+            {
+                addDonHang(xl.doDuLieu());
+            } 
             loadGiaTien();
         }
 
@@ -137,7 +147,7 @@ namespace Home.FrmCon
 
         private void btnThemAll_Click(object sender, EventArgs e)
         {
-            if(panelNoiDung.Controls.Count == 0)
+            if(xl.checkDonHang())
             {
                 FrmBaoLoi frmBaoLoi = new FrmBaoLoi();
                 frmBaoLoi.BackColor = SystemColors.Window;
@@ -169,6 +179,11 @@ namespace Home.FrmCon
                 DonHang_Load(sender, EventArgs.Empty);
             }    
             
+        }
+
+        private void panelNoiDung_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

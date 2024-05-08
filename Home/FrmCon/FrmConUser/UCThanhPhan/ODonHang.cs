@@ -55,7 +55,6 @@ namespace Home.FrmCon.FrmHienThi
             TongForm.DonHang.loadGiaTien();
             TongForm.DonHang.cbDieuKhoan_Click(sender, e);  
 
-
         }
 
         private void ODonHang_Load(object sender, EventArgs e)

@@ -88,6 +88,7 @@
             this.guna2Panel10 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel12 = new Guna.UI2.WinForms.Guna2Panel();
             this.timerMuaHang = new System.Windows.Forms.Timer(this.components);
+            this.diaChiTrong1 = new Home.FrmCon.FrmConUser.UCThanhPhan.OTrong.DiaChiTrong();
             this.guna2Panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.guna2Panel6.SuspendLayout();
@@ -102,6 +103,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.guna2Panel20.SuspendLayout();
+            this.panelNoiDung.SuspendLayout();
             this.guna2Panel18.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -120,7 +122,7 @@
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(1240, 654);
+            this.guna2Panel1.Size = new System.Drawing.Size(1192, 654);
             this.guna2Panel1.TabIndex = 0;
             // 
             // guna2Panel11
@@ -717,6 +719,7 @@
             this.txtEmail.SelectedText = "";
             this.txtEmail.Size = new System.Drawing.Size(269, 48);
             this.txtEmail.TabIndex = 6;
+            this.txtEmail.TextChanged += new System.EventHandler(this.txtEmail_TextChanged);
             // 
             // txtHoTen
             // 
@@ -808,7 +811,7 @@
             // 
             this.guna2Panel9.BackColor = System.Drawing.Color.Gainsboro;
             this.guna2Panel9.Dock = System.Windows.Forms.DockStyle.Right;
-            this.guna2Panel9.Location = new System.Drawing.Point(624, 2);
+            this.guna2Panel9.Location = new System.Drawing.Point(576, 2);
             this.guna2Panel9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Panel9.Name = "guna2Panel9";
             this.guna2Panel9.Size = new System.Drawing.Size(3, 652);
@@ -823,7 +826,7 @@
             this.panel1.Controls.Add(this.guna2Panel22);
             this.panel1.Controls.Add(this.guna2Panel19);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(627, 2);
+            this.panel1.Location = new System.Drawing.Point(579, 2);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(613, 652);
@@ -892,12 +895,14 @@
             // 
             this.panelNoiDung.AutoScroll = true;
             this.panelNoiDung.BackColor = System.Drawing.Color.White;
+            this.panelNoiDung.Controls.Add(this.diaChiTrong1);
             this.panelNoiDung.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelNoiDung.Location = new System.Drawing.Point(0, 61);
             this.panelNoiDung.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelNoiDung.Name = "panelNoiDung";
             this.panelNoiDung.Size = new System.Drawing.Size(610, 591);
             this.panelNoiDung.TabIndex = 29;
+            this.panelNoiDung.Paint += new System.Windows.Forms.PaintEventHandler(this.panelNoiDung_Paint);
             // 
             // guna2Panel17
             // 
@@ -971,7 +976,7 @@
             this.guna2Panel12.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Panel12.Name = "guna2Panel12";
-            this.guna2Panel12.Size = new System.Drawing.Size(1240, 2);
+            this.guna2Panel12.Size = new System.Drawing.Size(1192, 2);
             this.guna2Panel12.TabIndex = 17;
             // 
             // timerMuaHang
@@ -979,12 +984,19 @@
             this.timerMuaHang.Interval = 10;
             this.timerMuaHang.Tick += new System.EventHandler(this.timerMuaHang_Tick);
             // 
+            // diaChiTrong1
+            // 
+            this.diaChiTrong1.Location = new System.Drawing.Point(3, 3);
+            this.diaChiTrong1.Name = "diaChiTrong1";
+            this.diaChiTrong1.Size = new System.Drawing.Size(642, 567);
+            this.diaChiTrong1.TabIndex = 0;
+            // 
             // FrmMuaHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(1240, 654);
+            this.ClientSize = new System.Drawing.Size(1192, 654);
             this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1014,6 +1026,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.guna2Panel20.ResumeLayout(false);
+            this.panelNoiDung.ResumeLayout(false);
             this.guna2Panel18.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -1080,5 +1093,6 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel10;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel24;
         private Guna.UI2.WinForms.Guna2DateTimePicker dtpNgayMua;
+        private FrmConUser.UCThanhPhan.OTrong.DiaChiTrong diaChiTrong1;
     }
 }

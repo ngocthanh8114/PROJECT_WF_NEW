@@ -34,6 +34,7 @@
             this.guna2Panel12 = new Guna.UI2.WinForms.Guna2Panel();
             this.btnLuuThem = new Guna.UI.WinForms.GunaAdvenceButton();
             this.pn_NoiDungSua = new Guna.UI2.WinForms.Guna2Panel();
+            this.dtNgayNhapHang = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.cboMaLoai = new Guna.UI2.WinForms.Guna2ComboBox();
             this.cboMaNCC = new Guna.UI2.WinForms.Guna2ComboBox();
             this.lblDonGia = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -60,7 +61,7 @@
             this.guna2CustomCheckBox3 = new Guna.UI2.WinForms.Guna2CustomCheckBox();
             this.guna2CustomCheckBox4 = new Guna.UI2.WinForms.Guna2CustomCheckBox();
             this.guna2Shapes2 = new Guna.UI2.WinForms.Guna2Shapes();
-            this.dtNgayNhapHang = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.txtBaoHanh = new Guna.UI2.WinForms.Guna2TextBox();
             this.pn_NoiDungSua.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxSP)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -136,6 +137,7 @@
             this.pn_NoiDungSua.BorderColor = System.Drawing.Color.White;
             this.pn_NoiDungSua.BorderRadius = 15;
             this.pn_NoiDungSua.BorderThickness = 3;
+            this.pn_NoiDungSua.Controls.Add(this.txtBaoHanh);
             this.pn_NoiDungSua.Controls.Add(this.dtNgayNhapHang);
             this.pn_NoiDungSua.Controls.Add(this.cboMaLoai);
             this.pn_NoiDungSua.Controls.Add(this.cboMaNCC);
@@ -157,6 +159,20 @@
             this.pn_NoiDungSua.Name = "pn_NoiDungSua";
             this.pn_NoiDungSua.Size = new System.Drawing.Size(511, 699);
             this.pn_NoiDungSua.TabIndex = 7;
+            // 
+            // dtNgayNhapHang
+            // 
+            this.dtNgayNhapHang.Checked = true;
+            this.dtNgayNhapHang.FillColor = System.Drawing.Color.White;
+            this.dtNgayNhapHang.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.dtNgayNhapHang.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.dtNgayNhapHang.Location = new System.Drawing.Point(279, 639);
+            this.dtNgayNhapHang.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.dtNgayNhapHang.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.dtNgayNhapHang.Name = "dtNgayNhapHang";
+            this.dtNgayNhapHang.Size = new System.Drawing.Size(200, 36);
+            this.dtNgayNhapHang.TabIndex = 61;
+            this.dtNgayNhapHang.Value = new System.DateTime(2024, 4, 26, 22, 26, 20, 712);
             // 
             // cboMaLoai
             // 
@@ -191,7 +207,7 @@
             this.cboMaNCC.Location = new System.Drawing.Point(58, 473);
             this.cboMaNCC.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cboMaNCC.Name = "cboMaNCC";
-            this.cboMaNCC.Size = new System.Drawing.Size(417, 41);
+            this.cboMaNCC.Size = new System.Drawing.Size(190, 41);
             this.cboMaNCC.TabIndex = 59;
             // 
             // lblDonGia
@@ -586,19 +602,26 @@
             this.guna2Shapes2.Text = "guna2Shapes2";
             this.guna2Shapes2.Zoom = 80;
             // 
-            // dtNgayNhapHang
+            // txtBaoHanh
             // 
-            this.dtNgayNhapHang.Checked = true;
-            this.dtNgayNhapHang.FillColor = System.Drawing.Color.White;
-            this.dtNgayNhapHang.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.dtNgayNhapHang.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.dtNgayNhapHang.Location = new System.Drawing.Point(279, 639);
-            this.dtNgayNhapHang.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.dtNgayNhapHang.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.dtNgayNhapHang.Name = "dtNgayNhapHang";
-            this.dtNgayNhapHang.Size = new System.Drawing.Size(200, 36);
-            this.dtNgayNhapHang.TabIndex = 61;
-            this.dtNgayNhapHang.Value = new System.DateTime(2024, 4, 26, 22, 26, 20, 712);
+            this.txtBaoHanh.BorderRadius = 8;
+            this.txtBaoHanh.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtBaoHanh.DefaultText = "";
+            this.txtBaoHanh.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtBaoHanh.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtBaoHanh.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtBaoHanh.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtBaoHanh.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtBaoHanh.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
+            this.txtBaoHanh.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtBaoHanh.Location = new System.Drawing.Point(286, 473);
+            this.txtBaoHanh.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtBaoHanh.Name = "txtBaoHanh";
+            this.txtBaoHanh.PasswordChar = '\0';
+            this.txtBaoHanh.PlaceholderText = "Bảo hành...";
+            this.txtBaoHanh.SelectedText = "";
+            this.txtBaoHanh.Size = new System.Drawing.Size(189, 41);
+            this.txtBaoHanh.TabIndex = 64;
             // 
             // FrmThemHH
             // 
@@ -660,5 +683,6 @@
         private Guna.UI2.WinForms.Guna2ComboBox cboMaNCC;
         private Guna.UI2.WinForms.Guna2ComboBox cboMaLoai;
         private Guna.UI2.WinForms.Guna2DateTimePicker dtNgayNhapHang;
+        private Guna.UI2.WinForms.Guna2TextBox txtBaoHanh;
     }
 }

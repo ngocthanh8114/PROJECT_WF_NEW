@@ -291,6 +291,30 @@
     <Compile Include="FrmCon\FrmConUser\UCThanhPhan\ODonHangDaMua.Designer.cs">
       <DependentUpon>ODonHangDaMua.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmCon\FrmConUser\UCThanhPhan\OTrong\DiaChiTrong.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmCon\FrmConUser\UCThanhPhan\OTrong\DiaChiTrong.Designer.cs">
+      <DependentUpon>DiaChiTrong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCon\FrmConUser\UCThanhPhan\OTrong\DonHangTrong.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmCon\FrmConUser\UCThanhPhan\OTrong\DonHangTrong.Designer.cs">
+      <DependentUpon>DonHangTrong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCon\FrmConUser\UCThanhPhan\OTrong\DonMuaTrong.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmCon\FrmConUser\UCThanhPhan\OTrong\DonMuaTrong.Designer.cs">
+      <DependentUpon>DonMuaTrong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCon\FrmConUser\UCThanhPhan\OTrong\SanPhamTrong.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmCon\FrmConUser\UCThanhPhan\OTrong\SanPhamTrong.Designer.cs">
+      <DependentUpon>SanPhamTrong.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmCon\FrmConUser\UCThanhPhan\SanPhamDaMua.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -519,6 +543,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmCon\FrmConUser\UCThanhPhan\ODonHangDaMua.resx">
       <DependentUpon>ODonHangDaMua.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCon\FrmConUser\UCThanhPhan\OTrong\DiaChiTrong.resx">
+      <DependentUpon>DiaChiTrong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCon\FrmConUser\UCThanhPhan\OTrong\DonHangTrong.resx">
+      <DependentUpon>DonHangTrong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCon\FrmConUser\UCThanhPhan\OTrong\DonMuaTrong.resx">
+      <DependentUpon>DonMuaTrong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCon\FrmConUser\UCThanhPhan\OTrong\SanPhamTrong.resx">
+      <DependentUpon>SanPhamTrong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmCon\FrmConUser\UCThanhPhan\SanPhamDaMua.resx">
       <DependentUpon>SanPhamDaMua.cs</DependentUpon>

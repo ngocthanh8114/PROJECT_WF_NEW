@@ -1204,6 +1204,7 @@ C:\Users\PC\OneDrive\Desktop\New folder\PROJECT_WF_NEW\Home\bin\Debug\CrystalDec
 C:\Users\PC\OneDrive\Desktop\New folder\PROJECT_WF_NEW\Home\bin\Debug\stdole.dll
 C:\Users\PC\OneDrive\Desktop\New folder\PROJECT_WF_NEW\Home\obj\Debug\Home.csproj.Up2Date
 C:\Users\PC\OneDrive\Desktop\New folder\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.FrmDichVu.FrmXuLi.resources
+<<<<<<< HEAD
 >>>>>>> 3cabacafe36140d8c841c493313dedf01c7d2bf2
 D:\CODE C#\PROJECT\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.FrmDichVu.FrmXuLi.resources
 D:\CODE C#\PROJECT\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.UCThanhPhan.OBaoDuongXeMay.resources
@@ -1215,3 +1216,19 @@ D:\CODE C#\PROJECT\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.UCThanh
 D:\CODE C#\PROJECT\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.UCThanhPhan.OXuLiDichVu.resources
 D:\CODE C#\PROJECT\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.UCThanhPhan.DichVuAdmin.resources
 D:\CODE C#\PROJECT\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.UCDichVu_BaoHanh.resources
+=======
+D:\VS Code\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.FrmDichVu.FrmXuLi.resources
+D:\VS Code\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.UCThanhPhan.OBaoDuongXeMay.resources
+D:\VS Code\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.UCThanhPhan.OCuuHo.resources
+D:\VS Code\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.UCThanhPhan.ODanNilon.resources
+D:\VS Code\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.UCThanhPhan.OPhucHoiXeMay.resources
+D:\VS Code\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.UCThanhPhan.OTanTrangXeMay.resources
+D:\VS Code\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.UCThanhPhan.OTatCaDichVu.resources
+D:\VS Code\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.UCThanhPhan.OXuLiDichVu.resources
+D:\VS Code\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.UCThanhPhan.DichVuAdmin.resources
+D:\VS Code\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.UCDichVu_BaoHanh.resources
+D:\VS Code\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConUser.UCThanhPhan.OTrong.DonHangTrong.resources
+D:\VS Code\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConUser.UCThanhPhan.OTrong.DiaChiTrong.resources
+D:\VS Code\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConUser.UCThanhPhan.OTrong.DonMuaTrong.resources
+D:\VS Code\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConUser.UCThanhPhan.OTrong.SanPhamTrong.resources
+>>>>>>> aa0ae08cb46dc741613998f0426596d2bb267c8f
