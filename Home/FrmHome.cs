@@ -123,7 +123,6 @@ namespace Home
             btnDichVu.Checked = true;
             btnDonHang.Checked = false;
             btnTaiKhoan.Checked = false;
-            btnGioiThieu.Enabled = false;
         }
 
         /*thử commit*/

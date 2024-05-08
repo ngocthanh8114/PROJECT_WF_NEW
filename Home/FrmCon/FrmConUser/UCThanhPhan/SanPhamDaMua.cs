@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Home.DuLieu;
 using Home;
+using Home.FrmCon.FrmConUser.UCThanhPhan.OTrong;
 
 namespace Home.FrmCon.FrmHienThi
 {
@@ -22,7 +23,17 @@ namespace Home.FrmCon.FrmHienThi
 
         private void DonHangDaMua_Load(object sender, EventArgs e)
         {
-            addDonMua(xl.doDuLieuDonMua());
+            if(xl.checkDonMua())
+            {
+                DonMuaTrong donMuaTrong = new DonMuaTrong();
+                panelNoiDung.Controls.Add(donMuaTrong);
+                donMuaTrong.BringToFront();
+            }    
+            else
+            {
+                addDonMua(xl.doDuLieuDonMua());
+            }    
+            
         }
 
         private void addDonMua(DataTable dt) 
@@ -75,6 +86,11 @@ namespace Home.FrmCon.FrmHienThi
                 }
                 txtTimKiem.Text = "";
             }
+        }
+
+        private void panelNoiDung_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

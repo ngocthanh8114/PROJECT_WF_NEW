@@ -54,6 +54,7 @@
             this.guna2Panel9 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel10 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel12 = new Guna.UI2.WinForms.Guna2Panel();
+            this.lblSoDT = new Guna.UI2.WinForms.Guna2HtmlLabel();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel6.SuspendLayout();
@@ -74,7 +75,7 @@
             this.txt_SDT.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_SDT.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
             this.txt_SDT.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_SDT.Location = new System.Drawing.Point(60, 250);
+            this.txt_SDT.Location = new System.Drawing.Point(28, 248);
             this.txt_SDT.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_SDT.Name = "txt_SDT";
             this.txt_SDT.PasswordChar = '\0';
@@ -95,7 +96,7 @@
             this.txt_HoTen.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_HoTen.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
             this.txt_HoTen.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_HoTen.Location = new System.Drawing.Point(59, 82);
+            this.txt_HoTen.Location = new System.Drawing.Point(29, 77);
             this.txt_HoTen.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_HoTen.Name = "txt_HoTen";
             this.txt_HoTen.PasswordChar = '\0';
@@ -195,14 +196,14 @@
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(497, 416);
+            this.guna2Panel1.Size = new System.Drawing.Size(497, 411);
             this.guna2Panel1.TabIndex = 2;
             // 
             // guna2Panel11
             // 
             this.guna2Panel11.BackColor = System.Drawing.Color.Gainsboro;
             this.guna2Panel11.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.guna2Panel11.Location = new System.Drawing.Point(2, 415);
+            this.guna2Panel11.Location = new System.Drawing.Point(2, 410);
             this.guna2Panel11.Name = "guna2Panel11";
             this.guna2Panel11.Size = new System.Drawing.Size(493, 1);
             this.guna2Panel11.TabIndex = 16;
@@ -213,7 +214,7 @@
             this.guna2Panel6.Controls.Add(this.btnHuy);
             this.guna2Panel6.Controls.Add(this.btn_Luu);
             this.guna2Panel6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel6.Location = new System.Drawing.Point(2, 330);
+            this.guna2Panel6.Location = new System.Drawing.Point(2, 323);
             this.guna2Panel6.Name = "guna2Panel6";
             this.guna2Panel6.Size = new System.Drawing.Size(493, 87);
             this.guna2Panel6.TabIndex = 12;
@@ -257,7 +258,7 @@
             // 
             this.guna2Panel3.BackColor = System.Drawing.Color.DimGray;
             this.guna2Panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel3.Location = new System.Drawing.Point(2, 326);
+            this.guna2Panel3.Location = new System.Drawing.Point(2, 319);
             this.guna2Panel3.Name = "guna2Panel3";
             this.guna2Panel3.Size = new System.Drawing.Size(493, 4);
             this.guna2Panel3.TabIndex = 8;
@@ -277,7 +278,7 @@
             this.guna2Panel8.Controls.Add(this.guna2PictureBox2);
             this.guna2Panel8.Controls.Add(this.gunaLabel6);
             this.guna2Panel8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel8.Location = new System.Drawing.Point(2, 326);
+            this.guna2Panel8.Location = new System.Drawing.Point(2, 319);
             this.guna2Panel8.Name = "guna2Panel8";
             this.guna2Panel8.Size = new System.Drawing.Size(493, 0);
             this.guna2Panel8.TabIndex = 9;
@@ -406,6 +407,7 @@
             this.pn_NoiDungSua.BorderColor = System.Drawing.Color.White;
             this.pn_NoiDungSua.BorderRadius = 15;
             this.pn_NoiDungSua.BorderThickness = 3;
+            this.pn_NoiDungSua.Controls.Add(this.lblSoDT);
             this.pn_NoiDungSua.Controls.Add(this.txtDiaChi);
             this.pn_NoiDungSua.Controls.Add(this.txt_SDT);
             this.pn_NoiDungSua.Controls.Add(this.guna2Shapes1);
@@ -415,7 +417,7 @@
             this.pn_NoiDungSua.Dock = System.Windows.Forms.DockStyle.Top;
             this.pn_NoiDungSua.Location = new System.Drawing.Point(2, 2);
             this.pn_NoiDungSua.Name = "pn_NoiDungSua";
-            this.pn_NoiDungSua.Size = new System.Drawing.Size(493, 324);
+            this.pn_NoiDungSua.Size = new System.Drawing.Size(493, 317);
             this.pn_NoiDungSua.TabIndex = 7;
             // 
             // txtDiaChi
@@ -430,7 +432,7 @@
             this.txtDiaChi.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtDiaChi.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
             this.txtDiaChi.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtDiaChi.Location = new System.Drawing.Point(60, 166);
+            this.txtDiaChi.Location = new System.Drawing.Point(28, 159);
             this.txtDiaChi.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtDiaChi.Name = "txtDiaChi";
             this.txtDiaChi.PasswordChar = '\0';
@@ -445,7 +447,7 @@
             this.guna2Panel9.Dock = System.Windows.Forms.DockStyle.Right;
             this.guna2Panel9.Location = new System.Drawing.Point(495, 2);
             this.guna2Panel9.Name = "guna2Panel9";
-            this.guna2Panel9.Size = new System.Drawing.Size(2, 414);
+            this.guna2Panel9.Size = new System.Drawing.Size(2, 409);
             this.guna2Panel9.TabIndex = 14;
             // 
             // guna2Panel10
@@ -454,7 +456,7 @@
             this.guna2Panel10.Dock = System.Windows.Forms.DockStyle.Left;
             this.guna2Panel10.Location = new System.Drawing.Point(0, 2);
             this.guna2Panel10.Name = "guna2Panel10";
-            this.guna2Panel10.Size = new System.Drawing.Size(2, 414);
+            this.guna2Panel10.Size = new System.Drawing.Size(2, 409);
             this.guna2Panel10.TabIndex = 15;
             // 
             // guna2Panel12
@@ -466,11 +468,23 @@
             this.guna2Panel12.Size = new System.Drawing.Size(497, 2);
             this.guna2Panel12.TabIndex = 17;
             // 
+            // lblSoDT
+            // 
+            this.lblSoDT.AutoSize = false;
+            this.lblSoDT.BackColor = System.Drawing.Color.Transparent;
+            this.lblSoDT.ForeColor = System.Drawing.Color.Red;
+            this.lblSoDT.Location = new System.Drawing.Point(28, 216);
+            this.lblSoDT.Name = "lblSoDT";
+            this.lblSoDT.Size = new System.Drawing.Size(1085, 25);
+            this.lblSoDT.TabIndex = 62;
+            this.lblSoDT.Text = "SĐT không bao gồm chữ và ký tự đặc biệt (10-11 ký tự).";
+            this.lblSoDT.Visible = false;
+            // 
             // FrmSuaDiaChi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(497, 416);
+            this.ClientSize = new System.Drawing.Size(497, 411);
             this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmSuaDiaChi";
@@ -517,5 +531,6 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel12;
         private Guna.UI2.WinForms.Guna2TextBox txtDiaChi;
         private Guna.UI.WinForms.GunaAdvenceButton btnHuy;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblSoDT;
     }
 }

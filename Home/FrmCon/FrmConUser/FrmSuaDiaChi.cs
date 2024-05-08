@@ -49,11 +49,10 @@ namespace Home.FrmCon.FrmHienThi
                     frmBaoLoi.hienThiLoi("Vui lòng nhập đầy đủ thông tin!");
                     frmBaoLoi.Show();
                 }
-                else if (check == false)
+                else if (!xl.checkSDT(txt_SDT.Text) || check == false)
                 {
-                    FrmBaoLoi frmBaoLoi = new FrmBaoLoi();
-                    frmBaoLoi.hienThiLoi("Vui lòng kiểm tra lại số điện thoại!");
-                    frmBaoLoi.Show();
+                    lblSoDT.Visible = true;
+                    return;
                 }
                 else
                 {
