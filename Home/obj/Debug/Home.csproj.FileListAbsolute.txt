@@ -1117,11 +1117,9 @@ D:\VS Code\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.UCThan
 D:\VS Code\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.UCThanhPhan.UCTaiKhoanAdmin.resources
 D:\VS Code\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.DichVu.resources
 D:\VS Code\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.GioiThieu.resources
-<<<<<<< HEAD
 >>>>>>> 5c88e87d5ceaaa151f5dfbdd2bc8fa8b89c3e0ae
 D:\CODE C#\PROJECT\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.DichVu.resources
 D:\CODE C#\PROJECT\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.GioiThieu.resources
-=======
 C:\Users\PC\OneDrive\Desktop\New folder\PROJECT_WF_NEW\Home\obj\Debug\Home.csproj.AssemblyReference.cache
 C:\Users\PC\OneDrive\Desktop\New folder\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmAdmin.resources
 C:\Users\PC\OneDrive\Desktop\New folder\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmBaoCao.UCBaoCaoHoaDon.resources
@@ -1207,3 +1205,13 @@ C:\Users\PC\OneDrive\Desktop\New folder\PROJECT_WF_NEW\Home\bin\Debug\stdole.dll
 C:\Users\PC\OneDrive\Desktop\New folder\PROJECT_WF_NEW\Home\obj\Debug\Home.csproj.Up2Date
 C:\Users\PC\OneDrive\Desktop\New folder\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.FrmDichVu.FrmXuLi.resources
 >>>>>>> 3cabacafe36140d8c841c493313dedf01c7d2bf2
+D:\CODE C#\PROJECT\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.FrmDichVu.FrmXuLi.resources
+D:\CODE C#\PROJECT\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.UCThanhPhan.OBaoDuongXeMay.resources
+D:\CODE C#\PROJECT\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.UCThanhPhan.OCuuHo.resources
+D:\CODE C#\PROJECT\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.UCThanhPhan.ODanNilon.resources
+D:\CODE C#\PROJECT\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.UCThanhPhan.OPhucHoiXeMay.resources
+D:\CODE C#\PROJECT\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.UCThanhPhan.OTanTrangXeMay.resources
+D:\CODE C#\PROJECT\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.UCThanhPhan.OTatCaDichVu.resources
+D:\CODE C#\PROJECT\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.UCThanhPhan.OXuLiDichVu.resources
+D:\CODE C#\PROJECT\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.UCThanhPhan.DichVuAdmin.resources
+D:\CODE C#\PROJECT\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.UCDichVu_BaoHanh.resources
