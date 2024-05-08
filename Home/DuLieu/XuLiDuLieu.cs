@@ -1113,7 +1113,7 @@ namespace Home.DuLieu
         }
         public bool SuaHang = false;
         //Sửa sản phẩm
-        public void SuaThongTinSanPhamAdmin(string MaNCC, string TenSP, string MaLoai, int SoLuongCu,int SoLuongMoi, string Gia, string MaSP, Image hinhAnh, DateTime ngaynhaphang)
+        public void SuaThongTinSanPhamAdmin(string MaNCC, string TenSP, string MaLoai, int SoLuongCu,int SoLuongMoi, string Gia, string MaSP, Image hinhAnh, int BaoHanh, DateTime ngaynhaphang)
         {
             if(string.IsNullOrWhiteSpace(MaNCC) || string.IsNullOrWhiteSpace(TenSP) || string.IsNullOrWhiteSpace(MaLoai) || string.IsNullOrWhiteSpace(SoLuongCu.ToString()) || string.IsNullOrWhiteSpace(Gia) || hinhAnh == null)
             {
@@ -1125,7 +1125,7 @@ namespace Home.DuLieu
             {
                 // Sửa
                 kn.myConnect();
-                string sql = "UPDATE SanPham SET MaNCC= @MaNCC, TenSP= @TenSP, MaLoai= @MaLoai, SoLuong= @SoLuong, Gia= @Gia, HinhAnh =@HinhAnh WHERE MaSP= @MaSP";
+                string sql = "UPDATE SanPham SET MaNCC= @MaNCC, TenSP= @TenSP, MaLoai= @MaLoai, SoLuong= @SoLuong, Gia= @Gia, HinhAnh =@HinhAnh, BaoHanh = @BaoHanh WHERE MaSP= @MaSP";
                 SqlCommand cmd = new SqlCommand(sql, conn);
                 cmd.Parameters.AddWithValue("MaNCC", MaNCC);
                 cmd.Parameters.AddWithValue("TenSP", TenSP);
@@ -1135,6 +1135,7 @@ namespace Home.DuLieu
                 cmd.Parameters.AddWithValue("MaSP", MaSP);
                 byte[] bytes = ImageToByte(hinhAnh);
                 cmd.Parameters.AddWithValue("HinhAnh", bytes);
+                cmd.Parameters.AddWithValue("BaoHanh", BaoHanh);
                 cmd.ExecuteNonQuery();
 
                 //---------------------------------------------
@@ -1217,12 +1218,12 @@ namespace Home.DuLieu
             return Regex.IsMatch(sdt, @"^[0-9]{1,50}$");
         }
         public bool NhapHang = false;
-        public void NhapHangAdmin(string MaSP, string TenSP, string Gia,string MaNCC, string SoLuong, Image Anh, string MaLoai, Guna2HtmlLabel gia, Guna2HtmlLabel soluong, DateTime ngaynhaphang)
+        public void NhapHangAdmin(string MaSP, string TenSP, string Gia,string MaNCC, string SoLuong, Image Anh, string MaLoai, int BaoHanh, Guna2HtmlLabel gia, Guna2HtmlLabel soluong, DateTime ngaynhaphang)
         {
-            if ((string.IsNullOrWhiteSpace(MaSP) || string.IsNullOrWhiteSpace(TenSP) || string.IsNullOrWhiteSpace(Gia) || string.IsNullOrWhiteSpace(MaNCC) || string.IsNullOrWhiteSpace(SoLuong) || Anh == null || string.IsNullOrWhiteSpace(MaLoai)))
+            if ((string.IsNullOrWhiteSpace(MaSP) || string.IsNullOrWhiteSpace(TenSP) || string.IsNullOrWhiteSpace(Gia) || string.IsNullOrWhiteSpace(MaNCC) || string.IsNullOrWhiteSpace(SoLuong) || Anh == null || string.IsNullOrWhiteSpace(MaLoai) || SoLuong == "0"))
             {
                 FrmBaoLoi frmBaoLoi = new FrmBaoLoi();
-                frmBaoLoi.hienThiLoi("Bạn chưa nhập đầy đủ thông tin!");
+                frmBaoLoi.hienThiLoi("Bạn chưa nhập đầy đủ thông tin hoặc số lượng không hợp lệ!");
                 frmBaoLoi.Show();
             }
             else
@@ -1248,7 +1249,7 @@ namespace Home.DuLieu
                 kn.myConnect();
                 try
                 {
-                    string sql1 = "INSERT INTO SanPham VALUES (@MaSP, @TenSP, @Gia, @MaNCC, @SoLuong, @HinhAnh, @MaLoai)";
+                    string sql1 = "INSERT INTO SanPham VALUES (@MaSP, @TenSP, @Gia, @MaNCC, @SoLuong, @HinhAnh, @MaLoai, @BaoHanh)";
                     SqlCommand cmd1 = kn.con.CreateCommand();
                     cmd1.CommandText = sql1;
 
@@ -1280,6 +1281,10 @@ namespace Home.DuLieu
                     SqlParameter sqlParameter7 = new SqlParameter("@MaLoai", SqlDbType.NChar, 10);
                     sqlParameter7.Value = MaLoai;
                     cmd1.Parameters.Add(sqlParameter7);
+
+                    SqlParameter sqlParameter8 = new SqlParameter("@BaoHanh", SqlDbType.Int, 10);
+                    sqlParameter8.Value = BaoHanh;
+                    cmd1.Parameters.Add(sqlParameter8);
 
                     //-----------------------
 
