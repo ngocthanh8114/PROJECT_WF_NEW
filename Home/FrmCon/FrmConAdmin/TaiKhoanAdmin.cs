@@ -25,29 +25,28 @@ namespace Home.FrmCon.FrmConAdmin
             panelTopXe.Controls.Clear();
         }
         static XuLiDuLieu xl = new XuLiDuLieu();
-        private void TaiKhoanAdmin_Load(object sender, EventArgs e)
+        public void TaiKhoanAdmin_Load(object sender, EventArgs e)
         {
             
             btnThongTin_Click(sender, e); 
-            lblHoTen.Text = TaiKhoanDangNhap.tenNguoiDung;
-            lblEmail.Text = TaiKhoanDangNhap.email;
-            lblTenNguoiDung.Text = TaiKhoanDangNhap.tenNguoiDung;
-            lblTenTaiKhoan.Text = TaiKhoanDangNhap.tenTaiKhoan;
-            lblSoDT.Text = TaiKhoanDangNhap.soDienThoai;
             themTopKhach(dtpNgayKhach.Value);
             themTopXe(dtpNgayXe.Value);
             loadLoiNhac();
-
         }
 
         private void btnThongTin_Click(object sender, EventArgs e)
         {
+            UCThongTinAdmin uCThongTinAdmin = new UCThongTinAdmin();
+            panelNoiDung.Controls.Add(uCThongTinAdmin);
+            uCThongTinAdmin.BringToFront();
+
+
             btnThongTin.Checked = true;
             btnLoiNhac.Checked = false;
             btnThemTK.Checked = false;
         }
 
-        private void btnDangXuat_Click(object sender, EventArgs e)
+        /*private void btnDangXuat_Click(object sender, EventArgs e)
         {
             FrmHome frmHome = this.ParentForm as FrmHome;
             if (frmHome != null)
@@ -56,18 +55,19 @@ namespace Home.FrmCon.FrmConAdmin
             }
             FrmDangNhap dn = new FrmDangNhap();
             dn.ShowDialog();
-        }
+        }*/
 
-        private void btnSua_Click(object sender, EventArgs e)
+      /*  private void btnSua_Click(object sender, EventArgs e)
         {
             FrmCapNhatTT frmCapNhatTT = new FrmCapNhatTT();
             frmCapNhatTT.ShowDialog();
-        }
+        }*/
 
         private void themTopKhach(DateTime dateTime)
         {
             DateTime firstDayOfMonth = new DateTime(dateTime.Year, dateTime.Month, 1);
             int i = 1;
+            panelTopKhach.Controls.Clear();
             foreach (DataRow row in xl.doDuLieuTopKhachHang(firstDayOfMonth).Rows)
             {
                 string ten = row[1].ToString();
@@ -107,6 +107,7 @@ namespace Home.FrmCon.FrmConAdmin
             
             DateTime firstDayOfMonth = new DateTime(dateTime.Year, dateTime.Month, 1);
             int i = 1;
+            panelTopXe.Controls.Clear();
             foreach (DataRow row in xl.doDuLieuTopXe(firstDayOfMonth).Rows)
             {
                 string ten = row[2].ToString();
@@ -154,6 +155,10 @@ namespace Home.FrmCon.FrmConAdmin
 
         private void btnThemTK_Click(object sender, EventArgs e)
         {
+            UCTaiKhoanAdmin uCTaiKhoanAdmin = new UCTaiKhoanAdmin();
+            panelNoiDung.Controls.Add(uCTaiKhoanAdmin);
+            uCTaiKhoanAdmin.BringToFront();
+
             btnThongTin.Checked = false;
             btnLoiNhac.Checked = false;
             btnThemTK.Checked = true;
@@ -161,14 +166,32 @@ namespace Home.FrmCon.FrmConAdmin
 
         private void btnLoiNhac_Click(object sender, EventArgs e)
         {
+            int flag;
+            if(btnThongTin.Checked == true)
+            {
+                flag = 1;
+            }
+            else
+            {
+                flag = 2;
+            }   
             btnThongTin.Checked = false;
             btnLoiNhac.Checked = true;
             btnThemTK.Checked = false;
             FrmThemLoiNhac frmThemLoiNhac = new FrmThemLoiNhac();
             frmThemLoiNhac.ShowDialog();
-            btnThongTin.Checked = true;
-            btnLoiNhac.Checked = false;
-            btnThemTK.Checked = false;
+            if(flag == 1)
+            {
+                btnThongTin.Checked = true;
+                btnLoiNhac.Checked = false;
+                btnThemTK.Checked = false;
+            }    
+            else
+            {
+                btnThongTin.Checked = false;
+                btnLoiNhac.Checked = false;
+                btnThemTK.Checked = true;
+            }    
             bangLoiNhac = xl.doLoiNhac();
             btnPrevious_Click(sender, e);
         }

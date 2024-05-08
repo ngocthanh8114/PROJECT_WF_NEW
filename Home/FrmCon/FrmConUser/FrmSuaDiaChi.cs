@@ -43,7 +43,7 @@ namespace Home.FrmCon.FrmHienThi
             bool check = int.TryParse(txt_SDT.Text, out number);
             if (flag == 0)
             {
-                if (txt_HoTen.Text == "" || txtDiaChi.Text == "" || txt_SDT.Text == "")
+                if (string.IsNullOrWhiteSpace(txt_HoTen.Text) || string.IsNullOrWhiteSpace(txtDiaChi.Text) || string.IsNullOrWhiteSpace(txt_SDT.Text))
                 {
                     FrmBaoLoi frmBaoLoi = new FrmBaoLoi();
                     frmBaoLoi.hienThiLoi("Vui lòng nhập đầy đủ thông tin!");
@@ -69,7 +69,7 @@ namespace Home.FrmCon.FrmHienThi
             else
             {
                 check = int.TryParse(txt_SDT.Text, out number);
-                if (txt_HoTen.Text == "" || txtDiaChi.Text == "" || txt_SDT.Text == "")
+                if (string.IsNullOrWhiteSpace(txt_HoTen.Text) || string.IsNullOrWhiteSpace(txtDiaChi.Text) || string.IsNullOrWhiteSpace(txt_SDT.Text))
                 {
                     FrmBaoLoi frmBaoLoi = new FrmBaoLoi();
                     frmBaoLoi.hienThiLoi("Vui lòng nhập đầy đủ thông tin!");

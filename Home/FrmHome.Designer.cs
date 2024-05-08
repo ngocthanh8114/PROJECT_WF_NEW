@@ -100,7 +100,7 @@
             this.btnTaiKhoan.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnTaiKhoan.Dock = System.Windows.Forms.DockStyle.Left;
             this.btnTaiKhoan.FocusedColor = System.Drawing.Color.Empty;
-            this.btnTaiKhoan.Font = new System.Drawing.Font("UTM Facebook", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTaiKhoan.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTaiKhoan.ForeColor = System.Drawing.Color.White;
             this.btnTaiKhoan.Image = null;
             this.btnTaiKhoan.ImageSize = new System.Drawing.Size(20, 20);
@@ -134,7 +134,7 @@
             this.btnDichVu.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnDichVu.Dock = System.Windows.Forms.DockStyle.Left;
             this.btnDichVu.FocusedColor = System.Drawing.Color.Empty;
-            this.btnDichVu.Font = new System.Drawing.Font("UTM Facebook", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDichVu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDichVu.ForeColor = System.Drawing.Color.White;
             this.btnDichVu.Image = null;
             this.btnDichVu.ImageSize = new System.Drawing.Size(20, 20);
@@ -151,6 +151,7 @@
             this.btnDichVu.TabIndex = 3;
             this.btnDichVu.Text = "Dịch vụ";
             this.btnDichVu.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnDichVu.Click += new System.EventHandler(this.btnDichVu_Click);
             // 
             // btnDonHang
             // 
@@ -167,7 +168,7 @@
             this.btnDonHang.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnDonHang.Dock = System.Windows.Forms.DockStyle.Left;
             this.btnDonHang.FocusedColor = System.Drawing.Color.Empty;
-            this.btnDonHang.Font = new System.Drawing.Font("UTM Facebook", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDonHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDonHang.ForeColor = System.Drawing.Color.White;
             this.btnDonHang.Image = null;
             this.btnDonHang.ImageSize = new System.Drawing.Size(20, 20);
@@ -201,7 +202,7 @@
             this.btnSanPham.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnSanPham.Dock = System.Windows.Forms.DockStyle.Left;
             this.btnSanPham.FocusedColor = System.Drawing.Color.Empty;
-            this.btnSanPham.Font = new System.Drawing.Font("UTM Facebook", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSanPham.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSanPham.ForeColor = System.Drawing.Color.White;
             this.btnSanPham.Image = null;
             this.btnSanPham.ImageSize = new System.Drawing.Size(20, 20);
@@ -235,7 +236,7 @@
             this.btnGioiThieu.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnGioiThieu.Dock = System.Windows.Forms.DockStyle.Left;
             this.btnGioiThieu.FocusedColor = System.Drawing.Color.Empty;
-            this.btnGioiThieu.Font = new System.Drawing.Font("UTM Facebook", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGioiThieu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGioiThieu.ForeColor = System.Drawing.Color.White;
             this.btnGioiThieu.Image = null;
             this.btnGioiThieu.ImageSize = new System.Drawing.Size(20, 20);

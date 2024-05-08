@@ -70,18 +70,14 @@ namespace Home
 
         private void btnGioiThieu_Click(object sender, EventArgs e)
         {
-            if(!flagDangNhap)
-            {
-                
-            }    
-            /*GioiThieu gt = new GioiThieu();
-            addHienThi(gt);
+            addHienThi(TongForm.GioiThieu);
+            TongForm.GioiThieu.GioiThieu_Load(TongForm.GioiThieu, e);
             btnGioiThieu.Checked = true;
             btnSanPham.Checked = false;
             btnDichVu.Checked = false;
             btnDonHang.Checked = false;
             btnTaiKhoan.Checked = false;
-            //btnGioiThieu.Enabled = false;*/
+            btnGioiThieu.Enabled = false;
         }
 
         public void btnSanPham_Click(object sender, EventArgs e)
@@ -117,6 +113,18 @@ namespace Home
             btnDichVu.Checked = false;
             btnDonHang.Checked = false;
             btnTaiKhoan.Checked = true;
+        }
+
+        private void btnDichVu_Click(object sender, EventArgs e)
+        {
+            addHienThi(TongForm.DichVu);
+            TongForm.DichVu.DichVu_Load(TongForm.DichVu, e);
+            btnGioiThieu.Checked = false;
+            btnSanPham.Checked = false;
+            btnDichVu.Checked = true;
+            btnDonHang.Checked = false;
+            btnTaiKhoan.Checked = false;
+            btnGioiThieu.Enabled = false;
         }
 
         /*thử commit*/

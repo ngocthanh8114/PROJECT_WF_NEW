@@ -89,9 +89,9 @@ namespace Home.FrmCon.FrmHienThi
         {
             int number;
             bool check = int.TryParse(txtSDT.Text, out number);
-            if (txtHoTen.Text != "" && (txtSDT.Text != "" && txtDiaChi.Text != ""))
+            if (!(string.IsNullOrWhiteSpace(txtHoTen.Text) && string.IsNullOrWhiteSpace(txtSDT.Text) && string.IsNullOrWhiteSpace(txtDiaChi.Text)))
             {
-                if (txtEmail.Text == "" || xl.CheckEmail(txtEmail.Text))
+                if (!string.IsNullOrWhiteSpace(txtEmail.Text) || xl.CheckEmail(txtEmail.Text))
                 {
                     if (check == true && (txtSDT.Text.Length == 10 || txtSDT.Text.Length == 11))
                     {
