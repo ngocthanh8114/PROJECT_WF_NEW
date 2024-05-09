@@ -161,6 +161,7 @@ namespace Home.FrmCon
                 panelNoiDung.Controls.Clear();
                 addDonHang(xl.doDuLieu());
                 loadGiaTien();
+                TongForm.DonHang.cbDieuKhoan_Click(sender, e);
             }
             
 

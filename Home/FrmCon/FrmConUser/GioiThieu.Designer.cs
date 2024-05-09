@@ -232,7 +232,7 @@
             // 
             this.lblNoiDungKhauHieu.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblNoiDungKhauHieu.BackColor = System.Drawing.Color.Transparent;
-            this.lblNoiDungKhauHieu.Font = new System.Drawing.Font("UVN Nhan", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNoiDungKhauHieu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNoiDungKhauHieu.Location = new System.Drawing.Point(666, 35);
             this.lblNoiDungKhauHieu.Name = "lblNoiDungKhauHieu";
             this.lblNoiDungKhauHieu.Size = new System.Drawing.Size(529, 135);
@@ -243,7 +243,7 @@
             // 
             this.lblKhauHieu.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblKhauHieu.BackColor = System.Drawing.Color.Transparent;
-            this.lblKhauHieu.Font = new System.Drawing.Font("UVN Nhan", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblKhauHieu.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblKhauHieu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.lblKhauHieu.Location = new System.Drawing.Point(92, 84);
             this.lblKhauHieu.Name = "lblKhauHieu";
@@ -311,7 +311,7 @@
             // 
             // uuDiemNhanVien
             // 
-            this.uuDiemNhanVien.Font = new System.Drawing.Font("UTM Facebook", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uuDiemNhanVien.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uuDiemNhanVien.Location = new System.Drawing.Point(0, 4);
             this.uuDiemNhanVien.Name = "uuDiemNhanVien";
             this.uuDiemNhanVien.Size = new System.Drawing.Size(205, 129);
@@ -373,7 +373,7 @@
             // 
             // uuDiemSoLuong
             // 
-            this.uuDiemSoLuong.Font = new System.Drawing.Font("UTM Facebook", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uuDiemSoLuong.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uuDiemSoLuong.Location = new System.Drawing.Point(3, 4);
             this.uuDiemSoLuong.Name = "uuDiemSoLuong";
             this.uuDiemSoLuong.Size = new System.Drawing.Size(200, 126);
@@ -394,7 +394,7 @@
             this.grpGioiThieu.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.grpGioiThieu.Controls.Add(this.lblNoiDungTL);
             this.grpGioiThieu.Controls.Add(this.lblTL);
-            this.grpGioiThieu.Font = new System.Drawing.Font("UTM Futura Extra", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpGioiThieu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpGioiThieu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             this.grpGioiThieu.Location = new System.Drawing.Point(35, 39);
             this.grpGioiThieu.Name = "grpGioiThieu";
@@ -405,7 +405,7 @@
             // lblNoiDungTL
             // 
             this.lblNoiDungTL.BackColor = System.Drawing.SystemColors.Control;
-            this.lblNoiDungTL.Font = new System.Drawing.Font("UVN Nhan", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNoiDungTL.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNoiDungTL.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             this.lblNoiDungTL.Location = new System.Drawing.Point(19, 101);
             this.lblNoiDungTL.Name = "lblNoiDungTL";
@@ -416,7 +416,7 @@
             // 
             // lblTL
             // 
-            this.lblTL.Font = new System.Drawing.Font("UVN Nhan", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTL.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTL.Location = new System.Drawing.Point(15, 50);
             this.lblTL.Name = "lblTL";
             this.lblTL.Size = new System.Drawing.Size(315, 347);
@@ -428,7 +428,7 @@
             // 
             this.lblGioiThieu.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblGioiThieu.BackColor = System.Drawing.Color.Transparent;
-            this.lblGioiThieu.Font = new System.Drawing.Font("UVN Nhan", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGioiThieu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblGioiThieu.Location = new System.Drawing.Point(416, 95);
             this.lblGioiThieu.Name = "lblGioiThieu";
             this.lblGioiThieu.Size = new System.Drawing.Size(685, 177);
@@ -440,10 +440,10 @@
             this.lblThuongHieu.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblThuongHieu.AutoSize = true;
             this.lblThuongHieu.BackColor = System.Drawing.Color.Transparent;
-            this.lblThuongHieu.Font = new System.Drawing.Font("UTM Futura Extra", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblThuongHieu.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblThuongHieu.Location = new System.Drawing.Point(585, 39);
             this.lblThuongHieu.Name = "lblThuongHieu";
-            this.lblThuongHieu.Size = new System.Drawing.Size(331, 56);
+            this.lblThuongHieu.Size = new System.Drawing.Size(339, 46);
             this.lblThuongHieu.TabIndex = 9;
             this.lblThuongHieu.Text = "SMOTORCYCLE";
             // 
@@ -518,7 +518,7 @@
             // lblCopyright
             // 
             this.lblCopyright.BackColor = System.Drawing.Color.Transparent;
-            this.lblCopyright.Font = new System.Drawing.Font("UVN Nhan", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCopyright.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCopyright.Location = new System.Drawing.Point(1136, 17);
             this.lblCopyright.Name = "lblCopyright";
             this.lblCopyright.Size = new System.Drawing.Size(431, 42);
@@ -598,7 +598,7 @@
             // lblTenCongTy
             // 
             this.lblTenCongTy.BackColor = System.Drawing.Color.Transparent;
-            this.lblTenCongTy.Font = new System.Drawing.Font("UVN Nhan", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTenCongTy.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTenCongTy.Location = new System.Drawing.Point(60, 17);
             this.lblTenCongTy.Name = "lblTenCongTy";
             this.lblTenCongTy.Size = new System.Drawing.Size(342, 42);
@@ -608,7 +608,7 @@
             // lblDuongDayNong
             // 
             this.lblDuongDayNong.BackColor = System.Drawing.Color.Transparent;
-            this.lblDuongDayNong.Font = new System.Drawing.Font("UVN Nhan", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDuongDayNong.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDuongDayNong.Location = new System.Drawing.Point(533, 17);
             this.lblDuongDayNong.Name = "lblDuongDayNong";
             this.lblDuongDayNong.Size = new System.Drawing.Size(227, 30);

@@ -217,19 +217,5 @@ namespace Home.FrmCon.FrmHienThi
             txtDiaChi.Text = diaChi;
         }
 
-        private void txtEmail_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panelNoiDung_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void lblMaDH_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

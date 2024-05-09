@@ -28,6 +28,16 @@ namespace Home.FrmCon
         public void DichVu_Load(object sender, EventArgs e)
         {
             dtpNgayMua.Value = DateTime.Now;
+            if (cboLoaiDV.SelectedIndex != 5)
+            {
+                txtDiaChi.Text = "Phường Linh Chiểu, Thành Phố Thủ Đức, Thành phố Hồ Chí Minh, Việt Nam";
+                txtDiaChi.ReadOnly = true;
+            }
+            else
+            {
+                txtDiaChi.Text = "";
+                txtDiaChi.ReadOnly = false;
+            }
         }
 
         private void btnThem_Click(object sender, EventArgs e)
@@ -50,6 +60,11 @@ namespace Home.FrmCon
                 txtSDT.ResetText();
                 cboLoaiDV.SelectedIndex = -1;
             }
+        }
+
+        private void cboLoaiDV_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            DichVu_Load(sender, e);
         }
     }
 }

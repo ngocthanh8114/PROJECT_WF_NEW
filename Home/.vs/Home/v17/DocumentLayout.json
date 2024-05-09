@@ -3,24 +3,16 @@
   "WorkspaceRootPath": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|e:\\study\\nam_2_ki_2\\lap_trinh_windows\\banxemay\\project_wf_new\\home\\frmcon\\frmconuser\\taikhoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|solutionrelative:frmcon\\frmconuser\\taikhoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|e:\\study\\nam_2_ki_2\\lap_trinh_windows\\banxemay\\project_wf_new\\home\\frmcon\\frmconadmin\\ucdichvu\u0026baohanh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|solutionrelative:frmcon\\frmconadmin\\ucdichvu\u0026baohanh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|e:\\study\\nam_2_ki_2\\lap_trinh_windows\\banxemay\\project_wf_new\\home\\frmhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|solutionrelative:frmhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|e:\\study\\nam_2_ki_2\\lap_trinh_windows\\banxemay\\project_wf_new\\home\\frmadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|solutionrelative:frmadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|e:\\study\\nam_2_ki_2\\lap_trinh_windows\\banxemay\\project_wf_new\\home\\frmcon\\frmconuser\\frmmuahang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|solutionrelative:frmcon\\frmconuser\\frmmuahang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\frmcon\\frmconuser\\frmmuahang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|solutionrelative:frmcon\\frmconuser\\frmmuahang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\frmcon\\frmconuser\\gioithieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|solutionrelative:frmcon\\frmconuser\\gioithieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\frmadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|solutionrelative:frmadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\frmcon\\frmconuser\\donhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -31,24 +23,40 @@
       "RelativeMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|solutionrelative:frmcon\\frmconadmin\\chitietbaohanh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\frmcon\\frmconadmin\\chitietbaohanh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|solutionrelative:frmcon\\frmconadmin\\chitietbaohanh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|e:\\study\\nam_2_ki_2\\lap_trinh_windows\\banxemay\\project_wf_new\\home\\frmcon\\frmconuser\\frmmuahang.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|solutionrelative:frmcon\\frmconuser\\frmmuahang.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\frmcon\\frmconadmin\\chitietkh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|solutionrelative:frmcon\\frmconadmin\\chitietkh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\frmcon\\frmconuser\\frmmuahang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|solutionrelative:frmcon\\frmconuser\\frmmuahang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\frmadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|solutionrelative:frmadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\frmadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|solutionrelative:frmadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\frmcon\\frmconuser\\frmmuahang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|solutionrelative:frmcon\\frmconuser\\frmmuahang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\frmcon\\frmconuser\\donhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|solutionrelative:frmcon\\frmconuser\\donhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|e:\\study\\nam_2_ki_2\\lap_trinh_windows\\banxemay\\project_wf_new\\home\\frmcon\\frmconuser\\ucthanhphan\\odonhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|solutionrelative:frmcon\\frmconuser\\ucthanhphan\\odonhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\frmcon\\frmconuser\\gioithieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|solutionrelative:frmcon\\frmconuser\\gioithieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|e:\\study\\nam_2_ki_2\\lap_trinh_windows\\banxemay\\project_wf_new\\home\\frmcon\\frmconuser\\taikhoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|solutionrelative:frmcon\\frmconuser\\taikhoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\frmhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|solutionrelative:frmhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\frmcon\\frmconadmin\\chitietkh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|solutionrelative:frmcon\\frmconadmin\\chitietkh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,7 +66,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -74,102 +82,121 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FrmHome.cs [Design]",
-              "DocumentMoniker": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\FrmHome.cs",
-              "RelativeDocumentMoniker": "FrmHome.cs",
-              "ToolTip": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\FrmHome.cs [Design]",
-              "RelativeToolTip": "FrmHome.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-09T19:05:18.354Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "TaiKhoan.cs [Design]",
-              "DocumentMoniker": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmConUser\\TaiKhoan.cs",
-              "RelativeDocumentMoniker": "FrmCon\\FrmConUser\\TaiKhoan.cs",
-              "ToolTip": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmConUser\\TaiKhoan.cs [Design]",
-              "RelativeToolTip": "FrmCon\\FrmConUser\\TaiKhoan.cs [Design]",
+              "Title": "UCDichVu\u0026BaoHanh.cs [Design]",
+              "DocumentMoniker": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmConAdmin\\UCDichVu\u0026BaoHanh.cs",
+              "RelativeDocumentMoniker": "FrmCon\\FrmConAdmin\\UCDichVu\u0026BaoHanh.cs",
+              "ToolTip": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmConAdmin\\UCDichVu\u0026BaoHanh.cs [Design]",
+              "RelativeToolTip": "FrmCon\\FrmConAdmin\\UCDichVu\u0026BaoHanh.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-09T19:04:30.006Z",
+              "WhenOpened": "2024-05-09T19:47:02.067Z",
               "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FrmMuaHang.cs",
-              "DocumentMoniker": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmConUser\\FrmMuaHang.cs",
-              "RelativeDocumentMoniker": "FrmCon\\FrmConUser\\FrmMuaHang.cs",
-              "ToolTip": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmConUser\\FrmMuaHang.cs",
-              "RelativeToolTip": "FrmCon\\FrmConUser\\FrmMuaHang.cs",
-              "ViewState": "AQIAAJIAAAAAAAAAAAAswKsAAAAsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-09T18:52:21.928Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "FrmMuaHang.cs [Design]",
-              "DocumentMoniker": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmConUser\\FrmMuaHang.cs",
-              "RelativeDocumentMoniker": "FrmCon\\FrmConUser\\FrmMuaHang.cs",
-              "ToolTip": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmConUser\\FrmMuaHang.cs [Design]",
-              "RelativeToolTip": "FrmCon\\FrmConUser\\FrmMuaHang.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-09T18:52:05.785Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "GioiThieu.cs [Design]",
-              "DocumentMoniker": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmConUser\\GioiThieu.cs",
-              "RelativeDocumentMoniker": "FrmCon\\FrmConUser\\GioiThieu.cs",
-              "ToolTip": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmConUser\\GioiThieu.cs [Design]",
-              "RelativeToolTip": "FrmCon\\FrmConUser\\GioiThieu.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-09T18:51:23.041Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ChiTietBaoHanh.cs",
-              "DocumentMoniker": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmConAdmin\\ChiTietBaoHanh.cs",
-              "RelativeDocumentMoniker": "FrmCon\\FrmConAdmin\\ChiTietBaoHanh.cs",
-              "ToolTip": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmConAdmin\\ChiTietBaoHanh.cs",
-              "RelativeToolTip": "FrmCon\\FrmConAdmin\\ChiTietBaoHanh.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADwAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-09T18:46:05.489Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ChiTietBaoHanh.cs [Design]",
-              "DocumentMoniker": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmConAdmin\\ChiTietBaoHanh.cs",
-              "RelativeDocumentMoniker": "FrmCon\\FrmConAdmin\\ChiTietBaoHanh.cs",
-              "ToolTip": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmConAdmin\\ChiTietBaoHanh.cs [Design]",
-              "RelativeToolTip": "FrmCon\\FrmConAdmin\\ChiTietBaoHanh.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-09T18:46:04.175Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
               "Title": "DonHang.cs",
               "DocumentMoniker": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmConUser\\DonHang.cs",
               "RelativeDocumentMoniker": "FrmCon\\FrmConUser\\DonHang.cs",
               "ToolTip": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmConUser\\DonHang.cs",
               "RelativeToolTip": "FrmCon\\FrmConUser\\DonHang.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAArwBwAAAAIAAAA",
+              "ViewState": "AQIAAIQAAAAAAAAAAAAvwJ8AAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-09T16:07:04.232Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 4,
+              "Title": "ChiTietBaoHanh.cs",
+              "DocumentMoniker": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmConAdmin\\ChiTietBaoHanh.cs",
+              "RelativeDocumentMoniker": "FrmCon\\FrmConAdmin\\ChiTietBaoHanh.cs",
+              "ToolTip": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmConAdmin\\ChiTietBaoHanh.cs",
+              "RelativeToolTip": "FrmCon\\FrmConAdmin\\ChiTietBaoHanh.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAYwDkAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T18:46:05.489Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FrmMuaHang.Designer.cs",
+              "DocumentMoniker": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmConUser\\FrmMuaHang.Designer.cs",
+              "RelativeDocumentMoniker": "FrmCon\\FrmConUser\\FrmMuaHang.Designer.cs",
+              "ToolTip": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmConUser\\FrmMuaHang.Designer.cs",
+              "RelativeToolTip": "FrmCon\\FrmConUser\\FrmMuaHang.Designer.cs",
+              "ViewState": "AQIAALwCAAAAAAAAAAAvwNECAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T19:38:45.679Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FrmAdmin.cs [Design]",
+              "DocumentMoniker": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\FrmAdmin.cs",
+              "RelativeDocumentMoniker": "FrmAdmin.cs",
+              "ToolTip": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\FrmAdmin.cs [Design]",
+              "RelativeToolTip": "FrmAdmin.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T18:30:13.35Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FrmAdmin.cs",
+              "DocumentMoniker": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\FrmAdmin.cs",
+              "RelativeDocumentMoniker": "FrmAdmin.cs",
+              "ToolTip": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\FrmAdmin.cs",
+              "RelativeToolTip": "FrmAdmin.cs",
+              "ViewState": "AQIAAE4AAAAAAAAAAAAnwIIAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T19:32:10.199Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FrmMuaHang.cs [Design]",
+              "DocumentMoniker": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmConUser\\FrmMuaHang.cs",
+              "RelativeDocumentMoniker": "FrmCon\\FrmConUser\\FrmMuaHang.cs",
+              "ToolTip": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmConUser\\FrmMuaHang.cs [Design]",
+              "RelativeToolTip": "FrmCon\\FrmConUser\\FrmMuaHang.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T18:52:05.785Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FrmMuaHang.cs",
+              "DocumentMoniker": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmConUser\\FrmMuaHang.cs",
+              "RelativeDocumentMoniker": "FrmCon\\FrmConUser\\FrmMuaHang.cs",
+              "ToolTip": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmConUser\\FrmMuaHang.cs",
+              "RelativeToolTip": "FrmCon\\FrmConUser\\FrmMuaHang.cs",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAYwNoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T18:52:21.928Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ODonHang.cs",
+              "DocumentMoniker": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmConUser\\UCThanhPhan\\ODonHang.cs",
+              "RelativeDocumentMoniker": "FrmCon\\FrmConUser\\UCThanhPhan\\ODonHang.cs",
+              "ToolTip": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmConUser\\UCThanhPhan\\ODonHang.cs",
+              "RelativeToolTip": "FrmCon\\FrmConUser\\UCThanhPhan\\ODonHang.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAcwDYAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T19:37:57.854Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "DonHang.cs [Design]",
               "DocumentMoniker": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmConUser\\DonHang.cs",
               "RelativeDocumentMoniker": "FrmCon\\FrmConUser\\DonHang.cs",
@@ -181,7 +208,42 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
+              "Title": "TaiKhoan.cs [Design]",
+              "DocumentMoniker": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmConUser\\TaiKhoan.cs",
+              "RelativeDocumentMoniker": "FrmCon\\FrmConUser\\TaiKhoan.cs",
+              "ToolTip": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmConUser\\TaiKhoan.cs [Design]",
+              "RelativeToolTip": "FrmCon\\FrmConUser\\TaiKhoan.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T19:04:30.006Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "GioiThieu.cs [Design]",
+              "DocumentMoniker": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmConUser\\GioiThieu.cs",
+              "RelativeDocumentMoniker": "FrmCon\\FrmConUser\\GioiThieu.cs",
+              "ToolTip": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmConUser\\GioiThieu.cs [Design]",
+              "RelativeToolTip": "FrmCon\\FrmConUser\\GioiThieu.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T18:51:23.041Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "FrmHome.cs [Design]",
+              "DocumentMoniker": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\FrmHome.cs",
+              "RelativeDocumentMoniker": "FrmHome.cs",
+              "ToolTip": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\FrmHome.cs [Design]",
+              "RelativeToolTip": "FrmHome.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-05-09T19:05:18.354Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "ChiTietKH.cs",
               "DocumentMoniker": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmConAdmin\\ChiTietKH.cs",
               "RelativeDocumentMoniker": "FrmCon\\FrmConAdmin\\ChiTietKH.cs",
@@ -190,29 +252,6 @@
               "ViewState": "AQIAABYAAAAAAAAAAAAQwCgAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-09T18:28:13.416Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "FrmAdmin.cs",
-              "DocumentMoniker": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\FrmAdmin.cs",
-              "RelativeDocumentMoniker": "FrmAdmin.cs",
-              "ToolTip": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\FrmAdmin.cs",
-              "RelativeToolTip": "FrmAdmin.cs",
-              "ViewState": "AQIAAFIAAAAAAAAAAIA4wF4AAAAPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-09T18:30:14.407Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "FrmAdmin.cs [Design]",
-              "DocumentMoniker": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\FrmAdmin.cs",
-              "RelativeDocumentMoniker": "FrmAdmin.cs",
-              "ToolTip": "E:\\study\\NAM_2_KI_2\\LAP_TRINH_WINDOWS\\BanXeMay\\PROJECT_WF_NEW\\Home\\FrmAdmin.cs [Design]",
-              "RelativeToolTip": "FrmAdmin.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-09T18:30:13.35Z"
             }
           ]
         }

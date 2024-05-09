@@ -385,7 +385,6 @@
             this.panelNoiDung.Name = "panelNoiDung";
             this.panelNoiDung.Size = new System.Drawing.Size(1630, 793);
             this.panelNoiDung.TabIndex = 31;
-            this.panelNoiDung.Paint += new System.Windows.Forms.PaintEventHandler(this.panelNoiDung_Paint);
             // 
             // ChiTietBaoHanh
             // 

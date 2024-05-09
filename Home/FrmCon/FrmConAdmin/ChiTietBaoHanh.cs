@@ -48,21 +48,16 @@ namespace Home.FrmCon.FrmConAdmin
             lblSDT.Text = sdt;
             lblSP.Text = sp + " sản phẩm";
         }
-
-        private void panelNoiDung_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
         private void quayLaiKhachHang()
         {
             FrmAdmin parentForm = this.ParentForm as FrmAdmin;
 
             if (parentForm != null)
             {
-                parentForm.btnKhachHang_Click(this, EventArgs.Empty);
+                parentForm.btnDichVu_Click(this, EventArgs.Empty);
+                parentForm.
             }
         }
-
 
         public void BaoHanh_Load(object sender, EventArgs e)
         {
