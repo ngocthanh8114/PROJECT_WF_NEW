@@ -42,11 +42,15 @@ namespace Home.FrmCon.FrmHienThi
 
         private void btnLuu_Click(object sender, EventArgs e)
         {
+            if (!ValidateInput())
+            {
+                return;
+            }
+
             int SoLuongCu = xl.LaySoLuong(txtMaSP.Text);
             int SoLuongMoi = int.Parse(txtSoLuong.Text) - SoLuongCu;
             if (SoLuongMoi < 0)
             {
-                // Hiển thị thông báo hoặc xử lý lỗi khi số lượng mới là số âm
                 SoLuongMoi = 0;
             }
             try
@@ -65,13 +69,10 @@ namespace Home.FrmCon.FrmHienThi
             }
             catch(Exception ex) 
             {
-                MessageBox.Show(ex.ToString());
                 FrmBaoLoi frmBaoLoi = new FrmBaoLoi();
                 frmBaoLoi.hienThiLoi("Không thực hiện được");
                 frmBaoLoi.ShowDialog();
             }
-                
-           
         }
 
         private void btnChonAnh_Click(object sender, EventArgs e)
@@ -84,6 +85,33 @@ namespace Home.FrmCon.FrmHienThi
                 picBoxSP.ImageLocation = openFileDialog.FileName;
             }
         }
+        private bool ValidateInput()
+        {
+            int soLuong;
+            decimal gia;
+            int baoHanh;
+
+            if (!int.TryParse(txtSoLuong.Text, out soLuong) || soLuong <= 0)
+            {
+                MessageBox.Show("Số lượng sản phẩm không hợp lệ. Vui lòng nhập số lượng lớn hơn 0.", "Lỗi Nhập Liệu", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+
+            if (!decimal.TryParse(txtGia.Text, out gia) || gia <= 0)
+            {
+                MessageBox.Show("Giá sản phẩm không hợp lệ. Vui lòng nhập giá hơn 0.", "Lỗi Nhập Liệu", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+
+            if (!int.TryParse(txtBaoHanh.Text, out baoHanh) || baoHanh < 0)
+            {
+                MessageBox.Show("Thời gian bảo hành không hợp lệ. Vui lòng nhập số nguyên không âm.", "Lỗi Nhập Liệu", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+
+            return true; 
+        }
+
 
     }
 }

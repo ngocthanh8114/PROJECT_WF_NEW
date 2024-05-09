@@ -1166,11 +1166,11 @@ namespace Home.DuLieu
                 SqlCommand selectCmd = new SqlCommand(selectSql, conn);
                 selectCmd.Parameters.AddWithValue("MaSP", MaSP);
                 int count = (int)selectCmd.ExecuteScalar();
-
-                try
+                if (SoLuongMoi != 0)
                 {
-                    if(SoLuongMoi!=0)
+                    try
                     {
+                    
                         //Nhập hàng
                         string insertSql = "INSERT INTO NhapHang VALUES (@MaSP, @TenSP, @Gia, @MaNCC, @SoLuong, @HinhAnh, @MaLoai, @NgayNhapHang)";
                         SqlCommand insertCmd = new SqlCommand(insertSql, conn);
@@ -1185,16 +1185,19 @@ namespace Home.DuLieu
                         insertCmd.Parameters.AddWithValue("NgayNhapHang", ngaynhaphang);
 
                         insertCmd.ExecuteNonQuery();
-                    }    
-                    
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.ToString());
+                        FrmBaoLoi frmBaoLoi = new FrmBaoLoi();
+                        frmBaoLoi.hienThiLoi("Kiểm tra lại thông tin");
+                        frmBaoLoi.ShowDialog();
+                        return;
+                    }
+
+
                 }
-                catch(Exception ex) 
-                {
-                    MessageBox.Show(ex.ToString());
-                    FrmBaoLoi frmBaoLoi = new FrmBaoLoi();
-                    frmBaoLoi.hienThiLoi("Kiểm tra lại thông tin");
-                    frmBaoLoi.ShowDialog();
-                }
+                
 
                 FrmThongBao frmThongBao = new FrmThongBao();
                 frmThongBao.hienThiThongBao("Sửa thông tin thành công");
