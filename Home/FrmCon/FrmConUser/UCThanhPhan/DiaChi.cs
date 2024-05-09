@@ -1,4 +1,5 @@
 ﻿using Home.DuLieu;
+using Home.FrmCon.FrmConUser.UCThanhPhan.OTrong;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -38,7 +39,17 @@ namespace Home.FrmCon.FrmHienThi
         public void DiaChi_Load(object sender, EventArgs e)
         {
             panelNoiDung.Controls.Clear();
-            addDiaChi(xl.doDiaChi());
+            if(xl.checkDiaChi())
+            {
+                DiaChiTrong diaChiTrong = new DiaChiTrong();
+                panelNoiDung.Controls.Add(diaChiTrong);
+                diaChiTrong.BringToFront();       
+            }
+            else
+            {
+                addDiaChi(xl.doDiaChi());
+            }
+            
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
@@ -46,6 +57,11 @@ namespace Home.FrmCon.FrmHienThi
             FrmSuaDiaChi suaDiaChi = new FrmSuaDiaChi(this);
             suaDiaChi.ShowDialog();
             btnXoa.Checked = false;
+        }
+
+        private void panelNoiDung_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

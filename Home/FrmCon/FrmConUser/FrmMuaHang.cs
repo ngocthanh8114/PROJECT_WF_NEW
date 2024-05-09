@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using System.Xaml;
 using Home;
 using Home.DuLieu;
+using Home.FrmCon.FrmConUser.UCThanhPhan.OTrong;
 
 namespace Home.FrmCon.FrmHienThi
 {
@@ -59,19 +60,22 @@ namespace Home.FrmCon.FrmHienThi
            // RoundFormCorners(this, 5);
             lblMaDH.Text = xl.DonHangHienTai();
             MaDonHangHienTai.maDH = int.Parse(xl.DonHangHienTai());
-            foreach (DataRow row in xl.doDiaChi().Rows)
+            if(!xl.checkDiaChi())
             {
-                ODiaChi oDiaChi = new ODiaChi(this);
-                // Lấy giá trị từng cột trong hàng hiện tại
-                string diaChi = row["DiaChi"].ToString();
-                string tenKhachHang = row["TenKhachHang"].ToString();
-                string soDienThoai = row["SoDienThoai"].ToString();
-                oDiaChi.themDiaChi(tenKhachHang, soDienThoai, diaChi, 1);
-                panelNoiDung.Controls.Add(oDiaChi);
-                oDiaChi.BringToFront();
-            }
+                panelNoiDung.Controls.Clear();
+                foreach (DataRow row in xl.doDiaChi().Rows)
+                {
+                    ODiaChi oDiaChi = new ODiaChi(this);
+                    // Lấy giá trị từng cột trong hàng hiện tại
+                    string diaChi = row["DiaChi"].ToString();
+                    string tenKhachHang = row["TenKhachHang"].ToString();
+                    string soDienThoai = row["SoDienThoai"].ToString();
+                    oDiaChi.themDiaChi(tenKhachHang, soDienThoai, diaChi, 1);
+                    panelNoiDung.Controls.Add(oDiaChi);
+                    oDiaChi.BringToFront();
+                }
+            }   
             muaHangExpand = false;
-
         }
 
 
@@ -81,8 +85,6 @@ namespace Home.FrmCon.FrmHienThi
             lblPhiVanChuyen.Text = (SL*100000).ToString("N0") + " VNĐ";
             lblTong.Text = (tienHang + SL*100000).ToString("N0") + " VNĐ";
             dtpNgayMua.Text = DateTime.Now.ToString();
-
-
         }
 
         private void btnMuaHang_Click(object sender, EventArgs e)
@@ -91,7 +93,7 @@ namespace Home.FrmCon.FrmHienThi
             bool check = int.TryParse(txtSDT.Text, out number);
             if (!(string.IsNullOrWhiteSpace(txtHoTen.Text) && string.IsNullOrWhiteSpace(txtSDT.Text) && string.IsNullOrWhiteSpace(txtDiaChi.Text)))
             {
-                if (!string.IsNullOrWhiteSpace(txtEmail.Text) || xl.CheckEmail(txtEmail.Text))
+                if (string.IsNullOrWhiteSpace(txtEmail.Text) || xl.CheckEmail(txtEmail.Text))
                 {
                     if (check == true && (txtSDT.Text.Length == 10 || txtSDT.Text.Length == 11))
                     {
@@ -209,6 +211,16 @@ namespace Home.FrmCon.FrmHienThi
             txtHoTen.Text = hoTen;
             txtSDT.Text = sdt;
             txtDiaChi.Text = diaChi;
+        }
+
+        private void txtEmail_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelNoiDung_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

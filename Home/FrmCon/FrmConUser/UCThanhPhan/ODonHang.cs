@@ -21,7 +21,6 @@ namespace Home.FrmCon.FrmHienThi
         }
 
 
-        //-------------NgocThanh--------------------
         public void themDonHang(string tenSP, decimal gia, int SL, Image anh, byte TrangThai)
         {
             lblTenSP.Text = tenSP;
@@ -54,7 +53,6 @@ namespace Home.FrmCon.FrmHienThi
             }
             TongForm.DonHang.loadGiaTien();
             TongForm.DonHang.cbDieuKhoan_Click(sender, e);  
-
 
         }
 

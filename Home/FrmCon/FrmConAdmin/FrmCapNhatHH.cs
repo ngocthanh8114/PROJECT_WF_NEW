@@ -49,11 +49,11 @@ namespace Home.FrmCon.FrmHienThi
                 string maloai = cboMaLoai.SelectedValue.ToString();
                 string mancc = cboMaNCC.SelectedValue.ToString();
                 xl.Connection_CSDL();
-                xl.SuaThongTinSanPhamAdmin(mancc, txtTenSP.Text, maloai, int.Parse(txtSoLuong.Text), SoLuongMoi, txtGia.Text, txtMaSP.Text, picBoxSP.Image, dtNgayNhapHang.Value);
+                xl.SuaThongTinSanPhamAdmin(mancc, txtTenSP.Text, maloai, int.Parse(txtSoLuong.Text), SoLuongMoi, txtGia.Text, txtMaSP.Text, picBoxSP.Image, Int32.Parse(txtBaoHanh.Text), dtNgayNhapHang.Value);
 
                 if (xl.SuaHang)
                 {
-                    txtTenSP.Text = txtSoLuong.Text = txtGia.Text = txtMaSP.Text = "";
+                    txtTenSP.Text = txtSoLuong.Text = txtGia.Text = txtMaSP.Text = txtBaoHanh.Text = "";
                     picBoxSP.Image = null;
                     TongForm.SanPhamAdmin.SanPhamAdmin_Load(TongForm.SanPhamAdmin, e);
                 }

@@ -30,10 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DiaChi));
             this.guna2Panel8 = new Guna.UI2.WinForms.Guna2Panel();
-            this.btnXoa = new Guna.UI.WinForms.GunaAdvenceButton();
             this.label4 = new System.Windows.Forms.Label();
             this.guna2Panel9 = new Guna.UI2.WinForms.Guna2Panel();
             this.panelNoiDung = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnXoa = new Guna.UI.WinForms.GunaAdvenceButton();
             this.guna2Panel8.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -48,6 +48,36 @@
             this.guna2Panel8.Name = "guna2Panel8";
             this.guna2Panel8.Size = new System.Drawing.Size(1174, 75);
             this.guna2Panel8.TabIndex = 21;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Montserrat", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(33, 23);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(188, 32);
+            this.label4.TabIndex = 16;
+            this.label4.Text = "Địa chỉ của tôi";
+            // 
+            // guna2Panel9
+            // 
+            this.guna2Panel9.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.guna2Panel9.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.guna2Panel9.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2Panel9.Location = new System.Drawing.Point(0, 75);
+            this.guna2Panel9.Name = "guna2Panel9";
+            this.guna2Panel9.Size = new System.Drawing.Size(1174, 4);
+            this.guna2Panel9.TabIndex = 22;
+            // 
+            // panelNoiDung
+            // 
+            this.panelNoiDung.AutoScroll = true;
+            this.panelNoiDung.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelNoiDung.Location = new System.Drawing.Point(0, 79);
+            this.panelNoiDung.Name = "panelNoiDung";
+            this.panelNoiDung.Size = new System.Drawing.Size(1174, 736);
+            this.panelNoiDung.TabIndex = 23;
+            this.panelNoiDung.Paint += new System.Windows.Forms.PaintEventHandler(this.panelNoiDung_Paint);
             // 
             // btnXoa
             // 
@@ -83,35 +113,6 @@
             this.btnXoa.Text = "Thêm địa chỉ mới";
             this.btnXoa.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Montserrat", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(33, 23);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(188, 32);
-            this.label4.TabIndex = 16;
-            this.label4.Text = "Địa chỉ của tôi";
-            // 
-            // guna2Panel9
-            // 
-            this.guna2Panel9.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.guna2Panel9.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.guna2Panel9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel9.Location = new System.Drawing.Point(0, 75);
-            this.guna2Panel9.Name = "guna2Panel9";
-            this.guna2Panel9.Size = new System.Drawing.Size(1174, 4);
-            this.guna2Panel9.TabIndex = 22;
-            // 
-            // panelNoiDung
-            // 
-            this.panelNoiDung.AutoScroll = true;
-            this.panelNoiDung.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelNoiDung.Location = new System.Drawing.Point(0, 79);
-            this.panelNoiDung.Name = "panelNoiDung";
-            this.panelNoiDung.Size = new System.Drawing.Size(1174, 736);
-            this.panelNoiDung.TabIndex = 23;
             // 
             // DiaChi
             // 

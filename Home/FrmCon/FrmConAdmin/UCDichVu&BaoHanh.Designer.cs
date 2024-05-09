@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.btnDichVu = new Guna.UI2.WinForms.Guna2Button();
             this.btnBaoHanh = new Guna.UI2.WinForms.Guna2Button();
+            this.btnDichVu = new Guna.UI2.WinForms.Guna2Button();
             this.PanelNoidung = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
@@ -45,26 +45,6 @@
             this.guna2Panel1.Size = new System.Drawing.Size(2050, 69);
             this.guna2Panel1.TabIndex = 0;
             // 
-            // btnDichVu
-            // 
-            this.btnDichVu.BorderRadius = 5;
-            this.btnDichVu.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.btnDichVu.CheckedState.FillColor = System.Drawing.Color.Brown;
-            this.btnDichVu.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnDichVu.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnDichVu.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnDichVu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnDichVu.FillColor = System.Drawing.Color.IndianRed;
-            this.btnDichVu.Font = new System.Drawing.Font("Yu Gothic UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDichVu.ForeColor = System.Drawing.Color.White;
-            this.btnDichVu.Location = new System.Drawing.Point(19, 14);
-            this.btnDichVu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnDichVu.Name = "btnDichVu";
-            this.btnDichVu.Size = new System.Drawing.Size(221, 39);
-            this.btnDichVu.TabIndex = 2;
-            this.btnDichVu.Text = "Dịch vụ";
-            this.btnDichVu.Click += new System.EventHandler(this.btnDichVu_Click);
-            // 
             // btnBaoHanh
             // 
             this.btnBaoHanh.BorderRadius = 5;
@@ -75,7 +55,7 @@
             this.btnBaoHanh.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnBaoHanh.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnBaoHanh.FillColor = System.Drawing.Color.IndianRed;
-            this.btnBaoHanh.Font = new System.Drawing.Font("Yu Gothic UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBaoHanh.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBaoHanh.ForeColor = System.Drawing.Color.White;
             this.btnBaoHanh.Location = new System.Drawing.Point(246, 14);
             this.btnBaoHanh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -83,6 +63,26 @@
             this.btnBaoHanh.Size = new System.Drawing.Size(221, 39);
             this.btnBaoHanh.TabIndex = 3;
             this.btnBaoHanh.Text = "Bảo hành";
+            // 
+            // btnDichVu
+            // 
+            this.btnDichVu.BorderRadius = 5;
+            this.btnDichVu.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btnDichVu.CheckedState.FillColor = System.Drawing.Color.Brown;
+            this.btnDichVu.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnDichVu.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnDichVu.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDichVu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnDichVu.FillColor = System.Drawing.Color.IndianRed;
+            this.btnDichVu.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDichVu.ForeColor = System.Drawing.Color.White;
+            this.btnDichVu.Location = new System.Drawing.Point(19, 14);
+            this.btnDichVu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnDichVu.Name = "btnDichVu";
+            this.btnDichVu.Size = new System.Drawing.Size(221, 39);
+            this.btnDichVu.TabIndex = 2;
+            this.btnDichVu.Text = "Dịch vụ";
+            this.btnDichVu.Click += new System.EventHandler(this.btnDichVu_Click);
             // 
             // PanelNoidung
             // 

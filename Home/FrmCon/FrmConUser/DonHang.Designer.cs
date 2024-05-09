@@ -425,7 +425,7 @@
             this.panelNoiDung.Location = new System.Drawing.Point(0, 79);
             this.panelNoiDung.Name = "panelNoiDung";
             this.panelNoiDung.Size = new System.Drawing.Size(2050, 637);
-            this.panelNoiDung.TabIndex = 4;
+            this.panelNoiDung.TabIndex = 7;
             // 
             // DonHang
             // 
@@ -458,7 +458,6 @@
         private Guna.UI2.WinForms.Guna2TextBox txtTimKiem;
         private Guna.UI.WinForms.GunaCircleButton btnTimKiem;
         private Guna.UI2.WinForms.Guna2Panel panelMuaHang;
-        private System.Windows.Forms.FlowLayoutPanel panelNoiDung;
         private Guna.UI2.WinForms.Guna2Panel panelCheckDieuKhoan;
         private Guna.UI2.WinForms.Guna2CustomCheckBox cbDieuKhoan;
         private Guna.UI.WinForms.GunaAdvenceButton btnXoaAll;
@@ -474,5 +473,6 @@
         private System.Windows.Forms.Label lblKhuyenMai;
         private System.Windows.Forms.Label lblTongSP;
         private System.Windows.Forms.Label lblTongTien;
+        private System.Windows.Forms.FlowLayoutPanel panelNoiDung;
     }
 }
