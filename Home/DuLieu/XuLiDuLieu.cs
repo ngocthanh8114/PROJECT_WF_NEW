@@ -2278,25 +2278,45 @@ namespace Home.DuLieu
             
         }
         
+
         //Thêm hóa đơn
         public void ThemHoaDon(string tenkhachhang, string sodienthoai, string diachi, string tensanpham, string masanpham, int soluong, decimal thue, decimal tongtien, DateTime ngaymua)
         {
             kn.myConnect();
 
-      
+            // Kiểm tra các trường thông tin nhập liệu
+            if (string.IsNullOrWhiteSpace(tenkhachhang) || string.IsNullOrWhiteSpace(sodienthoai) || string.IsNullOrWhiteSpace(diachi) ||
+                string.IsNullOrWhiteSpace(tensanpham) || string.IsNullOrWhiteSpace(masanpham) || soluong <= 0 || thue < 0 || tongtien < 0)
+            {
+                FrmBaoLoi frmThongBao = new FrmBaoLoi();
+                frmThongBao.hienThiLoi("Vui lòng nhập đầy đủ và chính xác thông tin!");
+                frmThongBao.Show();
+                return;
+            }
+
+            // Kiểm tra định dạng số điện thoại
+            if (!IsPhoneNumberValid(sodienthoai))
+            {
+                FrmBaoLoi frmThongBao = new FrmBaoLoi();
+                frmThongBao.hienThiLoi("Số điện thoại không hợp lệ! Vui lòng nhập lại.");
+                frmThongBao.Show();
+                return;
+            }
+
+            // Tiếp tục kiểm tra sản phẩm tồn tại
             string sqlCheckProduct = "SELECT COUNT(*) FROM SanPham WHERE MaSP = @MaSP AND TenSP = @TenSP";
             SqlCommand cmdCheckProduct = new SqlCommand(sqlCheckProduct, kn.con);
-            cmdCheckProduct.Parameters.AddWithValue("@MaSanPham", masanpham);
-            cmdCheckProduct.Parameters.AddWithValue("@TenSanPham", tensanpham);
+            cmdCheckProduct.Parameters.AddWithValue("@MaSP", masanpham);
+            cmdCheckProduct.Parameters.AddWithValue("@TenSP", tensanpham);
 
             int productCount = (int)cmdCheckProduct.ExecuteScalar();
 
             if (productCount == 0)
             {
-                FrmThongBao frmThongBao = new FrmThongBao();
-                frmThongBao.hienThiThongBao("Mã sản phẩm hoặc tên sản phẩm không tồn tại. Vui lòng kiểm tra lại!");
+                FrmBaoLoi frmThongBao = new FrmBaoLoi();
+                frmThongBao.hienThiLoi("Mã sản phẩm hoặc tên sản phẩm không tồn tại. Vui lòng kiểm tra lại!");
                 frmThongBao.Show();
-                return; 
+                return;
             }
 
             string sqlInsert = "INSERT INTO HoaDonTaiCuaHang (MaHoaDon, TenKhachHang, SoDienThoai, DiaChi, TenSanPham, MaSanPham, SoLuong, Thue, TongTien, NgayMua) " +
@@ -2307,7 +2327,7 @@ namespace Home.DuLieu
             // Tạo GUID mới
             Guid maHoaDon = Guid.NewGuid();
 
-         
+
             cmd.Parameters.AddWithValue("@MaHoaDon", maHoaDon);
             cmd.Parameters.AddWithValue("@TenKhachHang", tenkhachhang);
             cmd.Parameters.AddWithValue("@SoDienThoai", sodienthoai);
@@ -2335,6 +2355,28 @@ namespace Home.DuLieu
                 frmBaoLoi.Show();
             }
         }
+
+        // Phương thức kiểm tra định dạng số điện thoại
+        private bool IsPhoneNumberValid(string phoneNumber)
+        {
+            // Kiểm tra xem chuỗi số điện thoại có chứa ký tự không phải số hay không
+            foreach (char c in phoneNumber)
+            {
+                if (!char.IsDigit(c))
+                {
+                    return false;
+                }
+            }
+
+            // Kiểm tra độ dài của chuỗi số điện thoại
+            if (phoneNumber.Length < 10 || phoneNumber.Length > 11)
+            {
+                return false;
+            }
+
+            return true;
+        }
+
 
         //đổ dữ liệu vào hóa đơn
         public DataTable DoDuLieuDichVuVaoHoaDon()
