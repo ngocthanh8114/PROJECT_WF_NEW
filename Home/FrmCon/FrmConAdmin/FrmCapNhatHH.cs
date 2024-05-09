@@ -33,8 +33,8 @@ namespace Home.FrmCon.FrmHienThi
             txtMaSP.Text = idsp;
             xl.LoadMaNCC(cboMaNCC);
             xl.LoadMaLoai(cboMaLoai);
-            cboMaLoai.StartIndex = 4;
-            xl.LoadFrmCapNhatHH(idsp, txtMaSP, txtTenSP, txtGia, txtSoLuong, picBoxSP);
+            cboMaLoai.StartIndex = SanPhamAdmin.indexcbo;
+            xl.LoadFrmCapNhatHH(idsp, txtMaSP, txtTenSP, txtGia, txtSoLuong, picBoxSP, txtBaoHanh);
         }
 
         private void btnLuu_Click(object sender, EventArgs e)
@@ -53,8 +53,7 @@ namespace Home.FrmCon.FrmHienThi
 
                 if (xl.SuaHang)
                 {
-                    txtTenSP.Text = txtSoLuong.Text = txtGia.Text = txtMaSP.Text = txtBaoHanh.Text = "";
-                    picBoxSP.Image = null;
+                    this.Close();
                     TongForm.SanPhamAdmin.SanPhamAdmin_Load(TongForm.SanPhamAdmin, e);
                 }
            
@@ -70,5 +69,6 @@ namespace Home.FrmCon.FrmHienThi
                 picBoxSP.ImageLocation = openFileDialog.FileName;
             }
         }
+
     }
 }
