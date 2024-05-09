@@ -39,6 +39,7 @@ namespace Home.FrmCon
                 Image anh = xl.ByteArrToImage(b);
                 string tenTaiKhoan = TaiKhoanDangNhap.tenTaiKhoan;
                 byte trangThai = row.Field<byte>("TrangThai");
+
                 oDonHang.themDonHang(tenSP, gia, SL, anh, trangThai);
                 panelNoiDung.Controls.Add(oDonHang);
                 oDonHang.BringToFront();

@@ -505,6 +505,7 @@ namespace Home.DuLieu
             sqlCmd.ExecuteNonQuery();
         }
 
+        //Tim kiem DON HANG
         public DataTable doDuLieu_TimKiem(string TenSP)
         {
             kn.myConnect();
@@ -512,6 +513,21 @@ namespace Home.DuLieu
             SqlCommand cmd = new SqlCommand(sql, kn.con);
             cmd.Parameters.AddWithValue("@TenSP", "%" + TenSP + "%");
             cmd.Parameters.AddWithValue("@TenTK", TaiKhoanDangNhap.tenTaiKhoan);
+
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            return dt;
+        }
+
+        //Tim kiem KHACHHANG
+
+        public DataTable doDuLieu_TimKiem_KH(string TenKhachHang)
+        {
+            kn.myConnect();
+            string sql = "SELECT TenKhachHang, SoDienThoai, DiaChi FROM DiaChiKhachHang WHERE TenKhachHang LIKE @TenKhachHang";
+            SqlCommand cmd = new SqlCommand(sql, kn.con);
+            cmd.Parameters.AddWithValue("@TenKhachHang", "%" + TenKhachHang + "%");
 
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();

@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Controls.Primitives;
 using System.Windows.Forms;
 using System.Windows.Media;
+using CrystalDecisions.Shared.Json;
 using Home;
 using Home.DuLieu;
 using Home.FrmCon.FrmConAdmin;
@@ -35,6 +36,30 @@ namespace Home.FrmCon.FrmCuaAdmin
             lblTenKH.Text = ten;
             lblDiaChi.Text = diaChi;
             lblSDT.Text = sdt;
+        }
+
+        //public void themDonHang(string tenSP, decimal gia, int SL, Image anh, byte TrangThai)
+        //{
+        //    lblTenSP.Text = tenSP;
+        //    lblGia.Text = "Giá: " + gia.ToString("N0") + " VNĐ";
+        //    numSL.Value = SL;
+        //    picBoxSP.Image = anh;
+        //    lblKhuyenMai.Text = gia.ToString("N0") + " VNĐ";
+        //    if (TrangThai == 1)
+        //    {
+        //        cbDonHang.Checked = true;
+        //    }
+        //}
+
+        public void themKhachHang(string TenKhachHang, string SoDienThoai, string DiaChi)
+        {
+            lblTenKH.Text = TenKhachHang;
+            lblSDT.Text = SoDienThoai;
+            lblDiaChi.Text = DiaChi;
+            //if (TrangThai == 1)
+            //{
+            //    cbDonHang.Checked = true;
+            //}
         }
 
         private void btnChiTiet_Click(object sender, EventArgs e)
