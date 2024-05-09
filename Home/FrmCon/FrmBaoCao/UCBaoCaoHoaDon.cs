@@ -1,5 +1,8 @@
 ﻿using Home.DuLieu;
+using Home.FrmCon.FrmConAdmin;
+using Home.FrmCon.FrmConUser.UCThanhPhan;
 using Home.FrmCon.FrmHienThi;
+using Home.FrmCon.FrmHienThi.OTrong;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -38,7 +41,7 @@ namespace Home.FrmCon.FrmBaoCao
         }
         private void addHoaDon(int MaDH)
         {
-            ODonHangDaMua oDonHangDaMua = new ODonHangDaMua();
+            OHoaDonDaMuaAdmin oHoaDonDaMuaAdmin = new OHoaDonDaMuaAdmin();
             foreach (DataRow row in xl.themDonHang(MaDH).Rows)
             {
                 string tenKhachHang = row[2].ToString();
@@ -50,16 +53,16 @@ namespace Home.FrmCon.FrmBaoCao
                 decimal phiVC = row.Field<decimal>("PhiVanChuyen");
                 decimal tongTT = row.Field<decimal>("TongThanhToan");
                 DateTime ngayDH = row.Field<DateTime>("NgayDH");
-                oDonHangDaMua.themDuLieu(tenKhachHang, diaChi, email, loiNhac, sdt, gia, phiVC, tongTT, ngayDH);
+                oHoaDonDaMuaAdmin.themDuLieu(tenKhachHang, diaChi, email, loiNhac, sdt, gia, phiVC, tongTT, ngayDH);
             }
-            panelNoiDung.Controls.Add(oDonHangDaMua);
-            oDonHangDaMua.BringToFront();
+            panelNoiDung.Controls.Add(oHoaDonDaMuaAdmin);
+            oHoaDonDaMuaAdmin.BringToFront();
         }
         private void addSP(DataTable dt)
         {
             foreach (DataRow row in dt.Rows)
             {
-                OSanPhamDaMua oDonHangDaMua = new OSanPhamDaMua();
+                OSanPhamDaMuaAdmin oSanPhamDaMuaAdmin = new OSanPhamDaMuaAdmin();
                 // Lấy giá trị từng cột trong hàng hiện tại
                 string tenSP = row["TenSP"].ToString();
                 int MaDH = row.Field<int>("MaDH");
@@ -67,9 +70,9 @@ namespace Home.FrmCon.FrmBaoCao
                 byte[] b = row.Field<byte[]>("HinhAnh");
                 Image anh = xl.ByteArrToImage(b);
                 DateTime ngayMua = row.Field<DateTime>("NgayDH");
-                oDonHangDaMua.themDonMua(tenSP, MaDH, SL, anh, ngayMua);
-                panelSP.Controls.Add(oDonHangDaMua);
-                oDonHangDaMua.BringToFront();
+                oSanPhamDaMuaAdmin.themDonMua(tenSP, MaDH, SL, anh, ngayMua);
+                panelSP.Controls.Add(oSanPhamDaMuaAdmin);
+                oSanPhamDaMuaAdmin.BringToFront();
             }
         }
         private void cboDonMua_SelectedIndexChanged(object sender, EventArgs e)
@@ -125,6 +128,17 @@ namespace Home.FrmCon.FrmBaoCao
         }
 
         private void btn_Sua_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnThemHoaDon_Click(object sender, EventArgs e)
+        {
+            FrmThemHoaDon frmThemHoaDon = new FrmThemHoaDon();
+            frmThemHoaDon.ShowDialog();
+        }
+
+        private void panelNoiDung_Paint(object sender, PaintEventArgs e)
         {
 
         }

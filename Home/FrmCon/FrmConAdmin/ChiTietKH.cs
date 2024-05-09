@@ -27,13 +27,18 @@ namespace Home.FrmCon.FrmConAdmin
 
         private void btnHuy_Click(object sender, EventArgs e)
         {
-           /*// this.Hide();
-            KhachHang khachHang = new KhachHang();
-            panelNoiDung.Controls.Add(khachHang);
-            63333333333333333333
-            khachHang.BringToFront();*/
+            quayLaiKhachHang();
         }
 
+        private void quayLaiKhachHang()
+        {
+            FrmAdmin parentForm = this.ParentForm as FrmAdmin;
+
+            if (parentForm != null)
+            {
+                parentForm.btnKhachHang_Click(this, EventArgs.Empty);
+            }
+        }
 
         public void themNoiDung(string tenKH, string tenTK, string diaChi, string sdt, int sp, decimal tong)
         {
@@ -43,7 +48,6 @@ namespace Home.FrmCon.FrmConAdmin
             lblSDT.Text = sdt;
             lblSP.Text = sp + " sản phẩm";
             lblTongTien.Text = tong.ToString("N0") + " VNĐ";
-
         }
         private void addDonMua(DataTable dt)
         {

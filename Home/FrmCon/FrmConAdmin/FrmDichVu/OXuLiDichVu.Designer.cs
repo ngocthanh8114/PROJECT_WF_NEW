@@ -32,9 +32,10 @@
             this.lblTenKhachHang = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblSoDienThoai = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.lblThoiGian = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblTrangThai = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btnXuLi = new Guna.UI2.WinForms.Guna2Button();
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.lblTrangThai = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -63,6 +64,7 @@
             // 
             this.guna2Panel1.BorderColor = System.Drawing.Color.Black;
             this.guna2Panel1.BorderThickness = 1;
+            this.guna2Panel1.Controls.Add(this.lblThoiGian);
             this.guna2Panel1.Controls.Add(this.lblTrangThai);
             this.guna2Panel1.Controls.Add(this.btnXuLi);
             this.guna2Panel1.Controls.Add(this.guna2CirclePictureBox1);
@@ -74,6 +76,25 @@
             this.guna2Panel1.Size = new System.Drawing.Size(220, 213);
             this.guna2Panel1.TabIndex = 3;
             this.guna2Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
+            // 
+            // lblThoiGian
+            // 
+            this.lblThoiGian.BackColor = System.Drawing.Color.Transparent;
+            this.lblThoiGian.Location = new System.Drawing.Point(47, 6);
+            this.lblThoiGian.Name = "lblThoiGian";
+            this.lblThoiGian.Size = new System.Drawing.Size(108, 18);
+            this.lblThoiGian.TabIndex = 6;
+            this.lblThoiGian.Text = "guna2HtmlLabel1";
+            // 
+            // lblTrangThai
+            // 
+            this.lblTrangThai.BackColor = System.Drawing.Color.Transparent;
+            this.lblTrangThai.ForeColor = System.Drawing.Color.Red;
+            this.lblTrangThai.Location = new System.Drawing.Point(3, 192);
+            this.lblTrangThai.Name = "lblTrangThai";
+            this.lblTrangThai.Size = new System.Drawing.Size(27, 18);
+            this.lblTrangThai.TabIndex = 5;
+            this.lblTrangThai.Text = " Xử lí";
             // 
             // btnXuLi
             // 
@@ -95,23 +116,13 @@
             // 
             this.guna2CirclePictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2CirclePictureBox1.Image")));
             this.guna2CirclePictureBox1.ImageRotate = 0F;
-            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(3, 3);
+            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(3, 30);
             this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
             this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(214, 131);
+            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(214, 104);
             this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2CirclePictureBox1.TabIndex = 3;
             this.guna2CirclePictureBox1.TabStop = false;
-            // 
-            // lblTrangThai
-            // 
-            this.lblTrangThai.BackColor = System.Drawing.Color.Transparent;
-            this.lblTrangThai.ForeColor = System.Drawing.Color.Red;
-            this.lblTrangThai.Location = new System.Drawing.Point(3, 192);
-            this.lblTrangThai.Name = "lblTrangThai";
-            this.lblTrangThai.Size = new System.Drawing.Size(27, 18);
-            this.lblTrangThai.TabIndex = 5;
-            this.lblTrangThai.Text = " Xử lí";
             // 
             // OXuLiDichVu
             // 
@@ -135,5 +146,6 @@
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
         private Guna.UI2.WinForms.Guna2Button btnXuLi;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblTrangThai;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblThoiGian;
     }
 }

@@ -30,12 +30,15 @@
         {
             this.guna2Panel9 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel8 = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnThemHoaDon = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btn_Xoa = new Guna.UI.WinForms.GunaAdvenceButton();
             this.cboDonMua = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.panelSP = new System.Windows.Forms.FlowLayoutPanel();
             this.panelNoiDung = new System.Windows.Forms.FlowLayoutPanel();
+            this.panelSP = new System.Windows.Forms.FlowLayoutPanel();
+            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.guna2Panel8.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -45,7 +48,7 @@
             this.guna2Panel9.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.guna2Panel9.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel9.Location = new System.Drawing.Point(0, 49);
-            this.guna2Panel9.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2Panel9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2Panel9.Name = "guna2Panel9";
             this.guna2Panel9.Size = new System.Drawing.Size(1358, 3);
             this.guna2Panel9.TabIndex = 21;
@@ -54,15 +57,52 @@
             // 
             this.guna2Panel8.BackColor = System.Drawing.Color.White;
             this.guna2Panel8.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.guna2Panel8.Controls.Add(this.label1);
+            this.guna2Panel8.Controls.Add(this.btnThemHoaDon);
             this.guna2Panel8.Controls.Add(this.btn_Xoa);
             this.guna2Panel8.Controls.Add(this.cboDonMua);
             this.guna2Panel8.Controls.Add(this.label4);
             this.guna2Panel8.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel8.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel8.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2Panel8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2Panel8.Name = "guna2Panel8";
             this.guna2Panel8.Size = new System.Drawing.Size(1358, 49);
             this.guna2Panel8.TabIndex = 20;
+            // 
+            // btnThemHoaDon
+            // 
+            this.btnThemHoaDon.AnimationHoverSpeed = 0.07F;
+            this.btnThemHoaDon.AnimationSpeed = 0.03F;
+            this.btnThemHoaDon.BackColor = System.Drawing.Color.Transparent;
+            this.btnThemHoaDon.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnThemHoaDon.BorderColor = System.Drawing.Color.Black;
+            this.btnThemHoaDon.CheckedBaseColor = System.Drawing.Color.DimGray;
+            this.btnThemHoaDon.CheckedBorderColor = System.Drawing.Color.Black;
+            this.btnThemHoaDon.CheckedForeColor = System.Drawing.Color.White;
+            this.btnThemHoaDon.CheckedImage = null;
+            this.btnThemHoaDon.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.btnThemHoaDon.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnThemHoaDon.FocusedColor = System.Drawing.Color.Empty;
+            this.btnThemHoaDon.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThemHoaDon.ForeColor = System.Drawing.Color.White;
+            this.btnThemHoaDon.Image = null;
+            this.btnThemHoaDon.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnThemHoaDon.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btnThemHoaDon.Location = new System.Drawing.Point(874, 9);
+            this.btnThemHoaDon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnThemHoaDon.Name = "btnThemHoaDon";
+            this.btnThemHoaDon.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btnThemHoaDon.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnThemHoaDon.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnThemHoaDon.OnHoverImage = null;
+            this.btnThemHoaDon.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btnThemHoaDon.OnPressedColor = System.Drawing.Color.Black;
+            this.btnThemHoaDon.Radius = 5;
+            this.btnThemHoaDon.Size = new System.Drawing.Size(140, 36);
+            this.btnThemHoaDon.TabIndex = 38;
+            this.btnThemHoaDon.Text = "Thêm hóa đơn";
+            this.btnThemHoaDon.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnThemHoaDon.Click += new System.EventHandler(this.btnThemHoaDon_Click);
             // 
             // btn_Xoa
             // 
@@ -84,7 +124,7 @@
             this.btn_Xoa.ImageSize = new System.Drawing.Size(20, 20);
             this.btn_Xoa.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.btn_Xoa.Location = new System.Drawing.Point(1033, 9);
-            this.btn_Xoa.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_Xoa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_Xoa.Name = "btn_Xoa";
             this.btn_Xoa.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.btn_Xoa.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -110,7 +150,7 @@
             this.cboDonMua.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cboDonMua.ItemHeight = 30;
             this.cboDonMua.Location = new System.Drawing.Point(1190, 9);
-            this.cboDonMua.Margin = new System.Windows.Forms.Padding(2);
+            this.cboDonMua.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cboDonMua.Name = "cboDonMua";
             this.cboDonMua.Size = new System.Drawing.Size(166, 36);
             this.cboDonMua.TabIndex = 17;
@@ -119,55 +159,78 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Montserrat", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(19, 11);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(189, 26);
+            this.label4.Size = new System.Drawing.Size(0, 24);
             this.label4.TabIndex = 16;
-            this.label4.Text = "Đơn hàng đã mua";
             // 
             // guna2Panel1
             // 
             this.guna2Panel1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.guna2Panel1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.guna2Panel1.Location = new System.Drawing.Point(0, 435);
-            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2Panel1.Location = new System.Drawing.Point(0, 669);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(1358, 3);
             this.guna2Panel1.TabIndex = 24;
             // 
-            // panelSP
-            // 
-            this.panelSP.AutoScroll = true;
-            this.panelSP.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelSP.Location = new System.Drawing.Point(0, 438);
-            this.panelSP.Margin = new System.Windows.Forms.Padding(2);
-            this.panelSP.Name = "panelSP";
-            this.panelSP.Size = new System.Drawing.Size(1358, 234);
-            this.panelSP.TabIndex = 23;
-            // 
             // panelNoiDung
             // 
             this.panelNoiDung.AutoScroll = true;
-            this.panelNoiDung.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelNoiDung.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelNoiDung.Location = new System.Drawing.Point(0, 52);
-            this.panelNoiDung.Margin = new System.Windows.Forms.Padding(2);
+            this.panelNoiDung.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panelNoiDung.Name = "panelNoiDung";
-            this.panelNoiDung.Size = new System.Drawing.Size(1358, 383);
+            this.panelNoiDung.Size = new System.Drawing.Size(594, 617);
             this.panelNoiDung.TabIndex = 25;
+            this.panelNoiDung.Paint += new System.Windows.Forms.PaintEventHandler(this.panelNoiDung_Paint);
+            // 
+            // panelSP
+            // 
+            this.panelSP.AutoScroll = true;
+            this.panelSP.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panelSP.Location = new System.Drawing.Point(596, 52);
+            this.panelSP.Margin = new System.Windows.Forms.Padding(2);
+            this.panelSP.Name = "panelSP";
+            this.panelSP.Size = new System.Drawing.Size(762, 617);
+            this.panelSP.TabIndex = 26;
+            // 
+            // guna2Panel2
+            // 
+            this.guna2Panel2.BackColor = System.Drawing.Color.Gray;
+            this.guna2Panel2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.guna2Panel2.Location = new System.Drawing.Point(594, 52);
+            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2Panel2.Name = "guna2Panel2";
+            this.guna2Panel2.Size = new System.Drawing.Size(4, 617);
+            this.guna2Panel2.TabIndex = 28;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Montserrat", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(18, 11);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(174, 26);
+            this.label1.TabIndex = 39;
+            this.label1.Text = "Hóa đơn đã mua";
             // 
             // UCBaoCaoHoaDon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.panelNoiDung);
+            this.Controls.Add(this.panelSP);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.guna2Panel9);
             this.Controls.Add(this.guna2Panel8);
-            this.Controls.Add(this.panelSP);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "UCBaoCaoHoaDon";
             this.Size = new System.Drawing.Size(1358, 672);
             this.Load += new System.EventHandler(this.UCBaoCaoHoaDon_Load);
@@ -184,8 +247,11 @@
         private System.Windows.Forms.Label label4;
         private Guna.UI2.WinForms.Guna2ComboBox cboDonMua;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
-        private System.Windows.Forms.FlowLayoutPanel panelSP;
         private System.Windows.Forms.FlowLayoutPanel panelNoiDung;
         private Guna.UI.WinForms.GunaAdvenceButton btn_Xoa;
+        private Guna.UI.WinForms.GunaAdvenceButton btnThemHoaDon;
+        private System.Windows.Forms.FlowLayoutPanel panelSP;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
+        private System.Windows.Forms.Label label1;
     }
 }

@@ -53,6 +53,10 @@ namespace Home.FrmCon.FrmConAdmin.UCThanhPhan
             {
                 lblTrangThai.Text = "Chưa xử lí";
             }
+            DateTime thoiGian = xl.LayThoiGianXuLi(LaySoDienThoai());
+
+            // Hiển thị dữ liệu thời gian trên label
+            lblThoiGian.Text = thoiGian.ToString("dd/MM/yyyy HH:mm:ss");
         }
     }
 }

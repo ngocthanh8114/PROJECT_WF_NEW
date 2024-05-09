@@ -11,11 +11,13 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xaml;
 
 namespace Home
 {
     public partial class FrmAdmin : Form
     {
+        public static int flag = 0;
         public FrmAdmin()
         {
             InitializeComponent();
@@ -56,7 +58,6 @@ namespace Home
             panelHienThi.Controls.Clear();
             panelHienThi.Controls.Add(uc);
             uc.BringToFront();
-
         }
  
         private void btnSanPham_Click(object sender, EventArgs e)
@@ -67,6 +68,7 @@ namespace Home
             btnKhachHang.Checked = false;
             btnDichVu.Checked = false;
             btnBaoCao.Checked = false;
+            btnNhanVien.Checked = false;
             btnTaiKhoan.Checked = false;
         }
 
@@ -77,34 +79,66 @@ namespace Home
             btnKhachHang.Checked = false;
             btnDichVu.Checked = false;
             btnBaoCao.Checked = true;
+            btnNhanVien.Checked = false;
             btnTaiKhoan.Checked = false;
         }
 
-        private void btnKhachHang_Click(object sender, EventArgs e)
+        public void btnKhachHang_Click(object sender, EventArgs e)
         {
             addHienThi(TongForm.KhachHang);
             btnSanPham.Checked = false;
             btnKhachHang.Checked = true;
             btnDichVu.Checked = false;
             btnBaoCao.Checked = false ;
+            btnNhanVien.Checked = false;
+            flag = 1;
             btnTaiKhoan.Checked = false;
         }
 
-        private void btnTaiKhoan_Click(object sender, EventArgs e)
+       
+        public void btnDichVu_Click(object sender, EventArgs e)
+        {
+            UCDichVu_BaoHanh uCDichVu_BaoHanh   = new UCDichVu_BaoHanh();
+            panelHienThi.Controls.Add(uCDichVu_BaoHanh);
+            uCDichVu_BaoHanh.BringToFront();
+
+            btnSanPham.Checked = false;
+            btnKhachHang.Checked = false;
+            btnDichVu.Checked = true;
+            btnBaoCao.Checked = false;
+            btnNhanVien.Checked = false;
+
+            flag = 2;
+            
+            btnTaiKhoan.Checked = false;
+        }
+
+        private void btnTaiKhoan_Click_1(object sender, EventArgs e)
         {
             addHienThi(TongForm.TaiKhoanAdmin);
             btnSanPham.Checked = false;
             btnKhachHang.Checked = false;
             btnDichVu.Checked = false;
             btnBaoCao.Checked = false;
+            btnNhanVien.Checked = false;
             btnTaiKhoan.Checked = true;
         }
 
-        private void btnDichVu_Click(object sender, EventArgs e)
+        private void FrmAdmin_Load(object sender, EventArgs e)
         {
-            UCDichVu_BaoHanh uCDichVu_BaoHanh   = new UCDichVu_BaoHanh();
-            panelHienThi.Controls.Add(uCDichVu_BaoHanh);
-            uCDichVu_BaoHanh.BringToFront();
+            addHienThi(TongForm.SanPhamAdmin);
+            TongForm.SanPhamAdmin.SanPhamAdmin_Load(TongForm.SanPhamAdmin, e);
+            btnSanPham.Checked = true;
+        }
+
+        private void btnNhanVien_Click(object sender, EventArgs e)
+        {
+            addHienThi(TongForm.UCNhanVien);
+            btnSanPham.Checked = false;
+            btnKhachHang.Checked = false;
+            btnDichVu.Checked = false;
+            btnBaoCao.Checked = false;
+            btnNhanVien.Checked = true;
         }
     }
 }

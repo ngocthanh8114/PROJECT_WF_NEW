@@ -42,6 +42,7 @@
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.gunaLabel6 = new Guna.UI.WinForms.GunaLabel();
             this.pn_NoiDungSua = new Guna.UI2.WinForms.Guna2Panel();
+            this.txtBaoHanh = new Guna.UI2.WinForms.Guna2TextBox();
             this.dtNgayNhapHang = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.cboMaLoai = new Guna.UI2.WinForms.Guna2ComboBox();
             this.cboMaNCC = new Guna.UI2.WinForms.Guna2ComboBox();
@@ -59,7 +60,6 @@
             this.guna2Panel9 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel10 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel12 = new Guna.UI2.WinForms.Guna2Panel();
-            this.txtBaoHanh = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
@@ -266,7 +266,27 @@
             this.pn_NoiDungSua.Location = new System.Drawing.Point(2, 2);
             this.pn_NoiDungSua.Name = "pn_NoiDungSua";
             this.pn_NoiDungSua.Size = new System.Drawing.Size(511, 699);
-            this.pn_NoiDungSua.TabIndex = 7;
+            this.pn_NoiDungSua.TabIndex = 7;            // 
+            // txtBaoHanh
+            // 
+            this.txtBaoHanh.BorderRadius = 8;
+            this.txtBaoHanh.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtBaoHanh.DefaultText = "";
+            this.txtBaoHanh.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtBaoHanh.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtBaoHanh.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtBaoHanh.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtBaoHanh.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtBaoHanh.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
+            this.txtBaoHanh.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtBaoHanh.Location = new System.Drawing.Point(286, 483);
+            this.txtBaoHanh.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtBaoHanh.Name = "txtBaoHanh";
+            this.txtBaoHanh.PasswordChar = '\0';
+            this.txtBaoHanh.PlaceholderText = "Bảo hành...";
+            this.txtBaoHanh.SelectedText = "";
+            this.txtBaoHanh.Size = new System.Drawing.Size(189, 41);
+            this.txtBaoHanh.TabIndex = 63;
             // 
             // dtNgayNhapHang
             // 
@@ -574,27 +594,6 @@
             this.guna2Panel12.Name = "guna2Panel12";
             this.guna2Panel12.Size = new System.Drawing.Size(515, 2);
             this.guna2Panel12.TabIndex = 17;
-            // 
-            // txtBaoHanh
-            // 
-            this.txtBaoHanh.BorderRadius = 8;
-            this.txtBaoHanh.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtBaoHanh.DefaultText = "";
-            this.txtBaoHanh.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtBaoHanh.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtBaoHanh.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtBaoHanh.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtBaoHanh.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtBaoHanh.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
-            this.txtBaoHanh.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtBaoHanh.Location = new System.Drawing.Point(286, 483);
-            this.txtBaoHanh.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtBaoHanh.Name = "txtBaoHanh";
-            this.txtBaoHanh.PasswordChar = '\0';
-            this.txtBaoHanh.PlaceholderText = "Bảo hành...";
-            this.txtBaoHanh.SelectedText = "";
-            this.txtBaoHanh.Size = new System.Drawing.Size(189, 41);
-            this.txtBaoHanh.TabIndex = 63;
             // 
             // FrmCapNhatHH
             // 

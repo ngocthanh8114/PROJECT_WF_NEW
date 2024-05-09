@@ -1229,11 +1229,176 @@ D:\VS Code\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConUser.UCThanh
 D:\VS Code\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConUser.UCThanhPhan.OTrong.DiaChiTrong.resources
 D:\VS Code\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConUser.UCThanhPhan.OTrong.DonMuaTrong.resources
 D:\VS Code\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConUser.UCThanhPhan.OTrong.SanPhamTrong.resources
+C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\bin\Debug\Home.exe.config
+C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\bin\Debug\Home.exe
+C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\bin\Debug\Home.pdb
+C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\bin\Debug\CrystalDecisions.ReportSource.dll
+C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\bin\Debug\CrystalDecisions.Shared.dll
+C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\bin\Debug\CrystalDecisions.Windows.Forms.dll
+C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\bin\Debug\Guna.UI2.dll
+C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\bin\Debug\stdole.dll
+C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\obj\Debug\Home.csproj.AssemblyReference.cache
+C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmAdmin.resources
+C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmBaoCao.UCBaoCaoHoaDon.resources
+C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.BaoCao.resources
+C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.ChiTietKH.resources
+C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.FrmDichVu.FrmXuLi.resources
+C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.UCThanhPhan.OBaoDuongXeMay.resources
+C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.UCThanhPhan.OCuuHo.resources
+C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.UCThanhPhan.ODanNilon.resources
+C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.UCThanhPhan.OPhucHoiXeMay.resources
+C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.UCThanhPhan.OTanTrangXeMay.resources
+C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.UCThanhPhan.OTatCaDichVu.resources
+C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.UCThanhPhan.OXuLiDichVu.resources
+C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.UCThanhPhan.DichVuAdmin.resources
+C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.FrmThemLoiNhac.resources
+C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.TaiKhoanAdmin.resources
+C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.UCDichVu_BaoHanh.resources
+C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.UCThanhPhan.ODaMua.resources
+C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.UCThanhPhan.OTaiKhoan.resources
+C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.UCThanhPhan.OTop.resources
+C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.UCThanhPhan.UCThongTinAdmin.resources
+C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.UCThanhPhan.UCTaiKhoanAdmin.resources
+C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.DichVu.resources
+C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.DonHang.resources
+C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmBaoCao.FrmIn.resources
+C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmBaoCao.UCBaoCao.resources
+C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmBaoCao.UCBaoCaoNhapHang.resources
+C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.FrmCapNhatHH.resources
+C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.FrmThemHH.resources
+C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmCuaAdmin.OKhachHang.resources
+C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.OSanPhamAdmin.resources
+C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.OThem.resources
+C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.GioiThieu.resources
+C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.DiaChi.resources
+C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.DonHangDaMua.resources
+C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.ODonHangDaMua.resources
+C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConUser.UCThanhPhan.OTrong.DiaChiTrong.resources
+C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConUser.UCThanhPhan.OTrong.DonHangTrong.resources
+C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConUser.UCThanhPhan.OTrong.DonMuaTrong.resources
+C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConUser.UCThanhPhan.OTrong.SanPhamTrong.resources
+C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.SanPhamDaMua.resources
+C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.FrmBaoLoi.resources
+C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.FrmCapNhatTT.resources
+C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.FrmMuaHang.resources
+C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.FrmThongBao.resources
+C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.FrmXacNhan.resources
+C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.ODiaChi.resources
+C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.ODonHang.resources
+C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.OSanPhamDaMua.resources
+C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.FrmSuaDiaChi.resources
+C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.ThongTin.resources
+C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmCuaAdmin.KhachHang.resources
+C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.SanPhamAdmin.resources
+C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.TaiKhoan.resources
+C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmDangKi.resources
+C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmDangNhap.resources
+C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmHome.resources
+C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.OSanPham.resources
+C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.SanPham.resources
+C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmQuenMatKhau.resources
+C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\obj\Debug\Home.Properties.Resources.resources
+C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\obj\Debug\Home.csproj.GenerateResource.cache
+C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\obj\Debug\Home.csproj.CoreCompileInputs.cache
+C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\obj\Debug\Home.csproj.Up2Date
+C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\obj\Debug\Home.exe
+C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\obj\Debug\Home.pdb
+C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.FrmThemHoaDon.resources
+C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.UCNhanVien.resources
+C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.UCThanhPhan.ONhanVien.resources
 >>>>>>> aa0ae08cb46dc741613998f0426596d2bb267c8f
 D:\CODE C#\PROJECT\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConUser.UCThanhPhan.OTrong.DiaChiTrong.resources
 D:\CODE C#\PROJECT\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConUser.UCThanhPhan.OTrong.DonHangTrong.resources
 D:\CODE C#\PROJECT\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConUser.UCThanhPhan.OTrong.DonMuaTrong.resources
 D:\CODE C#\PROJECT\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConUser.UCThanhPhan.OTrong.SanPhamTrong.resources
+E:\study\NAM_2_KI_2\LAP_TRINH_WINDOWS\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.FrmDichVu.FrmXuLi.resources
+E:\study\NAM_2_KI_2\LAP_TRINH_WINDOWS\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.UCThanhPhan.OBaoDuongXeMay.resources
+E:\study\NAM_2_KI_2\LAP_TRINH_WINDOWS\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.UCThanhPhan.OCuuHo.resources
+E:\study\NAM_2_KI_2\LAP_TRINH_WINDOWS\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.UCThanhPhan.ODanNilon.resources
+E:\study\NAM_2_KI_2\LAP_TRINH_WINDOWS\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.UCThanhPhan.OPhucHoiXeMay.resources
+E:\study\NAM_2_KI_2\LAP_TRINH_WINDOWS\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.UCThanhPhan.OTanTrangXeMay.resources
+E:\study\NAM_2_KI_2\LAP_TRINH_WINDOWS\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.UCThanhPhan.OTatCaDichVu.resources
+E:\study\NAM_2_KI_2\LAP_TRINH_WINDOWS\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.UCThanhPhan.OXuLiDichVu.resources
+E:\study\NAM_2_KI_2\LAP_TRINH_WINDOWS\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.UCThanhPhan.DichVuAdmin.resources
+E:\study\NAM_2_KI_2\LAP_TRINH_WINDOWS\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.UCDichVu_BaoHanh.resources
+E:\study\NAM_2_KI_2\LAP_TRINH_WINDOWS\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.UCThanhPhan.OTaiKhoan.resources
+E:\study\NAM_2_KI_2\LAP_TRINH_WINDOWS\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.UCThanhPhan.UCThongTinAdmin.resources
+E:\study\NAM_2_KI_2\LAP_TRINH_WINDOWS\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.UCThanhPhan.UCTaiKhoanAdmin.resources
+E:\study\NAM_2_KI_2\LAP_TRINH_WINDOWS\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.DichVu.resources
+E:\study\NAM_2_KI_2\LAP_TRINH_WINDOWS\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.GioiThieu.resources
+E:\study\NAM_2_KI_2\LAP_TRINH_WINDOWS\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConUser.UCThanhPhan.OTrong.DiaChiTrong.resources
+E:\study\NAM_2_KI_2\LAP_TRINH_WINDOWS\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConUser.UCThanhPhan.OTrong.DonHangTrong.resources
+E:\study\NAM_2_KI_2\LAP_TRINH_WINDOWS\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConUser.UCThanhPhan.OTrong.DonMuaTrong.resources
+E:\study\NAM_2_KI_2\LAP_TRINH_WINDOWS\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConUser.UCThanhPhan.OTrong.SanPhamTrong.resources
 D:\VS Code\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.BaoHanh.resources
 D:\VS Code\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.FrmDichVu.OBaoHanh.resources
 D:\VS Code\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.ChiTietBaoHanh.resources
+D:\CODE C#\PROJECT\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.BaoHanh.resources
+D:\CODE C#\PROJECT\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.ChiTietBaoHanh.resources
+D:\CODE C#\PROJECT\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.FrmDichVu.OBaoHanh.resources
+>>>>>>> 99336f9e9a7fb87cef99700dc2458880817bc66b
+C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.BaoHanh.resources
+C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.ChiTietBaoHanh.resources
+C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.FrmDichVu.OBaoHanh.resources
+<<<<<<< HEAD
+C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.FrmThemNhanVien.resources
+C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.FrmSuaNhanVien.resources
+=======
+>>>>>>> 1aa2d06cb4efeb9d5d15c120f910c149c6aa740d
+D:\CODE C#\PROJECT\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.FrmThemHoaDon.resources
+D:\CODE C#\PROJECT\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.UCNhanVien.resources
+D:\CODE C#\PROJECT\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.UCThanhPhan.ONhanVien.resources
+E:\study\NAM_2_KI_2\LAP_TRINH_WINDOWS\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.BaoHanh.resources
+E:\study\NAM_2_KI_2\LAP_TRINH_WINDOWS\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.ChiTietBaoHanh.resources
+E:\study\NAM_2_KI_2\LAP_TRINH_WINDOWS\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.FrmDichVu.OBaoHanh.resources
+E:\study\NAM_2_KI_2\LAP_TRINH_WINDOWS\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.FrmThemHoaDon.resources
+E:\study\NAM_2_KI_2\LAP_TRINH_WINDOWS\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.UCNhanVien.resources
+E:\study\NAM_2_KI_2\LAP_TRINH_WINDOWS\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.UCThanhPhan.ONhanVien.resources
+D:\DACK\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.BaoHanh.resources
+D:\DACK\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.ChiTietBaoHanh.resources
+D:\DACK\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.FrmDichVu.FrmXuLi.resources
+D:\DACK\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.UCThanhPhan.OBaoDuongXeMay.resources
+D:\DACK\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.FrmDichVu.OBaoHanh.resources
+D:\DACK\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.UCThanhPhan.OCuuHo.resources
+D:\DACK\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.UCThanhPhan.ODanNilon.resources
+D:\DACK\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.UCThanhPhan.OPhucHoiXeMay.resources
+D:\DACK\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.UCThanhPhan.OTanTrangXeMay.resources
+D:\DACK\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.UCThanhPhan.OTatCaDichVu.resources
+D:\DACK\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.UCThanhPhan.OXuLiDichVu.resources
+D:\DACK\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.UCThanhPhan.DichVuAdmin.resources
+D:\DACK\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.FrmThemHoaDon.resources
+D:\DACK\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.UCDichVu_BaoHanh.resources
+D:\DACK\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.UCNhanVien.resources
+D:\DACK\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.UCThanhPhan.ONhanVien.resources
+D:\DACK\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.UCThanhPhan.OTaiKhoan.resources
+D:\DACK\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.UCThanhPhan.UCThongTinAdmin.resources
+D:\DACK\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.UCThanhPhan.UCTaiKhoanAdmin.resources
+D:\DACK\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.DichVu.resources
+D:\DACK\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.GioiThieu.resources
+D:\DACK\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConUser.UCThanhPhan.OTrong.DiaChiTrong.resources
+D:\DACK\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConUser.UCThanhPhan.OTrong.DonHangTrong.resources
+D:\DACK\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConUser.UCThanhPhan.OTrong.DonMuaTrong.resources
+D:\DACK\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConUser.UCThanhPhan.OTrong.SanPhamTrong.resources
+D:\DACK\PROJECT_WF_NEW\Home\obj\Debug\Home.csproj.Up2Date
+D:\DACK\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.OTrong.OSanPhamDaMuaAdmin.resources
+D:\DACK\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConUser.UCThanhPhan.OHoaDonDaMuaAdmin.resources
+>>>>>>> eae57ce56ad6b62b64e66c76d5f14608c1178d3b
+>>>>>>> 21a1f767a92cc6348094e36475c08836d198b062
+D:\CODE C#\PROJECT\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConUser.UCThanhPhan.OHoaDonDaMuaAdmin.resources
+D:\CODE C#\PROJECT\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.OTrong.OSanPhamDaMuaAdmin.resources
+E:\study\NAM_2_KI_2\LAP_TRINH_WINDOWS\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConUser.UCThanhPhan.OHoaDonDaMuaAdmin.resources
+E:\study\NAM_2_KI_2\LAP_TRINH_WINDOWS\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmHienThi.OTrong.OSanPhamDaMuaAdmin.resources
+>>>>>>> e029851ab0a19630d25989f1262e80ec5d79e7e6

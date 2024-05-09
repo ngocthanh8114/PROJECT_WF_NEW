@@ -188,8 +188,9 @@
             this.btnHuy.Radius = 5;
             this.btnHuy.Size = new System.Drawing.Size(188, 42);
             this.btnHuy.TabIndex = 40;
-            this.btnHuy.Text = "Thoát";
+            this.btnHuy.Text = "Quay lại";
             this.btnHuy.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
             // 
             // guna2Panel7
             // 
@@ -384,9 +385,8 @@
             this.panelNoiDung.Name = "panelNoiDung";
             this.panelNoiDung.Size = new System.Drawing.Size(1630, 793);
             this.panelNoiDung.TabIndex = 31;
-            this.panelNoiDung.Paint += new System.Windows.Forms.PaintEventHandler(this.panelNoiDung_Paint);
             // 
-            // BaoHanh
+            // ChiTietBaoHanh
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -394,7 +394,7 @@
             this.Controls.Add(this.guna2Panel12);
             this.Controls.Add(this.guna2Panel3);
             this.Controls.Add(this.guna2Panel1);
-            this.Name = "BaoHanh";
+            this.Name = "ChiTietBaoHanh";
             this.Size = new System.Drawing.Size(2050, 797);
             this.Load += new System.EventHandler(this.BaoHanh_Load);
             this.guna2Panel9.ResumeLayout(false);

@@ -184,7 +184,7 @@
             this.btnHuy.Radius = 5;
             this.btnHuy.Size = new System.Drawing.Size(188, 42);
             this.btnHuy.TabIndex = 40;
-            this.btnHuy.Text = "Thoát";
+            this.btnHuy.Text = "Quay lại";
             this.btnHuy.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
             // 

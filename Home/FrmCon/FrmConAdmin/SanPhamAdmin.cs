@@ -53,13 +53,14 @@ namespace Home.FrmCon
             
         }
 
+        public static int indexcbo = 4;
         private void cboLoaiSP_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (panelNoiDung != null)
             {
                 panelNoiDung.Controls.Clear();
             }
-
+            indexcbo = cboLoaiSP.SelectedIndex;
             string LoaiSP = cboLoaiSP.Text;
             string MaLoai = xl.xuLiMaLoai(LoaiSP);
             addSanPham(xl.doDuLieu(MaLoai));
