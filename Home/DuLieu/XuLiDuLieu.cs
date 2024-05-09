@@ -22,6 +22,7 @@ using System.Collections;
 using System.Data.Common;
 using System.Security.RightsManagement;
 using System.Runtime.InteropServices.ComTypes;
+using Guna.UI.WinForms;
 namespace Home.DuLieu
 {
     
@@ -2373,8 +2374,260 @@ namespace Home.DuLieu
             da.Fill(dt);
             return dt;
         }
+        public void ThemNhanVien(string maNhanVien, string tenNhanVien, string cmnd, int tuoi, string kinhNghiem, string diaChi, decimal luong, byte[] anh)
+        {
+            if (maNhanVien.Length > 10 || tenNhanVien.Length > 50 || cmnd.Length != 9 || tuoi < 18 || tuoi > 100 || kinhNghiem.Length > 100 || diaChi.Length > 100 || luong <= 0 || anh == null || anh.Length == 0)
+            {
+                FrmBaoLoi frmBaoLoi = new FrmBaoLoi();
+                frmBaoLoi.hienThiLoi("Dữ liệu nhập vào không hợp lệ, vui lòng kiểm tra lại.");
+                frmBaoLoi.Show();
+                return;
+            }
+
+            using (SqlConnection connection = new SqlConnection(strconn))
+            {
+                connection.Open();
+
+                string checkMaNhanVienQuery = "SELECT COUNT(*) FROM NhanVien WHERE MaNhanVien = @MaNhanVien";
+                using (SqlCommand checkCmd = new SqlCommand(checkMaNhanVienQuery, connection))
+                {
+                    checkCmd.Parameters.AddWithValue("@MaNhanVien", maNhanVien);
+                    int existingCount = (int)checkCmd.ExecuteScalar();
+                    if (existingCount > 0)
+                    {
+                        FrmBaoLoi frmBaoLoi = new FrmBaoLoi();
+                        frmBaoLoi.hienThiLoi("Mã nhân viên đã tồn tại trong cơ sở dữ liệu.");
+                        frmBaoLoi.Show();
+                        return;
+                    }
+                }
+                string checkCMNDQuery = "SELECT COUNT(*) FROM NhanVien WHERE CanCuocCongDan = @CMND";
+                using (SqlCommand checkCmd = new SqlCommand(checkCMNDQuery, connection))
+                {
+                    checkCmd.Parameters.AddWithValue("@CMND", cmnd);
+                    int existingCount = (int)checkCmd.ExecuteScalar();
+                    if (existingCount > 0)
+                    {
+                        FrmBaoLoi frmBaoLoi = new FrmBaoLoi();
+                        frmBaoLoi.hienThiLoi("Số CMND đã tồn tại trong cơ sở dữ liệu.");
+                        frmBaoLoi.Show();
+                        return;
+                    }
+                }
+
+
+                string sql = @"INSERT INTO NhanVien (MaNhanVien, TenNhanVien, CanCuocCongDan, Tuoi, KinhNghiem, DiaChiCuTru, Luong, Anh)
+                       VALUES (@MaNhanVien, @TenNhanVien, @CanCuocCongDan, @Tuoi, @KinhNghiem, @DiaChiCuTru, @Luong, @Anh)";
+
+                using (SqlCommand cmd = new SqlCommand(sql, connection))
+                {
+                    cmd.Parameters.AddWithValue("@MaNhanVien", maNhanVien);
+                    cmd.Parameters.AddWithValue("@TenNhanVien", tenNhanVien);
+                    cmd.Parameters.AddWithValue("@CanCuocCongDan", cmnd);
+                    cmd.Parameters.AddWithValue("@Tuoi", tuoi);
+                    cmd.Parameters.AddWithValue("@KinhNghiem", kinhNghiem);
+                    cmd.Parameters.AddWithValue("@DiaChiCuTru", diaChi);
+                    cmd.Parameters.AddWithValue("@Luong", luong);
+                    cmd.Parameters.AddWithValue("@Anh", anh);
+
+                    int rowsAffected = cmd.ExecuteNonQuery();
+
+                    if (rowsAffected > 0)
+                    {
+                        FrmThongBao frmThongBao = new FrmThongBao();
+                        frmThongBao.hienThiThongBao("Thêm thành công!");
+                        frmThongBao.Show();
+                    }
+                    else
+                    {
+                        FrmBaoLoi frmBaoLoi = new FrmBaoLoi();
+                        frmBaoLoi.hienThiLoi("Lỗi, Vui lòng xem lại thông tin vừa nhập");
+                        frmBaoLoi.Show();
+                    }
+                }
+            }
+        }
+        public void CapNhatThongTinNhanVien(string maNhanVien, string tenNhanVien, string cmnd, int tuoi, string kinhNghiem, string diaChi, decimal luong, byte[] anh)
+        {
+            try
+            {
+                if (tenNhanVien.Length > 50 || cmnd.Length != 9 || tuoi < 18 || tuoi > 100 || kinhNghiem.Length > 100 || diaChi.Length > 100 || luong <= 0 || anh == null || anh.Length == 0)
+                {
+                    FrmBaoLoi frmBaoLoi = new FrmBaoLoi();
+                    frmBaoLoi.hienThiLoi("Dữ liệu nhập vào không hợp lệ, vui lòng kiểm tra lại.");
+                    frmBaoLoi.Show();
+                    return;
+                }
+
+                using (SqlConnection connection = new SqlConnection(strconn))
+                {
+                    connection.Open();
+
+                    string sql = @"UPDATE NhanVien 
+                           SET TenNhanVien = @TenNhanVien, 
+                               CanCuocCongDan = @CanCuocCongDan, 
+                               Tuoi = @Tuoi, 
+                               KinhNghiem = @KinhNghiem, 
+                               DiaChiCuTru = @DiaChiCuTru, 
+                               Luong = @Luong, 
+                               Anh = @Anh
+                           WHERE MaNhanVien = @MaNhanVien";
+
+                    using (SqlCommand cmd = new SqlCommand(sql, connection))
+                    {
+                        cmd.Parameters.AddWithValue("@TenNhanVien", tenNhanVien);
+                        cmd.Parameters.AddWithValue("@CanCuocCongDan", cmnd);
+                        cmd.Parameters.AddWithValue("@Tuoi", tuoi);
+                        cmd.Parameters.AddWithValue("@KinhNghiem", kinhNghiem);
+                        cmd.Parameters.AddWithValue("@DiaChiCuTru", diaChi);
+                        cmd.Parameters.AddWithValue("@Luong", luong);
+                        cmd.Parameters.AddWithValue("@Anh", anh);
+                        cmd.Parameters.AddWithValue("@MaNhanVien", maNhanVien);
+
+                        int rowsAffected = cmd.ExecuteNonQuery();
+
+                        if (rowsAffected > 0)
+                        {
+                            FrmThongBao frmThongBao = new FrmThongBao();
+                            frmThongBao.hienThiThongBao("Sửa thành công!");
+                            frmThongBao.Show();
+                        }
+                        else
+                        {
+                            FrmBaoLoi frmBaoLoi = new FrmBaoLoi();
+                            frmBaoLoi.hienThiLoi("Lỗi, không thể cập nhật thông tin nhân viên.");
+                            frmBaoLoi.Show();
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                FrmBaoLoi frmBaoLoi = new FrmBaoLoi();
+                frmBaoLoi.hienThiLoi("Lỗi: " + ex.Message);
+                frmBaoLoi.Show();
+            }
+        }
+
+        public void XoaNhanVien(string maNhanVien)
+        {
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(strconn))
+                {
+                    connection.Open();
+
+                    string sql = @"DELETE FROM NhanVien WHERE MaNhanVien = @MaNhanVien";
+
+                    using (SqlCommand cmd = new SqlCommand(sql, connection))
+                    {
+                        cmd.Parameters.AddWithValue("@MaNhanVien", maNhanVien);
+
+                        int rowsAffected = cmd.ExecuteNonQuery();
+
+                        if (rowsAffected > 0)
+                        {
+                            FrmThongBao frmThongBao = new FrmThongBao();
+                            frmThongBao.hienThiThongBao("Xóa thành công!");
+                            frmThongBao.Show();
+                        }
+                        else
+                        {
+                            FrmBaoLoi frmBaoLoi = new FrmBaoLoi();
+                            frmBaoLoi.hienThiLoi("Không tìm thấy nhân viên có mã: " + maNhanVien);
+                            frmBaoLoi.Show();
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                FrmBaoLoi frmBaoLoi = new FrmBaoLoi();
+                frmBaoLoi.hienThiLoi("Lỗi: " + ex.Message);
+                frmBaoLoi.Show();
+            }
+        }
+
+
+
+        public DataTable DoDuLieuNhanVien()
+        {
+            kn.myConnect();
+            string sql = "SELECT * FROM NhanVien";
+            SqlCommand cmd = new SqlCommand(sql, kn.con);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+
+            DataTable dataTable = new DataTable();
+
+            da.Fill(dataTable);
+            //kn.myClose();
+            return dataTable;
+        }
+        public DataTable DoDuLieuVaoNhanVien(string maNhanVien)
+        {
+            DataTable dataTable = new DataTable();
+
+            using (SqlConnection connection = new SqlConnection(XuLiDuLieu.strconn))
+            {
+                string query = "SELECT TenNhanVien, CanCuocCongDan, Tuoi, KinhNghiem, DiaChiCuTru, Luong, Anh FROM NhanVien WHERE MaNhanVien = @MaNhanVien";
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@MaNhanVien", maNhanVien);
+
+                try
+                {
+                    connection.Open();
+                    SqlDataReader reader = command.ExecuteReader();
+
+                    // Đổ dữ liệu từ SqlDataReader vào DataTable
+                    dataTable.Load(reader);
+
+                    reader.Close();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Lỗi khi truy vấn cơ sở dữ liệu: " + ex.Message);
+                }
+            }
+
+            return dataTable;
+        }
+
+
+        public DateTime LayThoiGianXuLi(string soDienThoai)
+        {
+            DateTime thoiGian = DateTime.MinValue;
+
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(strconn))
+                {
+                    connection.Open();
+
+                    string query = "SELECT NgayThang FROM DichVu WHERE SoDienThoai = @SoDienThoai";
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@SoDienThoai", soDienThoai);
+                        object result = command.ExecuteScalar();
+                        if (result != null && result != DBNull.Value)
+                        {
+                            thoiGian = (DateTime)result;
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                
+                MessageBox.Show("Lỗi khi lấy thời gian xử lí: " + ex.Message);
+            }
+
+            return thoiGian;
+        }
 
     }
+
+
+    
 
 }
 
