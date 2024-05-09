@@ -1166,10 +1166,9 @@ namespace Home.DuLieu
                 SqlCommand selectCmd = new SqlCommand(selectSql, conn);
                 selectCmd.Parameters.AddWithValue("MaSP", MaSP);
                 int count = (int)selectCmd.ExecuteScalar();
-
-                try
+                if (SoLuongMoi != 0)
                 {
-                    if(SoLuongMoi!=0)
+                    try
                     {
                         //Nhập hàng
                         string insertSql = "INSERT INTO NhapHang VALUES (@MaSP, @TenSP, @Gia, @MaNCC, @SoLuong, @HinhAnh, @MaLoai, @NgayNhapHang)";
@@ -1185,17 +1184,16 @@ namespace Home.DuLieu
                         insertCmd.Parameters.AddWithValue("NgayNhapHang", ngaynhaphang);
 
                         insertCmd.ExecuteNonQuery();
-                    }    
-                    
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.ToString());
+                        FrmBaoLoi frmBaoLoi = new FrmBaoLoi();
+                        frmBaoLoi.hienThiLoi("Kiểm tra lại thông tin");
+                        frmBaoLoi.ShowDialog();
+                        return;
+                    }
                 }
-                catch(Exception ex) 
-                {
-                    MessageBox.Show(ex.ToString());
-                    FrmBaoLoi frmBaoLoi = new FrmBaoLoi();
-                    frmBaoLoi.hienThiLoi("Kiểm tra lại thông tin");
-                    frmBaoLoi.ShowDialog();
-                }
-
                 FrmThongBao frmThongBao = new FrmThongBao();
                 frmThongBao.hienThiThongBao("Sửa thông tin thành công");
                 frmThongBao.ShowDialog();
@@ -1684,7 +1682,7 @@ namespace Home.DuLieu
         public DataTable themDonHang1()
         {
             kn.myConnect();
-            string sql = "select MaDH from ThongTinDH";
+            string sql = "select MaDH from ThongTinDH where TenTaiKhoan is not null";
             SqlCommand cmd = new SqlCommand(sql, kn.con);
 
             DataTable dt = new DataTable();
@@ -1695,7 +1693,7 @@ namespace Home.DuLieu
         public DataTable themDonHang(int MaDH)
         {
             kn.myConnect();
-            string sql = "select * from ThongTinDH where MaDH = @MaDH";
+            string sql = "select * from ThongTinDH where MaDH = @MaDH and TenTaiKhoan is not null";
             SqlCommand cmd = new SqlCommand(sql, kn.con);
 
             SqlParameter sqlParameter0 = new SqlParameter("@MaDH", SqlDbType.Int);

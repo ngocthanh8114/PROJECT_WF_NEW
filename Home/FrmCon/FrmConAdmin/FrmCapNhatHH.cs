@@ -65,7 +65,6 @@ namespace Home.FrmCon.FrmHienThi
             }
             catch(Exception ex) 
             {
-                MessageBox.Show(ex.ToString());
                 FrmBaoLoi frmBaoLoi = new FrmBaoLoi();
                 frmBaoLoi.hienThiLoi("Không thực hiện được");
                 frmBaoLoi.ShowDialog();
