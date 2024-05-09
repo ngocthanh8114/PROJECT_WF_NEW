@@ -183,9 +183,9 @@
             this.lblBaoHanh.Dock = System.Windows.Forms.DockStyle.Right;
             this.lblBaoHanh.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.lblBaoHanh.ForeColor = System.Drawing.Color.Black;
-            this.lblBaoHanh.Location = new System.Drawing.Point(132, 0);
+            this.lblBaoHanh.Location = new System.Drawing.Point(89, 0);
             this.lblBaoHanh.Name = "lblBaoHanh";
-            this.lblBaoHanh.Size = new System.Drawing.Size(114, 44);
+            this.lblBaoHanh.Size = new System.Drawing.Size(157, 44);
             this.lblBaoHanh.TabIndex = 51;
             this.lblBaoHanh.Text = "135 ngày";
             this.lblBaoHanh.TextAlign = System.Drawing.ContentAlignment.MiddleRight;

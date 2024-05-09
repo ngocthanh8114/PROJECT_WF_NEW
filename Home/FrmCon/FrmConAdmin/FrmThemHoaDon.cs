@@ -32,51 +32,93 @@ namespace Home.FrmCon.FrmConAdmin
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(txtTenKhachHang.Text) || string.IsNullOrEmpty(txtSDT.Text) || string.IsNullOrEmpty(txtDiaChi.Text) ||
-       string.IsNullOrEmpty(txtTenSanPham.Text) || string.IsNullOrEmpty(txtMaSanPham.Text) || string.IsNullOrEmpty(txtSoLuong.Text) ||
-       string.IsNullOrEmpty(txtThue.Text) || string.IsNullOrEmpty(txtTongTien.Text))
+
+            if (string.IsNullOrWhiteSpace(txtTenKhachHang.Text) ||
+      string.IsNullOrWhiteSpace(txtSDT.Text) ||
+      string.IsNullOrWhiteSpace(txtDiaChi.Text) ||
+      string.IsNullOrWhiteSpace(txtTenSanPham.Text) ||
+      string.IsNullOrWhiteSpace(txtMaSanPham.Text) ||
+      string.IsNullOrWhiteSpace(txtSoLuong.Text) ||
+      string.IsNullOrWhiteSpace(txtThue.Text) ||
+      string.IsNullOrWhiteSpace(txtTongTien.Text))
             {
                 FrmBaoLoi frmBaoLoi = new FrmBaoLoi();
                 frmBaoLoi.hienThiLoi("Vui lòng nhập đầy đủ thông tin!");
                 frmBaoLoi.Show();
-                //return; 
+                return;
             }
-            else
+
+            // Tiến hành thêm hóa đơn
+            try
             {
-                xl.ThemHoaDon(txtTenKhachHang.Text, txtSDT.Text, txtDiaChi.Text, txtTenSanPham.Text, txtMaSanPham.Text, int.Parse(txtSoLuong.Text), decimal.Parse(txtThue.Text), decimal.Parse(txtTongTien.Text), dtngaymua.Value);
+                xl.ThemHoaDon(txtTenKhachHang.Text,
+                              txtSDT.Text,
+                              txtDiaChi.Text,
+                              txtTenSanPham.Text,
+                              txtMaSanPham.Text,
+                              int.Parse(txtSoLuong.Text),
+                              decimal.Parse(txtThue.Text),
+                              decimal.Parse(txtTongTien.Text),
+                              dtngaymua.Value);
+
+                // Sau khi thêm hóa đơn thành công, làm mới dữ liệu và các trường nhập liệu
                 loadDuLieu();
-                txtSoLuong.ResetText();
                 txtThue.ResetText();
                 txtTongTien.ResetText();
             }
+            catch (FormatException)
+            {
+                FrmBaoLoi frmBaoLoi = new FrmBaoLoi();
+                frmBaoLoi.hienThiLoi("Số lượng, thuế và tổng tiền phải là số!");
+                frmBaoLoi.Show();
+            }
+
         }
 
         private void btnIn_Click(object sender, EventArgs e)
         {
             try
             {
+                // Kết nối CSDL
                 KetNoiCSDL kn = new KetNoiCSDL();
-
                 kn.myConnect();
-                string query = "SELECT * FROM HoaDonTaiCuaHang WHERE MaSanPham = @MaSanPham";
+
+               
+                string query = "SELECT TOP 1 * FROM HoaDonTaiCuaHang WHERE MaSanPham = @MaSanPham ORDER BY NgayMua DESC";
                 SqlCommand command = new SqlCommand(query, kn.con);
                 command.Parameters.AddWithValue("@MaSanPham", txtMaSanPham.Text);
+
+              
                 DataTable dataTable = new DataTable();
+
+                
                 using (SqlDataAdapter adapter = new SqlDataAdapter(command))
                 {
                     adapter.Fill(dataTable);
                 }
-                HoaDon hoaDon = new HoaDon();
-                hoaDon.SetDatabaseLogon("sa", "123");
-                hoaDon.SetDataSource(dataTable);
 
-                // Hiển thị báo cáo
-                FrmIn frmIn = new FrmIn();
-                frmIn.crystalnhaphang.ReportSource = hoaDon;
-                frmIn.Show();
+                if (dataTable.Rows.Count > 0)
+                {
+                  
+                    HoaDon hoaDon = new HoaDon();
 
+                    hoaDon.SetDatabaseLogon("sa", "123");
+
+                  
+                    hoaDon.SetDataSource(dataTable);
+
+                    // Hiển thị báo cáo
+                    FrmIn frmIn = new FrmIn();
+                    frmIn.crystalnhaphang.ReportSource = hoaDon;
+                    frmIn.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Không tìm thấy dữ liệu cho mã sản phẩm này.");
+                }
+
+                // Đóng kết nối CSDL
                 kn.myClose();
-            
             }
             catch (Exception ex)
             {
