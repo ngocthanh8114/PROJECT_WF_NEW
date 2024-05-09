@@ -46,9 +46,10 @@
             this.lblTenSP.Dock = System.Windows.Forms.DockStyle.Top;
             this.lblTenSP.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTenSP.ForeColor = System.Drawing.Color.Black;
-            this.lblTenSP.Location = new System.Drawing.Point(0, 212);
+            this.lblTenSP.Location = new System.Drawing.Point(0, 172);
+            this.lblTenSP.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTenSP.Name = "lblTenSP";
-            this.lblTenSP.Size = new System.Drawing.Size(280, 56);
+            this.lblTenSP.Size = new System.Drawing.Size(210, 46);
             this.lblTenSP.TabIndex = 38;
             this.lblTenSP.Text = "SH 150i";
             this.lblTenSP.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -60,8 +61,9 @@
             this.lblTieuDe.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.lblTieuDe.ForeColor = System.Drawing.Color.Black;
             this.lblTieuDe.Location = new System.Drawing.Point(0, 0);
+            this.lblTieuDe.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTieuDe.Name = "lblTieuDe";
-            this.lblTieuDe.Size = new System.Drawing.Size(124, 44);
+            this.lblTieuDe.Size = new System.Drawing.Size(93, 36);
             this.lblTieuDe.TabIndex = 47;
             this.lblTieuDe.Text = "  Số lượng:";
             this.lblTieuDe.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -72,9 +74,10 @@
             this.lblSoLuong.Dock = System.Windows.Forms.DockStyle.Right;
             this.lblSoLuong.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.lblSoLuong.ForeColor = System.Drawing.Color.Black;
-            this.lblSoLuong.Location = new System.Drawing.Point(127, 0);
+            this.lblSoLuong.Location = new System.Drawing.Point(95, 0);
+            this.lblSoLuong.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblSoLuong.Name = "lblSoLuong";
-            this.lblSoLuong.Size = new System.Drawing.Size(153, 44);
+            this.lblSoLuong.Size = new System.Drawing.Size(115, 36);
             this.lblSoLuong.TabIndex = 51;
             this.lblSoLuong.Text = "12 chiếc";
             this.lblSoLuong.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -84,9 +87,10 @@
             this.guna2Panel1.Controls.Add(this.lblTieuDe);
             this.guna2Panel1.Controls.Add(this.lblSoLuong);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel1.Location = new System.Drawing.Point(0, 268);
+            this.guna2Panel1.Location = new System.Drawing.Point(0, 218);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(280, 44);
+            this.guna2Panel1.Size = new System.Drawing.Size(210, 36);
             this.guna2Panel1.TabIndex = 52;
             // 
             // btnMuaLai
@@ -109,7 +113,8 @@
             this.btnMuaLai.Image = null;
             this.btnMuaLai.ImageSize = new System.Drawing.Size(20, 20);
             this.btnMuaLai.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnMuaLai.Location = new System.Drawing.Point(0, 323);
+            this.btnMuaLai.Location = new System.Drawing.Point(0, 262);
+            this.btnMuaLai.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnMuaLai.Name = "btnMuaLai";
             this.btnMuaLai.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.btnMuaLai.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -117,7 +122,7 @@
             this.btnMuaLai.OnHoverImage = null;
             this.btnMuaLai.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.btnMuaLai.OnPressedColor = System.Drawing.Color.Black;
-            this.btnMuaLai.Size = new System.Drawing.Size(280, 45);
+            this.btnMuaLai.Size = new System.Drawing.Size(210, 37);
             this.btnMuaLai.TabIndex = 53;
             this.btnMuaLai.Text = "Mua Lại";
             this.btnMuaLai.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -126,9 +131,10 @@
             // lblMaDH
             // 
             this.lblMaDH.AutoSize = true;
-            this.lblMaDH.Location = new System.Drawing.Point(231, 196);
+            this.lblMaDH.Location = new System.Drawing.Point(173, 159);
+            this.lblMaDH.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblMaDH.Name = "lblMaDH";
-            this.lblMaDH.Size = new System.Drawing.Size(46, 16);
+            this.lblMaDH.Size = new System.Drawing.Size(38, 13);
             this.lblMaDH.TabIndex = 54;
             this.lblMaDH.Text = "MaDH";
             // 
@@ -138,9 +144,10 @@
             this.picBoxSP.Dock = System.Windows.Forms.DockStyle.Top;
             this.picBoxSP.Image = ((System.Drawing.Image)(resources.GetObject("picBoxSP.Image")));
             this.picBoxSP.ImageRotate = 0F;
-            this.picBoxSP.Location = new System.Drawing.Point(0, 36);
+            this.picBoxSP.Location = new System.Drawing.Point(0, 29);
+            this.picBoxSP.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.picBoxSP.Name = "picBoxSP";
-            this.picBoxSP.Size = new System.Drawing.Size(280, 176);
+            this.picBoxSP.Size = new System.Drawing.Size(210, 143);
             this.picBoxSP.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picBoxSP.TabIndex = 45;
             this.picBoxSP.TabStop = false;
@@ -154,17 +161,18 @@
             this.dtpNgayMua.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.dtpNgayMua.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.dtpNgayMua.Location = new System.Drawing.Point(0, 0);
+            this.dtpNgayMua.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dtpNgayMua.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtpNgayMua.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtpNgayMua.Name = "dtpNgayMua";
-            this.dtpNgayMua.Size = new System.Drawing.Size(280, 36);
+            this.dtpNgayMua.Size = new System.Drawing.Size(210, 29);
             this.dtpNgayMua.TabIndex = 55;
             this.dtpNgayMua.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.dtpNgayMua.Value = new System.DateTime(2024, 4, 24, 22, 54, 14, 282);
             // 
             // OSanPhamDaMua
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Controls.Add(this.lblMaDH);
@@ -173,8 +181,9 @@
             this.Controls.Add(this.lblTenSP);
             this.Controls.Add(this.picBoxSP);
             this.Controls.Add(this.dtpNgayMua);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "OSanPhamDaMua";
-            this.Size = new System.Drawing.Size(280, 368);
+            this.Size = new System.Drawing.Size(210, 299);
             this.guna2Panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picBoxSP)).EndInit();
             this.ResumeLayout(false);
