@@ -74,7 +74,7 @@ namespace Home.FrmCon.FrmHienThi
                     panelNoiDung.Controls.Add(oDiaChi);
                     oDiaChi.BringToFront();
                 }
-            }   
+            }
             muaHangExpand = false;
         }
 
@@ -156,6 +156,8 @@ namespace Home.FrmCon.FrmHienThi
             if(cbGiaoHang1.Checked == true) 
             { 
                 cbGiaoHang2.Checked = false;
+                txtDiaChi.Enabled = true;
+                txtDiaChi.Text = "";
             }
             else
             {
@@ -168,6 +170,8 @@ namespace Home.FrmCon.FrmHienThi
             if (cbGiaoHang2.Checked == true)
             {
                 cbGiaoHang1.Checked = false;
+                txtDiaChi.Enabled = false;
+                txtDiaChi.Text = "Phường Linh Chiểu, Thành Phố Thủ Đức, Thành phố Hồ Chí Minh, Việt Nam";
             }
             else
             {

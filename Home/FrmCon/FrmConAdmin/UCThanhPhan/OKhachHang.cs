@@ -26,6 +26,12 @@ namespace Home.FrmCon.FrmCuaAdmin
         {
             InitializeComponent();
         }
+        //private BaoHanh baoHanh = null;
+        //public OKhachHang(BaoHanh baoHanh)
+        //{
+        //    InitializeComponent();
+        //    this.baoHanh = baoHanh;
+        //}
 
         private void OKhachHang_Load(object sender, EventArgs e)
         {
@@ -64,7 +70,15 @@ namespace Home.FrmCon.FrmCuaAdmin
 
         private void btnChiTiet_Click(object sender, EventArgs e)
         {
-            chiTietKhachHang();
+            if(FrmAdmin.flag == 1)
+            {
+                chiTietKhachHang();
+            }
+            else if(FrmAdmin.flag == 2)
+            {
+                chiTietBaoHanh();
+            }
+            
         }
 
         private void chiTietKhachHang()
@@ -82,8 +96,23 @@ namespace Home.FrmCon.FrmCuaAdmin
                 int tongSL = xl.tinhSL(ten, sdt, diaChi);
                 TongForm.ChiTietKH.themNoiDung(ten, tenTK, diaChi, sdt, tongSL, tongTien);
                 TongForm.ChiTietKH.ChiTietKH_Load(this, EventArgs.Empty);
+            }
+        }
 
+        private void chiTietBaoHanh()
+        {
+            FrmAdmin parentForm = this.ParentForm as FrmAdmin;
 
+            if (parentForm != null)
+            {
+                parentForm.addHienThi(TongForm.ChiTietBaoHanh);
+                string ten = lblTenKH.Text;
+                string diaChi = lblDiaChi.Text;
+                string sdt = lblSDT.Text;
+                string tenTK = xl.tenTK(ten, sdt, diaChi);
+                int tongSL = xl.tinhSL(ten, sdt, diaChi);
+                TongForm.ChiTietBaoHanh.themNoiDung(ten, tenTK, diaChi, sdt, tongSL);
+                TongForm.ChiTietBaoHanh.BaoHanh_Load(this, EventArgs.Empty);
             }
         }
     }

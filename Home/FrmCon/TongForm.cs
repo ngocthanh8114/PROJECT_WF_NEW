@@ -22,6 +22,9 @@ namespace Home.FrmCon
         public static TaiKhoanAdmin TaiKhoanAdmin;
         public static GioiThieu GioiThieu;
         public static DichVu DichVu;
+        public static BaoHanh BaoHanh;
+        public static ChiTietBaoHanh ChiTietBaoHanh;
+
         public static void ResetFrm()
         {
             TaiKhoan = new TaiKhoan();
@@ -34,6 +37,8 @@ namespace Home.FrmCon
             TaiKhoanAdmin = new TaiKhoanAdmin();
             GioiThieu = new GioiThieu();
             DichVu = new DichVu();
+            BaoHanh = new BaoHanh();
+            ChiTietBaoHanh = new ChiTietBaoHanh();
         }
     }
 }
