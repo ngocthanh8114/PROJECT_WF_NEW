@@ -18,20 +18,17 @@ namespace Home.FrmCon.FrmCuaAdmin
         public KhachHang()
         {
             InitializeComponent();
-
         }
 
         public void addKhachHang(DataTable dt)
         {
             foreach (DataRow row in dt.Rows)
             {
-                //FrmCon.FrmHienThi.ODonHang oDonHang = new FrmCon.FrmHienThi.ODonHang();
                 FrmCon.FrmCuaAdmin.OKhachHang oKhachHang = new FrmCon.FrmCuaAdmin.OKhachHang();
                 // Lấy giá trị từng cột trong hàng hiện tại
                 string TenKhachHang = row["TenKhachHang"].ToString();
                 string SoDienThoai = row["SoDienThoai"].ToString();
                 string DiaChi = row["DiaChi"].ToString();
-
                 oKhachHang.themKhachHang(TenKhachHang, SoDienThoai, DiaChi);
                 panelNoiDung.Controls.Add(oKhachHang);
                 oKhachHang.BringToFront();
@@ -76,9 +73,8 @@ namespace Home.FrmCon.FrmCuaAdmin
                 else
                 {
                     FrmBaoLoi frmBaoLoi = new FrmBaoLoi();
-                    frmBaoLoi.hienThiLoi("Không tìm thấy tên sản phẩm " + txtTimKiem.Text);
+                    frmBaoLoi.hienThiLoi("Không tìm thấy tên khách hàng" + txtTimKiem.Text);
                     frmBaoLoi.Show();
-
                 }
                 txtTimKiem.Text = "";
             }

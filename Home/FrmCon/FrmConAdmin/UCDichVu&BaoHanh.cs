@@ -33,7 +33,6 @@ namespace Home.FrmCon.FrmConAdmin
         }
 
 
-        //DANG LAM
         private void btnBaoHanh_Click(object sender, EventArgs e)
         {
             BaoHanh baoHanh = new BaoHanh();
