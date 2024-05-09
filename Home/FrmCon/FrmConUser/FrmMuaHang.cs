@@ -222,5 +222,10 @@ namespace Home.FrmCon.FrmHienThi
         {
 
         }
+
+        private void lblMaDH_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

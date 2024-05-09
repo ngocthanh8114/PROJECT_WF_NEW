@@ -59,7 +59,7 @@ namespace Home.FrmCon.FrmBaoCao
             
                 FrmIn frmIn = new FrmIn();
 
-             
+                
                 frmIn.crystalnhaphang.ReportSource = nhapHang;
 
               
