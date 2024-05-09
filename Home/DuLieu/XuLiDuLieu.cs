@@ -2201,8 +2201,95 @@ namespace Home.DuLieu
             }
             return false;
         }
+
+        public void TruSoLuongSanPhamDaMua(string masanpham, int soluong)
+        {
+            kn.myConnect();
+            string sqlUpdate = "UPDATE SanPham SET SoLuong = SoLuong - @SoLuong WHERE MaSP = @MaSP";
+
+            SqlCommand cmd = new SqlCommand(sqlUpdate, kn.con);
+
+            // Thêm tham số cho câu lệnh SQL
+            cmd.Parameters.AddWithValue("@SoLuong", soluong);
+            cmd.Parameters.AddWithValue("@MaSP", masanpham);
+
+            cmd.ExecuteNonQuery();
+
+            
+        }
+        
+        //Thêm hóa đơn
+        public void ThemHoaDon(string tenkhachhang, string sodienthoai, string diachi, string tensanpham, string masanpham, int soluong, decimal thue, decimal tongtien, DateTime ngaymua)
+        {
+            kn.myConnect();
+
+      
+            string sqlCheckProduct = "SELECT COUNT(*) FROM SanPham WHERE MaSP = @MaSP AND TenSP = @TenSP";
+            SqlCommand cmdCheckProduct = new SqlCommand(sqlCheckProduct, kn.con);
+            cmdCheckProduct.Parameters.AddWithValue("@MaSanPham", masanpham);
+            cmdCheckProduct.Parameters.AddWithValue("@TenSanPham", tensanpham);
+
+            int productCount = (int)cmdCheckProduct.ExecuteScalar();
+
+            if (productCount == 0)
+            {
+                FrmThongBao frmThongBao = new FrmThongBao();
+                frmThongBao.hienThiThongBao("Mã sản phẩm hoặc tên sản phẩm không tồn tại. Vui lòng kiểm tra lại!");
+                frmThongBao.Show();
+                return; 
+            }
+
+            string sqlInsert = "INSERT INTO HoaDonTaiCuaHang (MaHoaDon, TenKhachHang, SoDienThoai, DiaChi, TenSanPham, MaSanPham, SoLuong, Thue, TongTien, NgayMua) " +
+                               "VALUES (@MaHoaDon, @TenKhachHang, @SoDienThoai, @DiaChi, @TenSanPham, @MaSanPham, @SoLuong, @Thue, @TongTien, @NgayMua)";
+
+            SqlCommand cmd = new SqlCommand(sqlInsert, kn.con);
+
+            // Tạo GUID mới
+            Guid maHoaDon = Guid.NewGuid();
+
+         
+            cmd.Parameters.AddWithValue("@MaHoaDon", maHoaDon);
+            cmd.Parameters.AddWithValue("@TenKhachHang", tenkhachhang);
+            cmd.Parameters.AddWithValue("@SoDienThoai", sodienthoai);
+            cmd.Parameters.AddWithValue("@DiaChi", diachi);
+            cmd.Parameters.AddWithValue("@TenSanPham", tensanpham);
+            cmd.Parameters.AddWithValue("@MaSanPham", masanpham);
+            cmd.Parameters.AddWithValue("@SoLuong", soluong);
+            cmd.Parameters.AddWithValue("@Thue", thue);
+            cmd.Parameters.AddWithValue("@TongTien", tongtien);
+            cmd.Parameters.AddWithValue("@NgayMua", ngaymua);
+
+            int rowsAffected = cmd.ExecuteNonQuery();
+
+            if (rowsAffected > 0)
+            {
+                TruSoLuongSanPhamDaMua(masanpham, soluong);
+                FrmThongBao frmThongBao = new FrmThongBao();
+                frmThongBao.hienThiThongBao("Thêm thành công!");
+                frmThongBao.Show();
+            }
+            else
+            {
+                FrmBaoLoi frmBaoLoi = new FrmBaoLoi();
+                frmBaoLoi.hienThiLoi("Thêm không thành công");
+                frmBaoLoi.Show();
+            }
+        }
+
+        //đổ dữ liệu vào hóa đơn
+        public DataTable DoDuLieuDichVuVaoHoaDon()
+        {
+            kn.myConnect();
+            string sql = "SELECT * FROM HoaDonTaiCuaHang";
+            SqlCommand cmd = new SqlCommand(sql, kn.con);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            return dt;
+        }
+
     }
-   
+
 }
 
 
