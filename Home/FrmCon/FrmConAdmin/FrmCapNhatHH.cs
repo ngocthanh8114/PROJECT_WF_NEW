@@ -35,6 +35,7 @@ namespace Home.FrmCon.FrmHienThi
             xl.LoadMaLoai(cboMaLoai);
             cboMaLoai.StartIndex = 4;
             xl.LoadFrmCapNhatHH(idsp, txtMaSP, txtTenSP, txtGia, txtSoLuong, picBoxSP);
+            dtNgayNhapHang.Value = DateTime.Now;
         }
 
         private void btnLuu_Click(object sender, EventArgs e)
@@ -46,9 +47,12 @@ namespace Home.FrmCon.FrmHienThi
                 // Hiển thị thông báo hoặc xử lý lỗi khi số lượng mới là số âm
                 SoLuongMoi = 0;
             }
+            try
+            {
                 string maloai = cboMaLoai.SelectedValue.ToString();
                 string mancc = cboMaNCC.SelectedValue.ToString();
                 xl.Connection_CSDL();
+
                 xl.SuaThongTinSanPhamAdmin(mancc, txtTenSP.Text, maloai, int.Parse(txtSoLuong.Text), SoLuongMoi, txtGia.Text, txtMaSP.Text, picBoxSP.Image, Int32.Parse(txtBaoHanh.Text), dtNgayNhapHang.Value);
 
                 if (xl.SuaHang)
@@ -57,6 +61,15 @@ namespace Home.FrmCon.FrmHienThi
                     picBoxSP.Image = null;
                     TongForm.SanPhamAdmin.SanPhamAdmin_Load(TongForm.SanPhamAdmin, e);
                 }
+            }
+            catch(Exception ex) 
+            {
+                MessageBox.Show(ex.ToString());
+                FrmBaoLoi frmBaoLoi = new FrmBaoLoi();
+                frmBaoLoi.hienThiLoi("Không thực hiện được");
+                frmBaoLoi.ShowDialog();
+            }
+                
            
         }
 

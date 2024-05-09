@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgv_thongke = new Guna.UI2.WinForms.Guna2DataGridView();
             this.lbl_TongTien = new System.Windows.Forms.Label();
             this.panelTop = new Guna.UI2.WinForms.Guna2Panel();
@@ -53,26 +53,26 @@
             // 
             // dgv_thongke
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dgv_thongke.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_thongke.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle19.BackColor = System.Drawing.Color.White;
+            this.dgv_thongke.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle19;
+            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle20.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle20.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle20.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_thongke.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle20;
             this.dgv_thongke.ColumnHeadersHeight = 4;
             this.dgv_thongke.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_thongke.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle21.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle21.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle21.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle21.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_thongke.DefaultCellStyle = dataGridViewCellStyle21;
             this.dgv_thongke.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgv_thongke.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgv_thongke.Location = new System.Drawing.Point(0, 156);
@@ -80,7 +80,7 @@
             this.dgv_thongke.Name = "dgv_thongke";
             this.dgv_thongke.RowHeadersVisible = false;
             this.dgv_thongke.RowHeadersWidth = 51;
-            this.dgv_thongke.Size = new System.Drawing.Size(1811, 509);
+            this.dgv_thongke.Size = new System.Drawing.Size(1811, 467);
             this.dgv_thongke.TabIndex = 6;
             this.dgv_thongke.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgv_thongke.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -106,14 +106,13 @@
             // 
             // lbl_TongTien
             // 
-            this.lbl_TongTien.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.lbl_TongTien.AutoSize = true;
+            this.lbl_TongTien.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.lbl_TongTien.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_TongTien.ForeColor = System.Drawing.Color.White;
-            this.lbl_TongTien.Location = new System.Drawing.Point(4, 640);
+            this.lbl_TongTien.Location = new System.Drawing.Point(0, 623);
             this.lbl_TongTien.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_TongTien.Name = "lbl_TongTien";
-            this.lbl_TongTien.Size = new System.Drawing.Size(118, 25);
+            this.lbl_TongTien.Size = new System.Drawing.Size(1811, 42);
             this.lbl_TongTien.TabIndex = 7;
             this.lbl_TongTien.Text = "Tổng Tiền:";
             // 
@@ -143,16 +142,15 @@
             // 
             this.guna2Panel3.Controls.Add(this.btn_thongke);
             this.guna2Panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.guna2Panel3.Location = new System.Drawing.Point(1572, 0);
+            this.guna2Panel3.Location = new System.Drawing.Point(1618, 0);
             this.guna2Panel3.Name = "guna2Panel3";
-            this.guna2Panel3.Size = new System.Drawing.Size(239, 57);
+            this.guna2Panel3.Size = new System.Drawing.Size(193, 57);
             this.guna2Panel3.TabIndex = 8;
             // 
             // btn_thongke
             // 
-            this.btn_thongke.AutoRoundedCorners = true;
             this.btn_thongke.BackColor = System.Drawing.Color.Transparent;
-            this.btn_thongke.BorderRadius = 19;
+            this.btn_thongke.BorderRadius = 5;
             this.btn_thongke.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btn_thongke.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btn_thongke.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -160,10 +158,10 @@
             this.btn_thongke.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btn_thongke.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.btn_thongke.ForeColor = System.Drawing.Color.White;
-            this.btn_thongke.Location = new System.Drawing.Point(4, 8);
+            this.btn_thongke.Location = new System.Drawing.Point(19, 4);
             this.btn_thongke.Margin = new System.Windows.Forms.Padding(4);
             this.btn_thongke.Name = "btn_thongke";
-            this.btn_thongke.Size = new System.Drawing.Size(213, 40);
+            this.btn_thongke.Size = new System.Drawing.Size(159, 45);
             this.btn_thongke.TabIndex = 6;
             this.btn_thongke.Text = "Thống kê";
             this.btn_thongke.Click += new System.EventHandler(this.btn_thongke_Click);
@@ -172,6 +170,7 @@
             // 
             this.cboSanPham.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.cboSanPham.BackColor = System.Drawing.Color.Transparent;
+            this.cboSanPham.BorderRadius = 5;
             this.cboSanPham.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cboSanPham.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboSanPham.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -179,11 +178,12 @@
             this.cboSanPham.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cboSanPham.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cboSanPham.ItemHeight = 30;
-            this.cboSanPham.Location = new System.Drawing.Point(1205, 8);
+            this.cboSanPham.Location = new System.Drawing.Point(1267, 4);
             this.cboSanPham.Margin = new System.Windows.Forms.Padding(4);
             this.cboSanPham.Name = "cboSanPham";
-            this.cboSanPham.Size = new System.Drawing.Size(323, 36);
+            this.cboSanPham.Size = new System.Drawing.Size(344, 36);
             this.cboSanPham.TabIndex = 7;
+            this.cboSanPham.SelectedIndexChanged += new System.EventHandler(this.cboSanPham_SelectedIndexChanged);
             // 
             // guna2Panel1
             // 
@@ -285,7 +285,6 @@
             this.guna2Panel3.ResumeLayout(false);
             this.guna2Panel1.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

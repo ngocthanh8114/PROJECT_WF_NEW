@@ -80,6 +80,7 @@
             this.guna2Panel21 = new Guna.UI2.WinForms.Guna2Panel();
             this.gunaAdvenceButton1 = new Guna.UI.WinForms.GunaAdvenceButton();
             this.panelNoiDung = new System.Windows.Forms.FlowLayoutPanel();
+            this.diaChiTrong1 = new Home.FrmCon.FrmConUser.UCThanhPhan.OTrong.DiaChiTrong();
             this.guna2Panel17 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel18 = new Guna.UI2.WinForms.Guna2Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -88,7 +89,6 @@
             this.guna2Panel10 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel12 = new Guna.UI2.WinForms.Guna2Panel();
             this.timerMuaHang = new System.Windows.Forms.Timer(this.components);
-            this.diaChiTrong1 = new Home.FrmCon.FrmConUser.UCThanhPhan.OTrong.DiaChiTrong();
             this.guna2Panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.guna2Panel6.SuspendLayout();
@@ -211,6 +211,7 @@
             this.lblMaDH.Size = new System.Drawing.Size(91, 16);
             this.lblMaDH.TabIndex = 37;
             this.lblMaDH.Text = "Mã đơn hàng: ";
+            this.lblMaDH.Click += new System.EventHandler(this.lblMaDH_Click);
             // 
             // btnMuaHang
             // 
@@ -904,6 +905,13 @@
             this.panelNoiDung.TabIndex = 29;
             this.panelNoiDung.Paint += new System.Windows.Forms.PaintEventHandler(this.panelNoiDung_Paint);
             // 
+            // diaChiTrong1
+            // 
+            this.diaChiTrong1.Location = new System.Drawing.Point(3, 3);
+            this.diaChiTrong1.Name = "diaChiTrong1";
+            this.diaChiTrong1.Size = new System.Drawing.Size(642, 567);
+            this.diaChiTrong1.TabIndex = 0;
+            // 
             // guna2Panel17
             // 
             this.guna2Panel17.BackColor = System.Drawing.SystemColors.ControlDarkDark;
@@ -983,13 +991,6 @@
             // 
             this.timerMuaHang.Interval = 10;
             this.timerMuaHang.Tick += new System.EventHandler(this.timerMuaHang_Tick);
-            // 
-            // diaChiTrong1
-            // 
-            this.diaChiTrong1.Location = new System.Drawing.Point(3, 3);
-            this.diaChiTrong1.Name = "diaChiTrong1";
-            this.diaChiTrong1.Size = new System.Drawing.Size(642, 567);
-            this.diaChiTrong1.TabIndex = 0;
             // 
             // FrmMuaHang
             // 

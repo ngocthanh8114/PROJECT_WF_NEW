@@ -43,5 +43,10 @@ namespace Home.FrmCon.FrmBaoCao
             uCBaoCaoHoaDon.Dock = DockStyle.Fill;
             uCBaoCaoHoaDon.BringToFront();
         }
+
+        private void UCBaoCao_Load(object sender, EventArgs e)
+        {
+            sanPhamTrong1.themNoiDung("Bạn chưa chọn tính năng!", "Vui lòng chọn tính năng bạn muốn thực hiện!");
+        }
     }
 }

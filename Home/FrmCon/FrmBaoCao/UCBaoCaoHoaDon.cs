@@ -1,4 +1,5 @@
 ﻿using Home.DuLieu;
+using Home.FrmCon.FrmConAdmin;
 using Home.FrmCon.FrmHienThi;
 using System;
 using System.Collections.Generic;
@@ -127,6 +128,12 @@ namespace Home.FrmCon.FrmBaoCao
         private void btn_Sua_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnThemHoaDon_Click(object sender, EventArgs e)
+        {
+            FrmThemHoaDon frmThemHoaDon = new FrmThemHoaDon();
+            frmThemHoaDon.ShowDialog();
         }
     }
 }

@@ -167,9 +167,9 @@
             this.lblNam.Dock = System.Windows.Forms.DockStyle.Right;
             this.lblNam.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
             this.lblNam.ForeColor = System.Drawing.Color.Black;
-            this.lblNam.Location = new System.Drawing.Point(117, 0);
+            this.lblNam.Location = new System.Drawing.Point(81, 0);
             this.lblNam.Name = "lblNam";
-            this.lblNam.Size = new System.Drawing.Size(130, 35);
+            this.lblNam.Size = new System.Drawing.Size(166, 35);
             this.lblNam.TabIndex = 12;
             this.lblNam.Text = "5 năm";
             this.lblNam.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
