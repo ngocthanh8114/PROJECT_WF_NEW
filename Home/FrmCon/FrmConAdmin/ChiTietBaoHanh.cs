@@ -22,7 +22,7 @@ namespace Home.FrmCon.FrmConAdmin
         XuLiDuLieu xl = new XuLiDuLieu();
         public void addHienThi(DataTable dt)
         {
-            foreach(DataRow row in dt.Rows)
+            foreach (DataRow row in dt.Rows)
             {
                 OBaoHanh oBaoHanh = new OBaoHanh();
                 // Lấy giá trị từng cột trong hàng hiện tại
@@ -33,21 +33,45 @@ namespace Home.FrmCon.FrmConAdmin
                 Image anh = xl.ByteArrToImage(b);
                 DateTime hetHan = row.Field<DateTime>("HetHan");
                 TimeSpan baoHanh = hetHan - DateTime.Now;
-                oBaoHanh.themBaoHanh(tenSP, MaDH, SL, baoHanh);
+                int NgayBaoHanh = baoHanh.Days;
+                oBaoHanh.themBaoHanh(tenSP, MaDH, SL, NgayBaoHanh, anh);
                 panelNoiDung.Controls.Add(oBaoHanh);
                 oBaoHanh.BringToFront();
             }
         }
 
-        private void panelNoiDung_Paint(object sender, PaintEventArgs e)
+        public void themNoiDung(string tenKH, string tenTK, string diaChi, string sdt, int sp)
         {
+            lblTenKH.Text = tenKH;
+            lblTenTK.Text = tenTK;
+            lblDiaChi.Text = diaChi;
+            lblSDT.Text = sdt;
+            lblSP.Text = sp + " sản phẩm";
+        }
+        private void quayLaiKhachHang()
+        {
+            FrmAdmin parentForm = this.ParentForm as FrmAdmin;
 
+            if (parentForm != null)
+            {
+                parentForm.btnDichVu_Click(this, EventArgs.Empty);
+                parentForm.
+            }
         }
 
-        private void BaoHanh_Load(object sender, EventArgs e)
+        public void BaoHanh_Load(object sender, EventArgs e)
         {
             panelNoiDung.Controls.Clear();
-            addHienThi(xl.ddoDuLieuBaoHanh(lblTenKH.Text, lblSDT.Text, lblDiaChi.Text));
+            string ten = lblTenKH.Text;
+            string sdt = lblSDT.Text;
+            string diaChi = lblDiaChi.Text;
+
+            addHienThi(xl.ddoDuLieuBaoHanh(ten,diaChi,sdt));
+        }
+
+        private void btnHuy_Click(object sender, EventArgs e)
+        {
+            quayLaiKhachHang();
         }
     }
 }

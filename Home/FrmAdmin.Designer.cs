@@ -158,7 +158,10 @@
             this.btnNhanVien.TabIndex = 4;
             this.btnNhanVien.Text = "Nhân viên";
             this.btnNhanVien.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+<<<<<<< HEAD
             this.btnNhanVien.Click += new System.EventHandler(this.btnNhanVien_Click);
+=======
+>>>>>>> e029851ab0a19630d25989f1262e80ec5d79e7e6
             // 
             // btnBaoCao
             // 
@@ -400,6 +403,7 @@
             this.Name = "FrmAdmin";
             this.Text = "FrmAdmin";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.FrmAdmin_Load);
             this.panelTong.ResumeLayout(false);
             this.gunaPanel2.ResumeLayout(false);
             this.panelThanhTieuDe.ResumeLayout(false);

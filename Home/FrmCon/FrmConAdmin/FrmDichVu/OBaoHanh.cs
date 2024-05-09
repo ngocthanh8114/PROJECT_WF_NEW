@@ -16,12 +16,13 @@ namespace Home.FrmCon.FrmConAdmin.FrmDichVu
         {
             InitializeComponent();
         }
-        public void themBaoHanh(string tenSP, int maDH, int SL, TimeSpan ngay )
+        public void themBaoHanh(string tenSP, int maDH, int SL, int ngay, Image anh )
         {
             lblMaDH.Text = maDH.ToString();
             lblTenSP.Text = tenSP;
             lblSoLuong.Text = SL.ToString() + " sản phẩm";
             lblBaoHanh.Text = ngay.ToString() + " ngày";
+            picBoxSP.Image = anh;
         }
     }
 }

@@ -133,7 +133,7 @@
             this.grpGioiThieu.Controls.Add(this.guna2Panel2);
             this.grpGioiThieu.Controls.Add(this.guna2Panel4);
             this.grpGioiThieu.Controls.Add(this.guna2Panel1);
-            this.grpGioiThieu.Font = new System.Drawing.Font("UTM Futura Extra", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpGioiThieu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpGioiThieu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             this.grpGioiThieu.Location = new System.Drawing.Point(26, 25);
             this.grpGioiThieu.Name = "grpGioiThieu";
@@ -627,9 +627,11 @@
             this.cboLoaiDV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboLoaiDV.Name = "cboLoaiDV";
             this.cboLoaiDV.Size = new System.Drawing.Size(437, 36);
+            this.cboLoaiDV.StartIndex = 0;
             this.cboLoaiDV.TabIndex = 53;
             this.cboLoaiDV.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.cboLoaiDV.TextOffset = new System.Drawing.Point(10, 3);
+            this.cboLoaiDV.SelectedIndexChanged += new System.EventHandler(this.cboLoaiDV_SelectedIndexChanged);
             // 
             // txtDiaChi
             // 

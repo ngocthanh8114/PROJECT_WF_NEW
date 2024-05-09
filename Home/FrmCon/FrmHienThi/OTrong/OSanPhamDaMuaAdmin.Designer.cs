@@ -1,6 +1,6 @@
-﻿namespace Home.FrmCon.FrmHienThi
+﻿namespace Home.FrmCon.FrmHienThi.OTrong
 {
-    partial class OSanPhamDaMua
+    partial class OSanPhamDaMuaAdmin
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,15 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OSanPhamDaMua));
             this.lblTenSP = new System.Windows.Forms.Label();
             this.lblTieuDe = new System.Windows.Forms.Label();
             this.lblSoLuong = new System.Windows.Forms.Label();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.btnMuaLai = new Guna.UI.WinForms.GunaAdvenceButton();
             this.lblMaDH = new System.Windows.Forms.Label();
-            this.picBoxSP = new Guna.UI2.WinForms.Guna2PictureBox();
             this.dtpNgayMua = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.picBoxSP = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxSP)).BeginInit();
             this.SuspendLayout();
@@ -88,45 +86,10 @@
             this.guna2Panel1.Controls.Add(this.lblSoLuong);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 218);
-            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(210, 36);
             this.guna2Panel1.TabIndex = 52;
-            // 
-            // btnMuaLai
-            // 
-            this.btnMuaLai.AnimationHoverSpeed = 0.07F;
-            this.btnMuaLai.AnimationSpeed = 0.03F;
-            this.btnMuaLai.BackColor = System.Drawing.Color.Transparent;
-            this.btnMuaLai.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnMuaLai.BorderColor = System.Drawing.Color.Black;
-            this.btnMuaLai.CheckedBaseColor = System.Drawing.Color.DimGray;
-            this.btnMuaLai.CheckedBorderColor = System.Drawing.Color.Black;
-            this.btnMuaLai.CheckedForeColor = System.Drawing.Color.White;
-            this.btnMuaLai.CheckedImage = null;
-            this.btnMuaLai.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.btnMuaLai.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnMuaLai.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btnMuaLai.FocusedColor = System.Drawing.Color.Empty;
-            this.btnMuaLai.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMuaLai.ForeColor = System.Drawing.Color.White;
-            this.btnMuaLai.Image = null;
-            this.btnMuaLai.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnMuaLai.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnMuaLai.Location = new System.Drawing.Point(0, 262);
-            this.btnMuaLai.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnMuaLai.Name = "btnMuaLai";
-            this.btnMuaLai.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btnMuaLai.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnMuaLai.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnMuaLai.OnHoverImage = null;
-            this.btnMuaLai.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnMuaLai.OnPressedColor = System.Drawing.Color.Black;
-            this.btnMuaLai.Size = new System.Drawing.Size(210, 37);
-            this.btnMuaLai.TabIndex = 53;
-            this.btnMuaLai.Text = "Mua Lại";
-            this.btnMuaLai.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btnMuaLai.Click += new System.EventHandler(this.btnMuaLai_Click);
             // 
             // lblMaDH
             // 
@@ -138,20 +101,6 @@
             this.lblMaDH.TabIndex = 54;
             this.lblMaDH.Text = "MaDH";
             // 
-            // picBoxSP
-            // 
-            this.picBoxSP.BackColor = System.Drawing.Color.White;
-            this.picBoxSP.Dock = System.Windows.Forms.DockStyle.Top;
-            this.picBoxSP.Image = ((System.Drawing.Image)(resources.GetObject("picBoxSP.Image")));
-            this.picBoxSP.ImageRotate = 0F;
-            this.picBoxSP.Location = new System.Drawing.Point(0, 29);
-            this.picBoxSP.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.picBoxSP.Name = "picBoxSP";
-            this.picBoxSP.Size = new System.Drawing.Size(210, 143);
-            this.picBoxSP.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picBoxSP.TabIndex = 45;
-            this.picBoxSP.TabStop = false;
-            // 
             // dtpNgayMua
             // 
             this.dtpNgayMua.Checked = true;
@@ -161,7 +110,7 @@
             this.dtpNgayMua.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.dtpNgayMua.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.dtpNgayMua.Location = new System.Drawing.Point(0, 0);
-            this.dtpNgayMua.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtpNgayMua.Margin = new System.Windows.Forms.Padding(2);
             this.dtpNgayMua.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtpNgayMua.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtpNgayMua.Name = "dtpNgayMua";
@@ -170,20 +119,33 @@
             this.dtpNgayMua.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.dtpNgayMua.Value = new System.DateTime(2024, 4, 24, 22, 54, 14, 282);
             // 
-            // OSanPhamDaMua
+            // picBoxSP
+            // 
+            this.picBoxSP.BackColor = System.Drawing.Color.White;
+            this.picBoxSP.Dock = System.Windows.Forms.DockStyle.Top;
+            this.picBoxSP.Image = global::Home.Properties.Resources.maxresdefault;
+            this.picBoxSP.ImageRotate = 0F;
+            this.picBoxSP.Location = new System.Drawing.Point(0, 29);
+            this.picBoxSP.Margin = new System.Windows.Forms.Padding(2);
+            this.picBoxSP.Name = "picBoxSP";
+            this.picBoxSP.Size = new System.Drawing.Size(210, 143);
+            this.picBoxSP.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picBoxSP.TabIndex = 45;
+            this.picBoxSP.TabStop = false;
+            // 
+            // OSanPhamDaMuaAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Controls.Add(this.lblMaDH);
-            this.Controls.Add(this.btnMuaLai);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.lblTenSP);
             this.Controls.Add(this.picBoxSP);
             this.Controls.Add(this.dtpNgayMua);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.Name = "OSanPhamDaMua";
-            this.Size = new System.Drawing.Size(210, 299);
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Name = "OSanPhamDaMuaAdmin";
+            this.Size = new System.Drawing.Size(210, 270);
             this.guna2Panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picBoxSP)).EndInit();
             this.ResumeLayout(false);
@@ -197,7 +159,6 @@
         private Guna.UI2.WinForms.Guna2PictureBox picBoxSP;
         private System.Windows.Forms.Label lblSoLuong;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
-        private Guna.UI.WinForms.GunaAdvenceButton btnMuaLai;
         private System.Windows.Forms.Label lblMaDH;
         private Guna.UI2.WinForms.Guna2DateTimePicker dtpNgayMua;
     }

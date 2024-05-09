@@ -506,6 +506,7 @@ namespace Home.DuLieu
             sqlCmd.ExecuteNonQuery();
         }
 
+        //Tim kiem DON HANG
         public DataTable doDuLieu_TimKiem(string TenSP)
         {
             kn.myConnect();
@@ -513,6 +514,21 @@ namespace Home.DuLieu
             SqlCommand cmd = new SqlCommand(sql, kn.con);
             cmd.Parameters.AddWithValue("@TenSP", "%" + TenSP + "%");
             cmd.Parameters.AddWithValue("@TenTK", TaiKhoanDangNhap.tenTaiKhoan);
+
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            return dt;
+        }
+
+        //Tim kiem KHACHHANG
+
+        public DataTable doDuLieu_TimKiem_KH(string TenKhachHang)
+        {
+            kn.myConnect();
+            string sql = "SELECT TenKhachHang, SoDienThoai, DiaChi FROM DiaChiKhachHang WHERE TenKhachHang LIKE @TenKhachHang";
+            SqlCommand cmd = new SqlCommand(sql, kn.con);
+            cmd.Parameters.AddWithValue("@TenKhachHang", "%" + TenKhachHang + "%");
 
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
@@ -1077,7 +1093,7 @@ namespace Home.DuLieu
             maLoai.DisplayMember = "LoaiSP";
             maLoai.ValueMember = "MaLoai";
         }
-        public void LoadFrmCapNhatHH(string masp, Guna2TextBox maSP, Guna2TextBox tenSP, Guna2TextBox gia, Guna2TextBox soLuong, Guna2PictureBox Anh)
+        public void LoadFrmCapNhatHH(string masp, Guna2TextBox maSP, Guna2TextBox tenSP, Guna2TextBox gia, Guna2TextBox soLuong, Guna2PictureBox Anh, Guna2TextBox BaoHanh)
         {
             kn.myConnect();
             string sql = "SELECT * FROM SanPham WHERE MaSP = @MaSP";
@@ -1092,6 +1108,7 @@ namespace Home.DuLieu
                 string price = reader.GetDecimal(2).ToString();
                 string sl = reader.GetInt32(4).ToString();
                 Image anh = ByteArrToImage((byte[])reader.GetValue(5));
+                string bh = reader.GetInt32(7).ToString();
 
                 //Hiển thị
                 maSP.Text = idsp.Trim();
@@ -1099,6 +1116,7 @@ namespace Home.DuLieu
                 gia.Text = price.Trim();
                 soLuong.Text = sl.Trim();
                 Anh.Image = anh;
+                BaoHanh.Text = bh;
             }
             //Đóng đầu đọc
             reader.Close();
@@ -1180,7 +1198,7 @@ namespace Home.DuLieu
 
                 FrmThongBao frmThongBao = new FrmThongBao();
                 frmThongBao.hienThiThongBao("Sửa thông tin thành công");
-                frmThongBao.Show();
+                frmThongBao.ShowDialog();
                 SuaHang = true;
                 
             }
@@ -2336,7 +2354,7 @@ namespace Home.DuLieu
         public DataTable ddoDuLieuBaoHanh(string ten, string diaChi, string sdt)
         {
             kn.myConnect();
-            string sql = "SELECT sp.TenSP, dhdm.SoLuong, dhdm.MaDH,HinhAnh,sp.MaSP,bhsp.NgayDH,bhsp.HetHan\r\nFROM DonHangDaMua AS dhdm \r\nJOIN ThongTinDH AS ttdh ON dhdm.MaDH = ttdh.MaDH \r\nJOIN SanPham AS sp ON sp.MaSP = dhdm.MaSP \r\nJOIN BaoHanhSanPham AS bhsp ON bhsp.MaDH = ttdh.MaDH and sp.MaSP = bhsp.MaSP and TenKhachHang = @TenKhachHang and SoDienThoai = @SoDienThoai and DiaChi = @DiaChi ";
+            string sql = "SELECT sp.TenSP, dhdm.SoLuong, dhdm.MaDH,HinhAnh,sp.MaSP,bhsp.NgayDH,bhsp.HetHan FROM DonHangDaMua AS dhdm JOIN ThongTinDH AS ttdh ON dhdm.MaDH = ttdh.MaDH JOIN SanPham AS sp ON sp.MaSP = dhdm.MaSP JOIN BaoHanhSanPham AS bhsp ON bhsp.MaDH = ttdh.MaDH and sp.MaSP = bhsp.MaSP and TenKhachHang = @TenKhachHang and SoDienThoai = @SoDienThoai and DiaChi = @DiaChi ";
             SqlCommand cmd = new SqlCommand(sql, kn.con);
 
             SqlParameter sqlParameter1 = new SqlParameter("@DiaChi", SqlDbType.NVarChar);

@@ -54,7 +54,7 @@
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 263);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(248, 44);
+            this.guna2Panel1.Size = new System.Drawing.Size(246, 44);
             this.guna2Panel1.TabIndex = 70;
             // 
             // lblTieuDe
@@ -76,7 +76,7 @@
             this.lblSoLuong.Dock = System.Windows.Forms.DockStyle.Right;
             this.lblSoLuong.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.lblSoLuong.ForeColor = System.Drawing.Color.Black;
-            this.lblSoLuong.Location = new System.Drawing.Point(111, 0);
+            this.lblSoLuong.Location = new System.Drawing.Point(109, 0);
             this.lblSoLuong.Name = "lblSoLuong";
             this.lblSoLuong.Size = new System.Drawing.Size(137, 44);
             this.lblSoLuong.TabIndex = 51;
@@ -90,7 +90,7 @@
             this.lblTenSP.ForeColor = System.Drawing.Color.Black;
             this.lblTenSP.Location = new System.Drawing.Point(0, 220);
             this.lblTenSP.Name = "lblTenSP";
-            this.lblTenSP.Size = new System.Drawing.Size(248, 43);
+            this.lblTenSP.Size = new System.Drawing.Size(246, 43);
             this.lblTenSP.TabIndex = 67;
             this.lblTenSP.Text = "SH 150i";
             this.lblTenSP.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -102,7 +102,7 @@
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel2.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(248, 44);
+            this.guna2Panel2.Size = new System.Drawing.Size(246, 44);
             this.guna2Panel2.TabIndex = 72;
             // 
             // label1
@@ -124,7 +124,7 @@
             this.lblMaDH.Dock = System.Windows.Forms.DockStyle.Right;
             this.lblMaDH.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.lblMaDH.ForeColor = System.Drawing.Color.Black;
-            this.lblMaDH.Location = new System.Drawing.Point(111, 0);
+            this.lblMaDH.Location = new System.Drawing.Point(109, 0);
             this.lblMaDH.Name = "lblMaDH";
             this.lblMaDH.Size = new System.Drawing.Size(137, 44);
             this.lblMaDH.TabIndex = 51;
@@ -136,9 +136,9 @@
             this.guna2Panel9.BackColor = System.Drawing.Color.Red;
             this.guna2Panel9.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.guna2Panel9.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.guna2Panel9.Location = new System.Drawing.Point(0, 359);
+            this.guna2Panel9.Location = new System.Drawing.Point(0, 357);
             this.guna2Panel9.Name = "guna2Panel9";
-            this.guna2Panel9.Size = new System.Drawing.Size(248, 6);
+            this.guna2Panel9.Size = new System.Drawing.Size(246, 6);
             this.guna2Panel9.TabIndex = 71;
             // 
             // picBoxSP
@@ -149,7 +149,7 @@
             this.picBoxSP.ImageRotate = 0F;
             this.picBoxSP.Location = new System.Drawing.Point(0, 44);
             this.picBoxSP.Name = "picBoxSP";
-            this.picBoxSP.Size = new System.Drawing.Size(248, 176);
+            this.picBoxSP.Size = new System.Drawing.Size(246, 176);
             this.picBoxSP.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picBoxSP.TabIndex = 68;
             this.picBoxSP.TabStop = false;
@@ -161,7 +161,7 @@
             this.guna2Panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel3.Location = new System.Drawing.Point(0, 307);
             this.guna2Panel3.Name = "guna2Panel3";
-            this.guna2Panel3.Size = new System.Drawing.Size(248, 44);
+            this.guna2Panel3.Size = new System.Drawing.Size(246, 44);
             this.guna2Panel3.TabIndex = 73;
             // 
             // label2
@@ -183,7 +183,7 @@
             this.lblBaoHanh.Dock = System.Windows.Forms.DockStyle.Right;
             this.lblBaoHanh.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.lblBaoHanh.ForeColor = System.Drawing.Color.Black;
-            this.lblBaoHanh.Location = new System.Drawing.Point(134, 0);
+            this.lblBaoHanh.Location = new System.Drawing.Point(132, 0);
             this.lblBaoHanh.Name = "lblBaoHanh";
             this.lblBaoHanh.Size = new System.Drawing.Size(114, 44);
             this.lblBaoHanh.TabIndex = 51;
@@ -194,6 +194,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Controls.Add(this.guna2Panel3);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.lblTenSP);
@@ -201,7 +202,7 @@
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2Panel9);
             this.Name = "OBaoHanh";
-            this.Size = new System.Drawing.Size(248, 365);
+            this.Size = new System.Drawing.Size(246, 363);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picBoxSP)).EndInit();

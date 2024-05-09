@@ -211,7 +211,6 @@
             this.lblMaDH.Size = new System.Drawing.Size(91, 16);
             this.lblMaDH.TabIndex = 37;
             this.lblMaDH.Text = "Mã đơn hàng: ";
-            this.lblMaDH.Click += new System.EventHandler(this.lblMaDH_Click);
             // 
             // btnMuaHang
             // 
@@ -720,7 +719,6 @@
             this.txtEmail.SelectedText = "";
             this.txtEmail.Size = new System.Drawing.Size(269, 48);
             this.txtEmail.TabIndex = 6;
-            this.txtEmail.TextChanged += new System.EventHandler(this.txtEmail_TextChanged);
             // 
             // txtHoTen
             // 
@@ -903,13 +901,13 @@
             this.panelNoiDung.Name = "panelNoiDung";
             this.panelNoiDung.Size = new System.Drawing.Size(610, 591);
             this.panelNoiDung.TabIndex = 29;
-            this.panelNoiDung.Paint += new System.Windows.Forms.PaintEventHandler(this.panelNoiDung_Paint);
             // 
             // diaChiTrong1
             // 
-            this.diaChiTrong1.Location = new System.Drawing.Point(3, 3);
+            this.diaChiTrong1.Location = new System.Drawing.Point(3, 2);
+            this.diaChiTrong1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.diaChiTrong1.Name = "diaChiTrong1";
-            this.diaChiTrong1.Size = new System.Drawing.Size(642, 567);
+            this.diaChiTrong1.Size = new System.Drawing.Size(643, 567);
             this.diaChiTrong1.TabIndex = 0;
             // 
             // guna2Panel17
