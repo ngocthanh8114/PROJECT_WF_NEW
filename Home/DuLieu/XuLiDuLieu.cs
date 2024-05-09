@@ -2243,7 +2243,6 @@ namespace Home.DuLieu
             return false;
         }
 
-<<<<<<< HEAD
         public void TruSoLuongSanPhamDaMua(string masanpham, int soluong)
         {
             kn.myConnect();
@@ -2325,7 +2324,14 @@ namespace Home.DuLieu
             string sql = "SELECT * FROM HoaDonTaiCuaHang";
             SqlCommand cmd = new SqlCommand(sql, kn.con);
             SqlDataAdapter da = new SqlDataAdapter(cmd);
-=======
+
+            DataTable dataTable = new DataTable();
+
+            da.Fill(dataTable);
+            kn.myClose();
+            return dataTable;
+        }
+
         public DataTable ddoDuLieuBaoHanh(string ten, string diaChi, string sdt)
         {
             kn.myConnect();
@@ -2345,15 +2351,11 @@ namespace Home.DuLieu
             cmd.Parameters.Add(sqlParameter4);
             SqlDataAdapter da = new SqlDataAdapter(cmd);
 
->>>>>>> 99336f9e9a7fb87cef99700dc2458880817bc66b
             DataTable dt = new DataTable();
             da.Fill(dt);
             return dt;
         }
-<<<<<<< HEAD
 
-=======
->>>>>>> 99336f9e9a7fb87cef99700dc2458880817bc66b
     }
 
 }
