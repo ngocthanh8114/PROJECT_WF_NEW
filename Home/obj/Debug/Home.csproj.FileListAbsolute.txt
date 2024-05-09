@@ -1354,11 +1354,9 @@ C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\obj\Debug\Home.F
 C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.ChiTietBaoHanh.resources
 C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.FrmDichVu.OBaoHanh.resources
 >>>>>>> 1aa2d06cb4efeb9d5d15c120f910c149c6aa740d
-<<<<<<< HEAD
 D:\CODE C#\PROJECT\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.FrmThemHoaDon.resources
 D:\CODE C#\PROJECT\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.UCNhanVien.resources
 D:\CODE C#\PROJECT\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.UCThanhPhan.ONhanVien.resources
-=======
 E:\study\NAM_2_KI_2\LAP_TRINH_WINDOWS\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.BaoHanh.resources
 E:\study\NAM_2_KI_2\LAP_TRINH_WINDOWS\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.ChiTietBaoHanh.resources
 E:\study\NAM_2_KI_2\LAP_TRINH_WINDOWS\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.FrmDichVu.OBaoHanh.resources
