@@ -1237,3 +1237,6 @@ D:\CODE C#\PROJECT\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConUser.UCThanhP
 D:\VS Code\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.BaoHanh.resources
 D:\VS Code\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.FrmDichVu.OBaoHanh.resources
 D:\VS Code\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.ChiTietBaoHanh.resources
+D:\CODE C#\PROJECT\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.BaoHanh.resources
+D:\CODE C#\PROJECT\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.ChiTietBaoHanh.resources
+D:\CODE C#\PROJECT\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.FrmDichVu.OBaoHanh.resources

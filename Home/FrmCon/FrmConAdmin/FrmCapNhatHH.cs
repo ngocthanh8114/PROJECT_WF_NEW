@@ -33,14 +33,10 @@ namespace Home.FrmCon.FrmHienThi
             txtMaSP.Text = idsp;
             xl.LoadMaNCC(cboMaNCC);
             xl.LoadMaLoai(cboMaLoai);
-<<<<<<< HEAD
             cboMaLoai.StartIndex = SanPhamAdmin.indexcbo;
             xl.LoadFrmCapNhatHH(idsp, txtMaSP, txtTenSP, txtGia, txtSoLuong, picBoxSP, txtBaoHanh);
-=======
-            cboMaLoai.StartIndex = 4;
-            xl.LoadFrmCapNhatHH(idsp, txtMaSP, txtTenSP, txtGia, txtSoLuong, picBoxSP);
+            cboMaLoai.StartIndex = SanPhamAdmin.indexcbo;
             dtNgayNhapHang.Value = DateTime.Now;
->>>>>>> 99336f9e9a7fb87cef99700dc2458880817bc66b
         }
 
         private void btnLuu_Click(object sender, EventArgs e)
