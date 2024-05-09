@@ -76,13 +76,14 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgNhapHang.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgNhapHang.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgNhapHang.Location = new System.Drawing.Point(74, 24);
-            this.dgNhapHang.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgNhapHang.Location = new System.Drawing.Point(99, 30);
+            this.dgNhapHang.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgNhapHang.Name = "dgNhapHang";
+            this.dgNhapHang.ReadOnly = true;
             this.dgNhapHang.RowHeadersVisible = false;
             this.dgNhapHang.RowHeadersWidth = 51;
             this.dgNhapHang.RowTemplate.Height = 24;
-            this.dgNhapHang.Size = new System.Drawing.Size(1358, 540);
+            this.dgNhapHang.Size = new System.Drawing.Size(1811, 665);
             this.dgNhapHang.TabIndex = 0;
             this.dgNhapHang.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgNhapHang.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -97,7 +98,7 @@
             this.dgNhapHang.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.dgNhapHang.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dgNhapHang.ThemeStyle.HeaderStyle.Height = 18;
-            this.dgNhapHang.ThemeStyle.ReadOnly = false;
+            this.dgNhapHang.ThemeStyle.ReadOnly = true;
             this.dgNhapHang.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.dgNhapHang.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgNhapHang.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -112,6 +113,7 @@
             this.masanpham.HeaderText = "Mã sản phẩm";
             this.masanpham.MinimumWidth = 6;
             this.masanpham.Name = "masanpham";
+            this.masanpham.ReadOnly = true;
             // 
             // tensanpham
             // 
@@ -119,6 +121,7 @@
             this.tensanpham.HeaderText = "Tên sản phẩm";
             this.tensanpham.MinimumWidth = 6;
             this.tensanpham.Name = "tensanpham";
+            this.tensanpham.ReadOnly = true;
             // 
             // gia
             // 
@@ -126,6 +129,7 @@
             this.gia.HeaderText = "Giá";
             this.gia.MinimumWidth = 6;
             this.gia.Name = "gia";
+            this.gia.ReadOnly = true;
             // 
             // soluong
             // 
@@ -133,6 +137,7 @@
             this.soluong.HeaderText = "Số lượng";
             this.soluong.MinimumWidth = 6;
             this.soluong.Name = "soluong";
+            this.soluong.ReadOnly = true;
             // 
             // tennhacungcap
             // 
@@ -140,6 +145,7 @@
             this.tennhacungcap.HeaderText = "Nhà cung cấp";
             this.tennhacungcap.MinimumWidth = 6;
             this.tennhacungcap.Name = "tennhacungcap";
+            this.tennhacungcap.ReadOnly = true;
             // 
             // diachi
             // 
@@ -147,6 +153,7 @@
             this.diachi.HeaderText = "Địa chỉ";
             this.diachi.MinimumWidth = 6;
             this.diachi.Name = "diachi";
+            this.diachi.ReadOnly = true;
             // 
             // sodienthoai
             // 
@@ -154,6 +161,7 @@
             this.sodienthoai.HeaderText = "Số điện thoại";
             this.sodienthoai.MinimumWidth = 6;
             this.sodienthoai.Name = "sodienthoai";
+            this.sodienthoai.ReadOnly = true;
             // 
             // ngaynhaphang
             // 
@@ -161,6 +169,7 @@
             this.ngaynhaphang.HeaderText = "Ngày nhập hàng";
             this.ngaynhaphang.MinimumWidth = 6;
             this.ngaynhaphang.Name = "ngaynhaphang";
+            this.ngaynhaphang.ReadOnly = true;
             // 
             // btnIn
             // 
@@ -171,23 +180,23 @@
             this.btnIn.FillColor = System.Drawing.SystemColors.MenuHighlight;
             this.btnIn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIn.ForeColor = System.Drawing.Color.White;
-            this.btnIn.Location = new System.Drawing.Point(1298, 587);
-            this.btnIn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnIn.Location = new System.Drawing.Point(1731, 722);
+            this.btnIn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnIn.Name = "btnIn";
-            this.btnIn.Size = new System.Drawing.Size(135, 37);
+            this.btnIn.Size = new System.Drawing.Size(180, 46);
             this.btnIn.TabIndex = 1;
             this.btnIn.Text = "In";
             this.btnIn.Click += new System.EventHandler(this.btnIn_Click);
             // 
             // UCBaoCaoNhapHang
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.btnIn);
             this.Controls.Add(this.dgNhapHang);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "UCBaoCaoNhapHang";
-            this.Size = new System.Drawing.Size(1538, 661);
+            this.Size = new System.Drawing.Size(2051, 814);
             this.Load += new System.EventHandler(this.UCBaoCaoNhapHang_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgNhapHang)).EndInit();
             this.ResumeLayout(false);
