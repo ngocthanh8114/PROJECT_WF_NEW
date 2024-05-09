@@ -333,6 +333,12 @@
     <Compile Include="FrmCon\FrmConUser\UCThanhPhan\ODonHangDaMua.Designer.cs">
       <DependentUpon>ODonHangDaMua.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmCon\FrmConUser\UCThanhPhan\OHoaDonDaMuaAdmin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmCon\FrmConUser\UCThanhPhan\OHoaDonDaMuaAdmin.Designer.cs">
+      <DependentUpon>OHoaDonDaMuaAdmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmCon\FrmHienThi\OTrong\DiaChiTrong.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -350,6 +356,12 @@
     </Compile>
     <Compile Include="FrmCon\FrmHienThi\OTrong\DonMuaTrong.Designer.cs">
       <DependentUpon>DonMuaTrong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCon\FrmHienThi\OTrong\OSanPhamDaMuaAdmin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmCon\FrmHienThi\OTrong\OSanPhamDaMuaAdmin.Designer.cs">
+      <DependentUpon>OSanPhamDaMuaAdmin.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmCon\FrmHienThi\OTrong\SanPhamTrong.cs">
       <SubType>UserControl</SubType>
@@ -608,6 +620,9 @@
     <EmbeddedResource Include="FrmCon\FrmConUser\UCThanhPhan\ODonHangDaMua.resx">
       <DependentUpon>ODonHangDaMua.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmCon\FrmConUser\UCThanhPhan\OHoaDonDaMuaAdmin.resx">
+      <DependentUpon>OHoaDonDaMuaAdmin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmCon\FrmHienThi\OTrong\DiaChiTrong.resx">
       <DependentUpon>DiaChiTrong.cs</DependentUpon>
     </EmbeddedResource>
@@ -616,6 +631,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmCon\FrmHienThi\OTrong\DonMuaTrong.resx">
       <DependentUpon>DonMuaTrong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCon\FrmHienThi\OTrong\OSanPhamDaMuaAdmin.resx">
+      <DependentUpon>OSanPhamDaMuaAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmCon\FrmHienThi\OTrong\SanPhamTrong.resx">
       <DependentUpon>SanPhamTrong.cs</DependentUpon>
