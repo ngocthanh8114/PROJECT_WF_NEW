@@ -38,6 +38,10 @@ namespace Home.FrmCon.FrmHienThi
 
         private void btnLuuThem_Click(object sender, EventArgs e)
         {
+            if (!ValidateInput())
+            {
+                return;
+            }
             xl.Connection_CSDL();
             string maloai = cboMaLoai.SelectedValue.ToString();
             string mancc = cboMaNCC.SelectedValue.ToString();
@@ -50,6 +54,32 @@ namespace Home.FrmCon.FrmHienThi
                 
             }
             //this.Close();
+        }
+        private bool ValidateInput()
+        {
+            int soLuong;
+            decimal gia;
+            int baoHanh;
+
+            if (!int.TryParse(txtSoLuong.Text, out soLuong) || soLuong <= 0)
+            {
+                MessageBox.Show("Số lượng sản phẩm không hợp lệ. Vui lòng nhập số lượng lớn hơn 0.", "Lỗi Nhập Liệu", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+
+            if (!decimal.TryParse(txtGia.Text, out gia) || gia <= 0)
+            {
+                MessageBox.Show("Giá sản phẩm không hợp lệ. Vui lòng nhập giá hơn 0.", "Lỗi Nhập Liệu", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+
+            if (!int.TryParse(txtBaoHanh.Text, out baoHanh) || baoHanh < 0)
+            {
+                MessageBox.Show("Thời gian bảo hành không hợp lệ. Vui lòng nhập số nguyên không âm.", "Lỗi Nhập Liệu", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+
+            return true;
         }
 
         private void FrmThemHH_Load(object sender, EventArgs e)

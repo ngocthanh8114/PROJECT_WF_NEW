@@ -78,7 +78,7 @@ namespace Home.FrmCon.FrmConAdmin
                 {
                     TongForm.BaoHanh.BaoHanh_Load(TongForm.BaoHanh, e);
                     FrmBaoLoi frmBaoLoi = new FrmBaoLoi();
-                    frmBaoLoi.hienThiLoi("Không tìm thấy tên sản phẩm " + txtTimKiem.Text);
+                    frmBaoLoi.hienThiLoi("Không tìm thấy tên khách hàng" + txtTimKiem.Text);
                     frmBaoLoi.Show();
                 }
                 txtTimKiem.Text = "";
