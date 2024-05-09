@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using Home;
 using Home.FrmCon.FrmConAdmin;
 using Home.FrmCon.FrmBaoCao;
+using Home.FrmCon.FrmConAdmin.UCThanhPhan;
 
 namespace Home.FrmCon
 {
@@ -22,6 +23,8 @@ namespace Home.FrmCon
         public static TaiKhoanAdmin TaiKhoanAdmin;
         public static GioiThieu GioiThieu;
         public static DichVu DichVu;
+        public static UCNhanVien UCNhanVien;
+        public static ONhanVien ONhanVien;
         public static void ResetFrm()
         {
             TaiKhoan = new TaiKhoan();
@@ -34,6 +37,8 @@ namespace Home.FrmCon
             TaiKhoanAdmin = new TaiKhoanAdmin();
             GioiThieu = new GioiThieu();
             DichVu = new DichVu();
+            UCNhanVien = new UCNhanVien();
+            ONhanVien = new ONhanVien();
         }
     }
 }

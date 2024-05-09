@@ -1331,3 +1331,5 @@ D:\VS Code\BanXeMay\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.ChiTie
 C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.BaoHanh.resources
 C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.ChiTietBaoHanh.resources
 C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.FrmDichVu.OBaoHanh.resources
+C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.FrmThemNhanVien.resources
+C:\Users\PC\OneDrive\Desktop\New folder (2)\PROJECT_WF_NEW\Home\obj\Debug\Home.FrmCon.FrmConAdmin.FrmSuaNhanVien.resources

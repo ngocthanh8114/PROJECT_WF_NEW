@@ -107,5 +107,15 @@ namespace Home
             btnBaoCao.Checked = false;
             btnNhanVien.Checked = true;
         }
+
+        private void btnNhanVien_Click(object sender, EventArgs e)
+        {
+            addHienThi(TongForm.UCNhanVien);
+            btnSanPham.Checked = false;
+            btnKhachHang.Checked = false;
+            btnDichVu.Checked = false;
+            btnBaoCao.Checked = false;
+            btnNhanVien.Checked = true;
+        }
     }
 }

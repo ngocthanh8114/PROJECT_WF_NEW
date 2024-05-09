@@ -171,6 +171,12 @@
     <Compile Include="FrmCon\FrmConAdmin\DichVuAdmin.Designer.cs">
       <DependentUpon>DichVuAdmin.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmCon\FrmConAdmin\FrmSuaNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCon\FrmConAdmin\FrmSuaNhanVien.Designer.cs">
+      <DependentUpon>FrmSuaNhanVien.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmCon\FrmConAdmin\FrmThemHoaDon.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -182,6 +188,12 @@
     </Compile>
     <Compile Include="FrmCon\FrmConAdmin\FrmThemLoiNhac.Designer.cs">
       <DependentUpon>FrmThemLoiNhac.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCon\FrmConAdmin\FrmThemNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCon\FrmConAdmin\FrmThemNhanVien.Designer.cs">
+      <DependentUpon>FrmThemNhanVien.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmCon\FrmConAdmin\TaiKhoanAdmin.cs">
       <SubType>UserControl</SubType>
@@ -529,11 +541,17 @@
     <EmbeddedResource Include="FrmCon\FrmConAdmin\DichVuAdmin.resx">
       <DependentUpon>DichVuAdmin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmCon\FrmConAdmin\FrmSuaNhanVien.resx">
+      <DependentUpon>FrmSuaNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmCon\FrmConAdmin\FrmThemHoaDon.resx">
       <DependentUpon>FrmThemHoaDon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmCon\FrmConAdmin\FrmThemLoiNhac.resx">
       <DependentUpon>FrmThemLoiNhac.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCon\FrmConAdmin\FrmThemNhanVien.resx">
+      <DependentUpon>FrmThemNhanVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmCon\FrmConAdmin\TaiKhoanAdmin.resx">
       <DependentUpon>TaiKhoanAdmin.cs</DependentUpon>
