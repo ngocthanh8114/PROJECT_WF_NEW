@@ -27,7 +27,7 @@ namespace Home.FrmCon.FrmConAdmin
 
         private void UCDichVu_BaoHanh_Load(object sender, EventArgs e)
         {
-            btnDichVu_Click(sender, e);
+            btnBaoHanh_Click(sender, e);
             btnDichVu.Checked = true;
             sanPhamTrong1.themNoiDung("Bạn chưa chọn tính năng!", "Vui lòng chọn tính năng bạn muốn thực hiện!");
         }
