@@ -46,6 +46,7 @@ namespace Home.FrmCon.FrmBaoCao
 
         private void UCBaoCao_Load(object sender, EventArgs e)
         {
+            btnBCDoanhThu_Click(sender, e);
             sanPhamTrong1.themNoiDung("Bạn chưa chọn tính năng!", "Vui lòng chọn tính năng bạn muốn thực hiện!");
         }
     }

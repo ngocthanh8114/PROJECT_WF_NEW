@@ -34,6 +34,7 @@ namespace Home.FrmCon.FrmHienThi
             xl.LoadMaNCC(cboMaNCC);
             xl.LoadMaLoai(cboMaLoai);
             cboMaLoai.StartIndex = SanPhamAdmin.indexcbo;
+
             xl.LoadFrmCapNhatHH(idsp, txtMaSP, txtTenSP, txtGia, txtSoLuong, picBoxSP, txtBaoHanh);
             cboMaLoai.StartIndex = SanPhamAdmin.indexcbo;
             dtNgayNhapHang.Value = DateTime.Now;
