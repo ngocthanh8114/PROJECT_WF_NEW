@@ -19,6 +19,7 @@ namespace Home.FrmCon.FrmConAdmin.UCThanhPhan
 
         private void UCDichVu_Load(object sender, EventArgs e)
         {
+            PanelNoiDung.Controls.Clear();
             OTatCaDichVu oTatCaDichVu = new OTatCaDichVu();
             PanelNoiDung.Controls.Add(oTatCaDichVu);
             oTatCaDichVu.BringToFront();

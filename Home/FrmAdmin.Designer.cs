@@ -158,13 +158,10 @@
             this.btnNhanVien.TabIndex = 4;
             this.btnNhanVien.Text = "Nhân viên";
             this.btnNhanVien.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-<<<<<<< HEAD
             this.btnNhanVien.Click += new System.EventHandler(this.btnNhanVien_Click);
-=======
->>>>>>> e029851ab0a19630d25989f1262e80ec5d79e7e6
             // 
             // btnBaoCao
-            // 
+            //
             this.btnBaoCao.Animated = true;
             this.btnBaoCao.AnimationHoverSpeed = 0.07F;
             this.btnBaoCao.AnimationSpeed = 0.03F;

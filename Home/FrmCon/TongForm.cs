@@ -23,14 +23,13 @@ namespace Home.FrmCon
         public static TaiKhoanAdmin TaiKhoanAdmin;
         public static GioiThieu GioiThieu;
         public static DichVu DichVu;
-<<<<<<< HEAD
         public static UCNhanVien UCNhanVien;
         public static ONhanVien ONhanVien;
-=======
+
         public static BaoHanh BaoHanh;
         public static ChiTietBaoHanh ChiTietBaoHanh;
 
->>>>>>> e029851ab0a19630d25989f1262e80ec5d79e7e6
+
         public static void ResetFrm()
         {
             TaiKhoan = new TaiKhoan();
@@ -43,13 +42,11 @@ namespace Home.FrmCon
             TaiKhoanAdmin = new TaiKhoanAdmin();
             GioiThieu = new GioiThieu();
             DichVu = new DichVu();
-<<<<<<< HEAD
+
             UCNhanVien = new UCNhanVien();
             ONhanVien = new ONhanVien();
-=======
             BaoHanh = new BaoHanh();
             ChiTietBaoHanh = new ChiTietBaoHanh();
->>>>>>> e029851ab0a19630d25989f1262e80ec5d79e7e6
         }
     }
 }

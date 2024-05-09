@@ -98,6 +98,7 @@ namespace Home
        
         public void btnDichVu_Click(object sender, EventArgs e)
         {
+            panelHienThi.Controls.Clear();
             UCDichVu_BaoHanh uCDichVu_BaoHanh   = new UCDichVu_BaoHanh();
             panelHienThi.Controls.Add(uCDichVu_BaoHanh);
             uCDichVu_BaoHanh.BringToFront();
@@ -126,6 +127,7 @@ namespace Home
 
         private void FrmAdmin_Load(object sender, EventArgs e)
         {
+            panelHienThi.Controls.Clear();
             addHienThi(TongForm.SanPhamAdmin);
             TongForm.SanPhamAdmin.SanPhamAdmin_Load(TongForm.SanPhamAdmin, e);
             btnSanPham.Checked = true;

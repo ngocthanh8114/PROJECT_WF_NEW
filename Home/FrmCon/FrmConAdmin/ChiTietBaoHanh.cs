@@ -55,7 +55,6 @@ namespace Home.FrmCon.FrmConAdmin
             if (parentForm != null)
             {
                 parentForm.btnDichVu_Click(this, EventArgs.Empty);
-                parentForm.
             }
         }
 

@@ -35,6 +35,7 @@ namespace Home.FrmCon.FrmConAdmin.UCThanhPhan
 
         private void OBaoDuongXeMay_Load(object sender, EventArgs e)
         {
+            panelNoiDung.Controls.Clear();
             LoadDataFromDatabase();
         }
     }

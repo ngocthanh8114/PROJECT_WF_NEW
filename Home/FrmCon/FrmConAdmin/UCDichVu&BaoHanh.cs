@@ -21,12 +21,14 @@ namespace Home.FrmCon.FrmConAdmin
         {
            
             DichVuAdmin dichVuAdmin = new DichVuAdmin();
+            PanelNoidung.Controls.Clear();
             PanelNoidung.Controls.Add(dichVuAdmin);
             dichVuAdmin.BringToFront();
         }
 
         private void UCDichVu_BaoHanh_Load(object sender, EventArgs e)
         {
+            PanelNoidung.Controls.Clear();
             btnDichVu_Click(sender, e);
             btnDichVu.Checked = true;
             sanPhamTrong1.themNoiDung("Bạn chưa chọn tính năng!", "Vui lòng chọn tính năng bạn muốn thực hiện!");
@@ -37,6 +39,7 @@ namespace Home.FrmCon.FrmConAdmin
         private void btnBaoHanh_Click(object sender, EventArgs e)
         {
             BaoHanh baoHanh = new BaoHanh();
+            PanelNoidung.Controls.Clear();
             PanelNoidung.Controls.Add(baoHanh);
             baoHanh.BringToFront();
         }
