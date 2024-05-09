@@ -33,6 +33,7 @@ namespace Home
         private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
         private void Home_Load(object sender, EventArgs e)
         {
+            btnSanPham_Click(sender, e);
         }
 
         private void btnClose_Click(object sender, EventArgs e)

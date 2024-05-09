@@ -41,11 +41,11 @@ namespace Home.FrmCon.FrmHienThi
             xl.Connection_CSDL();
             string maloai = cboMaLoai.SelectedValue.ToString();
             string mancc = cboMaNCC.SelectedValue.ToString();
-            xl.NhapHangAdmin(txtMaSP.Text, txtTenSP.Text, txtGia.Text, mancc, txtSoLuong.Text, picBoxSP.Image, maloai, lblDonGia, lblSoluong,dtNgayNhapHang.Value);
+            xl.NhapHangAdmin(txtMaSP.Text, txtTenSP.Text, txtGia.Text, mancc, txtSoLuong.Text, picBoxSP.Image, maloai, Int32.Parse(txtBaoHanh.Text) , lblDonGia, lblSoluong,dtNgayNhapHang.Value);
             if(xl.NhapHang && lblDonGia.Visible == false && lblSoluong.Visible == false)
             {
                 TongForm.SanPhamAdmin.SanPhamAdmin_Load(TongForm.SanPhamAdmin, e);
-                txtGia.Text = txtMaSP.Text = txtSoLuong.Text = txtTenSP.Text = "";
+                txtGia.Text = txtMaSP.Text = txtSoLuong.Text = txtTenSP.Text = txtBaoHanh.Text = "";
                 picBoxSP.Image = null;
                 
             }

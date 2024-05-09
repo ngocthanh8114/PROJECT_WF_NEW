@@ -79,6 +79,7 @@
             this.dgNhapHang.Location = new System.Drawing.Point(99, 30);
             this.dgNhapHang.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgNhapHang.Name = "dgNhapHang";
+            this.dgNhapHang.ReadOnly = true;
             this.dgNhapHang.RowHeadersVisible = false;
             this.dgNhapHang.RowHeadersWidth = 51;
             this.dgNhapHang.RowTemplate.Height = 24;
@@ -97,7 +98,7 @@
             this.dgNhapHang.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.dgNhapHang.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dgNhapHang.ThemeStyle.HeaderStyle.Height = 18;
-            this.dgNhapHang.ThemeStyle.ReadOnly = false;
+            this.dgNhapHang.ThemeStyle.ReadOnly = true;
             this.dgNhapHang.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.dgNhapHang.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgNhapHang.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -112,6 +113,7 @@
             this.masanpham.HeaderText = "Mã sản phẩm";
             this.masanpham.MinimumWidth = 6;
             this.masanpham.Name = "masanpham";
+            this.masanpham.ReadOnly = true;
             // 
             // tensanpham
             // 
@@ -119,6 +121,7 @@
             this.tensanpham.HeaderText = "Tên sản phẩm";
             this.tensanpham.MinimumWidth = 6;
             this.tensanpham.Name = "tensanpham";
+            this.tensanpham.ReadOnly = true;
             // 
             // gia
             // 
@@ -126,6 +129,7 @@
             this.gia.HeaderText = "Giá";
             this.gia.MinimumWidth = 6;
             this.gia.Name = "gia";
+            this.gia.ReadOnly = true;
             // 
             // soluong
             // 
@@ -133,6 +137,7 @@
             this.soluong.HeaderText = "Số lượng";
             this.soluong.MinimumWidth = 6;
             this.soluong.Name = "soluong";
+            this.soluong.ReadOnly = true;
             // 
             // tennhacungcap
             // 
@@ -140,6 +145,7 @@
             this.tennhacungcap.HeaderText = "Nhà cung cấp";
             this.tennhacungcap.MinimumWidth = 6;
             this.tennhacungcap.Name = "tennhacungcap";
+            this.tennhacungcap.ReadOnly = true;
             // 
             // diachi
             // 
@@ -147,6 +153,7 @@
             this.diachi.HeaderText = "Địa chỉ";
             this.diachi.MinimumWidth = 6;
             this.diachi.Name = "diachi";
+            this.diachi.ReadOnly = true;
             // 
             // sodienthoai
             // 
@@ -154,6 +161,7 @@
             this.sodienthoai.HeaderText = "Số điện thoại";
             this.sodienthoai.MinimumWidth = 6;
             this.sodienthoai.Name = "sodienthoai";
+            this.sodienthoai.ReadOnly = true;
             // 
             // ngaynhaphang
             // 
@@ -161,6 +169,7 @@
             this.ngaynhaphang.HeaderText = "Ngày nhập hàng";
             this.ngaynhaphang.MinimumWidth = 6;
             this.ngaynhaphang.Name = "ngaynhaphang";
+            this.ngaynhaphang.ReadOnly = true;
             // 
             // btnIn
             // 

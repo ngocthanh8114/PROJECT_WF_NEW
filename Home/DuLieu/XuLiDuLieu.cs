@@ -20,6 +20,8 @@ using Home.FrmCon;
 using Microsoft.VisualBasic;
 using System.Collections;
 using System.Data.Common;
+using System.Security.RightsManagement;
+using System.Runtime.InteropServices.ComTypes;
 namespace Home.DuLieu
 {
     
@@ -74,7 +76,7 @@ namespace Home.DuLieu
             DataTable dt = new DataTable();
             string query = @"SELECT THD.MaDH AS 'Mã Đơn Hàng', THD.TongTienHang AS 'Tổng tiền', THD.NgayDH AS 'Ngày mua hàng'
                      FROM dbo.ThongTinDH THD
-                     WHERE THD.NgayDH >= @StartDate AND THD.NgayDH <= @EndDate";
+                     WHERE THD.NgayDH >= @StartDate AND THD.NgayDH <= @EndDate AND THD.TenTaiKhoan is not null";
 
             SqlCommand cmd = new SqlCommand(query, kn.con);
             cmd.Parameters.Add("@StartDate", SqlDbType.DateTime).Value = startDate;
@@ -1113,19 +1115,19 @@ namespace Home.DuLieu
         }
         public bool SuaHang = false;
         //Sửa sản phẩm
-        public void SuaThongTinSanPhamAdmin(string MaNCC, string TenSP, string MaLoai, int SoLuongCu,int SoLuongMoi, string Gia, string MaSP, Image hinhAnh, DateTime ngaynhaphang)
+        public void SuaThongTinSanPhamAdmin(string MaNCC, string TenSP, string MaLoai, int SoLuongCu,int SoLuongMoi, string Gia, string MaSP, Image hinhAnh, int BaoHanh, DateTime ngaynhaphang)
         {
-            if(string.IsNullOrWhiteSpace(MaNCC) || string.IsNullOrWhiteSpace(TenSP) || string.IsNullOrWhiteSpace(MaLoai) || string.IsNullOrWhiteSpace(SoLuongCu.ToString()) || string.IsNullOrWhiteSpace(Gia) || hinhAnh == null)
+            if(string.IsNullOrWhiteSpace(MaNCC) || string.IsNullOrWhiteSpace(TenSP) || string.IsNullOrWhiteSpace(MaLoai) || string.IsNullOrWhiteSpace(SoLuongCu.ToString()) || string.IsNullOrWhiteSpace(Gia) || hinhAnh == null )
             {
                 FrmBaoLoi frmBaoLoi = new FrmBaoLoi();
                 frmBaoLoi.hienThiLoi("Bạn chưa nhập đầy đủ thông tin!");
                 frmBaoLoi.Show();
-            }
-            else
+            }    
+            else 
             {
                 // Sửa
                 kn.myConnect();
-                string sql = "UPDATE SanPham SET MaNCC= @MaNCC, TenSP= @TenSP, MaLoai= @MaLoai, SoLuong= @SoLuong, Gia= @Gia, HinhAnh =@HinhAnh WHERE MaSP= @MaSP";
+                string sql = "UPDATE SanPham SET MaNCC= @MaNCC, TenSP= @TenSP, MaLoai= @MaLoai, SoLuong= @SoLuong, Gia= @Gia, HinhAnh =@HinhAnh, BaoHanh = @BaoHanh WHERE MaSP= @MaSP";
                 SqlCommand cmd = new SqlCommand(sql, conn);
                 cmd.Parameters.AddWithValue("MaNCC", MaNCC);
                 cmd.Parameters.AddWithValue("TenSP", TenSP);
@@ -1135,6 +1137,7 @@ namespace Home.DuLieu
                 cmd.Parameters.AddWithValue("MaSP", MaSP);
                 byte[] bytes = ImageToByte(hinhAnh);
                 cmd.Parameters.AddWithValue("HinhAnh", bytes);
+                cmd.Parameters.AddWithValue("BaoHanh", BaoHanh);
                 cmd.ExecuteNonQuery();
 
                 //---------------------------------------------
@@ -1145,45 +1148,40 @@ namespace Home.DuLieu
                 selectCmd.Parameters.AddWithValue("MaSP", MaSP);
                 int count = (int)selectCmd.ExecuteScalar();
 
-                if (count > 0)
+                try
                 {
-                    // MaSP đã tồn tại, thực hiện UPDATE thay vì INSERT
-                    string updateSql = "UPDATE NhapHang SET TenSP = @TenSP, Gia = @Gia, MaNCC = @MaNCC, SoLuong = @SoLuong, HinhAnh = @HinhAnh, MaLoai = @MaLoai, NgayNhapHang = @NgayNhapHang WHERE MaSP = @MaSP";
-                    SqlCommand updateCmd = new SqlCommand(updateSql, conn);
-                    updateCmd.Parameters.AddWithValue("TenSP", TenSP);
-                    updateCmd.Parameters.AddWithValue("Gia", Gia);
-                    updateCmd.Parameters.AddWithValue("MaNCC", MaNCC);
-                    updateCmd.Parameters.AddWithValue("SoLuong", SoLuongMoi);
-                    byte[] byte1 = ImageToByte(hinhAnh);
-                    updateCmd.Parameters.AddWithValue("HinhAnh", byte1);
-                    updateCmd.Parameters.AddWithValue("MaLoai", MaLoai);
-                    updateCmd.Parameters.AddWithValue("NgayNhapHang", ngaynhaphang);
-                    updateCmd.Parameters.AddWithValue("MaSP", MaSP);
+                    if(SoLuongMoi!=0)
+                    {
+                        //Nhập hàng
+                        string insertSql = "INSERT INTO NhapHang VALUES (@MaSP, @TenSP, @Gia, @MaNCC, @SoLuong, @HinhAnh, @MaLoai, @NgayNhapHang)";
+                        SqlCommand insertCmd = new SqlCommand(insertSql, conn);
+                        insertCmd.Parameters.AddWithValue("MaSP", MaSP);
+                        insertCmd.Parameters.AddWithValue("TenSP", TenSP);
+                        insertCmd.Parameters.AddWithValue("Gia", Gia);
+                        insertCmd.Parameters.AddWithValue("MaNCC", MaNCC);
+                        insertCmd.Parameters.AddWithValue("SoLuong", SoLuongMoi);
+                        byte[] byte1 = ImageToByte(hinhAnh);
+                        insertCmd.Parameters.AddWithValue("HinhAnh", byte1);
+                        insertCmd.Parameters.AddWithValue("MaLoai", MaLoai);
+                        insertCmd.Parameters.AddWithValue("NgayNhapHang", ngaynhaphang);
 
-                    updateCmd.ExecuteNonQuery();
+                        insertCmd.ExecuteNonQuery();
+                    }    
+                    
                 }
-                else
+                catch(Exception ex) 
                 {
-                    // MaSP chưa tồn tại, thực hiện INSERT
-                    string insertSql = "INSERT INTO NhapHang VALUES (@MaSP, @TenSP, @Gia, @MaNCC, @SoLuong, @HinhAnh, @MaLoai, @NgayNhapHang)";
-                    SqlCommand insertCmd = new SqlCommand(insertSql, conn);
-                    insertCmd.Parameters.AddWithValue("MaSP", MaSP);
-                    insertCmd.Parameters.AddWithValue("TenSP", TenSP);
-                    insertCmd.Parameters.AddWithValue("Gia", Gia);
-                    insertCmd.Parameters.AddWithValue("MaNCC", MaNCC);
-                    insertCmd.Parameters.AddWithValue("SoLuong", SoLuongMoi);
-                    byte[] byte1 = ImageToByte(hinhAnh);
-                    insertCmd.Parameters.AddWithValue("HinhAnh", byte1);
-                    insertCmd.Parameters.AddWithValue("MaLoai", MaLoai);
-                    insertCmd.Parameters.AddWithValue("NgayNhapHang", ngaynhaphang);
-
-                    insertCmd.ExecuteNonQuery();
+                    MessageBox.Show(ex.ToString());
+                    FrmBaoLoi frmBaoLoi = new FrmBaoLoi();
+                    frmBaoLoi.hienThiLoi("Kiểm tra lại thông tin");
+                    frmBaoLoi.ShowDialog();
                 }
 
                 FrmThongBao frmThongBao = new FrmThongBao();
                 frmThongBao.hienThiThongBao("Sửa thông tin thành công");
                 frmThongBao.Show();
                 SuaHang = true;
+                
             }
         }
         // Lấy Số lượng của sản phẩm cũ
@@ -1217,12 +1215,12 @@ namespace Home.DuLieu
             return Regex.IsMatch(sdt, @"^[0-9]{1,50}$");
         }
         public bool NhapHang = false;
-        public void NhapHangAdmin(string MaSP, string TenSP, string Gia,string MaNCC, string SoLuong, Image Anh, string MaLoai, Guna2HtmlLabel gia, Guna2HtmlLabel soluong, DateTime ngaynhaphang)
+        public void NhapHangAdmin(string MaSP, string TenSP, string Gia,string MaNCC, string SoLuong, Image Anh, string MaLoai, int BaoHanh, Guna2HtmlLabel gia, Guna2HtmlLabel soluong, DateTime ngaynhaphang)
         {
-            if ((string.IsNullOrWhiteSpace(MaSP) || string.IsNullOrWhiteSpace(TenSP) || string.IsNullOrWhiteSpace(Gia) || string.IsNullOrWhiteSpace(MaNCC) || string.IsNullOrWhiteSpace(SoLuong) || Anh == null || string.IsNullOrWhiteSpace(MaLoai)))
+            if ((string.IsNullOrWhiteSpace(MaSP) || string.IsNullOrWhiteSpace(TenSP) || string.IsNullOrWhiteSpace(Gia) || string.IsNullOrWhiteSpace(MaNCC) || string.IsNullOrWhiteSpace(SoLuong) || Anh == null || string.IsNullOrWhiteSpace(MaLoai) || SoLuong == "0"))
             {
                 FrmBaoLoi frmBaoLoi = new FrmBaoLoi();
-                frmBaoLoi.hienThiLoi("Bạn chưa nhập đầy đủ thông tin!");
+                frmBaoLoi.hienThiLoi("Bạn chưa nhập đầy đủ thông tin hoặc số lượng không hợp lệ!");
                 frmBaoLoi.Show();
             }
             else
@@ -1248,7 +1246,7 @@ namespace Home.DuLieu
                 kn.myConnect();
                 try
                 {
-                    string sql1 = "INSERT INTO SanPham VALUES (@MaSP, @TenSP, @Gia, @MaNCC, @SoLuong, @HinhAnh, @MaLoai)";
+                    string sql1 = "INSERT INTO SanPham VALUES (@MaSP, @TenSP, @Gia, @MaNCC, @SoLuong, @HinhAnh, @MaLoai, @BaoHanh)";
                     SqlCommand cmd1 = kn.con.CreateCommand();
                     cmd1.CommandText = sql1;
 
@@ -1280,6 +1278,10 @@ namespace Home.DuLieu
                     SqlParameter sqlParameter7 = new SqlParameter("@MaLoai", SqlDbType.NChar, 10);
                     sqlParameter7.Value = MaLoai;
                     cmd1.Parameters.Add(sqlParameter7);
+
+                    SqlParameter sqlParameter8 = new SqlParameter("@BaoHanh", SqlDbType.Int, 10);
+                    sqlParameter8.Value = BaoHanh;
+                    cmd1.Parameters.Add(sqlParameter8);
 
                     //-----------------------
 
@@ -2095,8 +2097,47 @@ namespace Home.DuLieu
         public DataTable DoDuLieuVaoBangDichVu()
         {
             kn.myConnect();
-            string sql = "Select TenKhachHang, BienSoXe, NgayThang, SoDienThoai, LoaiDichVu, TrangThai from DichVu";
+            string sql = "Select TenKhachHang, BienSoXe, NgayThang, SoDienThoai, LoaiDichVu, TrangThai from DichVu";                
             SqlCommand cmd = new SqlCommand(sql, kn.con);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            return dt;
+        }
+
+        public DataTable LocDichVuTheoNgay(DateTime start, DateTime end)
+        {
+            kn.myConnect();
+            string sql = "Select TenKhachHang, BienSoXe, NgayThang, SoDienThoai, LoaiDichVu, TrangThai from DichVu where NgayThang BETWEEN @StartDate AND @EndDate";
+            SqlCommand cmd = new SqlCommand(sql, kn.con);
+            cmd.Parameters.Add("@StartDate", SqlDbType.DateTime).Value = start;
+            cmd.Parameters.Add("@EndDate", SqlDbType.DateTime).Value = end;
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            return dt;
+        }
+
+        public DataTable LocDichVuTheoNgayChuaXuLi(DateTime start, DateTime end)
+        {
+            kn.myConnect();
+            string sql = "Select TenKhachHang, BienSoXe, NgayThang, SoDienThoai, LoaiDichVu, TrangThai from DichVu where NgayThang BETWEEN @StartDate AND @EndDate And TrangThai = N'Chưa xử lí'";
+            SqlCommand cmd = new SqlCommand(sql, kn.con);
+            cmd.Parameters.Add("@StartDate", SqlDbType.DateTime).Value = start;
+            cmd.Parameters.Add("@EndDate", SqlDbType.DateTime).Value = end;
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            return dt;
+        }
+
+        public DataTable LocDichVuTheoNgayDaXuLi(DateTime start, DateTime end)
+        {
+            kn.myConnect();
+            string sql = "Select TenKhachHang, BienSoXe, NgayThang, SoDienThoai, LoaiDichVu, TrangThai from DichVu where NgayThang BETWEEN @StartDate AND @EndDate And TrangThai = N'Đã xử lí'";
+            SqlCommand cmd = new SqlCommand(sql, kn.con);
+            cmd.Parameters.Add("@StartDate", SqlDbType.DateTime).Value = start;
+            cmd.Parameters.Add("@EndDate", SqlDbType.DateTime).Value = end;
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
             da.Fill(dt);
@@ -2202,6 +2243,7 @@ namespace Home.DuLieu
             return false;
         }
 
+<<<<<<< HEAD
         public void TruSoLuongSanPhamDaMua(string masanpham, int soluong)
         {
             kn.myConnect();
@@ -2283,11 +2325,35 @@ namespace Home.DuLieu
             string sql = "SELECT * FROM HoaDonTaiCuaHang";
             SqlCommand cmd = new SqlCommand(sql, kn.con);
             SqlDataAdapter da = new SqlDataAdapter(cmd);
+=======
+        public DataTable ddoDuLieuBaoHanh(string ten, string diaChi, string sdt)
+        {
+            kn.myConnect();
+            string sql = "SELECT sp.TenSP, dhdm.SoLuong, dhdm.MaDH,HinhAnh,sp.MaSP,bhsp.NgayDH,bhsp.HetHan\r\nFROM DonHangDaMua AS dhdm \r\nJOIN ThongTinDH AS ttdh ON dhdm.MaDH = ttdh.MaDH \r\nJOIN SanPham AS sp ON sp.MaSP = dhdm.MaSP \r\nJOIN BaoHanhSanPham AS bhsp ON bhsp.MaDH = ttdh.MaDH and sp.MaSP = bhsp.MaSP and TenKhachHang = @TenKhachHang and SoDienThoai = @SoDienThoai and DiaChi = @DiaChi ";
+            SqlCommand cmd = new SqlCommand(sql, kn.con);
+
+            SqlParameter sqlParameter1 = new SqlParameter("@DiaChi", SqlDbType.NVarChar);
+            sqlParameter1.Value = diaChi;
+            cmd.Parameters.Add(sqlParameter1);
+
+            SqlParameter sqlParameter2 = new SqlParameter("@SoDienThoai", SqlDbType.NVarChar, 50);
+            sqlParameter2.Value = sdt;
+            cmd.Parameters.Add(sqlParameter2);
+
+            SqlParameter sqlParameter4 = new SqlParameter("@TenKhachHang", SqlDbType.NVarChar, 50);
+            sqlParameter4.Value = ten;
+            cmd.Parameters.Add(sqlParameter4);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+
+>>>>>>> 99336f9e9a7fb87cef99700dc2458880817bc66b
             DataTable dt = new DataTable();
             da.Fill(dt);
             return dt;
         }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 99336f9e9a7fb87cef99700dc2458880817bc66b
     }
 
 }

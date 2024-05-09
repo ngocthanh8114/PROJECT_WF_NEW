@@ -27,7 +27,15 @@ namespace Home.FrmCon.FrmHienThi
             lblNCC.Text = nCC;
             lblSL.Text = sL.ToString() + " sản phẩm";
             picBoxSP.Image = anh;
-            lblNam.Text = nam.ToString() + " năm";
+            if(nam == 0 )
+            {
+                lblNam.Text = "Không có";
+            }    
+            else
+            {
+                lblNam.Text = nam.ToString() + " năm";
+            }    
+            
         }
 
         private void btnDatHang_Click(object sender, EventArgs e)

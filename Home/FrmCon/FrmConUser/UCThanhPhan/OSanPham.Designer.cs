@@ -216,8 +216,8 @@
             // 
             // guna2Panel1
             // 
-            this.guna2Panel1.Controls.Add(this.label1);
             this.guna2Panel1.Controls.Add(this.lblNam);
+            this.guna2Panel1.Controls.Add(this.label1);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 364);
             this.guna2Panel1.Name = "guna2Panel1";
@@ -239,11 +239,11 @@
             // lblNam
             // 
             this.lblNam.Dock = System.Windows.Forms.DockStyle.Right;
-            this.lblNam.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
+            this.lblNam.Font = new System.Drawing.Font("Segoe UI Semibold", 9.8F, System.Drawing.FontStyle.Bold);
             this.lblNam.ForeColor = System.Drawing.Color.Black;
-            this.lblNam.Location = new System.Drawing.Point(117, 0);
+            this.lblNam.Location = new System.Drawing.Point(82, 0);
             this.lblNam.Name = "lblNam";
-            this.lblNam.Size = new System.Drawing.Size(130, 35);
+            this.lblNam.Size = new System.Drawing.Size(165, 35);
             this.lblNam.TabIndex = 12;
             this.lblNam.Text = "5 năm";
             this.lblNam.TextAlign = System.Drawing.ContentAlignment.MiddleRight;

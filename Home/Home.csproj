@@ -93,6 +93,18 @@
     <Compile Include="FrmCon\FrmBaoCao\BaoCao.Designer.cs">
       <DependentUpon>BaoCao.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmCon\FrmConAdmin\BaoHanh.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmCon\FrmConAdmin\BaoHanh.Designer.cs">
+      <DependentUpon>BaoHanh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCon\FrmConAdmin\ChiTietBaoHanh.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmCon\FrmConAdmin\ChiTietBaoHanh.Designer.cs">
+      <DependentUpon>ChiTietBaoHanh.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmCon\FrmConAdmin\ChiTietKH.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -110,6 +122,12 @@
     </Compile>
     <Compile Include="FrmCon\FrmConAdmin\FrmDichVu\OBaoDuongXeMay.Designer.cs">
       <DependentUpon>OBaoDuongXeMay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCon\FrmConAdmin\FrmDichVu\OBaoHanh.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmCon\FrmConAdmin\FrmDichVu\OBaoHanh.Designer.cs">
+      <DependentUpon>OBaoHanh.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmCon\FrmConAdmin\FrmDichVu\OCuuHo.cs">
       <SubType>UserControl</SubType>
@@ -315,28 +333,28 @@
     <Compile Include="FrmCon\FrmConUser\UCThanhPhan\ODonHangDaMua.Designer.cs">
       <DependentUpon>ODonHangDaMua.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmCon\FrmConUser\UCThanhPhan\OTrong\DiaChiTrong.cs">
+    <Compile Include="FrmCon\FrmHienThi\OTrong\DiaChiTrong.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="FrmCon\FrmConUser\UCThanhPhan\OTrong\DiaChiTrong.Designer.cs">
+    <Compile Include="FrmCon\FrmHienThi\OTrong\DiaChiTrong.Designer.cs">
       <DependentUpon>DiaChiTrong.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmCon\FrmConUser\UCThanhPhan\OTrong\DonHangTrong.cs">
+    <Compile Include="FrmCon\FrmHienThi\OTrong\DonHangTrong.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="FrmCon\FrmConUser\UCThanhPhan\OTrong\DonHangTrong.Designer.cs">
+    <Compile Include="FrmCon\FrmHienThi\OTrong\DonHangTrong.Designer.cs">
       <DependentUpon>DonHangTrong.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmCon\FrmConUser\UCThanhPhan\OTrong\DonMuaTrong.cs">
+    <Compile Include="FrmCon\FrmHienThi\OTrong\DonMuaTrong.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="FrmCon\FrmConUser\UCThanhPhan\OTrong\DonMuaTrong.Designer.cs">
+    <Compile Include="FrmCon\FrmHienThi\OTrong\DonMuaTrong.Designer.cs">
       <DependentUpon>DonMuaTrong.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmCon\FrmConUser\UCThanhPhan\OTrong\SanPhamTrong.cs">
+    <Compile Include="FrmCon\FrmHienThi\OTrong\SanPhamTrong.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="FrmCon\FrmConUser\UCThanhPhan\OTrong\SanPhamTrong.Designer.cs">
+    <Compile Include="FrmCon\FrmHienThi\OTrong\SanPhamTrong.Designer.cs">
       <DependentUpon>SanPhamTrong.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmCon\FrmConUser\UCThanhPhan\SanPhamDaMua.cs">
@@ -472,6 +490,12 @@
     <EmbeddedResource Include="FrmCon\FrmBaoCao\BaoCao.resx">
       <DependentUpon>BaoCao.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmCon\FrmConAdmin\BaoHanh.resx">
+      <DependentUpon>BaoHanh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCon\FrmConAdmin\ChiTietBaoHanh.resx">
+      <DependentUpon>ChiTietBaoHanh.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmCon\FrmConAdmin\ChiTietKH.resx">
       <DependentUpon>ChiTietKH.cs</DependentUpon>
     </EmbeddedResource>
@@ -480,6 +504,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmCon\FrmConAdmin\FrmDichVu\OBaoDuongXeMay.resx">
       <DependentUpon>OBaoDuongXeMay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCon\FrmConAdmin\FrmDichVu\OBaoHanh.resx">
+      <DependentUpon>OBaoHanh.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmCon\FrmConAdmin\FrmDichVu\OCuuHo.resx">
       <DependentUpon>OCuuHo.cs</DependentUpon>
@@ -581,16 +608,16 @@
     <EmbeddedResource Include="FrmCon\FrmConUser\UCThanhPhan\ODonHangDaMua.resx">
       <DependentUpon>ODonHangDaMua.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmCon\FrmConUser\UCThanhPhan\OTrong\DiaChiTrong.resx">
+    <EmbeddedResource Include="FrmCon\FrmHienThi\OTrong\DiaChiTrong.resx">
       <DependentUpon>DiaChiTrong.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmCon\FrmConUser\UCThanhPhan\OTrong\DonHangTrong.resx">
+    <EmbeddedResource Include="FrmCon\FrmHienThi\OTrong\DonHangTrong.resx">
       <DependentUpon>DonHangTrong.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmCon\FrmConUser\UCThanhPhan\OTrong\DonMuaTrong.resx">
+    <EmbeddedResource Include="FrmCon\FrmHienThi\OTrong\DonMuaTrong.resx">
       <DependentUpon>DonMuaTrong.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmCon\FrmConUser\UCThanhPhan\OTrong\SanPhamTrong.resx">
+    <EmbeddedResource Include="FrmCon\FrmHienThi\OTrong\SanPhamTrong.resx">
       <DependentUpon>SanPhamTrong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmCon\FrmConUser\UCThanhPhan\SanPhamDaMua.resx">
