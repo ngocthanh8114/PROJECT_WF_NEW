@@ -31,9 +31,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BaoHanh));
             this.panelNoiDung = new System.Windows.Forms.FlowLayoutPanel();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnTimKiem = new Guna.UI.WinForms.GunaCircleButton();
             this.txtTimKiem = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.btnTimKiem = new Guna.UI.WinForms.GunaCircleButton();
             this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -59,6 +59,34 @@
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(2050, 75);
             this.guna2Panel1.TabIndex = 7;
+            // 
+            // btnTimKiem
+            // 
+            this.btnTimKiem.Animated = true;
+            this.btnTimKiem.AnimationHoverSpeed = 0.07F;
+            this.btnTimKiem.AnimationSpeed = 0.03F;
+            this.btnTimKiem.BackColor = System.Drawing.Color.Transparent;
+            this.btnTimKiem.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnTimKiem.BackgroundImage")));
+            this.btnTimKiem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnTimKiem.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnTimKiem.BorderColor = System.Drawing.Color.Black;
+            this.btnTimKiem.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnTimKiem.FocusedColor = System.Drawing.Color.Empty;
+            this.btnTimKiem.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnTimKiem.ForeColor = System.Drawing.Color.White;
+            this.btnTimKiem.Image = ((System.Drawing.Image)(resources.GetObject("btnTimKiem.Image")));
+            this.btnTimKiem.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnTimKiem.Location = new System.Drawing.Point(1963, 20);
+            this.btnTimKiem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnTimKiem.Name = "btnTimKiem";
+            this.btnTimKiem.OnHoverBaseColor = System.Drawing.Color.Coral;
+            this.btnTimKiem.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnTimKiem.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnTimKiem.OnHoverImage = null;
+            this.btnTimKiem.OnPressedColor = System.Drawing.Color.Black;
+            this.btnTimKiem.Size = new System.Drawing.Size(50, 47);
+            this.btnTimKiem.TabIndex = 5;
+            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
             // 
             // txtTimKiem
             // 
@@ -95,33 +123,6 @@
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.Size = new System.Drawing.Size(2050, 4);
             this.guna2Panel2.TabIndex = 8;
-            // 
-            // btnTimKiem
-            // 
-            this.btnTimKiem.Animated = true;
-            this.btnTimKiem.AnimationHoverSpeed = 0.07F;
-            this.btnTimKiem.AnimationSpeed = 0.03F;
-            this.btnTimKiem.BackColor = System.Drawing.Color.Transparent;
-            this.btnTimKiem.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnTimKiem.BackgroundImage")));
-            this.btnTimKiem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnTimKiem.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnTimKiem.BorderColor = System.Drawing.Color.Black;
-            this.btnTimKiem.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnTimKiem.FocusedColor = System.Drawing.Color.Empty;
-            this.btnTimKiem.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnTimKiem.ForeColor = System.Drawing.Color.White;
-            this.btnTimKiem.Image = ((System.Drawing.Image)(resources.GetObject("btnTimKiem.Image")));
-            this.btnTimKiem.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnTimKiem.Location = new System.Drawing.Point(1963, 20);
-            this.btnTimKiem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnTimKiem.Name = "btnTimKiem";
-            this.btnTimKiem.OnHoverBaseColor = System.Drawing.Color.Coral;
-            this.btnTimKiem.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnTimKiem.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnTimKiem.OnHoverImage = null;
-            this.btnTimKiem.OnPressedColor = System.Drawing.Color.Black;
-            this.btnTimKiem.Size = new System.Drawing.Size(50, 47);
-            this.btnTimKiem.TabIndex = 5;
             // 
             // BaoHanh
             // 
