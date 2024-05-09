@@ -1,5 +1,5 @@
 ﻿using Home.DuLieu;
-using Home.FrmCon.FrmHienThi;
+using Home.FrmCon.FrmCuaAdmin;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,18 +10,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Home.FrmCon.FrmCuaAdmin
+namespace Home.FrmCon.FrmConAdmin
 {
-    public partial class KhachHang : UserControl
+    public partial class BaoHanh : UserControl
     {
-        XuLiDuLieu xl = new XuLiDuLieu();
-        public KhachHang()
+        public BaoHanh()
         {
             InitializeComponent();
-
         }
-
-        private void KhachHang_Load(object sender, EventArgs e)
+        XuLiDuLieu xl = new XuLiDuLieu();
+        private void BaoHanh_Load(object sender, EventArgs e)
         {
             foreach (DataRow row in xl.doDuLieuKhachHang().Rows)
             {
@@ -35,8 +33,5 @@ namespace Home.FrmCon.FrmCuaAdmin
                 oKhachHang.BringToFront();
             }
         }
-
-
-
     }
 }

@@ -83,5 +83,9 @@ namespace Home.FrmCon
 
         }
 
+        private void cboSanPham_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

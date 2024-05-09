@@ -25,5 +25,10 @@ namespace Home.FrmCon.FrmConAdmin
             PanelNoidung.Controls.Add(dichVuAdmin);
             dichVuAdmin.BringToFront();
         }
+
+        private void UCDichVu_BaoHanh_Load(object sender, EventArgs e)
+        {
+            sanPhamTrong1.themNoiDung("Bạn chưa chọn tính năng!", "Vui lòng chọn tính năng bạn muốn thực hiện!");
+        }
     }
 }
