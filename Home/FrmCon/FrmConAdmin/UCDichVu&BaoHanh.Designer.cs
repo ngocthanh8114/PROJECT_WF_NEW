@@ -65,8 +65,7 @@
             this.btnBaoHanh.Name = "btnBaoHanh";
             this.btnBaoHanh.Size = new System.Drawing.Size(221, 39);
             this.btnBaoHanh.TabIndex = 3;
-            this.btnBaoHanh.Text = "Bảo hành";
-            // 
+            this.btnBaoHanh.Text = "Bảo hành";            // 
             // btnDichVu
             // 
             this.btnDichVu.BorderRadius = 5;

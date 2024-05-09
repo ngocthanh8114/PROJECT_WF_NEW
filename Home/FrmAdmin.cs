@@ -11,6 +11,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xaml;
 
 namespace Home
 {
@@ -68,6 +69,7 @@ namespace Home
             btnDichVu.Checked = false;
             btnBaoCao.Checked = false;
             btnNhanVien.Checked = false;
+            btnTaiKhoan.Checked = false;
         }
 
         private void btnBaoCao_Click(object sender, EventArgs e)
@@ -78,6 +80,7 @@ namespace Home
             btnDichVu.Checked = false;
             btnBaoCao.Checked = true;
             btnNhanVien.Checked = false;
+            btnTaiKhoan.Checked = false;
         }
 
         private void btnKhachHang_Click(object sender, EventArgs e)
@@ -88,6 +91,7 @@ namespace Home
             btnDichVu.Checked = false;
             btnBaoCao.Checked = false ;
             btnNhanVien.Checked = false;
+            btnTaiKhoan.Checked = false;
         }
 
        
@@ -96,6 +100,12 @@ namespace Home
             UCDichVu_BaoHanh uCDichVu_BaoHanh   = new UCDichVu_BaoHanh();
             panelHienThi.Controls.Add(uCDichVu_BaoHanh);
             uCDichVu_BaoHanh.BringToFront();
+            btnSanPham.Checked = false;
+            btnKhachHang.Checked = false;
+            btnDichVu.Checked = true;
+            btnBaoCao.Checked = false;
+            btnNhanVien.Checked = false;
+            btnTaiKhoan.Checked = false;
         }
 
         private void btnTaiKhoan_Click_1(object sender, EventArgs e)
@@ -105,7 +115,15 @@ namespace Home
             btnKhachHang.Checked = false;
             btnDichVu.Checked = false;
             btnBaoCao.Checked = false;
-            btnNhanVien.Checked = true;
+            btnNhanVien.Checked = false;
+            btnTaiKhoan.Checked = true;
+        }
+
+        private void FrmAdmin_Load(object sender, EventArgs e)
+        {
+            addHienThi(TongForm.SanPhamAdmin);
+            TongForm.SanPhamAdmin.SanPhamAdmin_Load(TongForm.SanPhamAdmin, e);
+            btnSanPham.Checked = true;
         }
     }
 }
