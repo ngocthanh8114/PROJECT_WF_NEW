@@ -1,5 +1,6 @@
 ﻿using Home.FrmCon;
 using Home.FrmCon.FrmBaoCao;
+using Home.FrmCon.FrmConAdmin;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -101,7 +102,9 @@ namespace Home
 
         private void btnDichVu_Click(object sender, EventArgs e)
         {
-
+            UCDichVu_BaoHanh uCDichVu_BaoHanh   = new UCDichVu_BaoHanh();
+            panelHienThi.Controls.Add(uCDichVu_BaoHanh);
+            uCDichVu_BaoHanh.BringToFront();
         }
     }
 }
