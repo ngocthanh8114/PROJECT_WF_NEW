@@ -1,4 +1,5 @@
-Giao diện của người dùng:
+--------------------------------------------------------------------Giao diện của người dùng:---------------------------------------------------------------------
+
   Giao diện giới thiệu:
   ![image](https://github.com/ngocthanh8114/PROJECT_WF_NEW/assets/137601753/3b9b2f33-c474-4712-84ea-a4d9142035c6)
   Giao diện các loại sản phẩm:
@@ -13,7 +14,9 @@ Giao diện của người dùng:
   ![image](https://github.com/ngocthanh8114/PROJECT_WF_NEW/assets/137601753/4515a6dc-70af-4b65-a576-6d418087fb08)
   ![image](https://github.com/ngocthanh8114/PROJECT_WF_NEW/assets/137601753/20b47e58-bc5a-4b9f-8706-08ae9c5a247d)
   ![image](https://github.com/ngocthanh8114/PROJECT_WF_NEW/assets/137601753/6d156d0f-031e-4472-99ff-f8699af2442d)
-Giao diện của Admin:
+
+---------------------------------------------------------------------Giao diện của Admin:--------------------------------------------------------------------------
+
   Thêm, sửa, xóa sản phẩm:
   ![image](https://github.com/ngocthanh8114/PROJECT_WF_NEW/assets/137601753/6afe4a53-c356-46bf-8c1b-e8d82b4ce9b8)
   Quản lí khách hàng:
