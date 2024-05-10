@@ -57,7 +57,7 @@ namespace Home.FrmCon.FrmConAdmin
                 else
                 {
                     // Nếu không có hình ảnh, có thể hiển thị một hình ảnh mặc định hoặc ẩn điều khiển hình ảnh
-                    pictureAnhNV.Image = null; // Hoặc gán hình ảnh mặc định
+                    pictureAnhNV.Image = null;
                 }
             }
 
