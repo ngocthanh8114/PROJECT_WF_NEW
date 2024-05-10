@@ -47,15 +47,30 @@ namespace Home.FrmCon.FrmConAdmin
 
         private void btnHoanThanh_Click(object sender, EventArgs e)
         {
+            int tuoi;
+            decimal luong;
             if (string.IsNullOrWhiteSpace(txtMaNhanVien.Text) || string.IsNullOrWhiteSpace(txtTenNhanVien.Text) ||
-        string.IsNullOrWhiteSpace(txtCanCuoc.Text) || string.IsNullOrWhiteSpace(txtTuoi.Text) ||
-        string.IsNullOrWhiteSpace(txtKinhNghiem.Text) || string.IsNullOrWhiteSpace(txtDiaChi.Text) ||
-        string.IsNullOrWhiteSpace(txtLuong.Text) || pictureAnhNV.Image == null)
+      string.IsNullOrWhiteSpace(txtCanCuoc.Text) || string.IsNullOrWhiteSpace(txtTuoi.Text) ||
+      string.IsNullOrWhiteSpace(txtKinhNghiem.Text) || string.IsNullOrWhiteSpace(txtDiaChi.Text) ||
+      string.IsNullOrWhiteSpace(txtLuong.Text) || pictureAnhNV.Image == null)
             {
                 FrmBaoLoi frmBaoLoi = new FrmBaoLoi();
                 frmBaoLoi.hienThiLoi("Vui lòng nhập lại thông tin!");
                 frmBaoLoi.Show();
-                
+            }
+            else if (!int.TryParse(txtTuoi.Text, out tuoi) || tuoi < 18 || tuoi > 100)
+            {
+                FrmBaoLoi frmBaoLoi = new FrmBaoLoi();
+                frmBaoLoi.hienThiLoi("Tuổi phải là một số nguyên từ 18 đến 100!");
+                frmBaoLoi.Show();
+                return;
+            }
+            else if (!decimal.TryParse(txtLuong.Text, out luong) || luong <= 0)
+            {
+                FrmBaoLoi frmBaoLoi = new FrmBaoLoi();
+                frmBaoLoi.hienThiLoi("Lương phải là một số dương!");
+                frmBaoLoi.Show();
+                return;
             }
             else
             {
@@ -66,10 +81,9 @@ namespace Home.FrmCon.FrmConAdmin
                     anhBytes = ms.ToArray();
                 }
 
-                xl.ThemNhanVien(txtMaNhanVien.Text, txtTenNhanVien.Text, txtCanCuoc.Text, int.Parse(txtTuoi.Text), txtKinhNghiem.Text, txtDiaChi.Text, decimal.Parse(txtLuong.Text), anhBytes);
+                xl.ThemNhanVien(txtMaNhanVien.Text, txtTenNhanVien.Text, txtCanCuoc.Text, tuoi, txtKinhNghiem.Text, txtDiaChi.Text, luong, anhBytes);
                 TongForm.UCNhanVien.UCNhanVien_Load(sender, EventArgs.Empty);
             }
-            
         }
     }
 }

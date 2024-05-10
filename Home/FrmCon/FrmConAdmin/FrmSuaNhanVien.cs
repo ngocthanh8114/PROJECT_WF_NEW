@@ -18,19 +18,19 @@ namespace Home.FrmCon.FrmConAdmin
     public partial class FrmSuaNhanVien : Form
     {
         ONhanVien oNhanVien = null;
-       // string manhanvien;
+        // string manhanvien;
         public FrmSuaNhanVien(ONhanVien oNhanVien)
         {
             InitializeComponent();
-            this.oNhanVien=oNhanVien;
+            this.oNhanVien = oNhanVien;
         }
 
         private void guna2PictureBox1_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-        XuLiDuLieu xl =  new XuLiDuLieu();
-        
+        XuLiDuLieu xl = new XuLiDuLieu();
+
 
         private void LayVaHienThiThongTinNhanVien()
         {
@@ -85,17 +85,31 @@ namespace Home.FrmCon.FrmConAdmin
 
         private void btnHoanThanh_Click(object sender, EventArgs e)
         {
+            int tuoi;
+            decimal luong;
             if (string.IsNullOrWhiteSpace(txtMaNhanVien.Text) || string.IsNullOrWhiteSpace(txtTenNhanVien.Text) ||
-        string.IsNullOrWhiteSpace(txtCanCuoc.Text) || string.IsNullOrWhiteSpace(txtTuoi.Text) ||
-        string.IsNullOrWhiteSpace(txtKinhNghiem.Text) || string.IsNullOrWhiteSpace(txtDiaChi.Text) ||
-        string.IsNullOrWhiteSpace(txtLuong.Text) || pictureAnhNV.Image == null)
+      string.IsNullOrWhiteSpace(txtCanCuoc.Text) || string.IsNullOrWhiteSpace(txtTuoi.Text) ||
+      string.IsNullOrWhiteSpace(txtKinhNghiem.Text) || string.IsNullOrWhiteSpace(txtDiaChi.Text) ||
+      string.IsNullOrWhiteSpace(txtLuong.Text) || pictureAnhNV.Image == null)
             {
                 FrmBaoLoi frmBaoLoi = new FrmBaoLoi();
                 frmBaoLoi.hienThiLoi("Vui lòng nhập lại thông tin!");
                 frmBaoLoi.Show();
-
             }
-            else
+            else if (!int.TryParse(txtTuoi.Text, out tuoi) || tuoi < 18 || tuoi > 100)
+            {
+                FrmBaoLoi frmBaoLoi = new FrmBaoLoi();
+                frmBaoLoi.hienThiLoi("Tuổi phải là một số nguyên từ 18 đến 100!");
+                frmBaoLoi.Show();
+                return;
+            }
+            else if (!decimal.TryParse(txtLuong.Text, out luong) || luong <= 0)
+            {
+                FrmBaoLoi frmBaoLoi = new FrmBaoLoi();
+                frmBaoLoi.hienThiLoi("Lương phải là một số dương!");
+                frmBaoLoi.Show();
+                return;
+            }else
             {
                 byte[] anhBytes;
                 using (MemoryStream ms = new MemoryStream())
@@ -104,10 +118,10 @@ namespace Home.FrmCon.FrmConAdmin
                     anhBytes = ms.ToArray();
                 }
 
-                xl.CapNhatThongTinNhanVien(txtMaNhanVien.Text, txtTenNhanVien.Text, txtCanCuoc.Text, int.Parse(txtTuoi.Text), txtKinhNghiem.Text, txtDiaChi.Text, decimal.Parse(txtLuong.Text), anhBytes);
-                this.Close();
+                xl.CapNhatThongTinNhanVien(txtMaNhanVien.Text, txtTenNhanVien.Text, txtCanCuoc.Text, tuoi, txtKinhNghiem.Text, txtDiaChi.Text, luong, anhBytes);
                 TongForm.UCNhanVien.UCNhanVien_Load(sender, EventArgs.Empty);
             }
+
         }
     }
 }

@@ -2290,74 +2290,75 @@ namespace Home.DuLieu
                 frmThongBao.hienThiLoi("Vui lòng nhập đầy đủ và chính xác thông tin!");
                 frmThongBao.Show();
                 return;
-            }
-
-            // Kiểm tra định dạng số điện thoại
-            if (!IsPhoneNumberValid(sodienthoai))
+            } else if (!IsPhoneNumberValid(sodienthoai))
             {
                 FrmBaoLoi frmThongBao = new FrmBaoLoi();
                 frmThongBao.hienThiLoi("Số điện thoại không hợp lệ! Vui lòng nhập lại.");
                 frmThongBao.Show();
                 return;
             }
-
-            // Tiếp tục kiểm tra sản phẩm tồn tại
-            string sqlCheckProduct = "SELECT COUNT(*) FROM SanPham WHERE MaSP = @MaSP AND TenSP = @TenSP";
-            SqlCommand cmdCheckProduct = new SqlCommand(sqlCheckProduct, kn.con);
-            cmdCheckProduct.Parameters.AddWithValue("@MaSP", masanpham);
-            cmdCheckProduct.Parameters.AddWithValue("@TenSP", tensanpham);
-
-            int productCount = (int)cmdCheckProduct.ExecuteScalar();
-
-            if (productCount == 0)
-            {
-                FrmBaoLoi frmThongBao = new FrmBaoLoi();
-                frmThongBao.hienThiLoi("Mã sản phẩm hoặc tên sản phẩm không tồn tại. Vui lòng kiểm tra lại!");
-                frmThongBao.Show();
-                return;
-            }
-
-            string sqlInsert = "INSERT INTO HoaDonTaiCuaHang (MaHoaDon, TenKhachHang, SoDienThoai, DiaChi, TenSanPham, MaSanPham, SoLuong, Thue, TongTien, NgayMua) " +
-                               "VALUES (@MaHoaDon, @TenKhachHang, @SoDienThoai, @DiaChi, @TenSanPham, @MaSanPham, @SoLuong, @Thue, @TongTien, @NgayMua)";
-
-            SqlCommand cmd = new SqlCommand(sqlInsert, kn.con);
-
-            // Tạo GUID mới
-            Guid maHoaDon = Guid.NewGuid();
-
-
-            cmd.Parameters.AddWithValue("@MaHoaDon", maHoaDon);
-            cmd.Parameters.AddWithValue("@TenKhachHang", tenkhachhang);
-            cmd.Parameters.AddWithValue("@SoDienThoai", sodienthoai);
-            cmd.Parameters.AddWithValue("@DiaChi", diachi);
-            cmd.Parameters.AddWithValue("@TenSanPham", tensanpham);
-            cmd.Parameters.AddWithValue("@MaSanPham", masanpham);
-            cmd.Parameters.AddWithValue("@SoLuong", soluong);
-            cmd.Parameters.AddWithValue("@Thue", thue);
-            cmd.Parameters.AddWithValue("@TongTien", tongtien);
-            cmd.Parameters.AddWithValue("@NgayMua", ngaymua);
-
-            int rowsAffected = cmd.ExecuteNonQuery();
-
-            if (rowsAffected > 0)
-            {
-                TruSoLuongSanPhamDaMua(masanpham, soluong);
-                FrmThongBao frmThongBao = new FrmThongBao();
-                frmThongBao.hienThiThongBao("Thêm thành công!");
-                frmThongBao.Show();
-            }
             else
             {
-                FrmBaoLoi frmBaoLoi = new FrmBaoLoi();
-                frmBaoLoi.hienThiLoi("Thêm không thành công");
-                frmBaoLoi.Show();
+                string sqlCheckProduct = "SELECT COUNT(*) FROM SanPham WHERE MaSP = @MaSP AND TenSP = @TenSP";
+                SqlCommand cmdCheckProduct = new SqlCommand(sqlCheckProduct, kn.con);
+                cmdCheckProduct.Parameters.AddWithValue("@MaSP", masanpham);
+                cmdCheckProduct.Parameters.AddWithValue("@TenSP", tensanpham);
+
+                int productCount = (int)cmdCheckProduct.ExecuteScalar();
+
+                if (productCount == 0)
+                {
+                    FrmBaoLoi frmThongBao = new FrmBaoLoi();
+                    frmThongBao.hienThiLoi("Mã sản phẩm hoặc tên sản phẩm không tồn tại. Vui lòng kiểm tra lại!");
+                    frmThongBao.Show();
+                    return;
+                }
+
+                string sqlInsert = "INSERT INTO HoaDonTaiCuaHang (MaHoaDon, TenKhachHang, SoDienThoai, DiaChi, TenSanPham, MaSanPham, SoLuong, Thue, TongTien, NgayMua) " +
+                                   "VALUES (@MaHoaDon, @TenKhachHang, @SoDienThoai, @DiaChi, @TenSanPham, @MaSanPham, @SoLuong, @Thue, @TongTien, @NgayMua)";
+
+                SqlCommand cmd = new SqlCommand(sqlInsert, kn.con);
+
+                // Tạo GUID mới
+                Guid maHoaDon = Guid.NewGuid();
+
+
+                cmd.Parameters.AddWithValue("@MaHoaDon", maHoaDon);
+                cmd.Parameters.AddWithValue("@TenKhachHang", tenkhachhang);
+                cmd.Parameters.AddWithValue("@SoDienThoai", sodienthoai);
+                cmd.Parameters.AddWithValue("@DiaChi", diachi);
+                cmd.Parameters.AddWithValue("@TenSanPham", tensanpham);
+                cmd.Parameters.AddWithValue("@MaSanPham", masanpham);
+                cmd.Parameters.AddWithValue("@SoLuong", soluong);
+                cmd.Parameters.AddWithValue("@Thue", thue);
+                cmd.Parameters.AddWithValue("@TongTien", tongtien);
+                cmd.Parameters.AddWithValue("@NgayMua", ngaymua);
+
+                int rowsAffected = cmd.ExecuteNonQuery();
+
+                if (rowsAffected > 0)
+                {
+                    TruSoLuongSanPhamDaMua(masanpham, soluong);
+                    FrmThongBao frmThongBao = new FrmThongBao();
+                    frmThongBao.hienThiThongBao("Thêm thành công!");
+                    frmThongBao.Show();
+                }
+                else
+                {
+                    FrmBaoLoi frmBaoLoi = new FrmBaoLoi();
+                    frmBaoLoi.hienThiLoi("Thêm không thành công");
+                    frmBaoLoi.Show();
+                }
             }
+
+           
+           
         }
 
-        // Phương thức kiểm tra định dạng số điện thoại
+
         private bool IsPhoneNumberValid(string phoneNumber)
         {
-            // Kiểm tra xem chuỗi số điện thoại có chứa ký tự không phải số hay không
+            
             foreach (char c in phoneNumber)
             {
                 if (!char.IsDigit(c))
@@ -2366,7 +2367,7 @@ namespace Home.DuLieu
                 }
             }
 
-            // Kiểm tra độ dài của chuỗi số điện thoại
+            
             if (phoneNumber.Length < 10 || phoneNumber.Length > 11)
             {
                 return false;
@@ -2449,7 +2450,7 @@ namespace Home.DuLieu
                     if (existingCount > 0)
                     {
                         FrmBaoLoi frmBaoLoi = new FrmBaoLoi();
-                        frmBaoLoi.hienThiLoi("Số CMND đã tồn tại trong cơ sở dữ liệu.");
+                        frmBaoLoi.hienThiLoi("Số Căn cước công dân đã tồn tại trong cơ sở dữ liệu.");
                         frmBaoLoi.Show();
                         return;
                     }

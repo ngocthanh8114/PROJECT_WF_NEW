@@ -41,10 +41,22 @@ namespace Home.FrmCon.FrmConAdmin.UCThanhPhan
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-           if(txtTenNguoiDung.Text == "" || txtTenTaiKhoan.Text == "" || txtSDT.Text == "" || txtMatKhau.Text == "" || txtEmail.Text == "")
+            if (txtTenNguoiDung.Text == "" || txtTenTaiKhoan.Text == "" || txtSDT.Text == "" || txtMatKhau.Text == "" || txtEmail.Text == "")
             {
                 FrmBaoLoi frmBaoLoi = new FrmBaoLoi();
                 frmBaoLoi.hienThiLoi("Vui lòng nhập đầy đủ thông tin!");
+                frmBaoLoi.Show();
+            }
+            else if (txtSDT.Text.Length != 10)
+            {
+                FrmBaoLoi frmBaoLoi = new FrmBaoLoi();
+                frmBaoLoi.hienThiLoi("Số điện thoại phải có 10 số!");
+                frmBaoLoi.Show();
+            }
+            else if (!txtEmail.Text.Contains("@gmail.com"))
+            {
+                FrmBaoLoi frmBaoLoi = new FrmBaoLoi();
+                frmBaoLoi.hienThiLoi("Email phải có định dạng @gmail.com!");
                 frmBaoLoi.Show();
             }
             else
