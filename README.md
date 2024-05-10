@@ -29,7 +29,7 @@ Giao diện của Admin:
   Báo cáo nhập hàng:
   ![image](https://github.com/ngocthanh8114/PROJECT_WF_NEW/assets/137601753/54656442-ec37-47e6-8074-c1a96d8a4216)
   Báo cáo doanh thu:
-  ![image](https://github.com/ngocthanh8114/PROJECT_WF_NEW/assets/137601753/cb937128-7399-4bec-9425-9d9512c0fa77)
+  ![image](https://github.com/ngocthanh8114/PROJECT_WF_NEW/assets/137601753/470d220f-4cd2-4b79-8837-302cee48c8be)
   Hóa dơn online:
   ![image](https://github.com/ngocthanh8114/PROJECT_WF_NEW/assets/137601753/2ea25e54-40ca-46bd-8f61-77cf0fa92b1b)
   Hóa đơn tại cửa hàng:
