@@ -42,8 +42,8 @@
             this.lblMaSP = new System.Windows.Forms.Label();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.lblNam = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxSP)).BeginInit();
             this.panelSP1.SuspendLayout();
@@ -224,6 +224,18 @@
             this.guna2Panel1.Size = new System.Drawing.Size(247, 35);
             this.guna2Panel1.TabIndex = 31;
             // 
+            // lblNam
+            // 
+            this.lblNam.Dock = System.Windows.Forms.DockStyle.Right;
+            this.lblNam.Font = new System.Drawing.Font("Segoe UI Semibold", 9.8F, System.Drawing.FontStyle.Bold);
+            this.lblNam.ForeColor = System.Drawing.Color.Black;
+            this.lblNam.Location = new System.Drawing.Point(94, 0);
+            this.lblNam.Name = "lblNam";
+            this.lblNam.Size = new System.Drawing.Size(153, 35);
+            this.lblNam.TabIndex = 12;
+            this.lblNam.Text = "5 năm";
+            this.lblNam.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // label1
             // 
             this.label1.Dock = System.Windows.Forms.DockStyle.Left;
@@ -235,18 +247,6 @@
             this.label1.TabIndex = 11;
             this.label1.Text = "Bảo hành:";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lblNam
-            // 
-            this.lblNam.Dock = System.Windows.Forms.DockStyle.Right;
-            this.lblNam.Font = new System.Drawing.Font("Segoe UI Semibold", 9.8F, System.Drawing.FontStyle.Bold);
-            this.lblNam.ForeColor = System.Drawing.Color.Black;
-            this.lblNam.Location = new System.Drawing.Point(82, 0);
-            this.lblNam.Name = "lblNam";
-            this.lblNam.Size = new System.Drawing.Size(165, 35);
-            this.lblNam.TabIndex = 12;
-            this.lblNam.Text = "5 năm";
-            this.lblNam.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // guna2Panel3
             // 

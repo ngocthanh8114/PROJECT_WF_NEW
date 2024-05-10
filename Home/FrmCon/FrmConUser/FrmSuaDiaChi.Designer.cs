@@ -50,11 +50,11 @@
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.gunaLabel6 = new Guna.UI.WinForms.GunaLabel();
             this.pn_NoiDungSua = new Guna.UI2.WinForms.Guna2Panel();
+            this.lblSoDT = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtDiaChi = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Panel9 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel10 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel12 = new Guna.UI2.WinForms.Guna2Panel();
-            this.lblSoDT = new Guna.UI2.WinForms.Guna2HtmlLabel();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel6.SuspendLayout();
@@ -420,6 +420,18 @@
             this.pn_NoiDungSua.Size = new System.Drawing.Size(493, 317);
             this.pn_NoiDungSua.TabIndex = 7;
             // 
+            // lblSoDT
+            // 
+            this.lblSoDT.AutoSize = false;
+            this.lblSoDT.BackColor = System.Drawing.Color.Transparent;
+            this.lblSoDT.ForeColor = System.Drawing.Color.Red;
+            this.lblSoDT.Location = new System.Drawing.Point(28, 216);
+            this.lblSoDT.Name = "lblSoDT";
+            this.lblSoDT.Size = new System.Drawing.Size(1085, 25);
+            this.lblSoDT.TabIndex = 62;
+            this.lblSoDT.Text = "SĐT không bao gồm chữ và ký tự đặc biệt (10-11 ký tự).";
+            this.lblSoDT.Visible = false;
+            // 
             // txtDiaChi
             // 
             this.txtDiaChi.BorderRadius = 8;
@@ -467,18 +479,6 @@
             this.guna2Panel12.Name = "guna2Panel12";
             this.guna2Panel12.Size = new System.Drawing.Size(497, 2);
             this.guna2Panel12.TabIndex = 17;
-            // 
-            // lblSoDT
-            // 
-            this.lblSoDT.AutoSize = false;
-            this.lblSoDT.BackColor = System.Drawing.Color.Transparent;
-            this.lblSoDT.ForeColor = System.Drawing.Color.Red;
-            this.lblSoDT.Location = new System.Drawing.Point(28, 216);
-            this.lblSoDT.Name = "lblSoDT";
-            this.lblSoDT.Size = new System.Drawing.Size(1085, 25);
-            this.lblSoDT.TabIndex = 62;
-            this.lblSoDT.Text = "SĐT không bao gồm chữ và ký tự đặc biệt (10-11 ký tự).";
-            this.lblSoDT.Visible = false;
             // 
             // FrmSuaDiaChi
             // 

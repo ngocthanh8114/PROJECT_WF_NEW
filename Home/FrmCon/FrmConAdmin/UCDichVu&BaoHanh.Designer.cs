@@ -60,7 +60,7 @@
             this.btnBaoHanh.FillColor = System.Drawing.Color.Tomato;
             this.btnBaoHanh.Font = new System.Drawing.Font("Calibri", 10.8F, System.Drawing.FontStyle.Bold);
             this.btnBaoHanh.ForeColor = System.Drawing.Color.White;
-            this.btnBaoHanh.Location = new System.Drawing.Point(246, 14);
+            this.btnBaoHanh.Location = new System.Drawing.Point(22, 14);
             this.btnBaoHanh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBaoHanh.Name = "btnBaoHanh";
             this.btnBaoHanh.Size = new System.Drawing.Size(221, 39);
@@ -80,7 +80,7 @@
             this.btnDichVu.FillColor = System.Drawing.Color.Tomato;
             this.btnDichVu.Font = new System.Drawing.Font("Calibri", 10.8F, System.Drawing.FontStyle.Bold);
             this.btnDichVu.ForeColor = System.Drawing.Color.White;
-            this.btnDichVu.Location = new System.Drawing.Point(19, 14);
+            this.btnDichVu.Location = new System.Drawing.Point(276, 14);
             this.btnDichVu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDichVu.Name = "btnDichVu";
             this.btnDichVu.Size = new System.Drawing.Size(221, 39);

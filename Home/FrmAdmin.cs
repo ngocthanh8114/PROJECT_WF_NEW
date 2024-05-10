@@ -141,6 +141,7 @@ namespace Home
             btnDichVu.Checked = false;
             btnBaoCao.Checked = false;
             btnNhanVien.Checked = true;
+            btnTaiKhoan.Checked=false;
         }
     }
 }

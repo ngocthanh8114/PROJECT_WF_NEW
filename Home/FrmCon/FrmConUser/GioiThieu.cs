@@ -21,5 +21,10 @@ namespace Home.FrmCon
         {
 
         }
+
+        private void lblTL_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -176,11 +176,11 @@
             this.guna2HtmlLabel1.AutoSize = false;
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(171, 198);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(168, 198);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(261, 29);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(289, 29);
             this.guna2HtmlLabel1.TabIndex = 34;
-            this.guna2HtmlLabel1.Text = "SMOTORCYCLE";
+            this.guna2HtmlLabel1.Text = "SMOTORYCYCLE";
             // 
             // btnDangNhap
             // 

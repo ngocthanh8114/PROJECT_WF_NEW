@@ -36,7 +36,7 @@ namespace Home.FrmCon.FrmBaoCao
         }
         private void UCBaoCaoHoaDon_Load(object sender, EventArgs e)
         {
-
+            donMuaTrong.themNoiDung("Bạn chưa chọn mã đơn hàng", "Vui lòng chọn mã đơn hàng để hiển thị");
             addCBOMaHD();
         }
         private void addHoaDon(int MaDH)
@@ -125,11 +125,6 @@ namespace Home.FrmCon.FrmBaoCao
             string[] parts = item.Split(' ');
             int MaDH = int.Parse(parts[3]); 
             return MaDH;
-        }
-
-        private void btn_Sua_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void btnThemHoaDon_Click(object sender, EventArgs e)

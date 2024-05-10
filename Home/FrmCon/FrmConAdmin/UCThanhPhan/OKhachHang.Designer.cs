@@ -58,7 +58,7 @@
             this.lineTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.lineTop.Location = new System.Drawing.Point(5, 0);
             this.lineTop.Name = "lineTop";
-            this.lineTop.Size = new System.Drawing.Size(390, 5);
+            this.lineTop.Size = new System.Drawing.Size(389, 5);
             this.lineTop.TabIndex = 0;
             // 
             // btnChiTiet
@@ -105,7 +105,7 @@
             this.guna2PictureBox1.ImageRotate = 0F;
             this.guna2PictureBox1.Location = new System.Drawing.Point(5, 5);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(390, 112);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(389, 112);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2PictureBox1.TabIndex = 2;
             this.guna2PictureBox1.TabStop = false;
@@ -116,7 +116,7 @@
             this.lineBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.lineBottom.Location = new System.Drawing.Point(5, 354);
             this.lineBottom.Name = "lineBottom";
-            this.lineBottom.Size = new System.Drawing.Size(390, 5);
+            this.lineBottom.Size = new System.Drawing.Size(389, 5);
             this.lineBottom.TabIndex = 3;
             // 
             // lineAVT
@@ -125,7 +125,7 @@
             this.lineAVT.Dock = System.Windows.Forms.DockStyle.Top;
             this.lineAVT.Location = new System.Drawing.Point(5, 117);
             this.lineAVT.Name = "lineAVT";
-            this.lineAVT.Size = new System.Drawing.Size(390, 1);
+            this.lineAVT.Size = new System.Drawing.Size(389, 1);
             this.lineAVT.TabIndex = 4;
             // 
             // gunaLabel3
@@ -157,7 +157,7 @@
             this.lblDiaChi.Dock = System.Windows.Forms.DockStyle.Right;
             this.lblDiaChi.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDiaChi.ForeColor = System.Drawing.Color.DimGray;
-            this.lblDiaChi.Location = new System.Drawing.Point(178, 0);
+            this.lblDiaChi.Location = new System.Drawing.Point(177, 0);
             this.lblDiaChi.Name = "lblDiaChi";
             this.lblDiaChi.Size = new System.Drawing.Size(212, 76);
             this.lblDiaChi.TabIndex = 30;
@@ -169,7 +169,7 @@
             this.lblSDT.Dock = System.Windows.Forms.DockStyle.Right;
             this.lblSDT.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSDT.ForeColor = System.Drawing.Color.DimGray;
-            this.lblSDT.Location = new System.Drawing.Point(182, 0);
+            this.lblSDT.Location = new System.Drawing.Point(181, 0);
             this.lblSDT.Name = "lblSDT";
             this.lblSDT.Size = new System.Drawing.Size(208, 53);
             this.lblSDT.TabIndex = 29;
@@ -193,7 +193,7 @@
             this.lblTenKH.Dock = System.Windows.Forms.DockStyle.Right;
             this.lblTenKH.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTenKH.ForeColor = System.Drawing.Color.DimGray;
-            this.lblTenKH.Location = new System.Drawing.Point(182, 0);
+            this.lblTenKH.Location = new System.Drawing.Point(181, 0);
             this.lblTenKH.Name = "lblTenKH";
             this.lblTenKH.Size = new System.Drawing.Size(208, 53);
             this.lblTenKH.TabIndex = 32;
@@ -207,7 +207,7 @@
             this.panelTenKH.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTenKH.Location = new System.Drawing.Point(5, 118);
             this.panelTenKH.Name = "panelTenKH";
-            this.panelTenKH.Size = new System.Drawing.Size(390, 53);
+            this.panelTenKH.Size = new System.Drawing.Size(389, 53);
             this.panelTenKH.TabIndex = 33;
             // 
             // panelSDT
@@ -217,7 +217,7 @@
             this.panelSDT.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelSDT.Location = new System.Drawing.Point(5, 171);
             this.panelSDT.Name = "panelSDT";
-            this.panelSDT.Size = new System.Drawing.Size(390, 53);
+            this.panelSDT.Size = new System.Drawing.Size(389, 53);
             this.panelSDT.TabIndex = 34;
             // 
             // panelDC
@@ -227,7 +227,7 @@
             this.panelDC.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelDC.Location = new System.Drawing.Point(5, 224);
             this.panelDC.Name = "panelDC";
-            this.panelDC.Size = new System.Drawing.Size(390, 76);
+            this.panelDC.Size = new System.Drawing.Size(389, 76);
             this.panelDC.TabIndex = 35;
             // 
             // guna2Panel1
@@ -236,7 +236,7 @@
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel1.Location = new System.Drawing.Point(5, 300);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(390, 1);
+            this.guna2Panel1.Size = new System.Drawing.Size(389, 1);
             this.guna2Panel1.TabIndex = 36;
             // 
             // panelLeft
@@ -252,7 +252,7 @@
             // 
             this.panelRight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.panelRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panelRight.Location = new System.Drawing.Point(395, 0);
+            this.panelRight.Location = new System.Drawing.Point(394, 0);
             this.panelRight.Name = "panelRight";
             this.panelRight.Size = new System.Drawing.Size(5, 359);
             this.panelRight.TabIndex = 38;
@@ -273,7 +273,7 @@
             this.Controls.Add(this.panelLeft);
             this.Controls.Add(this.panelRight);
             this.Name = "OKhachHang";
-            this.Size = new System.Drawing.Size(400, 359);
+            this.Size = new System.Drawing.Size(399, 359);
             this.Load += new System.EventHandler(this.OKhachHang_Load);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.panelTenKH.ResumeLayout(false);

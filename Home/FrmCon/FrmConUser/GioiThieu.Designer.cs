@@ -232,7 +232,7 @@
             // 
             this.lblNoiDungKhauHieu.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblNoiDungKhauHieu.BackColor = System.Drawing.Color.Transparent;
-            this.lblNoiDungKhauHieu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNoiDungKhauHieu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
             this.lblNoiDungKhauHieu.Location = new System.Drawing.Point(666, 35);
             this.lblNoiDungKhauHieu.Name = "lblNoiDungKhauHieu";
             this.lblNoiDungKhauHieu.Size = new System.Drawing.Size(529, 135);
@@ -243,9 +243,9 @@
             // 
             this.lblKhauHieu.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblKhauHieu.BackColor = System.Drawing.Color.Transparent;
-            this.lblKhauHieu.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblKhauHieu.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblKhauHieu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblKhauHieu.Location = new System.Drawing.Point(92, 84);
+            this.lblKhauHieu.Location = new System.Drawing.Point(92, 89);
             this.lblKhauHieu.Name = "lblKhauHieu";
             this.lblKhauHieu.Size = new System.Drawing.Size(393, 81);
             this.lblKhauHieu.TabIndex = 11;
@@ -311,12 +311,13 @@
             // 
             // uuDiemNhanVien
             // 
-            this.uuDiemNhanVien.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uuDiemNhanVien.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uuDiemNhanVien.Location = new System.Drawing.Point(0, 4);
             this.uuDiemNhanVien.Name = "uuDiemNhanVien";
             this.uuDiemNhanVien.Size = new System.Drawing.Size(205, 129);
             this.uuDiemNhanVien.TabIndex = 8;
             this.uuDiemNhanVien.Text = "NHÂN VIÊN NIỀM NỞ, THÂN THIỆN";
+            this.uuDiemNhanVien.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // panelUudiem1
             // 
@@ -373,12 +374,13 @@
             // 
             // uuDiemSoLuong
             // 
-            this.uuDiemSoLuong.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uuDiemSoLuong.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uuDiemSoLuong.Location = new System.Drawing.Point(3, 4);
             this.uuDiemSoLuong.Name = "uuDiemSoLuong";
             this.uuDiemSoLuong.Size = new System.Drawing.Size(200, 126);
             this.uuDiemSoLuong.TabIndex = 7;
             this.uuDiemSoLuong.Text = "NHIỀU LOẠI XE MÁY KHÁC NHAU";
+            this.uuDiemSoLuong.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // guna2Panel8
             // 
@@ -407,7 +409,7 @@
             this.lblNoiDungTL.BackColor = System.Drawing.SystemColors.Control;
             this.lblNoiDungTL.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNoiDungTL.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.lblNoiDungTL.Location = new System.Drawing.Point(19, 101);
+            this.lblNoiDungTL.Location = new System.Drawing.Point(19, 115);
             this.lblNoiDungTL.Name = "lblNoiDungTL";
             this.lblNoiDungTL.Size = new System.Drawing.Size(311, 284);
             this.lblNoiDungTL.TabIndex = 1;
@@ -417,21 +419,22 @@
             // lblTL
             // 
             this.lblTL.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTL.Location = new System.Drawing.Point(15, 50);
+            this.lblTL.Location = new System.Drawing.Point(0, 53);
             this.lblTL.Name = "lblTL";
-            this.lblTL.Size = new System.Drawing.Size(315, 347);
+            this.lblTL.Size = new System.Drawing.Size(347, 51);
             this.lblTL.TabIndex = 0;
             this.lblTL.Text = "The standard Lorem Ipsum passage, used since the 1500s.";
             this.lblTL.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblTL.Click += new System.EventHandler(this.lblTL_Click);
             // 
             // lblGioiThieu
             // 
             this.lblGioiThieu.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblGioiThieu.BackColor = System.Drawing.Color.Transparent;
-            this.lblGioiThieu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGioiThieu.Location = new System.Drawing.Point(416, 95);
+            this.lblGioiThieu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
+            this.lblGioiThieu.Location = new System.Drawing.Point(416, 103);
             this.lblGioiThieu.Name = "lblGioiThieu";
-            this.lblGioiThieu.Size = new System.Drawing.Size(685, 177);
+            this.lblGioiThieu.Size = new System.Drawing.Size(685, 169);
             this.lblGioiThieu.TabIndex = 10;
             this.lblGioiThieu.Text = resources.GetString("lblGioiThieu.Text");
             // 
@@ -440,12 +443,12 @@
             this.lblThuongHieu.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblThuongHieu.AutoSize = true;
             this.lblThuongHieu.BackColor = System.Drawing.Color.Transparent;
-            this.lblThuongHieu.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblThuongHieu.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblThuongHieu.Location = new System.Drawing.Point(585, 39);
             this.lblThuongHieu.Name = "lblThuongHieu";
-            this.lblThuongHieu.Size = new System.Drawing.Size(339, 46);
+            this.lblThuongHieu.Size = new System.Drawing.Size(353, 48);
             this.lblThuongHieu.TabIndex = 9;
-            this.lblThuongHieu.Text = "SMOTORCYCLE";
+            this.lblThuongHieu.Text = "SMOTORYCYCLE";
             // 
             // picBoxBanner
             // 
@@ -523,7 +526,7 @@
             this.lblCopyright.Name = "lblCopyright";
             this.lblCopyright.Size = new System.Drawing.Size(431, 42);
             this.lblCopyright.TabIndex = 11;
-            this.lblCopyright.Text = "© 2019. Copyright by SMOTORCYCLE VietNam";
+            this.lblCopyright.Text = "© 2019. Copyright by SMOTORYCYCLE VietNam";
             // 
             // lblGhiChuHotLine
             // 
@@ -553,7 +556,7 @@
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(252, 23);
             this.lblEmail.TabIndex = 10;
-            this.lblEmail.Text = "ad@smotorcycle.com.vn";
+            this.lblEmail.Text = "ad@smotorycycle.com.vn";
             // 
             // lblTDEmail
             // 
@@ -603,7 +606,7 @@
             this.lblTenCongTy.Name = "lblTenCongTy";
             this.lblTenCongTy.Size = new System.Drawing.Size(342, 42);
             this.lblTenCongTy.TabIndex = 1;
-            this.lblTenCongTy.Text = "Công ty SMOTORCYCLE Việt Nam";
+            this.lblTenCongTy.Text = "Công ty SMOTORYCYCLE Việt Nam";
             // 
             // lblDuongDayNong
             // 
