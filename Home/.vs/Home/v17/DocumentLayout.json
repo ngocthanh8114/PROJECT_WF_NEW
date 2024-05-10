@@ -3,6 +3,22 @@
   "WorkspaceRootPath": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (3)\\PROJECT_WF_NEW\\Home\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|C:\\Users\\PC\\OneDrive\\Desktop\\New folder (3)\\PROJECT_WF_NEW\\Home\\dulieu\\xulidulieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|solutionrelative:dulieu\\xulidulieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|c:\\users\\pc\\onedrive\\desktop\\new folder (3)\\project_wf_new\\home\\frmcon\\frmconadmin\\ucthanhphan\\uctaikhoanadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|solutionrelative:frmcon\\frmconadmin\\ucthanhphan\\uctaikhoanadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|C:\\Users\\PC\\OneDrive\\Desktop\\New folder (3)\\PROJECT_WF_NEW\\Home\\frmcon\\frmconadmin\\ucthanhphan\\uctaikhoanadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|solutionrelative:frmcon\\frmconadmin\\ucthanhphan\\uctaikhoanadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|C:\\Users\\PC\\OneDrive\\Desktop\\New folder (3)\\PROJECT_WF_NEW\\Home\\frmcon\\frmconadmin\\ucthanhphan\\ucthongtinadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|solutionrelative:frmcon\\frmconadmin\\ucthanhphan\\ucthongtinadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|c:\\users\\pc\\onedrive\\desktop\\new folder (3)\\project_wf_new\\home\\frmcon\\frmconadmin\\frmsuanhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|solutionrelative:frmcon\\frmconadmin\\frmsuanhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -19,10 +35,6 @@
       "RelativeMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|solutionrelative:frmcon\\frmconadmin\\frmthemhoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|C:\\Users\\PC\\OneDrive\\Desktop\\New folder (3)\\PROJECT_WF_NEW\\Home\\dulieu\\xulidulieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|solutionrelative:dulieu\\xulidulieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|C:\\Users\\PC\\OneDrive\\Desktop\\New folder (3)\\PROJECT_WF_NEW\\Home\\frmcon\\frmconadmin\\frmthemhh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|solutionrelative:frmcon\\frmconadmin\\frmthemhh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
@@ -37,14 +49,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|C:\\Users\\PC\\OneDrive\\Desktop\\New folder (3)\\PROJECT_WF_NEW\\Home\\frmcon\\frmconadmin\\ucthanhphan\\onhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|solutionrelative:frmcon\\frmconadmin\\ucthanhphan\\onhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|C:\\Users\\PC\\OneDrive\\Desktop\\New folder (3)\\PROJECT_WF_NEW\\Home\\frmcon\\frmconadmin\\ucthanhphan\\uctaikhoanadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|solutionrelative:frmcon\\frmconadmin\\ucthanhphan\\uctaikhoanadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|C:\\Users\\PC\\OneDrive\\Desktop\\New folder (3)\\PROJECT_WF_NEW\\Home\\frmcon\\frmconadmin\\ucthanhphan\\ucthongtinadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|solutionrelative:frmcon\\frmconadmin\\ucthanhphan\\ucthongtinadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DDA31DC0-130A-4428-80F6-A8E98A072B1E}|Home.csproj|C:\\Users\\PC\\OneDrive\\Desktop\\New folder (3)\\PROJECT_WF_NEW\\Home\\frmcon\\frmconadmin\\taikhoanadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -142,7 +146,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -158,32 +162,92 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FrmThemHoaDon.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (3)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmConAdmin\\FrmThemHoaDon.cs",
+              "RelativeDocumentMoniker": "FrmCon\\FrmConAdmin\\FrmThemHoaDon.cs",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (3)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmConAdmin\\FrmThemHoaDon.cs [Design]",
+              "RelativeToolTip": "FrmCon\\FrmConAdmin\\FrmThemHoaDon.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T21:48:19.108Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "XuLiDuLieu.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (3)\\PROJECT_WF_NEW\\Home\\DuLieu\\XuLiDuLieu.cs",
+              "RelativeDocumentMoniker": "DuLieu\\XuLiDuLieu.cs",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (3)\\PROJECT_WF_NEW\\Home\\DuLieu\\XuLiDuLieu.cs",
+              "RelativeToolTip": "DuLieu\\XuLiDuLieu.cs",
+              "ViewState": "AQIAAIcHAAAAAAAAAAAmwPMHAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T20:55:12.251Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UCThongTinAdmin.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (3)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmConAdmin\\UCThanhPhan\\UCThongTinAdmin.cs",
+              "RelativeDocumentMoniker": "FrmCon\\FrmConAdmin\\UCThanhPhan\\UCThongTinAdmin.cs",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (3)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmConAdmin\\UCThanhPhan\\UCThongTinAdmin.cs [Design]",
+              "RelativeToolTip": "FrmCon\\FrmConAdmin\\UCThanhPhan\\UCThongTinAdmin.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-10T04:05:44.345Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UCTaiKhoanAdmin.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (3)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmConAdmin\\UCThanhPhan\\UCTaiKhoanAdmin.cs",
+              "RelativeDocumentMoniker": "FrmCon\\FrmConAdmin\\UCThanhPhan\\UCTaiKhoanAdmin.cs",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (3)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmConAdmin\\UCThanhPhan\\UCTaiKhoanAdmin.cs [Design]",
+              "RelativeToolTip": "FrmCon\\FrmConAdmin\\UCThanhPhan\\UCTaiKhoanAdmin.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-10T04:05:47.254Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UCTaiKhoanAdmin.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (3)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmConAdmin\\UCThanhPhan\\UCTaiKhoanAdmin.cs",
+              "RelativeDocumentMoniker": "FrmCon\\FrmConAdmin\\UCThanhPhan\\UCTaiKhoanAdmin.cs",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (3)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmConAdmin\\UCThanhPhan\\UCTaiKhoanAdmin.cs",
+              "RelativeToolTip": "FrmCon\\FrmConAdmin\\UCThanhPhan\\UCTaiKhoanAdmin.cs",
+              "ViewState": "AQIAADIAAAAAAAAAAAAhwEcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-10T07:37:49.504Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "FrmSuaNhanVien.cs",
               "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (3)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmConAdmin\\FrmSuaNhanVien.cs",
               "RelativeDocumentMoniker": "FrmCon\\FrmConAdmin\\FrmSuaNhanVien.cs",
               "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (3)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmConAdmin\\FrmSuaNhanVien.cs",
               "RelativeToolTip": "FrmCon\\FrmConAdmin\\FrmSuaNhanVien.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAIAAAA",
+              "ViewState": "AQIAAFAAAAAAAAAAAAAuwBMAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-10T04:47:29.722Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "FrmThemNhanVien.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (3)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmConAdmin\\FrmThemNhanVien.cs",
-              "RelativeDocumentMoniker": "FrmCon\\FrmConAdmin\\FrmThemNhanVien.cs",
-              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (3)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmConAdmin\\FrmThemNhanVien.cs",
-              "RelativeToolTip": "FrmCon\\FrmConAdmin\\FrmThemNhanVien.cs",
-              "ViewState": "AQIAADwAAAAAAAAAAAAQwFMAAAAfAAAA",
+              "DocumentIndex": 5,
+              "Title": "FrmSuaNhanVien.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (3)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmConAdmin\\FrmSuaNhanVien.cs",
+              "RelativeDocumentMoniker": "FrmCon\\FrmConAdmin\\FrmSuaNhanVien.cs",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (3)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmConAdmin\\FrmSuaNhanVien.cs [Design]",
+              "RelativeToolTip": "FrmCon\\FrmConAdmin\\FrmSuaNhanVien.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-10T04:10:24.184Z"
+              "WhenOpened": "2024-05-10T04:28:07.877Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "FrmThemHoaDon.cs",
               "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (3)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmConAdmin\\FrmThemHoaDon.cs",
               "RelativeDocumentMoniker": "FrmCon\\FrmConAdmin\\FrmThemHoaDon.cs",
@@ -195,41 +259,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FrmSuaNhanVien.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (3)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmConAdmin\\FrmSuaNhanVien.cs",
-              "RelativeDocumentMoniker": "FrmCon\\FrmConAdmin\\FrmSuaNhanVien.cs",
-              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (3)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmConAdmin\\FrmSuaNhanVien.cs [Design]",
-              "RelativeToolTip": "FrmCon\\FrmConAdmin\\FrmSuaNhanVien.cs [Design]",
+              "DocumentIndex": 10,
+              "Title": "FrmThemNhanVien.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (3)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmConAdmin\\FrmThemNhanVien.cs",
+              "RelativeDocumentMoniker": "FrmCon\\FrmConAdmin\\FrmThemNhanVien.cs",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (3)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmConAdmin\\FrmThemNhanVien.cs",
+              "RelativeToolTip": "FrmCon\\FrmConAdmin\\FrmThemNhanVien.cs",
+              "ViewState": "AQIAADwAAAAAAAAAAAAQwFMAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-10T04:28:07.877Z"
+              "WhenOpened": "2024-05-10T04:10:24.184Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FrmThemHoaDon.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (3)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmConAdmin\\FrmThemHoaDon.cs",
-              "RelativeDocumentMoniker": "FrmCon\\FrmConAdmin\\FrmThemHoaDon.cs",
-              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (3)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmConAdmin\\FrmThemHoaDon.cs [Design]",
-              "RelativeToolTip": "FrmCon\\FrmConAdmin\\FrmThemHoaDon.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-09T21:48:19.108Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "XuLiDuLieu.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (3)\\PROJECT_WF_NEW\\Home\\DuLieu\\XuLiDuLieu.cs",
-              "RelativeDocumentMoniker": "DuLieu\\XuLiDuLieu.cs",
-              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (3)\\PROJECT_WF_NEW\\Home\\DuLieu\\XuLiDuLieu.cs",
-              "RelativeToolTip": "DuLieu\\XuLiDuLieu.cs",
-              "ViewState": "AQIAAEgJAAAAAAAAAAAYwF0JAACEAQAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-09T20:55:12.251Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "FrmThemHH.cs [Design]",
               "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (3)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmConAdmin\\FrmThemHH.cs",
               "RelativeDocumentMoniker": "FrmCon\\FrmConAdmin\\FrmThemHH.cs",
@@ -240,7 +282,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "FrmThemLoiNhac.cs [Design]",
               "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (3)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmConAdmin\\FrmThemLoiNhac.cs",
               "RelativeDocumentMoniker": "FrmCon\\FrmConAdmin\\FrmThemLoiNhac.cs",
@@ -251,7 +293,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "ONhanVien.cs [Design]",
               "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (3)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmConAdmin\\UCThanhPhan\\ONhanVien.cs",
               "RelativeDocumentMoniker": "FrmCon\\FrmConAdmin\\UCThanhPhan\\ONhanVien.cs",
@@ -262,29 +304,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "UCTaiKhoanAdmin.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (3)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmConAdmin\\UCThanhPhan\\UCTaiKhoanAdmin.cs",
-              "RelativeDocumentMoniker": "FrmCon\\FrmConAdmin\\UCThanhPhan\\UCTaiKhoanAdmin.cs",
-              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (3)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmConAdmin\\UCThanhPhan\\UCTaiKhoanAdmin.cs [Design]",
-              "RelativeToolTip": "FrmCon\\FrmConAdmin\\UCThanhPhan\\UCTaiKhoanAdmin.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-10T04:05:47.254Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "UCThongTinAdmin.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (3)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmConAdmin\\UCThanhPhan\\UCThongTinAdmin.cs",
-              "RelativeDocumentMoniker": "FrmCon\\FrmConAdmin\\UCThanhPhan\\UCThongTinAdmin.cs",
-              "ToolTip": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (3)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmConAdmin\\UCThanhPhan\\UCThongTinAdmin.cs [Design]",
-              "RelativeToolTip": "FrmCon\\FrmConAdmin\\UCThanhPhan\\UCThongTinAdmin.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-10T04:05:44.345Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "TaiKhoanAdmin.cs [Design]",
               "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (3)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmConAdmin\\TaiKhoanAdmin.cs",
               "RelativeDocumentMoniker": "FrmCon\\FrmConAdmin\\TaiKhoanAdmin.cs",
@@ -295,7 +315,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "FrmCapNhatHH.cs",
               "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (3)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmConAdmin\\FrmCapNhatHH.cs",
               "RelativeDocumentMoniker": "FrmCon\\FrmConAdmin\\FrmCapNhatHH.cs",
@@ -307,7 +327,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "FrmCapNhatHH.cs [Design]",
               "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (3)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmConAdmin\\FrmCapNhatHH.cs",
               "RelativeDocumentMoniker": "FrmCon\\FrmConAdmin\\FrmCapNhatHH.cs",
@@ -317,7 +337,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "OSanPhamAdmin.cs [Design]",
               "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (3)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmConAdmin\\UCThanhPhan\\OSanPhamAdmin.cs",
               "RelativeDocumentMoniker": "FrmCon\\FrmConAdmin\\UCThanhPhan\\OSanPhamAdmin.cs",
@@ -327,7 +347,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "OSanPhamDaMuaAdmin.cs",
               "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (3)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmHienThi\\OTrong\\OSanPhamDaMuaAdmin.cs",
               "RelativeDocumentMoniker": "FrmCon\\FrmHienThi\\OTrong\\OSanPhamDaMuaAdmin.cs",
@@ -339,7 +359,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "UCBaoCaoHoaDon.cs",
               "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (3)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmBaoCao\\UCBaoCaoHoaDon.cs",
               "RelativeDocumentMoniker": "FrmCon\\FrmBaoCao\\UCBaoCaoHoaDon.cs",
@@ -351,7 +371,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "FrmAdmin.cs",
               "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (3)\\PROJECT_WF_NEW\\Home\\FrmAdmin.cs",
               "RelativeDocumentMoniker": "FrmAdmin.cs",
@@ -363,7 +383,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "KhachHang.cs [Design]",
               "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (3)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmConAdmin\\KhachHang.cs",
               "RelativeDocumentMoniker": "FrmCon\\FrmConAdmin\\KhachHang.cs",
@@ -373,7 +393,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "ChiTietBaoHanh.cs",
               "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (3)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmConAdmin\\ChiTietBaoHanh.cs",
               "RelativeDocumentMoniker": "FrmCon\\FrmConAdmin\\ChiTietBaoHanh.cs",
@@ -385,7 +405,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "ChiTietBaoHanh.cs [Design]",
               "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (3)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmConAdmin\\ChiTietBaoHanh.cs",
               "RelativeDocumentMoniker": "FrmCon\\FrmConAdmin\\ChiTietBaoHanh.cs",
@@ -395,7 +415,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "OBaoHanh.cs [Design]",
               "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (3)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmConAdmin\\FrmDichVu\\OBaoHanh.cs",
               "RelativeDocumentMoniker": "FrmCon\\FrmConAdmin\\FrmDichVu\\OBaoHanh.cs",
@@ -405,7 +425,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "OBaoDuongXeMay.cs",
               "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (3)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmConAdmin\\FrmDichVu\\OBaoDuongXeMay.cs",
               "RelativeDocumentMoniker": "FrmCon\\FrmConAdmin\\FrmDichVu\\OBaoDuongXeMay.cs",
@@ -417,7 +437,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "OBaoDuongXeMay.cs [Design]",
               "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (3)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmConAdmin\\FrmDichVu\\OBaoDuongXeMay.cs",
               "RelativeDocumentMoniker": "FrmCon\\FrmConAdmin\\FrmDichVu\\OBaoDuongXeMay.cs",
@@ -427,7 +447,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "UCDichVu\u0026BaoHanh.cs",
               "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (3)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmConAdmin\\UCDichVu\u0026BaoHanh.cs",
               "RelativeDocumentMoniker": "FrmCon\\FrmConAdmin\\UCDichVu\u0026BaoHanh.cs",
@@ -439,7 +459,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "UCDichVu\u0026BaoHanh.cs [Design]",
               "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (3)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmConAdmin\\UCDichVu\u0026BaoHanh.cs",
               "RelativeDocumentMoniker": "FrmCon\\FrmConAdmin\\UCDichVu\u0026BaoHanh.cs",
@@ -449,7 +469,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 28,
               "Title": "FrmAdmin.cs [Design]",
               "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (3)\\PROJECT_WF_NEW\\Home\\FrmAdmin.cs",
               "RelativeDocumentMoniker": "FrmAdmin.cs",
@@ -459,7 +479,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 33,
               "Title": "DiaChiTrong.cs [Design]",
               "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (3)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmHienThi\\OTrong\\DiaChiTrong.cs",
               "RelativeDocumentMoniker": "FrmCon\\FrmHienThi\\OTrong\\DiaChiTrong.cs",
@@ -469,7 +489,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 29,
               "Title": "FrmHome.cs",
               "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (3)\\PROJECT_WF_NEW\\Home\\FrmHome.cs",
               "RelativeDocumentMoniker": "FrmHome.cs",
@@ -481,7 +501,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 32,
               "Title": "FrmHome.cs [Design]",
               "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (3)\\PROJECT_WF_NEW\\Home\\FrmHome.cs",
               "RelativeDocumentMoniker": "FrmHome.cs",
@@ -491,7 +511,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "ChiTietKH.cs [Design]",
               "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (3)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmConAdmin\\ChiTietKH.cs",
               "RelativeDocumentMoniker": "FrmCon\\FrmConAdmin\\ChiTietKH.cs",
@@ -501,7 +521,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 31,
               "Title": "BaoHanh.cs",
               "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (3)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmConAdmin\\BaoHanh.cs",
               "RelativeDocumentMoniker": "FrmCon\\FrmConAdmin\\BaoHanh.cs",
@@ -513,7 +533,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 30,
               "Title": "KhachHang.cs",
               "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\Desktop\\New folder (3)\\PROJECT_WF_NEW\\Home\\FrmCon\\FrmConAdmin\\KhachHang.cs",
               "RelativeDocumentMoniker": "FrmCon\\FrmConAdmin\\KhachHang.cs",

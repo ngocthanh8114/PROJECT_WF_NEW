@@ -62,15 +62,13 @@ namespace Home.FrmCon.FrmConAdmin.UCThanhPhan
             else
             {
                 xl.ThemTaiKhoanAdmin(txtTenTaiKhoan.Text, txtMatKhau.Text, txtTenNguoiDung.Text, txtEmail.Text, txtSDT.Text, "admin");
-                FrmThongBao frmThongBao = new FrmThongBao();
-                frmThongBao.hienThiThongBao("Thêm thành công!");
-                frmThongBao.Show();
+                
 
-                txtTenTaiKhoan.ResetText();
+                /*txtTenTaiKhoan.ResetText();
                 txtMatKhau.ResetText();
                 txtSDT.ResetText();
                 txtEmail.ResetText();
-                txtTenNguoiDung.ResetText();
+                txtTenNguoiDung.ResetText();*/
 
                 PanelTaiKhoan.Controls.Clear();
                 LoadDataFromDatabase();

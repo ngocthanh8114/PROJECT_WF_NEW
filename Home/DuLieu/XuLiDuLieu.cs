@@ -2013,24 +2013,34 @@ namespace Home.DuLieu
                 FrmBaoLoi frmBaoLoi = new FrmBaoLoi();
                 frmBaoLoi.hienThiLoi("Tên tài khoản đã tồn tại. Vui lòng nhập lại...");
                 frmBaoLoi.Show();
-                return; 
+                //return; 
+            }else{
+                string sqlInsert = "INSERT INTO TaiKhoan (TenTaiKhoan, MatKhau, TenNguoiDung, Email, SoDienThoai, PhanQuyen) VALUES (@TenTaiKhoan, @MatKhau, @TenNguoiDung, @Email, @SoDienThoai, @PhanQuyen)";
+
+                SqlCommand cmd = new SqlCommand(sqlInsert, kn.con);
+
+                cmd.Parameters.AddWithValue("@TenTaiKhoan", tentaikhoan);
+                cmd.Parameters.AddWithValue("@MatKhau", matkhau);
+                cmd.Parameters.AddWithValue("@TenNguoiDung", tennguoidung);
+                cmd.Parameters.AddWithValue("@Email", email);
+                cmd.Parameters.AddWithValue("@SoDienThoai", sodienthoai);
+                cmd.Parameters.AddWithValue("@PhanQuyen", phanquyen);
+
+                int e = cmd.ExecuteNonQuery();
+                if(e > 0)
+                {
+                    FrmThongBao frmThongBao = new FrmThongBao();
+                    frmThongBao.hienThiThongBao("Thêm thành công!");
+                    frmThongBao.Show();
+                    tentaikhoan = "";
+                    matkhau = tennguoidung = email = sodienthoai = "";
+                }
+
+                kn.myClose();
             }
 
           
-            string sqlInsert = "INSERT INTO TaiKhoan (TenTaiKhoan, MatKhau, TenNguoiDung, Email, SoDienThoai, PhanQuyen) VALUES (@TenTaiKhoan, @MatKhau, @TenNguoiDung, @Email, @SoDienThoai, @PhanQuyen)";
-
-            SqlCommand cmd = new SqlCommand(sqlInsert, kn.con);
-
-            cmd.Parameters.AddWithValue("@TenTaiKhoan", tentaikhoan);
-            cmd.Parameters.AddWithValue("@MatKhau", matkhau);
-            cmd.Parameters.AddWithValue("@TenNguoiDung", tennguoidung);
-            cmd.Parameters.AddWithValue("@Email", email);
-            cmd.Parameters.AddWithValue("@SoDienThoai", sodienthoai);
-            cmd.Parameters.AddWithValue("@PhanQuyen", phanquyen);
-
-            cmd.ExecuteNonQuery();
-
-            kn.myClose();
+           
         }
 
         public bool checkLoiNhac()
