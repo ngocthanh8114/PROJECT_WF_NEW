@@ -35,7 +35,7 @@ Giao diện của Admin:
   Hóa đơn tại cửa hàng:
   ![image](https://github.com/ngocthanh8114/PROJECT_WF_NEW/assets/137601753/851cf3a5-f3c4-4958-9d12-06ee754c685e)
   Quản lí nhân viên:
-  ![image](https://github.com/ngocthanh8114/PROJECT_WF_NEW/assets/137601753/06d942c2-8910-4fbc-9328-92facfb1de81)
+  ![image](https://github.com/ngocthanh8114/PROJECT_WF_NEW/assets/137601753/aa51d08e-07a4-415d-b96e-b4d6a826bbcc)
   Giao diện tài khoản:
   ![image](https://github.com/ngocthanh8114/PROJECT_WF_NEW/assets/137601753/3183395b-2504-4d6a-9a5e-501fb45ce014)
   ![image](https://github.com/ngocthanh8114/PROJECT_WF_NEW/assets/137601753/d30010a6-7e2e-425f-879d-b45b13706663)
